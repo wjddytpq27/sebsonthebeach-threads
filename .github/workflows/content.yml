@@ -41,7 +41,8 @@ jobs:
           fi
           echo "슬롯: $SLOT"
           SIGNAL=$(cat data/team_signal.json 2>/dev/null || echo '{}')
-          claude -p "$(cat prompts/viral_writer.txt) === 참고용 team_signal(이미 내용 줬으니 파일 읽지 말 것): $SIGNAL === [출력 규칙·중요] 위 작성 원칙대로 오늘 $SLOT 슬롯 글 1개만 만든다. 파일을 직접 수정하지 말고, 아래 형식 그대로만 출력한다 (본문 안에 따옴표 써도 됨, 구분선은 정확히 그대로):
+          TREND=$(python3 -c "import json; d=json.load(open('data/today_trend.json')); print(json.dumps({k:d.get(k) for k in ['signal_applied','recommended_morning','recommended_evening']}, ensure_ascii=False))" 2>/dev/null || echo '{}')
+          claude -p "$(cat prompts/viral_writer.txt) === 참고용 team_signal(파일 읽지 말 것): $SIGNAL === 오늘 트렌드 소재(trend-scout가 웹검색으로 수집, $SLOT 슬롯 추천 참고): $TREND === [출력 규칙·중요] 위 작성 원칙과 오늘 트렌드를 살려 오늘 $SLOT 슬롯 글 1개만 만든다. 파일을 직접 수정하지 말고, 아래 형식 그대로만 출력한다 (본문 안에 따옴표 써도 됨, 구분선은 정확히 그대로):
           ===CONTENT===
           (본문 150-300자)
           ===REPLY===
