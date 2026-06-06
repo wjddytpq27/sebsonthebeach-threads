@@ -4,7 +4,7 @@ launchd: com.thread.weekly
 
 데이터: data/follower_log.csv, data/insights.csv (로컬)
 """
-import csv, json
+import csv, json, os
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import urllib.request
@@ -14,16 +14,23 @@ today = datetime.now(KST)
 week_ago = today - timedelta(days=7)
 two_weeks_ago = today - timedelta(days=14)
 
-CONFIG_FILE   = Path('/Users/uneedcomms/thread/data/threads_config.json')
-INSIGHTS_FILE = Path('/Users/uneedcomms/thread/data/insights.csv')
-FOLLOWER_FILE = Path('/Users/uneedcomms/thread/data/follower_log.csv')
-SLACK_CONFIG  = Path('/Users/uneedcomms/thread/data/slack_config.json')
+# 로컬·클라우드 양쪽 동작: 스크립트 기준 상대경로
+BASE_DIR      = Path(__file__).resolve().parent
+DATA_DIR      = BASE_DIR / 'data'
+INSIGHTS_FILE = DATA_DIR / 'insights.csv'
+FOLLOWER_FILE = DATA_DIR / 'follower_log.csv'
+SLACK_CONFIG  = DATA_DIR / 'slack_config.json'
 
 
 def send_slack(msg: str):
-    if not SLACK_CONFIG.exists():
-        return
-    webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+    webhook = ''
+    if SLACK_CONFIG.exists():
+        try:
+            webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+        except Exception:
+            webhook = ''
+    if not webhook:  # 클라우드: 환경변수(GitHub Secrets)
+        webhook = os.environ.get('SLACK_WEBHOOK', '')
     if not webhook:
         return
     payload = {

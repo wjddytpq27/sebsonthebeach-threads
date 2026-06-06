@@ -1,7 +1,8 @@
 name: 루카 — Weekly Report
 
 on:
-  # 비활성화 — 로컬 weekly_report.py (launchd 월 09:30)로 대체됨
+  schedule:
+    - cron: '30 0 * * 1'    # 월요일 09:30 KST (UTC 월 00:30)
   workflow_dispatch:
 
 jobs:

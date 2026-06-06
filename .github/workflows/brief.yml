@@ -1,7 +1,8 @@
 name: 매일 참여 브리프 발송
 
 on:
-  # 비활성화 — 로컬 engagement_brief.py (launchd 08:30)로 대체됨
+  schedule:
+    - cron: '30 23 * * *'   # 매일 08:30 KST (UTC 전날 23:30)
   workflow_dispatch:
 
 jobs:
