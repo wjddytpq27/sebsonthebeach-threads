@@ -2,20 +2,31 @@
 Threads API 직접 포스팅 스크립트
 Buffer 불필요 — access token으로 직접 발행
 """
-import json, time, sys, urllib.request, urllib.parse
+import json, os, time, sys, urllib.request, urllib.parse
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
 
-CONFIG_FILE  = Path('/Users/uneedcomms/thread/data/threads_config.json')
-POSTS_FILE   = Path('/Users/uneedcomms/thread/data/posts.json')
-SLACK_CONFIG = Path('/Users/uneedcomms/thread/data/slack_config.json')
-LOCK_DIR     = Path('/Users/uneedcomms/thread/data/locks')
+# 로컬(절대경로)·클라우드(체크아웃 경로) 양쪽에서 동작하도록 스크립트 기준 상대경로
+BASE_DIR     = Path(__file__).resolve().parent
+DATA_DIR     = BASE_DIR / 'data'
+CONFIG_FILE  = DATA_DIR / 'threads_config.json'
+POSTS_FILE   = DATA_DIR / 'posts.json'
+SLACK_CONFIG = DATA_DIR / 'slack_config.json'
+LOCK_DIR     = DATA_DIR / 'locks'
 
 def load_config():
-    return json.loads(CONFIG_FILE.read_text())
+    # 1순위: 로컬 파일 / 2순위: 환경변수(GitHub Secrets)
+    if CONFIG_FILE.exists():
+        return json.loads(CONFIG_FILE.read_text())
+    token = os.environ.get('THREADS_ACCESS_TOKEN')
+    user_id = os.environ.get('THREADS_USER_ID')
+    if token and user_id:
+        return {'threads_access_token': token, 'threads_user_id': user_id}
+    print("❌ 토큰 없음 — threads_config.json 파일도, THREADS_ACCESS_TOKEN/THREADS_USER_ID env도 없음")
+    sys.exit(1)
 
 def post_to_threads(text: str, user_id: str, token: str, topic_tag: str = 'AI_THREADS', reply_to_id: str = None) -> dict:
     """Threads API로 포스트 발행. 2단계: container 생성 → publish"""
@@ -59,10 +70,14 @@ def post_to_threads(text: str, user_id: str, token: str, topic_tag: str = 'AI_TH
     return result
 
 def send_slack(msg: str):
-    if not SLACK_CONFIG.exists():
-        return
-    cfg = json.loads(SLACK_CONFIG.read_text())
-    webhook = cfg.get('webhook_url', '')
+    webhook = ''
+    if SLACK_CONFIG.exists():
+        try:
+            webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+        except Exception:
+            webhook = ''
+    if not webhook:  # 클라우드: 환경변수(GitHub Secrets)
+        webhook = os.environ.get('SLACK_WEBHOOK', '')
     if not webhook:
         return
     data = json.dumps({'text': msg}).encode()
@@ -97,7 +112,8 @@ def refresh_token_if_needed(config: dict) -> dict:
             result = json.loads(r.read())
         if 'access_token' in result:
             config['threads_access_token'] = result['access_token']
-            CONFIG_FILE.write_text(json.dumps(config, indent=2, ensure_ascii=False))
+            if CONFIG_FILE.exists():  # 로컬에서만 파일 갱신 (클라우드는 Secrets라 스킵)
+                CONFIG_FILE.write_text(json.dumps(config, indent=2, ensure_ascii=False))
             print(f"  토큰 갱신 완료 (expires_in: {result.get('expires_in')}s)")
     except Exception as e:
         print(f"  토큰 갱신 실패 (무시): {e}")
