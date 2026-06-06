@@ -1,0 +1,38 @@
+name: 글생성 — viral-writer
+
+on:
+  schedule:
+    - cron: '12 1 * * *'    # 오전 10:12 KST (포스팅 10:35 전에 글 준비)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: claude CLI 설치
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: viral-writer 글 생성 (오늘 날짜 오전/저녁 2개)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          claude -p "$(cat prompts/viral_writer.txt)" \
+            --agent viral-writer \
+            --dangerously-skip-permissions
+
+      - name: posts.json 커밋백
+        run: |
+          git config user.name "viral-bot"
+          git config user.email "bot@sebsonthebeach"
+          git add data/posts.json
+          git diff --staged --quiet || git commit -m "content: viral-writer $(date +'%Y-%m-%d')"
+          git push
