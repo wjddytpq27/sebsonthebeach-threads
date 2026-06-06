@@ -28,7 +28,7 @@ jobs:
       - name: claude CLI 설치
         run: npm install -g @anthropic-ai/claude-code
 
-      - name: viral-writer 글 생성 (슬롯 1개, 발행 직전)
+      - name: viral-writer 글 생성 (claude=JSON텍스트만, 저장은 add_post.py)
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
@@ -39,13 +39,11 @@ jobs:
           else
             SLOT="${{ github.event.inputs.slot }}"
           fi
-          if [ "$SLOT" = "evening" ]; then
-            HINT="오늘 저녁 글 1개만 작성 (evening:true 필드 포함)"
-          else
-            HINT="오늘 오전 글 1개만 작성 (evening 필드 없이)"
-          fi
           echo "슬롯: $SLOT"
-          claude -p "$(cat prompts/viral_writer.txt) [클라우드 just-in-time 자동실행] 지금이 발행 직전이다. $HINT 해서 data/posts.json에 추가해. 며칠치 미리 쓰지 말고 오늘 이 슬롯 1개만." --agent viral-writer --dangerously-skip-permissions
+          SIGNAL=$(cat data/team_signal.json 2>/dev/null || echo '{}')
+          claude -p "$(cat prompts/viral_writer.txt) === 참고용 team_signal(이미 내용 줬으니 파일 읽지 말 것): $SIGNAL === [출력 규칙·중요] 위 작성 원칙대로 오늘 $SLOT 슬롯 글 1개만 만든다. 파일을 직접 수정하지 말고, 코드펜스/설명 없이 JSON 객체 하나만 그대로 출력한다: {\"content\":\"본문 150-300자\",\"reply\":\"첫댓글(선택, 없으면 빈 문자열)\",\"topic\":\"AI_THREADS 또는 BUSINESS_ENTREPENEURSHIP 또는 PERSONAL_FINANCE 또는 CAREERS_JOBS\"}" > /tmp/gen_post.txt
+          echo "--- claude 출력 ---"; cat /tmp/gen_post.txt; echo
+          python3 add_post.py --slot "$SLOT" --infile /tmp/gen_post.txt
 
       - name: posts.json 커밋백
         run: |
