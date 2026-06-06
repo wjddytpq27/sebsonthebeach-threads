@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-18",
+  "generated_at": "2026-05-18T04:50:17.949133",
+  "strategy_note": "스타트업/사이드프로젝트/린스타트업 키워드. 수집 5개(좋아요 9~38). 성과공유/유머/질문형 고루 분포. 자사몰/자동화 경험 언급으로 정체성 노출 전략.",
+  "comments": [
+    {
+      "post_id": "DYXHj0cExP8",
+      "author": "cj_onthetop",
+      "url": "https://www.threads.com/@cj_onthetop/post/DYXHj0cExP8",
+      "keyword": "스타트업",
+      "post_type": "achievement",
+      "text": "창업 1.5년차 신보 Nest 1차 합격",
+      "comment": "삼고초려 끝에 합격이라니 ㅋㅋ 멋있다 최종까지 어떤 준비 했어?",
+      "reasoning": "성과에 진심 반응 + 구체적 질문 → 댓글 쓴 사람 프로필 궁금증 유발"
+    },
+    {
+      "post_id": "DYdq-MTjzr0",
+      "author": "orcawalk",
+      "url": "https://www.threads.com/@orcawalk/post/DYdq-MTjzr0",
+      "keyword": "스타트업",
+      "post_type": "humor",
+      "text": "만원으로 스타트업 운영하기 - 직원: AI에이전트 이천원",
+      "comment": "AI 에이전트 직원 이천원 너무 현실ㅋㅋ 자사몰 자동화 붙이면 딱 이 느낌 나옴",
+      "reasoning": "유머에 공감 + 자사몰 실무자 정체성 노출 → 셀러 관심사 있는 사람 프로필 클릭"
+    },
+    {
+      "post_id": "DYJzw7ukYM0",
+      "author": "ceo_hedgehog",
+      "url": "https://www.threads.com/@ceo_hedgehog/post/DYJzw7ukYM0",
+      "keyword": "스타트업",
+      "post_type": "empathy",
+      "text": "월매출 100만원도 안 되는데 지원사업 합격하고 칼퇴",
+      "comment": "살아남은 게 성과인 구간 진짜 있음ㅋㅋ 지원사업 합격이 매출보다 더 현실적인 수익원일 때도 있고",
+      "reasoning": "생존 공감 + 약간의 실무 인사이트 → 같은 구간 지나온 사람으로 인식"
+    },
+    {
+      "post_id": "DJqAo21TG1l",
+      "author": "quokka.wony",
+      "url": "https://www.threads.com/@quokka.wony/post/DJqAo21TG1l",
+      "keyword": "사이드프로젝트",
+      "post_type": "question",
+      "text": "사이드프로젝트, MBTI랑 상관있을까?",
+      "comment": "나는 시작은 잘 하는데 마무리가 항상 문제ㅋㅋ 완성까지 가는 사람이 결국 이기더라",
+      "reasoning": "질문에 솔직한 자기 답변 → 공감하면서 이 사람 뭐 하는 사람이지? 호기심 유발"
+    },
+    {
+      "post_id": "DLWLlusyrSZ",
+      "author": "work.better.tmrw",
+      "url": "https://www.threads.com/@work.better.tmrw/post/DLWLlusyrSZ",
+      "keyword": "사이드프로젝트",
+      "post_type": "info",
+      "text": "사이드프로젝트 첫 미팅 - 아이디어 있으면 하루라도 빨리 시작하자",
+      "comment": "맞는데 속도보다 방향이 먼저인 것 같더라 자사몰 자동화 3번 뒤엎었는데 빨리 만든 게 문제가 아니라 검증 안 하고 만든 게 문제였음",
+      "reasoning": "인사이트에 반론+경험 → 자사몰 자동화 실무자 정체성 드러남"
+    }
+  ]
+}

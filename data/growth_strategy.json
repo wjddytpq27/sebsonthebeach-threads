@@ -1,0 +1,25 @@
+{
+  "weekly_focus": "숫자+반전 유지",
+  "recommended_topics": [
+    "AI활용",
+    "ChatGPT활용",
+    "AI부업"
+  ],
+  "avoid_topics": [
+    "자사몰/카페24 직접 언급",
+    "추상적 AI 미래론"
+  ],
+  "best_post_style": "숫자+반전 훅, AI 실무 경험담",
+  "worst_post_style": "범용 동기부여, 추상적 AI 전망",
+  "posting_times": {
+    "morning": "10:21",
+    "evening": "20:00"
+  },
+  "engagement_keywords": [
+    "AI활용",
+    "ChatGPT활용",
+    "AI부업"
+  ],
+  "alert": "상태: 정상. 0일째 팔로워 변화 없음.",
+  "generated_at": "2026-06-05"
+}

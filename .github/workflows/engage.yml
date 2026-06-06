@@ -1,0 +1,38 @@
+name: Auto Engage
+
+on:
+  # 비활성화 — Cowork 에이전트로 대체됨 (2026-05-10)
+  workflow_dispatch:
+
+jobs:
+  engage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: |
+          pip install requests playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: 자동 engagement 실행
+        env:
+          THREADS_EMAIL: ${{ secrets.THREADS_EMAIL }}
+          THREADS_PASSWORD: ${{ secrets.THREADS_PASSWORD }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        run: python auto_engage.py
+
+      - name: 디버그 + 로그 커밋
+        run: |
+          git config user.name "루카-bot"
+          git config user.email "bot@sebsonthebeach"
+          git add data/
+          git diff --staged --quiet || git commit -m "engage: $(date +'%Y-%m-%d') 결과 저장"
+          git push

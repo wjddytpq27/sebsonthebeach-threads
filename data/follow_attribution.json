@@ -1,0 +1,133 @@
+{
+  "updated_at": "2026-06-05",
+  "daily_deltas": [
+    {
+      "date": "2026-05-25",
+      "followers": 153,
+      "delta": 0
+    },
+    {
+      "date": "2026-05-26",
+      "followers": 158,
+      "delta": 5
+    },
+    {
+      "date": "2026-05-27",
+      "followers": 158,
+      "delta": 0
+    },
+    {
+      "date": "2026-05-28",
+      "followers": 157,
+      "delta": -1
+    },
+    {
+      "date": "2026-05-29",
+      "followers": 157,
+      "delta": 0
+    },
+    {
+      "date": "2026-06-01",
+      "followers": 158,
+      "delta": 1
+    },
+    {
+      "date": "2026-06-02",
+      "followers": 158,
+      "delta": 0
+    },
+    {
+      "date": "2026-06-03",
+      "followers": 158,
+      "delta": 0
+    },
+    {
+      "date": "2026-06-04",
+      "followers": 160,
+      "delta": 2
+    },
+    {
+      "date": "2026-06-05",
+      "followers": 164,
+      "delta": 4
+    }
+  ],
+  "follow_drivers": [
+    {
+      "post_date": "2026-05-25",
+      "text_preview": "Schools taught us y = ax + b. So we think in straight lines.",
+      "content_type": "ai_tech",
+      "engagement_score": 3,
+      "views": 16,
+      "follower_delta_next_day": 5,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-06-04",
+      "text_preview": "콘텐츠 마케팅 1년 하면서 배운 것:  처음엔 모두에게 말하려 했음 → 아무도 안 봄 셀러들한테만 말하기 시",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 32,
+      "views": 1259,
+      "follower_delta_next_day": 4,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-05-24",
+      "text_preview": "바이브코딩, 지금도 믿고 있어?  AI로 빠르게 코드 뽑는 건 맞음. 근데 3개월 쌓이면 아무도 이해 못 하",
+      "content_type": "ai_tech",
+      "engagement_score": 236,
+      "views": 3550,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "low"
+    },
+    {
+      "post_date": "2026-05-26",
+      "text_preview": "구글이 내 고객 대신 검색하기 시작했음.  Google I/O에서 발표한 AI Mode in Search: ",
+      "content_type": "ai_tech",
+      "engagement_score": 8,
+      "views": 242,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "low"
+    },
+    {
+      "post_date": "2026-05-28",
+      "text_preview": "AI 자동화 도입하면서 제일 놀란 것:  시간이 절약되는 게 아니라 '생각할 시간'이 생긴다는 것.  반복 ",
+      "content_type": "ai_tech",
+      "engagement_score": 9,
+      "views": 201,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "low"
+    },
+    {
+      "post_date": "2026-06-01",
+      "text_preview": "6월이다.  상반기 돌아보면 제일 잘한 결정: 자동화 먼저 제일 아쉬운 결정: 콘텐츠 일관성  하반기는 이거",
+      "content_type": "ai_tech",
+      "engagement_score": 5,
+      "views": 375,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "medium"
+    },
+    {
+      "post_date": "2026-05-27",
+      "text_preview": "AI한테 코드 던져놓고 왜 이해를 못 하냐고?  GitHub에서 하루 4000별 받은 Understand-A",
+      "content_type": "ai_tech",
+      "engagement_score": 2,
+      "views": 711,
+      "follower_delta_next_day": -1,
+      "attribution_confidence": "medium"
+    }
+  ],
+  "best_follow_driver": {
+    "text_preview": "Schools taught us y = ax + b. So we think in straight lines.",
+    "post_date": "2026-05-25",
+    "content_type": "ai_tech",
+    "follower_delta": 5
+  },
+  "content_type_avg_delta": {
+    "ai_tech": 0.6666666666666666,
+    "ecommerce_tip": 4.0
+  },
+  "best_content_type": "ecommerce_tip",
+  "avg_followers_per_post": 1.14,
+  "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"Schools taught us y = ax + b. So we thin...\""
+}

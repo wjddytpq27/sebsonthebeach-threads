@@ -1,0 +1,22 @@
+name: 매일 참여 브리프 발송
+
+on:
+  # 비활성화 — 로컬 engagement_brief.py (launchd 08:30)로 대체됨
+  workflow_dispatch:
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: 참여 브리프 Slack 발송
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        run: python engagement_brief.py

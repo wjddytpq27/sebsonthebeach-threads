@@ -1,0 +1,49 @@
+{
+  "status": "normal",
+  "days_since_growth": 0,
+  "follower_trend": "153→164 (10일, 일평균 +1.2)",
+  "best_performing": {
+    "avg_score": 92.0,
+    "examples": [
+      "바이브코딩, 지금도 믿고 있어?  AI로 빠르게 코드 뽑는 건 맞음. 근데 3개월 쌓이면 아무도 이해 못 하",
+      "콘텐츠 마케팅 1년 하면서 배운 것:  처음엔 모두에게 말하려 했음 → 아무도 안 봄 셀러들한테만 말하기 시",
+      "AI 자동화 도입하면서 제일 놀란 것:  시간이 절약되는 게 아니라 '생각할 시간'이 생긴다는 것.  반복 "
+    ],
+    "style": "숫자+반전 훅, AI 실무 경험담"
+  },
+  "worst_performing": {
+    "avg_score": 0.0,
+    "count": 3,
+    "style": "범용 동기부여, 추상적 AI 전망"
+  },
+  "keyword_performance": {
+    "AI활용": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "ChatGPT활용": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "AI부업": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    }
+  },
+  "top_search_keywords": [
+    "AI활용",
+    "ChatGPT활용",
+    "AI부업"
+  ],
+  "directives": {
+    "trend_scout": "평소대로",
+    "viral_writer": "숫자+반전 유지",
+    "hunter_engager": "목표 25개, 영어 비중 20%"
+  },
+  "team_memo": "상태: 정상. 0일째 팔로워 변화 없음.",
+  "devil_advocate": "Not logged in · Please run /login",
+  "updated_at": "2026-06-05"
+}

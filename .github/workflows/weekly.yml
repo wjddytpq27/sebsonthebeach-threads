@@ -1,0 +1,23 @@
+name: 루카 — Weekly Report
+
+on:
+  # 비활성화 — 로컬 weekly_report.py (launchd 월 09:30)로 대체됨
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests
+
+      - name: 주간 성과 분석 + 슬랙 발송
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        run: python weekly_report.py
