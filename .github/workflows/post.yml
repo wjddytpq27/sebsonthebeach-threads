@@ -2,8 +2,7 @@ name: 포스팅 — Threads (오전/저녁)
 
 on:
   schedule:
-    - cron: '35 1 * * *'    # 오전 10:35 KST (UTC 01:35)
-    - cron: '0 11 * * *'    # 저녁 20:00 KST (UTC 11:00)
+    - cron: '35 1 * * 1-5'  # 평일 오전 10:35 KST (하루 1개)
   workflow_dispatch:
     inputs:
       slot:
@@ -31,12 +30,8 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         run: |
           # schedule 트리거면 cron 시각으로 슬롯 결정, 수동이면 입력값 사용
-          if [ "${{ github.event.schedule }}" = "0 11 * * *" ]; then
-            SLOT=evening
-          elif [ "${{ github.event.schedule }}" = "35 1 * * *" ]; then
-            SLOT=morning
-          else
-            SLOT="${{ github.event.inputs.slot }}"
-          fi
+          # 하루 1개 체제: schedule이면 항상 morning, 수동이면 입력값
+          SLOT="${{ github.event.inputs.slot }}"
+          [ -z "$SLOT" ] && SLOT=morning
           echo "슬롯: $SLOT"
           python post_threads.py --slot "$SLOT"

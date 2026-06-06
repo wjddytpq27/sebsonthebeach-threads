@@ -2,8 +2,7 @@ name: 글생성 — viral-writer
 
 on:
   schedule:
-    - cron: '12 1 * * *'     # 오전 10:12 KST (발행 10:35 직전)
-    - cron: '40 10 * * *'    # 저녁 19:40 KST (발행 20:00 직전)
+    - cron: '12 1 * * 1-5'   # 평일 오전 10:12 KST (하루 1개 — reply velocity 집중)
   workflow_dispatch:
     inputs:
       slot:
@@ -32,13 +31,9 @@ jobs:
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
-          if [ "${{ github.event.schedule }}" = "40 10 * * *" ]; then
-            SLOT=evening
-          elif [ "${{ github.event.schedule }}" = "12 1 * * *" ]; then
-            SLOT=morning
-          else
-            SLOT="${{ github.event.inputs.slot }}"
-          fi
+          # 하루 1개 체제: schedule이면 항상 morning, 수동이면 입력값
+          SLOT="${{ github.event.inputs.slot }}"
+          [ -z "$SLOT" ] && SLOT=morning
           echo "슬롯: $SLOT"
           SIGNAL=$(cat data/team_signal.json 2>/dev/null || echo '{}')
           TREND=$(python3 -c "import json; d=json.load(open('data/today_trend.json')); print(json.dumps({k:d.get(k) for k in ['signal_applied','recommended_morning','recommended_evening']}, ensure_ascii=False))" 2>/dev/null || echo '{}')
