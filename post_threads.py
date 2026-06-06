@@ -142,14 +142,17 @@ if __name__ == '__main__':
     slot_label = '오전' if slot == 'morning' else '저녁'
     print(f"[{today}] post_threads.py 시작 ({slot_label})")
 
-    # 시간 게이트 — Mac 슬립 후 늦게 깨어난 경우 스킵
+    # 시간 게이트 — Mac 슬립 후 늦게 깨어난 '로컬' 케이스용.
+    # 클라우드(env 모드)는 Actions cron이 시각을 관리하고 중복은 already_posted가 막으므로
+    # 게이트를 끈다(러너 지연으로 발행이 통째 스킵되는 사고 방지).
+    is_cloud = not CONFIG_FILE.exists()
     now_hour = datetime.now(KST).hour
-    if slot == 'morning' and now_hour >= 13:
+    if not is_cloud and slot == 'morning' and now_hour >= 13:
         msg = f"⏭ [{today}] 오전 포스팅 스킵 — 현재 {now_hour}시 (오후 1시 이후엔 오전 글 안 올림)"
         print(msg)
         send_slack(msg)
         sys.exit(0)
-    if slot == 'evening' and (now_hour >= 23 or now_hour < 18):
+    if not is_cloud and slot == 'evening' and (now_hour >= 23 or now_hour < 18):
         msg = f"⏭ [{today}] 저녁 포스팅 스킵 — 현재 {now_hour}시 (18~22시 범위 밖)"
         print(msg)
         send_slack(msg)
