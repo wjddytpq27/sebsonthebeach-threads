@@ -5,22 +5,25 @@ strategist.py — 주간 전략가 (반아첨, 데이터 기반)
 역할: 지난 7일 데이터를 보고 현재 전략의 문제점을 날카롭게 비판.
       성장이 느리면 전략 자체를 의심. 희망적 편향 없음.
 """
-import csv, json, subprocess, sys, urllib.request
+import csv, json, os, shutil, subprocess, sys, urllib.request
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
 
-CLAUDE_BIN       = '/opt/homebrew/bin/claude'
-FOLLOWER_CSV     = Path('/Users/uneedcomms/thread/data/follower_log.csv')
-INSIGHTS_CSV     = Path('/Users/uneedcomms/thread/data/insights.csv')
-SIGNAL_FILE      = Path('/Users/uneedcomms/thread/data/team_signal.json')
-ATTRIBUTION_FILE = Path('/Users/uneedcomms/thread/data/follow_attribution.json')
-OUTPUT_FILE      = Path('/Users/uneedcomms/thread/data/strategic_review.json')
-PROMPTS_DIR      = Path('/Users/uneedcomms/thread/prompts')
+# 로컬은 절대경로, 클라우드(Actions)는 PATH의 claude
+CLAUDE_BIN       = os.environ.get('CLAUDE_BIN') or shutil.which('claude') or '/opt/homebrew/bin/claude'
+BASE_DIR         = Path(__file__).resolve().parent
+DATA_DIR         = BASE_DIR / 'data'
+FOLLOWER_CSV     = DATA_DIR / 'follower_log.csv'
+INSIGHTS_CSV     = DATA_DIR / 'insights.csv'
+SIGNAL_FILE      = DATA_DIR / 'team_signal.json'
+ATTRIBUTION_FILE = DATA_DIR / 'follow_attribution.json'
+OUTPUT_FILE      = DATA_DIR / 'strategic_review.json'
+PROMPTS_DIR      = BASE_DIR / 'prompts'
 HISTORY_DIR      = PROMPTS_DIR / 'history'
-SLACK_CONFIG     = Path('/Users/uneedcomms/thread/data/slack_config.json')
+SLACK_CONFIG     = DATA_DIR / 'slack_config.json'
 
 
 def ask_claude(prompt: str) -> str:
@@ -34,9 +37,14 @@ def ask_claude(prompt: str) -> str:
 
 
 def send_slack(msg: str):
-    if not SLACK_CONFIG.exists():
-        return
-    webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+    webhook = ''
+    if SLACK_CONFIG.exists():
+        try:
+            webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+        except Exception:
+            webhook = ''
+    if not webhook:
+        webhook = os.environ.get('SLACK_WEBHOOK', '')
     if not webhook:
         return
     data = json.dumps({'text': msg}).encode()

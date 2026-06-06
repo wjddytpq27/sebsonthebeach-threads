@@ -9,20 +9,23 @@
 - 수정된 경우 content 업데이트
 - Slack 알림 (이슈 있을 때만)
 """
-import csv, json, sys, subprocess, urllib.request, urllib.parse, urllib.error
+import csv, json, os, shutil, sys, subprocess, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
 
-CLAUDE_BIN   = '/opt/homebrew/bin/claude'
-CONFIG_FILE  = Path('/Users/uneedcomms/thread/data/threads_config.json')
-POSTS_FILE   = Path('/Users/uneedcomms/thread/data/posts.json')
-SIGNAL_FILE  = Path('/Users/uneedcomms/thread/data/team_signal.json')
-FOLLOWER_CSV = Path('/Users/uneedcomms/thread/data/follower_log.csv')
-INSIGHTS_CSV = Path('/Users/uneedcomms/thread/data/insights.csv')
-SLACK_CONFIG = Path('/Users/uneedcomms/thread/data/slack_config.json')
+# 로컬은 절대경로, 클라우드(Actions)는 PATH의 claude
+CLAUDE_BIN   = os.environ.get('CLAUDE_BIN') or shutil.which('claude') or '/opt/homebrew/bin/claude'
+BASE_DIR     = Path(__file__).resolve().parent
+DATA_DIR     = BASE_DIR / 'data'
+CONFIG_FILE  = DATA_DIR / 'threads_config.json'
+POSTS_FILE   = DATA_DIR / 'posts.json'
+SIGNAL_FILE  = DATA_DIR / 'team_signal.json'
+FOLLOWER_CSV = DATA_DIR / 'follower_log.csv'
+INSIGHTS_CSV = DATA_DIR / 'insights.csv'
+SLACK_CONFIG = DATA_DIR / 'slack_config.json'
 
 
 def ask_claude(prompt: str) -> str:
@@ -37,9 +40,14 @@ def ask_claude(prompt: str) -> str:
 
 
 def send_slack(msg: str):
-    if not SLACK_CONFIG.exists():
-        return
-    webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+    webhook = ''
+    if SLACK_CONFIG.exists():
+        try:
+            webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+        except Exception:
+            webhook = ''
+    if not webhook:
+        webhook = os.environ.get('SLACK_WEBHOOK', '')
     if not webhook:
         return
     data = json.dumps({'text': msg}).encode()
