@@ -23,27 +23,33 @@ team_signal.json 구조:
   "updated_at": "2026-05-25"
 }
 """
-import csv, json, subprocess, sys, urllib.request
+import csv, json, os, shutil, subprocess, sys, urllib.request
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
 
-INSIGHTS_FILE  = Path('/Users/uneedcomms/thread/data/insights.csv')
-FOLLOWER_FILE  = Path('/Users/uneedcomms/thread/data/follower_log.csv')
-ENGAGE_LOG     = Path('/Users/uneedcomms/thread/data/engage_log.csv')
-SIGNAL_FILE    = Path('/Users/uneedcomms/thread/data/team_signal.json')
-STRATEGY_FILE  = Path('/Users/uneedcomms/thread/data/growth_strategy.json')
-SLACK_CONFIG   = Path('/Users/uneedcomms/thread/data/slack_config.json')
-CLAUDE_BIN     = '/opt/homebrew/bin/claude'
+# 로컬·클라우드 양쪽 동작: 스크립트 기준 상대경로
+BASE_DIR       = Path(__file__).resolve().parent
+DATA_DIR       = BASE_DIR / 'data'
+INSIGHTS_FILE  = DATA_DIR / 'insights.csv'
+FOLLOWER_FILE  = DATA_DIR / 'follower_log.csv'
+ENGAGE_LOG     = DATA_DIR / 'engage_log.csv'
+SIGNAL_FILE    = DATA_DIR / 'team_signal.json'
+STRATEGY_FILE  = DATA_DIR / 'growth_strategy.json'
+SLACK_CONFIG   = DATA_DIR / 'slack_config.json'
+# 로컬은 절대경로, 클라우드(Actions)는 PATH의 claude
+CLAUDE_BIN     = os.environ.get('CLAUDE_BIN') or shutil.which('claude') or '/opt/homebrew/bin/claude'
 
 
 def send_slack(msg: str):
-    if not SLACK_CONFIG.exists():
-        return
+    webhook = ''
     try:
-        webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+        if SLACK_CONFIG.exists():
+            webhook = json.loads(SLACK_CONFIG.read_text()).get('webhook_url', '')
+        if not webhook:
+            webhook = os.environ.get('SLACK_WEBHOOK', '')
         if not webhook:
             return
         payload = {
