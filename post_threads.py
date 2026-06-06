@@ -132,6 +132,13 @@ if __name__ == '__main__':
         if idx + 1 < len(sys.argv):
             slot = sys.argv[idx + 1]
 
+    # --image <url>: 카드 이미지 첨부 (빈 문자열이면 텍스트로 발행)
+    image_url = None
+    if '--image' in sys.argv:
+        idx = sys.argv.index('--image')
+        if idx + 1 < len(sys.argv):
+            image_url = (sys.argv[idx + 1] or '').strip() or None
+
     slot_label = '오전' if slot == 'morning' else '저녁'
     print(f"[{today}] post_threads.py 시작 ({slot_label})")
 
@@ -148,10 +155,7 @@ if __name__ == '__main__':
         send_slack(msg)
         sys.exit(0)
 
-    if not CONFIG_FILE.exists():
-        print("❌ threads_config.json 없음")
-        sys.exit(1)
-    config = load_config()
+    config = load_config()  # 파일 없으면 env(THREADS_ACCESS_TOKEN/USER_ID) fallback — 클라우드 대응
 
     if not POSTS_FILE.exists():
         send_slack(f"❌ [{today}] posts.json 없음 — 포스팅 실패")
@@ -210,12 +214,18 @@ if __name__ == '__main__':
         sys.exit(0)
 
     try:
-        result = post_to_threads(content, user_id, token, topic_tag)
+        result = post_to_threads(content, user_id, token, topic_tag, image_url=image_url)
         if 'id' not in result:
-            raise Exception(str(result))
+            # 이미지 첨부 실패 가능성 → 텍스트로 폴백 재시도
+            if image_url:
+                print(f"  ⚠️ 이미지 발행 실패({result}) → 텍스트로 폴백")
+                result = post_to_threads(content, user_id, token, topic_tag)
+            if 'id' not in result:
+                raise Exception(str(result))
 
         post_id = result['id']
-        print(f"✅ {slot_label} 포스팅 성공: post_id={post_id}")
+        card_tag = ' 📇카드' if image_url else ''
+        print(f"✅ {slot_label} 포스팅 성공{card_tag}: post_id={post_id}")
         send_slack(f"✅ [{today}] {slot_label} 포스팅 성공\n└ {content[:60]}...")
 
         reply_text = post.get('reply', '')

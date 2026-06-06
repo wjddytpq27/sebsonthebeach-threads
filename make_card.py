@@ -9,14 +9,30 @@ claude/viral-writer가 쓴 글의 첫 줄(훅)을 카드 메인 타이포로,
 """
 import argparse
 import html as html_mod
+import json
 import os
 import shutil
 import subprocess
 import sys
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
+
+KST = timezone(timedelta(hours=9))
+TODAY = datetime.now(KST).strftime('%Y-%m-%d')
 
 BASE_DIR = Path(__file__).resolve().parent
 CARDS_DIR = BASE_DIR / 'data' / 'cards'
+POSTS_FILE = BASE_DIR / 'data' / 'posts.json'
+
+
+def content_from_posts(slot: str) -> str:
+    """posts.json에서 오늘 슬롯 글의 content를 읽는다."""
+    if not POSTS_FILE.exists():
+        return ''
+    posts = json.loads(POSTS_FILE.read_text(encoding='utf-8'))
+    is_evening = slot == 'evening'
+    p = next((x for x in posts if x.get('date') == TODAY and bool(x.get('evening')) == is_evening), None)
+    return (p.get('content', '') if p else '')
 
 TEMPLATE = """<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><style>
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
@@ -87,11 +103,17 @@ def chrome_bin() -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument('--content', required=True)
+    ap.add_argument('--content', help='카드 본문 직접 지정')
+    ap.add_argument('--slot', choices=['morning', 'evening'], help='posts.json 오늘 슬롯 글로 자동')
     ap.add_argument('--out', required=True)
     args = ap.parse_args()
 
-    hook, sub = split_hook(args.content)
+    content = args.content or (content_from_posts(args.slot) if args.slot else '')
+    if not content:
+        print('❌ 카드 본문 없음 (--content 또는 --slot으로 지정, 오늘 글 없음)')
+        return 1
+
+    hook, sub = split_hook(content)
     if not hook:
         print('❌ 본문 비어있음 — 카드 생성 안 함')
         return 1
