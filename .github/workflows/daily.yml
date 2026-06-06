@@ -1,16 +1,18 @@
 name: 소나 — Daily Track
 
 on:
-  # 비활성화 — 로컬 track.py (launchd 22:00)로 대체됨
-  workflow_dispatch:
+  schedule:
+    - cron: '0 13 * * *'   # 매일 22:00 KST (UTC 13:00)
+  workflow_dispatch:        # 수동 실행 가능
+
+permissions:
+  contents: write           # 기본 GITHUB_TOKEN으로 data/ 커밋백 (GH_PAT 불필요)
 
 jobs:
   track:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_PAT }}
 
       - uses: actions/setup-python@v5
         with:
@@ -18,17 +20,17 @@ jobs:
 
       - run: pip install requests
 
-      - name: 팔로워 + 인사이트 수집
+      - name: 팔로워 + 인사이트 수집 + 브리핑
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         run: python track.py
 
-      - name: 데이터 커밋
+      - name: 데이터 커밋백 (insights/follower 누적)
         run: |
           git config user.name "소나-bot"
           git config user.email "bot@sebsonthebeach"
           git add data/
-          git diff --staged --quiet || git commit -m "data: $(date +'%Y-%m-%d') 일간 수집"
+          git diff --staged --quiet || git commit -m "data: track $(date +'%Y-%m-%d')"
           git push
