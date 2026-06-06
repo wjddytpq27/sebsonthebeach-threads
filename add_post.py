@@ -12,7 +12,6 @@ claude에게 파일을 직접 쓰게 하면 기존 예약 글을 덮어쓰는 �
 """
 import argparse
 import json
-import re
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -27,16 +26,34 @@ DEFAULT_TOPIC = {'morning': 'AI_THREADS', 'evening': 'BUSINESS_ENTREPENEURSHIP'}
 VALID_TOPICS = {'AI_THREADS', 'BUSINESS_ENTREPENEURSHIP', 'PERSONAL_FINANCE', 'CAREERS_JOBS'}
 
 
-def extract_json(text: str) -> dict:
-    """claude 출력에서 JSON 객체 하나를 robust하게 추출 (코드펜스/설명 섞여도)."""
-    # 코드펜스 제거
-    cleaned = re.sub(r'```(?:json)?', '', text)
-    # 첫 '{' ~ 마지막 '}' 까지
-    start = cleaned.find('{')
-    end = cleaned.rfind('}')
-    if start == -1 or end == -1 or end <= start:
-        raise ValueError('출력에서 JSON 객체를 못 찾음')
-    return json.loads(cleaned[start:end + 1])
+def parse_sections(text: str) -> dict:
+    """구분자 기반 파싱. content 안에 따옴표/개행이 있어도 안 깨진다.
+
+    기대 형식:
+      ===CONTENT===
+      (본문)
+      ===REPLY===
+      (첫댓글, 비어도 됨)
+      ===TOPIC===
+      (토픽)
+      ===END===
+    """
+    def grab(start_tag: str, end_tag: str) -> str:
+        s = text.find(start_tag)
+        if s == -1:
+            return ''
+        s += len(start_tag)
+        e = text.find(end_tag, s)
+        if e == -1:
+            e = len(text)
+        return text[s:e].strip()
+
+    content = grab('===CONTENT===', '===REPLY===')
+    reply = grab('===REPLY===', '===TOPIC===')
+    topic = grab('===TOPIC===', '===END===')
+    if not topic:  # ===END=== 누락 대비
+        topic = grab('===TOPIC===', '\n\n')
+    return {'content': content, 'reply': reply, 'topic': topic.split()[0] if topic else ''}
 
 
 def main() -> int:
@@ -46,15 +63,11 @@ def main() -> int:
     args = ap.parse_args()
 
     raw = Path(args.infile).read_text(encoding='utf-8')
-    try:
-        data = extract_json(raw)
-    except (ValueError, json.JSONDecodeError) as e:
-        print(f'❌ JSON 파싱 실패: {e}\n--- 원문 앞 300자 ---\n{raw[:300]}')
-        return 1
+    data = parse_sections(raw)
 
     content = (data.get('content') or '').strip()
     if not content:
-        print('❌ content 비어있음 — 추가 안 함')
+        print(f'❌ content 비어있음 — 추가 안 함\n--- 원문 앞 400자 ---\n{raw[:400]}')
         return 1
 
     is_evening = args.slot == 'evening'

@@ -41,7 +41,14 @@ jobs:
           fi
           echo "슬롯: $SLOT"
           SIGNAL=$(cat data/team_signal.json 2>/dev/null || echo '{}')
-          claude -p "$(cat prompts/viral_writer.txt) === 참고용 team_signal(이미 내용 줬으니 파일 읽지 말 것): $SIGNAL === [출력 규칙·중요] 위 작성 원칙대로 오늘 $SLOT 슬롯 글 1개만 만든다. 파일을 직접 수정하지 말고, 코드펜스/설명 없이 JSON 객체 하나만 그대로 출력한다: {\"content\":\"본문 150-300자\",\"reply\":\"첫댓글(선택, 없으면 빈 문자열)\",\"topic\":\"AI_THREADS 또는 BUSINESS_ENTREPENEURSHIP 또는 PERSONAL_FINANCE 또는 CAREERS_JOBS\"}" > /tmp/gen_post.txt
+          claude -p "$(cat prompts/viral_writer.txt) === 참고용 team_signal(이미 내용 줬으니 파일 읽지 말 것): $SIGNAL === [출력 규칙·중요] 위 작성 원칙대로 오늘 $SLOT 슬롯 글 1개만 만든다. 파일을 직접 수정하지 말고, 아래 형식 그대로만 출력한다 (본문 안에 따옴표 써도 됨, 구분선은 정확히 그대로):
+          ===CONTENT===
+          (본문 150-300자)
+          ===REPLY===
+          (첫 댓글, 없으면 비워둠)
+          ===TOPIC===
+          (AI_THREADS 또는 BUSINESS_ENTREPENEURSHIP 또는 PERSONAL_FINANCE 또는 CAREERS_JOBS 중 하나)
+          ===END===" > /tmp/gen_post.txt
           echo "--- claude 출력 ---"; cat /tmp/gen_post.txt; echo
           python3 add_post.py --slot "$SLOT" --infile /tmp/gen_post.txt
 
