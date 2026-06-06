@@ -1,145 +1,155 @@
 {
-  "date": "2026-05-27",
-  "signal_applied": "normal — 반전형 + 숫자 훅 유지, 자사몰 실무 각도 우선",
+  "date": "2026-06-06",
+  "signal_applied": "normal — 평소대로, 숫자+반전 훅 유지, 자사몰 실무 각도 우선",
 
   "github_hot": [
     {
-      "repo": "Lum1104/Understand-Anything",
-      "stars_today": 4697,
-      "language": "TypeScript",
-      "why_hot": "2일 연속 트렌딩. 코드베이스 전체를 인터랙티브 지식 그래프로 변환 — Claude Code, Cursor, Copilot, Gemini CLI 연동. 누적 별 급증 지속 중. 'AI한테 코드 던지기 전에 구조부터 먹여라' 패러다임이 개발자들 사이에 확산 중.",
-      "post_angle": "반전형: '아직도 AI한테 코드 그냥 던지고 있음?'"
+      "repo": "obra/superpowers",
+      "stars_today": 1008,
+      "language": "Shell",
+      "why_hot": "AI 에이전트 스킬 프레임워크 + 소프트웨어 개발 방법론. Claude Code, Codex 같은 AI 코딩 도구에 반복 작업을 위임하는 방식 자체를 코드화한 프로젝트. 바이브코딩 다음 단계로 개발자 커뮤니티에 급속 확산 중. 스킬 설계 자체가 경쟁력이 된다는 논의 불붙음.",
+      "post_angle": "반전형 — AI 에이전트 쓴다고 다 같은 게 아님. 어떤 스킬을 설계하느냐가 격차임"
     },
     {
-      "repo": "affaan-m/ECC",
-      "stars_today": 1915,
-      "language": "JavaScript",
-      "why_hot": "Agent harness optimization system. 스킬·본능·메모리·보안이 결합된 Claude Code/Cursor용 에이전트 최적화 프레임워크. 빠르게 급증 중 — 에이전트 '퀄리티 컨트롤' 레이어에 대한 수요 폭발 신호.",
-      "post_angle": "어그로형: 'AI 에이전트, 빠른 건 됐고 이제 제대로 돌아가게 하는 게 문제'"
-    },
-    {
-      "repo": "hardikpandya/stop-slop",
-      "stars_today": 539,
-      "language": "Markdown/Skill",
-      "why_hot": "AI 생성 글의 패턴(슬롭)을 제거하는 스킬 파일. 'AI 글투 티 난다'는 문제에 대한 반발 도구가 오픈소스로 유행. 콘텐츠 크리에이터·마케터 관심 집중.",
-      "post_angle": "공감형: 'AI로 쓴 티 나는 글의 패턴 딱 3가지'"
-    },
-    {
-      "repo": "rohitg00/ai-engineering-from-scratch",
-      "stars_today": 2155,
+      "repo": "Panniantong/Agent-Reach",
+      "stars_today": 700,
       "language": "Python",
-      "why_hot": "AI 엔지니어링 실전 입문 자료. Google I/O 이후 새 모델·플랫폼 공부 수요 폭발. 'from scratch' 키워드가 비개발자 불안감 자극해 비개발자 RT 많음.",
-      "post_angle": "공감형: '비개발자가 AI 엔지니어링 공부해야 하는가 — 솔직한 답'"
+      "why_hot": "AI 에이전트가 Twitter, Reddit, YouTube, GitHub, 샤오홍슈 등을 API 없이 읽고 검색할 수 있게 해주는 CLI 도구. 마케터·그로스 해커들이 콘텐츠 리서치 자동화에 바로 활용 중. API 없이 플랫폼 데이터 접근하는 게 허용되는 범위인지 논쟁도 붙는 중.",
+      "post_angle": "논쟁형 — API 없이 플랫폼 긁는 AI 도구, 마케터한테 어디까지 허용되나"
+    },
+    {
+      "repo": "lfnovo/open-notebook",
+      "stars_today": 783,
+      "language": "TypeScript",
+      "why_hot": "Google NotebookLM 오픈소스 대안. 유료 전환 우려한 개발자들이 셀프호스팅 버전으로 빠르게 이동 중. 이커머스 리서치·고객 인터뷰 분석 등에 활용 가능. 빅테크 무료 전략 → 유료 전환 패턴에 대한 학습된 반응.",
+      "post_angle": "반전형 — 빅테크 AI 도구 무료로 쓰고 있음? 그 끝에 뭐가 오는지 알잖아"
+    },
+    {
+      "repo": "CopilotKit/CopilotKit",
+      "stars_today": 613,
+      "language": "TypeScript",
+      "why_hot": "React/Angular에서 AI 에이전트 UI를 직접 임베딩할 수 있는 프론트엔드 프레임워크. ML팀 없이도 자사몰·SaaS에 AI 기능 심을 수 있다는 점에서 이커머스 개발자 관심 급증.",
+      "post_angle": "실무 각도 — 자사몰에 AI 기능 넣는 게 이제 외주 안 줘도 됨"
     }
   ],
 
   "big_tech_news": [
     {
-      "source": "Google I/O 2026",
-      "topic": "Universal Cart + AP2 프로토콜 — AI 에이전트가 사용자 대신 상품 탐색·비교·결제까지 자동 처리. 쇼핑 그래프 600억 상품 연동. 상품 설명의 소재 혼용률, 실측 사이즈, 반품 조건이 AI가 읽는 핵심 신호가 됨.",
-      "angle": "반전형 — 자사몰 셀러 직격",
-      "hook_idea": "구글 에이전틱 쇼핑 나왔는데, 내 상품 설명 형식 지금 당장 바꿔야 함",
-      "relevance_score": "★★★★★",
-      "controversy": "AI 에이전트가 구매 결정을 대신하면 브랜드 스토리·감성 마케팅은 의미 없어지나? vs. AI도 결국 인간이 설정한 선호 기준으로 움직인다"
+      "source": "Anthropic",
+      "topic": "Claude 6월 2일·5일 연속 대규모 장애. claude.ai, Claude API, Claude Code, Cowork 전부 다운. capacity constraints 원인. 개발팀 500·529 에러로 워크플로우 전면 중단.",
+      "angle": "반전형",
+      "hook_idea": "AI 자동화 많이 할수록 좋다고 했는데 — Claude가 이틀 연속 죽으니까 나도 같이 죽었음. 단일 장애점이 얼마나 위험한지 이번 주에 체감함.",
+      "controversy": "AI 자동화 의존도가 높을수록 효율 vs 장애 리스크도 같이 커진다. 실무자만 느끼는 딜레마."
     },
     {
-      "source": "HackerNews (242pts)",
-      "topic": "Outsourcing + 로컬 AI가 프론티어 모델보다 경제적 — 오프쇼어 인력과 로컬 AI 모델 조합이 OpenAI/Anthropic API 비용보다 싸진다는 주장. 기업들이 프론티어 모델 의존도 낮추는 전략으로 전환.",
+      "source": "Google",
+      "topic": "Gemma 4 QAT (Quantization-Aware Training) 모델 공개. 모바일·노트북 로컬 실행 가능한 경량 LLM 최적화. HN 386포인트.",
+      "angle": "반전형",
+      "hook_idea": "Claude 다운됐을 때 뭐 썼냐고? 로컬 LLM 진지하게 다시 봤음. 클라우드 의존에서 로컬 실행으로 이동하는 흐름이 이번 장애로 가속될 것.",
+      "controversy": "클라우드 AI 의존 vs 로컬 LLM 자체 운영 — 비용·성능·리스크 균형 어디서 맞추나"
+    },
+    {
+      "source": "HackerNews 490pts + The Register",
+      "topic": "오픈소스 rsync 프로젝트에 Claude가 수백 개 커밋 기여 → AI가 버그 늘렸다 논란 → 통계 분석 결과 오히려 Claude 도입 이전 릴리즈(v3.4.1)가 역대 최악 버그율이었음이 밝혀짐.",
+      "angle": "반전형 + 논쟁형",
+      "hook_idea": "AI 코딩이 버그 늘린다는 걸 증명하려 했는데, 데이터 파보니까 AI 쓰기 전이 더 망가져 있었음. 우리가 두려워하는 방향이 틀릴 수 있다.",
+      "controversy": "AI 코딩 도구에 대한 공포가 실제 데이터보다 앞서 있는가"
+    },
+    {
+      "source": "커머스마케팅테크놀로지서밋 CMTS 2026 — 데이터라이즈 발표",
+      "topic": "데이터라이즈, 2026년 4월부터 사내 마케터 직무 폐지. AI 에이전트 25개에 OKR 부여해 마케팅 자율 운영. 에이전트가 뉴스 수집·블로그 초안 작성·카페24 자동 게시까지 담당. 도입 2주 만에 블로그 일평균 방문자 유의미하게 상승.",
       "angle": "논쟁형",
-      "hook_idea": "OpenAI 매달 쓰고 있음? 이게 더 싸질 수 있는 조합 있음",
-      "relevance_score": "★★★★",
-      "controversy": "'로컬 모델 + 아웃소싱이 더 싸다'는 주장 — 실제 퀄리티 차이를 무시한 비용 착시인가, 아니면 진짜 실무에서 쓸 수 있나?"
-    },
-    {
-      "source": "업계 연구 (Fortune, MIT Tech Review)",
-      "topic": "바이브코딩 보안 취약점 2.74배 — AI 공동 작성 코드에서 보안 취약점이 수작업 대비 2.74배 많고, 잘못된 설정이 75% 더 일반적이라는 연구 결과. 'Vibe Coding Kills Open Source' 논문도 1월 발표.",
-      "angle": "반전형 — 실무자 경고",
-      "hook_idea": "바이브코딩으로 뽑은 코드, 3개월 뒤 터지는 이유 데이터로 나왔음",
-      "relevance_score": "★★★★★",
-      "controversy": "빠른 개발 vs 장기 유지보수 — 바이브코딩은 프로토타입에만 써야 하나, 실서비스에도 OK인가?"
-    },
-    {
-      "source": "BigCommerce / Stormy AI 리포트 2026",
-      "topic": "AI 쇼핑 에이전트 전환율 4배 — 자율 쇼핑 AI 도움받은 유저가 비보조 브라우저 대비 4배 전환. 근데 OpenAI는 2026년 3월 인스턴트 체크아웃 사실상 종료하고 상품 탐색 단계로 후퇴.",
-      "angle": "반전형 — 과대평가 vs 실현 속도",
-      "hook_idea": "AI 쇼핑 에이전트 전환율 4배라는데 — OpenAI는 왜 결제에서 발 뺐나",
-      "relevance_score": "★★★★",
-      "controversy": "에이전틱 커머스 정말 준비된 건가, 아니면 선발표 후실행인가"
+      "hook_idea": "국내 이커머스 SaaS가 마케터 직무를 AI 에이전트 25개로 바꿨고 2주 결과를 공개했음.",
+      "controversy": "마케터 직무 자체를 없애는 게 가능한가 vs. AI 에이전트는 마케터의 도구일 뿐인가"
     }
   ],
 
   "hackernews_highlights": [
     {
-      "title": "Outsourcing plus local AI will soon become more economical vs. frontier labs",
-      "pts": 242,
-      "source": "signalbloom.ai",
-      "angle": "논쟁형: 프론티어 모델 비용 정당화 논쟁 — 실무 관점에서 반박 또는 동의 포스트 쓸 수 있음"
+      "title": "Did Claude increase bugs in rsync?",
+      "points": 490,
+      "url": "https://alexispurslane.github.io/rsync-analysis/",
+      "angle": "반전형 — AI 코딩 비판 글로 HN 상위권에 올랐는데, 정작 내용은 통계적으로 Claude 무죄. AI에 대한 공포가 데이터보다 앞서는 현상 자체가 포스트 각도.",
+      "korean_angle": "AI 코딩 믿을 수 있냐 논쟁 — 데이터 뜯어보니까 오히려 반대였다"
     },
     {
-      "title": "Use boring languages with LLMs",
-      "pts": 171,
-      "source": "jry.io",
-      "angle": "반전형: 'AI 코딩에는 최신 언어보다 지루하고 안정적인 언어가 낫다' — 바이브코딩 트렌드 역행 논리"
+      "title": "Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency",
+      "points": 386,
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "angle": "실무 각도 — Claude 장애 시대에 로컬 LLM이 대안이 될 수 있는가",
+      "korean_angle": "클라우드 AI 의존이 무너졌을 때 플랜 B 있음?"
     },
     {
-      "title": "Launch HN: Minicor (YC P26) — Windows desktop automations at scale",
-      "pts": 69,
-      "source": "minicor.com",
-      "angle": "자동화 각도: YC 지원 데스크톱 자동화 스타트업 등장 — RPA 시장 AI로 재편 신호"
+      "title": "My Agent Skill for Test-Driven Development",
+      "points": 211,
+      "url": "https://www.saturnci.com/my-agent-skill-for-test-driven-development.html",
+      "angle": "논쟁형 — AI 에이전트에게 코드뿐 아니라 테스트까지 맡기는 팀 등장",
+      "korean_angle": "AI한테 코드만 아니라 테스트도 맡기는 팀 vs 절대 안 된다는 팀"
+    }
+  ],
+
+  "korea_ecommerce_highlights": [
+    {
+      "topic": "MCP 도입 이커머스 실무 사고 사례: 메타 MCP 연결 후 광고비 월 100만원 → 1,000만원으로 폭증. 권한 허용 범위 설계 실패 사례로 업계 공유 중.",
+      "source": "바이라인네트워크 AI 전환 커머스 시리즈",
+      "angle": "경고형 + 논쟁형",
+      "hook_idea": "MCP로 광고 자동화했다가 일주일 만에 광고비 10배 터진 사례 — AI 에이전트 권한 범위를 잘못 설계하면 이렇게 됨. 가드레일 없는 자동화는 자동 손실임."
     },
     {
-      "title": "Agent Memory: An Anatomy",
-      "pts": 32,
-      "source": "brgsk.xyz",
-      "angle": "기술 깊이 각도: 에이전트 메모리 구조 해부 — AI 에이전트가 왜 아직 멍청한지 설명해주는 글"
+      "topic": "에이전틱 AI 기대 vs 현실: 많은 기업이 API 통합, 워크플로우 자동화, 에이전트 도입, 거버넌스 단계를 혼재하며 혼란. 같은 AI 에이전트 도입이라는 말 아래 완전히 다른 실행 단계.",
+      "source": "CIO Korea 2026 에이전틱 AI 현황 분석",
+      "angle": "반전형",
+      "hook_idea": "AI 에이전트 도입한 회사들 다 비슷한 단계일 것 같지? 실제론 같은 이름 붙이고 완전히 다른 걸 하고 있음. 어느 단계에 있는지가 경쟁력 차이임."
     }
   ],
 
   "recommended_morning": {
-    "angle": "반전형 — 자사몰 셀러 직격 + 구글 에이전틱 쇼핑",
-    "hook": "구글이 AI 에이전트 쇼핑 공개했는데, 문제는 상품 설명임.",
-    "full_draft": "구글이 AI 에이전트 쇼핑 공개했는데, 문제는 상품 설명임.\n\n이제 내 상품 페이지를 '사람'이 읽는 게 아님.\nAI 에이전트가 읽고, 비교하고, 추천 여부 결정함.\n\n근데 대부분 셀러들이 아직 사람한테 설득하는 방식으로 쓰고 있음.\n\nAI가 신호로 읽는 것들:\n① 소재 혼용률 (정확한 수치)\n② 실측 사이즈 (cm 단위)\n③ 반품 조건 (명확한 일수와 방법)\n④ 재고 수량 / 배송 가능 지역\n\n'감성 카피' '스토리텔링' 이런 거 AI는 그냥 노이즈로 처리함.\n\n지금 상품 설명 형식 안 바꾸면,\nAI 에이전트가 비교할 때 경쟁사 상품이 뜨고 내 건 안 뜸.",
-    "cta": "자사몰 운영하는 분들 — 지금 상품 설명 어떻게 쓰고 있어요?",
-    "source": "Google I/O 2026 — Universal Cart + 국내 이커머스 반응",
-    "topic_tag": "AI_THREADS",
-    "why_this": "team_signal 최고 성과 포스트 패턴 직접 반영 (자사몰 전환율, 숫자+반전 훅). 구글 I/O 발표 골든타임 (발표 8일차지만 한국 자사몰 셀러 관점 해석은 아직 적음). 댓글 유도 구조 명확."
+    "topic": "Claude 연속 장애 + AI 자동화 단일 장애점 리스크",
+    "angle": "반전형 — AI 자동화 많이 했더니 장애도 같이 커졌다",
+    "hook": "Claude가 이번 주 이틀 연속 죽었고, 나도 같이 죽었음. AI 자동화 많이 할수록 좋다고 했는데, 인프라처럼 쓰기 시작하니까 인프라처럼 다운도 됨. 의존도를 높인 만큼 취약점도 같이 쌓임.",
+    "full_draft": "Claude가 이번 주 이틀 연속 죽었고, 나도 같이 죽었음.\n\nAI 자동화 많이 할수록 좋다고 했는데\n인프라처럼 쓰기 시작하니까 인프라처럼 다운도 됨.\n\n개발 속도 자동화 → 같이 멈춤\n고객 응대 봇 → 같이 침묵\n데이터 파이프라인 → 같이 정지\n\n자동화를 많이 할수록 단일 장애점도 같이 쌓임.\n\n이번 주 Claude 장애 보면서 진지하게 생각함:\n① 의존하는 AI 서비스가 몇 개냐\n② 그게 다운됐을 때 플랜 B가 있냐\n③ 아니면 그냥 같이 멈추냐\n\n자동화 칭찬할 때 이 리스크는 항상 뒤에 붙임.",
+    "cta": "AI 도구 다운됐을 때 어떻게 버텼어요?",
+    "controversy": "AI 자동화 의존도가 높을수록 효율 vs 장애 리스크도 비례해서 커진다",
+    "source": "Anthropic Claude outage June 2~5 2026",
+    "topic_tag": "AI_THREADS"
   },
 
   "recommended_evening": {
     "language": "english",
-    "angle": "counterintuitive — AI shopping agents expose your product data, not your brand story",
-    "hook": "Google's AI shopping agent doesn't read your brand story. It reads your return policy.",
-    "full_draft": "Google's AI shopping agent doesn't read your brand story. It reads your return policy.\n\nAt I/O 2026, Google launched Universal Cart — an AI agent that autonomously discovers, compares, and buys products on behalf of users.\n\nThe shopping graph has 60 billion products.\nThe agent converts 4x better than unassisted browsing.\n\nHere's the part nobody's talking about:\n\nYour copywriter's work? Irrelevant.\nYour emotional brand narrative? Filtered out as noise.\nYour conversion-optimized hero section? Never rendered.\n\nThe agent reads:\n→ Exact materials (percentages)\n→ Precise measurements (in numbers)\n→ Return window (days + conditions)\n→ Shipping coverage\n\nDTC brands spent a decade optimizing for human psychology.\nThe next decade is optimizing for machine readability.\n\nYour product data is now your marketing.",
-    "cta": "Is your product catalog AI-agent-ready?",
-    "source": "Google I/O 2026 — Universal Cart / AP2 Protocol",
-    "topic_tag": "MARKETING",
-    "why_this": "홀수일 (27일) = 영어 저녁 포스트. MARKETING 타겟 — DTC/ecommerce 마케터에게 직접적 위협으로 프레임. '브랜드 스토리 → 머신 리더빌리티'라는 패러다임 전환은 counterintuitive claim으로 공유 가치 높음."
+    "topic": "The rsync AI bug controversy: statistical reality vs emotional reaction",
+    "angle": "counterintuitive — Everyone tried to prove AI caused more bugs. The data proved the opposite.",
+    "hook": "Developers tried to prove Claude broke rsync using data. The data showed the worst release in rsync history had zero AI commits.",
+    "full_draft": "Developers tried to prove Claude broke rsync using data.\nThe data showed the worst release in rsync history had zero AI commits.\n\nThe rsync project added hundreds of Claude-assisted commits.\nBackups broke. Community outrage. 300+ GitHub comments.\n'Please do not vibe f*** up this software.'\n\nThen someone ran the actual statistics:\n- Claude releases: p-value 46% (statistically normal)\n- The worst release ever? v3.4.1 — before Claude was used at all\n\nThe community didn't notice that one.\n\nThis isn't a story about AI coding being safe.\nIt's a story about how we process fear vs. data.\n\nWe looked for evidence that confirmed what we already believed.\nWe found it wasn't there.\nWe moved on anyway.\n\nMarketing runs on the same pattern.\nThe assumptions we protect are usually the ones we never tested.",
+    "cta": "What assumption in your stack have you never actually tested?",
+    "controversy": "Anti-AI sentiment outpacing statistical evidence — emotional reaction to AI coding vs actual performance data",
+    "source": "HackerNews 490pts — alexispurslane.github.io/rsync-analysis + The Register",
+    "topic_tag": "MARKETING"
   },
 
   "backup_morning_option": {
-    "angle": "논쟁형 — 바이브코딩 기술부채 데이터",
-    "hook": "바이브코딩으로 뽑은 코드, 보안 취약점 2.74배 많다는 연구 나왔음.",
-    "full_draft": "바이브코딩으로 뽑은 코드, 보안 취약점 2.74배 많다는 연구 나왔음.\n\n빠른 건 인정.\n근데 이게 실서비스에 그대로 들어가면:\n\n→ 보안 취약점 2.74배\n→ 잘못된 설정 75% 더 많음\n→ 3개월 뒤 아무도 이해 못 하는 코드\n\n'Vibe Coding Kills Open Source' 논문도 나옴.\nAI 생성 코드가 늘수록 오픈소스 기여자가 줄고 있다는 얘기.\n\n바이브코딩은 프로토타입까지만임.\n프로덕션 넣으면 그게 기술부채로 돌아옴.\n\n근데 아직도 '빠르게 뽑았다'를 자랑하는 사람들이 많음.",
-    "cta": "실서비스에 바이브코딩 쓰고 있으면 솔직히 말해봐",
+    "angle": "논쟁형 — 국내 마케터 직무 폐지 + AI 에이전트 25개 실험",
+    "hook": "국내 이커머스 SaaS가 마케터 직무를 없앴음. AI 에이전트 25개로 바꿨고, 2주 결과가 나왔음.",
+    "full_draft": "국내 이커머스 SaaS가 마케터 직무를 없앴음.\nAI 에이전트 25개로 바꿨고, 2주 결과가 나왔음.\n\n데이터라이즈가 4월에 한 짓:\n→ 마케터 채용 중단\n→ AI 에이전트 25개에 OKR 부여\n→ 뉴스 수집·블로그 작성·카페24 게시까지 자동\n\n2주 만에 블로그 방문자가 유의미하게 올랐다고 함.\n\n근데 나는 여기서 궁금한 게 하나 있음:\n수치가 올랐다는 건 알겠는데,\n그 콘텐츠를 실제로 읽은 사람들이 뭘 느꼈냐는 건\n아직 안 나왔음.\n\n마케터를 없앤 게 맞는 방향인지\n아니면 마케터가 AI를 쓰는 게 맞는 방향인지\n이 실험이 2026년 내내 데이터를 줄 것 같음.",
+    "cta": "마케터 없이 AI가 콘텐츠 만들면 뭐가 빠진다고 생각해?",
     "topic_tag": "AI_THREADS",
-    "why_this": "team_signal 검증된 바이브코딩 각도 재활용 + 새로운 숫자 데이터 추가. 논쟁 유발 구조로 댓글 폭발 가능성."
+    "source": "블로터 CMTS26 데이터라이즈 발표"
   },
 
   "metadata": {
+    "collected_at": "2026-06-06",
+    "agent": "trend-scout",
     "sources_checked": [
-      "GitHub Trending (github.com/trending)",
-      "HackerNews Top Stories (news.ycombinator.com)",
-      "Google I/O 2026 Blog (blog.google)",
-      "Google I/O 2026 — 100 announcements",
-      "디지털포커스 — 유니버설 카트 자사몰 분석",
-      "AI매터스 — 에이전틱 쇼핑",
-      "BigCommerce — Ecommerce AI Agents 2026",
-      "Stormy AI — Conversion Rate Report 2026",
-      "Fortune — Vibe Coding trust bottleneck",
-      "MIT Tech Review — Generative Coding 2026",
-      "나무위키 — 바이브코딩 기술부채"
-    ],
-    "generated_at": "2026-05-27T09:00:00+09:00",
-    "next_action": "recommended_morning.full_draft → posts.json 추가 또는 viral-writer에게 전달. 저녁 홀수일이므로 recommended_evening 영어 포스트도 예약."
+      "github.com/trending",
+      "news.ycombinator.com/front (2026-06-05)",
+      "alexispurslane.github.io/rsync-analysis",
+      "theregister.com — rsync AI coding controversy",
+      "byline.network — AI 전환 커머스 MCP 시리즈",
+      "bloter.net — CMTS26 데이터라이즈 마케터 폐지",
+      "cybersecuritynews.com — Claude outage June 2026",
+      "thoughtworks.com — Claude outage June 2026 infrastructure",
+      "thenationalnews.com — Claude capacity constraints",
+      "blog.google — Gemma 4 QAT release",
+      "cio.com — 에이전틱 AI 기대 vs 현실 2026"
+    ]
   }
 }
