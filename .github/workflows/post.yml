@@ -1,8 +1,9 @@
 name: 포스팅 — Threads (평일 오전)
 
 on:
-  schedule:
-    - cron: '35 1 * * 1-5'  # 평일 오전 10:35 KST (하루 1개)
+  workflow_run:
+    workflows: ["글생성 — viral-writer"]   # 글 생성/검수 완료 후 자동 발행 (시각 의존 X)
+    types: [completed]
   workflow_dispatch:
     inputs:
       slot:
@@ -16,6 +17,8 @@ permissions:
 
 jobs:
   post:
+    # 수동이거나 글생성이 성공으로 끝났을 때만
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

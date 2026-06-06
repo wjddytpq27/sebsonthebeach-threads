@@ -1,8 +1,9 @@
 name: 글생성 — viral-writer
 
 on:
-  schedule:
-    - cron: '12 1 * * 1-5'   # 평일 오전 10:12 KST (하루 1개 — reply velocity 집중)
+  workflow_run:
+    workflows: ["트렌드 — trend-scout"]   # trend 완료 후 자동 트리거 (시각 의존 X)
+    types: [completed]
   workflow_dispatch:
     inputs:
       slot:
@@ -16,6 +17,8 @@ permissions:
 
 jobs:
   write:
+    # 수동이거나 trend가 성공으로 끝났을 때만 (trend 실패 시 옛 트렌드로 헛글 방지)
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
