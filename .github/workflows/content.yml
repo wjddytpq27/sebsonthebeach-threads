@@ -45,7 +45,15 @@ jobs:
           ===TOPIC===
           (AI_THREADS 또는 BUSINESS_ENTREPENEURSHIP 또는 PERSONAL_FINANCE 또는 CAREERS_JOBS 중 하나)
           ===END===" > /tmp/gen_post.txt
-          echo "--- claude 출력 ---"; cat /tmp/gen_post.txt; echo
+          echo "--- 1차 생성 ---"; cat /tmp/gen_post.txt; echo
+          # quality-critic 팀원 검수 — 짜침/AI티/지표부정확/broadcast면 FAIL
+          VERDICT=$(claude -p "$(cat prompts/quality_critic.txt) === 검수할 글 시작 === $(cat /tmp/gen_post.txt) === 검수할 글 끝 ===")
+          echo "--- 검수 결과: $VERDICT ---"
+          if echo "$VERDICT" | grep -qi "FAIL"; then
+            echo "반려 → 피드백 반영해 1회 재생성"
+            claude -p "$(cat prompts/viral_writer.txt) === team_signal: $SIGNAL === 트렌드: $TREND === [직전 글이 이 이유로 반려됨, 반드시 고쳐서 다시 써라]: $VERDICT === 출력은 ===CONTENT=== ===REPLY=== ===TOPIC=== ===END=== 형식만, $SLOT 슬롯 글 1개." > /tmp/gen_post.txt
+            echo "--- 재생성 ---"; cat /tmp/gen_post.txt; echo
+          fi
           python3 add_post.py --slot "$SLOT" --infile /tmp/gen_post.txt
 
       - name: fact_checker 검증 (틀린 정보·과장 있으면 blocked → 발행 스킵)

@@ -28,14 +28,19 @@ def load_config():
     print("❌ 토큰 없음 — threads_config.json 파일도, THREADS_ACCESS_TOKEN/THREADS_USER_ID env도 없음")
     sys.exit(1)
 
-def post_to_threads(text: str, user_id: str, token: str, topic_tag: str = 'AI_THREADS', reply_to_id: str = None) -> dict:
-    """Threads API로 포스트 발행. 2단계: container 생성 → publish"""
+def post_to_threads(text: str, user_id: str, token: str, topic_tag: str = 'AI_THREADS', reply_to_id: str = None, image_url: str = None) -> dict:
+    """Threads API로 포스트 발행. 2단계: container 생성 → publish.
+    image_url 있으면 IMAGE 모드(공개 URL 첨부), 없으면 TEXT."""
 
     params = {
-        'media_type': 'TEXT',
         'text': text,
         'access_token': token
     }
+    if image_url and not reply_to_id:
+        params['media_type'] = 'IMAGE'
+        params['image_url'] = image_url
+    else:
+        params['media_type'] = 'TEXT'
     if topic_tag and not reply_to_id:
         params['topic_tag'] = topic_tag
     if reply_to_id:
