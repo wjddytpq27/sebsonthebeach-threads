@@ -1,0 +1,37 @@
+name: 트렌드 — trend-scout
+
+on:
+  schedule:
+    - cron: '2 1 * * *'     # 오전 10:02 KST (viral-writer 10:12 직전)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: claude CLI 설치
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: trend-scout 트렌드 수집 (웹검색 도구만 허용, --dangerously 없음)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          SIGNAL=$(cat data/team_signal.json 2>/dev/null || echo '{}')
+          claude -p "$(cat prompts/trend_scout.txt) === 참고 team_signal: $SIGNAL === [실행 규칙] 위 지침대로 오늘 AI/이커머스/자동화 트렌드를 WebSearch/WebFetch로 실제 검색해서 data/today_trend.json 파일에 저장(덮어쓰기)한다. 기존 구조 유지: {date, signal_applied, github_hot, big_tech_news, hackernews_highlights, recommended_morning, recommended_evening, metadata}. today_trend.json 외 다른 파일은 건드리지 말 것." --allowedTools WebSearch WebFetch Write Read Bash
+
+      - name: today_trend 커밋백
+        run: |
+          git config user.name "trend-bot"
+          git config user.email "bot@sebsonthebeach"
+          git add data/today_trend.json
+          git diff --staged --quiet || git commit -m "trend: $(date +'%Y-%m-%d')"
+          git push
