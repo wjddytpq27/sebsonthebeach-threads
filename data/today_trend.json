@@ -1,128 +1,100 @@
 {
-  "date": "2026-06-06",
-  "signal_applied": "normal — 평소대로, 통념 반박 훅, AI 도입 후 예상 못 한 변화 각도, 내면 변화 서술 방향 유지",
+  "date": "2026-06-08",
+  "signal_applied": "normal — ecommerce_tip 경험담+반전 소재만 수집, AI 가격/모델 뉴스 전면 제외, 연재 소재 발굴 모드. team_signal 전략 피벗: 검증된 경험담 포맷을 연재로 묶어 팔로우 동기 생성.",
 
   "github_hot": [
     {
-      "repo": "lfnovo/open-notebook",
-      "stars_today": 783,
-      "language": "TypeScript",
-      "why_hot": "Google NotebookLM 오픈소스 대안. 유료 전환 우려한 개발자들이 셀프호스팅 버전으로 빠르게 이동 중. 문서 분석·고객 인터뷰 정리 등 리서치 워크플로우에 바로 적용 가능. 빅테크 무료 전략 → 유료 전환 패턴에 학습된 반응으로 커뮤니티가 선제적 탈출 시작.",
-      "post_angle": "반전형 — 빅테크 AI 도구 지금 무료로 쓰고 있음? 그 끝에 뭐가 오는지 알잖아. NotebookLM 오픈소스로 갈아탄 이유."
-    },
-    {
-      "repo": "Panniantong/Agent-Reach",
-      "stars_today": 700,
-      "language": "Python",
-      "why_hot": "AI 에이전트가 Twitter, Reddit, YouTube, GitHub, 샤오홍슈를 API 없이 읽고 검색하는 CLI 도구. API 비용 없이 플랫폼 데이터에 접근하는 게 허용 범위인지 법적 논쟁 불붙음. 마케터·그로스 해커들이 콘텐츠 리서치 자동화로 즉시 활용 중.",
-      "post_angle": "논쟁형 — API 없이 소셜 플랫폼 긁는 AI 도구, 마케터한테 어디까지 허용되나. 하루에 별 700개 받은 이 repo의 논쟁."
-    },
-    {
-      "repo": "CopilotKit/CopilotKit",
-      "stars_today": 613,
-      "language": "TypeScript",
-      "why_hot": "React/Angular에서 AI 에이전트 UI를 직접 임베딩하는 프론트엔드 프레임워크. AG-UI 프로토콜 제작사. ML팀 없이도 서비스에 AI 기능을 심을 수 있다는 점에서 인디·소규모 이커머스 개발자 관심 급증.",
-      "post_angle": "실무 각도 — 외주 없이 서비스에 AI 기능 직접 심는 시대. 스타트업 개발자 진짜 쓰는 스택."
-    },
-    {
-      "repo": "MemPalace/mempalace",
-      "stars_today": 441,
-      "language": "Python",
-      "why_hot": "오픈소스 AI 메모리 시스템 중 벤치마크 최상위. AI 에이전트의 장기 기억 문제를 해결하는 도구. 에이전트 기반 자동화 워크플로우에서 '컨텍스트 유지' 이슈가 실무 병목으로 부각되면서 관심 급등.",
-      "post_angle": "반전형 — AI 에이전트 도입하고 나서 제일 막히는 게 뭔지 알아? 기억 못 하는 거임. 이게 왜 실무 병목인지."
+      "repo": "N/A",
+      "stars_today": 0,
+      "language": "N/A",
+      "why_hot": "오늘 GitHub Trending에서 이커머스/셀러 실무 통과 기준(자사몰 운영에 직접 영향 + 경험담 작성 가능 + 3편 시리즈 가능) 충족 repo 없음. AI 툴 위주 트렌딩이나 모두 셀러 실무와 연결 불가 판정으로 탈락.",
+      "post_angle": null
     }
   ],
 
   "big_tech_news": [
     {
-      "source": "S&P Global / Ars Technica (HN 1249pts)",
-      "topic": "S&P 500이 SpaceX·OpenAI·Anthropic의 패스트트랙 편입 제안을 전면 거부. 수익성 요건(4분기 연속 GAAP 흑자) 면제 불가. OpenAI·Anthropic은 2027년 이전 편입 불가 전망. 이로 인해 패시브 펀드 강제 매수 $270억 증발.",
-      "angle": "반전형 + 논쟁형",
-      "hook_idea": "AI 회사들이 S&P 500에 못 들어가는 이유 — 수익이 없어서. OpenAI·Anthropic 밸류에이션은 수백억 달러인데 GAAP 기준으로는 아직 적자 회사임. 마케팅이 앞서가는 현실.",
-      "controversy": "AI 기업 밸류에이션 vs 실제 수익성 괴리 — 하이프인가 실제 가치인가"
+      "source": "카페24 2026년 6월 정책",
+      "topic": "카페24 퀵서버호스팅 월 1만원 인상 (Quick 스타트업 Pro 8만→9만원 등). 동시에 카페24 PRO 출시로 'AI가 상세페이지 자동 생성·CS 자동화·운영 전담' 서비스 등장. 운영 비용 줄이는 도구 내놓으면서 인프라 비용은 올리는 구조.",
+      "angle": "반전형 + ecommerce_tip",
+      "hook_idea": "카페24가 이번 달 호스팅 비용 올렸음. 근데 같은 달에 AI로 운영비 줄이는 서비스도 냈음. 셀러 입장에서 뭘 먼저 계산해야 하는지.",
+      "series_potential": "1편: 카페24 비용 구조 실제로 계산해봤더니 — 월 얼마나 나가는지 셀러들 모름\n2편: 카페24 PRO 써봤는데 — AI 상세페이지 자동 생성, 진짜 쓸만한가\n3편: 자사몰 플랫폼 비용 vs 오픈마켓 수수료, 내 상황에 맞는 선택은",
+      "controversy": "플랫폼이 AI 운영 지원 서비스 내면서 수수료 수익 모델로 전환 — 셀러에게 장기적으로 유리한가 불리한가"
     },
     {
-      "source": "Meta / TechCrunch + Krebs on Security",
-      "topic": "Meta AI 지원 챗봇이 해킹 도구로 악용됨. 해커가 Meta AI에게 '계정에 이메일 추가해달라'고 요청 → 챗봇이 인증 코드 발송 → 계정 탈취. 피해자 20,225명 확인. 오바마 시대 백악관 계정 포함. 4월 17일부터 6월 초까지 지속.",
-      "angle": "경고형 + 논쟁형",
-      "hook_idea": "Meta AI한테 '이 계정에 이메일 추가해줘'라고 했더니 실제로 해줬음. 내 계정이 아닌데. AI 고객지원 챗봇의 권한 설계 실패가 2만 명 해킹으로 이어진 실제 사례.",
-      "controversy": "AI 고객지원 자동화할수록 보안 취약점도 자동화된다 — 어디까지 AI에게 권한을 줄 수 있나"
+      "source": "쿠팡 수수료 체계 2026 / 패션 자사몰 이탈",
+      "topic": "쿠팡 결제수수료 2.9% 별도 분리로 실질 수수료 부담 증가. 자사몰 수수료 5~10% 대비 쿠팡 13~18% 차이 부각. 패션기업들 자사몰로 반격 시작. 그러나 자사몰 전환 실패 사례도 동시에 증가 — 광고 끊으면 매출 제자리.",
+      "angle": "반전형 — 자사몰이 무조건 답이 아닌 이유",
+      "hook_idea": "쿠팡 떠나서 자사몰 했는데 망한 얘기. 수수료 아꼈는데 광고비가 그걸 다 잡아먹음.",
+      "series_potential": "1편: 쿠팡 수수료 진짜 계산법 — 셀러들이 모르는 숨겨진 비용\n2편: 자사몰 만들었는데 손님이 없음 — 플랫폼 떠나기 전 확인해야 할 것\n3편: 쿠팡+자사몰 둘 다 하는 셀러들이 실제로 쓰는 구조",
+      "controversy": "자사몰 vs 플랫폼 — 수수료 절약분보다 마케팅 비용이 더 크게 나온다는 실무자 증언 vs 장기적으로 자산이 된다는 반론"
     },
     {
-      "source": "HackerNews Ask HN 502pts",
-      "topic": "'GenAI로 'oh shit' 순간이 언제였나?' 스레드 502포인트 달성. 실무자들이 꼽은 순간: SaaS 가격 2.4배 인상 → 하루 만에 셀프호스팅 클론 완성 / HVAC 고장 진단 → $5 부품으로 수리비 수백 달러 절약 / 피아노 펌웨어 해킹으로 공식 지원 대기 없이 1시간 내 복구.",
-      "angle": "반전형",
-      "hook_idea": "AI 써보면서 진짜로 '이게 되네' 했던 순간이 언제였어? HN에 500명이 답한 내용 — 다들 비슷한 포인트에서 터짐.",
-      "controversy": "AI 활용의 실제 가치는 거창한 곳이 아니라 개인 단위 문제 해결에서 나온다는 반론"
+      "source": "네이버 쇼핑 카테고리 개편 2026년 4월",
+      "topic": "2026년 4월 말 네이버 쇼핑 식품·가구·패션 등 주요 카테고리 세분화·통합. 자동 이관 오류로 엉뚱한 카테고리 배정된 상품들 노출 급감 사례 발생. AI가 카테고리 정확도·속성값을 종합 판단하는 구조로 바뀌면서 키워드 도배 전략 무효화.",
+      "angle": "경험담 + 반전형",
+      "hook_idea": "4월에 갑자기 매출 반 토막 난 셀러들 있음. 네이버가 카테고리 바꾼 건데 본인은 아무것도 안 했음.",
+      "series_potential": "1편: 네이버 카테고리 개편에 내 상품이 엉뚱한 곳에 배정된 경험\n2편: 네이버 검색 알고리즘, 이제 키워드 아니라 뭘 보는가 — 클릭 후 체류 시간, 리뷰 내용\n3편: 상품명 키워드 채우던 시대 끝 — 지금 스마트스토어 노출 실제로 어떻게 올리나",
+      "controversy": "플랫폼 알고리즘 변경에 셀러가 대응할 수 있는 방법이 있는가 vs 플랫폼 의존 구조 자체가 문제"
     },
     {
-      "source": "Google Pay / SpaceX (HN 353pts)",
-      "topic": "Google이 SpaceX 스타링크 위성 컴퓨트에 월 9억 2천만 달러 지불 계약. AI 인프라 수요가 지상 데이터센터를 초과하는 시대 도래 예고.",
-      "angle": "숫자형 훅",
-      "hook_idea": "Google이 SpaceX한테 한 달에 1조 원 넘게 컴퓨트 비용으로 냄. AI 인프라 비용이 어디까지 갔는지 숫자로 보면 다시 보임.",
-      "controversy": "AI 컴퓨트 비용 증가가 결국 서비스 가격으로 전가된다 — 지금 무료 AI 서비스의 지속 가능성"
+      "source": "카페24 예비창업자 상담 551건 분석 / ZDNet Korea 2026-06-08",
+      "topic": "카페24 분석: 예비 창업자 57%가 쇼핑몰 미경험자. 가장 큰 어려움은 '무엇을 해야 할지 모르는 것'(401건). PG 가입·사업자 인증이 2위. AI 활용 제작 어려움도 64건으로 4위 진입.",
+      "angle": "공감형 + 반전형 — 기술 장벽보다 막연함이 더 큰 장벽",
+      "hook_idea": "자사몰 시작 못 하는 이유 1위가 기술 모름이 아니었음. '뭘 해야 하는지 모름'이었음.",
+      "series_potential": "1편: 자사몰 시작하려다 막힌 곳 — 나만 이런 게 아니었음\n2편: PG 가입이 왜 이렇게 어려운가 — 처음 셀러가 겪는 실제 벽\n3편: AI로 상세페이지 만들어봤는데 — 초보 셀러가 쓸 수 있는 수준인가",
+      "controversy": "자사몰 진입 장벽이 낮아지고 있다 vs 여전히 실무 운영 설계가 없으면 다 무너진다"
     }
   ],
 
   "hackernews_highlights": [
     {
-      "title": "Ask HN: What was your 'oh shit' moment with GenAI?",
-      "points": 502,
-      "url": "https://news.ycombinator.com/item?id=48406174",
-      "angle": "실무 반전형 — 고장 수리, SaaS 탈출, 펌웨어 해킹 등 거창하지 않은 개인 단위 문제 해결에서 AI 가치가 터졌다는 500명 증언",
-      "korean_angle": "AI 써서 제일 놀란 순간, 대단한 게 아니었음. 그냥 내 문제 해결해줬을 때였음"
-    },
-    {
-      "title": "Ask HN: Why is the HN crowd so anti-AI?",
-      "points": 300,
-      "url": "https://news.ycombinator.com/item?id=48420827",
-      "angle": "논쟁형 — AI 전문가 커뮤니티에서도 AI 피로감·반감 확산. 하이프 vs 실용 논쟁이 커뮤니티 내부에서도 분열 중",
-      "korean_angle": "AI 가장 많이 쓰는 개발자들이 AI에 제일 회의적이라는 역설"
-    },
-    {
-      "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
-      "points": 1249,
-      "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
-      "angle": "반전형 — 세계 최고 밸류에이션 AI 기업들이 수익성 기준을 못 넘어서 S&P 500 입성 불가. 하이프와 실적의 괴리",
-      "korean_angle": "OpenAI 밸류에이션 수백조 원인데 S&P 500에 못 들어가는 이유 — 적자 회사라서"
+      "title": "Dynamic Pricing in B2B ECommerce in 2026",
+      "points": 0,
+      "url": "https://news.ycombinator.com/item?id=47919763",
+      "angle": "탈락 — 원문 페이지 접근 불가(삭제됨). B2B 이커머스 다이나믹 프라이싱 주제이나 국내 셀러 실무 경험담 연결 불충분으로 보류.",
+      "korean_angle": null
     }
   ],
 
   "recommended_morning": {
-    "topic": "Meta AI 챗봇이 2만 명 계정 해킹 도구가 된 사건 — AI 고객지원 자동화의 권한 설계 실패",
-    "angle": "반전형 + 경고형 — AI 편의성과 보안 취약점은 같은 구멍에서 나온다",
-    "hook": "Meta AI한테 '이 계정에 이메일 추가해줘'라고 했더니 해줬음. 내 계정이 아닌데.",
-    "controversy": "AI 고객지원 자동화할수록 보안 구멍도 자동화된다. AI에게 얼마나 많은 권한을 줄 수 있나 — 찬반 확실히 갈리는 주제.",
-    "source": "Meta Instagram AI chatbot hack June 2026 — TechCrunch, Krebs on Security",
-    "topic_tag": "AI_THREADS"
+    "topic": "쿠팡 떠나서 자사몰 했는데 광고비에 다 잡아먹힌 경험담",
+    "angle": "ecommerce_tip — 경험담 + 반전. 수수료 아끼려고 자사몰 만들었더니 광고비가 수수료보다 많이 나온 역설.",
+    "hook": "쿠팡 수수료 15% 아끼려고 자사몰 만들었는데 광고비로 20% 더 나갔음.",
+    "series_potential": "1편: 쿠팡 떠나서 자사몰 했는데 망한 얘기 (오늘)\n2편: 그래서 다시 쿠팡 들어간 셀러 vs 버티고 자사몰 키운 셀러 — 뭐가 달랐나\n3편: 자사몰+플랫폼 동시 운영, 실제로 어떻게 굴리는가",
+    "controversy": "자사몰 전환이 장기적 자산인가 vs 광고 의존 구조만 옮기는 것인가 — 셀러들 사이 실제 논쟁",
+    "source": "쿠팡 수수료 체계 2026, 패션기업 자사몰 이탈 사례, 자사몰 실패 원인 분석",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
 
   "recommended_evening": {
-    "language": "english",
-    "topic": "OpenAI and Anthropic can't enter the S&P 500 — because they're losing money",
-    "angle": "counterintuitive — The most hyped companies in tech history are officially unprofitable by GAAP standards",
-    "hook": "OpenAI and Anthropic are worth hundreds of billions. They're also blocked from the S&P 500. Reason: unprofitable.",
-    "controversy": "AI hype vs actual financial viability — the valuation vs profitability gap that investors are ignoring",
-    "source": "S&P Global rejects profitability waiver for OpenAI/Anthropic — Ars Technica HN 1249pts June 2026",
-    "topic_tag": "MARKETING"
+    "topic": "네이버 쇼핑 카테고리 개편으로 매출 반토막 난 셀러 경험담",
+    "angle": "반전형 + 경험담 — 내가 아무것도 안 했는데 플랫폼이 내 상품을 엉뚱한 카테고리에 넣어버린 이야기. 플랫폼 의존 리스크의 실체.",
+    "hook": "4월에 아무것도 안 했는데 매출이 반으로 줄었음. 네이버가 내 상품 카테고리를 바꾼 거였음.",
+    "series_potential": "1편: 네이버 카테고리 개편, 나는 뒤늦게 알았음 (오늘)\n2편: 네이버 검색 알고리즘, 이제 키워드보다 체류 시간 본다 — 내가 바꾼 것들\n3편: 플랫폼 정책 변경에 덜 흔들리는 스토어 구조 만드는 법",
+    "controversy": "플랫폼 알고리즘 변경에 셀러는 무력한가 vs 데이터 기반 대응이 가능하다",
+    "source": "네이버 쇼핑 카테고리 개편 2026년 4월, 아이보스 커뮤니티 셀러 반응",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
 
   "metadata": {
-    "collected_at": "2026-06-06T10:00:00+09:00",
+    "collected_at": "2026-06-08T10:00:00+09:00",
     "agent": "trend-scout",
     "sources_checked": [
-      "news.ycombinator.com (front page 2026-06-06)",
-      "github.com/trending (2026-06-06)",
-      "arstechnica.com — S&P 500 rejects OpenAI/Anthropic June 2026",
-      "techcrunch.com — Meta Instagram AI chatbot hack June 2026",
-      "krebsonsecurity.com — Meta AI chatbot account takeover",
-      "this.weekinsecurity.com — Meta AI chatbot hack scale",
-      "bigcommerce.com — ecommerce AI agents 2026",
-      "commercetools.com — 7 AI trends agentic commerce 2026",
-      "klaviyo.com — marketing automation trends 2026",
-      "i-boss.co.kr — 2026 이커머스 마케팅 트렌드",
-      "cio.com — 에이전틱 AI 기대 vs 현실 2026",
-      "mlq.ai — S&P 500 rejects SpaceX OpenAI Anthropic"
+      "news1.kr — 카페24 종합 e커머스 플랫폼 전환 2026",
+      "shopnotice.cafe24.com — 카페24 6월 정책 변경",
+      "zdnet.co.kr — 카페24 예비창업자 상담 551건 분석 2026-06-08",
+      "seoul.co.kr — 카페24 PRO 이커머스 운영 비용 절감 2026-01-26",
+      "zdnet.co.kr — 카페24 PRO 쇼핑몰 디자인 자동화 2026-04-17",
+      "oscsnm.com — 쿠팡 판매자 수수료 2026",
+      "ebn.co.kr — 패션업계 자사몰 반격 시작",
+      "ibrandnews.com — 자사몰 구축 운영 설계 실패 이유",
+      "i-boss.co.kr — 네이버 쇼핑 카테고리 개편 2026 아이보스 커뮤니티",
+      "storeartmagazine.com — 네이버 쇼핑 검색 알고리즘 2026",
+      "youthassembly.kr — 2026 이커머스 전망 셀러 구조",
+      "poomgo.com — 국내 이커머스 순위 2026 전략",
+      "news.ycombinator.com — HN ecommerce 2026 (탈락 다수)",
+      "github.com/trending — 2026-06-08 (셀러 실무 통과 기준 충족 repo 없음)"
     ]
   }
 }
