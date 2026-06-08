@@ -218,5 +218,13 @@
     "evening": true,
     "fact_checked": true,
     "fact_check_status": "pass"
+  },
+  {
+    "date": "2026-06-08",
+    "content": "셀러한테만 푸는 자사몰 전환 실수 시리즈 1편.\n\n쿠팡 수수료 15% 아까워서 자사몰 만들었음. 6개월 뒤 광고비 정산해봤더니 수수료보다 20%p 더 나가 있었음.\n\n쿠팡은 수수료 대신 트래픽을 줬던 거임. 자사몰은 그 트래픽을 내 돈으로 사야 했는데, 그 비용이 수수료보다 컸음.\n\n2편엔 그래도 자사몰 버티면서 뭘 바꿨는지 — 내일 올림.",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "수수료 아끼려다 광고비에 더 잡아먹히는 게 자사몰 전환 1년차 거의 공통 패턴임. 시리즈 예고: 1편 실수 → 2편 전환점 → 3편 지금 구조.",
+    "fact_checked": true,
+    "fact_check_status": "pass"
   }
 ]
