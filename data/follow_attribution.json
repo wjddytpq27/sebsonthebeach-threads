@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09",
+  "updated_at": "2026-06-10",
   "daily_deltas": [
     {
       "date": "2026-05-25",
@@ -60,6 +60,11 @@
       "date": "2026-06-09",
       "followers": 164,
       "delta": 1
+    },
+    {
+      "date": "2026-06-10",
+      "followers": 164,
+      "delta": 0
     }
   ],
   "follow_drivers": [
@@ -76,8 +81,8 @@
       "post_date": "2026-06-04",
       "text_preview": "콘텐츠 마케팅 1년 하면서 배운 것:  처음엔 모두에게 말하려 했음 → 아무도 안 봄 셀러들한테만 말하기 시",
       "content_type": "ecommerce_tip",
-      "engagement_score": 38,
-      "views": 1275,
+      "engagement_score": 39,
+      "views": 1277,
       "follower_delta_next_day": 4,
       "attribution_confidence": "high"
     },
