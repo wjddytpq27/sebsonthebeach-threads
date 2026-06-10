@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10",
+  "updated_at": "2026-06-11",
   "daily_deltas": [
     {
       "date": "2026-05-25",
@@ -63,6 +63,11 @@
     },
     {
       "date": "2026-06-10",
+      "followers": 164,
+      "delta": 0
+    },
+    {
+      "date": "2026-06-11",
       "followers": 164,
       "delta": 0
     }
