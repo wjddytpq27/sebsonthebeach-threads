@@ -35,14 +35,14 @@ def content_from_posts(slot: str) -> str:
     return (p.get('content', '') if p else '')
 
 TEMPLATE = """<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><style>
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 :root {{
   --bg-0: oklch(22% 0.04 250); --bg-1: oklch(30% 0.06 255);
   --ink: oklch(97% 0.01 250); --muted: oklch(72% 0.02 250); --accent: oklch(80% 0.17 165);
 }}
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 body {{
-  width:1080px; height:1080px; font-family:'Pretendard',system-ui,sans-serif;
+  width:1080px; height:1080px;
+  font-family:'Apple SD Gothic Neo','Noto Sans CJK KR','Noto Sans KR','Malgun Gothic',sans-serif;
   background:radial-gradient(120% 120% at 15% 10%, var(--bg-1), var(--bg-0) 60%);
   color:var(--ink); display:flex; flex-direction:column; justify-content:space-between;
   padding:96px 88px; position:relative; overflow:hidden;
@@ -51,7 +51,7 @@ body {{
 body::after {{ content:''; position:absolute; inset:0;
   background:radial-gradient(60% 40% at 90% 95%, oklch(80% 0.17 165 / 0.18), transparent 70%); }}
 .tag {{ font-size:26px; font-weight:600; letter-spacing:0.18em; color:var(--accent); text-transform:uppercase; }}
-.hook {{ font-size:{hook_size}px; font-weight:800; line-height:1.18; letter-spacing:-0.02em; }}
+.hook {{ font-size:{hook_size}px; font-weight:700; line-height:1.18; letter-spacing:-0.02em; }}
 .sub {{ font-size:38px; font-weight:500; line-height:1.5; color:var(--muted); margin-top:36px; max-width:84%; }}
 .foot {{ display:flex; align-items:center; gap:18px; font-size:30px; font-weight:600; }}
 .dot {{ width:14px; height:14px; border-radius:50%; background:var(--accent); }}
