@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-11",
+  "updated_at": "2026-06-12",
   "daily_deltas": [
-    {
-      "date": "2026-05-25",
-      "followers": 153,
-      "delta": 0
-    },
     {
       "date": "2026-05-26",
       "followers": 158,
@@ -70,6 +65,11 @@
       "date": "2026-06-11",
       "followers": 164,
       "delta": 0
+    },
+    {
+      "date": "2026-06-12",
+      "followers": 165,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -99,6 +99,15 @@
       "views": 254,
       "follower_delta_next_day": 1,
       "attribution_confidence": "medium"
+    },
+    {
+      "post_date": "2026-06-11",
+      "text_preview": "셀러한테만 푸는 노출 관리 시리즈 3편 중 1편  스마트스토어 상품 10개 올려놓고 6개월 방치한 적 있음.",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 13,
+      "views": 246,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
     },
     {
       "post_date": "2026-05-24",
@@ -154,9 +163,9 @@
   },
   "content_type_avg_delta": {
     "ai_tech": 0.6666666666666666,
-    "ecommerce_tip": 2.5
+    "ecommerce_tip": 2.0
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 1.12,
+  "avg_followers_per_post": 1.11,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"Schools taught us y = ax + b. So we thin...\""
 }
