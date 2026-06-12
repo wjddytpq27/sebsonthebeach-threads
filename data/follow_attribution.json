@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-12",
+  "updated_at": "2026-06-13",
   "daily_deltas": [
-    {
-      "date": "2026-05-26",
-      "followers": 158,
-      "delta": 5
-    },
     {
       "date": "2026-05-27",
       "followers": 158,
@@ -70,6 +65,11 @@
       "date": "2026-06-12",
       "followers": 165,
       "delta": 1
+    },
+    {
+      "date": "2026-06-13",
+      "followers": 166,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -104,8 +104,17 @@
       "post_date": "2026-06-11",
       "text_preview": "셀러한테만 푸는 노출 관리 시리즈 3편 중 1편  스마트스토어 상품 10개 올려놓고 6개월 방치한 적 있음.",
       "content_type": "ecommerce_tip",
-      "engagement_score": 13,
-      "views": 246,
+      "engagement_score": 14,
+      "views": 292,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-06-12",
+      "text_preview": "셀러한테만 푸는 스마트스토어 생존 시리즈 3편 중 1편  상품 50개 올려놓고 6개월 뒀음. \"상품 많을수록",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 6,
+      "views": 270,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
@@ -163,9 +172,9 @@
   },
   "content_type_avg_delta": {
     "ai_tech": 0.6666666666666666,
-    "ecommerce_tip": 2.0
+    "ecommerce_tip": 1.75
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 1.11,
+  "avg_followers_per_post": 1.1,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"Schools taught us y = ax + b. So we thin...\""
 }
