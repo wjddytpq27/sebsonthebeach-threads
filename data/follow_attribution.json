@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-14",
+  "updated_at": "2026-06-15",
   "daily_deltas": [
-    {
-      "date": "2026-05-27",
-      "followers": 158,
-      "delta": 0
-    },
     {
       "date": "2026-05-28",
       "followers": 157,
@@ -70,6 +65,11 @@
       "date": "2026-06-13",
       "followers": 166,
       "delta": 1
+    },
+    {
+      "date": "2026-06-15",
+      "followers": 167,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -113,8 +113,8 @@
       "post_date": "2026-06-12",
       "text_preview": "셀러한테만 푸는 스마트스토어 생존 시리즈 3편 중 1편  상품 50개 올려놓고 6개월 뒀음. \"상품 많을수록",
       "content_type": "ecommerce_tip",
-      "engagement_score": 6,
-      "views": 270,
+      "engagement_score": 9,
+      "views": 411,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
