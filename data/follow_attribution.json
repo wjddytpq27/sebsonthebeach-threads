@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-15",
+  "updated_at": "2026-06-16",
   "daily_deltas": [
-    {
-      "date": "2026-05-28",
-      "followers": 157,
-      "delta": -1
-    },
     {
       "date": "2026-05-29",
       "followers": 157,
@@ -70,6 +65,11 @@
       "date": "2026-06-15",
       "followers": 167,
       "delta": 1
+    },
+    {
+      "date": "2026-06-16",
+      "followers": 168,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -115,6 +115,15 @@
       "content_type": "ecommerce_tip",
       "engagement_score": 9,
       "views": 411,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-06-15",
+      "text_preview": "셀러한테만 푸는 스마트스토어 효율 시리즈 3편 중 1편  스마트스토어 처음 시작할 때 상품 많이 올릴수록 노",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 7,
+      "views": 301,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
@@ -172,9 +181,9 @@
   },
   "content_type_avg_delta": {
     "ai_tech": 0.6666666666666666,
-    "ecommerce_tip": 1.75
+    "ecommerce_tip": 1.6
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 1.1,
+  "avg_followers_per_post": 1.09,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"Schools taught us y = ax + b. So we thin...\""
 }
