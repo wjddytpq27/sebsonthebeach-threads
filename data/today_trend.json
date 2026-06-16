@@ -1,159 +1,138 @@
 {
-  "date": "2026-06-15",
-  "signal_applied": "normal — 통념 반박 질문형 소재만 통과. 시리즈/영어/이미지/2개 업로드 소재 수집 금지. 오늘 뉴스 + 실무 직결 기준.",
+  "date": "2026-06-16",
+  "signal_applied": "normal — 통념 반박 질문형 포맷 전환 (2026-06-14 성과 반영). 셀러 실무 직결 + 통념 반박 + 질문형 포스트 가능 3조건 동시 충족 소재만 통과. 시리즈/영어/이미지/2개 동시 업로드 소재 수집 금지.",
   "github_hot": [
     {
-      "repo": "NVIDIA/SkillSpector",
-      "stars_today": 964,
-      "why_hot": "AI 에이전트 스킬의 보안 취약점·악성 패턴을 자동 탐지하는 스캐너. AI 에이전트 도입 기업이 늘면서 보안 리스크 관심 급증.",
-      "conventional_wisdom": "AI 자동화 도구는 일단 붙여넣고 쓰면 된다 — 보안은 나중 문제다.",
-      "challenge": "NVIDIA가 직접 만든 SkillSpector는 AI 에이전트 스킬에 심어진 악성 코드와 데이터 유출 패턴을 사전 탐지한다. 하루 만에 별 964개 — 기업들이 이미 이 리스크를 실감하고 있다는 신호다.",
-      "question_format": "AI 자동화 도구 그냥 가져다 쓰고 있지?\n근데 실제론 내부 데이터 유출 패턴이 심어진 케이스가 나오고 있어.\nNVIDIA가 오늘 이 문제만 다루는 툴 냈는데 하루에 별 1000개 찍혔어.",
-      "post_angle": "이커머스 셀러 AI 자동화 도구 보안 검증 누락 각도로 재해석 가능하나 직결성 낮음",
-      "pass_filter": false,
-      "pass_fail_reason": "이커머스/셀러 실무 직결성 부족 — AI 보안은 개발자 영역에 가까움"
-    },
-    {
-      "repo": "andrewyng/aisuite",
-      "stars_today": 291,
-      "why_hot": "앤드류 응(Andrew Ng)이 만든 멀티 AI 프로바이더 통합 인터페이스. OpenAI, Anthropic, Gemini 등을 코드 한 줄로 전환 가능. 벤더 락인 탈출 도구.",
-      "conventional_wisdom": "ChatGPT 하나만 쓰면 충분하다 — 어차피 AI는 다 비슷하다.",
-      "challenge": "실무 비교에서 Claude는 한국어 뉘앙스, GPT-4o는 영어 SEO 최적화, Gemini는 이미지 캡셔닝에 각각 우세하다는 결과가 속속 나오고 있다. 상품 설명, 광고 문구, 이미지 태깅을 AI 하나로 다 처리하면 어느 하나에서 품질이 떨어진다.",
-      "question_format": "AI 하나만 쓰고 있지?\n근데 상품 설명 쓸 때랑 광고 문구 쓸 때 결과가 다른 AI가 더 잘 나와.\n앤드류 응이 이걸 코드 한 줄로 전환하는 툴 냈는데 오늘 별 300개 찍혔어.",
-      "post_angle": "셀러가 AI 하나만 쓰는 통념 반박 — AI 다중 사용이 실무 효율을 올리는 각도",
+      "repo": "Panniantong/Agent-Reach",
+      "stars_today": 1100,
+      "why_hot": "AI 에이전트가 Twitter, Reddit, YouTube, GitHub 등 인터넷 소스에 CLI 하나로 접근하는 통합 인터페이스. 마케터와 셀러가 경쟁사 동향 자동 수집에 쓰기 시작하면서 급상승.",
+      "conventional_wisdom": "AI로 경쟁사 모니터링은 큰 기업이나 하는 거고 셀러는 수동으로 확인해야 한다.",
+      "challenge": "오늘 GitHub에서 별 1100개 받은 이 도구는 경쟁 셀러 리뷰, 커뮤니티 언급, 소셜 반응을 AI가 알아서 수집하고 요약한다. CLI 한 줄로 설정하며 비용은 사실상 0원이다.",
+      "question_format": "경쟁사 동향 직접 검색해서 보고 있지?\n근데 오늘 GitHub에서 별 1100개 받은 이 도구는 AI가 알아서 긁어와.\n셀러도 쓸 수 있는 방식으로 정리해봤어.",
       "pass_filter": true,
-      "pass_fail_reason": "이커머스 상품 설명/광고 자동화 직결, 통념(하나면 충분) 반박 가능, 질문형 포스트 각도 충분"
+      "pass_fail_reason": "경쟁 모니터링 자동화라는 셀러 실무 직결 각도. 통념(셀러는 수동 확인) 반박 가능. 질문형 포스트 작성 용이"
     },
     {
-      "repo": "shiyu-coder/Kronos",
-      "stars_today": 244,
-      "why_hot": "금융 시장 언어 분석 특화 AI 파운데이션 모델. 가격 예측과 트렌드 분석 특화.",
-      "conventional_wisdom": "AI로 시장 트렌드 분석은 전문가 영역 — 일반 셀러가 쓸 수 없다.",
-      "challenge": "금융 시장용이지만 구조는 이커머스 가격 트렌드·수요 예측에 동일하게 적용 가능. 실제로 쿠팡 카탈로그 가격 변동 패턴 분석에 유사 모델이 적용된 사례가 해외에서 나오고 있다.",
-      "question_format": null,
-      "post_angle": "이커머스 가격 전략 AI 자동화 각도로 재해석 가능하나 소재가 너무 기술적임",
+      "repo": "rohitg00/ai-engineering-from-scratch",
+      "stars_today": 562,
+      "why_hot": "이론 없이 구현부터 들어가는 AI 엔지니어링 커리큘럼. 개발자 비전공 창업자들이 급격히 유입되면서 인기.",
+      "conventional_wisdom": "AI 도구는 개발자가 아니면 직접 구현하기 어렵고 셀러는 완성된 SaaS만 쓸 수 있다.",
+      "challenge": "이 repo는 파이썬 기초만 알면 RAG, 에이전트, 자동화 파이프라인을 직접 구축하도록 설계됐다. 실제로 이커머스 셀러가 월 30만원짜리 SaaS 대신 직접 만든 가격 모니터링 봇을 쓰는 사례가 이 커뮤니티에서 나오고 있다.",
+      "question_format": "AI 자동화 구현은 개발자만 한다고 생각하지?\n근데 파이썬 기초만 있으면 가격 모니터링 봇 직접 만들 수 있어.\nSaaS 월 30만원 내는 거랑 직접 만드는 거 차이 계산해봤어?",
       "pass_filter": false,
-      "pass_fail_reason": "셀러 실무 직결성 낮고 질문형 포스트로 쓰기 어려운 기술 소재"
+      "pass_fail_reason": "개발 직접 구현 각도는 셀러보다 개발자 타겟에 가깝고, team_signal에서 AI 키워드 hit_rate 0.0이므로 AI 각도 낮추기 지시에 따라 제외"
+    },
+    {
+      "repo": "chatwoot/chatwoot",
+      "stars_today": 431,
+      "why_hot": "오픈소스 고객 CS 통합 플랫폼. 유료 CS 솔루션 가격 인상에 반발한 이커머스 셀러들이 대거 유입.",
+      "conventional_wisdom": "고객 CS 도구는 월정액 SaaS를 써야 한다 — 오픈소스는 설치가 복잡해서 셀러가 쓸 수 없다.",
+      "challenge": "Chatwoot는 카카오톡, 인스타그램, 이메일 채널을 한 화면에서 관리하는 CS 플랫폼인데 오픈소스라 도입비 0원이다. 유사 기능 유료 SaaS가 월 20~50만원인 시장에서 오늘 하루 별 431개 받았다 — 셀러들이 '왜 돈 내고 있었지?'를 깨닫고 있다는 신호.",
+      "question_format": "CS 도구 월정액 내고 있지?\n근데 카카오톡·인스타 채널 다 합쳐서 관리하는 오픈소스가 있어.\n오늘 하루 별 431개 받았는데 설치해본 셀러 있으면 후기 궁금해.",
+      "pass_filter": true,
+      "pass_fail_reason": "이커머스 CS 운영 셀러 직결. SaaS 비용 통념 반박. 질문형 + 후기 유도로 댓글 유입 가능성 높음"
     }
   ],
   "big_tech_news": [
     {
-      "title": "스마트스토어 상품 등록 한도 변경 — 판매상품비중 3% 기준 2026-06-15 순차 적용 시작",
-      "source": "onch3.co.kr — 스마트스토어 등록 한도 변경 총정리 2026",
-      "topic": "스마트스토어 정책 변경",
-      "conventional_wisdom": "상품을 많이 올릴수록 노출 기회가 늘어난다 — 등록 개수가 곧 매출 가능성이다.",
-      "challenge": "2026년 6월 15일부터 전체 등록 상품 중 판매된 상품 비중이 3% 미만이면 한도가 재산정되고 판매 이력 없는 상품부터 자동 판매중지 처리된다. 100개 올려서 2개만 팔리면 오히려 불이익. 네이버가 '상품 수' 기준에서 '판매 효율' 기준으로 완전히 전환했다.",
-      "question_format": "상품 많이 올릴수록 유리하다고 생각하지?\n근데 오늘부터 스마트스토어는 반대야.\n100개 올리고 2개만 팔리면 나머지 98개 자동 판매중지 처리됨.",
+      "title": "Salesforce, 인터컴(Fin) 3.6조원에 인수 — AI 고객상담 자동화 시장 재편",
+      "source": "HackerNews 300포인트 / Salesforce 공식 발표",
+      "topic": "B2B CS 자동화 M&A",
+      "conventional_wisdom": "AI 챗봇은 대기업 고객 서비스용이고 이커머스 셀러 규모에선 쓸 필요 없다.",
+      "challenge": "Salesforce가 인터컴을 3.6조원에 인수한 이유는 AI 기반 1:1 고객 자동 응대가 기업 CS의 핵심이 됐기 때문이다. 인터컴이 중소 이커머스에서 시작해 엔터프라이즈로 올라간 제품이라는 점에서, 셀러 CS 자동화도 '나중 문제'가 아닌 지금 구조를 잡아야 하는 이슈가 됐다.",
+      "question_format": "AI CS 자동화는 대기업이나 하는 거라 생각하지?\n근데 오늘 Salesforce가 고객 상담 AI 회사를 3.6조원에 샀어.\n셀러 DM 하루 몇 건 처리하는데 수동으로 다 답장하고 있어?",
+      "angle": "반전형",
       "pass_filter": true
     },
     {
-      "title": "쿠팡 매출 증가 = 이익 증가 공식 붕괴 — 잘 팔릴수록 마진이 얇아지는 역설",
-      "source": "e-biztimes.com — 2026 이커머스 전망 4편 쿠팡 중심 판매 전략은 언제까지 유효할까",
-      "topic": "쿠팡 판매 전략 한계",
-      "conventional_wisdom": "쿠팡에서 매출이 오르면 수익도 당연히 오른다 — 채널 집중이 효율적이다.",
-      "challenge": "가격 인하 경쟁과 광고비 증가로 쿠팡 매출 상위 셀러도 마진 0%대 사례가 나오고 있다. 특히 유통 셀러는 상품이 잘 팔릴수록 쿠팡이 직매입·PB로 대체할 위험이 커진다. 쿠팡 의존도 70% 이상 셀러는 이미 '매출은 늘고 이익은 줄어드는' 구조에 진입해 있다.",
-      "question_format": "쿠팡에서 잘 팔리면 성공한 거라 생각하지?\n근데 실제로는 매출 3억에 순이익 0원인 셀러가 나오고 있어.\n잘 팔릴수록 쿠팡이 직접 팔기 시작하거든.",
-      "pass_filter": true
+      "title": "로컬 AI 코딩 모델이 GPT-4o 성능 추월 — 클라우드 API 비용 0원으로 대체 가능",
+      "source": "HackerNews 871포인트 토론 / Medium AI Analytics Diaries",
+      "topic": "로컬 LLM 실용화",
+      "conventional_wisdom": "AI 툴은 유료 API를 써야 제대로 된 품질이 나온다 — 무료 오픈소스는 퀄리티가 떨어진다.",
+      "challenge": "2026년 Qwen3-Coder-Next, Devstral 2 등 로컬 모델이 SWE-bench에서 GPT-4o(48%)를 70% 이상으로 넘어섰다. 월 20달러 이상 구독 없이 24GB GPU 한 장으로 프론티어급 AI를 쓸 수 있게 됐다. HN에서 871포인트 받은 토론 주제가 '이미 로컬로 전환했는데 구독 해지해도 되냐'다.",
+      "question_format": "AI 유료 구독 안 하면 품질이 떨어진다고 생각하지?\n근데 올해 오픈소스 모델이 유료 GPT-4o 성능을 이미 넘어섰어.\nHN에서 '구독 해지했는데 오히려 더 잘 됨'이 871포인트 받는 시대야.",
+      "angle": "반전형",
+      "pass_filter": false,
+      "pass_fail_reason": "team_signal AI 키워드 hit_rate 0.0 — AI 각도 낮추기 지시. 셀러보다 개발자/테크 타겟에 가까움"
     },
     {
-      "title": "자사몰 수수료 0% vs 오픈마켓 실질 비용 20-25% — 셀러들이 착각하는 수수료 구조",
-      "source": "yuch.co.kr — 네이버 스마트스토어 vs 자체 쇼핑몰 2026 실전 비교",
-      "topic": "자사몰 vs 오픈마켓 채널 전략",
-      "conventional_wisdom": "오픈마켓은 트래픽이 있으니 자사몰보다 낫다 — 자사몰은 초기 비용이 너무 크다.",
-      "challenge": "월 매출 3억 6천만 원 규모에서 네이버 쇼핑 광고비만 월 210만~450만 원, 여기에 판매 수수료·결제 수수료 더하면 실질 플랫폼 비용이 20~25%에 달한다. 반면 자사몰은 PG 수수료 2~3%만 발생한다. 쿠팡이 2025년 수수료 평균 2% 추가 인상하면서 손익분기점이 이미 역전된 셀러가 나오고 있다.",
-      "question_format": "오픈마켓이 자사몰보다 무조건 낫다고 생각하지?\n근데 월 매출 3억에서 플랫폼 비용만 6천만~9천만 원 나가는 구조야.\n자사몰로 옮기면 PG 수수료 2~3%만 내면 되는데.",
-      "pass_filter": true
-    },
-    {
-      "title": "AI 상세페이지 자동 완성 — 상품명만 입력하면 10초 안에 광고 문구 완성",
-      "source": "nhn-commerce.com — 커머스 AI 사례로 보는 쇼핑몰의 미래와 실전 AI 추천",
-      "topic": "AI 이커머스 자동화 실무",
-      "conventional_wisdom": "AI가 쓴 상품 설명은 품질이 낮다 — 셀러가 직접 써야 제대로 된 문구가 나온다.",
-      "challenge": "NHN Commerce 사례에 따르면 상품명과 간단한 특징만 입력하면 10초 이내에 완성도 높은 광고 문구가 자동 생성된다. 시즌별 상품 정보 업데이트도 자동 처리되며, 실제 도입 셀러들은 상세페이지 제작 시간을 80% 이상 단축했다고 보고한다.",
-      "question_format": "상세페이지 직접 써야 잘 팔린다고 생각하지?\n근데 상품명만 넣으면 10초 안에 광고 문구 뽑아주는 AI 있거든.\n쓰는 셀러들은 제작 시간 80% 줄었다고 함.",
-      "pass_filter": true
-    },
-    {
-      "title": "정부 소상공인 AI 지원 5.4조 — 이커머스 셀러가 신청 가능한 항목 포함",
-      "source": "biz-insight.co.kr — 2026 소상공인 AI 지원 역대 최대 5.4조원",
-      "topic": "정부 AI 지원 정책",
-      "conventional_wisdom": "정부 지원은 신청이 복잡하고 실제로 받기 어렵다 — 셀러한테 해당 없는 얘기다.",
-      "challenge": "2026년 소상공인 AI 지원 예산이 역대 최대 5.4조 원. 고객응대 자동화, AI 기반 재고관리, 마케팅 자동화, POS 연계 분석 도구 등 이커머스 셀러가 직접 신청 가능한 항목이 다수 포함됐다.",
-      "question_format": "정부 AI 지원은 나랑 상관없다고 생각하지?\n근데 올해 5.4조 중에 이커머스 마케팅 자동화·재고관리 AI 지원도 있어.\n셀러가 신청 가능한 항목 정리해봤음.",
+      "title": "MIT 조사: AI 도입 기업 95%가 매출 증가 증거 없음",
+      "source": "MIT 조사 / blog.windyflo.com 기업 AI 도입 실패 원인 7가지",
+      "topic": "AI 도입 ROI 현실",
+      "conventional_wisdom": "AI 자동화 도구를 도입하면 매출이 오른다 — 자동화하면 할수록 효율이 좋아진다.",
+      "challenge": "MIT 조사에서 AI 도입 기업의 95%가 매출 증가 증거를 얻지 못했다. IBM 데이터는 AI 투자 ROI 달성 기업이 25%에 불과하다고 나온다. 이커머스에서 AI 상세페이지 도구를 쓰면서 키워드 적합성 검토 없이 그대로 올렸다가 노출이 오히려 떨어진 사례가 실무에서 다수 보고되고 있다.",
+      "question_format": "AI 도구 쓰면 매출 오른다고 생각하지?\n근데 MIT 조사에서 도입 기업 95%가 매출 증가 증거를 못 찾았어.\n도구보다 쓰는 방법이 문제인 건데, 셀러들이 가장 많이 놓치는 부분 정리해봤어.",
+      "angle": "반전형",
       "pass_filter": true
     }
   ],
   "hackernews_highlights": [
     {
-      "title": "How to earn a billion dollars (Paul Graham)",
-      "url": "https://paulgraham.com/earn.html",
-      "ecommerce_angle": "PG가 말하는 '10억 버는 법'을 이커머스 셀러 관점으로 재해석 — 플랫폼 의존 vs 직접 브랜드 구축",
-      "conventional_wisdom": "셀러는 플랫폼 수수료를 내고 플랫폼 트래픽에 올라타는 게 맞다.",
-      "challenge": "PG의 핵심 논지는 '남의 플랫폼에서 수익을 나눠 갖지 말고 직접 사용자를 소유하라'는 것이다. 자사몰+CRM으로 고객 데이터를 직접 보유한 이커머스 셀러가 오픈마켓 셀러보다 LTV가 3~5배 높다는 데이터와 일치한다.",
-      "question_format": "플랫폼에서 팔면 안정적이라 생각하지?\n근데 실제론 고객이 내 게 아니라 플랫폼 거야.\nPG가 오늘 글에서 딱 이 얘기 했는데, 자사몰 얘기랑 완전히 같아.",
+      "title": "A backdoor in a LinkedIn job offer (976 points)",
+      "url": "https://news.ycombinator.com",
+      "ecommerce_angle": "채용 DM을 통한 해킹 경로 — 셀러 계정 탈취 피싱 패턴과 직결",
+      "conventional_wisdom": "링크드인이나 SNS에서 오는 협업 제안, 도매 거래 DM은 보통 진짜다.",
+      "challenge": "HN 976포인트를 받은 이 사례는 채용 제안 PDF 파일에 백도어가 심어진 케이스다. 이커머스 셀러도 '공급사 거래 제안', '인플루언서 협업 제안' 형식 DM으로 스토어 계정 접근권을 요구하는 피싱이 급증하고 있다.",
+      "question_format": "거래처 DM이나 협업 제안 파일 그냥 열어보고 있지?\n근데 오늘 HN 1위 뉴스가 채용 제안 PDF에 백도어 심어진 사례야.\n셀러한테 오는 공급사 제안 파일도 같은 방식으로 들어와.",
       "pass_filter": true
     },
     {
-      "title": "Rio de Janeiro's homegrown LLM appears to be a merge of an existing model",
-      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-      "ecommerce_angle": "지자체가 'AI 자체 개발'이라 주장한 LLM이 실제론 기존 모델 합성본이었음 — AI 마케팅 과장 주의",
-      "conventional_wisdom": "기업이나 기관이 'AI 자체 개발'이라고 하면 실제로 자체 개발한 것이다.",
-      "challenge": "리우데자네이루가 자체 LLM이라고 발표한 모델이 실제로는 기존 오픈소스 모델을 합친 것으로 밝혀졌다. 이커머스에서도 'AI 추천 엔진'을 내세우는 솔루션 중 상당수가 기존 API를 감싼 수준임이 실무에서 드러나고 있다.",
-      "question_format": "'AI 기반'이라고 써 있으면 믿지?\n근데 오늘 시 정부가 자체 개발 AI라고 발표한 모델이 기존 오픈소스 합성본으로 밝혀졌어.\n이커머스 솔루션 AI 마케팅도 같은 방식 많아.",
-      "pass_filter": true
-    },
-    {
-      "title": "I indexed 669 GB of my GoPro videos using local ML models on M1 Max",
-      "url": "https://news.ycombinator.com/item?id=48528029",
-      "ecommerce_angle": "로컬 ML로 대용량 미디어 자동 분류 — 이커머스 상품 이미지 자동 태깅에 동일 기술 적용 가능",
-      "conventional_wisdom": "AI 이미지 분류는 클라우드 API 비용이 커서 소규모 셀러는 쓰기 어렵다.",
-      "challenge": "M1 Max 맥북으로 669GB 영상을 로컬 ML로 전부 인덱싱한 사례. 클라우드 API 비용 0원. 동일 방식으로 상품 이미지 수천 장을 카테고리별 자동 태깅하는 게 개인 하드웨어로 가능하다는 증거.",
-      "question_format": null,
+      "title": "Ask HN: Has anyone replaced Claude/GPT with a local model? (871 points)",
+      "url": "https://news.ycombinator.com",
+      "ecommerce_angle": "AI 유료 구독 필요성 의문 — 셀러 입장에서 AI 도구 비용 재고 각도",
+      "conventional_wisdom": "AI 유료 구독은 비용 대비 필수 투자다.",
+      "challenge": "871포인트 받은 HN 토론에서 상당수 개발자들이 로컬 모델로 전환 후 유료 구독을 해지했다고 보고하고 있다. 하지만 셀러 입장에서는 도구 품질보다 '어떤 작업에 쓰는가'가 더 중요하다 — 상세페이지 쓸 때 AI 결과물을 검토 없이 그대로 올리면 알고리즘 페널티를 받는다.",
       "pass_filter": false,
-      "pass_fail_reason": "기술 난이도가 셀러 실무에서 직접 적용하기 너무 높음 — 질문형 포스트로 연결하기 어려움"
+      "pass_fail_reason": "team_signal AI 키워드 hit_rate 0.0 — AI 각도 낮추기 지시에 따라 제외"
+    },
+    {
+      "title": "Salesforce to Acquire Fin (formerly Intercom) for $3.6B (300 points)",
+      "url": "https://news.ycombinator.com",
+      "ecommerce_angle": "AI 고객 응대 자동화가 이커머스 필수 인프라로 격상됨을 대형 M&A가 증명",
+      "conventional_wisdom": "고객 응대 자동화는 트래픽 많은 대형몰에서나 의미 있다.",
+      "challenge": "Salesforce가 인터컴을 3.6조원에 산 건 AI 기반 1:1 고객 자동 응대가 CX의 핵심이 됐다는 선언이다. 인터컴이 소규모 스타트업 고객 지원 도구에서 출발했다는 점에서, 셀러 DM·CS 자동화도 '나중에' 생각할 문제가 아닌 지금의 경쟁 조건이 됐다.",
+      "pass_filter": true
     }
   ],
   "recommended_morning": {
-    "topic": "스마트스토어 상품 등록 한도 정책 변경 — 오늘(6월 15일)부터 적용",
-    "hook": "상품 많이 올릴수록 유리하다고 생각하지?",
-    "conventional_wisdom": "스마트스토어는 상품을 많이 등록할수록 노출 기회가 늘고 매출 가능성이 높아진다.",
-    "challenge": "오늘 6월 15일부터 전체 등록 상품 중 판매된 상품 비중이 3% 미만이면 판매 이력 없는 상품들이 자동 판매중지된다. 100개 올리고 2개만 팔리면 나머지 98개가 정지 처리되는 구조. 네이버가 '등록 수' 기준에서 '판매 효율' 기준으로 완전히 전환했다.",
-    "question_format": "상품 많이 올릴수록 유리하다고 생각하지?\n근데 오늘부터 스마트스토어는 반대야.\n100개 올리고 2개만 팔리면 나머지 98개 자동 판매중지 처리됨.\n오늘부터 적용인데 아직 모르는 셀러 많은 것 같아서.",
-    "type": "ecommerce_tip",
+    "topic": "스마트스토어 상품 수 통념 반박 — 적을수록 유리한 구조 전환",
+    "angle": "반전형 통념 반박",
+    "conventional_wisdom": "스마트스토어는 상품을 많이 등록할수록 노출 기회가 많아지고 매출 가능성이 높아진다.",
+    "challenge": "2026년 네이버 AI 검색 알고리즘 개편 이후 상품 수보다 판매 효율이 노출 순위를 결정한다. 100개 올리고 2개만 팔리면 나머지 98개는 실질적으로 노출 손해를 유발하는 '좀비 상품'이 된다. 판매 전환율 낮은 상품이 스토어 전체 신뢰 점수를 끌어내린다.",
+    "question_format": "상품 많이 올릴수록 유리하다고 생각하지?\n근데 2026년 스마트스토어는 반대야.\n100개 올리고 2개만 팔리면 나머지 98개가 스토어 전체 노출을 갉아먹고 있어.\n잘 팔리는 상품 20개로 좁히는 게 노출 오히려 올라가는 이유.",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP",
-    "source": "onch3.co.kr — 스마트스토어 등록 한도 변경 총정리 2026"
+    "source": "tokki-ai.com — 스마트스토어 솔루션으로 잡는 상위노출 5가지 2026 / clobe.ai — 스마트스토어 노출 순위 결정 요인"
   },
   "recommended_evening": {
-    "topic": "쿠팡 매출=이익 공식 붕괴 — 잘 팔릴수록 마진이 사라지는 역설",
-    "hook": "쿠팡에서 잘 팔리면 성공한 거라 생각하지?",
-    "conventional_wisdom": "쿠팡에서 매출이 높은 셀러는 당연히 수익도 높다 — 플랫폼 집중이 효율적이다.",
-    "challenge": "가격 인하 경쟁과 광고비 상승으로 쿠팡 매출 상위권 셀러도 순이익 0%대 사례가 나오고 있다. 유통 셀러는 오히려 상품이 잘 팔릴수록 쿠팡이 직매입·PB로 대체할 위험이 커진다. 쿠팡 의존도 70% 이상 구조에서는 '매출은 늘고 이익은 줄어드는' 역설이 이미 현실화됐다.",
-    "question_format": "쿠팡에서 잘 팔리면 성공한 거라 생각하지?\n근데 실제로는 매출 3억에 순이익 0원인 셀러가 나오고 있어.\n잘 팔릴수록 쿠팡이 직접 팔기 시작하거든.\n이게 유통 셀러한테 진짜 위험한 이유.",
-    "type": "ecommerce_tip",
+    "topic": "AI 도입 매출 상승 통념 반박 — MIT 데이터로 정리",
+    "angle": "반전형 통념 반박",
+    "conventional_wisdom": "AI 자동화 도구를 쓰면 업무 효율이 올라가고 자연스럽게 매출도 오른다.",
+    "challenge": "MIT 조사에서 AI 도입 기업의 95%가 매출 증가 증거를 확인하지 못했다. IBM은 ROI 달성 기업이 25%라고 집계했다. 이커머스 셀러 관점에서 AI 상세페이지 생성 도구 사용 후 검토 없이 등록하면 키워드 정합성이 깨져 오히려 노출이 줄어드는 사례가 실무에서 반복되고 있다.",
+    "question_format": "AI 도구 쓰면 매출 오른다고 생각하지?\n근데 MIT 조사에서 AI 도입 기업 95%가 매출 증가 증거를 못 찾았어.\n셀러한테 진짜 문제는 도구가 아니라 결과물을 그냥 올리는 거야.\nAI 쓰고도 노출 떨어진 셀러들이 놓친 한 가지.",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP",
-    "source": "e-biztimes.com — 2026 이커머스 전망 4편 쿠팡 중심 판매 전략"
+    "source": "MIT / blog.windyflo.com — 기업 AI 도입 실패 원인 7가지 / IBM AI ROI 조사"
   },
   "metadata": {
-    "collected_at": "2026-06-15T10:00:00+09:00",
+    "collected_at": "2026-06-16",
     "agent": "trend-scout",
-    "filter_applied": "conventional_wisdom_challenge_only — 통념 반박 + 질문형 포스트 가능 소재만 통과. 이커머스/자사몰/셀러 실무 직결 + 통념 반박 각도 + 질문형 포스트 가능 3가지 동시 충족 기준.",
+    "filter_applied": "conventional_wisdom_challenge_only — 통념 반박 + 질문형 포스트 가능 소재만 통과. 이커머스/셀러 실무 직결 + 통념 반박 각도 + 질문형 포스트 가능 3가지 동시 충족 기준. AI 키워드 단독 각도 제외 (team_signal hit_rate 0.0).",
     "rejected_count": 3,
     "rejected_items": [
-      "NVIDIA/SkillSpector — AI 에이전트 보안, 셀러 실무 직결성 낮음",
-      "shiyu-coder/Kronos — 금융 AI 모델, 이커머스 적용 연결이 간접적",
-      "HN: 669GB GoPro 영상 로컬 ML 인덱싱 — 기술 난이도가 셀러 실무 적용 한계 초과"
+      "rohitg00/ai-engineering-from-scratch — 직접 개발 구현 각도, 셀러보다 개발자 타겟, AI 키워드 hit_rate 0.0 제외",
+      "HN: Has anyone replaced Claude/GPT — AI 구독 비용 각도, team_signal AI 키워드 낮추기 지시에 따라 제외",
+      "로컬 LLM GPT-4o 추월 big_tech_news — AI 기술 비교 각도, 셀러 직결성 낮음, AI hit_rate 0.0 제외"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://news.ycombinator.com",
-      "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
-      "https://www.e-biztimes.com/news/403831",
-      "https://draph.art/blog/insights/dont_run_smartstore_alone",
-      "https://yuch.co.kr/blog/naver-smartstore-vs-own-mall",
-      "https://biz-insight.co.kr",
-      "https://www.nhn-commerce.com/main/blog/32",
-      "https://paulgraham.com/earn.html",
-      "https://github.com/nex-agi/Nex-N2/issues/4"
+      "https://tokki-ai.com/blog/naver-ai-search-2026-non-exposed-products",
+      "https://clobe.ai/blog/smart-store-product-exposure-ranking-factors",
+      "https://www.skax.co.kr/insight/trend/3624",
+      "https://blog.windyflo.com/blog/ai-agent-adoption-failure/",
+      "https://www.cio.com/article/4003956/",
+      "https://yellowweb.co.kr/스마트스토어만-하면-위험한-이유-2026-기준/",
+      "https://medium.com/ai-analytics-diaries/top-7-local-llms-that-will-replace-coding-in-2026",
+      "https://www.mindstudio.ai/blog/ai-tools-replaced-2026-claude-code-hermes-agent-killed-cursor-openclaw"
     ]
   }
 }
