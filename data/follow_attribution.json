@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-18",
+  "updated_at": "2026-06-19",
   "daily_deltas": [
-    {
-      "date": "2026-06-02",
-      "followers": 158,
-      "delta": 0
-    },
     {
       "date": "2026-06-03",
       "followers": 158,
@@ -70,6 +65,11 @@
       "date": "2026-06-18",
       "followers": 171,
       "delta": 0
+    },
+    {
+      "date": "2026-06-19",
+      "followers": 174,
+      "delta": 3
     }
   ],
   "follow_drivers": [
@@ -89,6 +89,15 @@
       "engagement_score": 39,
       "views": 1277,
       "follower_delta_next_day": 4,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-06-18",
+      "text_preview": "셀러한테만 푸는 상품 정리 시리즈 3편 중 1편  스마트스토어 상품 100개 넣고 6개월 방치했음. 이번 달",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 3,
+      "views": 159,
+      "follower_delta_next_day": 3,
       "attribution_confidence": "high"
     },
     {
@@ -181,9 +190,9 @@
   },
   "content_type_avg_delta": {
     "ai_tech": 0.6666666666666666,
-    "ecommerce_tip": 1.6
+    "ecommerce_tip": 1.8333333333333333
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 1.09,
+  "avg_followers_per_post": 1.25,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"Schools taught us y = ax + b. So we thin...\""
 }
