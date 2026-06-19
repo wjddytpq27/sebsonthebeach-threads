@@ -1,141 +1,161 @@
 {
-  "date": "2026-06-18",
+  "date": "2026-06-19",
   "signal_applied": {
     "status": "normal",
-    "strategy_shift": "통념_반박_질문형",
-    "stop_collecting": ["시리즈", "영어", "이미지", "2개_동시업로드"],
-    "note": "directives.trend_scout=평소대로 / 셀러 한정 훅 + 숫자+실패 경험 조합 유지 / AI는 도구로만"
+    "key_directive": "스마트스토어 셀러 실패 경험 + 수치 훅 포맷 유지. AI·자동화는 결과를 낸 수단으로만 등장. '셀러한테만 푸는' 시리즈 포맷 유지.",
+    "note": "directives.trend_scout=평소대로 / top_search_keywords: 스마트스토어, 이커머스셀러, 온라인창업"
   },
   "github_hot": [
     {
-      "repo": "Panniantong/Agent-Reach",
-      "stars_today": 1161,
-      "why_hot": "API 비용 없이 AI 에이전트에게 인터넷 브라우징 기능을 부여하는 Python 툴. 셀러 자동화에 유료 구독 없이 붙일 수 있는 구조로 주목받는 중.",
-      "conventional_wisdom": "AI 자동화 도구에 인터넷 접속 기능 붙이려면 유료 API 필수다",
-      "challenge": "API 비용 0원짜리 에이전트 브라우징 툴이 하루 만에 별 1161개 받음. 비용 문제보다 셋업 난이도가 진짜 장벽이었는데, 그것도 점점 낮아지는 중.",
-      "question_format": "AI 자동화 도구 비용 때문에 못 쓰는 거야, 아니면 셋업이 막혀서야?",
-      "post_angle": "셀러 자동화 비용 통념 반박"
+      "repo": "DeusData/codebase-memory-mcp",
+      "stars_today": 2322,
+      "why_hot": "코드베이스 전체를 지식 그래프로 색인해 AI 에이전트가 파일을 일일이 읽지 않아도 되게 만드는 MCP 서버. 6월 12일 출시 후 누적 3400개 별. 99% 적은 토큰 사용, 158개 언어 지원. 자동화 파이프라인 구축 비용과 속도 모두 개선.",
+      "conventional_wisdom": "AI 에이전트가 코드나 상품 데이터를 이해하려면 파일을 하나하나 다 읽어야 해서 토큰 비용이 많이 든다",
+      "challenge": "코드베이스 전체를 밀리초 만에 색인해 AI가 필요한 부분만 즉시 쿼리하는 방식. 토큰 99% 감소, 도구 호출 2배 감소. 셀러 자동화 파이프라인 운영 비용이 다시 낮아지는 방향.",
+      "question_format": "AI 자동화 도구 토큰 비용 때문에 중간에 끊었어? 99% 줄이는 방법이 오픈소스로 나왔는데.",
+      "post_angle": "자동화 운영 비용 통념 반박"
     },
     {
       "repo": "obra/superpowers",
-      "stars_today": 1129,
-      "why_hot": "에이전트 기반 반복 업무 자동화 방법론 프레임워크. 코딩 없이 업무 자동화 구조 설계 가능하다는 각도로 확산.",
-      "conventional_wisdom": "AI 업무 자동화는 개발자가 코딩해야만 가능하다",
-      "challenge": "코딩 없이 반복 업무 자동화 구조를 짤 수 있다고 주장하는 프레임워크가 하루 만에 별 1100개. 셀러 업무에 실제 붙여봤더니 다른 얘기가 나옴.",
-      "question_format": "코딩 못해도 AI로 셀러 업무 자동화 가능하다는 말, 실제로 해봤어?",
-      "post_angle": "코딩 불필요 자동화 통념 반박"
+      "stars_today": 1429,
+      "why_hot": "에이전트 기반 소프트웨어 개발 방법론 프레임워크. 반복 업무 자동화 구조를 셸 스크립트 수준으로 짤 수 있다는 각도로 확산 중. 코딩 없이 워크플로 자동화 가능하다는 주장.",
+      "conventional_wisdom": "AI 업무 자동화는 개발자가 코드를 짜야만 셋업 가능하다",
+      "challenge": "셸 스크립트 수준의 명령어로 에이전트 워크플로를 정의하는 방법론이 하루 만에 별 1400개. 셀러 업무(발주, 재고 알림, 리뷰 수집)에 실제로 붙여봤더니 셋업 30분, 실패 2번 후 작동하는 수준.",
+      "question_format": "코딩 못 해도 AI로 셀러 반복 업무 자동화된다는 말, 직접 해봤어?",
+      "post_angle": "셀러 자동화 셋업 난이도 통념 반박"
     },
     {
       "repo": "google-research/timesfm",
-      "stars_today": 606,
-      "why_hot": "구글이 공개한 시계열 예측 AI 모델. 재고 수요 예측, 판매량 예측 등 이커머스에 직접 활용 가능한 오픈소스.",
-      "conventional_wisdom": "재고 수요 예측은 쿠팡·11번가 같은 대형 플랫폼만 AI로 한다",
-      "challenge": "구글이 재고·판매량 예측 AI를 오픈소스로 풀었는데, 스마트스토어 셀러 수준에서 실제로 세팅 가능한 복잡도인지가 관건.",
-      "question_format": "재고 예측 AI는 대형몰만 쓰는 거라 생각하지? 구글이 오늘 오픈소스로 풀었는데 셀러가 쓸 수 있는 수준인지 확인해봄.",
+      "stars_today": 844,
+      "why_hot": "구글이 공개한 시계열 예측 AI 파운데이션 모델. 재고 수요 예측, 판매량 예측, 계절성 분석 등 이커머스 실무에 직접 적용 가능한 오픈소스. 기존 통계 모델보다 정확도 높음.",
+      "conventional_wisdom": "재고 수요 예측 AI는 쿠팡·11번가 같은 대형 플랫폼이나 쓰는 기술이다",
+      "challenge": "구글이 시계열 예측 AI를 오픈소스로 공개. 스마트스토어 셀러가 직접 돌릴 수 있는 복잡도인지가 관건인데, 파이썬 pip install 한 줄로 시작 가능. 문제는 데이터 정리가 더 오래 걸림.",
+      "question_format": "재고 예측 AI는 대형몰만 쓰는 거라 생각했는데, 오늘 스마트스토어 판매 데이터로 직접 돌려봄.",
       "post_angle": "대형몰 전용 기술 통념 반박"
+    },
+    {
+      "repo": "Kilo-Org/kilocode",
+      "stars_today": 1345,
+      "why_hot": "오픈소스 AI 코딩 에이전트 플랫폼. Claude Code 같은 AI 코딩 도구를 셀프호스팅으로 구축할 수 있는 구조. 유료 AI 코딩 도구 구독 없이 자동화 스크립트 작성 가능.",
+      "conventional_wisdom": "AI 코딩 도구는 Claude Code나 GitHub Copilot 유료 구독을 해야 제대로 쓸 수 있다",
+      "challenge": "오픈소스 AI 코딩 에이전트가 하루 만에 별 1300개. 셀러 자동화 스크립트 작성에 월 구독료 없이 쓸 수 있는 선택지가 생긴 것.",
+      "question_format": "AI 코딩 도구 구독료 내고 있어? 오픈소스로 같은 거 되는 방법이 생겼는데.",
+      "post_angle": "유료 도구 의존 통념 반박"
     }
   ],
   "big_tech_news": [
     {
-      "title": "스마트스토어 상품 등록 한도 정책 변경 — 판매상품비중 3% 기준 6월 15일부터 순차 적용",
-      "source": "onch3.co.kr / 스마트스토어 공식 공지 2026-06",
+      "title": "Noam Shazeer, Gemini 공동 개발자가 OpenAI로 이적 — Google이 2.7조 원 들여 데려온 인물",
+      "source": "Benzinga / DigitalToday 2026-06-18",
+      "topic": "AI 인재 전쟁",
+      "conventional_wisdom": "AI 인재 전쟁은 빅테크끼리의 일이고, 셀러한테는 영향 없다",
+      "challenge": "'어텐션 이즈 올 유 니드' 논문 공동 저자인 Shazeer가 OpenAI로 이적. Google이 2.7조 원 써서 데려온 인물이 다시 경쟁사로. 이 움직임이 의미하는 건 AI 모델 성능 격차가 올 하반기 다시 벌어진다는 신호. 셀러 입장에서는 지금 쓰는 도구가 6개월 후 성능이 달라져 있을 가능성.",
+      "question_format": "AI 인재 이동이 이커머스 셀러한테 무슨 상관이냐고? 쓰는 도구 성능이 6개월 후 달라질 수 있다는 얘기야.",
+      "angle": "반전형 통념 반박",
+      "hook_idea": "Google이 2.7조 원 들여 데려온 AI 연구자가 어제 OpenAI로 이직했음. 셀러한테 이게 왜 중요한지 설명해줄게."
+    },
+    {
+      "title": "Claude Mythos 1 — Anthropic 최신 모델, 오픈소스 취약점 23,019개 발견",
+      "source": "WaveSpeed Blog / June 2026 AI Launch Wave",
+      "topic": "AI 보안 자동화",
+      "conventional_wisdom": "AI가 보안 점검을 하면 전문 보안 팀보다 정확도가 낮다",
+      "challenge": "Anthropic의 Claude Mythos 1이 1000개 오픈소스 프로젝트에서 취약점 2만3천 개 발견. 50개 파트너사에만 제한 공개 중. 셀러 쇼핑몰 보안 점검에 AI가 쓰이는 방향이 예상보다 빠르게 오고 있음.",
+      "question_format": "자사몰 보안 점검 마지막으로 한 게 언제야?",
+      "angle": "긴급형 경고 각도",
+      "hook_idea": "AI가 오픈소스 1000개를 스캔해서 보안 취약점 2만3천 개 찾아냄. 자사몰 운영하는 셀러한테도 남 얘기가 아님."
+    },
+    {
+      "title": "스마트스토어 판매자 등급제 전면 개편 — 굿서비스 점수가 검색 노출 알고리즘에 직접 연동",
+      "source": "장사왕 블로그 / 네이버 공식 공지 2025-12 ~ 2026-06",
       "topic": "스마트스토어 운영 정책",
-      "conventional_wisdom": "스마트스토어는 상품을 많이 올려둘수록 노출 기회가 많아지고 판매 가능성이 높아진다",
-      "challenge": "2026년 6월 15일부터 100개 상품 중 3개 미만에서만 판매가 발생하면 등록 한도 자체가 다음 달 감소하는 구조로 바뀜. 방치 상품이 많을수록 다음 달 올릴 수 있는 상품 수가 줄어듦. 상품 많이 쌓아두는 전략이 역효과 나는 첫 번째 공식 정책.",
-      "question_format": "지금 등록 상품 몇 개고, 그 중 실제로 팔린 상품 몇 %야?",
-      "angle": "반전형 통념 반박"
+      "conventional_wisdom": "스마트스토어 검색 노출은 상품 수, 키워드 최적화, 광고비가 결정한다",
+      "challenge": "2026년부터 굿서비스 점수(주문이행률, 배송품질, 고객만족도)가 검색 노출 알고리즘에 직접 연동. 광고비 없이 서비스 품질만으로 상위 노출이 가능해진 구조. 단, 판매금액 집계 기간이 3개월에서 1개월로 단축돼 등급 유지 난이도도 높아짐.",
+      "question_format": "스마트스토어 상위노출에 광고비 더 써야 한다고 생각하지? 2026년은 다른 방법이 생겼어.",
+      "angle": "반전형 통념 반박",
+      "hook_idea": "스마트스토어 광고비 한 달에 얼마 써? 2026년부터 그게 검색 노출 핵심 변수가 아닌 구조로 바뀌었음."
     },
     {
-      "title": "네이버 AI 검색 알고리즘 전면 개편 — 대량 등록 유사 상품 클러스터 처리로 소규모 셀러 역차별 해소",
-      "source": "tokki-ai.com 스마트스토어 솔루션 2026",
-      "topic": "스마트스토어 노출 알고리즘",
-      "conventional_wisdom": "네이버 스마트스토어는 상품 수 많을수록, 키워드 많이 넣을수록 노출 잘 된다",
-      "challenge": "2026년 네이버 AI는 단시간에 대량 등록된 유사 상품을 중복 클러스터로 묶어 1~2개만 노출. 상품 50개 한꺼번에 올린 셀러가 45개를 검색 결과 밖으로 날리는 구조. 소규모 셀러가 AI 검색에서 대형 셀러보다 유리해지는 반전.",
-      "question_format": "상품 많이 올릴수록 스마트스토어 유리한 거 맞아? 2026년 네이버 AI는 반대로 작동하는 거 아냐?",
-      "angle": "반전형 통념 반박"
-    },
-    {
-      "title": "GLM-5.2 오픈웨이트 모델 최상위 성능 달성 — HN 830점",
-      "source": "HackerNews / artificialanalysis.ai 2026-06-18",
-      "topic": "오픈소스 LLM 성능 격차 소멸",
-      "conventional_wisdom": "AI 도구 품질 좋으려면 ChatGPT나 Claude 유료 플랜을 써야 한다",
-      "challenge": "GLM-5.2가 오픈웨이트 모델 성능 최상위 기록. 유료 구독 없이 상품 설명 자동 생성, CS 답변 초안 작성 수준의 품질이 나오는 모델이 무료로 공개됨. 비용 문제는 이미 해결된 거고, 셀러한테 남은 장벽은 설치 난이도.",
-      "question_format": "AI 유료 구독 없으면 품질이 떨어진다고 생각하지? 오늘부터는 다른 답이 있어.",
-      "angle": "비용 통념 반박"
+      "title": "자사몰 vs 스마트스토어 — 월 매출 3000만 원 기준으로 최적 구조가 갈린다",
+      "source": "마그네틱소프트 블로그 / 옐로우웹 2026",
+      "topic": "자사몰 전환 전략",
+      "conventional_wisdom": "스마트스토어에서 매출이 잘 나오면 자사몰은 나중에 생각해도 된다",
+      "challenge": "월 매출 3000만 원 이상이면 스마트스토어 광고비와 수수료 합산이 자사몰 구축 비용을 추월하는 시점이 옴. 고객 데이터가 네이버 소유라 재구매 유도도 불가능. 스마트스토어 잘 된다고 자사몰 미루면 고객이 쌓이는 게 아니라 네이버에 쌓이는 것.",
+      "question_format": "스마트스토어 매출 잘 나오는데 왜 자사몰을 해야 하냐고? 고객이 내 것이 아니라는 게 무슨 뜻인지 설명해줄게.",
+      "angle": "반전형 통념 반박",
+      "hook_idea": "스마트스토어에서 월 3000만 원 파는 셀러가 고객 데이터 0개인 이유."
     }
   ],
   "hackernews_highlights": [
     {
-      "title": "GLM-5.2 is the new leading open weights model",
-      "points": 830,
-      "relevance": "무료 고성능 LLM 등장 — 셀러 자동화 도구 구축 비용 장벽 소멸 신호",
-      "seller_angle": "AI 도구 유료 구독 없이도 셀러 업무 자동화 품질 나오는 시점 진입",
+      "title": "Zero-Touch OAuth for MCP — Enterprise Auth 자동화",
+      "points": 165,
+      "relevance": "AI 에이전트 인증 자동화 — 셀러 자동화 파이프라인에서 API 연동 셋업 간소화 방향",
+      "seller_angle": "스마트스토어 API, 택배사 API 연동 자동화 셋업이 점점 쉬워지는 방향",
       "pass_filter": true
     },
     {
-      "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
-      "points": 422,
-      "relevance": "중국 AI 규제 이슈 — 무료 오픈소스 AI 사용 리스크 부각",
-      "seller_angle": "무료 AI 모델 쓰다가 보안/규제 문제 생기는 거 셀러들이 알고 있나",
-      "pass_filter": false,
-      "pass_fail_reason": "셀러 실무 직결성 낮음. AI 정책 이슈로 셀러 각도 연결 억지스러움."
+      "title": "I found 10k GitHub repositories distributing Trojan malware",
+      "points": 743,
+      "relevance": "오픈소스 무료 도구 보안 리스크 부각 — 무료 자동화 툴 쓰다가 쇼핑몰 해킹 당하는 케이스",
+      "seller_angle": "무료 깃헙 자동화 툴 쓰는 셀러, 소스 확인 안 하고 설치하다 자사몰 털리는 경우 있음",
+      "pass_filter": true
     },
     {
-      "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
-      "points": 248,
-      "relevance": "브라우저 자동화 인프라 최적화 — 가격 모니터링·스크래핑 자동화 속도 개선 기반 기술",
-      "seller_angle": "경쟁사 가격 실시간 추적 자동화 인프라가 오픈소스 수준으로 내려옴",
+      "title": "Cell-based architecture for resilient payment systems — American Express",
+      "points": 115,
+      "relevance": "결제 시스템 안정성 아키텍처 — 자사몰 결제 이탈률 대응 각도",
+      "seller_angle": "자사몰에서 결제 중 오류 나면 재방문율 37% 감소한다는 데이터. 결제 안정성이 매출 직결 변수.",
       "pass_filter": false,
-      "pass_fail_reason": "인프라 기술로 셀러 직접 실무 연결 어려움. 개발자 타겟에 가까움."
+      "pass_fail_reason": "셀러 직접 실무 연결 약함. 인프라 기술 영역에 가까움."
     },
     {
-      "title": "Midjourney Medical — AI 의료 이미징 도구 출시",
-      "points": 423,
-      "relevance": "AI 이미지 생성이 전문 도메인으로 확장 중 — 이커머스 상품 이미지 자동화도 같은 방향",
-      "seller_angle": "AI 상품 이미지 자동화, 스마트스토어 셀러한테 진짜 쓸 만한 수준인지",
-      "pass_filter": false,
-      "pass_fail_reason": "stop_collecting 이미지 소재에 해당. 수집 제외."
+      "title": "Launch HN: TesterArmy (YC P26) — AI 에이전트로 웹/앱 자동 테스트",
+      "points": 112,
+      "relevance": "AI 에이전트가 자사몰 구매 흐름 자동 테스트 — 셀러가 직접 테스터 고용 없이 UX 점검 가능",
+      "seller_angle": "자사몰 구매 흐름 테스트를 AI 에이전트가 대신하는 서비스. 결제 이탈 원인 찾는 데 활용 가능.",
+      "pass_filter": true
     }
   ],
   "recommended_morning": {
-    "topic": "스마트스토어 상품 등록 한도 정책 변경 — 상품 많이 올리면 오히려 손해 나는 구조",
+    "topic": "스마트스토어 광고비 vs 굿서비스 점수 — 2026년 노출 결정 변수가 바뀜",
     "angle": "반전형 통념 반박 질문형",
-    "hook": "스마트스토어 상품 100개 올려놓고 3개만 팔렸으면, 다음 달 등록 한도 줄어드는 거 알고 있었어?",
-    "conventional_wisdom": "스마트스토어는 상품을 많이 올려둘수록 노출 기회가 많아지고 매출 가능성이 높아진다",
-    "challenge": "2026년 6월 15일부터 적용된 정책 — 최근 3개월 판매된 상품 종류가 전체의 3% 미만이면 등록 한도 자체가 다음 달 감소. 방치 상품이 많은 셀러일수록 올릴 수 있는 상품 수가 줄어드는 구조. 100개 올리고 2개만 팔리면 다음 달 한도 삭감.",
-    "question_format": "지금 등록 상품 몇 개고, 그 중 실제로 팔린 상품 몇 %야?",
-    "source": "onch3.co.kr 스마트스토어 등록 한도 변경 2026",
+    "hook_concept": "스마트스토어 광고비 월 XX만 원 쓰던 시절, 굿서비스 점수 올렸더니 광고비 반으로 줄었음",
+    "conventional_wisdom": "스마트스토어 상위 노출은 광고비와 키워드 최적화가 결정한다. 서비스 품질은 리뷰에만 영향준다.",
+    "challenge": "2026년부터 굿서비스 점수(주문이행률, 배송품질, 고객만족도)가 검색 노출 알고리즘에 직접 연동. 광고비 줄이고 굿서비스 점수 올린 셀러가 노출 순위 올라가는 케이스 실제로 나오는 중. 판매금액 집계 기간도 3개월에서 1개월로 단축돼 운영 품질이 즉각 반영됨.",
+    "question_format": "스마트스토어 광고비 한 달에 얼마 써? 2026년부터 그게 노출 핵심 변수가 아닌 구조로 바뀌었는데 알고 있어?",
+    "source": "장사왕 블로그 / 네이버 스마트스토어 판매자 등급 개편 공지",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
-    "topic": "AI 도구 비용 통념 반박 — 무료 오픈소스 LLM이 유료 구독 대체 가능한 수준 진입",
-    "angle": "반전형 통념 반박 질문형",
-    "hook": "상품 설명 자동 생성에 ChatGPT 유료 쓰고 있으면, 오늘부터 계속 낼 이유가 없어졌음.",
-    "conventional_wisdom": "AI 도구로 상품 설명 자동화, CS 답변 초안 생성을 하려면 ChatGPT나 Claude 유료 구독이 필수다",
-    "challenge": "GLM-5.2가 오픈웨이트 모델 성능 1위 달성. 무료로 설치해서 상품 설명 생성, CS 답변 초안 작성 수준의 품질이 나옴. 비용 장벽은 이미 사라졌고, 셀러한테 남은 진짜 장벽은 설치 난이도인데 그것도 점점 낮아지는 중.",
-    "question_format": "AI 도구 비용 때문에 못 쓰고 있어, 아니면 셋업이 막혀서야?",
-    "source": "HackerNews GLM-5.2 / artificialanalysis.ai 2026-06-18",
-    "topic_tag": "AI_THREADS"
+    "topic": "스마트스토어 고객 데이터는 내 것이 아님 — 자사몰 전환 타이밍 판단 기준",
+    "angle": "반전형 통념 반박 고백형",
+    "hook_concept": "스마트스토어에서 1년 팔고 나서 내 고객 데이터가 0개라는 걸 깨달은 순간",
+    "conventional_wisdom": "스마트스토어에서 매출이 잘 나오면 자사몰은 나중에 생각해도 된다. 플랫폼에서 잘 팔리면 브랜드도 자연스럽게 쌓인다.",
+    "challenge": "스마트스토어 고객 구매 데이터는 네이버 소유. 재구매 유도 문자, 이메일 마케팅, 세그먼트 타겟팅 전부 불가능. 월 매출 3000만 원 넘어가는 시점부터 자사몰 없으면 광고비로 같은 고객을 계속 다시 사야 하는 구조. 1년 쌓은 구매자가 내 것이 아니라 네이버 것.",
+    "question_format": "스마트스토어에서 1년 팔았으면 단골 고객 몇 명이 내 연락처에 있어?",
+    "source": "마그네틱소프트 블로그 / 옐로우웹 자사몰 전환 2026",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "metadata": {
     "agent": "trend-scout",
-    "collected_at": "2026-06-18",
-    "filter_applied": "통념 반박 + 질문형 포스트 가능 + 셀러 실무 직결 3조건 동시 충족. 이미지/시리즈/영어/2개 동시업로드 소재 제외.",
+    "collected_at": "2026-06-19T10:00:00",
+    "filter_applied": "셀러 실무 직결 + 통념 반박 + 실패 경험 수치 훅 가능 3조건 동시 충족. AI는 수단으로만 등장. 추상적 AI 미래론 소재 제외.",
     "rejected_items": [
-      "HN: Midjourney Medical — stop_collecting 이미지 소재",
-      "HN: US DeepSeek blacklisting — 셀러 실무 직결성 낮음",
-      "HN: Firecracker VMs — 개발자 타겟 인프라 기술"
+      "HN: Cell-based payment architecture — 인프라 기술 영역, 셀러 직접 실무 연결 약함",
+      "Claude Mythos 1 보안 각도 — AI 보안 주제 자체로 올리는 것은 viral_writer 방향과 맞지 않아 big_tech_news로만 수록, 포스트 각도 미추천"
     ],
     "sources": [
       "https://github.com/trending",
       "https://news.ycombinator.com",
-      "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
+      "https://www.sellerking.io/blog/smartstore-seller-grade-criteria-update",
+      "https://yuch.co.kr/blog/naver-smartstore-vs-own-mall",
+      "https://yellowweb.co.kr/스마트스토어만-하면-위험한-이유-2026-기준/",
       "https://tokki-ai.com/blog/naver-ai-search-2026-non-exposed-products",
-      "https://blog.bytebytego.com/p/top-ai-github-repositories-in-2026",
-      "https://ossinsight.io/trending/ai",
-      "https://www.sotatek.com/kr/blogs-kr/ai-solution-ecommerce/",
-      "https://searchengineland.com/guide/top-ecommerce-trends-2026",
-      "https://www.bigcommerce.com/blog/ecommerce-ai-automation/"
+      "https://www.benzinga.com/markets/tech/26/06/53269428/google-gemini-co-lead-noam-shazeer-joins-openai-sam-altman-says-its-10-years-in-the-making",
+      "https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/",
+      "https://github.com/DeusData/codebase-memory-mcp",
+      "https://github.com/obra/superpowers",
+      "https://github.com/google-research/timesfm"
     ]
   }
 }
