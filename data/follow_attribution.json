@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-19",
+  "updated_at": "2026-06-20",
   "daily_deltas": [
-    {
-      "date": "2026-06-03",
-      "followers": 158,
-      "delta": 0
-    },
     {
       "date": "2026-06-04",
       "followers": 160,
@@ -70,9 +65,23 @@
       "date": "2026-06-19",
       "followers": 174,
       "delta": 3
+    },
+    {
+      "date": "2026-06-20",
+      "followers": 199,
+      "delta": 25
     }
   ],
   "follow_drivers": [
+    {
+      "post_date": "2026-06-19",
+      "text_preview": "스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉 채우는 게 상위노출 공식인 줄 알았",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 80,
+      "views": 5534,
+      "follower_delta_next_day": 25,
+      "attribution_confidence": "high"
+    },
     {
       "post_date": "2026-05-25",
       "text_preview": "Schools taught us y = ax + b. So we think in straight lines.",
@@ -131,8 +140,8 @@
       "post_date": "2026-06-15",
       "text_preview": "셀러한테만 푸는 스마트스토어 효율 시리즈 3편 중 1편  스마트스토어 처음 시작할 때 상품 많이 올릴수록 노",
       "content_type": "ecommerce_tip",
-      "engagement_score": 7,
-      "views": 301,
+      "engagement_score": 10,
+      "views": 454,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
@@ -183,16 +192,16 @@
     }
   ],
   "best_follow_driver": {
-    "text_preview": "Schools taught us y = ax + b. So we think in straight lines.",
-    "post_date": "2026-05-25",
-    "content_type": "ai_tech",
-    "follower_delta": 5
+    "text_preview": "스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉 채우는 게 상위노출 공식인 줄 알았",
+    "post_date": "2026-06-19",
+    "content_type": "ecommerce_tip",
+    "follower_delta": 25
   },
   "content_type_avg_delta": {
-    "ai_tech": 0.6666666666666666,
-    "ecommerce_tip": 1.8333333333333333
+    "ecommerce_tip": 5.142857142857143,
+    "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 1.25,
-  "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"Schools taught us y = ax + b. So we thin...\""
+  "avg_followers_per_post": 3.08,
+  "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
