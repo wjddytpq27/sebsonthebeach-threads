@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-21",
+  "updated_at": "2026-06-22",
   "daily_deltas": [
-    {
-      "date": "2026-06-04",
-      "followers": 160,
-      "delta": 2
-    },
     {
       "date": "2026-06-05",
       "followers": 164,
@@ -70,6 +65,11 @@
       "date": "2026-06-20",
       "followers": 199,
       "delta": 25
+    },
+    {
+      "date": "2026-06-22",
+      "followers": 256,
+      "delta": 57
     }
   ],
   "follow_drivers": [
@@ -77,8 +77,8 @@
       "post_date": "2026-06-19",
       "text_preview": "스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉 채우는 게 상위노출 공식인 줄 알았",
       "content_type": "ecommerce_tip",
-      "engagement_score": 80,
-      "views": 5534,
+      "engagement_score": 176,
+      "views": 13687,
       "follower_delta_next_day": 25,
       "attribution_confidence": "high"
     },
