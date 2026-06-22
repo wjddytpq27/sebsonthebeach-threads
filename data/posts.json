@@ -244,5 +244,13 @@
     "topic": "AI_THREADS",
     "fact_checked": true,
     "fact_check_status": "pass"
+  },
+  {
+    "date": "2026-06-22",
+    "content": "쿠팡 로켓그로스 수수료 10%, 자사몰 PG 수수료 2.5% — 입점 전에는 이 숫자 차이만 봤음.\n\n6개월 뒤 실마진은 달랐음.\n\n로켓그로스: 반품율 8% + CS 위탁비 빠지니까 실수령 70%쯤\n자사몰: 광고비 월 60만원 태우고 나니 실수령 64%\n\n수수료 아끼려고 자사몰 갔다가 실마진은 더 낮았던 거.\n\n너는 자사몰 전환 계산할 때 반품률 몇 %로 잡고 있어?",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "반품 처리비 한 건당 2,000~3,000원인데 반품률 10% 넘어가면 수수료 차이 다 날아감",
+    "fact_checked": true,
+    "fact_check_status": "pass"
   }
 ]
