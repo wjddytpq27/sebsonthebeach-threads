@@ -39,8 +39,17 @@ ENGAGE_LOG     = DATA_DIR / 'engage_log.csv'
 SIGNAL_FILE    = DATA_DIR / 'team_signal.json'
 STRATEGY_FILE  = DATA_DIR / 'growth_strategy.json'
 SLACK_CONFIG   = DATA_DIR / 'slack_config.json'
+BRIEFING_SENT  = DATA_DIR / '.briefing_sent'
 # 로컬은 절대경로, 클라우드(Actions)는 PATH의 claude
 CLAUDE_BIN     = os.environ.get('CLAUDE_BIN') or shutil.which('claude') or '/opt/homebrew/bin/claude'
+
+
+def already_briefed_today() -> bool:
+    return BRIEFING_SENT.exists() and BRIEFING_SENT.read_text().strip() == today
+
+
+def mark_briefed():
+    BRIEFING_SENT.write_text(today)
 
 
 def send_slack(msg: str):
@@ -109,6 +118,10 @@ def detect_status(follower_history: list[dict]) -> tuple[str, int, str]:
     period = len(counts)
     daily_avg = round((last - first) / max(period - 1, 1), 2)
     trend_str = f'{first}→{last} ({period}일, 일평균 {daily_avg:+.1f})'
+
+    # days_since_growth=0 → 오늘 성장함. "0일째 변화 없음" 문구 방지용으로 여기서 덮어씀
+    if days_since_growth == 0:
+        trend_str = f'{first}→{last} ({period}일, 일평균 {daily_avg:+.1f}) — 오늘 성장 확인'
 
     if days_since_growth >= 5:
         return 'emergency', days_since_growth, trend_str
@@ -180,6 +193,16 @@ def analyze_posts(posts: list[dict]) -> tuple[dict, dict]:
     return best, worst
 
 
+CLI_ERROR_PATTERNS = [
+    'not logged in', 'please run', '/login', 'authentication',
+    'unauthorized', 'log in', 'sign in', 'session expired',
+]
+
+
+def is_cli_auth_error(output: str) -> bool:
+    return any(p in output.lower() for p in CLI_ERROR_PATTERNS)
+
+
 def generate_team_signal(
     status: str,
     days_since_growth: int,
@@ -188,7 +211,7 @@ def generate_team_signal(
     worst: dict,
     kw_performance: dict,
 ) -> dict:
-    """Claude haiku로 팀 신호 + 에이전트별 지시 생성"""
+    """Claude sonnet으로 팀 신호 + 에이전트별 지시 생성"""
 
     top_kws = list(kw_performance.keys())[:5]
     kw_summary = ', '.join(
@@ -198,13 +221,14 @@ def generate_team_signal(
     best_examples = '\n'.join(f'  - {e}' for e in best.get('examples', []))
 
     status_ko = {'normal': '정상', 'stall': '정체', 'emergency': '비상'}.get(status, status)
+    stall_note = f'{days_since_growth}일째 정체 중' if days_since_growth > 0 else '오늘 성장 확인'
 
     prompt = f"""너는 @sebsonthebeach Threads 팀의 성장 분석가야.
 계정 포지션: AI·자동화 실무자 + 마케팅 퍼널 사고. 반말 구어체.
 금지 주제: 자사몰/카페24, 추상적 AI 미래론.
 
 오늘 분석 결과:
-- 상태: {status_ko} ({days_since_growth}일째 팔로워 변화 없음)
+- 상태: {status_ko} ({stall_note})
 - 팔로워 추이: {follower_trend}
 - 상위 포스트 평균 score: {best.get("avg_score", 0)}
 - 상위 포스트 예시:
@@ -231,6 +255,8 @@ def generate_team_signal(
             capture_output=True, text=True, timeout=90
         )
         output = result.stdout.strip()
+        if result.returncode != 0 or is_cli_auth_error(output):
+            raise RuntimeError(f'CLI auth error: {output[:60]}')
         if '```' in output:
             parts = output.split('```')
             output = parts[1] if len(parts) > 1 else parts[0]
@@ -240,17 +266,86 @@ def generate_team_signal(
     except Exception as e:
         print(f'  ⚠️ AI 신호 생성 실패: {e}')
         stall_directive = status in ['stall', 'emergency']
+        trend_line = follower_trend.split('(')[0].strip()
         return {
-            'team_memo': f'상태: {status_ko}. {days_since_growth}일째 팔로워 변화 없음.',
-            'best_post_style': '숫자+반전 훅, AI 실무 경험담',
+            'team_memo': f'{trend_line} — {stall_note}. (AI 분석 불가 — CLI 인증 확인 필요)',
+            'best_post_style': '셀러한테만 훅 + 구체 수치 + 반전',
             'worst_post_style': '범용 동기부여, 추상적 AI 전망',
-            'top_search_keywords': top_kws[:3] if top_kws else ['AI활용', 'ChatGPT활용', '퍼스널브랜딩'],
+            'top_search_keywords': top_kws[:3] if top_kws else ['퍼스널브랜딩', '이커머스', 'N잡'],
             'directives': {
                 'trend_scout': '트렌딩 10개 이상, 논쟁형 우선' if stall_directive else '평소대로',
-                'viral_writer': '훅에 숫자 필수, 논쟁형 각도' if stall_directive else '숫자+반전 유지',
-                'hunter_engager': f'목표 {"35" if stall_directive else "25"}개, 영어 비중 {"40" if stall_directive else "20"}%',
+                'viral_writer': '훅 강화 + 반직관적 수치 필수, 시리즈 연속성 유지' if stall_directive else '셀러한테만 포맷 유지, 플랫폼 각도 순환',
+                'hunter_engager': f'목표 {"35" if stall_directive else "25"}개. 좋아요 50~500 범위 우선. 영어 비중 {"40" if stall_directive else "30"}%',
             },
+            '_cli_failed': True,
         }
+
+
+def sync_agent_prompts(signal: dict):
+    """
+    team_signal 기반으로 agent 프롬프트 파일의 동적 섹션을 자동 업데이트.
+    고정 섹션(역할/말투/금지)은 건드리지 않고 성과 데이터 섹션만 교체.
+    """
+    prompts_dir = BASE_DIR / 'prompts'
+
+    # ── hunter_engager.txt: 키워드 우선순위 섹션 ──────────────────────────────
+    hunter_file = prompts_dir / 'hunter_engager.txt'
+    if hunter_file.exists():
+        kw_perf  = signal.get('keyword_performance', {})
+        top_kws  = signal.get('top_search_keywords', [])
+        directives_he = signal.get('directives', {}).get('hunter_engager', '')
+
+        # hit_rate는 10일+ 데이터 있는 키워드만 신뢰 (샘플 부족하면 노이즈)
+        reliable       = {k: v for k, v in kw_perf.items() if v.get('comment_days', 0) >= 10}
+        confirmed_good = [k for k, v in reliable.items() if v['hit_rate'] >= 0.5]
+        confirmed_ban  = [k for k, v in reliable.items() if v['hit_rate'] == 0.0]
+
+        tier1_final = list(dict.fromkeys(confirmed_good + top_kws))[:6]
+        ban_line    = ', '.join(confirmed_ban) if confirmed_ban else 'AI API 가격, DeepSeek 뉴스'
+
+        new_section = (
+            f"## 타겟 키워드 우선순위 ({today} 자동 업데이트 — growth_analyst 기반)\n"
+            f"1순위: {', '.join(tier1_final) if tier1_final else '퍼스널브랜딩, 이커머스, 온라인창업'}\n"
+            f"2순위: 퍼스널브랜딩, 이커머스, 온라인창업, 셀러, 콘텐츠마케팅 (중 1순위 제외)\n"
+            f"금지 키워드: {ban_line} — 10일+ 데이터 기준 hit rate 0.0\n"
+            f"\n▶ 오늘 지시 (growth_analyst {today}): {directives_he}"
+        )
+        import re as _re
+        content = hunter_file.read_text(encoding='utf-8')
+        updated = _re.sub(
+            r'## 타겟 키워드 우선순위.*?(?=\n## |\Z)',
+            new_section + '\n\n',
+            content,
+            flags=_re.DOTALL,
+        )
+        hunter_file.write_text(updated, encoding='utf-8')
+        print(f'  ✅ hunter_engager.txt 키워드 섹션 업데이트')
+
+    # ── viral_writer.txt: 성과 데이터 섹션 ───────────────────────────────────
+    viral_file = prompts_dir / 'viral_writer.txt'
+    if viral_file.exists():
+        best  = signal.get('best_performing', {})
+        worst = signal.get('worst_performing', {})
+        examples = best.get('examples', [])
+        ex_lines = '\n'.join(f'  - "{e[:55]}"' for e in examples[:3]) if examples else '  - 데이터 없음'
+
+        new_section = (
+            f"## 성과 데이터 ({today} 자동 업데이트)\n\n"
+            f"잘 된 포스트 스타일: {best.get('style', '데이터 없음')}\n"
+            f"잘 된 포스트 avg score: {best.get('avg_score', 0)} | 예시:\n{ex_lines}\n\n"
+            f"안 된 포스트 스타일: {worst.get('style', '데이터 없음')} ({worst.get('count', 0)}개)\n\n"
+            f"오늘 viral_writer 지시: {signal.get('directives', {}).get('viral_writer', '평소대로')}"
+        )
+        import re as _re
+        content = viral_file.read_text(encoding='utf-8')
+        updated = _re.sub(
+            r'## 성과 데이터.*?(?=\n## |\Z)',
+            new_section + '\n\n',
+            content,
+            flags=_re.DOTALL,
+        )
+        viral_file.write_text(updated, encoding='utf-8')
+        print(f'  ✅ viral_writer.txt 성과 데이터 섹션 업데이트')
 
 
 def devil_advocate(status: str, follower_trend: str, best: dict, worst: dict) -> str:
@@ -277,9 +372,12 @@ def devil_advocate(status: str, follower_trend: str, best: dict, worst: dict) ->
             [CLAUDE_BIN, '-p', prompt],
             capture_output=True, text=True, timeout=60
         )
-        return result.stdout.strip()
+        output = result.stdout.strip()
+        if result.returncode != 0 or is_cli_auth_error(output):
+            return '(Claude CLI 인증 만료 — 비판 분석 불가. `! claude /login` 실행 필요)'
+        return output
     except Exception:
-        return "악마의 변호인 분석 실패"
+        return '(비판 분석 실패)'
 
 
 if __name__ == '__main__':
@@ -306,9 +404,13 @@ if __name__ == '__main__':
     print('  팀 신호 생성 중...')
     ai_signal = generate_team_signal(status, days_since_growth, follower_trend, best, worst, kw_performance)
 
+    if ai_signal.get('_cli_failed'):
+        print('  ⚠️ Claude CLI 인증 만료 — 폴백 신호 사용')
+        send_slack('🔐 *growth_analyst CLI 인증 만료*\n팀 신호가 하드코딩 폴백으로 생성됨.\n`! claude /login` 실행 필요')
+
     print('  악마의 변호인 분석 중...')
     critic = devil_advocate(status, follower_trend, best, worst)
-    print(f'  비판: {critic[:80]}...')
+    print(f'  비판: {critic[:80]}')
 
     # team_signal.json 조립
     signal = {
@@ -334,6 +436,10 @@ if __name__ == '__main__':
     SIGNAL_FILE.write_text(json.dumps(signal, ensure_ascii=False, indent=2))
     print(f'  team_signal.json 저장: status={status}')
 
+    # 프롬프트 자동 업데이트 (자기개선 루프)
+    print('  프롬프트 동기화 중...')
+    sync_agent_prompts(signal)
+
     # growth_strategy.json도 호환성 유지로 함께 저장
     strategy = {
         'weekly_focus': ai_signal.get('directives', {}).get('viral_writer', ''),
@@ -348,26 +454,47 @@ if __name__ == '__main__':
     }
     STRATEGY_FILE.write_text(json.dumps(strategy, ensure_ascii=False, indent=2))
 
-    # Slack 알림
+    # Slack 단일 브리핑 (track.py는 데이터만 수집, 보고는 여기서만)
     status_emoji = {'normal': '✅', 'stall': '⚠️', 'emergency': '🚨'}.get(status, '📊')
-    out = [f'{status_emoji} *팀 브리핑* ({today})', '']
-    out.append(f'`{signal["team_memo"]}`')
+    out = [f'{status_emoji} *팀 브리핑* ({today})']
+    out.append(f'{follower_trend} | {signal["team_memo"][:60]}')
     out.append('')
-    out.append(f'*팔로워*: {follower_trend}')
-    out.append('')
-    out.append('*에이전트 지시*')
-    for agent, directive in signal['directives'].items():
-        out.append(f'• *{agent}*: {directive}')
 
-    if kw_performance:
-        top_kw = list(kw_performance.items())[:3]
+    # 포스트 TOP3
+    if posts:
+        ranked = sorted(posts, key=lambda x: int(x.get('engagement_score', 0)), reverse=True)
+        out.append('*포스트 TOP3*')
+        medals = ['🥇', '🥈', '🥉']
+        for i, p in enumerate(ranked[:3]):
+            score = int(p.get('engagement_score', 0))
+            likes = int(p.get('likes', 0))
+            replies_c = int(p.get('replies', 0))
+            out.append(f'{medals[i]} score {score} (❤️{likes} 💬{replies_c}) "{p.get("text_preview","")[:35]}…"')
+        dead = sum(1 for p in posts if int(p.get('engagement_score', 0)) == 0)
+        if dead:
+            out.append(f'무반응 {dead}/{len(posts)}개')
+        out.append('')
+
+    # 에이전트 지시
+    out.append('*에이전트 지시*')
+    for agt, directive in signal['directives'].items():
+        out.append(f'• {agt}: {directive[:90]}')
+
+    # 키워드 효과 (10일+ 데이터만)
+    reliable_kw = {k: v for k, v in kw_performance.items() if v.get('comment_days', 0) >= 10}
+    if reliable_kw:
+        top_kw = list(reliable_kw.items())[:3]
         kw_str = ' | '.join(f'{k} (hit {v["hit_rate"]})' for k, v in top_kw)
         out.append(f'\n*키워드 효과*: {kw_str}')
 
     if status in ('stall', 'emergency'):
         out.append(f'\n{status_emoji} *{days_since_growth}일째 정체 — 전략 전환 필요*')
 
-    out.append(f'\n🔴 *비판 감사*: {critic}')
+    out.append(f'\n🔴 *비판 감사*: {critic[:200]}')
 
-    send_slack('\n'.join(out))
+    if already_briefed_today():
+        print('  오늘 브리핑 이미 발송됨 — 중복 스킵')
+    else:
+        send_slack('\n'.join(out))
+        mark_briefed()
     print('완료')

@@ -1,8 +1,9 @@
 name: 매일 참여 브리프 발송
 
 on:
-  schedule:
-    - cron: '30 23 * * *'   # 매일 08:30 KST (UTC 전날 23:30)
+  # 자동 비활성화 — hunter-engager가 cron으로 자동 실행되므로 수동 브리프 불필요
+  # schedule:
+  #   - cron: '30 23 * * *'   # 매일 08:30 KST
   workflow_dispatch:
 
 jobs:

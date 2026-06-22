@@ -213,10 +213,5 @@ if __name__ == '__main__':
         }
         SIGNAL_FILE.write_text(json.dumps(signal, indent=2, ensure_ascii=False))
 
-    send_slack(
-        f"📎 [{today}] 팔로워 귀속 분석\n"
-        f"• 포스트당 평균 팔로워: +{avg_per_post:.2f}명\n"
-        f"• 최고 콘텐츠 타입: {best_type or '데이터 부족'}\n"
-        f"• {insight_text}"
-    )
-    print("완료")
+    # 귀속 분석은 growth_analyst 팀 브리핑에 통합 — 별도 Slack 없음
+    print(f"완료: 포스트당 평균 +{avg_per_post:.2f}명, 최고 타입={best_type}")

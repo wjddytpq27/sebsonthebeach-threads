@@ -102,7 +102,7 @@ if __name__ == '__main__':
         STATE_FILE.write_text(json.dumps(new_state, ensure_ascii=False, indent=2))
         new_cookies = new_state.get('cookies', [])
         print(f'  ✅ 갱신 완료: 쿠키 {len(new_cookies)}개 저장')
-        send_slack(f'✅ [{today}] Threads 세션 자동 갱신 완료')
+        print(f'  세션 갱신 완료 — Slack 알림 생략 (정상 케이스)')
     else:
         msg = (
             f'🔴 [{today}] Threads 세션 만료 — 수동 갱신 필요\n'

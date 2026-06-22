@@ -127,7 +127,18 @@ AI·자동화 실무자. 말투는 완전 반말 구어체.
             [CLAUDE_BIN, '-p', prompt, '--model', 'haiku'],
             capture_output=True, text=True, timeout=60
         )
+        if result.returncode != 0:
+            print(f'    ⚠️ Claude CLI 오류 (code {result.returncode}): {result.stderr[:60]}')
+            return None
         reply = result.stdout.strip().strip('"')
+        cli_error_patterns = [
+            "not logged in", "please run", "/login", "authentication",
+            "unauthorized", "log in", "sign in", "session expired",
+            "traceback", "exception", "error:", "failed to", "cannot connect",
+        ]
+        if any(p in reply.lower() for p in cli_error_patterns):
+            print(f'    ⚠️ Claude CLI 오류 문구 감지 — 차단: {reply[:50]}')
+            return None
         if not reply or reply.strip().upper() == 'SKIP':
             print(f'    ↩ SKIP 판정')
             return None
@@ -209,6 +220,7 @@ if __name__ == '__main__':
 
     done = []
     total_replied = 0
+    cli_fail_count = 0
 
     for post in posts:
         if total_replied >= MAX_REPLIES:
@@ -241,6 +253,7 @@ if __name__ == '__main__':
 
             reply = generate_reply(post_text, ctext)
             if not reply:
+                cli_fail_count += 1
                 continue
 
             result_id = post_reply(user_id, token, cid, reply)
@@ -260,7 +273,14 @@ if __name__ == '__main__':
 
     print(f'\n완료: {total_replied}개 답장')
 
-    if done:
+    if cli_fail_count >= 3 and total_replied == 0:
+        send_slack(
+            f'🔐 *reply_comments Claude CLI 오류* ({today})\n'
+            f'댓글 후보 있었으나 생성 {cli_fail_count}회 연속 실패.\n'
+            '`! claude /login` 실행 필요'
+        )
+
+    if len(done) >= 3:
         out = [f'💬 *댓글 답장* ({today}) — {total_replied}개', '']
         for d in done:
             out.append(f'• "{d["comment"][:35]}"')
