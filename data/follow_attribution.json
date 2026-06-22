@@ -1,6 +1,41 @@
 {
-  "updated_at": "2026-06-22",
+  "updated_at": "2026-06-23",
   "daily_deltas": [
+    {
+      "date": "2026-05-27",
+      "followers": 158,
+      "delta": 0
+    },
+    {
+      "date": "2026-05-28",
+      "followers": 157,
+      "delta": -1
+    },
+    {
+      "date": "2026-05-29",
+      "followers": 157,
+      "delta": 0
+    },
+    {
+      "date": "2026-06-01",
+      "followers": 158,
+      "delta": 1
+    },
+    {
+      "date": "2026-06-02",
+      "followers": 158,
+      "delta": 0
+    },
+    {
+      "date": "2026-06-03",
+      "followers": 158,
+      "delta": 0
+    },
+    {
+      "date": "2026-06-04",
+      "followers": 160,
+      "delta": 2
+    },
     {
       "date": "2026-06-05",
       "followers": 164,
@@ -22,54 +57,19 @@
       "delta": 0
     },
     {
-      "date": "2026-06-11",
-      "followers": 164,
-      "delta": 0
-    },
-    {
-      "date": "2026-06-12",
-      "followers": 165,
-      "delta": 1
-    },
-    {
-      "date": "2026-06-13",
-      "followers": 166,
-      "delta": 1
-    },
-    {
-      "date": "2026-06-15",
-      "followers": 167,
-      "delta": 1
-    },
-    {
-      "date": "2026-06-16",
-      "followers": 168,
-      "delta": 1
-    },
-    {
-      "date": "2026-06-17",
-      "followers": 171,
-      "delta": 3
-    },
-    {
-      "date": "2026-06-18",
-      "followers": 171,
-      "delta": 0
-    },
-    {
-      "date": "2026-06-19",
-      "followers": 174,
-      "delta": 3
-    },
-    {
       "date": "2026-06-20",
-      "followers": 199,
-      "delta": 25
+      "followers": 233,
+      "delta": 69
     },
     {
-      "date": "2026-06-22",
+      "date": "2026-06-21",
+      "followers": 255,
+      "delta": 22
+    },
+    {
+      "date": "2026-06-23",
       "followers": 256,
-      "delta": 57
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -77,9 +77,9 @@
       "post_date": "2026-06-19",
       "text_preview": "스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉 채우는 게 상위노출 공식인 줄 알았",
       "content_type": "ecommerce_tip",
-      "engagement_score": 176,
-      "views": 13687,
-      "follower_delta_next_day": 25,
+      "engagement_score": 217,
+      "views": 10990,
+      "follower_delta_next_day": 69,
       "attribution_confidence": "high"
     },
     {
@@ -101,15 +101,6 @@
       "attribution_confidence": "high"
     },
     {
-      "post_date": "2026-06-18",
-      "text_preview": "셀러한테만 푸는 상품 정리 시리즈 3편 중 1편  스마트스토어 상품 100개 넣고 6개월 방치했음. 이번 달",
-      "content_type": "ecommerce_tip",
-      "engagement_score": 3,
-      "views": 159,
-      "follower_delta_next_day": 3,
-      "attribution_confidence": "high"
-    },
-    {
       "post_date": "2026-06-08",
       "text_preview": "셀러한테만 푸는 자사몰 전환 실수 시리즈 1편.  쿠팡 수수료 15% 아까워서 자사몰 만들었음. 6개월 뒤 ",
       "content_type": "ecommerce_tip",
@@ -117,33 +108,6 @@
       "views": 254,
       "follower_delta_next_day": 1,
       "attribution_confidence": "medium"
-    },
-    {
-      "post_date": "2026-06-11",
-      "text_preview": "셀러한테만 푸는 노출 관리 시리즈 3편 중 1편  스마트스토어 상품 10개 올려놓고 6개월 방치한 적 있음.",
-      "content_type": "ecommerce_tip",
-      "engagement_score": 14,
-      "views": 292,
-      "follower_delta_next_day": 1,
-      "attribution_confidence": "high"
-    },
-    {
-      "post_date": "2026-06-12",
-      "text_preview": "셀러한테만 푸는 스마트스토어 생존 시리즈 3편 중 1편  상품 50개 올려놓고 6개월 뒀음. \"상품 많을수록",
-      "content_type": "ecommerce_tip",
-      "engagement_score": 9,
-      "views": 411,
-      "follower_delta_next_day": 1,
-      "attribution_confidence": "high"
-    },
-    {
-      "post_date": "2026-06-15",
-      "text_preview": "셀러한테만 푸는 스마트스토어 효율 시리즈 3편 중 1편  스마트스토어 처음 시작할 때 상품 많이 올릴수록 노",
-      "content_type": "ecommerce_tip",
-      "engagement_score": 10,
-      "views": 454,
-      "follower_delta_next_day": 1,
-      "attribution_confidence": "high"
     },
     {
       "post_date": "2026-05-24",
@@ -195,13 +159,13 @@
     "text_preview": "스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉 채우는 게 상위노출 공식인 줄 알았",
     "post_date": "2026-06-19",
     "content_type": "ecommerce_tip",
-    "follower_delta": 25
+    "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 5.142857142857143,
+    "ecommerce_tip": 24.666666666666668,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 3.08,
+  "avg_followers_per_post": 8.67,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
