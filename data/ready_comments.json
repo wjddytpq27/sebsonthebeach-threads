@@ -1,57 +1,95 @@
 {
-  "date": "2026-05-18",
-  "generated_at": "2026-05-18T04:50:17.949133",
-  "strategy_note": "스타트업/사이드프로젝트/린스타트업 키워드. 수집 5개(좋아요 9~38). 성과공유/유머/질문형 고루 분포. 자사몰/자동화 경험 언급으로 정체성 노출 전략.",
+  "date": "2026-06-18",
   "comments": [
     {
-      "post_id": "DYXHj0cExP8",
-      "author": "cj_onthetop",
-      "url": "https://www.threads.com/@cj_onthetop/post/DYXHj0cExP8",
-      "keyword": "스타트업",
-      "post_type": "achievement",
-      "text": "창업 1.5년차 신보 Nest 1차 합격",
-      "comment": "삼고초려 끝에 합격이라니 ㅋㅋ 멋있다 최종까지 어떤 준비 했어?",
-      "reasoning": "성과에 진심 반응 + 구체적 질문 → 댓글 쓴 사람 프로필 궁금증 유발"
+      "post_id": "DX0S92Bkq9Y",
+      "author": "salesking_onal",
+      "url": "https://www.threads.com/@salesking_onal/post/DX0S92Bkq9Y",
+      "keyword": "이커머스",
+      "lang": "ko",
+      "text": "이커머스 최고의 실력자들을 모을거다\n송도 220평 규모의 오피스에\n국내 최고의 실력자만 엄",
+      "comment": "장사만 잘한다고 안 된다는 게 핵심인데 — 실력 기준이 매출이야, 마진 구조야, 아니면 다른 거? 뽑는 기준이 궁금함."
     },
     {
-      "post_id": "DYdq-MTjzr0",
-      "author": "orcawalk",
-      "url": "https://www.threads.com/@orcawalk/post/DYdq-MTjzr0",
-      "keyword": "스타트업",
-      "post_type": "humor",
-      "text": "만원으로 스타트업 운영하기 - 직원: AI에이전트 이천원",
-      "comment": "AI 에이전트 직원 이천원 너무 현실ㅋㅋ 자사몰 자동화 붙이면 딱 이 느낌 나옴",
-      "reasoning": "유머에 공감 + 자사몰 실무자 정체성 노출 → 셀러 관심사 있는 사람 프로필 클릭"
+      "post_id": "DZdu2AlEkI5",
+      "author": "lionsverse.kr",
+      "url": "https://www.threads.com/@lionsverse.kr/post/DZdu2AlEkI5",
+      "keyword": "자사몰",
+      "lang": "ko",
+      "text": "GA4 연결하고 네이버쇼핑 상품 정보 연결하고\n네이버와 카카오 로그인도 붙여야 합니다.\n네",
+      "comment": "GA4 + 네이버쇼핑 + 카카오로그인 + 네이버페이 + 택배사 + 광고 연동... 목록 보니까 연동 하나 빠지면 전환 추적에 구멍 나는 구조임. 카페24 세팅이 최근 2년 사이에 더 복잡해졌더라."
     },
     {
-      "post_id": "DYJzw7ukYM0",
-      "author": "ceo_hedgehog",
-      "url": "https://www.threads.com/@ceo_hedgehog/post/DYJzw7ukYM0",
-      "keyword": "스타트업",
-      "post_type": "empathy",
-      "text": "월매출 100만원도 안 되는데 지원사업 합격하고 칼퇴",
-      "comment": "살아남은 게 성과인 구간 진짜 있음ㅋㅋ 지원사업 합격이 매출보다 더 현실적인 수익원일 때도 있고",
-      "reasoning": "생존 공감 + 약간의 실무 인사이트 → 같은 구간 지나온 사람으로 인식"
+      "post_id": "DLmaCUVRi-1",
+      "author": "denniswithseo",
+      "url": "https://www.threads.com/@denniswithseo/post/DLmaCUVRi-1",
+      "keyword": "콘텐츠마케팅",
+      "lang": "ko",
+      "text": "단, 아무 키워드에 억지로 끼어들면 안됩니다!\n우리 제품의 특장점과 반드시 관련이 있어야 ",
+      "comment": "'제품 특장점과 반드시 연관된 키워드만' — 자사몰에서 직접 확인했는데 관련 없는 키워드 유입은 이탈률이 3배 가까이 높더라. 클릭은 많은데 전환이 0인 구간이 딱 거기서 나왔음."
     },
     {
-      "post_id": "DJqAo21TG1l",
-      "author": "quokka.wony",
-      "url": "https://www.threads.com/@quokka.wony/post/DJqAo21TG1l",
-      "keyword": "사이드프로젝트",
-      "post_type": "question",
-      "text": "사이드프로젝트, MBTI랑 상관있을까?",
-      "comment": "나는 시작은 잘 하는데 마무리가 항상 문제ㅋㅋ 완성까지 가는 사람이 결국 이기더라",
-      "reasoning": "질문에 솔직한 자기 답변 → 공감하면서 이 사람 뭐 하는 사람이지? 호기심 유발"
+      "post_id": "DGXGlk9z7y8",
+      "author": "mindcoordinator",
+      "url": "https://www.threads.com/@mindcoordinator/post/DGXGlk9z7y8",
+      "keyword": "1인기업",
+      "lang": "ko",
+      "text": "만약 심리학과 석사까지 졸업했지만\n또 상담사 (또는 임상심리사)자격증을 따지못했지만(땄을지",
+      "comment": "심리학 + 이커머스 조합 생각보다 강력함. 소비자 행동 분석이나 상세페이지 전환율 개선에 직접 쓸 수 있어. CRO(전환율 최적화) 포지션으로 가는 사람들 중에 심리학 전공이 꽤 많더라."
     },
     {
-      "post_id": "DLWLlusyrSZ",
-      "author": "work.better.tmrw",
-      "url": "https://www.threads.com/@work.better.tmrw/post/DLWLlusyrSZ",
-      "keyword": "사이드프로젝트",
-      "post_type": "info",
-      "text": "사이드프로젝트 첫 미팅 - 아이디어 있으면 하루라도 빨리 시작하자",
-      "comment": "맞는데 속도보다 방향이 먼저인 것 같더라 자사몰 자동화 3번 뒤엎었는데 빨리 만든 게 문제가 아니라 검증 안 하고 만든 게 문제였음",
-      "reasoning": "인사이트에 반론+경험 → 자사몰 자동화 실무자 정체성 드러남"
+      "post_id": "DR1ihI0knCb",
+      "author": "gohae_nam",
+      "url": "https://www.threads.com/@gohae_nam/post/DR1ihI0knCb",
+      "keyword": "N잡",
+      "lang": "ko",
+      "text": "자기 인생을 주인공 처럼 사는 분들을 인터뷰 하는 채널인 고민해결해주는 남자_고해남TV도 ",
+      "comment": "직장 다니면서 6년 유지했으면 알고리즘 한 번 죽었다 살아나는 것도 다 겪었겠다. 초반에 올린 콘텐츠가 나중에 수입으로 연결되는 지연 효과 — 그게 직장 병행할 때 버티는 이유가 되더라."
+    },
+    {
+      "post_id": "DZtSXzak7TA",
+      "author": "ankushbuilds__",
+      "url": "https://www.threads.com/@ankushbuilds__/post/DZtSXzak7TA",
+      "keyword": "AI tools automation",
+      "lang": "en",
+      "text": "1. Perplexity — AI research\n2. GitMind.com — mind ",
+      "comment": "Gamma + Perplexity combo is underrated — research first with Perplexity, then feed the output into Gamma. The presentation quality jumps compared to starting from scratch."
+    },
+    {
+      "post_id": "DH1eiu0zFrq",
+      "author": "theaiempire_",
+      "url": "https://www.threads.com/@theaiempire_/post/DH1eiu0zFrq",
+      "keyword": "AI tools automation",
+      "lang": "en",
+      "text": "1. Video Editing → Wisecut.ai\n2. Transcription → O",
+      "comment": "Otter.ai is solid but local Whisper-based transcription has caught up on accuracy and I stopped paying. The real cost in most AI stacks is workflow integration, not the tools."
+    },
+    {
+      "post_id": "DSP3lMzkbBj",
+      "author": "ahwr.iter112",
+      "url": "https://www.threads.com/@ahwr.iter112/post/DSP3lMzkbBj",
+      "keyword": "AI tools automation",
+      "lang": "en",
+      "text": "Hidden AI tools 99% skip — are you one?\n1. Obsidia",
+      "comment": "Obsidian's value compounds over months — most people quit before the graph gets dense enough to be useful. It's one of the few tools where the ROI is genuinely time-gated."
+    },
+    {
+      "post_id": "DTDReS1iqBe",
+      "author": "spykeai",
+      "url": "https://www.threads.com/@spykeai/post/DTDReS1iqBe",
+      "keyword": "marketing automation",
+      "lang": "en",
+      "text": "Inside this post:\n🔹 Marketing AI tools (content, S",
+      "comment": "The SEO + content AI combo makes sense, but the bottleneck is usually distribution — teams buy the tools then skip the publishing cadence. Tools don't fix a consistency problem."
+    },
+    {
+      "post_id": "DZtUCStCO32",
+      "author": "unique_herderm",
+      "url": "https://www.threads.com/@unique_herderm/post/DZtUCStCO32",
+      "keyword": "marketing automation",
+      "lang": "en",
+      "text": "Leads come in.\nNobody responds fast enough.\nNobody",
+      "comment": "Speed to lead is underestimated — a 10-minute response window vs 30+ minutes cuts qualification rates roughly in half. The follow-up problem is almost always a systems gap, not a motivation one."
     }
   ]
 }

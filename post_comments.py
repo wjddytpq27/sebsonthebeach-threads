@@ -97,10 +97,47 @@ try:
                     print(f"  ⏭ 내 포스트 스킵")
                     continue
 
+                # 댓글 버튼 먼저 클릭 (auto_engage.py 방식)
+                reply_btn = None
+                for aria in ['댓글', 'Reply', '답글', 'Comment']:
+                    loc = page.locator(f'[aria-label="{aria}"]').first
+                    try:
+                        loc.wait_for(timeout=2000)
+                        reply_btn = loc
+                        break
+                    except Exception:
+                        continue
+
+                if reply_btn:
+                    try:
+                        reply_btn.click(force=True, timeout=5000)
+                    except Exception:
+                        page.evaluate(
+                            "const el=document.querySelector('[aria-label=\"댓글\"]');"
+                            "if(el)el.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true}))"
+                        )
+                    page.wait_for_timeout(2000)
+                else:
+                    print(f"  ⚠️ 댓글 버튼 없음 — 직접 입력창 탐색")
+
                 # 댓글 입력창 찾기
-                reply_box = page.locator('div[contenteditable="true"], div[role="textbox"]').first
-                reply_box.wait_for(timeout=10000)
-                reply_box.click()
+                reply_box = None
+                for sel in ['div[contenteditable="true"]', 'div[role="textbox"]',
+                            '[data-lexical-editor="true"]', 'textarea']:
+                    loc = page.locator(sel).first
+                    try:
+                        loc.wait_for(timeout=4000)
+                        reply_box = loc
+                        break
+                    except Exception:
+                        continue
+
+                if not reply_box:
+                    print(f"  ❌ 입력창 없음 — 스킵: {post_id}")
+                    failed.append({'post_id': post_id, 'error': '입력창 없음'})
+                    continue
+
+                reply_box.click(force=True)
                 page.wait_for_timeout(800)
 
                 # 댓글 타이핑
@@ -136,8 +173,8 @@ try:
                 })
 
                 # 댓글 간격: 15~30초 랜덤 (봇 탐지 방지)
-                wait = random.uniform(15, 30)
-                print(f"  ⏳ {wait:.0f}초 대기...")
+                wait = random.uniform(90, 130)
+                print(f"  ⏳ {wait:.0f}초 대기 (봇 방지 간격)...")
                 time.sleep(wait)
 
             except Exception as e:

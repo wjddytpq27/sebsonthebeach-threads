@@ -24,8 +24,45 @@ CONFIG_FILE   = DATA_DIR / 'threads_config.json'
 INSIGHTS_FILE = DATA_DIR / 'insights.csv'
 FOLLOWER_FILE = DATA_DIR / 'follower_log.csv'
 SLACK_CONFIG  = DATA_DIR / 'slack_config.json'
+SIGNAL_FILE   = DATA_DIR / 'team_signal.json'
 
 BASE = 'https://graph.threads.net/v1.0'
+SESSION_FILE = BASE_DIR / 'session_state.json'
+
+
+def get_like_count_playwright(permalink: str) -> int:
+    """Playwright로 실제 포스트 페이지에서 좋아요 수 스크래핑. 실패 시 -1 반환."""
+    if not SESSION_FILE.exists():
+        return -1
+    try:
+        from playwright.sync_api import sync_playwright
+        session = json.loads(SESSION_FILE.read_text())
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            ctx = browser.new_context()
+            ctx.add_cookies(session.get('cookies', []))
+            page = ctx.new_page()
+            page.goto(permalink, wait_until='domcontentloaded', timeout=20000)
+            page.wait_for_timeout(3000)
+
+            # Like SVG의 부모 div 안 span에서 숫자 추출
+            like_count = page.evaluate('''() => {
+                const svg = document.querySelector("svg[aria-label='Like']");
+                if (!svg) return -1;
+                const parent = svg.closest("div");
+                if (!parent) return -1;
+                for (const span of parent.querySelectorAll("span")) {
+                    const n = parseInt((span.textContent || "").trim().replace(/,/g, ""));
+                    if (!isNaN(n) && n >= 0) return n;
+                }
+                return -1;
+            }''')
+
+            browser.close()
+            return int(like_count) if like_count is not None and like_count >= 0 else -1
+    except Exception as e:
+        print(f'    ⚠️ Playwright 좋아요 수집 실패: {e}')
+        return -1
 
 
 def load_config() -> dict:
@@ -79,10 +116,10 @@ def get_followers(user_id: str, token: str) -> int:
 
 
 def get_post_list(user_id: str, token: str, limit: int = 20) -> list[dict]:
-    """최근 포스트 목록 — id, text, timestamp"""
+    """최근 포스트 목록 — id, text, timestamp, permalink"""
     try:
         params = urllib.parse.urlencode({
-            'fields': 'id,text,timestamp',
+            'fields': 'id,text,timestamp,permalink',
             'limit': limit,
             'access_token': token,
         })
@@ -140,6 +177,31 @@ def write_follower_log(count: int) -> int:
         w.writerow([today, count])
     print(f'follower_log.csv 기록: {count}명')
     return prev_count
+
+
+def load_insights_for_briefing(limit: int = 20) -> list[dict]:
+    """insights.csv 포스트별 최신 collected_date 데이터 반환 — send_slack용"""
+    if not INSIGHTS_FILE.exists():
+        return []
+    latest: dict = {}
+    with open(INSIGHTS_FILE, encoding='utf-8') as f:
+        for r in csv.DictReader(f):
+            pid = r.get('post_id', '')
+            if not pid:
+                continue
+            if pid not in latest or r.get('collected_date', '') > latest[pid].get('collected_date', ''):
+                latest[pid] = {
+                    'post_id': pid,
+                    'post_date': r.get('post_date', ''),
+                    'text_preview': r.get('text_preview', ''),
+                    'likes':            int(r.get('likes', 0) or 0),
+                    'replies':          int(r.get('replies', 0) or 0),
+                    'reposts':          int(r.get('reposts', 0) or 0),
+                    'quotes':           int(r.get('quotes', 0) or 0),
+                    'views':            int(r.get('views', 0) or 0),
+                    'engagement_score': int(r.get('engagement_score', 0) or 0),
+                }
+    return sorted(latest.values(), key=lambda x: x['post_date'], reverse=True)[:limit]
 
 
 def write_insights(rows: list[dict]):
@@ -243,21 +305,26 @@ def send_slack(rows: list[dict], follower_count: int, prev_follower: int):
         out.append(f'무반응(0점) {dead}/{len(rows)}개 — 헛스윙 비율')
     out.append('')
 
-    # 방향 제안 — 단건 칭찬이 아니라 흐름 기반 판단
-    out.append('*🎯 방향 제안*')
+    # 방향 제안 — growth_analyst가 생성한 team_signal.json directives 기반
+    out.append('*🎯 에이전트 지시* (growth_analyst 분석)')
     if not rows:
         out.append('• ❗ 수집 포스트 없음 — track/포스팅 점검 필요')
     else:
-        if dead >= len(rows) * 0.5:
-            out.append(f'• 절반 이상({dead}개)이 무반응 — 안 먹히는 각도 정리 필요')
-        if avg_score > 0 and win_avg < avg_score * 0.85:
-            out.append('• 최근 반응이 7일 평균 아래로 하락 — 각도 전환 고려')
-        elif avg_score > 0 and win_avg >= avg_score * 1.15:
-            out.append('• 최근 반응 상승세 — 잘 나가는 글 각도 강화')
-        if ranked and ranked[0]['engagement_score'] >= max(win_avg * 2, 20):
-            out.append(f'• TOP 글이 평균 2배+ — "{ranked[0]["text_preview"][:24]}…" 각도로 follow-up')
-        if len(out) and out[-1] == '*🎯 방향 제안*':
-            out.append('• 흐름 평이 — TOP3 미리보기 보고 직접 방향 판단')
+        try:
+            signal = json.loads(SIGNAL_FILE.read_text()) if SIGNAL_FILE.exists() else {}
+            memo = signal.get('team_memo', '')
+            directives = signal.get('directives', {})
+            status = signal.get('status', '')
+            if memo:
+                out.append(f'• 상태: {memo}')
+            if directives.get('viral_writer'):
+                out.append(f'• 콘텐츠: {directives["viral_writer"][:90]}')
+            if directives.get('hunter_engager'):
+                out.append(f'• 인게이지: {directives["hunter_engager"][:90]}')
+            if not memo and not directives:
+                out.append('• growth_analyst 미실행 — team_signal.json 확인 필요')
+        except Exception:
+            out.append('• team_signal.json 로드 실패')
 
     if follower_count >= 0 and prev_follower >= 0:
         diff = follower_count - prev_follower
@@ -290,21 +357,42 @@ if __name__ == '__main__':
     posts = get_post_list(user_id, token, limit=20)
     print(f'  포스트 {len(posts)}개')
 
+    # Playwright 사용 가능 여부 확인
+    use_playwright = SESSION_FILE.exists()
+    if use_playwright:
+        try:
+            from playwright.sync_api import sync_playwright
+            print('  Playwright 세션 감지 — 좋아요 수 실제 페이지에서 수집')
+        except ImportError:
+            use_playwright = False
+            print('  ⚠️ playwright 미설치 — 좋아요는 API 값 사용 (부정확할 수 있음)')
+
     rows = []
     for post in posts:
         post_id = post.get('id', '')
         text = post.get('text', '')
         timestamp = post.get('timestamp', '')
+        permalink = post.get('permalink', '')
         post_date = timestamp[:10] if timestamp else today
 
         print(f'  인사이트 수집: {post_id} ({post_date})')
         metrics = get_post_insights(post_id, token)
 
-        likes    = int(metrics.get('likes', 0))
+        likes_api = int(metrics.get('likes', 0))
         replies  = int(metrics.get('replies', 0))
         reposts  = int(metrics.get('reposts', 0))
         quotes   = int(metrics.get('quotes', 0))
         views    = int(metrics.get('views', 0))
+
+        # 좋아요: API 값이 0이고 Playwright 가능하면 실제 페이지에서 수집
+        if likes_api == 0 and use_playwright and permalink:
+            likes_pw = get_like_count_playwright(permalink)
+            likes = likes_pw if likes_pw >= 0 else 0
+            if likes_pw > 0:
+                print(f'    ✅ 좋아요 Playwright 수집: {likes}')
+        else:
+            likes = likes_api
+
         score    = likes + replies * 3 + reposts * 5
 
         rows.append({
@@ -323,6 +411,6 @@ if __name__ == '__main__':
     prev_follower = write_follower_log(follower_count)
     if rows:
         write_insights(rows)
-    send_slack(rows, follower_count, prev_follower)
 
     print(f'완료: 팔로워 {follower_count}, 포스트 {len(rows)}개')
+    # Slack 브리핑은 growth_analyst.py(22:45)에서 단일 발송 — 여기선 생략

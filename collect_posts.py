@@ -71,21 +71,33 @@ def score_by_likes(like_count: int) -> int:
     else:
         return 0
 
-KEYWORD_SETS = [
-    ["AI활용", "ChatGPT활용", "AI부업"],
-    ["부업", "N잡", "월급외수입"],
-    ["퍼스널브랜딩", "콘텐츠마케팅", "팔로워늘리기"],
-    ["온라인창업", "1인기업", "프리랜서"],
-    ["자사몰", "카페24", "쇼핑몰창업"],
-    ["자동화", "노코드", "업무효율"],
-    ["디지털마케팅", "SNS마케팅", "인스타마케팅"],
-    ["재테크", "투자공부", "경제공부"],
-    ["스타트업", "사이드프로젝트", "린스타트업"],
-    ["이커머스", "온라인쇼핑몰", "셀러"],
-]
+# team_signal.json 기반 키워드 결정 (hash 방식 오버라이드)
+_signal_path = Path('/Users/uneedcomms/thread/data/team_signal.json')
+_signal = {}
+if _signal_path.exists():
+    try:
+        _signal = json.loads(_signal_path.read_text())
+    except Exception:
+        pass
 
-day_index = int(hashlib.md5(today.encode()).hexdigest(), 16) % len(KEYWORD_SETS)
-today_keywords = KEYWORD_SETS[day_index]
+# top_search_keywords 먼저 → 기본 키워드 보완
+_top = _signal.get('top_search_keywords', [])
+_default_ko = [
+    "퍼스널브랜딩", "디지털마케팅", "이커머스",
+    "온라인창업", "자사몰", "스마트스토어", "셀러",
+    "1인기업", "콘텐츠마케팅", "부업", "N잡",
+]
+# AI 관련 키워드 제외 (team_signal 지시)
+_exclude = {"AI활용", "ChatGPT활용", "AI부업", "ChatGPT", "AI API"}
+today_keywords = [k for k in list(dict.fromkeys(_top + _default_ko)) if k not in _exclude]
+
+# 영어 키워드 (normal 상태: 20%)
+EN_KEYWORDS = [
+    "AI tools automation", "marketing automation",
+    "solopreneur growth", "SaaS founder", "content creator tips",
+]
+NEED_KO = 25  # 한국어 수집 목표 (여유분 포함)
+NEED_EN = 8   # 영어 수집 목표 (여유분 포함)
 
 data_dir = Path('/Users/uneedcomms/thread/data')
 data_dir.mkdir(exist_ok=True)
@@ -149,10 +161,12 @@ try:
 
         print("✅ 로그인 성공")
 
+        ko_collected = []
         for keyword in today_keywords:
-            if len(collected) >= 30:
+            if len(ko_collected) >= NEED_KO:
                 break
-            print(f"\n🔍 검색: '{keyword}'")
+            print(f"\n🔍 한국어: '{keyword}'")
+        # ---- 아래에 기존 루프 내용 재사용 (변수명만 ko_collected로)
             try:
                 page.goto(
                     f'https://www.threads.com/search?q={keyword}&serp_type=default',
@@ -270,11 +284,12 @@ try:
                         if thread_context:
                             print(f"     맥락: {thread_context[:60]}...")
 
-                        collected.append({
+                        ko_collected.append({
                             'post_id': post_id,
                             'author': author,
                             'url': post_url,
                             'keyword': keyword,
+                            'lang': 'ko',
                             'text': post_text,
                             'thread_context': thread_context,
                             'like_count': like_count,
@@ -290,6 +305,93 @@ try:
             except Exception as e:
                 print(f"  ❌ 검색 실패 [{keyword}]: {e}")
 
+        # ── 영어 키워드 수집 ──────────────────────────────────
+        en_collected = []
+        for keyword in EN_KEYWORDS:
+            if len(en_collected) >= NEED_EN:
+                break
+            print(f"\n🔍 영어: '{keyword}'")
+            try:
+                page.goto(
+                    f'https://www.threads.com/search?q={keyword.replace(" ","+")}&serp_type=default',
+                    timeout=20000, wait_until='networkidle'
+                )
+                page.wait_for_timeout(3000)
+                for _ in range(3):
+                    page.evaluate("window.scrollBy(0, 600)")
+                    page.wait_for_timeout(1000)
+
+                en_links = page.query_selector_all('a[href*="/post/"]')
+                en_hrefs = []
+                seen_en = set()
+                for lnk in en_links[:12]:
+                    try:
+                        href = lnk.get_attribute('href') or ''
+                    except Exception:
+                        continue
+                    if '/post/' not in href or href in seen_en:
+                        continue
+                    seen_en.add(href)
+                    en_hrefs.append(href)
+
+                for href in en_hrefs:
+                    if len(en_collected) >= NEED_EN:
+                        break
+                    post_id = href.split('/post/')[-1].split('/')[0].split('?')[0]
+                    author  = href.split('/post/')[0].lstrip('/@') if '/post/' in href else ''
+                    if post_id in engaged_ids or author in engaged_authors or 'sebsonthebeach' in href:
+                        continue
+                    try:
+                        page.goto(f'https://www.threads.com{href}', timeout=15000)
+                        page.wait_for_timeout(2500)
+                        post_text = page.evaluate("""
+                            () => {
+                                const c = [...document.querySelectorAll('[dir="auto"]')];
+                                const t = c.map(el => el.innerText?.trim() || '').filter(t => t.length > 15 && t.length < 1000);
+                                if (t.length) return t.reduce((a,b) => a.length > b.length ? a : b);
+                                const art = document.querySelector('article');
+                                return art ? art.innerText?.trim() || '' : '';
+                            }
+                        """) or ''
+                        if len(post_text) < 15:
+                            continue
+                        # Skip non-English posts
+                        en_char_ratio = sum(1 for c in post_text if ord(c) < 256) / max(len(post_text), 1)
+                        if en_char_ratio < 0.7:
+                            continue
+                        likes = page.evaluate("""
+                            () => {
+                                const els = document.querySelectorAll('[aria-label]');
+                                for (const el of els) {
+                                    const m = (el.getAttribute('aria-label')||'').match(/(\\d+)\\s*(like|좋아요)/i);
+                                    if (m) return parseInt(m[1]);
+                                }
+                                return -1;
+                            }
+                        """) or -1
+                        if likes != -1 and (likes < 5 or likes > 500):
+                            continue
+                        engaged_authors.add(author)
+                        en_collected.append({
+                            'post_id': post_id,
+                            'author': author,
+                            'url': f'https://www.threads.com{href}',
+                            'keyword': keyword,
+                            'lang': 'en',
+                            'text': post_text,
+                            'thread_context': '',
+                            'like_count': likes,
+                            'post_type': 'info',
+                            'priority_score': 7,
+                            'collected_at': datetime.now(KST).isoformat(),
+                        })
+                        print(f"    ✅ EN: {post_id} (좋아요:{likes}) — {post_text[:40].replace(chr(10),' ')}")
+                    except Exception as e:
+                        print(f"    ❌ EN 포스트: {e}")
+            except Exception as e:
+                print(f"  ❌ EN 검색 실패 [{keyword}]: {e}")
+
+        collected = ko_collected + en_collected
         browser.close()
 
 except Exception as e:
