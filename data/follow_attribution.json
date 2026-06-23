@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-23",
+  "updated_at": "2026-06-24",
   "daily_deltas": [
-    {
-      "date": "2026-05-27",
-      "followers": 158,
-      "delta": 0
-    },
     {
       "date": "2026-05-28",
       "followers": 157,
@@ -70,6 +65,11 @@
       "date": "2026-06-23",
       "followers": 256,
       "delta": 1
+    },
+    {
+      "date": "2026-06-24",
+      "followers": 257,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -108,6 +108,15 @@
       "views": 254,
       "follower_delta_next_day": 1,
       "attribution_confidence": "medium"
+    },
+    {
+      "post_date": "2026-06-23",
+      "text_preview": "쿠팡 셀러한테만 하는 얘기.  광고비 월 70만원 쏟아붓다가 갑자기 끊은 적 있음. 계산이 안 맞아서.  근",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 3,
+      "views": 359,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
     },
     {
       "post_date": "2026-05-24",
@@ -162,10 +171,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 24.666666666666668,
+    "ecommerce_tip": 18.75,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 8.67,
+  "avg_followers_per_post": 7.9,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
