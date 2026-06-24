@@ -3,7 +3,7 @@ hunter-engager — Playwright 키워드 검색 기반 자동 engagement
 team_signal.json의 directives.hunter_engager 지시를 따름.
 Slack 발송 없음 — 결과는 cron.log에 print만.
 """
-import os, csv, random, time, sys, json, hashlib
+import os, csv, random, time, sys, json, hashlib, re
 from datetime import datetime, timezone, timedelta
 from typing import Optional, List, Set, Dict
 from pathlib import Path
@@ -38,6 +38,14 @@ status = signal.get('status', 'normal')
 DAILY_LIMIT = {'normal': 25, 'stall': 35, 'emergency': 40}.get(status, 25)
 # 영어 비중
 english_ratio = {'normal': 0.20, 'stall': 0.40, 'emergency': 0.50}.get(status, 0.20)
+# directive 텍스트가 status 기본값보다 우선 — 매일 directive 자동 반영
+_directive = signal.get('directives', {}).get('hunter_engager', '') or ''
+_m_goal = re.search(r'목표\s*(\d+)\s*개', _directive)
+if _m_goal:
+    DAILY_LIMIT = int(_m_goal.group(1))
+_m_eng = re.search(r'영어[^0-9]*(\d+)\s*%', _directive)
+if _m_eng:
+    english_ratio = int(_m_eng.group(1)) / 100.0
 ENGLISH_LIMIT = max(1, round(DAILY_LIMIT * english_ratio))
 KOREAN_LIMIT  = DAILY_LIMIT - ENGLISH_LIMIT
 
@@ -90,10 +98,21 @@ def _send_slack_alert(msg: str):
     except Exception:
         pass
 
-import subprocess as _sp
-_cli_test = _sp.run([CLAUDE_BIN, '-p', 'ping', '--model', 'haiku'], capture_output=True, text=True, timeout=30)
-if 'Not logged in' in _cli_test.stdout or 'Please run /login' in _cli_test.stdout or not _cli_test.stdout.strip():
-    msg = f"🔴 [auto_engage {today}] Claude CLI 인증 만료 — 댓글 전량 스킵.\n복구: `/opt/homebrew/bin/claude` 실행 후 `/login`"
+import subprocess as _sp, re as _re
+_AUTH_ERRORS = ['not logged in', 'please run', '/login', 'authentication', 'unauthorized', 'session expired']
+_agent_env = BASE / 'data' / '.agent_env'
+_agent_token = ''
+if _agent_env.exists():
+    for _line in _agent_env.read_text().splitlines():
+        _m = _re.match(r"""export\s+CLAUDE_CODE_OAUTH_TOKEN=['"]?([^'"]+)['"]?""", _line.strip())
+        if _m:
+            _agent_token = _m.group(1).strip()
+            break
+_cli_env = {**os.environ, 'CLAUDE_CODE_OAUTH_TOKEN': _agent_token} if _agent_token else os.environ.copy()
+_cli_test = _sp.run([CLAUDE_BIN, '-p', 'reply with: OK', '--model', 'haiku'], capture_output=True, text=True, timeout=30, env=_cli_env)
+_cli_out = (_cli_test.stdout + _cli_test.stderr).lower()
+if _cli_test.returncode != 0 or any(_p in _cli_out for _p in _AUTH_ERRORS) or 'ok' not in _cli_test.stdout.lower():
+    msg = f"🔴 [auto_engage {today}] Claude CLI 인증 만료 — 댓글 전량 스킵.\n복구: `! claude /login` 실행 필요"
     print(msg)
     _send_slack_alert(msg)
     sys.exit(1)
