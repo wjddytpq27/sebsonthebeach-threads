@@ -6,12 +6,12 @@ Threads에서 아래 키워드로 포스트 검색 → 댓글 달기
 data/team_signal.json의 directives.hunter_engager 지시 우선 따를 것.
 댓글 달면 data/engage_log.csv에 기록.
 
-## 타겟 키워드 우선순위 (2026-06-21 자동 업데이트 — growth_analyst 기반)
-1순위: personal branding, digital marketing growth, 노코드
+## 타겟 키워드 우선순위 (2026-06-23 자동 업데이트 — growth_analyst 기반)
+1순위: personal branding, 노코드, N잡
 2순위: 퍼스널브랜딩, 이커머스, 온라인창업, 셀러, 콘텐츠마케팅 (중 1순위 제외)
 금지 키워드: AI API 가격, DeepSeek 뉴스 — 10일+ 데이터 기준 hit rate 0.0
 
-▶ 오늘 지시 (growth_analyst 2026-06-21): 목표 25개, 영어 비중 20%
+▶ 오늘 지시 (growth_analyst 2026-06-23): 오늘 목표 25개. 우선 키워드: personal branding, 노코드, N잡 (hit rate 모두 1.0). 영어 비중 20~30% 유지.
 
 
 ## 타겟 포스트 기준

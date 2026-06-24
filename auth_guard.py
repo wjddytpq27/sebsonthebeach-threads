@@ -139,13 +139,14 @@ if __name__ == '__main__':
             print('  setup-token 파싱 실패 — 에이전트는 Keychain 세션으로 진행')
             sys.exit(0)
 
-    # 3단계: 둘 다 실패 → Slack 알림
+    # 3단계: 둘 다 실패 → Slack 알림 (90일마다 한 번꼴)
     print(f'[{today}] Claude CLI 인증 만료 (토큰 + Keychain 모두 실패)')
     if not already_alerted():
         send_slack(
-            f'🔐 *Claude CLI 인증 만료* ({today})\n'
-            '`! claude /login` 실행 필요\n'
-            '에이전트 작업(hunter-engager, reply_comments) 오늘 정지됨.'
+            f'🔐 *Claude CLI 토큰 만료* ({today})\n'
+            'Claude Code 열고 아래 한 줄 실행하면 90일 리셋:\n'
+            '`! claude setup-token`\n'
+            '_(오늘 에이전트 작업 정지 — 실행 후 자동 재개)_'
         )
         mark_alerted()
         print('  Slack 알림 발송')
