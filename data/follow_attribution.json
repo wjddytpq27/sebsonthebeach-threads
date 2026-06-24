@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-24",
+  "updated_at": "2026-06-25",
   "daily_deltas": [
-    {
-      "date": "2026-05-28",
-      "followers": 157,
-      "delta": -1
-    },
     {
       "date": "2026-05-29",
       "followers": 157,
@@ -62,13 +57,18 @@
       "delta": 22
     },
     {
-      "date": "2026-06-23",
+      "date": "2026-06-22",
       "followers": 256,
       "delta": 1
     },
     {
-      "date": "2026-06-24",
+      "date": "2026-06-23",
       "followers": 257,
+      "delta": 1
+    },
+    {
+      "date": "2026-06-25",
+      "followers": 258,
       "delta": 1
     }
   ],
@@ -110,13 +110,13 @@
       "attribution_confidence": "medium"
     },
     {
-      "post_date": "2026-06-23",
-      "text_preview": "쿠팡 셀러한테만 하는 얘기.  광고비 월 70만원 쏟아붓다가 갑자기 끊은 적 있음. 계산이 안 맞아서.  근",
+      "post_date": "2026-06-24",
+      "text_preview": "아마존이랑 자사몰 같이 운영하는 셀러한테만.  AI 광고 자동화 도구 3개 세팅해두고 3개월 손 안 댔음. ",
       "content_type": "ecommerce_tip",
-      "engagement_score": 3,
-      "views": 359,
+      "engagement_score": 6,
+      "views": 158,
       "follower_delta_next_day": 1,
-      "attribution_confidence": "high"
+      "attribution_confidence": "medium"
     },
     {
       "post_date": "2026-05-24",
