@@ -15,9 +15,12 @@ reply_comments.py — 내 포스트 댓글 자동 답장
 5. Threads API로 답장 게시
 6. replied_comments.csv에 기록
 """
-import csv, json, subprocess, time, urllib.request, urllib.parse
+import csv, json, subprocess, time, urllib.request, urllib.parse, sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+
+sys.path.insert(0, '/Users/uneedcomms/thread')
+from engage_post import is_valid_comment
 
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
@@ -153,6 +156,11 @@ AI·자동화 실무자. 말투는 완전 반말 구어체.
             return None
         if any(a in reply for a in ai_tone):
             print(f'    ⚠️ AI 말투 감지 스킵: {reply[:30]}')
+            return None
+        # 메타/되묻기 텍스트 차단 (공용 가드 — "텍스트가 보이지 않습니다" 류)
+        ok, reason = is_valid_comment(reply)
+        if not ok:
+            print(f'    ⛔ 게시 부적합 스킵: {reason} | {reply[:30]}')
             return None
         return reply
     except Exception as e:

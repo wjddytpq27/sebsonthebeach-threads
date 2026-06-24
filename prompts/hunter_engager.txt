@@ -2,9 +2,23 @@
 # 계정: @sebsonthebeach | 역할: 이커머스/셀러 커뮤니티 댓글 선점해서 팔로워 유입
 
 ## 오늘 할 일
-Threads에서 아래 키워드로 포스트 검색 → 댓글 달기
-data/team_signal.json의 directives.hunter_engager 지시 우선 따를 것.
-댓글 달면 data/engage_log.csv에 기록.
+댓글 게시는 **반드시 `python3 auto_engage.py` 실행으로만** 한다.
+이 스크립트가 키워드 검색 → 필터 → 댓글 생성 → 검증 게시 → engage_log.csv 기록까지 전부 한다.
+
+```bash
+cd /Users/uneedcomms/thread && . ./data/.agent_env && /usr/bin/python3 auto_engage.py
+```
+
+키워드·목표 수·영어 비중은 data/team_signal.json의 directives.hunter_engager에서 자동으로 읽으니,
+이 프롬프트의 전략(아래)이 team_signal에 반영돼 있는지 확인만 하면 된다.
+
+### 절대 금지 (CRITICAL — 2026-06-24 사고 재발 방지)
+- **직접 Playwright/브라우저 댓글 스크립트를 새로 작성하거나 실행하지 마라.** post_comments_*.py, run_*.py, collect_*.py 같은 ad-hoc 스크립트 생성 금지.
+- 댓글을 별도 json(ready_comments.json 등)에 미리 만들어 두고 게시하는 2단계 흐름 금지.
+- 게시 경로는 auto_engage.py 하나뿐이다. 이 스크립트는 engage_post.py의 가드(메타/에러 차단 + 타이핑 검증)를 거친다.
+- 이유: 에이전트가 매번 스크립트를 새로 짜면 ① 입력창 포커스 레이스로 댓글 앞글자가 잘리고("real talk"→"eal talk"), ② "텍스트가 보이지 않습니다" 같은 LLM 되묻기 응답이 공개 댓글로 게시되는 사고가 났다.
+
+auto_engage.py 실행 결과(성공/실패 개수)를 cron.log에 print만 하고 끝낸다.
 
 ## 타겟 키워드 우선순위 (2026-06-23 자동 업데이트 — growth_analyst 기반)
 1순위: personal branding, 노코드, N잡

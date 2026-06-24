@@ -8,6 +8,8 @@ from datetime import datetime, timezone, timedelta
 from typing import Optional, List, Set, Dict
 from pathlib import Path
 
+from engage_post import is_valid_comment, type_comment_safely
+
 # ── 경로 설정 ──────────────────────────────────────────
 BASE = Path('/Users/uneedcomms/thread')
 _STATE_FILE  = BASE / 'session_state.json'
@@ -207,26 +209,16 @@ AI·자동화를 실제로 써본 실무자 포지션. 말투는 완전 반말 �
     try:
         result = subprocess.run(
             [CLAUDE_BIN, '-p', prompt, '--model', 'haiku'],
-            capture_output=True, text=True, timeout=60
+            capture_output=True, text=True, timeout=60, env=_cli_env
         )
         comment = result.stdout.strip().strip('"')
         if not comment:
             return None
 
-        # CLI 인증 실패 감지 — 이 문자열이 댓글로 게시되면 계정 신뢰도 직격
-        cli_error_patterns = [
-            "not logged in", "please run", "/login", "run /login",
-            "authentication", "unauthorized", "log in", "sign in",
-            "session expired", "token", "api key", "error:", "traceback",
-            "exception", "failed to", "cannot connect",
-        ]
-        if any(p.lower() in comment.lower() for p in cli_error_patterns):
-            print(f"  ❌ 에러/인증 텍스트 감지 → 스킵: {comment[:50]}")
-            return None
-
-        bot_patterns = ["좋은 글", "공감합니다", "맞아요", "저도요", "감사합니다", "잘 봤습니다"]
-        if any(p in comment for p in bot_patterns):
-            print(f"  ⚠️ 봇티 감지 → 스킵: {comment[:30]}")
+        # 메타/되묻기/에러/봇티 텍스트 차단 (공용 가드)
+        ok, reason = is_valid_comment(comment)
+        if not ok:
+            print(f"  ❌ 게시 부적합 → 스킵: {reason} | {comment[:50]}")
             return None
 
         return comment
@@ -349,16 +341,22 @@ def engage_post(page, href: str, keyword: str, seen_authors: set, lang: str = 'k
             print(f"  ❌ 댓글 입력창 없음 — 스킵: {post_id}")
             return None
 
-        reply_box.click(force=True)
-        page.wait_for_timeout(800)
-
+        # 댓글을 먼저 생성한다 (생성 subprocess가 수 초 걸려 포커스가 식는 것 방지)
         comment = generate_comment(post_text, keyword, lang=lang)
         if not comment:
             print(f"  ↩ 댓글 생성 실패 → 스킵: {post_id}")
             return None
 
-        page.keyboard.type(comment, delay=30)
-        page.wait_for_timeout(1200)
+        # 포커스 보장 + 타이핑 검증 (앞글자 씹힘 시 자동 재입력)
+        if not type_comment_safely(page, reply_box, comment):
+            print(f"  ❌ 타이핑 검증 실패 → 게시 안 함: {post_id}")
+            return None
+
+        # 게시 직전 최종 가드 (생성 단계에서 못 거른 경우 대비)
+        ok, reason = is_valid_comment(comment)
+        if not ok:
+            print(f"  ❌ 게시 직전 부적합 → 스킵: {reason}")
+            return None
 
         submitted = page.evaluate("""
             () => {
