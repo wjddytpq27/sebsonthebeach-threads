@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-06-25",
+  "updated_at": "2026-06-26",
   "daily_deltas": [
-    {
-      "date": "2026-05-29",
-      "followers": 157,
-      "delta": 0
-    },
     {
       "date": "2026-06-01",
       "followers": 158,
@@ -70,6 +65,11 @@
       "date": "2026-06-25",
       "followers": 258,
       "delta": 1
+    },
+    {
+      "date": "2026-06-26",
+      "followers": 258,
+      "delta": 0
     }
   ],
   "follow_drivers": [
@@ -155,6 +155,15 @@
       "attribution_confidence": "medium"
     },
     {
+      "post_date": "2026-06-25",
+      "text_preview": "스마트스토어 막 시작한 셀러한테만 하는 얘기.  자동화 도구로 상품 1,000개 올렸음. 한 달이면 노출 터",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 3,
+      "views": 294,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "medium"
+    },
+    {
       "post_date": "2026-05-27",
       "text_preview": "AI한테 코드 던져놓고 왜 이해를 못 하냐고?  GitHub에서 하루 4000별 받은 Understand-A",
       "content_type": "ai_tech",
@@ -171,10 +180,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 18.75,
+    "ecommerce_tip": 15.0,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 7.9,
+  "avg_followers_per_post": 7.18,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
