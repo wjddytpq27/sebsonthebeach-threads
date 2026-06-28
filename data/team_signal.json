@@ -1,7 +1,7 @@
 {
-  "status": "normal",
-  "days_since_growth": 2,
-  "follower_trend": "163→258 (10일, 일평균 +10.6)",
+  "status": "stall",
+  "days_since_growth": 3,
+  "follower_trend": "164→257 (10일, 일평균 +10.3)",
   "best_performing": {
     "avg_score": 64.7,
     "examples": [
@@ -9,94 +9,14 @@
       "쿠팡 셀러한테만 하는 얘기.  광고비 월 70만원 쏟아붓다가 갑자기 끊은 적 있음. 계산이 안 맞아서.  근",
       "아마존이랑 자사몰 같이 운영하는 셀러한테만.  AI 광고 자동화 도구 3개 세팅해두고 3개월 손 안 댔음. "
     ],
-    "style": "'~한테만' 타깃 한정 훅으로 시작 → 내 실제 수치/실패담 고백 → 반전 인사이트 구조. 광고비·자동화 등 돈 직결 주제일수록 반응 높음"
+    "style": "타겟 좁히기 훅('~셀러들한테만') + 본인 직접 경험 + 예상 뒤집는 반전(광고비 끊었다, 손 안 댔다). 추상 없이 숫자/행동 단위로 말함."
   },
   "worst_performing": {
     "avg_score": 0.0,
     "count": 1,
-    "style": "타깃 특정 없이 일반론으로 시작하거나 AI 가능성 얘기로 흐르는 글"
+    "style": "타겟 불명확하거나 결론이 뻔한 글 — 읽어도 프로필 클릭할 이유가 없음."
   },
   "keyword_performance": {
-    "personal branding": {
-      "comment_days": 2,
-      "growth_days_after": 2,
-      "hit_rate": 1.0
-    },
-    "노코드": {
-      "comment_days": 2,
-      "growth_days_after": 2,
-      "hit_rate": 1.0
-    },
-    "스타트업": {
-      "comment_days": 2,
-      "growth_days_after": 2,
-      "hit_rate": 1.0
-    },
-    "N잡": {
-      "comment_days": 2,
-      "growth_days_after": 2,
-      "hit_rate": 1.0
-    },
-    "SaaS founder": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "content creator tips": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "브랜딩": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "AI도구": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "생산성": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "업무효율화": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "ChatGPT": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "클로드": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "린스타트업": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "그로스해킹": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "B2C마케팅": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "AI마케팅": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
     "devroder_tare": {
       "comment_days": 1,
       "growth_days_after": 1,
@@ -152,50 +72,25 @@
       "growth_days_after": 1,
       "hit_rate": 1.0
     },
-    "콘텐츠마케팅": {
+    "personal branding": {
       "comment_days": 2,
       "growth_days_after": 1,
       "hit_rate": 0.5
     },
-    "digital marketing growth": {
+    "노코드": {
       "comment_days": 2,
       "growth_days_after": 1,
       "hit_rate": 0.5
     },
-    "1인기업": {
+    "스타트업": {
       "comment_days": 2,
       "growth_days_after": 1,
       "hit_rate": 0.5
     },
-    "프리랜서": {
+    "N잡": {
       "comment_days": 2,
       "growth_days_after": 1,
       "hit_rate": 0.5
-    },
-    "마케팅자동화": {
-      "comment_days": 2,
-      "growth_days_after": 1,
-      "hit_rate": 0.5
-    },
-    "셀러": {
-      "comment_days": 2,
-      "growth_days_after": 1,
-      "hit_rate": 0.5
-    },
-    "온라인창업": {
-      "comment_days": 4,
-      "growth_days_after": 1,
-      "hit_rate": 0.25
-    },
-    "디지털마케팅": {
-      "comment_days": 5,
-      "growth_days_after": 1,
-      "hit_rate": 0.2
-    },
-    "AI tools automation": {
-      "comment_days": 6,
-      "growth_days_after": 1,
-      "hit_rate": 0.17
     },
     "AI활용": {
       "comment_days": 1,
@@ -208,6 +103,111 @@
       "hit_rate": 0.0
     },
     "AI부업": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "디지털마케팅": {
+      "comment_days": 5,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "온라인창업": {
+      "comment_days": 4,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "콘텐츠마케팅": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "digital marketing growth": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "AI tools automation": {
+      "comment_days": 6,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "1인기업": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "프리랜서": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "SaaS founder": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "content creator tips": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "마케팅자동화": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "브랜딩": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "셀러": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "AI도구": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "생산성": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "업무효율화": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "ChatGPT": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "클로드": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "린스타트업": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "그로스해킹": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "B2C마케팅": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "AI마케팅": {
       "comment_days": 1,
       "growth_days_after": 0,
       "hit_rate": 0.0
@@ -244,16 +244,16 @@
     }
   },
   "top_search_keywords": [
-    "personal branding",
-    "N잡",
-    "노코드"
+    "스마트스토어셀러",
+    "쿠팡셀러",
+    "아마존셀러"
   ],
   "directives": {
-    "trend_scout": "평소대로",
-    "viral_writer": "'~한테만' 훅 유지하되 오늘은 셀러 외 타깃(퍼스널브랜딩 중인 직장인, SaaS 쓰는 마케터)으로 한 편 각도 바꿔볼 것. 자사몰/카페24 언급 금지. 추상적 AI 미래 얘기 금지. 수치·실패담 필수 포함. 훅 강도는 평소 유지",
-    "hunter_engager": "댓글 25개 목표. 우선 키워드: personal branding → N잡 → 노코드 순. 영어 비중 20% (정상 상태 유지)"
+    "trend_scout": "트렌딩 10개 이상 수집. 논쟁형('AI가 광고를 대체한다는 거짓말') / 반전형('써봤더니 오히려 손해') 우선. 영어권 AI 마케팅 트렌드 최소 3개 포함. 추상적 AI 미래론 제외.",
+    "viral_writer": "정체 구간이라 훅 강도 최대치. '~한테만'으로 타겟 극도로 좁혀서 시작. 쿠팡/스마트스토어/아마존 셀러 중 하나 픽. 반전 포인트는 숫자로 박을 것(비용, 기간, 횟수). 자사몰/카페24 직접 언급 금지. '공감합니다' 유발하는 뭉뚱그린 결론 금지.",
+    "hunter_engager": "오늘 목표 35개 이상. 우선 키워드: 스마트스토어셀러, 쿠팡셀러, 아마존셀러. 영어 비중 40% 이상(이커머스/AI automation 계정 타겟). 팔로워 5천 이상 계정 댓글 선점 집중."
   },
-  "team_memo": "2일째 정체지만 일평균 +10.6 유지 중 — 위기 아님, 훅 패턴 고정화 전에 각도 살짝 틀어야 할 타이밍",
-  "devil_advocate": "일평균 +10.6이면 한 달에 약 320명, 1만 팔로워까지 **30개월** 걸리는 속도인데 이게 `normal`이냐? \"잘 됐다\"는 포스트 3개 모두 \"XXX한테만 하는 얘기\" 훅 하나에 기댄 거고, 같은 패턴 3연속이면 독자가 이미 익숙해져서 다음 주엔 반응 반토막 날 수 있어. 이 속도 그대로 30일 가면 팔로워 580명대, 알고리즘 노출 임계값 못 뚫고 정체 구간 진입할 가능성 높아 — 지금이 `stall` 기준 들어가기 직전이야.",
-  "updated_at": "2026-06-28"
+  "team_memo": "3일째 정체 — 숫자는 살아있는데 흐름이 굳었음. 훅 각도 바꾸고 댓글 35개 이상 뚫어야 다음 주 반등 가능.",
+  "devil_advocate": "**반박:**\n\n10일 평균 +10.3명이면 stall이 아니라 초반 스퍼트 후 자연 감속일 수 있는데, 최근 3일 추이를 꺼내지 않고 10일 평균으로 뭉개버린 거 — 이게 분석인지 숫자 가리기인지 모르겠음.\n\n잘 됐다는 포스트 3개 전부 \"~한테만 하는 얘기\" 오프닝인데, 이게 포맷 효과인지 알고리즘 타이밍 운인지 대조군이 없어서 재현 공식이라고 부를 근거가 없음 — 안 된 포스트 1개로 패턴 도출하면 그냥 확증편향임.\n\n이 전략 30일 유지하면 스마트스토어/쿠팡/아마존 셀러 타겟이 빠르게 포화되고, 같은 포맷 반복에 알고리즘 노출 감소 → 일평균 +5명 이하로 떨어질 가능성 높음.",
+  "updated_at": "2026-06-29"
 }
