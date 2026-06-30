@@ -1,75 +1,72 @@
 {
-  "date": "2026-06-29",
-  "signal_applied": "stall — 논쟁형/반전형 우선 선별. 영어권 AI x 이커머스 소재 포함. 3슬롯 골격([단일 플랫폼 셀러 한정 호출 + 업계 통념 + 숫자 반전]) 적용. next_2weeks_focus 반영: 1,000뷰 적중률 KPI 기준 소재만 채택.",
+  "date": "2026-06-30",
+  "signal_applied": "stall — 4일 정체. 훅 강도 최대. '~~셀러한테만' 또는 '~~쓰는 사람만 봐' 형태 강제. 수치 필수. 반전 구조 필수. 플랫폼 로테이션: 오전 스마트스토어, 저녁 AI×이커머스 교차.",
   "github_hot": [],
   "big_tech_news": [
     {
-      "source": "Bloomberg, 2026-01-06",
-      "topic": "아마존 AI가 셀러 동의 없이 외부 쇼핑몰 상품 정보를 긁어와 자사 플랫폼에 복제한 뒤, buyforme.amazon 이메일로 원작자에게 직접 주문해서 배송시키는 사례 포착. 셀러 Sarah Burzio는 자신의 상품이 아마존에 올라온 줄도 몰랐음. 거대 플랫폼이 개별 셀러 소싱 기능까지 흡수하는 유통 수직계열화 시작.",
-      "angle": "논쟁형 + 반전형",
-      "hook_idea": "아마존 셀러한테만 하는 얘기. 내 상품이 아마존에서 팔리고 있는데 내가 올린 게 아님. AI가 내 쇼핑몰 긁어서 아마존에 올리고 주문 오면 나한테 익명으로 사는 구조. 셀러가 플랫폼 위에서 장사하는 줄 알았는데 사실 AI 소싱 창고 역할만 하고 있었던 거."
+      "source": "네이버 스마트스토어센터 공지, 2026-06-02 시행",
+      "topic": "스마트스토어 상품 등록 한도 정책 전면 개편. 기존 등급제 폐지, 최근 13개월 판매상품비중 3% 기준 도입. 100개 등록했는데 3개만 팔렸으면 3% 충족. 미달 시 6월 15일~25일 판매중지 순차 적용. 매월 2일 재산정. 팔리지 않는 상품 자동 삭제 가능.",
+      "angle": "반전형 — 많이 올릴수록 좋다는 상위노출 공식이 이제 역효과 낼 수 있음",
+      "hook_idea": "스마트스토어 셀러한테만 하는 얘기. 상품 많이 올려두는 게 상위노출 공식인 줄 알았는데 이제 팔리는 비율이 3% 안 되면 강제 판매중지 됨. 300개 올려두고 8개만 팔린 사람 이번 달 다 날아갔음."
     },
     {
-      "source": "ChannelX, 2026-02",
-      "topic": "81%의 리테일러가 마켓플레이스 전략을 핵심으로 두면서 AI 상품 리스팅 자동화를 도입했지만, 40%는 오히려 '소비자 실망'을 자동화하고 있음. AI가 상품 데이터 빈 칸을 hallucination으로 채우면 실제 상품과 다른 설명이 붙고, 구매 후 반품으로 이어짐. 반품 1건 처리 비용이 원가의 65%를 잡아먹는 구조. 리스팅 품질이 올라가도 재고 연동 안 되면 재고 없는 상품에 주문이 들어와 브랜드 신뢰도 추락.",
-      "angle": "반전형 + 논쟁형",
-      "hook_idea": "AI 리스팅 자동화 도입한 셀러 중 40%가 고객 불만을 자동화하고 있다는 리포트 나왔음. 도구가 문제가 아니라 상품 데이터가 불완전할 때 AI가 빈 칸을 지어낸다는 게 핵심."
+      "source": "머니투데이 2026-06-12 / 레비오사AI 인터뷰",
+      "topic": "월 매출 3천만원 = 하루 3~4시간. 월 매출 1억원 = 하루 10시간 가까이. CS, 상품 등록, 재고 수정, 주문 처리 모두 수동. AI 에이전트로 전 과정 자동화 시도하는 1인 셀러들 등장하지만 현재 대부분 테스트베드 단계. 실제 운영 자동화까지는 갭 있음.",
+      "angle": "논쟁형 — AI 자동화가 1인 셀러 해방인가 vs 아직 현실과 갭이 큰가",
+      "hook_idea": "AI로 CS 자동화했더니 매출 늘었다는 얘기 많이 들었음. 근데 월 1억 파는 셀러가 여전히 하루 10시간 일하고 있다는 게 지금 현실임."
     },
     {
-      "source": "쿠팡 로켓그로스 정책 개편 2026",
-      "topic": "2026년부터 반품비 판매자 부담 전환. 의류 반품률 평균 15~20%. 사이즈 반품 60%. 월 20건 초과분부터 반품 회수비 + 재입고비 별도 발생. 결제수수료 2.9% 별도 분리 + 부가세 10% 추가. 의류 셀러 기준 원가 30% + 수수료 10.8% + 물류 10% + 반품 8% = 실마진 40% 필요. 왕복 택배비 5,000~6,000원이 셀러 전액 부담.",
-      "angle": "반전형",
-      "hook_idea": "쿠팡 셀러한테만 하는 얘기. 의류 팔면서 반품 많아도 쿠팡이 처리해준다고 알고 있었음. 2026년부터 월 20건 넘으면 반품비 내 돈임. 의류 반품률 평균 15%면 100개 팔 때 15개 반품 — 그 배송비 전부 나한테서 나감."
+      "source": "한빛일보 2026 이커머스 전망 시리즈",
+      "topic": "쿠팡 중심 판매 전략 한계. 아이템위너 경쟁 심화로 가격 인하 압박 → 광고비 증가 → 이익 감소 역설. 노출 변동 원인 파악 불가, 대응 수단이 가격 인하·광고 확대로만 제한됨. 매출 늘어도 마진이 얇아지는 구조.",
+      "angle": "반전형 — 쿠팡에서 매출 올리면 더 남을 줄 알았는데 오히려 더 쪼들리는 구조",
+      "hook_idea": "쿠팡 셀러한테만 하는 얘기. 매출 두 배 됐는데 통장에 남는 게 줄었음. 광고비 더 쏟아야 노출 유지되고, 아이템위너 경쟁 때문에 가격 내리다 보니 팔수록 남는 게 없는 구간 진입한 거."
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "Amazon AI Tool Blindsides Merchants by Offering Products Without Their Knowledge",
-      "source": "Bloomberg via HN/AI 커뮤니티",
-      "angle": "논쟁형 — 플랫폼 신뢰 vs 자율성. 아마존 셀러 정체성 위기 각도로 활용 가능",
-      "hook_idea": "플랫폼에서 장사하는 게 아니라 플랫폼 AI의 소싱 인프라가 되고 있다는 반전."
+      "story": "Working With AI: A concrete example (117점)",
+      "source": "HackerNews 2026-06-30",
+      "angle": "반전형 — AI와 실제로 일해보니 기대와 달랐던 것. 셀러 실무 각도로 재해석 가능",
+      "hook_idea": "AI 써서 일 줄인다고 했는데 실제로 해보면 프롬프트 짜고 결과 검수하는 시간이 생각보다 많이 걸린다는 게 현실. 도구가 아니라 협업 방식 자체를 바꿔야 한다는 각도."
     },
     {
-      "story": "The listing illusion: 40% of retailers automating consumer disappointment",
-      "source": "ChannelX 2026-02",
-      "angle": "반전형 — AI 도구 도입 = 성과 개선 공식 깨기",
-      "hook_idea": "AI 자동화가 실망을 자동화하는 역설. 리스팅 품질이 올라갔는데 반품이 늘어나는 이유."
+      "story": "Qwen 3.6 27B is the sweet spot for local development (735점)",
+      "source": "HackerNews 2026-06-30",
+      "angle": "논쟁형 — 로컬 AI 모델이 클라우드 구독보다 이커머스 셀러한테 실용적인가",
+      "hook_idea": "ChatGPT 월 구독비 내는 셀러한테만. 로컬에서 돌리는 AI 모델이 이제 GPT-4 수준이라는 얘기 나옴. CS 자동화에 월 구독 0원으로 쓸 수 있는 시대 왔는지 확인해봤음."
     }
   ],
   "recommended_morning": {
-    "topic": "아마존 셀러 × AI 소싱 탈취 — 내 상품이 내 허락 없이 아마존에 올라가는 구조",
-    "angle": "반전형 1인칭 경험담 + 업계 통념 깨기. 3슬롯 골격: [아마존 셀러 한정 호출] + [통념: 플랫폼에서 내가 올린 상품만 팔림] + [숫자 반전: 내가 올린 적 없는데 주문이 들어왔음, 아마존 AI가 외부 쇼핑몰 긁어서 buyforme.amazon으로 익명 발주]. 허락 없이 복제된 상품 리스팅, 셀러는 나중에야 발견. 블룸버그 보도 2026-01-06 확인된 사실.",
-    "controversy": "핵심 논쟁 3가지: (1) 아마존이 셀러 동의 없이 상품 복제하는 게 법적으로 가능한가 vs 이용약관 안에 있는 건가. (2) 셀러 입장: 노출 채널 늘어나는 거 아니냐 vs 마진 통제권 잃는 거 아니냐. (3) 이게 아마존만의 문제냐 vs 네이버/쿠팡도 유사 움직임 시작하는 신호냐. 찬반 갈리는 구조 — 편의성 vs 소싱 자율성 박탈.",
-    "source": "Bloomberg 2026-01-06: amazon-ai-tool-blindsides-merchants, threads.com/@choi.openai/post/DTPVSE7j3ao"
+    "topic": "스마트스토어 상품 등록 한도 정책 변경 — 상품 많이 올리는 게 이제 역효과",
+    "angle": "반전형 1인칭 경험담. '상품 많이 올려두면 노출 늘어난다'는 통념 → 실제로는 판매상품비중 3% 미달 시 강제 판매중지. 300개 올려두고 8개만 팔렸으면 기준 미달. 6월 15일~25일 이미 적용됨.",
+    "controversy": "(1) 실제로 얼마나 많은 셀러가 이미 판매중지 당했는지 모름 — 네이버가 공지했지만 인지 못한 셀러 대다수. (2) 상품 많이 올리는 게 SEO에 유리하다는 전략 자체가 틀린 건가 vs 이제 질 위주로 바꿔야 하는 건가. (3) 매월 2일 재산정 구조 — 상품 정리를 언제 어떻게 해야 하는지 기준이 모호하다는 불만.",
+    "source": "네이버 스마트스토어센터 공지 2026-06-02 / onch3.co.kr 정리"
   },
   "recommended_evening": {
-    "topic": "AI listing automation paradox — 40% of sellers using AI tools are automating customer disappointment, not conversions",
-    "angle": "Counterintuitive claim: AI product listing tools save 3-4 hours per product but 40% of retailers using them see more returns, not fewer. The mechanism: AI fills incomplete product data with hallucinations. Customer buys based on AI-generated description. Product arrives different from description. Return rate climbs. The twist: the more sellers automate listings, the more their products look identical to competitors — everyone optimized, no one differentiated. When AI writes average-good copy, average-good copy is no longer a competitive advantage.",
-    "controversy": "Core debate: 'AI listing tools are draft generators, not publish-ready solutions' vs 'the tools are good enough to ship without editing'. Second layer: sellers who automate listings with the same tools end up with near-identical copy — Naver/Amazon AI clusters them together, reduces individual visibility. Automation created a new race to the bottom: instead of competing on listing quality, everyone is now at listing parity. The sellers winning are the ones who use AI for speed and then manually inject specific buyer pain points the AI cannot know.",
-    "source": "ChannelX 2026-02: the-listing-illusion-why-40-of-retailers-are-automating-consumer-disappointment"
+    "topic": "AI로 CS 자동화했는데 월 1억 셀러가 여전히 하루 10시간 일하는 이유",
+    "angle": "AI 도구를 셀러 실무에 써봤더니 — 반전형. 자동화 = 업무 감소라는 공식 깨기. 매출 3천만원 구간에서는 하루 3~4시간으로 돌아가지만 1억 구간 넘어가면 자동화해도 CS 이슈, 재고 오류, 반품 처리 등 손이 더 많이 감. AI가 처리 못하는 예외 상황이 매출에 비례해서 늘어나는 구조.",
+    "controversy": "(1) AI CS 자동화 도구가 실제로 운영 시간을 줄여주는가 vs 예외 케이스 관리에 더 많은 시간이 드는가. (2) 1인 셀러는 AI보다 선택과 집중(상품 수 줄이기)이 먼저인가. (3) AI 에이전트 전 과정 자동화가 현재 테스트베드 수준인 상황에서 지금 도입하는 게 이득인가 비용인가.",
+    "source": "머니투데이 2026-06-12 레비오사AI 인터뷰 / HackerNews 'Working With AI: A concrete example' 2026-06-30"
   },
   "metadata": {
-    "collected_at": "2026-06-29",
+    "collected_at": "2026-06-30",
+    "agent": "trend-scout",
     "status": "stall",
     "directives_applied": [
-      "viral_writer stall mode — hook 강도 최대치",
-      "단일 플랫폼 로테이션 — 오전: 아마존 (6/27 스마트스토어, 6/28 쿠팡, 6/29 아마존)",
-      "3슬롯 골격 강제: [단일 플랫폼 셀러 한정 호출 + 업계 통념 + 숫자 반전]",
-      "next_2weeks_focus: 1,000뷰 적중률 KPI 소재 기준 채택",
-      "저녁 슬롯: 영어권 AI x 이커머스 교차 논쟁형 (counterintuitive claim 각도)",
-      "stop_doing 확인: 해당 없음 (무효 문자열)"
+      "stall mode — 훅 강도 최대, 수치 필수, 반전 구조 필수",
+      "플랫폼 로테이션: 오전 스마트스토어 (6/30)",
+      "저녁 슬롯: AI×이커머스 교차 논쟁형 — 자동화 역설 각도",
+      "top_search_keywords 반영: 스마트스토어, 쿠팡셀러, AI자동화",
+      "viral_writer 지시 반영: '~~셀러한테만' 호출 구조, 수치 포함 강제",
+      "통과 기준 충족: 자사몰/이커머스/셀러 운영 직접 영향 + 경험담 작성 가능"
     ],
     "sources_checked": [
-      "https://www.bloomberg.com/news/articles/2026-01-06/amazon-ai-tool-blindsides-merchants-by-offering-products-without-their-knowledge",
-      "https://channelx.world/2026/02/the-listing-illusion-why-40-of-retailers-are-automating-consumer-disappointment/",
+      "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
+      "https://www.mt.co.kr/future/2026/06/12/2026052415192252369",
+      "https://www.hanbitdaily.com/news/403831",
       "https://oscsnm.com/coupang-seller-fee-2026/",
-      "https://www.windly.cc/blog/2025-coupang-rocket-growth-fee",
-      "https://www.percenty.co.kr/blog/rocket-growth-fee-revision-key-details-sellers-need-to-know",
-      "https://tokki-ai.com/blog/naver-ai-search-2026-non-exposed-products",
-      "https://www.i-boss.co.kr/ab-2987-530389",
-      "https://www.dashpanda.io/blog/coupang-fees-by-category",
-      "https://silmupack.com/coupang-seller-guide/",
-      "https://clobe.ai/blog/fashion-ecommerce-return-rate-cashflow-management"
+      "https://oscsnm.com/coupang-ads-guide-2026/",
+      "https://news.ycombinator.com"
     ]
   }
 }
