@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-01",
+  "updated_at": "2026-07-02",
   "daily_deltas": [
-    {
-      "date": "2026-06-05",
-      "followers": 164,
-      "delta": 4
-    },
     {
       "date": "2026-06-07",
       "followers": 163,
@@ -70,6 +65,11 @@
       "date": "2026-07-01",
       "followers": 257,
       "delta": 0
+    },
+    {
+      "date": "2026-07-02",
+      "followers": 257,
+      "delta": 0
     }
   ],
   "follow_drivers": [
@@ -122,8 +122,8 @@
       "post_date": "2026-05-24",
       "text_preview": "바이브코딩, 지금도 믿고 있어?  AI로 빠르게 코드 뽑는 건 맞음. 근데 3개월 쌓이면 아무도 이해 못 하",
       "content_type": "ai_tech",
-      "engagement_score": 236,
-      "views": 3550,
+      "engagement_score": 237,
+      "views": 3652,
       "follower_delta_next_day": 0,
       "attribution_confidence": "low"
     },
@@ -182,6 +182,15 @@
       "attribution_confidence": "medium"
     },
     {
+      "post_date": "2026-07-01",
+      "text_preview": "쿠팡 셀러한테만 하는 얘기. 최저가 자동 맞춤 기능 켜놓으면 알아서 잘 팔릴 줄 알았음. 근데 그거 쿠팡이 ",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 3,
+      "views": 196,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "medium"
+    },
+    {
       "post_date": "2026-05-27",
       "text_preview": "AI한테 코드 던져놓고 왜 이해를 못 하냐고?  GitHub에서 하루 4000별 받은 Understand-A",
       "content_type": "ai_tech",
@@ -198,10 +207,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 10.714285714285714,
+    "ecommerce_tip": 9.375,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 6.08,
+  "avg_followers_per_post": 5.64,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
