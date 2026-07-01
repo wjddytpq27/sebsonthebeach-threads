@@ -306,5 +306,13 @@
     "fact_checked": true,
     "fact_check_status": "block",
     "blocked": true
+  },
+  {
+    "date": "2026-07-01",
+    "content": "쿠팡 셀러한테만 하는 얘기. 최저가 자동 맞춤 기능 켜놓으면 알아서 잘 팔릴 줄 알았음. 근데 그거 쿠팡이 가격 낮춰서 판 만큼, 내가 받는 정산금도 그대로 줄어드는 구조였음. 3개월 켜놨다가 정산 내역 뜯어보고 알았음. 주변 셀러들 물어보니 이거 켜놓고 매출 15~20% 빠졌다는 얘기도 종종 들림. 편한 기능인 줄 알았는데 결국 내가 메꾸는 거였음.",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "계약서 세부조항에나 나와있어서 켤 때 이 구조 제대로 설명받은 사람 거의 없음",
+    "fact_checked": true,
+    "fact_check_status": "modified"
   }
 ]
