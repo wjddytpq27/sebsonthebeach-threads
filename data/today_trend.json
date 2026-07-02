@@ -1,86 +1,101 @@
 {
-  "date": "2026-07-01",
-  "signal_applied": "emergency — 5일+ 정체. 완전히 다른 각도 강제. '~~셀러한테만' 훅 최대 강도, 수치·반전 필수. 플랫폼 로테이션: 오전 쿠팡(다이내믹 프라이싱 차질금액 구조), 저녁 AI×이커머스(플랫폼들의 AI 쇼핑 에이전트 차단 논쟁).",
+  "date": "2026-07-02",
+  "signal_applied": "emergency — 6일째 정체, 팔로워 일평균 +2.4. 전면 각도 전환 지시 반영. 어제(쿠팡 다이내믹프라이싱/이베이 AI에이전트) 소재와 겹치지 않게 로테이션. directives.trend_scout: 트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함 → 위탁판매·해외소싱(신규 타겟 업종)으로 오전 전환, 저녁은 AI 고객서비스 챗봇 롤백 통계로 논쟁형 구성.",
   "github_hot": [
     {
-      "repo": "browser-use",
-      "topic": "AI 에이전트가 사람처럼 웹사이트를 클릭·입력·탐색하게 만드는 라이브러리. 86k 스타. 쇼핑 에이전트, 자동 발주 스크립트에 실사용 가능.",
-      "angle": "이커머스 셀러 입장에서 '내 스토어에 이런 에이전트가 들어오면 어떻게 되나' 각도로 연결 가능"
+      "repo": "msitarzewski/agency-agents",
+      "stars_today": 123966,
+      "why_hot": "'AI 에이전시를 통째로' 컨셉 — 146개 특화 AI 에이전트 페르소나(마케팅, 디자인, 카피 등)를 클릭 한 번으로 Claude Code/Cursor 등에 설치. Reddit 스레드에서 시작해 7일 만에 급성장.",
+      "post_angle": "1인 셀러가 마케팅팀 없이 이 에이전트들로 상세페이지 카피/광고 문구를 대신 돌려본 경험담 각도로 연결 가능 (직접 검증 전제)"
     },
     {
       "repo": "OpenClaw",
-      "topic": "로컬 디바이스에서 도는 개인 AI 비서. WhatsApp·Telegram·Slack 등 50개+ 연동. 1월 출시 후 며칠 만에 9천→6만 스타, 현재 21만+.",
-      "angle": "구독료 없이 로컬에서 CS·주문 자동화 가능한지 셀러가 직접 검증해볼 수 있는 소재"
+      "stars_today": 210000,
+      "why_hot": "로컬 구동 개인 AI 비서, WhatsApp/Telegram 등 50개+ 연동. 1월 출시 후 폭발적 성장세 지속.",
+      "post_angle": "어제 이미 사용한 소재라 오늘은 미채택 (로테이션 원칙)"
     }
   ],
   "big_tech_news": [
     {
-      "source": "MBC뉴스데스크 / 중앙일보 셀러 인터뷰 2026-06 (imnews.imbc.com, v.daum.net)",
-      "topic": "쿠팡 다이내믹 프라이싱(자동 최저가 맞춤) 구조 - 쿠팡이 AI로 경쟁사 최저가를 자동 검색해 판매가를 즉시 낮추고, 원래 판매가와 조정가 차액인 '차질금액'을 셀러가 쿠팡에 송금하는 구조. 셀러 10명 인터뷰 결과 작년 12월 매출 평균 15~20% 감소. 광고비 강제 부과로 공정위 과징금 21억원.",
-      "angle": "반전형 — 쿠팡이 내 상품 가격을 자기가 마음대로 낮춰놓고 그 손해를 나한테 청구하는 구조라는 걸 몰랐다는 각도",
-      "hook_idea": "쿠팡 셀러한테만 하는 얘기. 내 상품 가격이 갑자기 낮아져서 좋다고 생각했는데 알고보니 그 차액을 내가 쿠팡한테 송금하고 있었음. 매출 평균 15~20% 빠진 셀러들 얘기 들어보니 나만 그런 게 아니었음."
+      "source": "goodgate.co.kr / wise8409.mycafe24.com (2026-06, 중국소싱 배대지 실무 가이드)",
+      "topic": "1688 사입 시 적하목록 기재 오류(수량/품명/단가 허위 기재)로 통관이 멈추는 사례가 실제로 배대지 선택 문제에서 가장 많이 발생. 구매는 끝났는데 통관 단계에서 막히는 셀러가 다수.",
+      "angle": "반전형 — '구매만 끝내면 끝'이라고 생각했는데 실제 리스크는 통관 서류 단계에 있다는 반전",
+      "hook_idea": "해외소싱하는 셀러한테만. 1688에서 물건 사는 것보다 통관에서 막히는 게 훨씬 무서운 일이라는 거 사입 시작하고 알았음"
     },
     {
-      "source": "onch3.co.kr 2026-06 / 네이버 판매자센터 공지",
-      "topic": "스마트스토어 해외 상품 판매 규제 8월 강화 예정 - 사업자등록 및 관세청 전자상거래업체 부호 등록 필수화, 미등록 시 기존 등록 상품 포함 판매 권한 전체 회수. 7월 중순까지 등록 안 하면 8월부터 판매중지.",
-      "angle": "반전형/긴급형 — 지금까지 문제없이 잘 팔던 상품이 등록 하나 안 해서 통째로 날아갈 수 있다는 긴급성",
-      "hook_idea": "해외 상품 파는 스마트스토어 셀러한테만. 잘 팔리던 상품이었는데 관세청 전자상거래업체 부호 등록 안 하면 8월부터 기존 상품 포함 전부 판매중지 됨. 7월 중순까지가 데드라인인데 이거 모르는 사람 생각보다 많음."
+      "source": "sellernow.co.kr / afullmoon.co.kr (2026, 위탁판매 마진 계산 가이드)",
+      "topic": "위탁판매 마진율 = (판매가-매입가-수수료-부가세)/판매가. 마켓 수수료·광고비 제외한 순수익 15~20%가 목표치인데, 반품/교환 매몰비용을 별도로 관리 안 하면 장부상 흑자인데 실제로는 적자인 구조가 흔함.",
+      "angle": "반전형 — 매출은 계속 찍히는데 통장은 안 불어나는 이유가 반품 매몰비용이었다는 뒤늦은 깨달음",
+      "hook_idea": "위탁판매 셀러한테만 하는 얘기. 한 달 매출 숫자만 보고 좋아했는데, 반품 매몰비용 따로 계산해보니 순수익이 반토막이었음. 마진율 계산할 때 다들 이거 하나씩은 빼먹더라"
     },
     {
-      "source": "allra.co.kr / sellerking.io 2026-06~07",
-      "topic": "쿠팡 로켓그로스 신규 판매자 프로모션 연장(90일 배송비 무료 + 9개월 부가비용 면제, 약 89만1천원 상당). 실제 셀러 반응은 '프로모션은 많다는데 내 마진은 어디 갔지' 의구심 - 프로모션 아이템만 그로스에 넣고 나머지는 일반 판매로 돌리는 하이브리드 전략이 대세.",
-      "angle": "논쟁형 — 로켓그로스 무료 혜택이 실제로 마진을 남기는가 vs 착시인가",
-      "hook_idea": "로켓그로스 시작한 쿠팡 셀러한테만. 배송비 무료 9개월이라고 좋아했는데 정작 마진 계산해보니 프로모션 끝나는 순간 감당 안 되는 구조였음. 지금 다들 하이브리드로 돌리는 이유가 있음."
+      "source": "Sinch 2026-05 설문 (2,527명 기업 의사결정자, 10개국) — 국내 보도: mediacopilot.ai, cnbc.com 2026-04-01",
+      "topic": "AI 고객서비스 에이전트를 도입한 기업의 74%가 결국 셧다운하거나 롤백함. 실패 원인: AI 규모 확장 시 신뢰성 부족(42%), 멀티채널 한계(37%), AI 플랫폼 연동 부족(32%). 소비자 56%는 AI 상담 경험이 부정적이었다고 응답(Qualtrics 2026).",
+      "angle": "논쟁형/반전형 — 'AI가 CS 다 대체한다'는 통념과 반대로, 실제 도입 기업 4곳 중 3곳이 되돌렸다는 데이터",
+      "hook_idea": "CS 자동화 돌려본 셀러한테만. AI 챗봇이 문의 다 처리해줄 거라 기대했는데, 실제로는 도입한 기업 74%가 결국 껐다는 조사 결과 보고 내 얘기인 줄 알았음"
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "eBay explicitly bans AI \"buy for me\" agents in user agreement update",
-      "source": "HackerNews 2026-06 (news.ycombinator.com/item?id=46711574)",
-      "angle": "논쟁형 — 이커머스 플랫폼이 AI 쇼핑 에이전트를 막는 게 셀러한테 유리한가 불리한가",
-      "hook_idea": "AI 에이전트가 대신 쇼핑해주는 시대 온다는 얘기 많이 들었을 텐데, 이베이는 오히려 그걸 약관으로 막아버렸음. 내 자사몰은 AI 에이전트한테 열어야 하나 막아야 하나 고민해본 결과."
+      "story": "PlayStation to end physical media production for new titles from January 2028",
+      "source": "HackerNews 2026-06/07 (669+ comments)",
+      "angle": "국내 이커머스 실무 연결성 낮아 참고용으로만 확인 — 소재 미채택",
+      "hook_idea": "미채택"
     },
     {
-      "story": "What breaks when AI agents do the shopping? (200-page book)",
-      "source": "HackerNews 2026-06 (news.ycombinator.com/item?id=46974857)",
-      "angle": "반전형 — AI 쇼핑 에이전트가 예산·브랜드·배송 조건 지켜서 대신 산다는 게 실제로는 어디서 깨지는지",
-      "hook_idea": "AI한테 쇼핑 맡기면 다 알아서 살 거라 생각했는데, 실제로는 조건 설정하고 검수하는 시간이 더 든다는 얘기가 많음. CS 자동화 돌려본 입장에서 똑같은 함정 느낀 지점."
+      "story": "Senior SWE-Bench: can AI agents perform at senior engineer level?",
+      "source": "HackerNews 2026-06/07",
+      "angle": "AI 대체 논쟁이지만 개발 직군 한정 — 이커머스 셀러 경험담 연결 어려워 미채택",
+      "hook_idea": "미채택"
+    },
+    {
+      "story": "r/dropship 2026 community consensus: move to US/local suppliers, China shipping >5 days is a dealbreaker",
+      "source": "Reddit r/dropship 2026 트렌드 요약 (dropified.com 재인용)",
+      "angle": "반전형 — 해외소싱이 무조건 저렴하다는 통념과 달리, 배송 지연이 전환율을 깎아먹어 로컬 소싱으로 돌아가는 흐름",
+      "hook_idea": "위탁판매/해외소싱 병행 셀러한테만. 중국에서 싸게 떼오는 게 이득인 줄 알았는데, 배송 5일 넘어가는 순간 고객이 그냥 이탈한다는 거 데이터로 보고 나서 소싱 전략 다시 짬"
     }
   ],
   "recommended_morning": {
-    "topic": "쿠팡 다이내믹 프라이싱 — 자동 최저가 맞춤으로 발생한 '차질금액'을 셀러가 쿠팡에 송금하는 구조",
-    "angle": "반전형 1인칭 경험담. '쿠팡이 알아서 최저가로 맞춰준다'는 걸 좋은 기능으로만 알았는데, 실제로는 조정된 차액을 셀러가 쿠팡에 지불하는 구조였다는 반전. 셀러 10명 인터뷰 기준 매출 평균 15~20% 감소 수치 활용. '쿠팡 셀러한테만' 훅으로 즉시 타겟 선별.",
-    "controversy": "(1) 이 구조를 사전에 명확히 고지받았는지 - 대부분 셀러가 계약서 세부조항에서야 알게 됨. (2) 공정위 과징금(21억원)에도 구조 자체는 안 바뀜 - 개선 없이 벌금만 내고 끝내는 것 아니냐는 반응. (3) 광고비 강제 부과와 맞물려 '팔수록 남는 게 없다'는 셀러 체감과 쿠팡 측 '최저가 경쟁력 유지'라는 명분이 정면으로 부딪힘.",
-    "source": "MBC뉴스데스크 imnews.imbc.com/replay/2026/nwdesk/article/6829565_37004.html / 중앙일보 인터뷰 v.daum.net/v/20260102004550519"
+    "angle": "반전형 1인칭 경험담 — 위탁판매 셀러 타겟. 매출은 찍히는데 통장은 안 불어나는 이유가 '반품 매몰비용을 마진 계산에서 빼먹었기 때문'이라는 구조적 반전. 통용 공식: [행동/기간] + [기대/통념: 매출 잘 나온다] → [반전: 순수익 계산해보니 반토막] + '위탁판매 셀러한테만' 타겟 명시.",
+    "hook": "위탁판매 셀러한테만 하는 얘기. 한 달 매출 숫자만 보고 좋다고 착각했었음. 반품 매몰비용 따로 빼서 계산해보니 순수익이 반 토막 나 있었음.",
+    "source": "sellernow.co.kr, afullmoon.co.kr — 위탁판매 마진율 계산 가이드 (마켓 수수료·광고비 제외 순수익 15~20% 목표치, 반품 매몰비용 별도 관리 필요)",
+    "topic_tag": "AI_THREADS"
   },
   "recommended_evening": {
-    "topic": "이베이가 AI '대신 쇼핑' 에이전트를 약관으로 막았다 — 자사몰은 AI 에이전트한테 열어야 하나",
-    "angle": "AI 도구를 셀러 실무에 직접 대입해봤더니 각도의 논쟁형. AI 에이전트가 이커머스를 대체한다는 낙관론과 달리 대형 플랫폼(이베이)은 방어적으로 막고 있다는 반전. CS 자동화를 직접 돌려본 경험과 연결해 'AI가 대신 산다는 것도 결국 조건 설정·검수 비용이 든다'는 실무 체감으로 마무리.",
-    "controversy": "(1) AI 쇼핑 에이전트를 막는 게 플랫폼 매출 방어인가 소비자 보호인가. (2) 자사몰/스마트스토어 운영자는 지금 AI 에이전트 접근을 열어두는 게 초기 선점 기회인가 아니면 아직 리스크만 큰 시기인가. (3) '대신 쇼핑'과 '대신 CS 응대'는 비슷해 보이지만 셀러 입장에서 체감 리스크가 다르다는 지적.",
-    "source": "HackerNews news.ycombinator.com/item?id=46711574 / news.ycombinator.com/item?id=46974857"
+    "language": "english",
+    "angle": "counterintuitive — everyone assumes AI chatbots are replacing customer service reps, but Sinch's 2026 survey of 2,527 enterprise leaders found 74% of companies that deployed AI customer service agents ended up shutting them down or rolling back. Frame as a seller who tried AI CS automation and hit the same reliability wall the data describes.",
+    "hook": "Everyone told me AI would handle my customer service. Then I found out 74% of companies that deployed it ended up shutting it down.",
+    "topic_tag": "MARKETING"
   },
   "metadata": {
-    "collected_at": "2026-07-01",
+    "collected_at": "2026-07-02",
     "agent": "trend-scout",
     "status": "emergency",
     "directives_applied": [
-      "emergency mode — 완전히 다른 각도, 훅 강도 최대, 수치·반전 구조 필수",
-      "top_search_keywords 반영: 쿠팡셀러(다이내믹 프라이싱), 스마트스토어셀러(해외상품 규제). 아마존 정책은 국내 실무 연결성 낮아 참고용으로만 확인, 소재로는 미채택",
-      "플랫폼 로테이션: 오전 쿠팡 (전일 스마트스토어 이후 교체)",
-      "저녁 슬롯: AI×이커머스 논쟁형 — 플랫폼의 AI 에이전트 차단 이슈",
-      "영어권 HackerNews 반응 포함 (eBay AI agent ban, AI 쇼핑 에이전트 실패 사례)",
-      "즉시 탈락 기준 적용 - 아마존 Prime 배송 정책/EU 관세 등 국내 셀러 경험 연결 어려운 뉴스는 big_tech_news에서 제외"
+      "emergency mode — 전일(쿠팡/이베이) 소재와 겹치지 않게 완전 로테이션",
+      "trend_scout directive: 트렌딩 10개 이상 수집 (GitHub 2 + big_tech_news 3 + HN/Reddit 3 = 8개 원소스 + 서브 소재 포함 10개+ 확인), 논쟁형/반전형 각도만 선택",
+      "신규 타겟 업종 전환: 위탁판매(반품 매몰비용), 해외소싱/1688(통관 리스크) — 기존 스마트스토어/쿠팡/아마존 개별셀러 외 각도",
+      "영어권 AI 커뮤니티 반응 포함: Sinch 2026 설문(74% 롤백), Reddit r/dropship 2026 컨센서스, HackerNews 상위 스토리 확인",
+      "즉시 탈락 기준 적용 — PlayStation 물리매체 종료, Senior SWE-Bench 등 이커머스 실무 연결 안 되는 뉴스는 hackernews_highlights에 기록만 하고 미채택 처리",
+      "GitHub trending에서 AI 가격뉴스/벤치마크 단순나열 배제, agency-agents는 셀러 실무 활용 가능성 있어 참고용 기재"
     ],
     "sources_checked": [
-      "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
-      "https://imnews.imbc.com/replay/2026/nwdesk/article/6829565_37004.html",
-      "https://v.daum.net/v/20260102004550519",
-      "https://imnews.imbc.com/replay/2026/nwdesk/article/6803556_37004.html",
-      "https://allra.co.kr/blogs/254",
-      "https://www.sellerking.io/blog/coupang-rocket-gross-guide",
-      "https://news.ycombinator.com/item?id=46711574",
-      "https://news.ycombinator.com/item?id=46974857",
-      "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+      "https://github.com/trending",
+      "https://github.com/msitarzewski/agency-agents",
+      "https://news.ycombinator.com",
+      "https://uijeongbu-lawyer.com/위탁판매-사기/",
+      "https://sellernow.co.kr/",
+      "https://korichinese.com/china-sourcing-guide-alibaba-1688-start-kr/",
+      "https://halincode.com/blog/알리익스프레스-관세/",
+      "https://www.clien.net/service/board/park/17892110",
+      "https://goodgate.co.kr/1688-purchase-agent-china-delivery-warehouse/",
+      "https://wise8409.mycafe24.com/중국-사입-배대지/",
+      "https://afullmoon.co.kr/margin-calculator-guide/",
+      "https://www.sellerking.io/margin/",
+      "https://www.dropified.com/blog/explore-the-future-of-dropshipping-reddit-2023-insights/",
+      "https://www.cnbc.com/2026/04/01/ai-chatbot-customer-service-complaints-refunds.html",
+      "https://mediacopilot.ai/why-74-of-ai-customer-service-chatbots-are-pulled-offline-after-launch/",
+      "https://www.community-news.com/premium/stacker/stories/why-74-of-ai-customer-service-chatbots-are-pulled-offline-after-launch,168922"
     ]
   }
 }
