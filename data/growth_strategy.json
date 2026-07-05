@@ -1,16 +1,18 @@
 {
-  "weekly_focus": "오늘은 완전 다른 각도로. 훅은 '~한테만 하는 얘기' 패턴 유지하되 타겟을 안 써본 업종/상황으로 바꾸고, 구체적 금액+반전 스토리 필수. 자사몰/카페레 얘기·추상적 AI 미래론 금지. 훅 강도 최대치로",
+  "weekly_focus": "'OO 셀러/직군한테만 하는 얘기' 좁은 타겟팅 오프닝 유지 + 구체적 숫자 1개 이상 포함 + 손절/실패 경험담 구조로 마무리. 훅 강도는 평소 수준. 자사몰/카페ेला 운영 자체를 주제로 삼지 말 것, 추상적 AI 미래론 금지.",
   "recommended_topics": [
     "devroder_tare",
     "damong9__",
-    "dream.planner_23"
+    "dream.planner_23",
+    "indeup.official",
+    "ikseon_munbanggu"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'ㅇㅇ한테만 하는 얘기' 식으로 특정 타겟(쿠팡셀러/아마존셀러/위탁판매)을 콕 집고, 구체적 금액(월 70만원, 400만원)이랑 반전(끊음/손 안 댐/매몰비용) 넣은 포스트가 먹힘",
-  "worst_post_style": "타겟 없이 두루뭉술하게 쓴 포스트, 숫자 없는 추상적 조언형은 0점",
+  "best_post_style": "'OO(쿠팡/아마존/위탁판매)셀러한테만 하는 얘기' 식 좁은 타겟팅 오프닝 + 구체적 숫자(광고비 70만원, 매출 400만원) + 실패/손절 경험담 구조",
+  "worst_post_style": "타겟 좁히기·구체적 숫자·실패담 셋 중 하나라도 빠지면 0점으로 수렴",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
@@ -18,8 +20,10 @@
   "engagement_keywords": [
     "devroder_tare",
     "damong9__",
-    "dream.planner_23"
+    "dream.planner_23",
+    "indeup.official",
+    "ikseon_munbanggu"
   ],
-  "alert": "8일째 정체, 팔로워 일평균 +2.0으로 사실상 멈춤 — 오늘부터 비상 모드, 각도 자체를 갈아엎어야 함",
-  "generated_at": "2026-07-04"
+  "alert": "팔로워 순성장 유지 중 (233→258, 일평균 +1.9) — 상위 포스트 스코어 6.3으로 견조, 오늘은 승리 포맷 반복 실행",
+  "generated_at": "2026-07-06"
 }
