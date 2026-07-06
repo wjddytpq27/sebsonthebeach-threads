@@ -1,107 +1,103 @@
 {
-  "date": "2026-07-03",
-  "signal_applied": "emergency — 7일째 정체, 팔로워 일평균 +2.2. devil's advocate가 최근 성과 3건(스마트스토어/쿠팡/아마존)이 재현 가능한 공식인지 불확실하다고 지적 → 오늘은 이 셋과 완전히 겹치지 않는 '미국向 해외역직구/구매대행' 니치를 신규 발굴해 오전 소재로 채택. 어제(2026-07-02) 소재였던 위탁판매 반품 매몰비용, AI CS 챗봇 74% 롤백은 전면 배제하고 로테이션. directives.trend_scout(트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함) 반영.",
+  "date": "2026-07-06",
+  "signal_applied": "normal — 팔로워 순성장 유지 중(233→258, 일평균 +1.9). directives.trend_scout: 평소대로. best_performing 포맷('OO 셀러한테만 하는 얘기' 좁은 타겟팅 + 구체적 숫자 + 실패/손절 경험담) 재현 가능한 신규 소재 위주로 수집. stop_doing 항목(zaya 관련 주제) 없음 확인, 겹치는 소재 없어 해당 없음.",
   "github_hot": [
     {
-      "repo": "msitarzewski/agency-agents",
-      "stars_today": 3032,
-      "why_hot": "'클릭 한 번으로 AI 에이전시 통째로 설치' 컨셉. 147개 특화 AI 에이전트 페르소나(카피라이터, 리딧 커뮤니티 매니저, 프론트엔드 등)를 Claude Code/Cursor에 바로 붙임. 어제는 참고용으로만 기재했지만 오늘은 셀러가 실제 상세페이지 카피에 써본 경험담 각도로 신규 채택.",
-      "post_angle": "1인 셀러가 광고 카피/상세페이지를 이 에이전트로 대신 돌렸는데, 페르소나만 그럴싸하고 실제 전환율은 그대로였다는 반전 경험담"
+      "repo": "alibaba/page-agent",
+      "stars_today": 805,
+      "why_hot": "자연어 명령으로 웹 화면을 직접 조작하는 자동화 도구. '클릭해줘', '이 폼 채워줘' 식으로 브라우저 작업을 대신 시킬 수 있음.",
+      "post_angle": "자사몰 CS/재고 확인처럼 반복적인 웹 작업을 이런 자연어 자동화에 맡겨봤더니 실제로 줄어든 시간과 여전히 사람이 확인해야 했던 부분의 반전 경험담"
+    },
+    {
+      "repo": "openai/codex-plugin-cc",
+      "stars_today": 1532,
+      "why_hot": "Codex가 코드 리뷰와 개발 작업 일부를 대신 위임받아 처리하는 연동 플러그인.",
+      "post_angle": "자사몰 자체 개발(이벤트 페이지, 스크립트 수정)을 AI에 위임했다가 검수 과정에서 오히려 시간이 더 든 경험담 각도로 활용 가능(직접 검증 필요)"
     },
     {
       "repo": "usestrix/strix",
-      "stars_today": 2137,
-      "why_hot": "오픈소스 AI 침투테스트 도구. 앱 취약점을 AI가 자동으로 찾아 고침. 개발자 커뮤니티에서 '자사몰 보안 점검을 AI에 맡길 수 있는가'라는 논쟁으로 확산 중.",
-      "post_angle": "자사몰 운영자가 결제/개인정보 보안 점검을 이런 AI 도구에 맡겨도 되는지 논쟁형 소재로 활용 가능(직접 검증 필요)"
-    },
-    {
-      "repo": "JuliusBrussee/caveman",
-      "stars_today": 926,
-      "why_hot": "Claude Code 토큰 사용량을 65% 절감하는 스킬. AI 자동화 비용에 민감한 소상공인/셀러 커뮤니티에서 화제.",
-      "post_angle": "AI 자동화 도구 굴리다 토큰비만 늘어난 셀러 경험담과 연결 가능"
+      "stars_today": 1114,
+      "why_hot": "오픈소스 AI 침투테스트 도구. 지난주에도 트렌딩에 올랐던 repo로 자사몰 보안 점검을 AI에 맡길 수 있는가 논쟁이 계속 이어지는 중.",
+      "post_angle": "최근에 이미 유사 각도로 다룬 소재라 오늘은 채택하지 않음 — 반복 노출 리스크로 참고만"
     }
   ],
   "big_tech_news": [
     {
-      "source": "Datarize 2026-06 (미국 de minimis 제도 변경 실무 가이드), 관세청 유니패스 공지",
-      "topic": "2026년 미국 de minimis(소액면세) 제도 대폭 강화. 기존엔 $800 이하 전 품목 면세였는데, Section 201/232/301 관세 대상 품목(중국산 소비재 대부분)은 $800 이하여도 면세 제외되고 최대 25% 관세 부과. 상품 분류도 기존 대략적 신고에서 HTSUS 10자리 세부코드('여성용 면 반팔티, 니트 제외' 수준) 의무 공개로 바뀜. 잘못 신고 시 통관 지연·벌금.",
-      "angle": "반전형 — 미국向 역직구/구매대행 셀러가 '관세는 원래 없었다'는 전제로 마진 계산했는데, 대략 신고했던 상품 분류 하나 때문에 25% 관세가 붙어 마진이 통째로 날아가는 구조적 반전. 스마트스토어/쿠팡/아마존 개별셀러와 겹치지 않는 신규 니치.",
-      "hook_idea": "미국에 역직구/구매대행하는 셀러한테만 하는 얘기. $800 이하는 세금 안 붙는다고 믿고 마진 잡았었는데, 상품 분류 코드 하나 잘못 적어서 관세 25% 뒤늦게 뜯긴 적 있음"
+      "source": "전자신문 2026-06-25, 아이보스 (네이버 스마트스토어 판매자 제재 강화 공지)",
+      "topic": "네이버가 6월 17일부터 고객 문의에 영업일 1일 이내 답변하지 않는 판매자를 제재. 1회 적발 시 경고, 2회 적발 시 이용정지. '*', '.', '감사합니다' 같은 의미 없는 답변은 무응답으로 간주.",
+      "angle": "경고형/반전 — 답변은 분명히 남겼는데 '의미 없는 답변'으로 분류돼 무응답 처리로 경고받는 구조적 반전. 상품 등록·배송·CS 혼자 다 하는 1인 셀러한테 특히 타격.",
+      "hook_idea": "혼자 스마트스토어 운영하는 사람한테만 하는 얘기. 문의 답변 늦은 것도 아니고 분명히 답장 남겼는데 경고 먹은 적 있음. 알고 보니 '확인했습니다'가 무응답 취급이었음"
     },
     {
-      "source": "실무팩 2026-06 (스마트스토어 운영 가이드), 네이버 공식 공지",
-      "topic": "스마트스토어 해외 상품 판매 정책이 8월부터 변경. 사업자등록 + 관세청 전자상거래 업체 부호 등록 필수, 미등록 시 기존 상품 포함 판매권한 전체 회수·판매중지. 승인까지 약 2주 소요라 7월 중순까지 등록 완료해야 함.",
-      "angle": "논쟁형/경고형 — '나는 상관없다'고 생각했던 국내 셀러도 해외 상품 하나라도 걸쳐 팔면 8월에 통째로 계정이 멈출 수 있다는 임박한 리스크",
-      "hook_idea": "해외 상품 하나라도 스마트스토어에 올려본 적 있으면 지금 확인해야 함. 8월부터 사업자 등록 안 하면 그 상품만 막히는 게 아니라 판매권한 전체가 회수된다는 거 어제 알았음"
+      "source": "실무팩 2026 스마트스토어 운영 가이드, 온채널 (등록 한도 정책 변경)",
+      "topic": "2026년부터 스마트스토어 상품 등록 한도가 최근 3개월 실적 + 판매상품비중 3% 기준으로 결정. 많이 등록하는 방식에서 실제 판매되는 상품 비중이 낮으면 등록 한도가 줄어드는 구조.",
+      "angle": "반전형 — 상품 수를 늘려서 노출을 늘리려 했던 셀러가 오히려 등록 한도가 깎이는 역효과. 좁은 타겟(등록 상품 다양화 전략 쓰던 위탁판매/사입 셀러)으로 쓸 수 있음.",
+      "hook_idea": "상품 종류 많이 올려서 노출 늘리려던 셀러한테만. 안 팔리는 상품 계속 쌓아뒀다가 등록 한도 자체가 깎인 적 있음. 판매상품비중 3%라는 기준을 그때 처음 알았음"
     },
     {
-      "source": "아이보스 2026-07 (해외직구 합산과세 개정 총정리), 관세청",
-      "topic": "해외직구 합산과세는 '입항일'이 아니라 '구매일(결제일)' 기준으로 판단. 같은 판매자여도 결제일이 다르면 합산 안 됨 → 대행업자가 주문을 결제일 단위로 쪼개면 관세 부담을 줄일 수 있는 구조.",
-      "angle": "반전형 — 다들 입항일 기준으로 알고 관세 걱정했는데, 실제 기준은 결제일이라 주문 쪼개기 타이밍만 알면 관세를 피할 수 있었다는 뒤늦은 깨달음",
-      "hook_idea": "구매대행 하는 사람만. 입항일 같으면 세금 합산되는 줄 알고 조마조마했는데, 알고 보니 기준이 결제일이었음"
+      "source": "탑데일리 2026-07 (카페24 매일배송 확산)",
+      "topic": "카페24 매일배송 도입 쇼핑몰이 매월 40%씩 증가. 기존엔 금요일 오후~일요일 주문이 줄었는데, 매일배송 도입 후 금·토·일 주문이 오히려 늘어나는 쇼핑몰들이 나타남.",
+      "angle": "반전형 — 주말엔 배송 안 해도 된다고 생각했는데, 매일배송을 안 붙인 게 오히려 주말 매출을 스스로 깎아먹고 있었다는 뒤늦은 깨달음. 자사몰 운영자 타겟으로 직접 경험 연결 가능.",
+      "hook_idea": "자사몰 운영하면서 주말엔 배송 어차피 밀리니까 상관없다고 생각했는데, 매일배송 안 붙여놓은 것 자체가 주말 매출을 깎고 있었던 거였음"
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "AI agent pricing bands 2026: $30-150/mo SMB tools vs $5,000-25,000 multi-agent workflows",
-      "source": "HN 연계 업계 리포트 종합 (Vellum, Navattic 등 2026-06/07)",
-      "angle": "탈락 처리 — 가격/벤치마크 단순 나열이라 즉시 탈락 기준에 해당. 참고만 하고 미채택.",
+      "story": "Zuckerberg admits AI agent autonomy progress slower than expected",
+      "source": "HackerNews 2026-07-06 (145pt, 284 comments)",
+      "angle": "논쟁형 — 빅테크도 AI 에이전트 자율성이 기대보다 안 온다고 인정한 상황을 자사몰 광고/CS 자동화 도구를 직접 돌려본 경험과 연결 가능. 저녁 소재로 채택.",
+      "hook_idea": "메타 저커버그가 AI 에이전트 자율성이 기대만큼 안 온다고 인정함. 나도 광고 자동화 도구 세팅해두고 손 안 대도 된다고 믿었다가 3주 만에 다시 만졌던 이유가 있었음"
+    },
+    {
+      "story": "GPT-5.6 Sol Ultra in Codex 공개",
+      "source": "HackerNews 2026-07-06 (156pt, 95 comments)",
+      "angle": "즉시 탈락 — 모델 출시/스펙 소식으로 직접 경험 각도 없음. 미채택.",
       "hook_idea": "미채택"
     },
     {
-      "story": "usestrix/strix — AI 자동 침투테스트 도구 트렌딩",
-      "source": "GitHub Trending 2026-07-03 (2,137 stars today)",
-      "angle": "논쟁형 — 자사몰 보안 점검을 AI에 통째로 맡기는 게 안전한가에 대한 개발자 커뮤니티 내 찬반",
-      "hook_idea": "GitHub_hot에 별도 기재, 저녁 후보 소재로 참고"
-    },
-    {
-      "story": "Virginia bans sale of geolocation data",
-      "source": "HackerNews 2026-07-03 (625pt, 106 comments)",
-      "angle": "국내 이커머스 실무 연결성 낮음(미국 주법) — 참고용으로만 확인, 미채택",
+      "story": "AI Tutor 학습 효과 (Dartmouth, effect size 0.71-1.30 SD)",
+      "source": "HackerNews 2026-07-06 (146pt, 89 comments)",
+      "angle": "교육 분야 벤치마크 수치 중심, 이커머스 실무 연결성 없음 — 미채택",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "반전형 1인칭 경험담 — 미국向 역직구/구매대행 셀러 타겟(스마트스토어/쿠팡/아마존과 겹치지 않는 신규 니치). '$800 이하는 무조건 면세'라는 통념으로 마진 계산했다가, 2026년 강화된 de minimis 규정(HTSUS 10자리 분류 코드 미준수 시 최대 25% 관세)에 걸려 마진이 통째로 날아간 구체적 실패담.",
-    "hook": "미국에 역직구/구매대행하는 셀러한테만 하는 얘기. 800달러 밑이면 세금 안 붙는다고 믿고 마진 계산했다가, 상품 분류 코드 하나 대충 적은 거 때문에 관세 25% 뒤늦게 뜯긴 적 있음.",
-    "source": "Datarize 2026 미국 de minimis 제도 변경 가이드 (HTSUS-10 코드 의무화, Section 301 관세 최대 25%)",
+    "angle": "경고형/반전 1인칭 경험담 — 혼자 스마트스토어 운영하는 1인 셀러 타겟. 문의에 답변은 남겼지만 '의미 없는 답변'으로 분류돼 무응답 처리로 경고받는 구조적 반전.",
+    "hook": "혼자 스마트스토어 운영하는 사람한테만 하는 얘기. 문의 답변 늦은 것도 아니고 분명히 답장 남겼는데 경고 먹은 적 있음. 알고 보니 '확인했습니다'가 무응답 취급이었음.",
+    "source": "전자신문 2026-06-25, 아이보스 — 네이버 스마트스토어 판매자 응답 제재 강화(6/17 시행, 1영업일 이내 미답변 시 제재, 무의미 답변도 무응답 간주)",
     "topic_tag": "AI_THREADS"
   },
   "recommended_evening": {
-    "language": "english",
-    "angle": "counterintuitive — GitHub's agency-agents repo (3,032 stars today) promises '147 specialized AI agent personas' can replace a whole marketing agency. Frame as a seller who installed it expecting instant ad copy wins, only to find the personas sound impressive but conversion didn't move — the real bottleneck was never the copy generator.",
-    "hook": "A GitHub repo promising 147 AI 'agency personas' hit 3,000 stars in a day. I installed it hoping it'd replace my copywriter. Here's what actually happened to my conversion rate.",
-    "source": "https://github.com/msitarzewski/agency-agents",
-    "topic_tag": "MARKETING"
+    "language": "korean",
+    "angle": "논쟁 유발형 — 메타 저커버그가 AI 에이전트 자율성이 기대보다 못 온다고 인정한 것을 자동화 루틴 직접 운영 경험과 연결. 손 안 대도 된다는 기대와 실제 재확인이 필요했던 반전.",
+    "hook": "메타 저커버그도 AI 에이전트 자율성이 기대만큼 안 온다고 인정함. 나도 광고 자동화 도구 세팅해두고 손 안 대도 된다고 믿었다가 3주 만에 다시 손봤던 이유가 있음.",
+    "source": "HackerNews 2026-07-06 (Zuckerberg on AI agent development, 145pt/284 comments)",
+    "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-07-03",
+    "collected_at": "2026-07-06",
     "agent": "trend-scout",
-    "status": "emergency",
+    "status": "normal",
     "directives_applied": [
-      "emergency mode — 어제(2026-07-02) 소재(위탁판매 반품 매몰비용, AI CS 챗봇 74% 롤백)와 완전 로테이션",
-      "devil's advocate 반영 — 스마트스토어/쿠팡/아마존과 겹치지 않는 신규 니치(미국向 역직구/구매대행) 최소 1개 발굴 완료",
-      "trend_scout directive: 트렌딩 10개 이상 수집 (GitHub 3 + big_tech_news 3 + HN 3 = 9개 원소스, 서브 항목 포함 10개+ 확인), 논쟁형/반전형 각도만 선택",
-      "영어권 AI 커뮤니티 반응 포함: GitHub Trending 실시간 확인(agency-agents, strix, caveman), HackerNews 상위 스토리 확인",
-      "즉시 탈락 기준 적용 — AI 에이전트 가격 밴드 단순 나열, Virginia 지오로케이션 법안 등 실무 연결 안 되는 뉴스는 hackernews_highlights에 기록만 하고 미채택 처리",
-      "GitHub agency-agents는 어제 참고만 했던 repo를 오늘은 '직접 써본 실패담' 각도로 신규 채택(저녁 소재)"
+      "team_signal status normal → directives.trend_scout '평소대로' 적용",
+      "stop_doing 목록('zaya' 관련 주제) 확인, 오늘 수집 소재와 중복 없음",
+      "즉시 탈락 기준 적용 — GPT-5.6 Sol Ultra 모델 출시 소식, AI Tutor 벤치마크 수치는 경험 각도 없어 미채택",
+      "best_performing 포맷('OO 셀러한테만 하는 얘기' 좁은 타겟팅 + 구체적 숫자/제도 + 실패·경고 경험담) 재현 가능한 신규 소재로 네이버 응답 제재 채택",
+      "usestrix/strix는 최근 이미 유사 각도로 다룬 소재라 반복 노출 방지 차원에서 오늘은 미채택",
+      "저녁 소재는 AI 에이전트 자율성 논쟁을 자동화 실무 경험과 연결하는 각도로 선정, 벤치마크·가격 단순 소식은 배제"
     ],
     "sources_checked": [
       "https://github.com/trending",
-      "https://github.com/msitarzewski/agency-agents",
+      "https://github.com/alibaba/page-agent",
+      "https://github.com/openai/codex-plugin-cc",
       "https://github.com/usestrix/strix",
-      "https://github.com/JuliusBrussee/caveman",
       "https://news.ycombinator.com",
-      "https://www.datarize.ai/blog/us-de-minimis-2026-changes-korean-sellers",
+      "https://www.etnews.com/20250625000234",
+      "https://www.i-boss.co.kr/ab-2877-17285",
+      "https://www2.onch3.co.kr/bbs_view.php?num=13&vnum=15987&page=1",
       "https://silmupack.com/smartstore-operation-guide/",
-      "https://www.i-boss.co.kr/ab-6141-68985",
-      "https://www.percenty.co.kr/blog/overseas-direct-purchase-cumulative-taxation",
-      "https://www.taxtimes.co.kr/news/article.html?no=257218",
-      "https://sellernow.co.kr/",
-      "https://www.e-biztimes.com/news/405458",
-      "https://www.customs.go.kr/kcs/ad/tax/BuyTaxCalculation.do",
-      "https://www.vellum.ai/blog/complete-ai-agents-guide-for-marketing",
-      "https://apidog.com/kr/blog/agency-specialized-ai-agents-kr/"
+      "https://www.topdaily.kr/articles/110057",
+      "https://www.etnews.com/20260205000135"
     ]
   }
 }
