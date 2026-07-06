@@ -1,7 +1,7 @@
 {
   "status": "normal",
-  "days_since_growth": 0,
-  "follower_trend": "233→258 (14일, 일평균 +1.9) — 오늘 성장 확인",
+  "days_since_growth": 1,
+  "follower_trend": "233→258 (15일, 일평균 +1.8)",
   "best_performing": {
     "avg_score": 6.3,
     "examples": [
@@ -9,12 +9,12 @@
       "쿠팡 셀러한테만 하는 얘기.  광고비 월 70만원 쏟아붓다가 갑자기 끊은 적 있음. 계산이 안 맞아서.  근",
       "위탁판매 셀러한테만 하는 얘기. 한 달 매출 400만원 찍혀서 좋다고 자랑하고 다녔음. 근데 반품 매몰비용—"
     ],
-    "style": "'OO(쿠팡/아마존/위탁판매)셀러한테만 하는 얘기' 식 좁은 타겟팅 오프닝 + 구체적 숫자(광고비 70만원, 매출 400만원) + 실패/손절 경험담 구조"
+    "style": "특정 셀러군(아마존/쿠팡/위탁판매)을 정면으로 호명하고, 구체적 금액(70만원, 400만원)+반전 서사('근데 갑자기 끊었음' 류)로 이어지는 구조"
   },
   "worst_performing": {
     "avg_score": 0.0,
     "count": 1,
-    "style": "타겟 좁히기·구체적 숫자·실패담 셋 중 하나라도 빠지면 0점으로 수렴"
+    "style": "타겟 셀러군이 불특정하거나 반전 없이 정보 나열로 끝나는 포스트"
   },
   "keyword_performance": {
     "devroder_tare": {
@@ -246,24 +246,14 @@
   "top_search_keywords": [
     "devroder_tare",
     "damong9__",
-    "dream.planner_23",
-    "indeup.official",
-    "ikseon_munbanggu"
+    "dream.planner_23"
   ],
   "directives": {
     "trend_scout": "평소대로",
-    "viral_writer": "'OO 셀러/직군한테만 하는 얘기' 좁은 타겟팅 오프닝 유지 + 구체적 숫자 1개 이상 포함 + 손절/실패 경험담 구조로 마무리. 훅 강도는 평소 수준. 자사몰/카페ेला 운영 자체를 주제로 삼지 말 것, 추상적 AI 미래론 금지.",
-    "hunter_engager": "평소 목표 유지 (20개 내외), 우선 키워드: devroder_tare, damong9__, dream.planner_23, indeup.official, ikseon_munbanggu, 영어 비중 20%"
+    "viral_writer": "셀러군 특정 훅(아마존/쿠팡/위탁판매 등) 유지, 초반 2줄에 구체적 숫자+반전 배치. 자사몰/카페24, 추상적 AI 미래론 금지. 훅 강도는 평소 수준 유지",
+    "hunter_engager": "목표 20~25개, devroder_tare·damong9__·dream.planner_23 우선 타겟, 영어 비중 20%"
   },
-  "team_memo": "팔로워 순성장 유지 중 (233→258, 일평균 +1.9) — 상위 포스트 스코어 6.3으로 견조, 오늘은 승리 포맷 반복 실행",
-  "devil_advocate": "상위 포스트 3개가 전부 \"~한테만 하는 얘기\" 포맷인데, 이게 진짜 먹히는 훅인지 우연히 겹친 건지 다음 포스트에서 똑같은 포맷으로 재현 안 되면 그냥 노이즈야. 하루 +1.9명이면 30일 후에도 315명 언저리밖에 안 되는데 이 속도를 \"normal\"이라고 부르는 게 맞나—이커머스 실무 계정치고 너무 느려서 사실상 정체를 정상으로 포장하는 꼴이야. 이대로 전략 유지하면 한 달 뒤에도 상태는 계속 normal 찍히면서 팔로워는 300명대에서 멈춰있을 가능성이 높다.",
-  "updated_at": "2026-07-06",
-  "strategic_review": {
-    "pivot": "현재유지",
-    "next_2weeks_focus": "posts.json에 항상 최소 7일치 포스트를 미리 채워두고 Mac cron 대신 서버/클라우드에서 하루 2회 자동 발행되게 만들어서, 지금 32%(28개 중 9개)인 포스팅 실행률을 2주 안에 90% 이상으로 끌어올리는 것 — A/B 훅 실험은 매일 두 개가 실제로 나가기 시작한 뒤에 붙여라.",
-    "week_of": "2026-07-06"
-  },
-  "stop_doing": [
-    "uestion: is zaya actually fielding guest service questions o"
-  ]
+  "team_memo": "1일째 정체, 아직 정상 범위—셀러 타겟 훅이 계속 먹히고 있으니 각도 유지",
+  "devil_advocate": "일평균 +1.9면 한 달 뒤에도 315명 언저리야. 이 속도로 \"normal\"이라고 부르는 거 자체가 기준이 너무 낮은 거 아니야?\n\n상위 3개 포스트 패턴(\"OO셀러한테만\" + 숫자 + 손절담)도 표본이 딱 3개고, keyword_performance 보면 hit_rate 1.0 찍은 계정들 대부분 comment_days가 1이야 — 댓글 한 번 달고 다음날 성장했다고 \"히트율 100%\"라 부르는 거면 우연이랑 구분이 안 돼. 지금 전략 그대로 30일 밀어붙이면 팔로워는 300명 초반에서 멈추고, \"잘 되는 패턴\"이라고 믿은 게 사실 노이즈였다는 걸 5일 정체(stall) 찍고 나서야 깨닫게 될 거야.",
+  "updated_at": "2026-07-07"
 }
