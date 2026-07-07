@@ -1,103 +1,105 @@
 {
-  "date": "2026-07-06",
-  "signal_applied": "normal — 팔로워 순성장 유지 중(233→258, 일평균 +1.9). directives.trend_scout: 평소대로. best_performing 포맷('OO 셀러한테만 하는 얘기' 좁은 타겟팅 + 구체적 숫자 + 실패/손절 경험담) 재현 가능한 신규 소재 위주로 수집. stop_doing 항목(zaya 관련 주제) 없음 확인, 겹치는 소재 없어 해당 없음.",
+  "date": "2026-07-07",
+  "signal_applied": "normal — 1일째 정체(233→258, 15일 일평균 +1.8), directives.trend_scout '평소대로'. best_performing 포맷('OO 셀러한테만 하는 얘기' + 구체적 금액 + 손절/반전 서사) 재현 가능한 신규 제도·정책 소재 위주로 수집. strategic_review.next_2weeks_focus는 포스팅 실행률(발행 파이프라인) 문제를 지적하고 있어 콘텐츠 소재 자체에 대한 stop_doing 지시는 없음 — 확인 완료, 해당 없음.",
   "github_hot": [
     {
-      "repo": "alibaba/page-agent",
-      "stars_today": 805,
-      "why_hot": "자연어 명령으로 웹 화면을 직접 조작하는 자동화 도구. '클릭해줘', '이 폼 채워줘' 식으로 브라우저 작업을 대신 시킬 수 있음.",
-      "post_angle": "자사몰 CS/재고 확인처럼 반복적인 웹 작업을 이런 자연어 자동화에 맡겨봤더니 실제로 줄어든 시간과 여전히 사람이 확인해야 했던 부분의 반전 경험담"
+      "repo": "mendableai/firecrawl",
+      "stars_today": 867,
+      "why_hot": "웹 페이지를 대규모로 검색·스크랩·자동화할 수 있게 해주는 API. 경쟁사 가격이나 상품 목록을 코드 없이 긁어올 수 있는 용도로 오늘 트렌딩 상위권.",
+      "post_angle": "경쟁사 쇼핑몰 가격을 매일 자동으로 크롤링해서 비교하는 루틴을 자사몰 셀러가 직접 돌려봤다가, 정작 그 데이터로 뭘 해야 할지 몰라 방치했던 반전 경험담 각도로 활용 가능"
+    },
+    {
+      "repo": "Zackriya-Solutions/meetily",
+      "stars_today": 2494,
+      "why_hot": "100% 로컬 처리로 회의를 자동 받아쓰기·요약해주는 오픈소스 AI 미팅 어시스턴트. 클라우드 전송 없이 로컬에서만 돈다는 프라이버시 포인트로 화제.",
+      "post_angle": "CS 상담 통화나 거래처 미팅을 자동 녹취·정리하는 데 써봤더니, 정작 요약본만 믿고 넘어갔다가 놓친 디테일이 있었던 반전 경험담 각도로 활용 가능(직접 검증 필요)"
     },
     {
       "repo": "openai/codex-plugin-cc",
-      "stars_today": 1532,
-      "why_hot": "Codex가 코드 리뷰와 개발 작업 일부를 대신 위임받아 처리하는 연동 플러그인.",
-      "post_angle": "자사몰 자체 개발(이벤트 페이지, 스크립트 수정)을 AI에 위임했다가 검수 과정에서 오히려 시간이 더 든 경험담 각도로 활용 가능(직접 검증 필요)"
-    },
-    {
-      "repo": "usestrix/strix",
-      "stars_today": 1114,
-      "why_hot": "오픈소스 AI 침투테스트 도구. 지난주에도 트렌딩에 올랐던 repo로 자사몰 보안 점검을 AI에 맡길 수 있는가 논쟁이 계속 이어지는 중.",
-      "post_angle": "최근에 이미 유사 각도로 다룬 소재라 오늘은 채택하지 않음 — 반복 노출 리스크로 참고만"
+      "stars_today": 906,
+      "why_hot": "Claude Code에서 Codex를 불러와 코드 리뷰·작업을 위임하는 연동 플러그인.",
+      "post_angle": "어제(2026-07-06) 이미 동일 repo를 다룬 소재라 반복 노출 방지 차원에서 오늘은 미채택"
     }
   ],
   "big_tech_news": [
     {
-      "source": "전자신문 2026-06-25, 아이보스 (네이버 스마트스토어 판매자 제재 강화 공지)",
-      "topic": "네이버가 6월 17일부터 고객 문의에 영업일 1일 이내 답변하지 않는 판매자를 제재. 1회 적발 시 경고, 2회 적발 시 이용정지. '*', '.', '감사합니다' 같은 의미 없는 답변은 무응답으로 간주.",
-      "angle": "경고형/반전 — 답변은 분명히 남겼는데 '의미 없는 답변'으로 분류돼 무응답 처리로 경고받는 구조적 반전. 상품 등록·배송·CS 혼자 다 하는 1인 셀러한테 특히 타격.",
-      "hook_idea": "혼자 스마트스토어 운영하는 사람한테만 하는 얘기. 문의 답변 늦은 것도 아니고 분명히 답장 남겼는데 경고 먹은 적 있음. 알고 보니 '확인했습니다'가 무응답 취급이었음"
+      "source": "장사왕 블로그, 슈퍼레이블 인사이트 (쿠팡 로켓그로스 2026년 정책 개편 정리)",
+      "topic": "쿠팡 로켓그로스 반품비가 2026년 정책 개편으로 판매자 부담으로 전환. 물류비도 배송료·반품비·보관료·폐기비·부가서비스료로 세분화돼 항목별로 따로 청구되는 구조로 바뀜.",
+      "angle": "반전형 — 로켓그로스를 쓰면 입고·배송·CS까지 다 넘겨서 편하다고 생각했는데, 반품비까지 판매자 몫으로 넘어온 걸 정산 내역 뜯어보고서야 알게 된 구조. best_performing 포맷('쿠팡 셀러한테만' + 구체 금액 + 손절 서사)과 정확히 맞물림.",
+      "hook_idea": "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 입고만 넘기면 반품은 알아서 처리되는 줄 알았음. 근데 정산 내역서 반품비 항목 보고 계산이 달라진 거 그때 처음 알았음"
     },
     {
-      "source": "실무팩 2026 스마트스토어 운영 가이드, 온채널 (등록 한도 정책 변경)",
-      "topic": "2026년부터 스마트스토어 상품 등록 한도가 최근 3개월 실적 + 판매상품비중 3% 기준으로 결정. 많이 등록하는 방식에서 실제 판매되는 상품 비중이 낮으면 등록 한도가 줄어드는 구조.",
-      "angle": "반전형 — 상품 수를 늘려서 노출을 늘리려 했던 셀러가 오히려 등록 한도가 깎이는 역효과. 좁은 타겟(등록 상품 다양화 전략 쓰던 위탁판매/사입 셀러)으로 쓸 수 있음.",
-      "hook_idea": "상품 종류 많이 올려서 노출 늘리려던 셀러한테만. 안 팔리는 상품 계속 쌓아뒀다가 등록 한도 자체가 깎인 적 있음. 판매상품비중 3%라는 기준을 그때 처음 알았음"
+      "source": "패션비즈, 법률사무소 번화 칼럼 (인공지능기본법 AI 생성물 표시 의무화, 네이버쇼핑 7/10 시행 강화)",
+      "topic": "네이버쇼핑이 7월 10일부터 AI 생성물 표시 기준을 강화. 인공지능기본법상 AI로 만든 상품 이미지·가상 모델 착용컷을 표시 없이 쓰면 시정명령·과태료(최대 3천만원), 실제 고객 사용 사례처럼 오인시키면 거짓·과장광고로 징벌적 손해배상(최대 5배)까지 갈 수 있음.",
+      "angle": "경고형/반전 — 의류·패션 자사몰 셀러들이 흔히 쓰는 'AI 가상 피팅컷'이 표시 의무 대상이 될 수 있다는 걸 시행일 임박해서야 알게 되는 구조. 좁은 타겟(패션 자사몰/의류 셀러)으로 완결 가능.",
+      "hook_idea": "옷 파는 자사몰 운영하는 사람한테만. 모델 착용컷 대신 AI로 가상 피팅컷 만들어서 올렸음. 근데 이게 표시 안 하면 과태료 대상이라는 거 이번에 찾아보다가 알았음"
     },
     {
-      "source": "탑데일리 2026-07 (카페24 매일배송 확산)",
-      "topic": "카페24 매일배송 도입 쇼핑몰이 매월 40%씩 증가. 기존엔 금요일 오후~일요일 주문이 줄었는데, 매일배송 도입 후 금·토·일 주문이 오히려 늘어나는 쇼핑몰들이 나타남.",
-      "angle": "반전형 — 주말엔 배송 안 해도 된다고 생각했는데, 매일배송을 안 붙인 게 오히려 주말 매출을 스스로 깎아먹고 있었다는 뒤늦은 깨달음. 자사몰 운영자 타겟으로 직접 경험 연결 가능.",
-      "hook_idea": "자사몰 운영하면서 주말엔 배송 어차피 밀리니까 상관없다고 생각했는데, 매일배송 안 붙여놓은 것 자체가 주말 매출을 깎고 있었던 거였음"
+      "source": "머니투데이 2026-03-17 (쿠팡 무료배송 기준 변경)",
+      "topic": "쿠팡 일반회원 무료배송 기준이 '할인 전 판매가' 기준에서 '최종 결제 금액' 기준 19,800원 이상으로 변경.",
+      "angle": "이미 3월에 시행된 변경이라 시의성 낮음 — 오늘 소재로는 미채택, 참고용으로만 기록",
+      "hook_idea": "미채택"
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "Zuckerberg admits AI agent autonomy progress slower than expected",
-      "source": "HackerNews 2026-07-06 (145pt, 284 comments)",
-      "angle": "논쟁형 — 빅테크도 AI 에이전트 자율성이 기대보다 안 온다고 인정한 상황을 자사몰 광고/CS 자동화 도구를 직접 돌려본 경험과 연결 가능. 저녁 소재로 채택.",
-      "hook_idea": "메타 저커버그가 AI 에이전트 자율성이 기대만큼 안 온다고 인정함. 나도 광고 자동화 도구 세팅해두고 손 안 대도 된다고 믿었다가 3주 만에 다시 만졌던 이유가 있었음"
+      "story": "AI agent orchestration 논쟁 — \"에이전트에게 큰 일을 통째로 맡기지 말고, 사람이 검증 가능한 작은 작업 단위로 쪼개서 시켜야 실제로 돈이 된다\"",
+      "source": "Hacker News 2026-07-06~07 (AI 에이전트 오케스트레이션/ROI 관련 스레드), developersdigest.tech 정리",
+      "angle": "논쟁형 — 자동화 루틴(광고/댓글/포스팅)을 실제로 운영하는 이 계정 포지션과 직결. '에이전트한테 통으로 맡겼다가 실패 → 작은 단위로 쪼개서 시켰더니 됐다'는 반전 경험담 가능. 어제 저녁 소재(저커버그 자율성 발언)와는 다른 각도라 반복 노출 아님.",
+      "hook_idea": "광고 자동화 AI 에이전트한테 하루 일과를 통째로 맡겨봤음. 처음엔 편했는데 결과 보니 오히려 손해였음. 작업을 잘게 쪼개서 하나씩 검증하면서 시켰더니 그제야 숫자가 맞기 시작했음"
     },
     {
-      "story": "GPT-5.6 Sol Ultra in Codex 공개",
-      "source": "HackerNews 2026-07-06 (156pt, 95 comments)",
-      "angle": "즉시 탈락 — 모델 출시/스펙 소식으로 직접 경험 각도 없음. 미채택.",
+      "story": "Mark Zuckerberg tells staff that AI agents haven't progressed enough",
+      "source": "Hacker News 2026-07-06 (전일 자료)",
+      "angle": "어제(2026-07-06) 이미 저녁 소재로 채택·사용된 스토리 — 반복 노출 방지 차원에서 오늘은 미채택",
       "hook_idea": "미채택"
     },
     {
-      "story": "AI Tutor 학습 효과 (Dartmouth, effect size 0.71-1.30 SD)",
-      "source": "HackerNews 2026-07-06 (146pt, 89 comments)",
-      "angle": "교육 분야 벤치마크 수치 중심, 이커머스 실무 연결성 없음 — 미채택",
+      "story": "Identity Lifecycle Management Wasn't Built for AI Agents",
+      "source": "The Hacker News 2026-07",
+      "angle": "AI 에이전트 계정/권한 관리라는 엔터프라이즈 보안 주제로 자사몰 실무 경험 연결이 약함 — 미채택",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "경고형/반전 1인칭 경험담 — 혼자 스마트스토어 운영하는 1인 셀러 타겟. 문의에 답변은 남겼지만 '의미 없는 답변'으로 분류돼 무응답 처리로 경고받는 구조적 반전.",
-    "hook": "혼자 스마트스토어 운영하는 사람한테만 하는 얘기. 문의 답변 늦은 것도 아니고 분명히 답장 남겼는데 경고 먹은 적 있음. 알고 보니 '확인했습니다'가 무응답 취급이었음.",
-    "source": "전자신문 2026-06-25, 아이보스 — 네이버 스마트스토어 판매자 응답 제재 강화(6/17 시행, 1영업일 이내 미답변 시 제재, 무의미 답변도 무응답 간주)",
-    "topic_tag": "AI_THREADS"
+    "angle": "반전형 1인칭 경험담 — 쿠팡 로켓그로스 이용 셀러 타겟. 반품 처리까지 알아서 되는 줄 알았는데 2026년 정책 개편으로 반품비가 판매자 부담으로 전환된 걸 정산 내역서 보고 뒤늦게 알게 되는 구조.",
+    "hook": "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 입고만 넘기면 반품은 알아서 처리되는 줄 알았음. 근데 정산 내역서 반품비 항목 보고 계산이 달라진 거 그때 처음 알았음.",
+    "source": "장사왕 블로그·슈퍼레이블 인사이트 — 쿠팡 로켓그로스 2026년 정책 개편(반품비 판매자 부담 전환, 물류비 배송료/반품비/보관료/폐기비/부가서비스료 세분화)",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "논쟁 유발형 — 메타 저커버그가 AI 에이전트 자율성이 기대보다 못 온다고 인정한 것을 자동화 루틴 직접 운영 경험과 연결. 손 안 대도 된다는 기대와 실제 재확인이 필요했던 반전.",
-    "hook": "메타 저커버그도 AI 에이전트 자율성이 기대만큼 안 온다고 인정함. 나도 광고 자동화 도구 세팅해두고 손 안 대도 된다고 믿었다가 3주 만에 다시 손봤던 이유가 있음.",
-    "source": "HackerNews 2026-07-06 (Zuckerberg on AI agent development, 145pt/284 comments)",
+    "angle": "논쟁 유발형 — AI 에이전트한테 업무를 통째로 맡기는 것과 작은 단위로 쪼개서 맡기는 것 중 뭐가 실제로 되는지에 대한 실무 논쟁을, 광고 자동화 루틴을 직접 운영하는 경험과 연결.",
+    "hook": "광고 자동화 AI 에이전트한테 하루 일과를 통째로 맡겨봤음. 처음엔 편했는데 결과 보니 오히려 손해였음. 작업을 잘게 쪼개서 하나씩 검증하면서 시켰더니 그제야 숫자가 맞기 시작했음.",
+    "source": "Hacker News 2026-07-06~07 AI 에이전트 오케스트레이션/ROI 논쟁 스레드(developersdigest.tech 정리)",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-07-06",
+    "collected_at": "2026-07-07",
     "agent": "trend-scout",
     "status": "normal",
     "directives_applied": [
       "team_signal status normal → directives.trend_scout '평소대로' 적용",
-      "stop_doing 목록('zaya' 관련 주제) 확인, 오늘 수집 소재와 중복 없음",
-      "즉시 탈락 기준 적용 — GPT-5.6 Sol Ultra 모델 출시 소식, AI Tutor 벤치마크 수치는 경험 각도 없어 미채택",
-      "best_performing 포맷('OO 셀러한테만 하는 얘기' 좁은 타겟팅 + 구체적 숫자/제도 + 실패·경고 경험담) 재현 가능한 신규 소재로 네이버 응답 제재 채택",
-      "usestrix/strix는 최근 이미 유사 각도로 다룬 소재라 반복 노출 방지 차원에서 오늘은 미채택",
-      "저녁 소재는 AI 에이전트 자율성 논쟁을 자동화 실무 경험과 연결하는 각도로 선정, 벤치마크·가격 단순 소식은 배제"
+      "strategic_review.next_2weeks_focus 확인 — 포스팅 실행률(발행 파이프라인) 문제 지적, 콘텐츠 소재에 대한 stop_doing 지시 없음, 해당 없음",
+      "즉시 탈락 기준 적용 — 쿠팡 무료배송 기준 변경(3월 시행, 시의성 낮음), Identity Lifecycle Management(보안 엔터프라이즈, 경험 각도 없음) 미채택",
+      "반복 노출 방지 — openai/codex-plugin-cc(어제 github_hot에 이미 등장), 저커버그 AI 에이전트 자율성 스토리(어제 저녁 소재로 이미 사용) 오늘은 배제",
+      "best_performing 포맷('OO 셀러한테만' + 구체 금액/제도 + 손절·반전 서사) 재현 가능한 신규 소재로 쿠팡 로켓그로스 반품비 정책 채택",
+      "저녁 소재는 AI 에이전트 오케스트레이션(통짜 위임 vs 쪼개서 위임) 논쟁을 자동화 루틴 실무 경험과 연결하는 신규 각도로 선정, 어제와 다른 스토리로 교체"
     ],
     "sources_checked": [
       "https://github.com/trending",
-      "https://github.com/alibaba/page-agent",
+      "https://github.com/mendableai/firecrawl",
+      "https://github.com/Zackriya-Solutions/meetily",
       "https://github.com/openai/codex-plugin-cc",
-      "https://github.com/usestrix/strix",
-      "https://news.ycombinator.com",
-      "https://www.etnews.com/20250625000234",
-      "https://www.i-boss.co.kr/ab-2877-17285",
-      "https://www2.onch3.co.kr/bbs_view.php?num=13&vnum=15987&page=1",
-      "https://silmupack.com/smartstore-operation-guide/",
-      "https://www.topdaily.kr/articles/110057",
-      "https://www.etnews.com/20260205000135"
+      "https://news.ycombinator.com/front",
+      "https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026",
+      "https://thehackernews.com/2026/07/identity-lifecycle-management.html",
+      "https://www.sellerking.io/blog/coupang-rocket-gross-guide",
+      "https://super-label.com/blog/coupang-rocket-growth-guide",
+      "https://oscsnm.com/coupang-rocketgrowth-guide-3/",
+      "https://www.mt.co.kr/society/2026/03/17/2026031707283181018",
+      "https://fashionbiz.co.kr/article/223675",
+      "https://bh-law.kr/ko/news/column/ai-content-labeling-obligation-guide"
     ]
   }
 }
