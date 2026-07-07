@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-07",
+  "updated_at": "2026-07-08",
   "daily_deltas": [
-    {
-      "date": "2026-06-21",
-      "followers": 255,
-      "delta": 22
-    },
     {
       "date": "2026-06-22",
       "followers": 256,
@@ -68,6 +63,11 @@
     },
     {
       "date": "2026-07-07",
+      "followers": 258,
+      "delta": 0
+    },
+    {
+      "date": "2026-07-08",
       "followers": 258,
       "delta": 0
     }
@@ -209,6 +209,15 @@
       "attribution_confidence": "medium"
     },
     {
+      "post_date": "2026-07-07",
+      "text_preview": "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 입고만 넘기면 반품 처리는 알아서 되는 줄 알았음. 6월 정산부",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 35,
+      "views": 649,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "medium"
+    },
+    {
       "post_date": "2026-05-27",
       "text_preview": "AI한테 코드 던져놓고 왜 이해를 못 하냐고?  GitHub에서 하루 4000별 받은 Understand-A",
       "content_type": "ai_tech",
@@ -225,10 +234,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 7.5,
+    "ecommerce_tip": 6.818181818181818,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 4.94,
+  "avg_followers_per_post": 4.65,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
