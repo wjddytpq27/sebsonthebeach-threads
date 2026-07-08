@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-08",
+  "updated_at": "2026-07-09",
   "daily_deltas": [
-    {
-      "date": "2026-06-22",
-      "followers": 256,
-      "delta": 1
-    },
     {
       "date": "2026-06-23",
       "followers": 257,
@@ -68,6 +63,11 @@
     },
     {
       "date": "2026-07-08",
+      "followers": 258,
+      "delta": 0
+    },
+    {
+      "date": "2026-07-09",
       "followers": 258,
       "delta": 0
     }
@@ -212,8 +212,8 @@
       "post_date": "2026-07-07",
       "text_preview": "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 입고만 넘기면 반품 처리는 알아서 되는 줄 알았음. 6월 정산부",
       "content_type": "ecommerce_tip",
-      "engagement_score": 35,
-      "views": 649,
+      "engagement_score": 37,
+      "views": 966,
       "follower_delta_next_day": 0,
       "attribution_confidence": "medium"
     },
