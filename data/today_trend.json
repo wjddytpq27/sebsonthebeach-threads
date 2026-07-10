@@ -1,104 +1,126 @@
 {
-  "date": "2026-07-09",
-  "signal_applied": "stall 3일째(233→258, 17일 일평균 +1.6), directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용. viral_writer 지시(훅 강도 최대, '~한테만 하는 얘기'류 실패/손실 폭로 유지하되 숫자를 문장 1~2줄 안에 바로 노출, 자사몰/카페24·추상적 AI미래론 금지)를 소재 선정 단계에서 반영해 두 소재 모두 구체 금액/일수 숫자를 훅에 직접 배치. team_signal에 별도 stop_doing 필드는 없으나 devil_advocate가 표본 3개짜리 'OO한테만' 패턴 반복을 지적한 점을 감안해 오늘은 동일 포맷을 쓰되 완전히 다른 정책(로켓그로스 신규혜택 vs 세이버 유료멤버십 충돌)으로 소재를 갈아엎음. 어제(2026-07-08) 다룬 스마트스토어 상품등록 한도 개편(판매상품비중 3%)과 agent-skills(Zijian-Ni), 그제(2026-07-07) 다룬 쿠팡 로켓그로스 반품 매몰비용, meetily, 저커버그 AI 에이전트 발언은 오늘 배제. 네이버 AI생성물 표시는 그제 일반 정책으로 다뤘으나 오늘은 '7월 10일(내일) 시행'이라는 새로운 구체 시점이 확인되어 팔로우업 소재로 채택.",
+  "date": "2026-07-10",
+  "signal_applied": "stall 4일째(233→258, 18일 일평균 +1.5), directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용. viral_writer 지시(훅 강도 최대, '~한테만 하는 얘기'류 실패/손실 폭로 유지 + 금액/숫자·시행 시점 구체 명시, 자사몰/카페24 직접 언급·추상적 AI미래론 금지)를 소재 선정 단계에서 반영. devil_advocate가 최근 3개 표본이 전부 'OO한테만' + 손실담 패턴이라 재현성 근거가 약하다고 지적한 점을 감안해, 동일 포맷은 유지하되 완전히 다른 정책 소재(쿠팡 상품명 경쟁사 언급 금지 vs 네이버 AI검색 알고리즘 개편)로 갈아엎어 패턴 의존도를 낮춤. 어제(2026-07-09) 다룬 쿠팡 로켓그로스 신규판매자 0원혜택/세이버 중복결제, 네이버 AI생성물 표시 강화(7/10 시행)는 이미 어제 소재로 소진되어 오늘 배제. 그제(2026-07-08) 스마트스토어 상품등록 한도(판매상품비중 3%) 및 agent-skills(Zijian-Ni), 2026-07-07 쿠팡 로켓그로스 반품 매몰비용/meetily/저커버그 AI 에이전트 발언도 반복 노출 방지 차원에서 배제.",
   "github_hot": [
     {
-      "repo": "addyosmani/agent-skills",
-      "stars_today": 1297,
-      "why_hot": "AI 코딩 에이전트용 '프로덕션급 엔지니어링 스킬' 모음. 어제 다룬 Zijian-Ni/agent-skills와 결이 겹치는 별개 저장소.",
-      "post_angle": "어제 이미 '스킬 단위로 쪼개서 에이전트에 장착' 앵글을 써서 오늘은 반복 노출 방지 차원에서 미채택, 참고 기록만."
+      "repo": "ai-job-search (Strix)",
+      "stars_today": 3716,
+      "why_hot": "Claude Code 기반 AI 구직 자동화 프레임워크. 오늘 GitHub Trending 1위.",
+      "post_angle": "구직 자동화 도구라 이커머스 실무 연결 각도 없음. 미채택."
     },
     {
-      "repo": "TencentCloud/TencentDB-Agent-Memory",
-      "stars_today": 318,
-      "why_hot": "외부 API 호출 없이 로컬에서 동작하는 AI 에이전트용 장기 메모리 시스템.",
-      "post_angle": "직접 사용 경험 없어 '써봤더니' 각도 불성립. 미채택."
+      "repo": "agent-skills",
+      "stars_today": 2554,
+      "why_hot": "AI 코딩 에이전트용 '프로덕션급 엔지니어링 스킬' 모음.",
+      "post_angle": "2026-07-08에 동일 계열(Zijian-Ni/agent-skills) 저장소를 이미 다뤄 반복 노출 방지 차원에서 미채택."
     },
     {
-      "repo": "mvanhorn/last30days-skill",
-      "stars_today": 352,
-      "why_hot": "Reddit·X·YouTube 등을 가로질러 최근 30일 트렌드를 리서치해주는 AI 에이전트 스킬.",
-      "post_angle": "본 계정의 트렌드 수집 업무와 메타적으로 겹치지만 셀러 실무 연결 각도가 약해 미채택."
+      "repo": "OfficeCLI",
+      "stars_today": 1929,
+      "why_hot": "AI 에이전트 전용으로 설계된 Office(Word/Excel/PowerPoint) 자동화 CLI.",
+      "post_angle": "엑셀 정산/재고 관리 자동화에 '써봤더니' 각도로 연결 가능성 있으나 직접 사용 경험 미확보라 오늘은 보류. 다음 저녁 슬롯 후보로 기록."
     },
     {
-      "repo": "wonderwhy-er/DesktopCommanderMCP",
-      "stars_today": 28,
-      "why_hot": "Claude에게 터미널·파일시스템 제어 권한을 주는 MCP 서버.",
+      "repo": "awesome-design-md",
+      "stars_today": 1391,
+      "why_hot": "디자인 시스템 분석을 코딩 에이전트가 참고하도록 정리한 컬렉션.",
       "post_angle": "개발자 도구 성격이 강해 이커머스 실무 연결 어려움. 미채택."
+    },
+    {
+      "repo": "pentagi",
+      "stars_today": 535,
+      "why_hot": "완전 자율 침투테스트 AI 에이전트 시스템.",
+      "post_angle": "보안 전문 영역이라 셀러 실무와 무관. 미채택."
+    },
+    {
+      "repo": "DesktopCommanderMCP",
+      "stars_today": 185,
+      "why_hot": "Claude용 터미널·파일시스템 제어 MCP 서버.",
+      "post_angle": "2026-07-09에 이미 참고 기록으로 다룬 저장소. 반복 노출 방지 차원에서 미채택."
     }
   ],
   "big_tech_news": [
     {
-      "source": "windly.cc, i-boss.co.kr, marketplace.coupang.com/rg-promotion/rocketgrowth-zerocost — 쿠팡 로켓그로스 신규 판매자 0원 혜택",
-      "topic": "로켓배송·로켓그로스 판매 이력이 없는 신규 상품에 한해 첫 입고 후 90일간 입출고·배송·보관·반품 회수/재입고·반출비 전액 무료, 90일 이후에도 보관비 60일 무료 + 반품비 무료 혜택 연장, 최초 광고비 최대 21만원 지원. 선착순 적용이며 2026년 7월 31일 마감. 별도로 로켓그로스 세이버(유료 멤버십, 월 9만9천원)는 반품비 무료+60일 무료보관+정산 익일지급을 제공하는데, 신규 판매자 0원 혜택 대상자가 이를 모르고 세이버를 중복 결제하는 경우가 있음.",
-      "angle": "반전형 — 로켓그로스 갓 시작한 셀러가 '반품비 무료 받으려면 세이버 결제해야 하는 줄' 알고 매달 9만9천원을 냈는데, 사실 신규 판매자면 아무 결제 없이도 90일 물류비 전액 무료 + 그 이후 270일 반품비 무제한 0원 혜택이 자동 적용된다는 걸 뒤늦게 알게 되는 구조. best_performing 포맷(구체 금액/일수 + 손실 서사)과 정확히 맞물림.",
-      "hook_idea": "로켓그로스 이번 달에 처음 시작한 셀러한테만 하는 얘기. 반품비 무료 받으려고 세이버 월 9만9천원 결제부터 했음. 근데 신규 판매자는 그냥 가만히 있어도 90일간 물류비 전액 무료+그 이후 270일 반품비까지 0원이라는 거, 두 달치 이용료 18만원 내고 나서야 알았음."
+      "source": "etnews.com 2026-06-30 — 쿠팡, 상품명·대표이미지 경쟁사 언급 전면 금지",
+      "topic": "쿠팡이 상품명에 '네이버 인기상품', '테무 동일상품', '무신사 입점 브랜드' 등 네이버쇼핑·알리익스프레스·테무·11번가·무신사·아마존·지마켓 등 국내외 경쟁사 명칭 사용을 전면 금지. 대표 이미지도 순백색 배경에 상품만 중앙 노출 원칙으로 텍스트·로고·워터마크 등 비상품 요소 전면 금지(패션·리빙 등 일부 카테고리는 투명 마네킹·실사용 이미지 예외). 대표이미지 정책은 7월 초, 상품명 정책은 7월 중 시행. 명목상 '쇼핑 경험 개선'이지만 업계에서는 생성형 AI 검색·추천 경쟁 대응을 위한 상품 데이터 표준화로 해석.",
+      "angle": "반전형 — 검색 노출을 늘리려고 몇 년째 상품명에 '네이버 인기상품'류 문구를 박아온 셀러가, 이번 달 시행되는 경쟁사 언급 전면 금지 정책에 그대로 걸려 수백 개 등록 상품을 한꺼번에 손봐야 하는 상황에 몰리는 구조. best_performing 포맷(특정 셀러 타겟팅 + 뒤늦은 손실 발견)과 정확히 맞물림.",
+      "hook_idea": "쿠팡에 상품명 '네이버 인기상품' '테무 완전 동일템' 이렇게 박아서 검색 걸어놓은 셀러한테만 하는 얘기. 이번 달부터 이거 전면 금지라 걸리면 이미지·상품명 전부 반려라는 거, 몇 년째 그렇게 등록해온 상품 수백 개를 이제 와서 다 손봐야 한다는 걸 정책 뜨고 나서야 알았음."
     },
     {
-      "source": "diad.co.kr, i-boss.co.kr — 네이버쇼핑 AI 생성물 표시 기준 강화",
-      "topic": "네이버쇼핑이 2026년 7월 10일부터 상품 상세페이지 내 AI 생성물 사용 기준을 강화. 단순 AI 표시만으로는 부족하고, 과장된 상품 정보에 AI 생성물을 쓴 경우 표시를 해도 노출 제한/제재 대상이 됨.",
-      "angle": "AI×이커머스 교차 논쟁형 — 상세페이지 이미지·상품 설명을 AI로 뽑아 써온 셀러 입장에서 '표시만 하면 되는 줄' 알았는데 내일(7/10)부터는 과장 표현이면 표시해도 소용없다는 걸 시행 전날에야 확인하게 되는 구조. 셀러 커뮤니티 내 '어차피 다 몰래 쓴다' vs '이제 진짜 걸린다' 논쟁 유발 가능.",
-      "hook_idea": "AI로 상세페이지 문구 뽑아서 써온 셀러한테만 하는 얘기. 밑에 AI 생성 표시만 달아두면 문제없는 줄 알았음. 근데 내일(7/10)부터는 표현이 과장이면 표시를 해도 그냥 걸린다는 거, 시행 하루 전날에야 찾아봤음."
+      "source": "tokki-ai.com, openads.co.kr — 네이버 AI 검색 알고리즘 개편(옵션명 구조화·유사상품 클러스터링)",
+      "topic": "네이버가 2026년 검색 알고리즘을 AI 기반으로 전면 개편. 옵션명이 구조화되어 있으면 노출 가중치가 붙고 어수선한 옵션은 무시됨. 셀러가 단시간에 등록한 비슷한 상품은 AI가 하나의 중복/유사 상품 클러스터로 묶어 그중 1~2개만 노출시키고 나머지는 자동으로 색인 후순위로 뺌.",
+      "angle": "AI×이커머스 교차 논쟁형 — 비슷한 상품을 여러 개 올려서 그중 하나만 걸리면 된다고 여겨온 셀러가, AI가 이를 클러스터로 묶어 대부분을 후순위로 밀어낸다는 걸 뒤늦게 확인하는 구조. '등록 개수로 승부' 통념이 깨짐. 셀러 커뮤니티 내 'AI가 저품질 걸러줘서 좋다' vs 'AI가 내 노출권을 일방적으로 가져갔다' 논쟁 유발 가능.",
+      "hook_idea": "스마트스토어에 비슷한 상품 여러 개 올려놓고 그중 하나만 걸리면 된다고 생각한 셀러한테만 하는 얘기. 이제 AI가 그 상품들을 하나의 클러스터로 묶어서 1~2개만 노출시키고 나머지는 알아서 뒤로 빼버린다는 거, 검색에서 갑자기 안 보이길래 찾아보고서야 알았음."
+    },
+    {
+      "source": "opinionnews.co.kr, hankyung.com — 알리익스프레스×신세계 조인트벤처, 신규 판매자 90일 수수료 면제",
+      "topic": "알리익스프레스가 신세계그룹과 합작법인(JV)을 설립해 국내 셀러 접점을 확대 중. 신규 판매자 입점 후 90일간 수수료 면제 정책 시행. G마켓 거래 60만 셀러가 잠재 수혜 대상으로 거론됨.",
+      "angle": "국내 채널과 겹치지 않는 '순수 추가 매출' 채널이라는 반전 각도 가능하나, 오늘은 위 두 소재로 훅 강도가 이미 충분해 보류. 반복 소재 고갈 시 다음 소재로 활용 권장.",
+      "hook_idea": "미채택 — 차기 소재 후보로 기록"
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "PlayStation can delete all your digital games after 3 years of inactivity (EU)",
-      "source": "Hacker News 2026-07-09 front #1",
-      "angle": "게임 플랫폼 소유권 논쟁 — 이커머스/셀러 실무 연결 지점 없음.",
-      "hook_idea": "미채택 — 참고용"
-    },
-    {
-      "story": "Apple to increase spend with Broadcom to produce billions more U.S. chips",
-      "source": "Hacker News 2026-07-09",
-      "angle": "반도체 공급망 뉴스 — 셀러 실무와 직접 연결 안 됨.",
+      "story": "GPT-5.6 출시 (Sol/Terra/Luna 3종, 코딩·보안·과학 특화)",
+      "source": "Hacker News 2026-07-09, #3",
+      "angle": "모델 출시 자체는 즉시 탈락 기준(가격/스펙 뉴스)에 해당 — 직접 이커머스 실무에 적용해본 경험 없이는 소재 불성립.",
       "hook_idea": "미채택"
     },
     {
-      "story": "Every new car sold in the European Union must include a driver monitoring camera",
-      "source": "Hacker News 2026-07-09",
-      "angle": "EU 규제 뉴스 — 국내 이커머스 실무와 무관.",
+      "story": "John Deere owners get right to repair equipment under FTC settlement",
+      "source": "Hacker News 2026-07-09, #1",
+      "angle": "농기계 수리권 이슈 — 이커머스/셀러 실무 연결 지점 없음.",
+      "hook_idea": "미채택"
+    },
+    {
+      "story": "AI coding agents (Claude Code, Cursor, Codex) triggering Windows endpoint security rules built to catch attackers",
+      "source": "thehackernews.com 2026-07",
+      "angle": "AI 에이전트 보안 이슈 — 흥미롭지만 셀러 실무와 직접 연결 안 되고 추상적 기술 이슈에 가까워 즉시 탈락 기준(기술 트렌드 자체) 해당.",
+      "hook_idea": "미채택"
+    },
+    {
+      "story": "Postgres rewritten in Rust, now passing 100% of regression tests",
+      "source": "Hacker News 2026-07-09, #7",
+      "angle": "개발자 인프라 뉴스 — 셀러 실무와 무관.",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "반전형 1인칭 손실담 — 로켓그로스를 갓 시작한 신규 셀러 타겟. 반품비 무료를 받으려고 유료 멤버십(세이버, 월 9만9천원)부터 결제했는데, 사실 신규 판매자 0원 혜택으로 이미 90일 물류비 전액 무료+이후 270일 반품비 무제한 0원이 자동 적용된다는 걸 몰라서 이중으로 돈을 낸 구조.",
-    "hook": "로켓그로스 이번 달에 처음 시작한 셀러한테만 하는 얘기. 반품비 무료 받으려고 세이버 월 9만9천원 결제부터 했음. 근데 신규 판매자는 그냥 가만히 있어도 90일간 물류비 전액 무료+그 이후 270일 반품비까지 0원이라는 거, 두 달치 이용료 18만원 내고 나서야 알았음.",
-    "source": "windly.cc, i-boss.co.kr, marketplace.coupang.com — 로켓그로스 신규 판매자 0원 혜택(90일 물류비 무료+270일 반품비 무료, 2026-07-31 마감) vs 로켓그로스 세이버(월 9만9천원 유료 멤버십) 중복 사례",
+    "angle": "반전형 1인칭 손실담 — 검색 노출을 늘리려고 상품명에 '네이버 인기상품' 같은 경쟁사 언급 문구를 박아온 셀러 타겟. 쿠팡의 이번 달 경쟁사 언급 전면 금지 정책에 그대로 걸려서, 몇 년째 그렇게 등록해온 상품 수백 개를 한꺼번에 손봐야 하는 상황에 몰리는 구조.",
+    "hook": "쿠팡에 상품명 '네이버 인기상품' '테무 완전 동일템' 이렇게 박아서 검색 걸어놓은 셀러한테만 하는 얘기. 이번 달부터 이거 전면 금지라 걸리면 이미지·상품명 전부 반려라는 거, 몇 년째 그렇게 등록해온 상품 수백 개를 이제 와서 다 손봐야 한다는 걸 정책 뜨고 나서야 알았음.",
+    "source": "etnews.com 2026-06-30 — 쿠팡 상품명·대표이미지 경쟁사 언급(네이버/무신사/테무 등) 전면 금지, 대표이미지 7월 초·상품명 7월 중 시행",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "AI×이커머스 교차 논쟁형 — 상세페이지에 AI 생성 이미지/문구를 써온 셀러가, 내일(7/10)부터 시행되는 네이버쇼핑 AI 생성물 표시 강화 기준을 시행 하루 전날에야 확인하게 되는 구조. AI 표시만으로는 부족하고 과장 표현이면 표시해도 제재 대상이라는 디테일로 '표시했으니 안전하다'는 셀러들의 통념을 뒤집음. 셀러 커뮤니티 내 '어차피 몰래 쓴다' vs '이제 진짜 걸린다' 논쟁 유발.",
-    "hook": "AI로 상세페이지 문구 뽑아서 써온 셀러한테만 하는 얘기. 밑에 AI 생성 표시만 달아두면 문제없는 줄 알았음. 근데 내일(7/10)부터는 표현이 과장이면 표시를 해도 그냥 걸린다는 거, 시행 하루 전날에야 찾아봤음.",
-    "source": "diad.co.kr, i-boss.co.kr — 네이버쇼핑 AI 생성물 표시 기준 강화(2026-07-10 시행)",
+    "angle": "AI×이커머스 교차 논쟁형 — 비슷한 상품을 여러 개 등록해서 그중 하나만 걸리면 된다고 여겨온 셀러가, 네이버 AI 검색 개편으로 유사 상품이 하나의 클러스터로 묶여 1~2개만 노출되고 나머지는 자동 후순위로 빠진다는 걸 뒤늦게 확인하는 구조. '등록 개수로 승부' 통념이 깨짐. 'AI가 저품질을 걸러줘서 좋다' vs 'AI가 내 노출권을 일방적으로 가져갔다' 논쟁 유발.",
+    "hook": "스마트스토어에 비슷한 상품 여러 개 올려놓고 그중 하나만 걸리면 된다고 생각한 셀러한테만 하는 얘기. 이제 AI가 그 상품들을 하나의 클러스터로 묶어서 1~2개만 노출시키고 나머지는 알아서 뒤로 빼버린다는 거, 검색에서 갑자기 안 보이길래 찾아보고서야 알았음.",
+    "source": "tokki-ai.com, openads.co.kr — 네이버 AI 검색 알고리즘 개편(옵션명 구조화 가중치, 유사상품 클러스터링·후순위 색인)",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-07-09",
+    "collected_at": "2026-07-10",
     "agent": "trend-scout",
     "status": "stall",
     "directives_applied": [
-      "team_signal status stall(3일째) → directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용",
-      "viral_writer 지시(훅 강도 최대, 구체 숫자 1~2줄 안에 노출, 자사몰/카페24·추상적 AI미래론 금지)를 반영해 두 소재 모두 훅에 금액(9만9천원/18만원)·일수(90일/270일)·시행일(7/10) 명시",
-      "반복 노출 방지 — 어제(2026-07-08) 다룬 스마트스토어 상품등록 한도 개편, agent-skills(Zijian-Ni) 및 그제(2026-07-07) 다룬 쿠팡 로켓그로스 반품 매몰비용, meetily, 저커버그 AI 에이전트 발언 오늘 배제",
-      "네이버 AI생성물 표시는 일반 정책 자체는 기존에 다뤘으나 '7/10 시행'이라는 새 구체 시점이 확인되어 팔로우업으로 재채택 — viral-writer 단계에서 반복감 있으면 대체 소재(로켓그로스 소재로 오전/저녁 모두 대체) 검토 필요",
-      "즉시 탈락 기준 적용 — HN 상위 스토리(PlayStation 게임 삭제, Apple-Broadcom 칩, EU 차량 모니터링 카메라) 전부 이커머스 실무 연결 없어 미채택, GitHub trending 중 직접 사용 경험 미확보 항목(TencentDB-Agent-Memory, last30days-skill, DesktopCommanderMCP, addyosmani/agent-skills) 미채택"
+      "team_signal status stall(4일째) → directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용",
+      "viral_writer 지시(훅 강도 최대, 구체 숫자·시행 시점을 훅 1~2줄 안에 노출, 자사몰/카페24 직접 언급·추상적 AI미래론 금지)를 반영해 두 소재 모두 정책 시행 시점(7월 초/중)과 규모(상품 수백 개, 클러스터 노출 1~2개)를 훅에 직접 배치",
+      "devil_advocate 지적(최근 3개 표본이 전부 'OO한테만'+손실담 패턴이라 재현성 근거 부족)을 감안해 동일 포맷은 유지하되 완전히 다른 두 정책(쿠팡 상품명 정책 vs 네이버 AI검색 알고리즘)으로 소재를 교체해 패턴 의존도를 낮춤",
+      "반복 노출 방지 — 어제(2026-07-09) 로켓그로스 신규판매자 0원혜택/세이버, 네이버 AI생성물 표시 강화, 그제(2026-07-08) 스마트스토어 상품등록 한도(판매상품비중 3%)/agent-skills(Zijian-Ni), 2026-07-07 로켓그로스 반품 매몰비용/meetily/저커버그 발언 전부 오늘 배제",
+      "즉시 탈락 기준 적용 — GPT-5.6 출시, AI 에이전트 보안 이슈, Postgres Rust 재작성, John Deere 수리권 등 이커머스 실무 연결 없는 HN/GitHub 소재 전부 미채택"
     ],
     "sources_checked": [
       "https://github.com/trending",
-      "https://github.com/addyosmani/agent-skills",
-      "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "https://github.com/mvanhorn/last30days-skill",
-      "https://github.com/wonderwhy-er/DesktopCommanderMCP",
       "https://news.ycombinator.com/front",
-      "https://www.windly.cc/blog/rocket-growth-promotion-zero-fee-benefits-event",
-      "https://www.i-boss.co.kr/ab-6141-69485",
-      "https://marketplace.coupang.com/rg-promotion/rocketgrowth-zerocost",
-      "https://www.windly.cc/blog/rocket-growth-seller-paid-membership-rocket-growth-saver",
-      "https://m.diad.co.kr/Customer/NoticeView?idx=5211",
-      "https://www.i-boss.co.kr/ab-6141-68887",
-      "https://tokki-ai.com/blog/naver-ai-search-2026-non-exposed-products"
+      "https://thehackernews.com/",
+      "https://www.etnews.com/20260630000325",
+      "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
+      "https://m.sedaily.com/amparticle/20037664",
+      "https://tokki-ai.com/blog/naver-ai-search-2026-non-exposed-products",
+      "https://www.openads.co.kr/content/contentDetail?contsId=19767",
+      "https://www.opinionnews.co.kr/news/articleView.html?idxno=112624",
+      "https://www.hankyung.com/article/2025092177361",
+      "https://www.viva100.com/article/20260317500192"
     ]
   }
 }
