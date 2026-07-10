@@ -356,5 +356,13 @@
     "fact_checked": true,
     "fact_check_status": "block",
     "blocked": true
+  },
+  {
+    "date": "2026-07-10",
+    "content": "쿠팡에 상품명 '네이버 인기상품', '테무 완전 동일템' 이렇게 박아서 검색 걸어놓은 셀러한테만 하는 얘기. 최근에 이런 문구 금지 정책 뜬 거 뒤늦게 알았는데, 걸리면 사진이랑 상품명 둘 다 반려된다고 하더라. 몇 년째 그렇게 등록해온 거라 상품 수백 개를 이제 와서 하나하나 다시 손봐야 되는 상황임. 검색 잘 걸리라고 넣은 문구가 이제는 계정 통째로 걸고넘어지는 빌미가 됨.",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "대표이미지는 7월 초, 상품명은 7월 중순부터 순차 시행이라 아직 안 걸렸어도 지금 미리 손보는 게 나음.",
+    "fact_checked": true,
+    "fact_check_status": "modified"
   }
 ]
