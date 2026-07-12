@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-11",
+  "updated_at": "2026-07-12",
   "daily_deltas": [
-    {
-      "date": "2026-06-26",
-      "followers": 258,
-      "delta": 0
-    },
     {
       "date": "2026-06-27",
       "followers": 258,
@@ -68,6 +63,11 @@
     },
     {
       "date": "2026-07-11",
+      "followers": 258,
+      "delta": 0
+    },
+    {
+      "date": "2026-07-12",
       "followers": 258,
       "delta": 0
     }
@@ -221,8 +221,8 @@
       "post_date": "2026-07-10",
       "text_preview": "쿠팡에 상품명 '네이버 인기상품', '테무 완전 동일템' 이렇게 박아서 검색 걸어놓은 셀러한테만 하는 얘기.",
       "content_type": "ecommerce_tip",
-      "engagement_score": 3,
-      "views": 474,
+      "engagement_score": 4,
+      "views": 576,
       "follower_delta_next_day": 0,
       "attribution_confidence": "medium"
     },
