@@ -1,126 +1,126 @@
 {
-  "date": "2026-07-10",
-  "signal_applied": "stall 4일째(233→258, 18일 일평균 +1.5), directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용. viral_writer 지시(훅 강도 최대, '~한테만 하는 얘기'류 실패/손실 폭로 유지 + 금액/숫자·시행 시점 구체 명시, 자사몰/카페24 직접 언급·추상적 AI미래론 금지)를 소재 선정 단계에서 반영. devil_advocate가 최근 3개 표본이 전부 'OO한테만' + 손실담 패턴이라 재현성 근거가 약하다고 지적한 점을 감안해, 동일 포맷은 유지하되 완전히 다른 정책 소재(쿠팡 상품명 경쟁사 언급 금지 vs 네이버 AI검색 알고리즘 개편)로 갈아엎어 패턴 의존도를 낮춤. 어제(2026-07-09) 다룬 쿠팡 로켓그로스 신규판매자 0원혜택/세이버 중복결제, 네이버 AI생성물 표시 강화(7/10 시행)는 이미 어제 소재로 소진되어 오늘 배제. 그제(2026-07-08) 스마트스토어 상품등록 한도(판매상품비중 3%) 및 agent-skills(Zijian-Ni), 2026-07-07 쿠팡 로켓그로스 반품 매몰비용/meetily/저커버그 AI 에이전트 발언도 반복 노출 방지 차원에서 배제.",
+  "date": "2026-07-13",
+  "signal_applied": "emergency 6일째(255→258, 19일 일평균 +0.2). directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용. strategic_review(2026-07-13 갱신)는 다음 2주 초점을 '발행 볼륨 정상화 + 쿠팡 반품 정산 3편 연재'로 잡았으나, 이는 posting-agent/viral-writer의 파이프라인·콘텐츠 결정 사항이라 trend-scout 역할 범위 밖. 대신 오전/저녁 각 슬롯에 쓸 신선한 소재 후보를 발굴해 team_signal 방향(반전형+숫자로 뒤통수)에 맞춰 제시. 최근 posts.json(54개, 마지막 2026-07-10) 확인 결과 쿠팡 로켓그로스 반품 매몰비용(07-07), 스마트스토어 상품등록한도(07-08), 쿠팡 상품명 경쟁사 언급 금지(07-10), 아마존 AI가 외부 쇼핑몰 상품 무단 긁어감(06-29) 이미 소진 — 오늘은 전부 배제하고 신규 소재로 교체.",
   "github_hot": [
     {
-      "repo": "ai-job-search (Strix)",
-      "stars_today": 3716,
-      "why_hot": "Claude Code 기반 AI 구직 자동화 프레임워크. 오늘 GitHub Trending 1위.",
-      "post_angle": "구직 자동화 도구라 이커머스 실무 연결 각도 없음. 미채택."
+      "repo": "destructive_command_guard",
+      "stars_today": 3124,
+      "why_hot": "AI 코딩 에이전트가 실행하는 위험한 git/셸 명령을 사전 차단하는 도구. 오늘 GitHub Trending 상위.",
+      "post_angle": "개발자 안전장치 성격이라 이커머스 실무 연결 어려움. 미채택."
     },
     {
-      "repo": "agent-skills",
-      "stars_today": 2554,
-      "why_hot": "AI 코딩 에이전트용 '프로덕션급 엔지니어링 스킬' 모음.",
-      "post_angle": "2026-07-08에 동일 계열(Zijian-Ni/agent-skills) 저장소를 이미 다뤄 반복 노출 방지 차원에서 미채택."
+      "repo": "Vibe-Trading",
+      "stars_today": 20758,
+      "why_hot": "개인 투자 자동화 트레이딩 에이전트. +768 today.",
+      "post_angle": "투자 자동화라 셀러 실무와 직접 연결 안 됨. 미채택. 다만 'AI에게 반복 판단을 맡기는' 프레임은 저녁 소재 후보로 참고."
     },
     {
-      "repo": "OfficeCLI",
-      "stars_today": 1929,
-      "why_hot": "AI 에이전트 전용으로 설계된 Office(Word/Excel/PowerPoint) 자동화 CLI.",
-      "post_angle": "엑셀 정산/재고 관리 자동화에 '써봤더니' 각도로 연결 가능성 있으나 직접 사용 경험 미확보라 오늘은 보류. 다음 저녁 슬롯 후보로 기록."
-    },
-    {
-      "repo": "awesome-design-md",
-      "stars_today": 1391,
-      "why_hot": "디자인 시스템 분석을 코딩 에이전트가 참고하도록 정리한 컬렉션.",
-      "post_angle": "개발자 도구 성격이 강해 이커머스 실무 연결 어려움. 미채택."
-    },
-    {
-      "repo": "pentagi",
-      "stars_today": 535,
-      "why_hot": "완전 자율 침투테스트 AI 에이전트 시스템.",
-      "post_angle": "보안 전문 영역이라 셀러 실무와 무관. 미채택."
+      "repo": "awesome-llm-apps",
+      "stars_today": 118767,
+      "why_hot": "100개 이상 AI 에이전트·RAG 앱 모음집. +408 today.",
+      "post_angle": "범용 카탈로그성 저장소라 단독 경험담 소재 불성립. 미채택."
     },
     {
       "repo": "DesktopCommanderMCP",
-      "stars_today": 185,
-      "why_hot": "Claude용 터미널·파일시스템 제어 MCP 서버.",
-      "post_angle": "2026-07-09에 이미 참고 기록으로 다룬 저장소. 반복 노출 방지 차원에서 미채택."
+      "stars_today": 8036,
+      "why_hot": "Claude용 터미널·파일시스템 제어 MCP 서버. +210 today.",
+      "post_angle": "2026-07-09에 참고 기록으로 이미 다룬 저장소. 반복 노출 방지 차원에서 미채택."
+    },
+    {
+      "repo": "prefect",
+      "stars_today": 23213,
+      "why_hot": "데이터 파이프라인용 워크플로우 오케스트레이션 프레임워크. +66 today.",
+      "post_angle": "개발자 인프라 도구, 셀러 실무 연결 지점 없음. 미채택."
+    },
+    {
+      "repo": "ai-hedge-fund",
+      "stars_today": 61467,
+      "why_hot": "투자전략 리서치용 협업형 AI 시스템. +115 today.",
+      "post_angle": "금융 특화, 이커머스 무관. 미채택."
     }
   ],
   "big_tech_news": [
     {
-      "source": "etnews.com 2026-06-30 — 쿠팡, 상품명·대표이미지 경쟁사 언급 전면 금지",
-      "topic": "쿠팡이 상품명에 '네이버 인기상품', '테무 동일상품', '무신사 입점 브랜드' 등 네이버쇼핑·알리익스프레스·테무·11번가·무신사·아마존·지마켓 등 국내외 경쟁사 명칭 사용을 전면 금지. 대표 이미지도 순백색 배경에 상품만 중앙 노출 원칙으로 텍스트·로고·워터마크 등 비상품 요소 전면 금지(패션·리빙 등 일부 카테고리는 투명 마네킹·실사용 이미지 예외). 대표이미지 정책은 7월 초, 상품명 정책은 7월 중 시행. 명목상 '쇼핑 경험 개선'이지만 업계에서는 생성형 AI 검색·추천 경쟁 대응을 위한 상품 데이터 표준화로 해석.",
-      "angle": "반전형 — 검색 노출을 늘리려고 몇 년째 상품명에 '네이버 인기상품'류 문구를 박아온 셀러가, 이번 달 시행되는 경쟁사 언급 전면 금지 정책에 그대로 걸려 수백 개 등록 상품을 한꺼번에 손봐야 하는 상황에 몰리는 구조. best_performing 포맷(특정 셀러 타겟팅 + 뒤늦은 손실 발견)과 정확히 맞물림.",
-      "hook_idea": "쿠팡에 상품명 '네이버 인기상품' '테무 완전 동일템' 이렇게 박아서 검색 걸어놓은 셀러한테만 하는 얘기. 이번 달부터 이거 전면 금지라 걸리면 이미지·상품명 전부 반려라는 거, 몇 년째 그렇게 등록해온 상품 수백 개를 이제 와서 다 손봐야 한다는 걸 정책 뜨고 나서야 알았음."
+      "source": "etnews.com 2026-06-16(발표), 2026-07-11(시행) — 쿠팡 '유령상품' 정리 정책",
+      "topic": "쿠팡이 7월 11일부터 90일 이상 판매가 발생하지 않은 상품 중 고객 경험 저해 가능성이 높다고 판단되는 상품을 대상으로 단계적 조치를 시행. ①자동 품절 처리 ②검색·전시 노출 제한 ③판매 제한 또는 판매 중지 ④판매자 정보 확인 요청 ⑤최종 상품 삭제. 실제 재고 여부 확인이 어렵고 사업 중단 판매자의 유령 페이지가 남는 문제를 해결하기 위한 조치.",
+      "angle": "반전형 — '일단 올려두면 언젠가 팔리겠지'라며 재고·판매 여부 확인 없이 방치해온 위탁판매/스마트스토어형 셀러가, 시행 이틀 만에 자기 상품이 품절 처리되거나 노출에서 빠진 걸 뒤늦게 발견하는 구조. best_performing 포맷(특정 판매방식 콕 집기 + 숫자로 뒤통수)과 정확히 맞물림. 07-08에 다룬 '등록 한도 3%' 소재와는 다른 정책(품절·삭제 자동화)이라 소재 중복 아님.",
+      "hook_idea": "쇼핑몰에 상품 한 번 올려두고 몇 달째 재고 확인 안 해본 셀러한테만 하는 얘기. 이번 달 11일부터 90일 넘게 안 팔린 상품은 쿠팡이 알아서 품절 처리하고, 그다음엔 노출 제한, 결국 페이지까지 지워버린다는 거 — 방치해둔 상품 몇 개가 어느새 검색에서 사라진 거 보고서야 알았음."
     },
     {
-      "source": "tokki-ai.com, openads.co.kr — 네이버 AI 검색 알고리즘 개편(옵션명 구조화·유사상품 클러스터링)",
-      "topic": "네이버가 2026년 검색 알고리즘을 AI 기반으로 전면 개편. 옵션명이 구조화되어 있으면 노출 가중치가 붙고 어수선한 옵션은 무시됨. 셀러가 단시간에 등록한 비슷한 상품은 AI가 하나의 중복/유사 상품 클러스터로 묶어 그중 1~2개만 노출시키고 나머지는 자동으로 색인 후순위로 뺌.",
-      "angle": "AI×이커머스 교차 논쟁형 — 비슷한 상품을 여러 개 올려서 그중 하나만 걸리면 된다고 여겨온 셀러가, AI가 이를 클러스터로 묶어 대부분을 후순위로 밀어낸다는 걸 뒤늦게 확인하는 구조. '등록 개수로 승부' 통념이 깨짐. 셀러 커뮤니티 내 'AI가 저품질 걸러줘서 좋다' vs 'AI가 내 노출권을 일방적으로 가져갔다' 논쟁 유발 가능.",
-      "hook_idea": "스마트스토어에 비슷한 상품 여러 개 올려놓고 그중 하나만 걸리면 된다고 생각한 셀러한테만 하는 얘기. 이제 AI가 그 상품들을 하나의 클러스터로 묶어서 1~2개만 노출시키고 나머지는 알아서 뒤로 빼버린다는 거, 검색에서 갑자기 안 보이길래 찾아보고서야 알았음."
+      "source": "reboott.ai, 온누리스토어 사례 — AI 챗봇 CS 자동화 상담 절감률 46.9% vs 고객 불만",
+      "topic": "온누리스토어가 문의 유형을 'AI 단독 처리/AI 1차 응대/상담사 연결'로 나눠 학습시킨 결과 상담 절감률 46.9% 달성. 반면 실제 고객들은 '빠른 상담사 연결을 원하는데 AI가 막고 있는 느낌'이라는 불만을 표함.",
+      "angle": "AI×이커머스 교차 논쟁형 — CS 자동화 도입 후 지표(상담 건수 절반 감소)는 좋아졌는데, 정작 급한 고객은 오히려 이탈했을 수 있다는 반전. '효율 지표는 좋아졌는데 매출/재구매엔 안 좋았다'는 각도로 경험담 구성 가능. 셀러 커뮤니티 내 'AI CS로 인건비 아꼈다' vs 'AI가 진짜 고객을 막아서 놓쳤다' 논쟁 유발 가능.",
+      "hook_idea": "쇼핑몰에 AI 챗봇 CS 붙여놓은 셀러한테만 하는 얘기. 상담 건수는 반토막 났다고 좋아했는데, 그 반토막 중에 진짜 급한 환불 건이 껴 있어서 상담사 연결까지 못 가고 그냥 이탈한 손님이 있었다는 거 — 나중에 재구매율 떨어진 거 보고서야 알았음."
     },
     {
-      "source": "opinionnews.co.kr, hankyung.com — 알리익스프레스×신세계 조인트벤처, 신규 판매자 90일 수수료 면제",
-      "topic": "알리익스프레스가 신세계그룹과 합작법인(JV)을 설립해 국내 셀러 접점을 확대 중. 신규 판매자 입점 후 90일간 수수료 면제 정책 시행. G마켓 거래 60만 셀러가 잠재 수혜 대상으로 거론됨.",
-      "angle": "국내 채널과 겹치지 않는 '순수 추가 매출' 채널이라는 반전 각도 가능하나, 오늘은 위 두 소재로 훅 강도가 이미 충분해 보류. 반복 소재 고갈 시 다음 소재로 활용 권장.",
-      "hook_idea": "미채택 — 차기 소재 후보로 기록"
+      "source": "cnbc.com 2026-01-06, geekwire.com 2026 — 아마존 'Buy for Me' AI 에이전트, 외부 셀러 무단 상품 도용 논란(참고)",
+      "topic": "아마존 AI 쇼핑 에이전트가 Shopify/Squarespace 등 외부 사이트 상품을 동의 없이 긁어와 아마존에 그대로 노출. 180개 이상 업체가 무단 도용 피해 제보.",
+      "angle": "이미 2026-06-29 포스트('아마존 셀러한테만... 아마존 AI가 내 외부 쇼핑몰 상품 긁어')로 소진된 소재. 오늘은 참고용으로만 기록, 채택하지 않음.",
+      "hook_idea": "미채택 — 중복 소재"
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "GPT-5.6 출시 (Sol/Terra/Luna 3종, 코딩·보안·과학 특화)",
-      "source": "Hacker News 2026-07-09, #3",
-      "angle": "모델 출시 자체는 즉시 탈락 기준(가격/스펙 뉴스)에 해당 — 직접 이커머스 실무에 적용해본 경험 없이는 소재 불성립.",
+      "story": "Sysdig, 최초의 AI 단독 수행 랜섬웨어 'JADEPUFFER' 발견 — LLM이 침투·자격증명 탈취·내부 이동·암호화까지 전 과정 수행",
+      "source": "Hacker News 2026-07-12",
+      "angle": "보안 특화 이슈 — 직접 이커머스 실무에 연결할 경험 각도 없음. 즉시 탈락 기준 해당.",
       "hook_idea": "미채택"
     },
     {
-      "story": "John Deere owners get right to repair equipment under FTC settlement",
-      "source": "Hacker News 2026-07-09, #1",
-      "angle": "농기계 수리권 이슈 — 이커머스/셀러 실무 연결 지점 없음.",
-      "hook_idea": "미채택"
-    },
-    {
-      "story": "AI coding agents (Claude Code, Cursor, Codex) triggering Windows endpoint security rules built to catch attackers",
+      "story": "AI Now Institute, 'Friendly Fire' — 보안 스캔용 AI 코딩 에이전트가 공격자 코드를 실행하도록 속을 수 있다는 PoC 발표",
       "source": "thehackernews.com 2026-07",
-      "angle": "AI 에이전트 보안 이슈 — 흥미롭지만 셀러 실무와 직접 연결 안 되고 추상적 기술 이슈에 가까워 즉시 탈락 기준(기술 트렌드 자체) 해당.",
+      "angle": "개발자 보안 이슈, 셀러 실무 무관. 미채택.",
       "hook_idea": "미채택"
     },
     {
-      "story": "Postgres rewritten in Rust, now passing 100% of regression tests",
-      "source": "Hacker News 2026-07-09, #7",
-      "angle": "개발자 인프라 뉴스 — 셀러 실무와 무관.",
+      "story": "Microsoft, AI 에이전트 보안 테스트 도구 'RAMPART'·'Clarity' 오픈소스 공개",
+      "source": "Hacker News 2026-07",
+      "angle": "개발자 인프라 도구, 이커머스 연결 지점 없음. 미채택.",
       "hook_idea": "미채택"
+    },
+    {
+      "story": "Amazon AWS, 'Agentic Shopping Assistant'를 타 리테일러에도 개방 — Alexa/Rufus 쇼핑 에이전트가 작년 120억 달러 매출 견인",
+      "source": "geekwire.com, aboutamazon.com 2026",
+      "angle": "영어권 AI 반응 참고 — 국내 셀러가 직접 겪을 수 있는 이슈는 아니라 즉시 채택은 보류하되, 'AI 쇼핑 에이전트가 내 상품을 어떻게 다루는지 셀러가 통제 못 한다'는 프레임은 위 아마존 도용 소재와 함께 다음 소재 후보로 기록.",
+      "hook_idea": "미채택 — 차기 소재 후보"
     }
   ],
   "recommended_morning": {
-    "angle": "반전형 1인칭 손실담 — 검색 노출을 늘리려고 상품명에 '네이버 인기상품' 같은 경쟁사 언급 문구를 박아온 셀러 타겟. 쿠팡의 이번 달 경쟁사 언급 전면 금지 정책에 그대로 걸려서, 몇 년째 그렇게 등록해온 상품 수백 개를 한꺼번에 손봐야 하는 상황에 몰리는 구조.",
-    "hook": "쿠팡에 상품명 '네이버 인기상품' '테무 완전 동일템' 이렇게 박아서 검색 걸어놓은 셀러한테만 하는 얘기. 이번 달부터 이거 전면 금지라 걸리면 이미지·상품명 전부 반려라는 거, 몇 년째 그렇게 등록해온 상품 수백 개를 이제 와서 다 손봐야 한다는 걸 정책 뜨고 나서야 알았음.",
-    "source": "etnews.com 2026-06-30 — 쿠팡 상품명·대표이미지 경쟁사 언급(네이버/무신사/테무 등) 전면 금지, 대표이미지 7월 초·상품명 7월 중 시행",
+    "angle": "반전형 1인칭 손실담 — 상품 등록 후 재고·판매 여부를 확인하지 않고 방치해온 위탁판매/스마트스토어 셀러 타겟. 쿠팡의 7월 11일 시행 '유령상품' 정리 정책(90일 미판매 상품 자동 품절→노출제한→삭제)에 걸려 방치 상품이 순식간에 사라지는 구조.",
+    "hook": "쇼핑몰에 상품 한 번 올려두고 몇 달째 재고 확인 안 해본 셀러한테만 하는 얘기. 이번 달 11일부터 90일 넘게 안 팔린 상품은 쿠팡이 알아서 품절 처리하고, 그다음엔 노출 제한, 결국 페이지까지 지워버린다는 거 — 방치해둔 상품 몇 개가 어느새 검색에서 사라진 거 보고서야 알았음.",
+    "source": "etnews.com 2026-06-16(발표)/2026-07-11(시행) — 쿠팡 유령상품(90일 미판매) 자동 품절·노출제한·삭제 정책",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "AI×이커머스 교차 논쟁형 — 비슷한 상품을 여러 개 등록해서 그중 하나만 걸리면 된다고 여겨온 셀러가, 네이버 AI 검색 개편으로 유사 상품이 하나의 클러스터로 묶여 1~2개만 노출되고 나머지는 자동 후순위로 빠진다는 걸 뒤늦게 확인하는 구조. '등록 개수로 승부' 통념이 깨짐. 'AI가 저품질을 걸러줘서 좋다' vs 'AI가 내 노출권을 일방적으로 가져갔다' 논쟁 유발.",
-    "hook": "스마트스토어에 비슷한 상품 여러 개 올려놓고 그중 하나만 걸리면 된다고 생각한 셀러한테만 하는 얘기. 이제 AI가 그 상품들을 하나의 클러스터로 묶어서 1~2개만 노출시키고 나머지는 알아서 뒤로 빼버린다는 거, 검색에서 갑자기 안 보이길래 찾아보고서야 알았음.",
-    "source": "tokki-ai.com, openads.co.kr — 네이버 AI 검색 알고리즘 개편(옵션명 구조화 가중치, 유사상품 클러스터링·후순위 색인)",
+    "angle": "AI×이커머스 교차 논쟁형 — CS 챗봇 도입으로 상담 건수는 절반 가까이 줄었지만, 그 안에 급한 환불 건이 섞여 있어 상담사 연결 전에 고객이 이탈했을 수 있다는 반전. '효율 지표(상담 절감률)'와 '실질 매출(재구매율)'이 따로 논다는 구조로 셀러 커뮤니티 논쟁 유발.",
+    "hook": "쇼핑몰에 AI 챗봇 CS 붙여놓은 셀러한테만 하는 얘기. 상담 건수는 반토막 났다고 좋아했는데, 그 반토막 중에 진짜 급한 환불 건이 껴 있어서 상담사 연결까지 못 가고 그냥 이탈한 손님이 있었다는 거 — 나중에 재구매율 떨어진 거 보고서야 알았음.",
+    "source": "reboott.ai 2026, 온누리스토어 AI 챗봇 CS 상담 절감률 46.9% 사례 및 고객 불만 반응",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-07-10",
+    "collected_at": "2026-07-13",
     "agent": "trend-scout",
-    "status": "stall",
+    "status": "emergency",
     "directives_applied": [
-      "team_signal status stall(4일째) → directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용",
-      "viral_writer 지시(훅 강도 최대, 구체 숫자·시행 시점을 훅 1~2줄 안에 노출, 자사몰/카페24 직접 언급·추상적 AI미래론 금지)를 반영해 두 소재 모두 정책 시행 시점(7월 초/중)과 규모(상품 수백 개, 클러스터 노출 1~2개)를 훅에 직접 배치",
-      "devil_advocate 지적(최근 3개 표본이 전부 'OO한테만'+손실담 패턴이라 재현성 근거 부족)을 감안해 동일 포맷은 유지하되 완전히 다른 두 정책(쿠팡 상품명 정책 vs 네이버 AI검색 알고리즘)으로 소재를 교체해 패턴 의존도를 낮춤",
-      "반복 노출 방지 — 어제(2026-07-09) 로켓그로스 신규판매자 0원혜택/세이버, 네이버 AI생성물 표시 강화, 그제(2026-07-08) 스마트스토어 상품등록 한도(판매상품비중 3%)/agent-skills(Zijian-Ni), 2026-07-07 로켓그로스 반품 매몰비용/meetily/저커버그 발언 전부 오늘 배제",
-      "즉시 탈락 기준 적용 — GPT-5.6 출시, AI 에이전트 보안 이슈, Postgres Rust 재작성, John Deere 수리권 등 이커머스 실무 연결 없는 HN/GitHub 소재 전부 미채택"
+      "team_signal status emergency(6일째, 일평균 +0.2) → directives.trend_scout '트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함' 적용",
+      "best_performing 포맷('OO 셀러한테만 하는 얘기' + 특정 판매채널 콕 집기 + 숫자로 뒤통수) 유지하며 소재만 신규 정책(쿠팡 유령상품 정리)으로 교체",
+      "반복 노출 방지 — posts.json 54개 전수 확인, 쿠팡 로켓그로스 반품 매몰비용(07-07)/스마트스토어 등록한도 3%(07-08)/쿠팡 경쟁사 언급 금지(07-10)/아마존 AI 외부상품 무단도용(06-29) 전부 오늘 배제",
+      "즉시 탈락 기준 적용 — JADEPUFFER 랜섬웨어, Friendly Fire PoC, RAMPART/Clarity, Vibe-Trading·awesome-llm-apps·prefect·ai-hedge-fund 등 이커머스 실무 연결 없는 GitHub/HN 소재 전부 미채택",
+      "영어권 AI 반응 포함 — 아마존 Buy for Me 에이전트 무단 도용 논란(이미 소진), AWS Agentic Shopping Assistant 확산 건을 참고 자료로 기록(차기 소재 후보)"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://news.ycombinator.com/front",
       "https://thehackernews.com/",
-      "https://www.etnews.com/20260630000325",
+      "https://www.etnews.com/20260616000256",
       "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
       "https://m.sedaily.com/amparticle/20037664",
-      "https://tokki-ai.com/blog/naver-ai-search-2026-non-exposed-products",
-      "https://www.openads.co.kr/content/contentDetail?contsId=19767",
-      "https://www.opinionnews.co.kr/news/articleView.html?idxno=112624",
-      "https://www.hankyung.com/article/2025092177361",
-      "https://www.viva100.com/article/20260317500192"
+      "https://www.reboott.ai/blog/ai-chatbot-enterprise-use-cases",
+      "https://zdnet.co.kr/view/?no=20260521133555",
+      "https://www.cnbc.com/2026/01/06/amazons-ai-shopping-tool-sparks-backlash-from-some-online-retailers.html",
+      "https://www.geekwire.com/2026/amazon-offers-its-ai-shopping-tech-to-outside-retailers-in-new-phase-of-agentic-commerce-race/",
+      "https://www.aboutamazon.com/news/aws/aws-agentic-shopping-assistant-retailers"
     ]
   }
 }
