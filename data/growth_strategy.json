@@ -1,29 +1,25 @@
 {
-  "weekly_focus": "같은 '셀러한테만 하는 얘기' 포맷 반복 금지 — 완전히 다른 각도로. 훅은 그대로 세게 가되 마지막 문장에서 저장/팔로우 안 하면 손해라는 감각 확실히 박아서 읽고 흘려보내지 않게. 자사몰/카페레 언급, 추상적 AI 미래론 절대 금지.",
+  "weekly_focus": "오전 슬롯: target_callout·smartstore 재현(라벨 추정치라 단정 금지, 검증 차원 반복) + 대조군 1개로 A/B — target_callout·marketing, other·marketing, target_callout·amazon 중 택1. 저녁 슬롯: other·amazon·en 탐색 우선. 절대 피할 것: contrarian·ai_general, 오전/저녁 other·ai_general, 오전 other·other. 훅은 '~하는 셀러한테만 하는 얘기' + 채널 콕 집기 + 숫자 반전 유지, 좋아요 수 노리는 자극적 문구보다 팔로우 전환 문구(프로필 클릭 유도) 우선.",
   "recommended_topics": [
-    "devroder_tare",
-    "damong9__",
-    "dream.planner_23",
-    "indeup.official",
-    "ikseon_munbanggu"
+    "스마트스토어 셀러",
+    "쿠팡 로켓그로스",
+    "위탁판매"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'OO 셀러한테만 하는 얘기' 오프닝 + 특정 판매채널(쿠팡 로켓그로스/위탁판매/역직구) 콕 집기 + 정산·관세처럼 숫자로 뒤통수치는 반전 구조",
-  "worst_post_style": "채널/숫자 특정 없이 두루뭉술한 조언체로 쓴 포스트가 점수 낮음",
+  "best_post_style": "'OO 셀러한테만 하는 얘기' 오프닝 + 쿠팡 로켓그로스/스마트스토어/위탁판매처럼 채널 콕 집기 + 정산·반품매몰비용 숫자로 뒤통수치는 반전 구조. 오전·ko·target_callout·smartstore arm이 실제 팔로워 +91(n=5) 끌어옴.",
+  "worst_post_style": "contrarian·ai_general은 인게이지(reward 41.9)는 높지만 팔로워 전환 실패율 50%+ — 좋아요만 벌고 사람은 안 남는 죽은 arm. other·ai_general, other·other 계열도 동일하게 죽음.",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "devroder_tare",
-    "damong9__",
-    "dream.planner_23",
-    "indeup.official",
-    "ikseon_munbanggu"
+    "스마트스토어 셀러",
+    "쿠팡 로켓그로스",
+    "위탁판매"
   ],
-  "alert": "팔로워 6일째 제자리(19일 평균 +0.2) — 셀러 실화 포스트는 점수 잘 나오는데 팔로우 전환이 안 됨. 오늘부터 각도 자체를 바꾼다.",
-  "generated_at": "2026-07-12"
+  "alert": "7일째 팔로워 순증 사실상 0(-0.1/일) — 좋아요 잘 나와도 팔로워로 안 이어짐. 오늘부터 인게이지 말고 팔로워 순증 기준으로만 판단한다.",
+  "generated_at": "2026-07-14"
 }

@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-14",
   "daily_deltas": [
-    {
-      "date": "2026-06-27",
-      "followers": 258,
-      "delta": 0
-    },
     {
       "date": "2026-06-28",
       "followers": 257,
@@ -70,6 +65,11 @@
       "date": "2026-07-12",
       "followers": 258,
       "delta": 0
+    },
+    {
+      "date": "2026-07-14",
+      "followers": 257,
+      "delta": -1
     }
   ],
   "follow_drivers": [
@@ -234,6 +234,15 @@
       "views": 711,
       "follower_delta_next_day": -1,
       "attribution_confidence": "medium"
+    },
+    {
+      "post_date": "2026-07-13",
+      "text_preview": "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 10,
+      "views": 758,
+      "follower_delta_next_day": -1,
+      "attribution_confidence": "medium"
     }
   ],
   "best_follow_driver": {
@@ -243,10 +252,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 6.25,
+    "ecommerce_tip": 5.6923076923076925,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 4.39,
+  "avg_followers_per_post": 4.11,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }

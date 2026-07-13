@@ -1,97 +1,22 @@
 {
   "status": "emergency",
-  "days_since_growth": 6,
-  "follower_trend": "255→258 (19일, 일평균 +0.2)",
+  "days_since_growth": 7,
+  "follower_trend": "257→257 (18일, 일평균 +0.0)",
   "best_performing": {
-    "avg_score": 15.7,
+    "avg_score": 17.7,
     "examples": [
       "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 입고만 넘기면 반품 처리는 알아서 되는 줄 알았음. 6월 정산부",
-      "위탁판매 셀러한테만 하는 얘기. 한 달 매출 400만원 찍혀서 좋다고 자랑하고 다녔음. 근데 반품 매몰비용—",
-      "미국에 역직구/구매대행하는 셀러한테만 하는 얘기. 800달러 밑이면 관세 안 붙는다고 믿고 마진 잡았다가, "
+      "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
+      "위탁판매 셀러한테만 하는 얘기. 한 달 매출 400만원 찍혀서 좋다고 자랑하고 다녔음. 근데 반품 매몰비용—"
     ],
-    "style": "'OO 셀러한테만 하는 얘기' 오프닝 + 특정 판매채널(쿠팡 로켓그로스/위탁판매/역직구) 콕 집기 + 정산·관세처럼 숫자로 뒤통수치는 반전 구조"
+    "style": "'OO 셀러한테만 하는 얘기' 오프닝 + 쿠팡 로켓그로스/스마트스토어/위탁판매처럼 채널 콕 집기 + 정산·반품매몰비용 숫자로 뒤통수치는 반전 구조. 오전·ko·target_callout·smartstore arm이 실제 팔로워 +91(n=5) 끌어옴."
   },
   "worst_performing": {
     "avg_score": 0,
     "count": 0,
-    "style": "채널/숫자 특정 없이 두루뭉술한 조언체로 쓴 포스트가 점수 낮음"
+    "style": "contrarian·ai_general은 인게이지(reward 41.9)는 높지만 팔로워 전환 실패율 50%+ — 좋아요만 벌고 사람은 안 남는 죽은 arm. other·ai_general, other·other 계열도 동일하게 죽음."
   },
   "keyword_performance": {
-    "devroder_tare": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "damong9__": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "dream.planner_23": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "indeup.official": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "ikseon_munbanggu": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "gohae_nam": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "mieymieyshaeyra236_": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "asim_hssn_": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "ankushbuilds__": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "leadgenman": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "stratifydigitalinsight": {
-      "comment_days": 1,
-      "growth_days_after": 1,
-      "hit_rate": 1.0
-    },
-    "personal branding": {
-      "comment_days": 2,
-      "growth_days_after": 1,
-      "hit_rate": 0.5
-    },
-    "노코드": {
-      "comment_days": 2,
-      "growth_days_after": 1,
-      "hit_rate": 0.5
-    },
-    "스타트업": {
-      "comment_days": 2,
-      "growth_days_after": 1,
-      "hit_rate": 0.5
-    },
-    "N잡": {
-      "comment_days": 2,
-      "growth_days_after": 1,
-      "hit_rate": 0.5
-    },
     "AI활용": {
       "comment_days": 1,
       "growth_days_after": 0,
@@ -122,6 +47,11 @@
       "growth_days_after": 0,
       "hit_rate": 0.0
     },
+    "personal branding": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
     "digital marketing growth": {
       "comment_days": 2,
       "growth_days_after": 0,
@@ -133,6 +63,21 @@
       "hit_rate": 0.0
     },
     "1인기업": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "노코드": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "스타트업": {
+      "comment_days": 2,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "N잡": {
       "comment_days": 2,
       "growth_days_after": 0,
       "hit_rate": 0.0
@@ -232,6 +177,61 @@
       "growth_days_after": 0,
       "hit_rate": 0.0
     },
+    "devroder_tare": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "damong9__": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "dream.planner_23": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "indeup.official": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "ikseon_munbanggu": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "gohae_nam": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "mieymieyshaeyra236_": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "asim_hssn_": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "ankushbuilds__": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "leadgenman": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
+    "stratifydigitalinsight": {
+      "comment_days": 1,
+      "growth_days_after": 0,
+      "hit_rate": 0.0
+    },
     "marketing automation": {
       "comment_days": 1,
       "growth_days_after": 0,
@@ -244,24 +244,232 @@
     }
   },
   "top_search_keywords": [
-    "devroder_tare",
-    "damong9__",
-    "dream.planner_23",
-    "indeup.official",
-    "ikseon_munbanggu"
+    "스마트스토어 셀러",
+    "쿠팡 로켓그로스",
+    "위탁판매"
   ],
   "directives": {
-    "trend_scout": "트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함",
-    "viral_writer": "같은 '셀러한테만 하는 얘기' 포맷 반복 금지 — 완전히 다른 각도로. 훅은 그대로 세게 가되 마지막 문장에서 저장/팔로우 안 하면 손해라는 감각 확실히 박아서 읽고 흘려보내지 않게. 자사몰/카페레 언급, 추상적 AI 미래론 절대 금지.",
-    "hunter_engager": "오늘 목표 40개, 영어 비중 50%, 팔로워 1만+ 계정만 타겟. 우선 키워드: devroder_tare, damong9__, dream.planner_23, indeup.official, ikseon_munbanggu"
+    "trend_scout": "트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함. 추가로 스마트스토어/쿠팡셀러/위탁판매 관련 실무 이슈(정책 변경, 정산·반품 트러블) 우선 발굴 — 지금까지 팔로워로 전환된 유일한 각도라 소재 고갈되면 안 됨.",
+    "viral_writer": "오전 슬롯: target_callout·smartstore 재현(라벨 추정치라 단정 금지, 검증 차원 반복) + 대조군 1개로 A/B — target_callout·marketing, other·marketing, target_callout·amazon 중 택1. 저녁 슬롯: other·amazon·en 탐색 우선. 절대 피할 것: contrarian·ai_general, 오전/저녁 other·ai_general, 오전 other·other. 훅은 '~하는 셀러한테만 하는 얘기' + 채널 콕 집기 + 숫자 반전 유지, 좋아요 수 노리는 자극적 문구보다 팔로우 전환 문구(프로필 클릭 유도) 우선.",
+    "hunter_engager": "목표 40개+, 영어 비중 50% (비상 기준). 기존 5개 키워드(디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업) 전부 n≥3인데 다음날 팔로워 증가 hit rate 0.0 — 이 키워드들로는 팔로워 안 붙는다는 뜻이니 볼륨 늘리지 말고, 스마트스토어/쿠팡셀러/위탁판매 계열 검색어로 우선 전환해서 테스트. 댓글 기준은 '이 댓글 보고 프로필 클릭할 이유 있나' — 좋아요 개수 말고 팔로워 전환 각도로 판단."
   },
-  "team_memo": "팔로워 6일째 제자리(19일 평균 +0.2) — 셀러 실화 포스트는 점수 잘 나오는데 팔로우 전환이 안 됨. 오늘부터 각도 자체를 바꾼다.",
-  "devil_advocate": "일평균 +0.2면 사실상 정체 맞고, 상태를 \"emergency\"라 부르면서도 \"잘 된 포스트\"라고 뽑은 예시 3개가 전부 '반전 고백' 패턴 하나뿐인데 — 이게 콘텐츠가 좋아서 반응 온 거야, 아니면 그냥 알고리즘이 우연히 태워준 거야? 표본 3개, avg_score 15.7 하나로 \"이 패턴이 먹힌다\"고 결론 내리는 건 성급해. 이대로 30일 더 가면 팔로워 260명대 초반에서 못 벗어나고, 안 되는 포스트가 0개라는 것도 결국 다양한 각도를 안 시도해봐서 실패 사례 자체가 없는 거지 전략이 완벽해서가 아니야.",
-  "updated_at": "2026-07-12",
-  "strategic_review": {
-    "pivot": "긴급재설계",
-    "next_2weeks_focus": "앞으로 2주, 딱 하나만 한다:\n\n**cron/발행 파이프라인을 고쳐서 posts.json을 매일 오전·저녁 2개씩 빠짐없이 28개 발행하되, 그 28개를 완결형 고백글이 아니라 \"다음 편은 팔로우해야 봄\"이 마지막 줄에 박힌 3편 연재 세트(top 소재=쿠팡 반품 정산)로 채운다.**\n\n이유 한 줄: 팔로워 +0의 원인은 콘텐츠 품질이 아니라 노출 볼륨(계획의 21%, 하루 0.43개)이고, 6개 글로는 어떤 팔로우 트리거 실험도 통계가 안 나오니 — **먼저 발행을 정상화하는 것**이 유일한 병목이며, 이왕 살리는 김에 매 글에 팔로우 이유(연재 훅)를 내장해 볼륨 회복과 팔로우 전환을 한 번에 건다.",
-    "week_of": "2026-07-13"
+  "team_memo": "7일째 팔로워 순증 사실상 0(-0.1/일) — 좋아요 잘 나와도 팔로워로 안 이어짐. 오늘부터 인게이지 말고 팔로워 순증 기준으로만 판단한다.",
+  "devil_advocate": "팔로워 18일간 257→257, 일평균 +0.0인데 \"잘 됐다\"는 포스트가 3개나 있다는 게 말이 안 돼—좋아요·조회수는 나왔는데 그게 팔로우 전환으로 하나도 안 이어졌다는 뜻이야, 인게이지먼트랑 성장은 다른 지표야.\n\n그리고 상위 포스트 3개가 전부 \"OO 셀러한테만 하는 얘기\" + 정산/관세 반전 구조 하나로 묶이는데, 샘플 3개로 패턴이라고 부르는 건 우연일 수도 있어—같은 훅을 5개는 더 던져보고 재현되는지 확인해야 확신할 수 있어. worst_performing count가 0개라는 것도 의심스러운데, 비교군이 없으면 이 패턴이 진짜 잘한 건지 원래 다 안 되는 계정이라 상대적으로 덜 나쁜 것뿐인지 구분이 안 돼.\n\n지금 이대로 가면 30일 후에도 257 근처에서 정체할 거야—emergency 판정 내리고 나서 실제 전략 변화(타겟 팔로워 1만+ 계정, 영어 50%)가 실행됐는지 확인 안 하면 \"분석은 했는데 아무것도 안 바뀜\"으로 끝날 가능성이 높아.",
+  "ledger": {
+    "north_star": {
+      "gain": -1,
+      "per_day": -0.14,
+      "first": 258,
+      "last": 257,
+      "days": 7
+    },
+    "best_follower_arm": {
+      "arm": "morning|ko|target_callout|smartstore",
+      "pretty": "오전·ko·target_callout·smartstore",
+      "follower_gain": 91,
+      "n": 5
+    },
+    "best_reward_arm": {
+      "arm": "morning|ko|contrarian|ai_general",
+      "pretty": "오전·ko·contrarian·ai_general",
+      "avg_reward": 41.895,
+      "n": 2
+    },
+    "failing_arms": [
+      "오전·ko·contrarian·ai_general",
+      "저녁·ko·other·ai_general",
+      "오전·ko·other·ai_general",
+      "오전·ko·other·other"
+    ],
+    "n_posts": 48,
+    "n_failures": 18,
+    "failure_rate": 0.38,
+    "labels_estimated": true
   },
-  "stop_doing": []
+  "bandit": {
+    "labels_estimated": true,
+    "slots": {
+      "morning": {
+        "recommend": {
+          "hook_style": "target_callout",
+          "topic_theme": "smartstore",
+          "lang": "ko"
+        },
+        "mode": "explore",
+        "score": 1.997,
+        "reason": "target_callout·smartstore 우세하나 라벨 추정 상태 → 탐색 병행",
+        "frontier": [
+          {
+            "hook_style": "target_callout",
+            "topic_theme": "marketing",
+            "n": 1
+          },
+          {
+            "hook_style": "other",
+            "topic_theme": "marketing",
+            "n": 1
+          },
+          {
+            "hook_style": "target_callout",
+            "topic_theme": "amazon",
+            "n": 2
+          }
+        ]
+      },
+      "evening": {
+        "recommend": {
+          "hook_style": "other",
+          "topic_theme": "amazon",
+          "lang": "en"
+        },
+        "mode": "explore",
+        "score": 1.799,
+        "reason": "other·amazon 우세하나 라벨 추정 상태 → 탐색 병행",
+        "frontier": []
+      }
+    },
+    "arm_scores": [
+      {
+        "arm": "morning|ko|list|own_mall",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "list",
+        "topic_theme": "own_mall",
+        "n": 1,
+        "avg_reward": 55.102,
+        "follower_gain": 0,
+        "failure_rate": 0.0,
+        "ucb": 2.381,
+        "viable": false,
+        "dead": false
+      },
+      {
+        "arm": "morning|ko|target_callout|smartstore",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "target_callout",
+        "topic_theme": "smartstore",
+        "n": 5,
+        "avg_reward": 20.886,
+        "follower_gain": 91,
+        "failure_rate": 0.0,
+        "ucb": 1.997,
+        "viable": true,
+        "dead": false
+      },
+      {
+        "arm": "morning|ko|target_callout|marketing",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "target_callout",
+        "topic_theme": "marketing",
+        "n": 1,
+        "avg_reward": 29.307,
+        "follower_gain": 4,
+        "failure_rate": 0.0,
+        "ucb": 1.957,
+        "viable": true,
+        "dead": false
+      },
+      {
+        "arm": "evening|en|other|amazon",
+        "slot": "evening",
+        "lang": "en",
+        "hook_style": "other",
+        "topic_theme": "amazon",
+        "n": 1,
+        "avg_reward": 20.0,
+        "follower_gain": 5,
+        "failure_rate": 0.0,
+        "ucb": 1.799,
+        "viable": true,
+        "dead": false
+      },
+      {
+        "arm": "morning|ko|contrarian|ai_general",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "contrarian",
+        "topic_theme": "ai_general",
+        "n": 2,
+        "avg_reward": 41.895,
+        "follower_gain": 5,
+        "failure_rate": 0.5,
+        "ucb": 1.792,
+        "viable": false,
+        "dead": true
+      },
+      {
+        "arm": "evening|ko|news_relay|ai_ecommerce",
+        "slot": "evening",
+        "lang": "ko",
+        "hook_style": "news_relay",
+        "topic_theme": "ai_ecommerce",
+        "n": 1,
+        "avg_reward": 15.075,
+        "follower_gain": 0,
+        "failure_rate": 0.0,
+        "ucb": 1.655,
+        "viable": false,
+        "dead": false
+      },
+      {
+        "arm": "morning|ko|list|marketing",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "list",
+        "topic_theme": "marketing",
+        "n": 1,
+        "avg_reward": 11.628,
+        "follower_gain": 0,
+        "failure_rate": 0.0,
+        "ucb": 1.592,
+        "viable": false,
+        "dead": false
+      },
+      {
+        "arm": "morning|ko|other|marketing",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "other",
+        "topic_theme": "marketing",
+        "n": 1,
+        "avg_reward": 6.7,
+        "follower_gain": 5,
+        "failure_rate": 0.0,
+        "ucb": 1.557,
+        "viable": true,
+        "dead": false
+      },
+      {
+        "arm": "morning|ko|target_callout|amazon",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "target_callout",
+        "topic_theme": "amazon",
+        "n": 2,
+        "avg_reward": 30.192,
+        "follower_gain": 0,
+        "failure_rate": 0.0,
+        "ucb": 1.524,
+        "viable": true,
+        "dead": false
+      },
+      {
+        "arm": "morning|ko|other|amazon",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "other",
+        "topic_theme": "amazon",
+        "n": 1,
+        "avg_reward": 4.914,
+        "follower_gain": 0,
+        "failure_rate": 0.0,
+        "ucb": 1.47,
+        "viable": true,
+        "dead": false
+      }
+    ]
+  },
+  "updated_at": "2026-07-14"
 }
