@@ -30,6 +30,8 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import ledger  # 포스트 원장: post-side arm 진실(팔로워 귀인·실패율). follow_attributor 대체.
+import bandit  # Phase 2 실험 레이어: 슬롯별 arm 탐색/활용 배분 (니치 박제 탈출)
+import session_health  # 댓글 세션 유효성 — 죽으면 브리핑 최상단 🔴 (16일 침묵 사고 재발방지)
 
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
@@ -240,6 +242,7 @@ def generate_team_signal(
     worst: dict,
     kw_performance: dict,
     ledger_digest: dict | None = None,
+    bandit_rec: dict | None = None,
 ) -> dict:
     """Claude sonnet으로 팀 신호 + 에이전트별 지시 생성"""
 
@@ -250,6 +253,14 @@ def generate_team_signal(
         f'{k}(hit={v["hit_rate"]}, n={v["comment_days"]})' for k, v in reliable_kw[:5]
     ) if reliable_kw else '신뢰 표본(n≥3) 없음 — 단발 데이터는 노이즈라 제외'
     ledger_block = build_ledger_block(ledger_digest)
+    bandit_block = ''
+    if bandit_rec:
+        bandit_block = (
+            '\n[밴딧 슬롯 배분 — 탐색(explore)/활용(exploit)]\n'
+            + bandit.directive_line(bandit_rec, 'morning') + '\n'
+            + bandit.directive_line(bandit_rec, 'evening')
+            + '\n→ exploit면 그 arm 재현, explore면 추천 arm 1개 + 대조군 후보 1개로 A/B.'
+        )
 
     best_examples = '\n'.join(f'  - {e}' for e in best.get('examples', []))
 
@@ -269,9 +280,11 @@ def generate_team_signal(
 - 0점 포스트 수: {worst.get("count", 0)}개
 - 키워드 효과 (댓글 → 다음날 팔로워 증가 hit rate, n≥3만): {kw_summary}
 {ledger_block}
+{bandit_block}
 
 지시 원칙: 인게이지(좋아요·조회)가 아니라 **팔로워 순증**이 목표다. 원장의 '팔로워 끈 arm'을 우선 재현하고,
-'죽은 arm'은 피하며, 라벨이 추정 상태면 단정 대신 검증할 각도로 지시해라.
+'죽은 arm'은 피하며, 밴딧의 슬롯별 탐색/활용 배분을 viral_writer 지시에 반영해라.
+라벨이 추정 상태면 단정 대신 검증할 각도(대조군)로 지시해라.
 
 아래 JSON만 출력 (다른 텍스트 없이):
 {{
@@ -318,7 +331,8 @@ def generate_team_signal(
         }
 
 
-def sync_agent_prompts(signal: dict, ledger_digest: dict | None = None):
+def sync_agent_prompts(signal: dict, ledger_digest: dict | None = None,
+                       bandit_rec: dict | None = None):
     """
     team_signal 기반으로 agent 프롬프트 파일의 동적 섹션을 자동 업데이트.
     고정 섹션(역할/말투/금지)은 건드리지 않고 성과 데이터 섹션만 교체.
@@ -385,12 +399,23 @@ def sync_agent_prompts(signal: dict, ledger_digest: dict | None = None):
                 f"※ 좋아요·조회가 아니라 팔로워를 끄는 arm을 재현할 것.\n"
             )
 
+        # 밴딧 슬롯 배분 (탐색/활용) — 결정론적 지시
+        bandit_lines = ''
+        if bandit_rec:
+            bandit_lines = (
+                f"\n### 밴딧 슬롯 배분 (탐색/활용)\n"
+                f"{bandit.directive_line(bandit_rec, 'morning')}\n"
+                f"{bandit.directive_line(bandit_rec, 'evening')}\n"
+                f"※ explore면 추천 arm 1개 + 대조군 후보 1개로 갈라서 시험(니치 박제 방지).\n"
+            )
+
         new_section = (
             f"## 성과 데이터 ({today} 자동 업데이트)\n\n"
             f"잘 된 포스트 스타일: {best.get('style', '데이터 없음')}\n"
             f"잘 된 포스트 avg score: {best.get('avg_score', 0)} | 예시:\n{ex_lines}\n\n"
             f"안 된 포스트 스타일: {worst.get('style', '데이터 없음')} ({worst.get('count', 0)}개)\n"
-            f"{ledger_lines}\n"
+            f"{ledger_lines}"
+            f"{bandit_lines}\n"
             f"오늘 viral_writer 지시: {signal.get('directives', {}).get('viral_writer', '평소대로')}"
         )
         import re as _re
@@ -459,19 +484,25 @@ if __name__ == '__main__':
 
     # 포스트 원장 빌드 + 다이제스트 (post-side arm 진실: 팔로워 귀인·실패율). 파생 캐시라 커밋 안 함.
     ledger_digest = None
+    bandit_rec = None
     try:
         _ledger = ledger.build_ledger()
         (DATA_DIR / 'post_ledger.json').write_text(json.dumps(_ledger, ensure_ascii=False, indent=2))
         ledger_digest = ledger.summarize(_ledger)
         print(f"  원장: {ledger_digest['n_posts']}글, 실패율 {ledger_digest['failure_rate']}, "
               f"팔로워 arm={ledger_digest['best_follower_arm']['pretty'] if ledger_digest['best_follower_arm'] else '없음'}")
+        # 밴딧: 슬롯별 arm 탐색/활용 배분
+        bandit_rec = bandit.recommend(_ledger)
+        (DATA_DIR / 'bandit.json').write_text(json.dumps(bandit_rec, ensure_ascii=False, indent=2))
+        print(f"  밴딧 morning: {bandit.directive_line(bandit_rec, 'morning')[:70]}")
     except Exception as e:
-        print(f'  ⚠️ 원장 빌드 실패(폴백 진행): {e}')
+        print(f'  ⚠️ 원장/밴딧 빌드 실패(폴백 진행): {e}')
 
     # 팀 신호 생성
     print('  팀 신호 생성 중...')
     ai_signal = generate_team_signal(
-        status, days_since_growth, follower_trend, best, worst, kw_performance, ledger_digest,
+        status, days_since_growth, follower_trend, best, worst, kw_performance,
+        ledger_digest, bandit_rec,
     )
 
     if ai_signal.get('_cli_failed'):
@@ -501,6 +532,7 @@ if __name__ == '__main__':
         'team_memo': ai_signal.get('team_memo', ''),
         'devil_advocate': critic,
         'ledger': ledger_digest,          # 팔로워 arm·실패율·북극성 (hunter_engager도 참고 가능)
+        'bandit': bandit_rec,             # 슬롯별 arm 탐색/활용 배분
         'updated_at': today,
     }
 
@@ -509,7 +541,7 @@ if __name__ == '__main__':
 
     # 프롬프트 자동 업데이트 (자기개선 루프)
     print('  프롬프트 동기화 중...')
-    sync_agent_prompts(signal, ledger_digest)
+    sync_agent_prompts(signal, ledger_digest, bandit_rec)
 
     # growth_strategy.json도 호환성 유지로 함께 저장
     strategy = {
@@ -528,6 +560,14 @@ if __name__ == '__main__':
     # Slack 단일 브리핑 (track.py는 데이터만 수집, 보고는 여기서만)
     status_emoji = {'normal': '✅', 'stall': '⚠️', 'emergency': '🚨'}.get(status, '📊')
     out = [f'{status_emoji} *팀 브리핑* ({today})']
+
+    # 댓글 세션 헬스 — 죽었으면 최상단 고정 알림 (노출 레버가 조용히 안 죽게)
+    sess = session_health.check()
+    if not sess['ok']:
+        out.append(f'🔴 *댓글 세션 DOWN*: {sess["message"]}')
+        print(f'  🔴 세션 DOWN: {sess["message"]}')
+    elif sess['level'] == 'warn':
+        out.append(f'⚠️ {sess["message"]}')
     out.append(f'{follower_trend} | {signal["team_memo"][:60]}')
     out.append('')
 

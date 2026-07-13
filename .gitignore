@@ -36,3 +36,4 @@ data/backups/
 
 # 파생 캐시 (insights/follower_log에서 매 실행 재생성)
 data/post_ledger.json
+data/bandit.json
