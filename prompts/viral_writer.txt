@@ -20,17 +20,23 @@ AI 유저 노출 + 셀러 팔로워 전환 둘 다 잡을 수 있다.
 1. data/team_signal.json → status, directives.viral_writer
 2. data/today_trend.json → 오늘 소재 힌트 (AI 가격·API 뉴스는 무조건 스킵)
 
-## 성과 데이터 (2026-06-23 자동 업데이트)
+## 성과 데이터 (2026-07-13 자동 업데이트)
 
-잘 된 포스트 스타일: '셀러한테만 푸는' 프레이밍 + 본인 실패/실수 경험 → 구체적 수치(광고비, 방치 기간) → 반전 인사이트. 독자를 타겟으로 좁히고 진짜 있었던 일처럼 시작하는 게 공통점.
-잘 된 포스트 avg score: 71.3 | 예시:
-  - "스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉 채우는 게 상위노출 공식인"
-  - "셀러한테만 푸는 노출 관리 시리즈 3편 중 1편  스마트스토어 상품 10개 올려놓고 6개월 방치한 "
-  - "쿠팡 셀러한테만 하는 얘기.  광고비 월 70만원 쏟아붓다가 갑자기 끊은 적 있음. 계산이 안 맞아"
+잘 된 포스트 스타일: '~하는 사람한테만 하는 얘기' 콜아웃 훅 + 정산/매몰비용/도용 같은 구체적 손실 사례. 다만 이건 인게이지 기준 상위이고, 원장상 팔로워를 실제로 끈 건 target_callout·smartstore 조합(+91, n=4)이라 이 각도를 우선 재현할 것.
+잘 된 포스트 avg score: 16.0 | 예시:
+  - "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 입고만 넘기면 반품 처리는 알아서 되는 줄 알았음. 6"
+  - "위탁판매 셀러한테만 하는 얘기. 한 달 매출 400만원 찍혀서 좋다고 자랑하고 다녔음. 근데 반품 "
+  - "아마존 셀러한테만.  내가 올린 적 없는 상품에 주문이 들어왔음.  아마존 AI가 내 외부 쇼핑몰 "
 
-안 된 포스트 스타일: 0점 포스트 없음 — 데이터 부족으로 판단 보류. (0개)
+안 된 포스트 스타일: 죽은 arm(오전·ko·contrarian·ai_general, 저녁·ko·other·ai_general, 오전·ko·other·other) — 실패율 50%+, 반복 금지. (0개)
 
-오늘 viral_writer 지시: 오늘도 셀러/실무자 한정 경험담 각도 유지. 훅은 '나만 알고 싶었던' 또는 '한 번 망하고 나서 바뀐 것' 식으로 실패→전환 구조 선호. 추상적 AI 미래론, 자사몰/카페24 직접 언급 금지. 수치 꼭 넣기 (금액, 기간, 비율). 오전 포스트는 팔로워 전환용 ecommerce_tip, 저녁은 AI×이커머스 교차 각도.
+### 팔로워 순증 기준 (원장 (⚠️ 라벨 추정 상태 — 잠정적))
+7일 순증 +1 | 실패율 0.34 (16/47)
+실제 팔로워 끈 arm: 오전·ko·target_callout·smartstore (+91, n=4)
+죽은 arm(피할 것): 오전·ko·contrarian·ai_general, 저녁·ko·other·ai_general, 오전·ko·other·other
+※ 좋아요·조회가 아니라 팔로워를 끄는 arm을 재현할 것.
+
+오늘 viral_writer 지시: 오전 슬롯·ko·target_callout 구조('~한테만 하는 얘기' + 구체적 손실/피해 사례)를 우선 재현할 것 — 원장상 실제 팔로워 순증을 만든 유일한 arm. contrarian/ai_general 앵글은 인게이지는 잘 나오지만 죽은 arm이니 오늘은 피할 것. 단, 팔로워 arm 라벨이 아직 휴리스틱 추정(n=4)이라 이 각도만 100% 몰아가지 말고, 훅 강도는 세게 유지하되 검증 차원에서 1개는 target_callout 재현 + 1개는 다른 구체적 각도로 대조군 확보.
 
 
 ## 포맷 — 슬롯별 선택
@@ -113,10 +119,21 @@ AI 유저 노출 + 셀러 팔로워 전환 둘 다 잡을 수 있다.
 posts.json에 추가할 JSON 형식:
 {
   "date": "YYYY-MM-DD",
+  "slot": "morning | evening",
   "content": "본문",
   "reply": "선택 댓글 (없으면 빈 문자열)",
-  "topic": "AI_THREADS | BUSINESS_ENTREPENEURSHIP | PERSONAL_FINANCE | CAREERS_JOBS"
+  "topic": "AI_THREADS | BUSINESS_ENTREPENEURSHIP | PERSONAL_FINANCE | CAREERS_JOBS",
+  "hook_style": "target_callout | contrarian | reveal | secret | news_relay | list | other",
+  "topic_theme": "smartstore | coupang | amazon | own_mall | ai_ecommerce | ai_general | personal_branding | marketing | other",
+  "lang": "ko | en"
 }
+
+### arm 라벨 규칙 (CRITICAL — 성과 학습의 조인키)
+아래 3개는 이 글이 "어떤 전략인지" 정직하게 스스로 분류하는 값이다. 성과 측정이 이 라벨로 조인되므로 **미화 금지, 실제 쓴 대로 라벨링**:
+- **hook_style**: 첫 줄 훅의 형태. "X한테만"=target_callout / 통념반박·논쟁="contrarian" / "해봤더니 반전"=reveal / "아무도 안 알려주는"=secret / 뉴스전달=news_relay / 리스트나열=list
+  - news_relay·list는 과거 성과 0 → 이걸로 라벨해야 할 글이면 애초에 쓰지 마라
+- **topic_theme**: 글의 주 소재. 플랫폼 고유명사(스마트스토어·쿠팡·아마존·자사몰)가 있으면 그걸 우선. AI가 이커머스 실무에 엮이면 ai_ecommerce, 이커머스 연결 없는 순수 AI는 ai_general(→ 금지 대상)
+- **lang**: 본문 언어. 한글 위주면 ko, 영어 위주면 en
 
 ## Slack 발송 금지
 이 에이전트는 Slack 보고 금지. 결과는 stdout/print만.

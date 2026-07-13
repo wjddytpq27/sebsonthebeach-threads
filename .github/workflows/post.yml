@@ -29,45 +29,14 @@ jobs:
 
       - run: pip install requests
 
-      - name: 한글 폰트 설치
-        run: sudo apt-get install -y fonts-noto-cjk
-
-      # 카드 생성 (runner 사전설치 google-chrome) — 실패해도 텍스트로 발행
-      - name: 카드 생성
-        id: card
-        continue-on-error: true
-        run: |
-          SLOT="${{ github.event.inputs.slot }}"
-          [ -z "$SLOT" ] && SLOT=morning
-          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
-          python3 make_card.py --slot "$SLOT" --out /tmp/card.png
-
-      # cards public 레포에 업로드(PAT) → raw URL 확보
-      - name: 카드 업로드 (cards 레포)
-        id: upload
-        if: steps.card.outcome == 'success'
-        continue-on-error: true
-        run: |
-          DATE=$(TZ=Asia/Seoul date +%Y-%m-%d)
-          FNAME="card_${DATE}_${{ steps.card.outputs.slot }}.png"
-          git clone --depth 1 "https://x-access-token:${{ secrets.CARDS_PAT }}@github.com/wjddytpq27/sebsonthebeach-cards.git" /tmp/cards
-          cp /tmp/card.png "/tmp/cards/$FNAME"
-          cd /tmp/cards
-          git config user.name "card-bot"
-          git config user.email "bot@sebsonthebeach"
-          git add "$FNAME"
-          git commit -m "card $DATE"
-          git push
-          echo "url=https://raw.githubusercontent.com/wjddytpq27/sebsonthebeach-cards/main/$FNAME" >> "$GITHUB_OUTPUT"
-
-      # 발행 — 이미지 URL 있으면 첨부, 없으면(카드/업로드 실패) 텍스트
+      # 발행 — 네이티브 텍스트. (카드 이미지 폐기: Threads는 텍스트 우선, 그라디언트 카드는
+      #  검색 유입 죽이고 봇티 남 → 2026-07-13 제거)
       - name: 발행
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         run: |
-          SLOT="${{ steps.card.outputs.slot }}"
+          SLOT="${{ github.event.inputs.slot }}"
           [ -z "$SLOT" ] && SLOT=morning
-          sleep 5   # raw URL 전파 대기
-          python3 post_threads.py --slot "$SLOT" --image "${{ steps.upload.outputs.url }}"
+          python3 post_threads.py --slot "$SLOT"

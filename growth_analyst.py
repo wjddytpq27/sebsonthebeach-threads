@@ -23,9 +23,13 @@ team_signal.json 구조:
   "updated_at": "2026-05-25"
 }
 """
+from __future__ import annotations  # 3.9(cron /usr/bin/python3)에서 `dict | None` 어노테이션 크래시 방지
+
 import csv, json, os, shutil, subprocess, sys, urllib.request
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+
+import ledger  # 포스트 원장: post-side arm 진실(팔로워 귀인·실패율). follow_attributor 대체.
 
 KST = timezone(timedelta(hours=9))
 today = datetime.now(KST).strftime('%Y-%m-%d')
@@ -203,6 +207,31 @@ def is_cli_auth_error(output: str) -> bool:
     return any(p in output.lower() for p in CLI_ERROR_PATTERNS)
 
 
+def build_ledger_block(ledger_digest: dict | None) -> str:
+    """포스트 원장 다이제스트 → LLM 프롬프트용 팩트 블록. 팔로워 순증이 북극성."""
+    if not ledger_digest:
+        return ''
+    ns = ledger_digest['north_star']
+    bf = ledger_digest['best_follower_arm']
+    br = ledger_digest['best_reward_arm']
+    fails = ledger_digest['failing_arms']
+    est = ' (⚠️ 생성라벨 아직 없음 — 휴리스틱 추정이라 잠정적, 과회전 금지)' if ledger_digest['labels_estimated'] else ''
+
+    parts = [
+        f"\n[포스트 원장 — 팔로워 순증 기준 진실{est}]",
+        f"- 7일 팔로워 순증: {ns.get('gain', 0):+d} ({ns.get('per_day', 0):+.1f}/일) ← 북극성, 이게 목표",
+        f"- 실패(중앙값 대비 미달) 비율: {ledger_digest['failure_rate']} "
+        f"({ledger_digest['n_failures']}/{ledger_digest['n_posts']})",
+    ]
+    if bf:
+        parts.append(f"- 실제 팔로워 끈 arm: {bf['pretty']} (+{bf['follower_gain']}, n={bf['n']})")
+    if br:
+        parts.append(f"- 인게이지 rate 위너 arm: {br['pretty']} (reward {br['avg_reward']}, n={br['n']})")
+    parts.append(f"- 죽은 arm(실패율≥50%): {', '.join(fails) if fails else '없음'}")
+    parts.append("→ 팔로워 arm과 인게이지 arm이 다르면 '팔로워 arm'을 신뢰(목표는 좋아요가 아니라 팔로워 순증).")
+    return '\n'.join(parts)
+
+
 def generate_team_signal(
     status: str,
     days_since_growth: int,
@@ -210,13 +239,17 @@ def generate_team_signal(
     best: dict,
     worst: dict,
     kw_performance: dict,
+    ledger_digest: dict | None = None,
 ) -> dict:
     """Claude sonnet으로 팀 신호 + 에이전트별 지시 생성"""
 
     top_kws = list(kw_performance.keys())[:5]
+    # 키워드 노이즈 게이트: n<3 단발 데이터는 hit_rate가 요행(1.0 남발)이라 제외
+    reliable_kw = [(k, v) for k, v in kw_performance.items() if v.get('comment_days', 0) >= 3]
     kw_summary = ', '.join(
-        f'{k}(hit={v["hit_rate"]})' for k, v in list(kw_performance.items())[:5]
-    ) if kw_performance else '데이터 없음'
+        f'{k}(hit={v["hit_rate"]}, n={v["comment_days"]})' for k, v in reliable_kw[:5]
+    ) if reliable_kw else '신뢰 표본(n≥3) 없음 — 단발 데이터는 노이즈라 제외'
+    ledger_block = build_ledger_block(ledger_digest)
 
     best_examples = '\n'.join(f'  - {e}' for e in best.get('examples', []))
 
@@ -234,7 +267,11 @@ def generate_team_signal(
 - 상위 포스트 예시:
 {best_examples if best_examples else "  없음"}
 - 0점 포스트 수: {worst.get("count", 0)}개
-- 키워드 효과 (댓글 → 다음날 팔로워 증가 hit rate): {kw_summary}
+- 키워드 효과 (댓글 → 다음날 팔로워 증가 hit rate, n≥3만): {kw_summary}
+{ledger_block}
+
+지시 원칙: 인게이지(좋아요·조회)가 아니라 **팔로워 순증**이 목표다. 원장의 '팔로워 끈 arm'을 우선 재현하고,
+'죽은 arm'은 피하며, 라벨이 추정 상태면 단정 대신 검증할 각도로 지시해라.
 
 아래 JSON만 출력 (다른 텍스트 없이):
 {{
@@ -281,7 +318,7 @@ def generate_team_signal(
         }
 
 
-def sync_agent_prompts(signal: dict):
+def sync_agent_prompts(signal: dict, ledger_digest: dict | None = None):
     """
     team_signal 기반으로 agent 프롬프트 파일의 동적 섹션을 자동 업데이트.
     고정 섹션(역할/말투/금지)은 건드리지 않고 성과 데이터 섹션만 교체.
@@ -329,11 +366,31 @@ def sync_agent_prompts(signal: dict):
         examples = best.get('examples', [])
         ex_lines = '\n'.join(f'  - "{e[:55]}"' for e in examples[:3]) if examples else '  - 데이터 없음'
 
+        # 포스트 원장: 팔로워 순증 기준 진짜 위너/루저 arm (인게이지 위너와 다를 수 있음)
+        ledger_lines = ''
+        if ledger_digest:
+            bf = ledger_digest.get('best_follower_arm')
+            fails = ledger_digest.get('failing_arms', [])
+            ns = ledger_digest.get('north_star', {})
+            est = ' (⚠️ 라벨 추정 상태 — 잠정적)' if ledger_digest.get('labels_estimated') else ''
+            follower_arm_str = (
+                f"{bf['pretty']} (+{bf['follower_gain']}, n={bf['n']})" if bf else '아직 없음'
+            )
+            ledger_lines = (
+                f"\n### 팔로워 순증 기준 (원장{est})\n"
+                f"7일 순증 {ns.get('gain', 0):+d} | 실패율 {ledger_digest.get('failure_rate', 0)} "
+                f"({ledger_digest.get('n_failures', 0)}/{ledger_digest.get('n_posts', 0)})\n"
+                f"실제 팔로워 끈 arm: {follower_arm_str}\n"
+                f"죽은 arm(피할 것): {', '.join(fails) if fails else '없음'}\n"
+                f"※ 좋아요·조회가 아니라 팔로워를 끄는 arm을 재현할 것.\n"
+            )
+
         new_section = (
             f"## 성과 데이터 ({today} 자동 업데이트)\n\n"
             f"잘 된 포스트 스타일: {best.get('style', '데이터 없음')}\n"
             f"잘 된 포스트 avg score: {best.get('avg_score', 0)} | 예시:\n{ex_lines}\n\n"
-            f"안 된 포스트 스타일: {worst.get('style', '데이터 없음')} ({worst.get('count', 0)}개)\n\n"
+            f"안 된 포스트 스타일: {worst.get('style', '데이터 없음')} ({worst.get('count', 0)}개)\n"
+            f"{ledger_lines}\n"
             f"오늘 viral_writer 지시: {signal.get('directives', {}).get('viral_writer', '평소대로')}"
         )
         import re as _re
@@ -400,9 +457,22 @@ if __name__ == '__main__':
     print(f'  상태: {status} (정체 {days_since_growth}일)')
     print(f'  팔로워 추이: {follower_trend}')
 
+    # 포스트 원장 빌드 + 다이제스트 (post-side arm 진실: 팔로워 귀인·실패율). 파생 캐시라 커밋 안 함.
+    ledger_digest = None
+    try:
+        _ledger = ledger.build_ledger()
+        (DATA_DIR / 'post_ledger.json').write_text(json.dumps(_ledger, ensure_ascii=False, indent=2))
+        ledger_digest = ledger.summarize(_ledger)
+        print(f"  원장: {ledger_digest['n_posts']}글, 실패율 {ledger_digest['failure_rate']}, "
+              f"팔로워 arm={ledger_digest['best_follower_arm']['pretty'] if ledger_digest['best_follower_arm'] else '없음'}")
+    except Exception as e:
+        print(f'  ⚠️ 원장 빌드 실패(폴백 진행): {e}')
+
     # 팀 신호 생성
     print('  팀 신호 생성 중...')
-    ai_signal = generate_team_signal(status, days_since_growth, follower_trend, best, worst, kw_performance)
+    ai_signal = generate_team_signal(
+        status, days_since_growth, follower_trend, best, worst, kw_performance, ledger_digest,
+    )
 
     if ai_signal.get('_cli_failed'):
         print('  ⚠️ Claude CLI 인증 만료 — 폴백 신호 사용')
@@ -430,6 +500,7 @@ if __name__ == '__main__':
         'directives': ai_signal.get('directives', {}),
         'team_memo': ai_signal.get('team_memo', ''),
         'devil_advocate': critic,
+        'ledger': ledger_digest,          # 팔로워 arm·실패율·북극성 (hunter_engager도 참고 가능)
         'updated_at': today,
     }
 
@@ -438,7 +509,7 @@ if __name__ == '__main__':
 
     # 프롬프트 자동 업데이트 (자기개선 루프)
     print('  프롬프트 동기화 중...')
-    sync_agent_prompts(signal)
+    sync_agent_prompts(signal, ledger_digest)
 
     # growth_strategy.json도 호환성 유지로 함께 저장
     strategy = {
