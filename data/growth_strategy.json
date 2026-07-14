@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전 슬롯: target_callout·smartstore 재현(라벨 추정치라 단정 금지, 검증 차원 반복) + 대조군 1개로 A/B — target_callout·marketing, other·marketing, target_callout·amazon 중 택1. 저녁 슬롯: other·amazon·en 탐색 우선. 절대 피할 것: contrarian·ai_general, 오전/저녁 other·ai_general, 오전 other·other. 훅은 '~하는 셀러한테만 하는 얘기' + 채널 콕 집기 + 숫자 반전 유지, 좋아요 수 노리는 자극적 문구보다 팔로우 전환 문구(프로필 클릭 유도) 우선.",
+  "weekly_focus": "오전 슬롯은 target_callout+smartstore 재현이 기본값(팔로워 arm 검증됨, 라벨 추정이니 완전 동일 포맷 반복은 피하고 셀러 대상만 바꿔서 재현). 대조군으로 target_callout+marketing 또는 target_callout+amazon 1개 병행해서 어느 타겟이 진짜인지 확인해라. 저녁 슬롯은 other+amazon+en 탐색 — 영어권 아마존셀러向 톤으로 1개 시도. contrarian+ai_general, other+ai_general/other는 절대 쓰지 마라(죽은 arm). 훅은 '~한테만 하는 얘기'류로 구체적 손실 시나리오부터 시작.",
   "recommended_topics": [
-    "스마트스토어 셀러",
     "쿠팡 로켓그로스",
-    "위탁판매"
+    "스마트스토어 재고관리",
+    "위탁판매 반품"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'OO 셀러한테만 하는 얘기' 오프닝 + 쿠팡 로켓그로스/스마트스토어/위탁판매처럼 채널 콕 집기 + 정산·반품매몰비용 숫자로 뒤통수치는 반전 구조. 오전·ko·target_callout·smartstore arm이 실제 팔로워 +91(n=5) 끌어옴.",
-  "worst_post_style": "contrarian·ai_general은 인게이지(reward 41.9)는 높지만 팔로워 전환 실패율 50%+ — 좋아요만 벌고 사람은 안 남는 죽은 arm. other·ai_general, other·other 계열도 동일하게 죽음.",
+  "best_post_style": "target_callout+smartstore 조합(오전·ko)이 실제 팔로워를 끈 유일한 arm(+91, n=5) — '~하는 셀러한테만 하는 얘기' 훅으로 시작해서 쿠팡 로켓그로스 반품/정산, 스마트스토어 재고 방치, 위탁판매 반품 매몰비용처럼 구체적 실무 손실 지점을 찌르는 구조.",
+  "worst_post_style": "contrarian·ai_general, other·ai_general/other 조합은 좋아요는 나올 때도 있지만 죽은 arm(실패율≥50%) — 뜬구름 잡는 AI 일반론이나 근거 약한 반전은 인게이지만 태우고 팔로워로 안 이어짐.",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "스마트스토어 셀러",
     "쿠팡 로켓그로스",
-    "위탁판매"
+    "스마트스토어 재고관리",
+    "위탁판매 반품"
   ],
-  "alert": "7일째 팔로워 순증 사실상 0(-0.1/일) — 좋아요 잘 나와도 팔로워로 안 이어짐. 오늘부터 인게이지 말고 팔로워 순증 기준으로만 판단한다.",
-  "generated_at": "2026-07-14"
+  "alert": "7일째 정체(팔로워 -0.1/일) — 비상. 좋아요는 나오는데 팔로워로 안 붙는 상태라, 오늘부터 '팔로워 arm' 재현에 올인하고 인게이지 지표는 무시해라.",
+  "generated_at": "2026-07-15"
 }

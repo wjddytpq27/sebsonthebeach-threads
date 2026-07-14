@@ -1,7 +1,7 @@
 {
   "status": "emergency",
   "days_since_growth": 7,
-  "follower_trend": "257→257 (18일, 일평균 +0.0)",
+  "follower_trend": "258→257 (17일, 일평균 -0.1)",
   "best_performing": {
     "avg_score": 17.7,
     "examples": [
@@ -9,12 +9,12 @@
       "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
       "위탁판매 셀러한테만 하는 얘기. 한 달 매출 400만원 찍혀서 좋다고 자랑하고 다녔음. 근데 반품 매몰비용—"
     ],
-    "style": "'OO 셀러한테만 하는 얘기' 오프닝 + 쿠팡 로켓그로스/스마트스토어/위탁판매처럼 채널 콕 집기 + 정산·반품매몰비용 숫자로 뒤통수치는 반전 구조. 오전·ko·target_callout·smartstore arm이 실제 팔로워 +91(n=5) 끌어옴."
+    "style": "target_callout+smartstore 조합(오전·ko)이 실제 팔로워를 끈 유일한 arm(+91, n=5) — '~하는 셀러한테만 하는 얘기' 훅으로 시작해서 쿠팡 로켓그로스 반품/정산, 스마트스토어 재고 방치, 위탁판매 반품 매몰비용처럼 구체적 실무 손실 지점을 찌르는 구조."
   },
   "worst_performing": {
     "avg_score": 0,
     "count": 0,
-    "style": "contrarian·ai_general은 인게이지(reward 41.9)는 높지만 팔로워 전환 실패율 50%+ — 좋아요만 벌고 사람은 안 남는 죽은 arm. other·ai_general, other·other 계열도 동일하게 죽음."
+    "style": "contrarian·ai_general, other·ai_general/other 조합은 좋아요는 나올 때도 있지만 죽은 arm(실패율≥50%) — 뜬구름 잡는 AI 일반론이나 근거 약한 반전은 인게이지만 태우고 팔로워로 안 이어짐."
   },
   "keyword_performance": {
     "AI활용": {
@@ -244,17 +244,17 @@
     }
   },
   "top_search_keywords": [
-    "스마트스토어 셀러",
     "쿠팡 로켓그로스",
-    "위탁판매"
+    "스마트스토어 재고관리",
+    "위탁판매 반품"
   ],
   "directives": {
-    "trend_scout": "트렌딩 10개 이상, 논쟁형/반전형 우선, 영어권 AI 반응 포함. 추가로 스마트스토어/쿠팡셀러/위탁판매 관련 실무 이슈(정책 변경, 정산·반품 트러블) 우선 발굴 — 지금까지 팔로워로 전환된 유일한 각도라 소재 고갈되면 안 됨.",
-    "viral_writer": "오전 슬롯: target_callout·smartstore 재현(라벨 추정치라 단정 금지, 검증 차원 반복) + 대조군 1개로 A/B — target_callout·marketing, other·marketing, target_callout·amazon 중 택1. 저녁 슬롯: other·amazon·en 탐색 우선. 절대 피할 것: contrarian·ai_general, 오전/저녁 other·ai_general, 오전 other·other. 훅은 '~하는 셀러한테만 하는 얘기' + 채널 콕 집기 + 숫자 반전 유지, 좋아요 수 노리는 자극적 문구보다 팔로우 전환 문구(프로필 클릭 유도) 우선.",
-    "hunter_engager": "목표 40개+, 영어 비중 50% (비상 기준). 기존 5개 키워드(디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업) 전부 n≥3인데 다음날 팔로워 증가 hit rate 0.0 — 이 키워드들로는 팔로워 안 붙는다는 뜻이니 볼륨 늘리지 말고, 스마트스토어/쿠팡셀러/위탁판매 계열 검색어로 우선 전환해서 테스트. 댓글 기준은 '이 댓글 보고 프로필 클릭할 이유 있나' — 좋아요 개수 말고 팔로워 전환 각도로 판단."
+    "trend_scout": "트렌딩 10개 이상 수집하되, 자사몰/추상 AI 미래론은 배제. 쿠팡·스마트스토어·위탁판매 셀러 실무 손실(반품/정산/재고) 관련 이슈 우선, 영어권은 AI 자동화 실사용 반응 위주로 4~5개 포함.",
+    "viral_writer": "오전 슬롯은 target_callout+smartstore 재현이 기본값(팔로워 arm 검증됨, 라벨 추정이니 완전 동일 포맷 반복은 피하고 셀러 대상만 바꿔서 재현). 대조군으로 target_callout+marketing 또는 target_callout+amazon 1개 병행해서 어느 타겟이 진짜인지 확인해라. 저녁 슬롯은 other+amazon+en 탐색 — 영어권 아마존셀러向 톤으로 1개 시도. contrarian+ai_general, other+ai_general/other는 절대 쓰지 마라(죽은 arm). 훅은 '~한테만 하는 얘기'류로 구체적 손실 시나리오부터 시작.",
+    "hunter_engager": "비상 모드: 목표 40개+, 영어 비중 50%+, 팔로워 1만 이상 계정만 타겟. 디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업 키워드는 전부 hit=0.0이라 이번엔 배제하고, 쿠팡 로켓그로스·스마트스토어 재고관리·위탁판매 반품 키워드로 전환해서 검증해라."
   },
-  "team_memo": "7일째 팔로워 순증 사실상 0(-0.1/일) — 좋아요 잘 나와도 팔로워로 안 이어짐. 오늘부터 인게이지 말고 팔로워 순증 기준으로만 판단한다.",
-  "devil_advocate": "팔로워 18일간 257→257, 일평균 +0.0인데 \"잘 됐다\"는 포스트가 3개나 있다는 게 말이 안 돼—좋아요·조회수는 나왔는데 그게 팔로우 전환으로 하나도 안 이어졌다는 뜻이야, 인게이지먼트랑 성장은 다른 지표야.\n\n그리고 상위 포스트 3개가 전부 \"OO 셀러한테만 하는 얘기\" + 정산/관세 반전 구조 하나로 묶이는데, 샘플 3개로 패턴이라고 부르는 건 우연일 수도 있어—같은 훅을 5개는 더 던져보고 재현되는지 확인해야 확신할 수 있어. worst_performing count가 0개라는 것도 의심스러운데, 비교군이 없으면 이 패턴이 진짜 잘한 건지 원래 다 안 되는 계정이라 상대적으로 덜 나쁜 것뿐인지 구분이 안 돼.\n\n지금 이대로 가면 30일 후에도 257 근처에서 정체할 거야—emergency 판정 내리고 나서 실제 전략 변화(타겟 팔로워 1만+ 계정, 영어 50%)가 실행됐는지 확인 안 하면 \"분석은 했는데 아무것도 안 바뀜\"으로 끝날 가능성이 높아.",
+  "team_memo": "7일째 정체(팔로워 -0.1/일) — 비상. 좋아요는 나오는데 팔로워로 안 붙는 상태라, 오늘부터 '팔로워 arm' 재현에 올인하고 인게이지 지표는 무시해라.",
+  "devil_advocate": "팔로워 258→257이면 17일 순감소인데, 그 와중에 \"잘 됐다\"는 포스트가 3개나 있고 \"안 됐다\"는 건 0개라는 것부터 이상해—진짜 다 성공이면 왜 계정은 쪼그라들었어? 그 3개 다 \"~셀러한테만 하는 얘기\" 포맷으로 겹치는데, 이게 재현 가능한 후크야 아니면 반품/재고 얘기 좋아하는 셀러 커뮤니티에서 우연히 어그로 끈 거야? 지금 이 패턴만 믿고 emergency 대응(영어 50%, 대형 계정 타겟)으로 30일 더 가면, 포스트 반응은 비슷해 보여도 팔로워는 250대에서 계속 정체하거나 더 빠질 거고 그때도 \"잘 되는데 왜 안 크지\" 똑같은 소리 나올 거야.",
   "ledger": {
     "north_star": {
       "gain": -1,
@@ -281,9 +281,9 @@
       "오전·ko·other·ai_general",
       "오전·ko·other·other"
     ],
-    "n_posts": 48,
+    "n_posts": 49,
     "n_failures": 18,
-    "failure_rate": 0.38,
+    "failure_rate": 0.37,
     "labels_estimated": true
   },
   "bandit": {
@@ -296,7 +296,7 @@
           "lang": "ko"
         },
         "mode": "explore",
-        "score": 1.997,
+        "score": 1.998,
         "reason": "target_callout·smartstore 우세하나 라벨 추정 상태 → 탐색 병행",
         "frontier": [
           {
@@ -323,7 +323,7 @@
           "lang": "en"
         },
         "mode": "explore",
-        "score": 1.799,
+        "score": 1.802,
         "reason": "other·amazon 우세하나 라벨 추정 상태 → 탐색 병행",
         "frontier": []
       }
@@ -339,7 +339,7 @@
         "avg_reward": 55.102,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 2.381,
+        "ucb": 2.385,
         "viable": false,
         "dead": false
       },
@@ -353,7 +353,7 @@
         "avg_reward": 20.886,
         "follower_gain": 91,
         "failure_rate": 0.0,
-        "ucb": 1.997,
+        "ucb": 1.998,
         "viable": true,
         "dead": false
       },
@@ -367,7 +367,7 @@
         "avg_reward": 29.307,
         "follower_gain": 4,
         "failure_rate": 0.0,
-        "ucb": 1.957,
+        "ucb": 1.96,
         "viable": true,
         "dead": false
       },
@@ -381,7 +381,7 @@
         "avg_reward": 20.0,
         "follower_gain": 5,
         "failure_rate": 0.0,
-        "ucb": 1.799,
+        "ucb": 1.802,
         "viable": true,
         "dead": false
       },
@@ -395,7 +395,7 @@
         "avg_reward": 41.895,
         "follower_gain": 5,
         "failure_rate": 0.5,
-        "ucb": 1.792,
+        "ucb": 1.794,
         "viable": false,
         "dead": true
       },
@@ -409,7 +409,7 @@
         "avg_reward": 15.075,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.655,
+        "ucb": 1.658,
         "viable": false,
         "dead": false
       },
@@ -423,7 +423,7 @@
         "avg_reward": 11.628,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.592,
+        "ucb": 1.596,
         "viable": false,
         "dead": false
       },
@@ -437,7 +437,7 @@
         "avg_reward": 6.7,
         "follower_gain": 5,
         "failure_rate": 0.0,
-        "ucb": 1.557,
+        "ucb": 1.561,
         "viable": true,
         "dead": false
       },
@@ -451,7 +451,7 @@
         "avg_reward": 30.192,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.524,
+        "ucb": 1.527,
         "viable": true,
         "dead": false
       },
@@ -465,11 +465,11 @@
         "avg_reward": 4.914,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.47,
+        "ucb": 1.474,
         "viable": true,
         "dead": false
       }
     ]
   },
-  "updated_at": "2026-07-14"
+  "updated_at": "2026-07-15"
 }
