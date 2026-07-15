@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "daily_deltas": [
-    {
-      "date": "2026-06-28",
-      "followers": 257,
-      "delta": -1
-    },
     {
       "date": "2026-06-30",
       "followers": 257,
@@ -70,6 +65,11 @@
       "date": "2026-07-14",
       "followers": 257,
       "delta": -1
+    },
+    {
+      "date": "2026-07-15",
+      "followers": 257,
+      "delta": 0
     }
   ],
   "follow_drivers": [
@@ -227,6 +227,15 @@
       "attribution_confidence": "medium"
     },
     {
+      "post_date": "2026-07-14",
+      "text_preview": "쿠팡에서 반품 요청 오면 사유 안 보고 그냥 승인 버튼부터 누르는 셀러한테만 하는 얘기. 똑같은 10만원짜리",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 4,
+      "views": 362,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "medium"
+    },
+    {
       "post_date": "2026-05-27",
       "text_preview": "AI한테 코드 던져놓고 왜 이해를 못 하냐고?  GitHub에서 하루 4000별 받은 Understand-A",
       "content_type": "ai_tech",
@@ -239,8 +248,8 @@
       "post_date": "2026-07-13",
       "text_preview": "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
       "content_type": "ecommerce_tip",
-      "engagement_score": 10,
-      "views": 758,
+      "engagement_score": 16,
+      "views": 1181,
       "follower_delta_next_day": -1,
       "attribution_confidence": "medium"
     }
@@ -252,10 +261,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 5.6923076923076925,
+    "ecommerce_tip": 5.285714285714286,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 4.11,
+  "avg_followers_per_post": 3.9,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }

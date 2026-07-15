@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전 슬롯은 target_callout+smartstore 재현이 기본값(팔로워 arm 검증됨, 라벨 추정이니 완전 동일 포맷 반복은 피하고 셀러 대상만 바꿔서 재현). 대조군으로 target_callout+marketing 또는 target_callout+amazon 1개 병행해서 어느 타겟이 진짜인지 확인해라. 저녁 슬롯은 other+amazon+en 탐색 — 영어권 아마존셀러向 톤으로 1개 시도. contrarian+ai_general, other+ai_general/other는 절대 쓰지 마라(죽은 arm). 훅은 '~한테만 하는 얘기'류로 구체적 손실 시나리오부터 시작.",
+  "weekly_focus": "오전: target_callout·smartstore(스마트스토어/쿠팡 재고·정산·반품 디테일 + '~한테만 하는 얘기' 훅) 재현 최우선 — 지금까지 팔로워로 실제 검증된 유일한 arm. 동시에 explore 슬롯으로 target_callout·marketing·ko 1개 시도하고, 대조군으로 target_callout·smartstore / other·marketing / target_callout·amazon 중 1개를 붙여서 A/B 검증(라벨 추정 상태라 단정 금지). 저녁: explore로 other·amazon·en 우선 시도. contrarian·ai_general, other·ai_general, other·other 계열은 좋아요 나와도 팔로워 전환 안 되는 죽은 arm이니 반복 절대 금지. 훅은 반품비/정산일/재고 수량 등 숫자 기반 실무 디테일 유지, 추상적 AI 미래론·자사몰/카페24 소재는 배제.",
   "recommended_topics": [
-    "쿠팡 로켓그로스",
-    "스마트스토어 재고관리",
-    "위탁판매 반품"
+    "스마트스토어",
+    "쿠팡",
+    "위탁판매"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "target_callout+smartstore 조합(오전·ko)이 실제 팔로워를 끈 유일한 arm(+91, n=5) — '~하는 셀러한테만 하는 얘기' 훅으로 시작해서 쿠팡 로켓그로스 반품/정산, 스마트스토어 재고 방치, 위탁판매 반품 매몰비용처럼 구체적 실무 손실 지점을 찌르는 구조.",
-  "worst_post_style": "contrarian·ai_general, other·ai_general/other 조합은 좋아요는 나올 때도 있지만 죽은 arm(실패율≥50%) — 뜬구름 잡는 AI 일반론이나 근거 약한 반전은 인게이지만 태우고 팔로워로 안 이어짐.",
+  "best_post_style": "'~한테만 하는 얘기' 타겟 콜아웃 훅 + 스마트스토어/쿠팡/위탁판매 재고·반품·정산 같은 구체적 실무 디테일. 오전·ko·target_callout·smartstore가 실제 팔로워 +91(n=6)로 검증된 유일한 arm.",
+  "worst_post_style": "contrarian·ai_general — 인게이지 reward는 41.9로 제일 높지만 죽은 arm 리스트에도 올라있음. 좋아요만 벌고 팔로워는 안 붙는 전형적 함정.",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "쿠팡 로켓그로스",
-    "스마트스토어 재고관리",
-    "위탁판매 반품"
+    "스마트스토어",
+    "쿠팡",
+    "위탁판매"
   ],
-  "alert": "7일째 정체(팔로워 -0.1/일) — 비상. 좋아요는 나오는데 팔로워로 안 붙는 상태라, 오늘부터 '팔로워 arm' 재현에 올인하고 인게이지 지표는 무시해라.",
-  "generated_at": "2026-07-15"
+  "alert": "8일째 정체 확정 — 팔로워 258→257(-0.1/일). 좋아요 잘 나온 글이 팔로워는 못 끌어온 죽은 arm이었음. 인게이지 숫자 믿지 말고 target_callout·smartstore로 팔로워 회복부터.",
+  "generated_at": "2026-07-16"
 }
