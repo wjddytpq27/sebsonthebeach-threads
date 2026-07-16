@@ -1,135 +1,119 @@
 {
-  "date": "2026-07-15",
-  "signal_applied": "emergency 7일째(258→257, 17일 일평균 -0.14). directives.trend_scout '트렌딩 10개 이상, 자사몰/추상 AI 미래론 배제, 쿠팡·스마트스토어·위탁판매 셀러 실무 손실(반품/정산/재고) 우선, 영어권은 AI 자동화 실사용 반응 4~5개' 적용. best_follower_arm(오전|ko|target_callout|smartstore, +91 n=5) 포맷('~한테만 하는 얘기'+구체 손실 숫자)을 오늘도 기본값으로 채택하되, posts.json 07-01~07-14 전수 확인 결과 최저가자동맞춤/위탁반품매몰비용/관세800달러/스마트스토어CS확인/로켓그로스반품정산/등록한도1000개/상품명타플랫폼/재고방치/반품사유분류가 모두 소진 상태라 오늘은 '정산주기 현금흐름 갭'(빠른정산 오해)이라는 신규 메커니즘으로 교체. dead arm(contrarian+ai_general, other+ai_general/other)은 전부 배제. 대조군으로 target_callout+amazon(로켓그로스 장기보관료) 1개 병행, 저녁은 bandit 추천대로 other+amazon+en 유지하되 07-14와 다른 신규 각도(Rufus 자체 폐기)로 채움.",
+  "date": "2026-07-16",
+  "signal_applied": "emergency 8일째(258→257, 일평균 -0.14). directives.trend_scout '트렌딩 10개 이상, 자사몰/추상 AI 미래론 배제, 쿠팡·스마트스토어·위탁판매 셀러 실무 손실(반품/정산/재고) 우선, 영어권은 AI 자동화 실사용 반응' 적용. best_follower_arm(오전|ko|target_callout|smartstore, +91 n=6) 포맷('~한테만 하는 얘기'+구체 손실 숫자)을 오늘도 기본값으로 채택하되, posts.json 07-01~07-15 전수 확인 결과 최저가자동맞춤/위탁반품매몰비용/관세800달러/CS확인/로켓그로스반품정산/등록한도1000개/상품명타플랫폼/재고방치/반품사유분류/정산주기빠른정산(등급)이 모두 소진 상태라 오늘은 '빠른정산 이용 시 구매적립금 분담분이 뒤늦게 차감되는 구조'라는 신규 메커니즘으로 교체(07-15와 달리 등급/자격이 아니라 '들어온 정산액 자체가 나중에 또 깎이는' 이연 차감 구조). 대조군으로 쿠팡 셀프환불(무회수환불) 재접수 제한 강화(target_callout+coupang) 1개 병행. 저녁은 bandit.slots.evening.recommend(other·amazon·en)에 맞춰 07-14(Rufus 노출편향)·07-15(Rufus 완전폐기) 시리즈와 다른 신규 이슈(타이틀 75자 제한+AI 자동 재작성)로 교체.",
   "github_hot": [
     {
       "repo": "OpenCut-app/OpenCut",
-      "stars_today": 4276,
-      "why_hot": "오픈소스 CapCut 대안 영상 편집 툴. 06-25 이후 지속 트렌딩.",
+      "stars_today": null,
+      "why_hot": "오픈소스 CapCut 대안 영상 편집 툴. 07-14~07-15에 이어 3일 연속 1위 트렌딩.",
       "post_angle": "영상 편집 개발 도구, 셀러 실무 연결 없음. 미채택."
     },
     {
       "repo": "HKUDS/Vibe-Trading",
-      "stars_today": 1256,
-      "why_hot": "개인 투자 자동화 트레이딩 에이전트. 07-13/07-14에도 반복 트렌딩.",
+      "stars_today": null,
+      "why_hot": "개인 투자 자동화 트레이딩 에이전트. 07-13~07-15에 이어 지속 트렌딩.",
       "post_angle": "투자 자동화, 셀러 실무와 직접 연결 안 됨. 미채택."
     },
     {
-      "repo": "Graphify-Labs/graphify",
-      "stars_today": 1851,
-      "why_hot": "코드베이스를 AI 코딩 어시스턴트용 지식그래프로 변환.",
-      "post_angle": "개발자 인프라 도구, 셀러 경험담 소재 불성립. 미채택."
-    },
-    {
-      "repo": "Shubhamsaboo/awesome-llm-apps",
-      "stars_today": 1106,
-      "why_hot": "AI 에이전트/RAG 앱 100개+ 카탈로그. 07-13, 07-14 이어 3일 연속 트렌딩.",
-      "post_angle": "범용 카탈로그성 저장소, 단독 경험담 불가. 미채택."
-    },
-    {
-      "repo": "mattpocock/skills",
-      "stars_today": 1679,
-      "why_hot": "Claude Code용 실전 스킬 모음집.",
-      "post_angle": "개발자 생산성 도구, 이커머스 실무 무관. 미채택."
-    },
-    {
-      "repo": "Dicklesworthstone/destructive_command_guard",
-      "stars_today": 473,
-      "why_hot": "AI 에이전트의 위험 명령어 실행을 차단하는 가드레일 도구.",
-      "post_angle": "개발자 보안 도구, 셀러 실무 무관. 미채택."
+      "repo": "moeru-ai/airi",
+      "stars_today": null,
+      "why_hot": "가상 캐릭터/버추얼 컴패니언 AI 에이전트 프레임워크. 오늘 신규 상위권 진입.",
+      "post_angle": "엔터테인먼트/캐릭터 AI, 셀러 실무 무관. 미채택."
     }
   ],
   "big_tech_news": [
     {
-      "source": "silmupack.com 2026 — 스마트스토어 정산주기(구매확정·정산일·빠른정산)",
-      "topic": "스마트스토어는 '오늘 판매=오늘 입금'이 아니라 실제 입금까지 평균 2~3주가 걸리는 구조. 이 갭 동안 광고비·원가를 먼저 지출해야 하는데, 셀러들이 놓치는 지점은 (1) 구매확정 지연이 정산주기 변수 중 비중이 가장 크고 (2) 송장번호 등록을 늦게 하면 자동 구매확정 카운트 자체가 시작 안 되고 (3) 네이버페이 보유액에 찍힌 금액을 '내 돈'으로 착각하지만 정산 보류 중이면 출금 불가하고 (4) 판매자 등급이 올라가도 빠른정산 자격이 자동으로 붙는 게 아니라 별도 재확인이 필요하다는 것.",
-      "angle": "반전형 — '등급 올랐으니 이제 정산 빨리 들어오겠지' 하고 방심한 셀러가, 알고 보니 등급과 빠른정산 자격이 별개라서 여전히 2~3주씩 밀려 있었다는 구조. 07-06(CS 확인)·07-07(로켓그로스 반품정산)·07-08(등록한도)과는 다른 메커니즘(반품이 아니라 '판매는 됐는데 돈이 안 들어오는' 현금흐름 갭)이라 소재 중복 아님. best_performing 공식(채널 콕 집기+숫자 반전)과 일치.",
-      "hook_idea": "스마트스토어 등급 올라가면 정산도 빨리 들어오는 줄 아는 셀러한테만 하는 얘기. 등급이랑 빠른정산 자격은 완전 별개였음 — 등급 올려놓고 신청 안 해서 여전히 2~3주씩 묶여 있었던 거임. 그 사이 광고비랑 사입비는 계속 나가는데."
+      "source": "sellerking.io / naseller.com / dashpanda.io 2026 — 스마트스토어 빠른정산·구매적립금 정산정책",
+      "topic": "빠른정산을 쓰면 정산예정금액에 셀러 부담 구매적립금 분담분이 빠져 있는 채로 먼저 입금된다. 그런데 이 적립금 차감분은 없어지는 게 아니라 '적립 완료일' 기준으로 뒤늦게 정산 명세서에 다시 반영돼 차감된다(2024-08-01 이후 거래 건 기준). 즉 빠른정산으로 먼저 들어온 돈을 '이번 건은 다 내 돈'이라고 계산하고 광고비·사입비에 써버리면, 며칠~몇 주 뒤 적립 완료 시점에 그 금액이 또 한 번 빠져나가는 구조.",
+      "angle": "반전형 — '빠른정산 신청해서 이제 정산 빨리 들어온다'고 안심한 셀러가, 사실은 구매적립금 차감이 시차를 두고 별도로 또 발생한다는 걸 몰라서 나중에 마이너스를 맞는 구조. 07-15(등급↔빠른정산 자격이 별개)와는 다른 메커니즘(자격 문제가 아니라 '이미 받은 정산액이 또 깎이는' 이연 차감)이라 소재 중복 아님. best_performing 공식(채널 콕 집기+숫자 반전) 유지.",
+      "hook_idea": "스마트스토어 빠른정산 신청해놓고 이제 돈 바로바로 들어온다고 안심하던 셀러한테만 하는 얘기. 정산예정금액엔 구매적립금 분담분이 안 잡혀 있어서 그날 들어온 돈 다 내 돈인 줄 알고 광고비로 썼음. 근데 그거 적립 완료되는 시점에 따로 또 빠져나감 — 같은 매출이 두 번 정산되는 것처럼 느껴짐."
     },
     {
-      "source": "allra.co.kr 2026 — 쿠팡 로켓그로스 장기보관료·정산 공백 관리",
-      "topic": "로켓그로스 셀러들이 '매출 오르면 수익도 따라온다'고 믿지만, 실제로는 광고비 상계·물류비 구간 초과·장기 보관료가 마진을 갉아먹는다. 특히 보관료는 무료 기간(30~45일) 지나면 조용히 누적되는데, 일 25~50원/CBM 기준이라도 재고 회전이 느린 상품에서는 순익률이 평균 5~10% 감소하는 것으로 나타남. 누적 정산금 3천만원에 전일 구매확정 500만원이어도 기존 선정산으로는 약 450만원 수준만 지급되는 구조적 갭도 존재.",
-      "angle": "target_callout+amazon 대조군 후보(team_signal이 요청한 marketing/amazon 대조군 실험용) — '매출 늘어서 좋다고 자랑하던' 로켓그로스 셀러가 보관료로 순익 5~10% 깎이는 걸 몇 달째 몰랐다는 반전. 07-13(재고 방치·유령상품)과는 다른 메커니즘(재고를 방치한 게 아니라 '팔리고 있는데도' 보관료가 누적되는 구조)이라 중복 아님.",
-      "hook_idea": "로켓그로스 매출 늘어난다고 좋아하던 셀러한테만 하는 얘기. 재고 잘 팔리고 있어도 무료 보관기간 30~45일 지나면 보관료가 조용히 쌓이고 있었음 — 그거 다 까고 나면 순익률이 5~10%씩 깎여 있었던 거임."
+      "source": "insight.co.kr, etnews.com, todayeconomic.com 2025-11~12 (2026 적용 지속) — 쿠팡 회수 없는 셀프 환불(신선식품 등)",
+      "topic": "쿠팡이 2025년 12월부터 신선식품 등 일부 카테고리에 '셀프 환불'을 도입, 고객이 하자 사진만 올리면 상품 회수 없이 즉시 전액 환불 처리된다. 기존엔 판매자 확인 요청이 반려돼도 168시간 내 재접수가 가능했지만, 다음달(8월) 10일부터는 재접수가 1회로 제한되어 이의제기 기회가 크게 줄어든다. 검수 사진·운송장·통화 기록 등 증빙자료가 없으면 부당환불 보상 절차에서도 불리해진다.",
+      "angle": "target_callout+coupang 대조군 후보 — '신선식품 팔면 회전 빠르고 좋다'고 여기던 셀러가, 사실은 사진 한 장에 상품도 못 돌려받고 전액 환불해줘야 하는 카테고리라는 반전. 07-14(반품 사유 안 보고 승인)와는 다른 메커니즘(반품 승인/거부의 문제가 아니라 애초에 회수 자체가 없는 정책)이라 중복 아님.",
+      "hook_idea": "쿠팡에서 신선식품 판다고 회전 빠르다고 좋아하던 셀러한테만 하는 얘기. 그 카테고리는 손님이 하자 사진 한 장만 올리면 회수 없이 그냥 전액 환불 나감 — 상품은 안 돌아옴. 8월 10일부터는 이의제기 재접수도 1회로 끝남."
     },
     {
-      "source": "cnbc.com 2026-05-13, canopymanagement.com/rewarx.com 2026 (후속 분석) — Amazon Rufus 완전 폐기, Alexa for Shopping으로 전환",
-      "topic": "07-14에 다룬 'Rufus가 비프라임 상품을 비교검색 73%에서 밀어냈다'는 소송 대상이었던 그 Rufus 챗봇 자체가 2026년 5월 13일부로 완전히 은퇴하고 'Alexa for Shopping'으로 대체됨. 신규 시스템은 프라임 멤버십·에코 기기 없이도 모든 로그인 고객에게 기본 노출되며, 검색 결과 위에 AI 요약과 상품 비교 숏리스트를 먼저 보여준다. 셀러 입장에서는 그동안 키워드 스터핑으로 최적화해온 리스팅이 무의미해지고, 구조화된 속성 데이터(attribute completeness)가 없으면 AI 추출 대상에서 아예 탈락. ACoS/TACoS 기준선도 전환 후 30~60일간 요동칠 것으로 예상됨.",
-      "angle": "AI×이커머스 반전형(영어권) — 어제(07-14) 소개했던 'Rufus 노출편향 소송'의 대상 자체가 이미 5월에 사망했다는 후속 반전. '내가 리스팅 최적화 열심히 했는데 심판이 통째로 바뀌었다'는 통제권 상실 구조. bandit.slots.evening.recommend(other·amazon·en)와 일치, 07-14와 다른 신규 각도(무단판매 차지백 → 심판 자체 교체).",
-      "hook_idea": "Amazon sellers who spent months keyword-stuffing their listings for Rufus — turns out Rufus is dead. Amazon quietly retired it in May and replaced it with 'Alexa for Shopping,' which reads structured product attributes, not keywords, before a shopper ever sees your listing. Everything you optimized for is now the wrong thing to optimize for."
+      "source": "sellercentral.amazon.com, zentail.com, ppc.land 2026-07 — Amazon 상품명 75자 제한(7월 27일 시행)",
+      "topic": "7월 27일부터 미디어 카테고리를 제외한 전 카테고리 상품명이 공백 포함 75자로 제한된다. 대신 'Item Highlights'라는 125자 추가 필드가 신설돼 비교용 스펙을 담을 수 있다. 아마존은 AI 도구로 기존 타이틀을 자동으로 75자에 맞게 재작성해주는데, 7월 27일 이후에도 75자를 넘기는 타이틀은 셀러 동의 여부와 무관하게 아마존 AI 추천안으로 강제 교체된다.",
+      "angle": "AI×이커머스 반전형(영어권, bandit 추천 other·amazon·en 반영) — 그동안 200자 가까이 키워드를 욱여넣던 셀러들이 하루아침에 75자 제한에 걸리고, 심지어 손 안 대면 아마존 AI가 알아서 재작성해버려 '내가 최적화해온 것'에 대한 통제권 자체를 잃는 구조. 07-14/07-15 Rufus 시리즈와는 다른 신규 이슈(노출 알고리즘이 아니라 타이틀 필드 자체의 강제 규격화)라 중복 아님.",
+      "hook_idea": "Amazon sellers who spent years cramming 200 characters of keywords into their titles — starting July 27, titles over 75 characters get auto-rewritten by Amazon's own AI, whether you approve the new version or not. Years of 'optimization' just became the thing getting deleted."
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "\"Zig Creator Calls Spade a Spade, Anthropic Blows Smoke\" — AI 기업 주장 비판 논쟁 (계속 상위권 유지)",
-      "source": "Hacker News 2026-07-14",
-      "angle": "개발자 커뮤니티 내부 논쟁, 어제와 동일 스토리 반복 노출. 셀러 실무 무관. 미채택.",
+      "story": "\"Bonsai 27B: A 27B-class model that runs on a phone\"",
+      "source": "Hacker News 2026-07-16",
+      "angle": "온디바이스 소형 모델 벤치마크 뉴스, 셀러 실무 연결 각도 없음(즉시 탈락 기준: 벤치마크 스펙 나열). 미채택.",
       "hook_idea": "미채택"
     },
     {
-      "story": "Samsung Health, AI 학습 거부 시 데이터 삭제 경고 논란 (오늘도 1위)",
-      "source": "Hacker News 2026-07-14",
-      "angle": "헬스 데이터 동의 이슈, 어제와 동일 스토리. 셀러 실무 연결 없음. 미채택.",
+      "story": "\"I tricked Claude into leaking your deepest, darkest secrets\"",
+      "source": "Hacker News 2026-07-16",
+      "angle": "AI 안전성/탈옥 이슈, 개발자 커뮤니티 논쟁이라 셀러 실무 무관. 미채택.",
       "hook_idea": "미채택"
     },
     {
-      "story": "\"Ask HN: Add flag for AI-generated articles\" — AI 생성 콘텐츠 표기 의무화 논의",
-      "source": "Hacker News 2026-07-14",
-      "angle": "콘텐츠 정책 논쟁, 셀러 실무 연결 각도 없음. 즉시 탈락 기준 해당.",
+      "story": "\"Cursor 0day: When Full Disclosure Becomes the Only Protection Left\"",
+      "source": "Hacker News 2026-07-16",
+      "angle": "개발자 도구 보안 취약점, 셀러 실무 연결 없음. 미채택.",
       "hook_idea": "미채택"
     },
     {
-      "story": "\"Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k\"",
-      "source": "Hacker News 2026-07-14",
-      "angle": "개발자 도구 벤치마크 논쟁, 셀러 실무 무관. 미채택.",
+      "story": "\"Are we offloading too much of our thinking to AI?\"",
+      "source": "Hacker News 2026-07-16",
+      "angle": "AI 일반론/추상 비판 에세이, 즉시 탈락 기준(결론이 뜬구름) 해당. 미채택.",
       "hook_idea": "미채택"
     },
     {
-      "story": "\"I love LLMs, I hate hype\" — AI 과대광고 비판 에세이",
-      "source": "Hacker News 2026-07-14",
-      "angle": "AI 일반론/추상 비판, 즉시 탈락 기준(AI가 대세다류 결론 반대편이지만 결국 뜬구름) 해당. 미채택.",
+      "story": "\"The Tower Keeps Rising\"",
+      "source": "Hacker News 2026-07-16",
+      "angle": "개발자 에세이, 셀러 실무 무관. 미채택.",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "반전형 1인칭 손실담 — 스마트스토어 판매자 등급이 오르면 정산도 자동으로 빨라진다고 믿는 셀러 타겟. 실제로는 등급과 빠른정산 자격이 별개라 별도 신청 없이는 여전히 2~3주씩 정산이 묶이는 구조. 구매확정 지연·송장 미등록이 정산 지연의 가장 큰 변수라는 점, 네이버페이 보유액 표시와 실제 출금 가능액이 다르다는 오해도 함께 반전 포인트로 사용.",
-    "hook": "스마트스토어 등급 올라가면 정산도 빨리 들어오는 줄 아는 셀러한테만 하는 얘기. 등급이랑 빠른정산 자격은 완전 별개였음 — 등급 올려놓고 신청 안 해서 여전히 2~3주씩 묶여 있었던 거임. 그 사이 광고비랑 사입비는 계속 나가는데.",
-    "source": "silmupack.com 2026 — 스마트스토어 정산주기(구매확정·정산일·빠른정산 구조)",
+    "angle": "반전형 1인칭 손실담 — 스마트스토어 빠른정산을 신청해 돈이 빨리 들어온다고 안심한 셀러 타겟. 정산예정금액에는 구매적립금 분담분이 빠져 있어 '오늘 들어온 돈=내 돈'으로 착각하고 광고비·사입비에 먼저 써버리는데, 실제로는 적립 완료 시점에 그 금액이 뒤늦게 별도로 차감되어 같은 매출이 두 번 정산되는 것처럼 느껴지는 구조.",
+    "hook": "스마트스토어 빠른정산 신청해놓고 이제 돈 바로바로 들어온다고 안심하던 셀러한테만 하는 얘기. 정산예정금액엔 구매적립금 분담분이 안 잡혀 있어서 그날 들어온 돈 다 내 돈인 줄 알고 광고비로 썼음. 근데 그거 적립 완료되는 시점에 따로 또 빠져나감 — 같은 매출이 두 번 정산되는 것처럼 느껴짐.",
+    "source": "sellerking.io / naseller.com / dashpanda.io 2026 — 스마트스토어 빠른정산·구매적립금 정산정책",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "english",
-    "angle": "AI×이커머스 반전형(영어권, bandit 추천 other·amazon·en 반영) — 07-14에 소개한 'Rufus 노출편향 소송'의 대상이었던 Rufus 챗봇 자체가 이미 2026년 5월 완전히 은퇴하고 Alexa for Shopping으로 대체됐다는 후속 반전. 키워드 최적화에 공들인 셀러들이 갑자기 구조화 데이터 기반 심사로 룰이 바뀌어버린 통제권 상실 구조.",
-    "hook": "Amazon sellers who spent months keyword-stuffing their listings for Rufus — turns out Rufus is dead. Amazon quietly retired it in May and replaced it with 'Alexa for Shopping,' which reads structured product attributes, not keywords, before a shopper ever sees your listing. Everything you optimized for is now the wrong thing to optimize for.",
-    "source": "cnbc.com 2026-05-13, canopymanagement.com/rewarx.com 2026 (Rufus 폐기 후속 셀러 영향 분석)",
+    "angle": "AI×이커머스 반전형(영어권, bandit 추천 other·amazon·en 반영) — 아마존 셀러들이 몇 년간 키워드로 채워온 200자 가까운 상품명이 7월 27일부터 75자로 강제 제한되고, 손을 안 대면 아마존 AI가 알아서 재작성해버려 그동안의 '최적화'가 통제 밖에서 지워지는 구조. 07-14~07-15 Rufus 시리즈와 다른 신규 이슈(노출 알고리즘이 아닌 타이틀 필드 강제 규격화).",
+    "hook": "Amazon sellers who spent years cramming 200 characters of keywords into their titles — starting July 27, titles over 75 characters get auto-rewritten by Amazon's own AI, whether you approve the new version or not. Years of 'optimization' just became the thing getting deleted.",
+    "source": "sellercentral.amazon.com, zentail.com, ppc.land 2026-07 — Amazon 상품명 75자 제한(7월 27일 시행)",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-07-15",
+    "collected_at": "2026-07-16",
     "agent": "trend-scout",
     "status": "emergency",
     "directives_applied": [
-      "team_signal status emergency(7일째, 17일 일평균 -0.14) → directives.trend_scout '트렌딩 10개 이상, 자사몰/추상 AI 미래론 배제, 쿠팡·스마트스토어·위탁판매 셀러 실무 손실(반품/정산/재고) 우선, 영어권 4~5개' 적용",
-      "ledger.best_follower_arm(오전|ko|target_callout|smartstore, 팔로워 +91 n=5) 포맷 유지, 소재는 '스마트스토어 정산주기 현금흐름 갭(빠른정산 오해)'으로 신규 교체",
-      "반복 노출 방지 — posts.json 07-01~07-14 확인, 최저가자동맞춤/위탁반품매몰비용/관세800달러/스마트스토어CS/로켓그로스반품정산/등록한도1000개/상품명타플랫폼/재고방치/반품사유분류 전부 오늘 배제",
-      "대조군 확보 — bandit.frontier(target_callout·amazon) 대응해 로켓그로스 장기보관료 소재를 target_callout+amazon 대조군으로 기록",
-      "dead arm(contrarian+ai_general, other+ai_general/other) 전부 배제, 뜬구름 AI 일반론 HN 스토리(Zig/Anthropic 논쟁, LLM hype 비판) 전부 미채택",
-      "bandit.slots.evening.recommend(other·amazon·en) 반영 — Rufus 완전 폐기+Alexa for Shopping 전환을 07-14와 다른 신규 각도로 채택",
-      "GitHub trending 6개 확인했으나 전부 개발자 인프라/투자자동화 도구로 셀러 실무 연결 불가 판단, 전부 미채택"
+      "team_signal status emergency(8일째, 일평균 -0.14) → directives.trend_scout '트렌딩 10개 이상, 자사몰/추상 AI 미래론 배제, 쿠팡·스마트스토어·위탁판매 셀러 실무 손실 우선, 영어권 AI 자동화 실사용 반응' 적용",
+      "ledger.best_follower_arm(오전|ko|target_callout|smartstore, 팔로워 +91 n=6) 포맷 유지, 소재는 '빠른정산 이용 시 구매적립금 이연 차감' 신규 메커니즘으로 교체",
+      "반복 노출 방지 — posts.json 07-01~07-15 전수 확인, 최저가자동맞춤/위탁반품매몰비용/관세800달러/CS확인/로켓그로스반품정산/등록한도1000개/상품명타플랫폼/재고방치/반품사유분류/정산주기(등급) 전부 오늘 배제",
+      "대조군 확보 — 쿠팡 셀프환불(무회수환불) 재접수 제한 강화를 target_callout+coupang 대조군으로 기록",
+      "dead arm(contrarian+ai_general, other+ai_general/other) 전부 배제, 뜬구름 AI 일반론/개발자 도구 HN 스토리 전부 미채택",
+      "bandit.slots.evening.recommend(other·amazon·en) 반영 — Amazon 75자 타이틀 제한+AI 강제 재작성을 07-14/07-15 Rufus 시리즈와 다른 신규 각도로 채택",
+      "GitHub trending 3개 확인(OpenCut/Vibe-Trading 반복 트렌딩, moeru-ai/airi 신규) — 전부 개발자·엔터 도구로 셀러 실무 연결 불가 판단, 전부 미채택"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://news.ycombinator.com/",
+      "https://www.sellerking.io/blog/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8A%A4%ED%86%A0%EC%96%B4-%EA%B5%AC%EB%A7%A4%EC%A0%81%EB%A6%BD-%EC%A0%95%EC%82%B0%EC%A0%95%EC%B1%85-%EB%B3%80%EA%B2%BD-24957",
+      "https://naseller.com/openmarket/3288",
+      "https://www.dashpanda.io/blog/naver-settlement-explained",
       "https://silmupack.com/smartstore-settlement-cycle/",
-      "https://silmupack.com/%EC%BF%A0%ED%8C%A1-%EB%B0%98%ED%92%88-%EC%B2%98%EB%A6%AC/",
-      "https://allra.co.kr/blogs/254",
-      "https://oscsnm.com/coupang-rocket-fee-calculator-2026/",
-      "https://oscsnm.com/coupang-seller-fee-2026/",
-      "https://www.cnbc.com/2026/05/13/amazon-ditches-rufus-ai-chatbot-in-favor-of-alexa-shopping-agent.html",
-      "https://canopymanagement.com/amazon-alexa-for-shopping-sellers-guide/",
-      "https://www.rewarx.com/blogs/amazon-killed-rufus-alexa-shopping-sellers",
-      "https://sellerpit.kr/%EC%9C%84%ED%83%81-%ED%8C%90%EB%A7%A4%EC%9D%98-%ED%95%9C%EA%B3%84%EB%A5%BC-%EA%B7%B9%EB%B3%B5%ED%95%98%EB%8A%94-%EC%82%AC%EC%9E%85/",
-      "https://blog.refundy.co/refundy-ai-reply-automation"
+      "https://www.insight.co.kr/news/529326",
+      "https://www.etnews.com/20251114000168",
+      "https://www.todayeconomic.com/news/article.html?no=28882",
+      "https://sellercentral.amazon.com/seller-forums/discussions/t/145b6d0f-999c-4555-896c-c694bda2e470",
+      "https://www.zentail.com/blog/amazon-is-cutting-product-titles-to-75-characters-heres-what-sellers-need-to-know",
+      "https://ppc.land/amazon-cuts-product-title-limit-to-75-characters-on-july-27/",
+      "https://www.threads.com/@holinpage/post/DZdmyQPkzY4",
+      "https://v.daum.net/v/yeaHDbb0Zi"
     ]
   }
 }
