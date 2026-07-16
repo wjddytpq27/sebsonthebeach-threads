@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "daily_deltas": [
-    {
-      "date": "2026-06-30",
-      "followers": 257,
-      "delta": 0
-    },
     {
       "date": "2026-07-01",
       "followers": 257,
@@ -70,6 +65,11 @@
       "date": "2026-07-15",
       "followers": 257,
       "delta": 0
+    },
+    {
+      "date": "2026-07-16",
+      "followers": 258,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -117,6 +117,15 @@
       "views": 182,
       "follower_delta_next_day": 1,
       "attribution_confidence": "medium"
+    },
+    {
+      "post_date": "2026-07-15",
+      "text_preview": "스마트스토어 등급 올라가면 정산도 저절로 빨라지는 줄 아는 셀러한테만 하는 얘기. 나도 그런 줄 알았음. 등",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 5,
+      "views": 561,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
     },
     {
       "post_date": "2026-05-24",
@@ -248,8 +257,8 @@
       "post_date": "2026-07-13",
       "text_preview": "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
       "content_type": "ecommerce_tip",
-      "engagement_score": 16,
-      "views": 1181,
+      "engagement_score": 17,
+      "views": 1233,
       "follower_delta_next_day": -1,
       "attribution_confidence": "medium"
     }
@@ -261,10 +270,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 5.285714285714286,
+    "ecommerce_tip": 5.0,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 3.9,
+  "avg_followers_per_post": 3.76,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }

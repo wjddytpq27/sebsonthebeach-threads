@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전: target_callout·smartstore(스마트스토어/쿠팡 재고·정산·반품 디테일 + '~한테만 하는 얘기' 훅) 재현 최우선 — 지금까지 팔로워로 실제 검증된 유일한 arm. 동시에 explore 슬롯으로 target_callout·marketing·ko 1개 시도하고, 대조군으로 target_callout·smartstore / other·marketing / target_callout·amazon 중 1개를 붙여서 A/B 검증(라벨 추정 상태라 단정 금지). 저녁: explore로 other·amazon·en 우선 시도. contrarian·ai_general, other·ai_general, other·other 계열은 좋아요 나와도 팔로워 전환 안 되는 죽은 arm이니 반복 절대 금지. 훅은 반품비/정산일/재고 수량 등 숫자 기반 실무 디테일 유지, 추상적 AI 미래론·자사몰/카페24 소재는 배제.",
+  "weekly_focus": "오전 1개는 검증된 팔로워 arm 그대로 재현: target_callout·smartstore 앵글로 쿠팡/스마트스토어 실무 착각(반품·재고·정산) 지적. 오전 탐색용으로 target_callout·marketing 앵글도 하나 만들어 target_callout·smartstore(또는 other·marketing) 대조군과 비교되게 작성 — 라벨이 아직 추정치라 단정 말고 검증 목적. 저녁은 other·amazon·en 앵글 탐색(영어, 아마존셀러 실무 착각 지적). 콘트래리안+AI일반론, other·ai_general, other·other 조합은 죽은 arm이니 절대 쓰지 말 것. 훅 강도는 평소 수준.",
   "recommended_topics": [
-    "스마트스토어",
-    "쿠팡",
-    "위탁판매"
+    "AI tools automation",
+    "디지털마케팅",
+    "온라인창업"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'~한테만 하는 얘기' 타겟 콜아웃 훅 + 스마트스토어/쿠팡/위탁판매 재고·반품·정산 같은 구체적 실무 디테일. 오전·ko·target_callout·smartstore가 실제 팔로워 +91(n=6)로 검증된 유일한 arm.",
-  "worst_post_style": "contrarian·ai_general — 인게이지 reward는 41.9로 제일 높지만 죽은 arm 리스트에도 올라있음. 좋아요만 벌고 팔로워는 안 붙는 전형적 함정.",
+  "best_post_style": "'~한테만 하는 얘기' 훅으로 쿠팡/스마트스토어 셀러의 반품 정산·재고 방치·등급별 정산 착각을 지적하는 각도 — target_callout·smartstore 조합이 실제 팔로워 전환 검증됨(+91명, n=7).",
+  "worst_post_style": "콘트래리안+AI 일반론(오전·contrarian·ai_general)은 좋아요 반응(reward 41.9)은 높아도 팔로워 전환 실패율 50%+ 죽은 arm — 좋아요에 속지 말 것.",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "스마트스토어",
-    "쿠팡",
-    "위탁판매"
+    "AI tools automation",
+    "디지털마케팅",
+    "온라인창업"
   ],
-  "alert": "8일째 정체 확정 — 팔로워 258→257(-0.1/일). 좋아요 잘 나온 글이 팔로워는 못 끌어온 죽은 arm이었음. 인게이지 숫자 믿지 말고 target_callout·smartstore로 팔로워 회복부터.",
-  "generated_at": "2026-07-16"
+  "alert": "팔로워 18일째 정체(258→258, 일평균 +0.0) — 상태는 '정상'이지만 사실상 순증 없음. 오늘은 검증된 팔로워 arm 재현 + 밴딧 탐색 병행으로 전환.",
+  "generated_at": "2026-07-17"
 }
