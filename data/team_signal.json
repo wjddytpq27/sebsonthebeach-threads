@@ -1,7 +1,7 @@
 {
   "status": "normal",
-  "days_since_growth": 0,
-  "follower_trend": "258→258 (18일, 일평균 +0.0) — 오늘 성장 확인",
+  "days_since_growth": 1,
+  "follower_trend": "258→258 (18일, 일평균 +0.0)",
   "best_performing": {
     "avg_score": 19.7,
     "examples": [
@@ -9,12 +9,12 @@
       "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
       "스마트스토어 등급 올라가면 정산도 저절로 빨라지는 줄 아는 셀러한테만 하는 얘기. 나도 그런 줄 알았음. 등"
     ],
-    "style": "'~한테만 하는 얘기' 훅으로 쿠팡/스마트스토어 셀러의 반품 정산·재고 방치·등급별 정산 착각을 지적하는 각도 — target_callout·smartstore 조합이 실제 팔로워 전환 검증됨(+91명, n=7)."
+    "style": "오전·한국어·타겟콜아웃 포맷 — '~하는 줄 아는 사람한테만 하는 얘기' 훅으로 쿠팡/스마트스토어 셀러 실무 디테일(정산, 반품, 재고) 짚는 스타일. 팔로워 전환 arm으로 검증됨(+91, n=7)."
   },
   "worst_performing": {
     "avg_score": 0,
     "count": 0,
-    "style": "콘트래리안+AI 일반론(오전·contrarian·ai_general)은 좋아요 반응(reward 41.9)은 높아도 팔로워 전환 실패율 50%+ 죽은 arm — 좋아요에 속지 말 것."
+    "style": "오전·저녁 '기타(other)' 앵글 + ai_general 주제 조합 전부 실패율 50%+, contrarian+ai_general은 인게이지먼트만 높고 팔로워 전환 0이라 특히 함정."
   },
   "keyword_performance": {
     "AI활용": {
@@ -244,17 +244,17 @@
     }
   },
   "top_search_keywords": [
-    "AI tools automation",
-    "디지털마케팅",
-    "온라인창업"
+    "이커머스",
+    "자동화/노코드",
+    "부업"
   ],
   "directives": {
     "trend_scout": "평소대로",
-    "viral_writer": "오전 1개는 검증된 팔로워 arm 그대로 재현: target_callout·smartstore 앵글로 쿠팡/스마트스토어 실무 착각(반품·재고·정산) 지적. 오전 탐색용으로 target_callout·marketing 앵글도 하나 만들어 target_callout·smartstore(또는 other·marketing) 대조군과 비교되게 작성 — 라벨이 아직 추정치라 단정 말고 검증 목적. 저녁은 other·amazon·en 앵글 탐색(영어, 아마존셀러 실무 착각 지적). 콘트래리안+AI일반론, other·ai_general, other·other 조합은 죽은 arm이니 절대 쓰지 말 것. 훅 강도는 평소 수준.",
-    "hunter_engager": "목표 20개(정상 기준). 우선 키워드 AI tools automation / 디지털마케팅 / 온라인창업 — 단 세 키워드 모두 팔로워 전환 hit rate 0.0(n≥3)로 아직 검증된 키워드 없음, 이번엔 target_callout 톤(실무 착각 짚기)으로 댓글 실험하며 결과 추적. 영어 비중 30%."
+    "viral_writer": "오전: target_callout·smartstore(어제까지 검증된 팔로워 끈 arm, +91/n=7) 재현 최우선 — '~하는 줄 아는 사람한테만' 훅으로 쿠팡/스마트스토어 실무 디테일. 병행 탐색으로 target_callout·marketing 1개 A/B 대조군 투입(라벨 추정 상태 검증 목적). 저녁: other·amazon·en 탐색 1개 시도. contrarian+ai_general, other+ai_general, other+other 앵글은 죽은 arm이니 절대 금지 — 좋아요 잘 나와도 팔로워 전환 없음.",
+    "hunter_engager": "목표 20~25개, 영어 비중 20~30%. 기존 키워드(디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업) 전부 다음날 팔로워 전환 hit rate 0%라 우선순위 낮추고, 계정 실제 강점(쿠팡/스마트스토어 셀러 자동화)에 맞는 이커머스·자동화/노코드 키워드로 비중 이동해서 테스트. 영어 계정은 저녁 other·amazon·en 탐색과 맞춰 아마존 셀러 쪽 일부 포함."
   },
-  "team_memo": "팔로워 18일째 정체(258→258, 일평균 +0.0) — 상태는 '정상'이지만 사실상 순증 없음. 오늘은 검증된 팔로워 arm 재현 + 밴딧 탐색 병행으로 전환.",
-  "devil_advocate": "정체 18일째에 팔로워 순증이 0인데 이걸 normal이라고 하는 게 말이 되나 — 이미 stall 기준(3일 정체)도 훌쩍 넘겼는데 왜 아직 normal 판정이야? 그리고 잘 됐다는 포스트 3개가 전부 \"~하는 셀러한테만 하는 얘기\"라는 똑같은 훅 구조인데, 이게 재현 가능한 전략인지 아니면 그냥 같은 템플릿 반복해서 우연히 나온 착시인지부터 따져봐야지. 이 상태로 30일 더 가면 258명 근처에서 못 벗어나고 emergency 기준까지 넘어갈 텐데, 지금 손 놓고 normal이라고 부를 때가 아니야.",
+  "team_memo": "정상 상태지만 18일째 팔로워 +0로 완전 정체. 인게이지 위너(오전·contrarian·ai_general)가 원장상 죽은 arm이라 좋아요만 벌고 팔로워 전환은 0 — 팔로워를 실제로 끈 건 오전·target_callout·smartstore(+91, n=7)뿐이니 오늘은 이거 재현이 최우선.",
+  "devil_advocate": "18일 동안 팔로워가 258명에서 그대로인데 \"normal\"이 말이 돼? 오늘 하루 안 빠졌다고 성장이라 부르는 거면 정체를 정상으로 포장하는 거지. best_performing이 \"+91명, n=7 검증됨\"이라면서 정작 follower_trend는 0인 게 자체 모순인데, 표본 7개짜리 우연을 재현 가능한 패턴이라 부를 수 있어? 이 상태로 30일 더 가면 키워드 히트율 전부 0.0인 걸 그대로 방치한 채 \"잘 되는 각도\"만 반복하다가 팔로워 258에서 한 달 내내 안 움직일 거야.",
   "ledger": {
     "north_star": {
       "gain": 0,
@@ -364,10 +364,10 @@
         "hook_style": "target_callout",
         "topic_theme": "smartstore",
         "n": 7,
-        "avg_reward": 17.302,
+        "avg_reward": 16.993,
         "follower_gain": 91,
         "failure_rate": 0.0,
-        "ucb": 1.84,
+        "ucb": 1.834,
         "viable": true,
         "dead": false
       },
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "updated_at": "2026-07-17"
+  "updated_at": "2026-07-18"
 }
