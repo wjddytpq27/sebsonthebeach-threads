@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-18",
+  "updated_at": "2026-07-19",
   "daily_deltas": [
-    {
-      "date": "2026-07-03",
-      "followers": 257,
-      "delta": 0
-    },
     {
       "date": "2026-07-04",
       "followers": 257,
@@ -70,6 +65,11 @@
       "date": "2026-07-18",
       "followers": 257,
       "delta": -1
+    },
+    {
+      "date": "2026-07-19",
+      "followers": 258,
+      "delta": 1
     }
   ],
   "follow_drivers": [

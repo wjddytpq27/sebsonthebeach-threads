@@ -1,7 +1,7 @@
 {
   "status": "normal",
-  "days_since_growth": 2,
-  "follower_trend": "258→257 (19일, 일평균 -0.1)",
+  "days_since_growth": 0,
+  "follower_trend": "257→258 (19일, 일평균 +0.1) — 오늘 성장 확인",
   "best_performing": {
     "avg_score": 19.7,
     "examples": [
@@ -9,12 +9,12 @@
       "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
       "스마트스토어 등급 올라가면 정산도 저절로 빨라지는 줄 아는 셀러한테만 하는 얘기. 나도 그런 줄 알았음. 등"
     ],
-    "style": "쿠팡/스마트스토어 셀러 대상 '~한테만 하는 얘기' 타겟콜아웃 + 정산·재고·반품 중 구체적 실무 디테일 하나만 찍어서 터는 스타일. 오전·ko·target_callout·smartstore arm이 팔로워 +91(n=7)로 유일하게 검증됨."
+    "style": "오전·ko·target_callout·smartstore 조합 — 스마트스토어/쿠팡 셀러 대상 '~하는 줄 아는 셀러한테만 하는 얘기' 훅으로 정산/재고/등급 등 실무 착각 하나 콕 집기. 실제 팔로워 전환 확인된 유일한 arm(+91, n=7)."
   },
   "worst_performing": {
     "avg_score": 0,
     "count": 0,
-    "style": "contrarian·ai_general, other·ai_general, other·other 조합은 오전/저녁 가리지 않고 실패율 50%+ 죽은 arm — ai_general 추상 주제 자체가 원인."
+    "style": "contrarian·ai_general, other·ai_general/other 조합 — 좋아요·조회는 나와도(인게이지 reward 41.9) 팔로워 실패율 50%+로 죽은 arm."
   },
   "keyword_performance": {
     "AI활용": {
@@ -244,23 +244,23 @@
     }
   },
   "top_search_keywords": [
-    "스마트스토어 셀러",
-    "쿠팡 로켓그로스",
-    "정산/재고 관리"
+    "이커머스",
+    "스타트업",
+    "재테크/투자"
   ],
   "directives": {
     "trend_scout": "평소대로",
-    "viral_writer": "오전은 target_callout·smartstore 재현(팔로워 검증 arm, +91/n=7) — 쿠팡/스마트스토어 셀러 '~한테만' 훅 + 정산·재고·반품 등 실무 디테일 하나. 병행 탐색으로 target_callout·marketing 버전 하나 더 써서 대조(스마트스토어 vs 마케팅, 아직 라벨 추정이니 단정 금지). 저녁은 other·amazon·en 탐색 — 아마존 셀러 앵글 영어로 하나. contrarian·ai_general, other·ai_general/other 조합은 죽은 arm이니 오늘 금지.",
-    "hunter_engager": "목표 평소대로(정상 상태, 아직 stall 아님). 디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업 키워드는 hit rate 전부 0(n≥3)이라 계속 쓰되 신뢰하지 말고, 스마트스토어·쿠팡 로켓그로스·정산 관련 키워드로 탐색 병행해서 팔로워 arm 오디언스 직접 조준. 영어 비중 평소대로."
+    "viral_writer": "오전 포스트: target_callout·smartstore(스마트스토어/쿠팡 셀러 착각 지적 훅) 그대로 재현 — 검증된 유일한 팔로워 전환 arm. 단, 라벨이 아직 휴리스틱 추정이라 병행 탐색 필요: target_callout·marketing 1개 + 대조군으로 other·marketing 또는 target_callout·amazon 중 1개 추가해서 A/B. 저녁 포스트: other·amazon·en 각도로 탐색(추정 라벨, 단정 금지, 영어 버전 1개 시도). 공통 금지: contrarian·ai_general, other·ai_general/other — 인게이지 반응 좋아 보여도 팔로워 실패율 50%+인 죽은 arm이니 훅 강도로 현혹되지 말 것. 자사몰/카페24, 추상적 AI 미래론 금지.",
+    "hunter_engager": "상태 normal이라 목표 수·영어 비중은 평소 기준 유지(상향 불필요). 단, 기존 5개 키워드(디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업)는 n≥3 전부 hit=0.0로 팔로워 전환 효과 미확인 — 오늘은 이 중 1~2개 유지하되 '이커머스' 키워드를 새로 테스트에 포함시킬 것(베스트 포스트 스타일인 스마트스토어/쿠팡 셀러층과 겹침)."
   },
-  "team_memo": "팔로워 이틀째 정체(258→257)지만 아직 정상 범위. 문제는 포스트가 아니라 댓글 타겟 — 기존 키워드 5개 전부 다음날 팔로워 전환 hit=0.0(n≥3). 오전 target_callout·smartstore가 유일하게 검증된 팔로워 arm이니 오늘도 재현.",
-  "devil_advocate": "normal이라니, 팔로워가 19일 연속 사실상 순감(258→257, 일평균 -0.1)인데 이게 정상이면 대체 뭐가 비정상이야? 잘 됐다는 글 3개가 전부 \"~하는 셀러한테만 하는 얘기\" 패턴 하나인데, 이거 재현 가능한 공식이야 아니면 그냥 그 3개가 알고리즘 랜덤빨 받은 거야? 안 됐다는 글이 0개라는 것부터 분석이 허술한 건데, 이 전략 그대로 30일 더 가면 팔로워는 여전히 -3~5명대 정체고 team_signal은 계속 normal이라고 우길 거 같은데 그게 진짜 \"정상\"이야?",
+  "team_memo": "팔로워 +1(257→258)로 겨우 플러스 전환했지만 정체 수준 — 인게이지 좋은 arm(contrarian·ai_general)은 실제론 팔로워 전환 실패율 50%+인 죽은 arm이니 오늘부터 인게이지 말고 팔로워 전환 기준으로 움직인다.",
+  "devil_advocate": "팔로워 +0.1/day를 \"normal\"이라고 부르는 거 자체가 문제 아니야? 이 속도면 정체가 아니라 이미 정체된 거고, \"오늘 성장 확인\"은 그냥 노이즈 수준 변동을 성과처럼 포장한 거임.\n\n그리고 상위 포스트 3개가 전부 \"~만 하는 얘기, 나도 그런 줄 알았음\" 패턴인데, 이거 훅 하나가 우연히 먹힌 거일 수도 있잖아. 표본 3개로 재현 가능하다고 단정하기엔 이르고, 다음 주에 같은 패턴으로 5개 더 써보고 안 먹히면 그때 우연이었다는 게 증명되는 거 아냐?\n\n이 속도(+0.1/day)로 30일 유지하면 257→260 정도야. 이 정도 증가면 사실상 계정이 멈춰있는 거고, \"normal\"이 아니라 진작 stall 기준으로 재분류해서 hunter-engager 목표치 올렸어야 했다고 봐.",
   "ledger": {
     "north_star": {
-      "gain": -1,
-      "per_day": -0.14,
+      "gain": 0,
+      "per_day": 0.0,
       "first": 258,
-      "last": 257,
+      "last": 258,
       "days": 7
     },
     "best_follower_arm": {
@@ -364,7 +364,7 @@
         "hook_style": "target_callout",
         "topic_theme": "smartstore",
         "n": 7,
-        "avg_reward": 16.944,
+        "avg_reward": 16.906,
         "follower_gain": 91,
         "failure_rate": 0.0,
         "ucb": 1.833,
@@ -471,5 +471,5 @@
       }
     ]
   },
-  "updated_at": "2026-07-18"
+  "updated_at": "2026-07-19"
 }
