@@ -1,20 +1,20 @@
 {
   "status": "normal",
-  "days_since_growth": 0,
-  "follower_trend": "257→258 (19일, 일평균 +0.1) — 오늘 성장 확인",
+  "days_since_growth": 1,
+  "follower_trend": "257→258 (19일, 일평균 +0.1)",
   "best_performing": {
-    "avg_score": 19.7,
+    "avg_score": 21.7,
     "examples": [
       "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 입고만 넘기면 반품 처리는 알아서 되는 줄 알았음. 6월 정산부",
       "스마트스토어든 쿠팡이든 상품 하나 올려두고 몇 달째 재고 확인 한 번도 안 해본 셀러한테만 하는 얘기. 이번",
-      "스마트스토어 등급 올라가면 정산도 저절로 빨라지는 줄 아는 셀러한테만 하는 얘기. 나도 그런 줄 알았음. 등"
+      "스마트스토어 상세페이지에 '단순변심 반품 불가' 큼지막하게 박아두고 반년 넘게 안심하고 있던 셀러한테만 하는"
     ],
-    "style": "오전·ko·target_callout·smartstore 조합 — 스마트스토어/쿠팡 셀러 대상 '~하는 줄 아는 셀러한테만 하는 얘기' 훅으로 정산/재고/등급 등 실무 착각 하나 콕 집기. 실제 팔로워 전환 확인된 유일한 arm(+91, n=7)."
+    "style": "오전·ko·target_callout·smartstore — '~하는 줄 아는 셀러한테만 하는 얘기' 훅으로 정산/재고/반품 같은 실무 착각 하나 콕 집기. 실제 팔로워 전환 확인된 유일한 arm(+91, n=8)"
   },
   "worst_performing": {
     "avg_score": 0,
     "count": 0,
-    "style": "contrarian·ai_general, other·ai_general/other 조합 — 좋아요·조회는 나와도(인게이지 reward 41.9) 팔로워 실패율 50%+로 죽은 arm."
+    "style": "contrarian·ai_general, other·ai_general/other — 좋아요·조회는 나와도 팔로워 전환 실패율 50%+인 죽은 arm"
   },
   "keyword_performance": {
     "AI활용": {
@@ -244,17 +244,17 @@
     }
   },
   "top_search_keywords": [
-    "이커머스",
-    "스타트업",
-    "재테크/투자"
+    "AI tools automation",
+    "디지털마케팅",
+    "온라인창업"
   ],
   "directives": {
     "trend_scout": "평소대로",
-    "viral_writer": "오전 포스트: target_callout·smartstore(스마트스토어/쿠팡 셀러 착각 지적 훅) 그대로 재현 — 검증된 유일한 팔로워 전환 arm. 단, 라벨이 아직 휴리스틱 추정이라 병행 탐색 필요: target_callout·marketing 1개 + 대조군으로 other·marketing 또는 target_callout·amazon 중 1개 추가해서 A/B. 저녁 포스트: other·amazon·en 각도로 탐색(추정 라벨, 단정 금지, 영어 버전 1개 시도). 공통 금지: contrarian·ai_general, other·ai_general/other — 인게이지 반응 좋아 보여도 팔로워 실패율 50%+인 죽은 arm이니 훅 강도로 현혹되지 말 것. 자사몰/카페24, 추상적 AI 미래론 금지.",
-    "hunter_engager": "상태 normal이라 목표 수·영어 비중은 평소 기준 유지(상향 불필요). 단, 기존 5개 키워드(디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업)는 n≥3 전부 hit=0.0로 팔로워 전환 효과 미확인 — 오늘은 이 중 1~2개 유지하되 '이커머스' 키워드를 새로 테스트에 포함시킬 것(베스트 포스트 스타일인 스마트스토어/쿠팡 셀러층과 겹침)."
+    "viral_writer": "오전은 검증된 arm(target_callout·smartstore) 그대로 재현 최우선, 탐색은 target_callout·marketing·ko 1개만 추가해서 대조군으로 target_callout·smartstore와 A/B — marketing이 우세하다는 라벨은 아직 추정이라 단정 금지. 저녁은 other·amazon·en 탐색 1개. contrarian·ai_general류, 추상적 AI 미래론, 자사몰/카페24 절대 금지. 오늘 것도 반드시 발행되는지 확인 — 튜닝보다 발행 자체가 우선",
+    "hunter_engager": "정상 상태 기준 평소 목표(20개 내외), 영어 비중 평소대로 30% 내외. 단 현재 추적 키워드 전부 hit_rate 0.0(디지털마케팅 n=5, 온라인창업 n=4, AI tools automation n=6 포함)이라 키워드 교체보다 타겟 계정 팔로워 규모·댓글 타이밍부터 점검 — 좋아요 아니라 다음날 팔로워 증가가 기준"
   },
-  "team_memo": "팔로워 +1(257→258)로 겨우 플러스 전환했지만 정체 수준 — 인게이지 좋은 arm(contrarian·ai_general)은 실제론 팔로워 전환 실패율 50%+인 죽은 arm이니 오늘부터 인게이지 말고 팔로워 전환 기준으로 움직인다.",
-  "devil_advocate": "팔로워 +0.1/day를 \"normal\"이라고 부르는 거 자체가 문제 아니야? 이 속도면 정체가 아니라 이미 정체된 거고, \"오늘 성장 확인\"은 그냥 노이즈 수준 변동을 성과처럼 포장한 거임.\n\n그리고 상위 포스트 3개가 전부 \"~만 하는 얘기, 나도 그런 줄 알았음\" 패턴인데, 이거 훅 하나가 우연히 먹힌 거일 수도 있잖아. 표본 3개로 재현 가능하다고 단정하기엔 이르고, 다음 주에 같은 패턴으로 5개 더 써보고 안 먹히면 그때 우연이었다는 게 증명되는 거 아냐?\n\n이 속도(+0.1/day)로 30일 유지하면 257→260 정도야. 이 정도 증가면 사실상 계정이 멈춰있는 거고, \"normal\"이 아니라 진작 stall 기준으로 재분류해서 hunter-engager 목표치 올렸어야 했다고 봐.",
+  "team_memo": "팔로워 +1(257→258), 정체는 아니지만 진짜 문제는 콘텐츠가 아니라 발행 실행률(최근 6/28=21%)이었음 — 오늘은 새 튜닝보다 오전·저녁 2개가 실제로 API로 나가는지부터 지켜야 함",
+  "devil_advocate": "데이터 보니까 이거 \"normal\" 아니야. 최근 14일 delta 다 더하면 +1이야 — 257→258 왔다갔다한 게 전부고, growth_analyst가 근거로 든 +91 스파이크는 6/19 포스트 하나(n=7)짜리 옛날 얘기라 최근 트렌드랑 상관없어. \"잘 된 포스트\" 예시들도 engagement score(19.7)만 보고 뽑은 거지 실제 팔로워 전환 확인된 게 아니야 — 진짜 전환 데이터는 다 6월 옛 포스트에 몰려있고 최근 3개는 follower_delta 근거가 없음.\n\n이 패턴이 재현 가능한지도 의심스러워: n=7짜리 하나의 arm만 보고 \"정상\"이라고 하면 우연 스파이크를 전략으로 착각하는 거고, 이대로 30일 더 가면 지금처럼 +1~2/2주 속도로는 258→262 정도 찍고 끝날 거야. \"안 됐다는 포스트 0개\"라는 것도 의심해야 해 — 표본이 적어서 실패를 관측할 기회 자체가 없었던 거 아닌지 확인 필요.",
   "ledger": {
     "north_star": {
       "gain": 0,
@@ -267,7 +267,7 @@
       "arm": "morning|ko|target_callout|smartstore",
       "pretty": "오전·ko·target_callout·smartstore",
       "follower_gain": 91,
-      "n": 7
+      "n": 8
     },
     "best_reward_arm": {
       "arm": "morning|ko|contrarian|ai_general",
@@ -281,7 +281,7 @@
       "오전·ko·other·ai_general",
       "오전·ko·other·other"
     ],
-    "n_posts": 51,
+    "n_posts": 52,
     "n_failures": 18,
     "failure_rate": 0.35,
     "labels_estimated": true
@@ -296,13 +296,13 @@
           "lang": "ko"
         },
         "mode": "explore",
-        "score": 1.967,
+        "score": 1.971,
         "reason": "target_callout·marketing 우세하나 라벨 추정 상태 → 탐색 병행",
         "frontier": [
           {
             "hook_style": "target_callout",
             "topic_theme": "smartstore",
-            "n": 7
+            "n": 8
           },
           {
             "hook_style": "other",
@@ -323,7 +323,7 @@
           "lang": "en"
         },
         "mode": "explore",
-        "score": 1.809,
+        "score": 1.813,
         "reason": "other·amazon 우세하나 라벨 추정 상태 → 탐색 병행",
         "frontier": []
       }
@@ -339,7 +339,7 @@
         "avg_reward": 55.102,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 2.391,
+        "ucb": 2.395,
         "viable": false,
         "dead": false
       },
@@ -353,21 +353,7 @@
         "avg_reward": 29.307,
         "follower_gain": 4,
         "failure_rate": 0.0,
-        "ucb": 1.967,
-        "viable": true,
-        "dead": false
-      },
-      {
-        "arm": "morning|ko|target_callout|smartstore",
-        "slot": "morning",
-        "lang": "ko",
-        "hook_style": "target_callout",
-        "topic_theme": "smartstore",
-        "n": 7,
-        "avg_reward": 16.906,
-        "follower_gain": 91,
-        "failure_rate": 0.0,
-        "ucb": 1.833,
+        "ucb": 1.971,
         "viable": true,
         "dead": false
       },
@@ -381,7 +367,7 @@
         "avg_reward": 20.0,
         "follower_gain": 5,
         "failure_rate": 0.0,
-        "ucb": 1.809,
+        "ucb": 1.813,
         "viable": true,
         "dead": false
       },
@@ -395,9 +381,23 @@
         "avg_reward": 41.895,
         "follower_gain": 5,
         "failure_rate": 0.5,
-        "ucb": 1.799,
+        "ucb": 1.802,
         "viable": false,
         "dead": true
+      },
+      {
+        "arm": "morning|ko|target_callout|smartstore",
+        "slot": "morning",
+        "lang": "ko",
+        "hook_style": "target_callout",
+        "topic_theme": "smartstore",
+        "n": 8,
+        "avg_reward": 16.089,
+        "follower_gain": 91,
+        "failure_rate": 0.0,
+        "ucb": 1.785,
+        "viable": true,
+        "dead": false
       },
       {
         "arm": "evening|ko|news_relay|ai_ecommerce",
@@ -409,7 +409,7 @@
         "avg_reward": 15.075,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.665,
+        "ucb": 1.668,
         "viable": false,
         "dead": false
       },
@@ -423,7 +423,7 @@
         "avg_reward": 11.628,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.602,
+        "ucb": 1.606,
         "viable": false,
         "dead": false
       },
@@ -437,7 +437,7 @@
         "avg_reward": 6.7,
         "follower_gain": 5,
         "failure_rate": 0.0,
-        "ucb": 1.568,
+        "ucb": 1.571,
         "viable": true,
         "dead": false
       },
@@ -448,10 +448,10 @@
         "hook_style": "target_callout",
         "topic_theme": "amazon",
         "n": 2,
-        "avg_reward": 30.019,
+        "avg_reward": 29.991,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.529,
+        "ucb": 1.531,
         "viable": true,
         "dead": false
       },
@@ -465,17 +465,11 @@
         "avg_reward": 4.914,
         "follower_gain": 0,
         "failure_rate": 0.0,
-        "ucb": 1.481,
+        "ucb": 1.484,
         "viable": true,
         "dead": false
       }
     ]
   },
-  "updated_at": "2026-07-19",
-  "strategic_review": {
-    "pivot": "방향전환",
-    "next_2weeks_focus": "posts.json을 GitHub에 올리고 클라우드 cron(또는 GitHub Actions)으로 발행을 옮겨서, Mac 전원과 무관하게 매일 오전·저녁 2개가 실제로 API로 나가는 파이프라인을 이번 주 안에 복구하는 것 — 하루 2개가 14일 내내 실제로 발행되기 전까지(28개 표본 확보) 훅·니치·인게이지먼트 튜닝은 전부 손대지 말 것.\n\n**왜 이거 하나인가:** 6/28(21%)라는 실행률에서 팔로워 +1은 전략의 실패가 아니라 표본의 부재다. 14k 대박 글의 \"열린 훅\" 패턴도, 죽어있는 인게이지먼트 arm도, 지금 고쳐봐야 발행 자체가 안 나가면 검증할 데이터가 안 쌓인다. 병목은 전략이 아니라 배관이다.\n\n원인 후보는 CLAUDE.md에 이미 적혀 있다 — posts.json이 로컬 Mac에만 있음 + Mac 꺼지면 cron 미실행. 이 두 개가 22개 누락의 유력 원인이니, 오늘 안에 하나 특정해서 막는 게 2주 전체를 좌우한다.",
-    "week_of": "2026-07-20"
-  },
-  "stop_doing": []
+  "updated_at": "2026-07-21"
 }

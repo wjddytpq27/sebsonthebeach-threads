@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전 포스트: target_callout·smartstore(스마트스토어/쿠팡 셀러 착각 지적 훅) 그대로 재현 — 검증된 유일한 팔로워 전환 arm. 단, 라벨이 아직 휴리스틱 추정이라 병행 탐색 필요: target_callout·marketing 1개 + 대조군으로 other·marketing 또는 target_callout·amazon 중 1개 추가해서 A/B. 저녁 포스트: other·amazon·en 각도로 탐색(추정 라벨, 단정 금지, 영어 버전 1개 시도). 공통 금지: contrarian·ai_general, other·ai_general/other — 인게이지 반응 좋아 보여도 팔로워 실패율 50%+인 죽은 arm이니 훅 강도로 현혹되지 말 것. 자사몰/카페24, 추상적 AI 미래론 금지.",
+  "weekly_focus": "오전은 검증된 arm(target_callout·smartstore) 그대로 재현 최우선, 탐색은 target_callout·marketing·ko 1개만 추가해서 대조군으로 target_callout·smartstore와 A/B — marketing이 우세하다는 라벨은 아직 추정이라 단정 금지. 저녁은 other·amazon·en 탐색 1개. contrarian·ai_general류, 추상적 AI 미래론, 자사몰/카페24 절대 금지. 오늘 것도 반드시 발행되는지 확인 — 튜닝보다 발행 자체가 우선",
   "recommended_topics": [
-    "이커머스",
-    "스타트업",
-    "재테크/투자"
+    "AI tools automation",
+    "디지털마케팅",
+    "온라인창업"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "오전·ko·target_callout·smartstore 조합 — 스마트스토어/쿠팡 셀러 대상 '~하는 줄 아는 셀러한테만 하는 얘기' 훅으로 정산/재고/등급 등 실무 착각 하나 콕 집기. 실제 팔로워 전환 확인된 유일한 arm(+91, n=7).",
-  "worst_post_style": "contrarian·ai_general, other·ai_general/other 조합 — 좋아요·조회는 나와도(인게이지 reward 41.9) 팔로워 실패율 50%+로 죽은 arm.",
+  "best_post_style": "오전·ko·target_callout·smartstore — '~하는 줄 아는 셀러한테만 하는 얘기' 훅으로 정산/재고/반품 같은 실무 착각 하나 콕 집기. 실제 팔로워 전환 확인된 유일한 arm(+91, n=8)",
+  "worst_post_style": "contrarian·ai_general, other·ai_general/other — 좋아요·조회는 나와도 팔로워 전환 실패율 50%+인 죽은 arm",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "이커머스",
-    "스타트업",
-    "재테크/투자"
+    "AI tools automation",
+    "디지털마케팅",
+    "온라인창업"
   ],
-  "alert": "팔로워 +1(257→258)로 겨우 플러스 전환했지만 정체 수준 — 인게이지 좋은 arm(contrarian·ai_general)은 실제론 팔로워 전환 실패율 50%+인 죽은 arm이니 오늘부터 인게이지 말고 팔로워 전환 기준으로 움직인다.",
-  "generated_at": "2026-07-19"
+  "alert": "팔로워 +1(257→258), 정체는 아니지만 진짜 문제는 콘텐츠가 아니라 발행 실행률(최근 6/28=21%)이었음 — 오늘은 새 튜닝보다 오전·저녁 2개가 실제로 API로 나가는지부터 지켜야 함",
+  "generated_at": "2026-07-21"
 }

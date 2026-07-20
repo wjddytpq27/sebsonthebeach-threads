@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-19",
+  "updated_at": "2026-07-21",
   "daily_deltas": [
-    {
-      "date": "2026-07-04",
-      "followers": 257,
-      "delta": 0
-    },
     {
       "date": "2026-07-05",
       "followers": 258,
@@ -70,6 +65,11 @@
       "date": "2026-07-19",
       "followers": 258,
       "delta": 1
+    },
+    {
+      "date": "2026-07-20",
+      "followers": 258,
+      "delta": 0
     }
   ],
   "follow_drivers": [
@@ -248,8 +248,8 @@
       "post_date": "2026-07-16",
       "text_preview": "스마트스토어 빠른정산 신청해놓고 돈 바로바로 들어온다고 좋아하던 셀러한테만 하는 얘기. 오늘 들어온 정산금에",
       "content_type": "ecommerce_tip",
-      "engagement_score": 5,
-      "views": 720,
+      "engagement_score": 6,
+      "views": 928,
       "follower_delta_next_day": 0,
       "attribution_confidence": "medium"
     },
