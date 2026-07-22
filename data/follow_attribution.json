@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-23",
   "daily_deltas": [
-    {
-      "date": "2026-07-07",
-      "followers": 258,
-      "delta": 0
-    },
     {
       "date": "2026-07-08",
       "followers": 258,
@@ -70,6 +65,11 @@
       "date": "2026-07-21",
       "followers": 258,
       "delta": 0
+    },
+    {
+      "date": "2026-07-22",
+      "followers": 262,
+      "delta": 4
     }
   ],
   "follow_drivers": [
@@ -97,6 +97,15 @@
       "content_type": "ecommerce_tip",
       "engagement_score": 39,
       "views": 1277,
+      "follower_delta_next_day": 4,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-07-21",
+      "text_preview": "스마트스토어에서 화장품 파는 셀러한테만 하는 얘기. 틴트 상세페이지 사진 발색 좀 더 선명하게 AI로 보정해",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 18,
+      "views": 2619,
       "follower_delta_next_day": 4,
       "attribution_confidence": "high"
     },
@@ -230,8 +239,8 @@
       "post_date": "2026-07-10",
       "text_preview": "쿠팡에 상품명 '네이버 인기상품', '테무 완전 동일템' 이렇게 박아서 검색 걸어놓은 셀러한테만 하는 얘기.",
       "content_type": "ecommerce_tip",
-      "engagement_score": 4,
-      "views": 576,
+      "engagement_score": 8,
+      "views": 661,
       "follower_delta_next_day": 0,
       "attribution_confidence": "medium"
     },
@@ -288,10 +297,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 4.411764705882353,
+    "ecommerce_tip": 4.388888888888889,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 3.43,
+  "avg_followers_per_post": 3.46,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }

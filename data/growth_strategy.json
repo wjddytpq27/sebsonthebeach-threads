@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전 1개는 target_callout·marketing·ko 앵글로 탐색(라벨 추정 상태라 검증 필요), 다른 1개는 검증된 target_callout·smartstore 앵글로 대조군 병행 — 둘 다 '~하는 셀러/사장한테만' 식 특정 타겟 저격 훅 유지. 저녁은 other·amazon·en 앵글 탐색(영어, 아마존 셀러 대상, 라벨 추정이라 단정 말고 테스트로). contrarian·ai_general, other·ai_general, other·other 앵글은 절대 피할 것 — 팔로워 안 붙는 죽은 arm.",
+  "weekly_focus": "오전: target_callout·marketing·ko 앵글 위주(타겟콜아웃형 훅)로 1개 + 대조군으로 target_callout·smartstore 앵글(팔로워 실증 arm, +99/n=9) 하나 더 병행 실험. 저녁: other·amazon·en 앵글로 영어 카피 1개(라벨 아직 추정 단계라 단정 말고 검증 목적으로만). contrarian·ai_general, other·ai_general, other·other 앵글은 죽은 arm이니 오늘은 배제. 자사몰/카페의뮤, 추상적 AI 미래론 소재 금지.",
   "recommended_topics": [
-    "스마트스토어",
-    "이커머스 셀러",
-    "온라인창업"
+    "스마트스토어셀러",
+    "쿠팡셀러",
+    "이커머스"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "오전·한글·target_callout(특정 셀러 저격)·스마트스토어 소재 — '~한 번도 안 해본 셀러한테만' 식 훅이 실제 팔로워를 끌었다(+91명, n=9). 인게이지 위너(contrarian·ai_general)랑 다른 arm이니 헷갈리지 말 것.",
-  "worst_post_style": "contrarian·ai_general, other·ai_general/other 계열 — 좋아요는 나와도 팔로워 실패율 50%+ 죽은 arm.",
+  "best_post_style": "스마트스토어/쿠팡 셀러 타겟 지칭형 훅('~하는 셀러한테만 하는 얘기') + 실무 팁 하나 콕 집기. 오전·ko·target_callout·smartstore arm이 팔로워 실제로 견인(+99, n=9).",
+  "worst_post_style": "contrarian·ai_general 계열은 좋아요/인게이지는 잘 나와도(reward 41.9) 팔로워 전환은 죽은 arm(실패율 50%+) — 좋아요 낚이지 말 것.",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "스마트스토어",
-    "이커머스 셀러",
-    "온라인창업"
+    "스마트스토어셀러",
+    "쿠팡셀러",
+    "이커머스"
   ],
-  "alert": "2일째 정체, 팔로워 +0.1/일이 전부야. 좋아요 지표 보지 말고 진짜 팔로워 끈 arm(타겟저격+스마트스토어)부터 재현하자.",
-  "generated_at": "2026-07-22"
+  "alert": "오늘도 순증 확인(257→262, 7일 +5/+0.7일) — 근데 팔로워는 포스트가 끌고 있고 댓글 키워드는 지금 다 헛발질 중이다.",
+  "generated_at": "2026-07-23"
 }
