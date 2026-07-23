@@ -1,119 +1,72 @@
 {
-  "date": "2026-07-22",
-  "signal_applied": "team_signal status normal(257→258, 19일 일평균+0.1, days_since_growth=2)이고 directives.trend_scout='평소대로'라 수집 방식 변경 없음. bandit.slots.morning.recommend는 target_callout·marketing(explore 모드, frontier에 smartstore n=9/marketing n=1/amazon n=2 병행 탐색)이고 best_follower_arm은 target_callout·smartstore(+91, n=9) — 다만 posts.json 07-07~07-21 전수 확인 결과 스마트스토어 소재는 등록한도(07-08)·재고확인(07-13)·정산등급(07-15)·빠른정산(07-16)·반품불가공지(07-20)·AI보정(07-21)까지 이미 소진되어 겹치지 않는 새 스마트스토어 소재를 못 찾음(원산지표시/판매자정보공개/구매대행 특례제한 검색했으나 세부조항 확인 불가·근거 빈약). 대신 target_callout 훅 스타일은 그대로 유지하되 플랫폼만 쿠팡 로켓그로스로 교체(신규 메커니즘: 팔레트/바코드/소비기한 규정, 07-10·07-14·07-17 쿠팡 소재와도 메커니즘 안 겹침). 저녁은 bandit.slots.evening.recommend(other·amazon·en)를 그대로 따라 아마존 AI 상품명 자동 재작성(7/27 시행) 신규 소재로 채택 — 기존 아마존 소재(05-27 속성값, 06-19 검색키워드, 06-29 상품 긁어옴, 07-21 Canvas 에이전틱 추천)와 메커니즘 다름(이번엔 '내가 쓴 제목을 AI가 강제로 바꿔버림'이라는 통제권 상실 각도).",
+  "date": "2026-07-23",
+  "signal_applied": "team_signal status normal(257→262, 7일 일평균+0.71, days_since_growth=0)이고 directives.trend_scout='평소대로'라 수집 방식 변경 없음. bandit.slots.morning.recommend는 target_callout·marketing(explore 모드, frontier에 smartstore n=9/amazon n=2 병행)이고 best_follower_arm은 target_callout·smartstore(+99, n=9) — posts.json 07-07~07-22 전수 확인 결과 어제(07-22)까지 정산등급(07-15)·빠른정산 구매적립금(07-16)·로켓그로스 반품비(07-07)·팔레트/바코드(07-22) 등 스마트스토어/쿠팡 정산·물류 메커니즘이 상당수 소진되어, 오늘은 target_callout 훅 스타일은 유지하되 '정산 공백'(매출 증가=수익 증가라는 착각, 선재고 매입 시차+보관료로 마진이 갉아먹히는 현금흐름 이슈)이라는 기존에 안 쓴 각도로 신규 채택. 저녁은 bandit.slots.evening.recommend(other·amazon·en)를 따라 아마존 Featured Offer(Buy Box) 자격 요건 완화(7월 시행) 신규 소재로 채택 — 어제(07-22) 쓴 아마존 상품명 75자 제한과는 완전히 다른 정책(Buy Box 순위 산정 방식 개편)이라 메커니즘 안 겹침. dead arm(contrarian·ai_general, other·ai_general, other·other) 오늘도 배제.",
   "github_hot": [
     {
-      "repo": "unknown/worldmonitor",
-      "stars_today": 1295,
-      "why_hot": "실시간 글로벌 인텔리전스 대시보드, AI 뉴스 집계·지정학 모니터링.",
-      "post_angle": "개발자용 모니터링 도구, 셀러 실무 연결 없음. 미채택."
-    },
-    {
-      "repo": "unknown/ai-agent-book",
-      "stars_today": 4624,
-      "why_hot": "AI 에이전트 설계 원칙·엔지니어링 실무를 다루는 오픈소스 북.",
-      "post_angle": "개발자 학습 자료, 이커머스 실무와 무관. 미채택."
-    },
-    {
-      "repo": "tirth8205/code-review-graph",
-      "stars_today": 1925,
-      "why_hot": "MCP/CLI용 로컬 코드 인텔리전스 그래프, 어제에 이어 오늘도 트렌딩.",
-      "post_angle": "개발자 도구, 셀러 실무 연결 없음. 미채택."
-    },
-    {
-      "repo": "unknown/i-have-adhd",
-      "stars_today": 1866,
-      "why_hot": "ADHD 친화적 답변을 더 직접적으로 뽑아주는 코딩 에이전트 스킬.",
-      "post_angle": "개발자 생산성 도구, 이커머스 실무 무관. 미채택."
-    },
-    {
-      "repo": "diegosouzapw/OmniRoute",
-      "stars_today": 2034,
-      "why_hot": "268개 이상 프로바이더·500개 이상 모델 지원 무료 AI 게이트웨이, 토큰 절약 압축 기능 추가.",
-      "post_angle": "인프라 엔지니어링 도구, 이커머스 실무와 무관. 미채택."
+      "repo": "unknown/trending-repo-1",
+      "stars_today": 0,
+      "why_hot": "GitHub Trending 확인 결과 오늘도 대부분 개발자 인프라/에이전트 프레임워크/코딩 도구 계열이 상위를 차지 — 구체 repo명 특정은 실패했으나 카테고리 성격상 이커머스 셀러 실무와 연결 지점 없음.",
+      "post_angle": "미채택 — 개발자 대상 도구는 target_callout 셀러 앵글과 결이 안 맞음"
     }
   ],
   "big_tech_news": [
     {
-      "source": "sellerking.io(쿠팡 로켓그로스 2026 입고 가이드 — 소비기한·바코드·팔레트)",
-      "topic": "쿠팡 로켓그로스 입고 규정이 세분화됐다. 소비기한 표기 품목(식품·기저귀·물티슈 등)은 잔여기간 기준 미충족 시 입고 오류로 회송, 바코드는 CODE 128·CODE88 형식에 6~19자리만 허용되며 형식 불량 시 회송·재작업 비용을 셀러가 부담, 팔레트는 KPP/AJ 규격(1,100×1,100mm, 최대 높이 1,700mm, 무게 1,000kg 제한)만 허용되고 하단 30% 이내 파손이어도 팔레트 전체가 회송 대상이 된다. 영향받는 층은 로켓그로스 이용 셀러 전반, 특히 식품·기저귀·생활용품·병행수입 판매자.",
-      "angle": "반전형 1인칭 — 로켓그로스에 입고만 하면 쿠팡이 알아서 다 처리해준다고 편하게 생각하던 셀러가, 팔레트 하단 살짝 찌그러진 것만으로 전체 팔레트가 통으로 회송당하는 걸 겪고서야 규정을 제대로 알게 되는 구조. best_performing 공식(채널/행동 콕 집기 + 실무 착각 반전) 유지, 07-10·07-14·07-17에 쓴 쿠팡 소재(상품명 검색어, 반품 승인, 간이과세자)와 메커니즘 겹치지 않음.",
-      "hook_idea": "쿠팡 로켓그로스로 입고만 해두면 쿠팡이 알아서 다 처리해준다고 편하게 생각하던 셀러한테만 하는 얘기. 팔레트 하단 30%만 찌그러져도 전체 팔레트가 통으로 회송된다는 거 이번에 알았음."
+      "source": "allra.co.kr(2026 쿠팡 로켓그로스 셀러 완벽 가이드 — 정산 공백 관리)",
+      "topic": "로켓그로스는 배송·CS를 쿠팡이 대신 처리해주는 대신, 셀러가 선재고를 먼저 매입해야 하고 실제 정산금은 구매확정 이후에도 한참 뒤에 들어온다. 여기에 무료 보관 기간(카테고리별 30~60일)을 넘기면 추가 보관료가 붙고, 반품비까지 겹치면서 '매출은 늘었는데 실제 손에 쥐는 돈은 그대로거나 오히려 줄어드는' 구조가 된다. 로켓세이버 구독제(월 구독료로 보관료 60일 추가 면제)가 있다는 것도 이 비용 구조가 이미 쿠팡 스스로도 인지하고 있는 문제라는 방증.",
+      "angle": "반전형 1인칭 — 매출 늘어나는 대시보드 숫자만 보고 좋아하던 셀러가, 선재고 매입비+보관료+반품비를 다 제하고 나니 정작 통장에 들어온 돈은 매출 증가폭만큼 안 늘었다는 걸 뒤늦게 깨닫는 구조. best_performing 공식(채널/행동 콕 집기 + 실무 착각 반전) 유지. 07-07(반품비 항목 신설)·07-15(정산등급)·07-16(빠른정산 구매적립금)과 달리 이번엔 '매출=수익'이라는 근본 착각과 현금흐름 시차를 다루는 메커니즘이라 중복 아님.",
+      "hook_idea": "로켓그로스 켜놓고 이번 달 매출 늘었다고 좋아하던 셀러한테만 하는 얘기. 그 매출, 선재고값이랑 보관료 빼고 나면 늘어난 것도 아니더라"
     },
     {
-      "source": "geekseller.com(Amazon Product Title Changes Coming July 27, 2026)",
-      "topic": "아마존이 7월 27일부터 미디어를 제외한 거의 모든 카테고리 상품명을 공백 포함 75자 이내로 강제한다. 줄어든 공간을 보완하기 위해 검색 가능한 125자짜리 'Item Highlights' 필드를 신설한다. 브랜드 오너는 14일간 AI가 생성한 추천 제목을 검토·승인·거부할 수 있지만, 7/27 이후에도 기준을 안 맞춘 리스팅은 셀러가 손대지 않아도 아마존 AI 시스템이 점진적으로 자동 재작성한다.",
-      "angle": "AI×이커머스 통제권 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — 애써 키워드 최적화해서 써온 상품명을 마감 이후엔 AI가 셀러 동의 없이 알아서 바꿔버리는 구조. '검토 기간을 준다'는 표면적 배려와 달리, 결국 안 고치면 AI가 대신 결정한다는 게 핵심 트레이드오프. 기존 아마존 소재(05-27 속성값, 06-19 검색키워드, 06-29 상품 긁어옴, 07-21 Canvas 추천)와 달리 이번엔 '내가 쓴 카피 자체를 AI가 강제로 덮어쓴다'는 메커니즘이라 중복 아님.",
-      "hook_idea": "Starting July 27, Amazon caps every product title at 75 characters. Miss the deadline and fix nothing? Amazon's AI rewrites your title for you — gradually, automatically, without you touching a thing. You get a 14-day review window first. After that, the AI decides what your customers see. Helpful cleanup, or your carefully optimized copy quietly overwritten by a machine?"
+      "source": "ppc.land(Amazon cuts Featured Offer eligibility gate starting July 2026)",
+      "topic": "아마존이 7월부터 Featured Offer(Buy Box) 선정 방식을 2단계에서 1단계로 개편한다. 기존에는 셀러 퍼포먼스 기준을 먼저 통과해야만 가격·배송 속도로 순위를 매기는 구조였는데, 이제는 퍼포먼스 기준을 별도 통과/탈락 게이트에서 빼고 가격·배송 속도와 함께 순위 계산에 직접 포함시킨다. 연말까지 전 세계 스토어에 순차 적용. 아마존은 '더 공정해진다'는 취지로 설명했지만 새 가중치 공식은 비공개이고, 셀러들은 공지가 '의도적으로 모호하다'고 반발 중이다.",
+      "angle": "AI×이커머스 통제권/투명성 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — '실적 나쁜 셀러도 이제 Buy Box 경쟁 가능'이라는 표면적 공정성과 달리, 실제로는 판단 기준이 불투명해지면서 아무도 왜 자기가 이기고 지는지 알 수 없게 되는 구조. 어제(07-22) 쓴 상품명 75자 제한(AI 자동 재작성)과는 완전히 다른 정책(Buy Box 순위 산정 개편)이라 메커니즘 안 겹침.",
+      "hook_idea": "Amazon just removed the seller performance gate for winning the Buy Box. Sounds fairer, right? Bad-performing sellers can now compete on price and speed alone. Except nobody — including sellers who've run this for years — can tell you the new weighting formula. Amazon calls it simpler. Sellers on the forums are calling it a black box wearing a fairness costume."
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "\"Advertise in ChatGPT\"",
-      "source": "Hacker News 2026-07-22",
-      "angle": "OpenAI의 광고 플랫폼 런칭 뉴스, 이커머스 마케팅과 인접하지만 '내가 직접 써봤다'는 경험담 각도가 아직 없고 셀러 실무 연결이 뉴스 전달 수준에 그침 — 즉시 탈락 기준(발표됐다는 사실 자체는 소재가 아니다) 해당. 미채택.",
-      "hook_idea": "미채택"
-    },
-    {
-      "story": "\"OpenAI and Hugging Face address security incident during model evaluation\"",
-      "source": "Hacker News 2026-07-22",
-      "angle": "보안 사고, 셀러 실무 무관. 미채택.",
-      "hook_idea": "미채택"
-    },
-    {
-      "story": "\"Kimi K3 Is Competitive with Fable; Kimi K3 and Fable Is SoTA\" / \"Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber\"",
-      "source": "Hacker News 2026-07-22",
-      "angle": "모델 벤치마크·스펙 나열, 즉시 탈락 기준 해당(벤치마크 숫자). 미채택.",
-      "hook_idea": "미채택"
-    },
-    {
-      "story": "\"Judge approves $1.5B Anthropic settlement for pirated books used to train Claude\"",
-      "source": "Hacker News 2026-07-22",
-      "angle": "저작권 소송 뉴스, 이커머스 실무와 직접 연결 안 됨. 미채택.",
-      "hook_idea": "미채택"
-    },
-    {
-      "story": "\"FreeInk: Open ecosystem for e-readers\" / \"A digestion of the Jacobian conjecture counterexample\" / \"Jack Dorsey launches Buzz\" / \"Apple defeats liability for not scanning iCloud for CSAM\"",
-      "source": "Hacker News 2026-07-22",
-      "angle": "하드웨어·수학·개발자 도구·법적 분쟁 뉴스, 셀러 실무 연결 없음. 미채택.",
+      "story": "AI 에이전트/코딩 도구/모델 벤치마크 관련 스토리 다수",
+      "source": "Hacker News 2026-07-23",
+      "angle": "즉시 탈락 기준(벤치마크 숫자, 영어권 트렌드 단순 번역, 실무 연결 없음) 해당하는 스토리가 대부분이라 셀러 실무와 연결되는 소재 없음.",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "반전형 1인칭 — 쿠팡 로켓그로스에 입고만 해두면 쿠팡이 알아서 다 처리해준다고 편하게 생각해온 셀러 타겟(특히 식품·기저귀·생활용품·병행수입 판매자). 팔레트 규격(KPP/AJ, 1,100×1,100mm, 높이 1,700mm, 무게 1,000kg)을 안 맞추면 하단 30% 이내 파손이어도 팔레트 전체가 회송 대상이 된다는 구조 — '맡기면 편하다고 믿은 것'이 '작은 실수 하나로 통째로 되돌아오는 것'으로 뒤집힘. best_performing 공식(채널/행동 콕 집기 + 실무 착각 반전) 유지, 07-10·07-14·07-17 쿠팡 소재와 메커니즘 겹치지 않는 신규 규정.",
-    "hook": "쿠팡 로켓그로스로 입고만 해두면 쿠팡이 알아서 다 처리해준다고 편하게 생각하던 셀러한테만 하는 얘기. 팔레트 하단 30%만 찌그러져도 전체 팔레트가 통으로 회송된다는 거 이번에 알았음.",
-    "source": "쿠팡 로켓그로스 2026 입고 가이드(소비기한·바코드·팔레트) — sellerking.io/blog/coupang-rocket-gross-guide",
+    "angle": "반전형 1인칭 — 로켓그로스 켜놓고 매출 대시보드 숫자만 보고 좋아하던 셀러 타겟. 선재고 매입비를 먼저 쓰고, 정산은 구매확정 후 한참 뒤에 들어오고, 그 사이 무료 보관기간(카테고리별 30~60일)을 넘기면 보관료가 붙고 반품비까지 겹치면서 '매출은 늘었는데 실제 수익은 그대로'라는 현금흐름 착시가 드러나는 구조. best_performing 공식(채널/행동 콕 집기 + 실무 착각 반전) 유지, 07-07·07-15·07-16 정산 관련 소재와 메커니즘 겹치지 않는 신규 각도(매출≠수익, 현금흐름 시차).",
+    "hook": "로켓그로스 켜놓고 이번 달 매출 늘었다고 좋아하던 셀러한테만 하는 얘기. 그 매출, 선재고값이랑 보관료 빼고 나면 늘어난 것도 아니더라",
+    "source": "쿠팡 로켓그로스 셀러 가이드 — 정산 공백(allra.co.kr/blogs/254)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "english",
-    "angle": "AI×이커머스 통제권 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — 7/27부터 상품명 75자 제한이 걸리고, 셀러가 마감까지 안 고치면 아마존 AI가 자동으로 제목을 재작성하는 구조. '14일 검토 기간을 준다'는 배려처럼 보이지만 결국 손 놓으면 AI가 대신 결정한다는 트레이드오프가 논쟁 포인트. 기존 아마존 소재(속성값 열람, 검색키워드, 상품 긁어옴, Canvas 추천)와 달리 '내가 쓴 카피를 AI가 강제로 덮어쓴다'는 메커니즘이라 중복 아님.",
-    "hook": "Starting July 27, Amazon caps every product title at 75 characters. Miss the deadline and fix nothing? Amazon's AI rewrites your title for you — gradually, automatically, without you touching a thing. You get a 14-day review window first. After that, the AI decides what your customers see. Helpful cleanup, or your carefully optimized copy quietly overwritten by a machine?",
-    "source": "geekseller.com/blog/amazon-product-title-changes-coming-july-27-2026-what-sellers-need-to-know",
+    "angle": "AI×이커머스 통제권/투명성 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — 아마존이 Buy Box 선정 방식을 2단계(퍼포먼스 게이트→순위)에서 1단계(퍼포먼스도 순위 요소 중 하나)로 통합. '실적 나쁜 셀러도 이제 경쟁 가능'이라는 표면적 공정성과, 새 가중치 공식이 비공개라 아무도 왜 이기고 지는지 모른다는 불투명성이 부딪히는 논쟁 포인트. 어제(07-22) 아마존 상품명 75자 제한 소재와 메커니즘 다름(이번엔 Buy Box 순위 산정 개편).",
+    "hook": "Amazon just removed the seller performance gate for winning the Buy Box. Sounds fairer, right? Bad-performing sellers can now compete on price and speed alone. Except nobody — including sellers who've run this for years — can tell you the new weighting formula. Amazon calls it simpler. Sellers on the forums are calling it a black box wearing a fairness costume.",
+    "source": "ppc.land/amazon-cuts-featured-offer-eligibility-gate-starting-july-2026",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-07-22",
+    "collected_at": "2026-07-23",
     "agent": "trend-scout",
     "status": "normal",
     "directives_applied": [
-      "team_signal status normal(257→258, 일평균+0.1, days_since_growth=2) → directives.trend_scout '평소대로' 적용, 수집 방식 변경 없음",
-      "best_follower_arm(target_callout·smartstore, +91 n=9) 재현 시도했으나 posts.json 07-07~07-21 전수 확인 결과 스마트스토어 소재 6개(등록한도·재고확인·정산등급·빠른정산·반품불가공지·AI보정) 이미 소진 — 신규 스마트스토어 소재(원산지표시·판매자정보공개·구매대행 특례제한) 검색했으나 세부조항 근거 빈약해 제외, target_callout 훅 스타일만 유지하고 플랫폼을 쿠팡 로켓그로스로 교체",
-      "쿠팡 로켓그로스 팔레트/바코드/소비기한 규정은 07-10(상품명 검색어)·07-14(반품 승인)·07-17(간이과세자)과 메커니즘 겹치지 않는 신규 소재로 확인 후 채택",
-      "저녁은 bandit.slots.evening.recommend(other·amazon·en) 그대로 따름 — 아마존 상품명 75자 제한 + AI 자동 재작성(7/27 시행) 신규 소재, 기존 아마존 소재 4건(속성값·검색키워드·상품 긁어옴·Canvas)과 메커니즘 다름 확인",
-      "dead arm(contrarian·ai_general, other·ai_general/other) 배제 — 오늘 소재 모두 target_callout(오전)과 other·amazon·en(저녁)으로만 구성",
-      "GitHub trending 6개 확인(worldmonitor, ai-agent-book, code-review-graph, i-have-adhd, OmniRoute 등) — 전부 개발자/인프라 도구로 셀러 실무 연결 불가, 전부 미채택",
-      "HackerNews 10개 확인(Advertise in ChatGPT, OpenAI 보안 사고, Kimi K3/Gemini 3.6 벤치마크, Anthropic 저작권 합의, 하드웨어/수학/법적 분쟁 등) — 전부 즉시 탈락 기준 해당(뉴스 전달·벤치마크·실무 연결 없음), 전부 미채택"
+      "team_signal status normal(257→262, 7일 일평균+0.71, days_since_growth=0) → directives.trend_scout '평소대로' 적용, 수집 방식 변경 없음",
+      "best_follower_arm(target_callout·smartstore, +99 n=9) 재현 시도했으나 posts.json 07-07~07-22 전수 확인 결과 스마트스토어/쿠팡 정산·물류 메커니즘이 다수 소진(등록한도·재고확인·정산등급·빠른정산·반품불가공지·AI보정·팔레트바코드 등) — target_callout 훅 스타일은 유지하되 '정산 공백(매출≠수익, 현금흐름 시차+보관료)'이라는 신규 각도로 로켓그로스 소재 채택, 기존 정산 소재(07-07·07-15·07-16)와 메커니즘 다름 확인",
+      "저녁은 bandit.slots.evening.recommend(other·amazon·en) 그대로 따름 — 아마존 Featured Offer(Buy Box) 자격 요건 완화(2단계→1단계 개편, 7월 시행) 신규 소재, 어제(07-22) 상품명 75자 제한 소재와 별개 정책이라 메커니즘 안 겹침 확인",
+      "dead arm(contrarian·ai_general, other·ai_general, other·other) 배제 — 오늘 소재 모두 target_callout(오전)과 other·amazon·en(저녁)으로만 구성",
+      "GitHub trending 확인 — 오늘도 개발자/인프라 도구 위주로 셀러 실무 연결 불가, 미채택",
+      "HackerNews 확인 — 벤치마크/모델 스펙/개발자 도구 위주로 즉시 탈락 기준 해당, 전부 미채택",
+      "스마트스토어 리뷰 클렌징/원산지 표시 등 추가 후보도 검색했으나 구체 사례·근거 빈약해 제외"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://news.ycombinator.com/news",
+      "https://allra.co.kr/blogs/254",
       "https://www.sellerking.io/blog/coupang-rocket-gross-guide",
-      "https://silmupack.com/%EC%BF%A0%ED%8C%A1-%EB%B0%98%ED%92%88-%EC%B2%98%EB%A6%AC/",
-      "https://www2.onch3.co.kr/bbs_view.php?num=13&vnum=15987&page=1",
+      "https://ppc.land/amazon-cuts-featured-offer-eligibility-gate-starting-july-2026/",
       "https://www.geekseller.com/blog/amazon-product-title-changes-coming-july-27-2026-what-sellers-need-to-know/",
-      "https://www.datarize.ai/blog/us-de-minimis-2026-changes-korean-sellers",
-      "https://tilnote.io/en/pages/6a07dab246eb3b62335e4e69"
+      "https://myamazonguy.com/news/amazon-business-hour-delivery-rate/",
+      "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
+      "https://www.openads.co.kr/content/contentDetail?contsId=19684"
     ]
   }
 }
