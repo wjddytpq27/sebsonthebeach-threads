@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-23",
+  "updated_at": "2026-07-24",
   "daily_deltas": [
-    {
-      "date": "2026-07-08",
-      "followers": 258,
-      "delta": 0
-    },
     {
       "date": "2026-07-09",
       "followers": 258,
@@ -70,6 +65,11 @@
       "date": "2026-07-22",
       "followers": 262,
       "delta": 4
+    },
+    {
+      "date": "2026-07-23",
+      "followers": 263,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -133,6 +133,15 @@
       "content_type": "ecommerce_tip",
       "engagement_score": 5,
       "views": 561,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-07-22",
+      "text_preview": "쿠팡 로켓그로스로 입고만 해두면 쿠팡이 알아서 다 처리해준다고 편하게 생각하던 셀러한테만 하는 얘기. 팔레트",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 14,
+      "views": 431,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
@@ -297,10 +306,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 4.388888888888889,
+    "ecommerce_tip": 4.2105263157894735,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 3.46,
+  "avg_followers_per_post": 3.36,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
