@@ -1,72 +1,71 @@
 {
-  "date": "2026-07-23",
-  "signal_applied": "team_signal status normal(257→262, 7일 일평균+0.71, days_since_growth=0)이고 directives.trend_scout='평소대로'라 수집 방식 변경 없음. bandit.slots.morning.recommend는 target_callout·marketing(explore 모드, frontier에 smartstore n=9/amazon n=2 병행)이고 best_follower_arm은 target_callout·smartstore(+99, n=9) — posts.json 07-07~07-22 전수 확인 결과 어제(07-22)까지 정산등급(07-15)·빠른정산 구매적립금(07-16)·로켓그로스 반품비(07-07)·팔레트/바코드(07-22) 등 스마트스토어/쿠팡 정산·물류 메커니즘이 상당수 소진되어, 오늘은 target_callout 훅 스타일은 유지하되 '정산 공백'(매출 증가=수익 증가라는 착각, 선재고 매입 시차+보관료로 마진이 갉아먹히는 현금흐름 이슈)이라는 기존에 안 쓴 각도로 신규 채택. 저녁은 bandit.slots.evening.recommend(other·amazon·en)를 따라 아마존 Featured Offer(Buy Box) 자격 요건 완화(7월 시행) 신규 소재로 채택 — 어제(07-22) 쓴 아마존 상품명 75자 제한과는 완전히 다른 정책(Buy Box 순위 산정 방식 개편)이라 메커니즘 안 겹침. dead arm(contrarian·ai_general, other·ai_general, other·other) 오늘도 배제.",
+  "date": "2026-07-24",
+  "signal_applied": "team_signal status normal(257→263, 19일 일평균+0.3, days_since_growth=0)이고 directives.trend_scout='평소대로'라 수집 방식 변경 없음. bandit.slots.morning.recommend는 target_callout·marketing(explore, frontier에 smartstore n=9 best_follower_arm 병행)이라 오전은 target_callout 훅 스타일 유지. posts.json 07-01~07-23 전수 확인 결과 최저가자동맞춤·반품매몰비용·역직구관세·문의미답변·로켓그로스반품비·등록건수(카피/걸림위험)·상품명금지문구·재고방치·반품사유·정산등급·빠른정산·간이과세자·단순변심반품불가·AI보정표시·팔레트파손·선재고현금흐름 등 스마트스토어/쿠팡 메커니즘이 이미 다수 소진 — 오늘은 '2026-06 시행 판매실적 기반 등록한도 재산정(매월 2일, 최근 3개월 판매실적+13개월 무판매 상품 자동정리)'이라는 신규 각도 채택. 07-08 소재(등록 많이 하면 지재권 등으로 걸릴 위험)와는 메커니즘이 다름(이번엔 한도 자체가 매달 재계산되어 자동 판매중지되는 구조). 저녁은 bandit.slots.evening.recommend(other·amazon·en)를 따라 SFP(Seller Fulfilled Prime) 배송속도 기준 강화(2026-07-06 시행)를 신규 채택 — 07-22(상품명 75자 제한)·07-23(Buy Box 자격요건 완화)과는 다른 정책(SFP 배송속도 재상향)이라 메커니즘 안 겹침. dead arm(contrarian·ai_general, other·ai_general, other·other) 오늘도 배제.",
   "github_hot": [
     {
-      "repo": "unknown/trending-repo-1",
+      "repo": "OpenCut / graphify / skills 등 AI 에이전트·개발도구 계열",
       "stars_today": 0,
-      "why_hot": "GitHub Trending 확인 결과 오늘도 대부분 개발자 인프라/에이전트 프레임워크/코딩 도구 계열이 상위를 차지 — 구체 repo명 특정은 실패했으나 카테고리 성격상 이커머스 셀러 실무와 연결 지점 없음.",
+      "why_hot": "2026-07-24 기준 GitHub Trending 상위권은 여전히 에이전트 프레임워크·MCP 서버·개발자 도구 위주(OpenCut, opencode, graphify, skills 등) — 이커머스 셀러 실무와 연결 지점 없음.",
       "post_angle": "미채택 — 개발자 대상 도구는 target_callout 셀러 앵글과 결이 안 맞음"
     }
   ],
   "big_tech_news": [
     {
-      "source": "allra.co.kr(2026 쿠팡 로켓그로스 셀러 완벽 가이드 — 정산 공백 관리)",
-      "topic": "로켓그로스는 배송·CS를 쿠팡이 대신 처리해주는 대신, 셀러가 선재고를 먼저 매입해야 하고 실제 정산금은 구매확정 이후에도 한참 뒤에 들어온다. 여기에 무료 보관 기간(카테고리별 30~60일)을 넘기면 추가 보관료가 붙고, 반품비까지 겹치면서 '매출은 늘었는데 실제 손에 쥐는 돈은 그대로거나 오히려 줄어드는' 구조가 된다. 로켓세이버 구독제(월 구독료로 보관료 60일 추가 면제)가 있다는 것도 이 비용 구조가 이미 쿠팡 스스로도 인지하고 있는 문제라는 방증.",
-      "angle": "반전형 1인칭 — 매출 늘어나는 대시보드 숫자만 보고 좋아하던 셀러가, 선재고 매입비+보관료+반품비를 다 제하고 나니 정작 통장에 들어온 돈은 매출 증가폭만큼 안 늘었다는 걸 뒤늦게 깨닫는 구조. best_performing 공식(채널/행동 콕 집기 + 실무 착각 반전) 유지. 07-07(반품비 항목 신설)·07-15(정산등급)·07-16(빠른정산 구매적립금)과 달리 이번엔 '매출=수익'이라는 근본 착각과 현금흐름 시차를 다루는 메커니즘이라 중복 아님.",
-      "hook_idea": "로켓그로스 켜놓고 이번 달 매출 늘었다고 좋아하던 셀러한테만 하는 얘기. 그 매출, 선재고값이랑 보관료 빼고 나면 늘어난 것도 아니더라"
+      "source": "onch3.co.kr(스마트스토어 등록 한도 변경 총정리 2026, 판매상품비중 3% 기준)",
+      "topic": "2026년 6월 2일부터 시행된 정책으로, 최근 13개월간 판매 이력이 없는 상품은 자동 정리 대상이 되고, 매달 2일마다 최근 3개월 판매 실적을 기준으로 상품 등록 한도가 다시 계산된다. 6월 15~25일 순차적으로 판매중지가 적용됐고, 이후에도 매월 재산정이 계속된다. 등록 한도를 초과하면 자동으로 판매중지 처리되고, 일정 기간 수정 이력 없이 방치되면 자동 삭제까지 갈 수 있다.",
+      "angle": "반전형 1인칭 — '상품 많이 올려두면 그중 몇 개는 팔리겠지'라고 생각하고 안 팔리는 상품도 계속 쌓아두던 셀러가, 매달 2일 재산정되는 등록 한도 정책 때문에 오히려 등록 가능 개수 자체가 깎이고 초과분은 강제 판매중지되는 걸 뒤늦게 깨닫는 구조. 07-08(등록 많이 해서 지재권 등으로 걸릴 위험)과는 메커니즘 다름 — 이번엔 '한도 자체가 실적 기반으로 매달 줄어드는' 구조.",
+      "hook_idea": "스마트스토어에 안 팔리는 상품도 일단 올려두고 보자던 셀러한테만 하는 얘기. 이번 달부터 매달 2일마다 최근 3개월 판매 실적으로 등록 한도가 다시 계산됨. 오래 안 팔린 상품 비중 높으면 한도가 확 줄고, 초과분은 자동으로 판매중지 걸려"
     },
     {
-      "source": "ppc.land(Amazon cuts Featured Offer eligibility gate starting July 2026)",
-      "topic": "아마존이 7월부터 Featured Offer(Buy Box) 선정 방식을 2단계에서 1단계로 개편한다. 기존에는 셀러 퍼포먼스 기준을 먼저 통과해야만 가격·배송 속도로 순위를 매기는 구조였는데, 이제는 퍼포먼스 기준을 별도 통과/탈락 게이트에서 빼고 가격·배송 속도와 함께 순위 계산에 직접 포함시킨다. 연말까지 전 세계 스토어에 순차 적용. 아마존은 '더 공정해진다'는 취지로 설명했지만 새 가중치 공식은 비공개이고, 셀러들은 공지가 '의도적으로 모호하다'고 반발 중이다.",
-      "angle": "AI×이커머스 통제권/투명성 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — '실적 나쁜 셀러도 이제 Buy Box 경쟁 가능'이라는 표면적 공정성과 달리, 실제로는 판단 기준이 불투명해지면서 아무도 왜 자기가 이기고 지는지 알 수 없게 되는 구조. 어제(07-22) 쓴 상품명 75자 제한(AI 자동 재작성)과는 완전히 다른 정책(Buy Box 순위 산정 개편)이라 메커니즘 안 겹침.",
-      "hook_idea": "Amazon just removed the seller performance gate for winning the Buy Box. Sounds fairer, right? Bad-performing sellers can now compete on price and speed alone. Except nobody — including sellers who've run this for years — can tell you the new weighting formula. Amazon calls it simpler. Sellers on the forums are calling it a black box wearing a fairness costume."
+      "source": "novadata.io(Amazon tightens SFP delivery speed rules July 6, 2026)",
+      "topic": "아마존이 Seller Fulfilled Prime(SFP) 배송 속도 기준을 다시 상향했다. 2026년 5월 25일 발표, 6월 8일부터 4주 유예기간을 거쳐 7월 6일 시행. 더 많은 SFP 오퍼가 지역 단위 빠른배송이 아니라 전국 단위 1일/2일 배송 커버리지를 충족해야 한다. 기준 미달 시 즉시 Prime 배지가 박탈되고 Prime Buy Box 경쟁 풀에서 제외된다. 가장 타격받는 건 단일 창고 운영 셀러, 대형/중량 카테고리, FBA-SFP 혼합 셀러, 주말 배송 제한 셀러.",
+      "angle": "AI×이커머스 통제권/신뢰 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — 한 번 SFP 기준 통과했다고 안심하고 있던 셀러가, 아무 예고 없이 기준이 다시 올라가면서 Prime 배지를 잃고 Buy Box 풀에서 조용히 빠지는 구조. 07-22(상품명 75자 제한)·07-23(Buy Box 자격요건 완화)과 완전히 다른 정책(SFP 배송속도 재상향)이라 메커니즘 안 겹침.",
+      "hook_idea": "Sellers who turned on Seller Fulfilled Prime and figured passing once meant staying qualified forever — Amazon just raised the delivery speed bar again, effective July 6. Miss the new one-day/two-day national coverage targets and your Prime badge disappears, no warning, straight out of the Buy Box pool."
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "AI 에이전트/코딩 도구/모델 벤치마크 관련 스토리 다수",
-      "source": "Hacker News 2026-07-23",
-      "angle": "즉시 탈락 기준(벤치마크 숫자, 영어권 트렌드 단순 번역, 실무 연결 없음) 해당하는 스토리가 대부분이라 셀러 실무와 연결되는 소재 없음.",
+      "story": "AI 에이전트 프레임워크·모델 벤치마크·개발자 도구 관련 스토리 다수, 신뢰/보안 논의 증가 추세",
+      "source": "Hacker News 2026-07-24",
+      "angle": "즉시 탈락 기준(벤치마크 숫자, 개발자 도구, 실무 연결 없음) 해당하는 스토리가 대부분이라 셀러 실무와 연결되는 소재 없음.",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "반전형 1인칭 — 로켓그로스 켜놓고 매출 대시보드 숫자만 보고 좋아하던 셀러 타겟. 선재고 매입비를 먼저 쓰고, 정산은 구매확정 후 한참 뒤에 들어오고, 그 사이 무료 보관기간(카테고리별 30~60일)을 넘기면 보관료가 붙고 반품비까지 겹치면서 '매출은 늘었는데 실제 수익은 그대로'라는 현금흐름 착시가 드러나는 구조. best_performing 공식(채널/행동 콕 집기 + 실무 착각 반전) 유지, 07-07·07-15·07-16 정산 관련 소재와 메커니즘 겹치지 않는 신규 각도(매출≠수익, 현금흐름 시차).",
-    "hook": "로켓그로스 켜놓고 이번 달 매출 늘었다고 좋아하던 셀러한테만 하는 얘기. 그 매출, 선재고값이랑 보관료 빼고 나면 늘어난 것도 아니더라",
-    "source": "쿠팡 로켓그로스 셀러 가이드 — 정산 공백(allra.co.kr/blogs/254)",
+    "angle": "반전형 1인칭 — 스마트스토어에 안 팔리는 상품도 계속 쌓아두던 셀러가, 2026년 6월 시행된 판매실적 기반 등록한도 재산정 정책(매월 2일, 최근 3개월 실적 + 13개월 무판매 상품 자동정리) 때문에 오히려 등록 한도가 줄어들고 초과분은 자동 판매중지되는 걸 뒤늦게 깨닫는 구조. best_performing 공식(채널/행동 콕 집기 + 실무 착각 반전) 유지, 07-08과 메커니즘 다른 신규 각도(등록 개수 많음 자체가 아니라 한도 재산정 시스템).",
+    "hook": "스마트스토어에 안 팔리는 상품도 일단 올려두고 보자던 셀러한테만 하는 얘기. 이번 달부터 매달 2일마다 최근 3개월 판매 실적으로 등록 한도가 다시 계산됨. 오래 안 팔린 상품 비중 높으면 한도가 확 줄고, 초과분은 자동으로 판매중지 걸려",
+    "source": "스마트스토어 등록 한도 변경 총정리(onch3.co.kr/bbs_view.php?num=13&vnum=15987)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "english",
-    "angle": "AI×이커머스 통제권/투명성 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — 아마존이 Buy Box 선정 방식을 2단계(퍼포먼스 게이트→순위)에서 1단계(퍼포먼스도 순위 요소 중 하나)로 통합. '실적 나쁜 셀러도 이제 경쟁 가능'이라는 표면적 공정성과, 새 가중치 공식이 비공개라 아무도 왜 이기고 지는지 모른다는 불투명성이 부딪히는 논쟁 포인트. 어제(07-22) 아마존 상품명 75자 제한 소재와 메커니즘 다름(이번엔 Buy Box 순위 산정 개편).",
-    "hook": "Amazon just removed the seller performance gate for winning the Buy Box. Sounds fairer, right? Bad-performing sellers can now compete on price and speed alone. Except nobody — including sellers who've run this for years — can tell you the new weighting formula. Amazon calls it simpler. Sellers on the forums are calling it a black box wearing a fairness costume.",
-    "source": "ppc.land/amazon-cuts-featured-offer-eligibility-gate-starting-july-2026",
+    "angle": "AI×이커머스 통제권/신뢰 논쟁형(영어권, bandit 추천 other·amazon·en 반영) — 한 번 SFP 기준을 통과했다고 안심하던 셀러가, 예고 없이 배송속도 기준이 재상향되면서 Prime 배지를 잃고 Buy Box 풀에서 조용히 빠지는 구조. 07-22·07-23과 다른 정책(SFP 배송속도 재상향, 2026-07-06 시행)이라 메커니즘 안 겹침.",
+    "hook": "Sellers who turned on Seller Fulfilled Prime and figured passing once meant staying qualified forever — Amazon just raised the delivery speed bar again, effective July 6. Miss the new one-day/two-day national coverage targets and your Prime badge disappears, no warning, straight out of the Buy Box pool.",
+    "source": "novadata.io/resources/news/amazon-sfp-speed-rules-july-2026",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-07-23",
+    "collected_at": "2026-07-24",
     "agent": "trend-scout",
     "status": "normal",
     "directives_applied": [
-      "team_signal status normal(257→262, 7일 일평균+0.71, days_since_growth=0) → directives.trend_scout '평소대로' 적용, 수집 방식 변경 없음",
-      "best_follower_arm(target_callout·smartstore, +99 n=9) 재현 시도했으나 posts.json 07-07~07-22 전수 확인 결과 스마트스토어/쿠팡 정산·물류 메커니즘이 다수 소진(등록한도·재고확인·정산등급·빠른정산·반품불가공지·AI보정·팔레트바코드 등) — target_callout 훅 스타일은 유지하되 '정산 공백(매출≠수익, 현금흐름 시차+보관료)'이라는 신규 각도로 로켓그로스 소재 채택, 기존 정산 소재(07-07·07-15·07-16)와 메커니즘 다름 확인",
-      "저녁은 bandit.slots.evening.recommend(other·amazon·en) 그대로 따름 — 아마존 Featured Offer(Buy Box) 자격 요건 완화(2단계→1단계 개편, 7월 시행) 신규 소재, 어제(07-22) 상품명 75자 제한 소재와 별개 정책이라 메커니즘 안 겹침 확인",
+      "team_signal status normal(257→263, 19일 일평균+0.3, days_since_growth=0) → directives.trend_scout '평소대로' 적용, 수집 방식 변경 없음",
+      "best_follower_arm(target_callout·smartstore, +100 n=9) 재현 시도 — posts.json 07-01~07-23 전수 확인 결과 스마트스토어/쿠팡 정산·물류·등록 관련 메커니즘이 대부분 소진되어, 오늘은 '2026-06 시행 판매실적 기반 등록한도 재산정(매월 2일 재계산, 13개월 무판매 자동정리)'이라는 신규 각도 채택, 07-08(등록 많이 하면 지재권 등으로 걸림)과 메커니즘 다름 확인",
+      "저녁은 bandit.slots.evening.recommend(other·amazon·en) 그대로 따름 — Amazon SFP(Seller Fulfilled Prime) 배송속도 기준 재상향(2026-07-06 시행) 신규 소재, 07-22(상품명 75자 제한)·07-23(Buy Box 자격요건 완화)과 별개 정책이라 메커니즘 안 겹침 확인",
       "dead arm(contrarian·ai_general, other·ai_general, other·other) 배제 — 오늘 소재 모두 target_callout(오전)과 other·amazon·en(저녁)으로만 구성",
-      "GitHub trending 확인 — 오늘도 개발자/인프라 도구 위주로 셀러 실무 연결 불가, 미채택",
-      "HackerNews 확인 — 벤치마크/모델 스펙/개발자 도구 위주로 즉시 탈락 기준 해당, 전부 미채택",
-      "스마트스토어 리뷰 클렌징/원산지 표시 등 추가 후보도 검색했으나 구체 사례·근거 빈약해 제외"
+      "GitHub trending 확인 — 오늘도 에이전트 프레임워크/개발자 도구 위주로 셀러 실무 연결 불가, 미채택",
+      "HackerNews 확인 — 벤치마크/모델 스펙/개발자 도구 위주로 즉시 탈락 기준 해당, 전부 미채택"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://news.ycombinator.com/news",
-      "https://allra.co.kr/blogs/254",
-      "https://www.sellerking.io/blog/coupang-rocket-gross-guide",
-      "https://ppc.land/amazon-cuts-featured-offer-eligibility-gate-starting-july-2026/",
-      "https://www.geekseller.com/blog/amazon-product-title-changes-coming-july-27-2026-what-sellers-need-to-know/",
-      "https://myamazonguy.com/news/amazon-business-hour-delivery-rate/",
       "https://www.onch3.co.kr/bbs_view.php?num=13&vnum=15987",
-      "https://www.openads.co.kr/content/contentDetail?contsId=19684"
+      "https://allra.co.kr/blogs/254",
+      "https://novadata.io/resources/news/amazon-sfp-speed-rules-july-2026",
+      "https://sellercentral.amazon.com/seller-forums/discussions/t/7336583f-09ac-41de-99d1-667017a88db2",
+      "https://novadata.io/resources/news/amazon-product-title-rules-overhaul-july-27-2026",
+      "https://www.leviathansellers.com/blog/amazon-fba-policy-updates",
+      "https://amzscout.net/blog/amazon-news/"
     ]
   }
 }
