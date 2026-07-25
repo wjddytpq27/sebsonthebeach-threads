@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전: target_callout·marketing·ko 탐색 우선(마케팅 실무자 특정 타겟콜아웃) — 라벨 추정 상태라 확정 말고 target_callout·smartstore/쿠팡 대조군 하나 병행. 저녁: other·amazon·en 탐색 우선(영어권, 논콘트래리언 각도). 죽은 arm(contrarian·ai_general, other·ai_general/other) 절대 피하고, 훅은 '~하는 셀러/마케터한테만 하는 얘기'식 구체적 타겟콜아웃 유지. 좋아요 낚시용 추상적 AI미래론 금지.",
+  "weekly_focus": "오전: 검증된 팔로워 arm인 target_callout·스마트스토어/쿠팡·ko 재현이 기본이지만, 밴딧이 아직 탐색 슬롯이라 target_callout·marketing·ko를 1개 우선 시도하고 대조군으로 target_callout·스마트스토어(또는 amazon) 1개를 A/B로 병행 — target_callout·marketing 우세는 아직 추정치라 단정 금지. 저녁: other·amazon·en을 1개 우선 시도하되 이것도 라벨 추정 상태라 대조군으로 target_callout·amazon·en 1개 병행. 훅은 '~하는 셀러/사람한테만 하는 얘기' 타겟콜아웃 유지, 강도는 평소 수준(2일 정체는 아직 급격히 올릴 단계 아님). contrarian·ai_general, other·ai_general, other·other 각도는 인게이지 착시 있으니 오늘도 패스.",
   "recommended_topics": [
-    "스마트스토어 셀러",
-    "쿠팡 로켓그로스",
-    "이커머스 재고관리"
+    "AI tools automation",
+    "디지털마케팅",
+    "온라인창업"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "스마트스토어/쿠팡 셀러 콕 집어 부르는 타겟콜아웃 훅('~하는 셀러한테만 하는 얘기') + 구체적 문제(발색보정/재고방치/로켓그로스 방치) 지적. 원장 기준 실제 팔로워 끈 유일한 조합(morning·ko·target_callout·smartstore, +100/n=10).",
-  "worst_post_style": "contrarian·ai_general, other·ai_general/other 계열 — 추상적·일반적 AI/기타 주제는 죽은 arm(실패율 50%+).",
+  "best_post_style": "'~하는 셀러한테만 하는 얘기' 식 타겟콜아웃 훅 + 스마트스토어/쿠팡 실전 팁, 오전·한국어 조합 — 유일하게 검증된 팔로워 arm(+100, n=10)",
+  "worst_post_style": "contrarian·ai_general / other·ai_general·other 조합 — 인게이지는 높아 보여도 팔로워 전환 실패율 50%+인 죽은 arm",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "스마트스토어 셀러",
-    "쿠팡 로켓그로스",
-    "이커머스 재고관리"
+    "AI tools automation",
+    "디지털마케팅",
+    "온라인창업"
   ],
-  "alert": "정체 1일째, 아직 정상 범위. 근데 댓글 키워드는 전부 팔로워 전환 0% — 콘텐츠 앵글(스마트스토어/쿠팡 타겟콜아웃)은 먹히는데 인게이지먼트가 못 받쳐주는 중.",
+  "alert": "2일째 정체지만 아직 정상 범위 — 진짜 팔로워 끄는 건 오전·한국어·target_callout·스마트스토어/쿠팡뿐, 인게이지 1위인 contrarian·ai_general은 팔로워 전환 안 되는 죽은 arm이니 착시 조심.",
   "generated_at": "2026-07-25"
 }
