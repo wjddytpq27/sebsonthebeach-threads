@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-26",
+  "updated_at": "2026-07-28",
   "daily_deltas": [
-    {
-      "date": "2026-07-12",
-      "followers": 258,
-      "delta": 0
-    },
     {
       "date": "2026-07-14",
       "followers": 257,
@@ -70,6 +65,11 @@
       "date": "2026-07-26",
       "followers": 264,
       "delta": 1
+    },
+    {
+      "date": "2026-07-28",
+      "followers": 264,
+      "delta": 0
     }
   ],
   "follow_drivers": [
@@ -299,6 +299,15 @@
       "attribution_confidence": "medium"
     },
     {
+      "post_date": "2026-07-27",
+      "text_preview": "도착보장 풀필먼트 쓰는 스마트스토어 셀러한테만 하는 얘기. 품절임박 알림 몇 달째 한 번도 안 왔길래 재고 ",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 3,
+      "views": 364,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "medium"
+    },
+    {
       "post_date": "2026-05-27",
       "text_preview": "AI한테 코드 던져놓고 왜 이해를 못 하냐고?  GitHub에서 하루 4000별 받은 Understand-A",
       "content_type": "ai_tech",
@@ -324,10 +333,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 3.8095238095238093,
+    "ecommerce_tip": 3.6363636363636362,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 3.11,
+  "avg_followers_per_post": 3.0,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
