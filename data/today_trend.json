@@ -1,74 +1,82 @@
 {
-  "date": "2026-07-27",
-  "signal_applied": "status=normal(258→264, 20일 일평균+0.3, days_since_growth=0), directives.trend_scout='평소대로'이지만 team_signal.strategic_review.next_2weeks_focus(week_of 2026-07-27)가 상위 전략 결정으로 존재 — '앞으로 14일간 저녁 글은 전부 5부작 연재(재고 알림→상세페이지→발색 보정→CS 자동응답→매출 리포트)로 클리프행어 붙여 발행'. posts.json 07-24까지 확인한 결과 이 연재가 아직 시작 안 됨 → 오늘(07-27)을 연재 1편 시작일로 판단, 저녁 소재를 '재고 알림 자동화' 근거/경험 앵글로 수집. 오전은 기존 target_callout·smartstore 공식 유지하되 도착보장 풀필먼트 미설정 시 재고연동 끊김이라는 신규 메커니즘으로 기존 소진 소재(재고방치, 등록한도 재산정 등)와 중복 회피.",
+  "date": "2026-07-28",
+  "signal_applied": "status=normal(258→264, 20일 일평균+0.3), directives.trend_scout='평소대로'이지만 team_signal.strategic_review.next_2weeks_focus의 저녁 5부작 연재 지침(재고 알림→상세페이지→발색 보정→CS 자동응답→매출 리포트)이 상위 전략으로 유효. posts.json 확인 결과 07-27에 1편(재고 알림 자동화, 도착보장 풀필먼트 미설정→재고연동 끊김)이 target_callout·smartstore 포맷으로 발행됨 → 오늘(07-28)을 2편 '상세페이지 자동화'로 판단하고 저녁 소재를 이에 맞춰 수집. 오전은 기존 검증 포맷(target_callout·smartstore) 유지하되, 저녁 시리즈가 예약한 상세페이지/발색보정 소재와 중복되지 않는 신규 메커니즘(AI 자동 이미지크롭으로 사진이 훼손되는 문제)으로 수집.",
   "github_hot": [
     {
-      "repo": "미채택 — 오늘 GitHub Trending 상위권은 에이전트 프레임워크·개발자 도구 계열(예: Vercel TS-to-native 컴파일러 등) 위주",
+      "repo": "미채택 — 오늘 GitHub Trending 상위권은 permissionlesstech/bitchat, citrolabs/ego-lite, block/buzz, andrewyng/openworker, vercel-labs/scriptc 등 개발자 도구·에이전트 프레임워크 계열",
       "stars_today": 0,
-      "why_hot": "개발자 대상 도구는 셀러 경험담 각도로 전환 불가 — target_callout/시리즈 앵글과 결이 안 맞음",
+      "why_hot": "개발자 대상 도구/컴파일러·메시징 앱 위주 — 셀러 경험담 각도로 전환 불가",
       "post_angle": "미채택"
     }
   ],
   "big_tech_news": [
     {
-      "source": "카페24 '부스트 2026' 컨퍼런스 (2026-07-22, zdnet.co.kr)",
-      "topic": "카페24가 '반복 작업은 시스템에'를 슬로건으로 통합 운영 자동화 서비스 카페24 PRO를 공개. 상품 등록, 콘텐츠 제작, 마케팅, CS 자동화를 지원하며 재고 관리 자동화도 핵심 축으로 언급됨. 재고 부담 없는 드롭쉬핑·AI 이미지 보정 등도 함께 소개.",
-      "angle": "경험담+반전 — '자동화 도입하면 편해진다'는 통념 vs '자동화를 믿고 방치하다 알림이 안 뜨는 구멍을 직접 겪음'이라는 실무 반전. 5부작 연재 1편(재고 알림 자동화) 도입부 근거로 활용.",
-      "hook_idea": "재고 알림 자동화 켜놓고 안심하고 있었는데, 정작 알림이 안 뜨는 순간이 있다는 걸 최근에 알았음"
+      "source": "카페24 에디봇 'AI 이미지 크롭' 기능 (news.cafe24.com, thevaluenews.co.kr)",
+      "topic": "카페24 에디봇이 AI 이미지 크롭 기능을 추가해 상품 사진을 쇼핑몰 규격에 맞는 썸네일로 자동 편집. AI가 상품 색상·디자인·촬영방식을 분석해 사진을 자동 분류·배치(50장 기준 약 30초)하는 기능도 포함.",
+      "angle": "반전형 target_callout — '자동 크롭이 알아서 잘라주니 편하다'는 통념 vs '결과물을 하나하나 확인 안 하다가 로고·사이즈표·가격 강조 부분이 잘려나간 걸 늦게 발견'하는 실무 반전. 기존 소진 소재(재고방치, 반품불가 문구, 도착보장 풀필먼트)와 달리 '재고/정책'이 아니라 '이미지 자체가 자동화로 훼손'되는 새 메커니즘.",
+      "hook_idea": "썸네일 자동 편집 기능 켜놓고 결과물 확인 안 하던 셀러한테만 하는 얘기. AI가 알아서 잘라준다고 믿었는데 정작 중요한 부분이 잘려나가고 있었음"
     },
     {
-      "source": "onch3.co.kr 외 (스마트스토어 도착보장 풀필먼트 미설정 시 재고 연동 이슈)",
-      "topic": "스마트스토어 도착보장 서비스 도입 후, 풀필먼트를 [설정안함]으로 둔 판매자의 경우 재고 연동이 끊겨 실제 재고가 있어도 품절 처리되거나, 반대로 재고가 없는데도 주문서 연동 API가 끊겨 출고 자체가 막히는 사례가 보고됨. 셀러들은 '재고 알림이 뜨겠지'라고 믿고 방치하다 뒤늦게 발견하는 패턴.",
-      "angle": "반전형 1인칭 — '재고 관리 자동화 켜뒀으니 알아서 알려주겠지'라고 믿고 있던 셀러가, 풀필먼트 설정 하나 때문에 알림 자체가 안 뜨는 구조였다는 걸 뒤늦게 발견. 기존 소진 소재(재고방치=재고 있는데 확인 안 함)와 달리 이번엔 '자동화가 조용히 멈춰있었다'는 메커니즘 차이.",
-      "hook_idea": "재고 알림 자동화 켜놨다고 몇 달째 재고 확인 안 하던 셀러한테만 하는 얘기. 그 알림, 어느 순간부터 안 뜨고 있었을 수도 있음"
+      "source": "AI 상세페이지 자동 생성 에디터 확산 — 컨버타(converta.co.kr), 드랩아트(카페24 스토어), aieditor.gabia.com",
+      "topic": "채팅으로 상품 정보만 입력하면 AI가 스마트스토어/쿠팡 상세페이지를 자동 제작하는 에디터들이 급증. 최신 버전은 리뷰 분석 후 소비자에게 가장 반응 좋은 카피·이미지를 자동 생성.",
+      "angle": "5부작 연재 2편(상세페이지 자동화) 핵심 근거 — 'AI 에디터가 상세페이지를 다 만들어준다'는 기대와 실제로 직접 써보고 손 본 경험 사이의 반전을 쓸 수 있는 소재.",
+      "hook_idea": "상세페이지 AI가 자동으로 만들어준다는 말 믿고 그대로 올렸다가 알게 된 것 하나 있음"
     },
     {
-      "source": "Shopify AI Toolkit (2026-04-10 출시) + Claude Code 이커머스 자동화 사례 (getcarro.com, rewarx.com 등)",
-      "topic": "Shopify가 Claude Code·Cursor·Codex·Gemini CLI를 MCP로 스토어에 직접 연결하는 AI Toolkit을 출시. 자연어로 재고 임계치를 지정하면 조건 로직을 생성해 재고 부족 시 알림·자동 재주문을 트리거하는 워크플로우 구축 가능. 생산성 48% 향상, ROI 10.3배 사례도 보고됨.",
-      "angle": "AI×이커머스 교차 경험담 — '재고 알림, 플랫폼 자동화 기능만 믿지 말고 Claude로 직접 짜봤더니' 각도. 연재 1편(재고 알림 자동화)에 '직접 Claude 자동화로 재고 알림 로직을 만들어본 경험'을 얹을 수 있는 근거.",
-      "hook_idea": "스마트스토어 재고 알림 기능만 믿고 있다가, Claude로 직접 재고 알림 로직을 짜본 적 있음. 그러고 나서 알게 된 것"
+      "source": "Claude Opus 5 출시 + Claude Code 이커머스 자동화 사례 (releasebot.io, adventuremedia.ai)",
+      "topic": "Claude Opus 5 출시 이후 Claude Code가 코딩/에이전트 랭킹 1위. Claude Code로 파일 읽기·스크립트 작성·API 호출까지 자동화하는 이커머스 활용 사례(자동화 아이디어 8가지)가 소개됨.",
+      "angle": "AI×이커머스 교차 경험담 — '플랫폼 기본 AI 에디터 대신 Claude로 직접 상세페이지 초안 생성 로직을 짜봤더니' 각도로 연재 2편에 결합 가능.",
+      "hook_idea": "스마트스토어 AI 에디터 말고 Claude로 상세페이지 초안을 직접 짜본 적 있음. 그러고 나서 알게 된 것"
+    },
+    {
+      "source": "AI 제품 사진 편집 시장 성장 데이터 (jenova.ai, photoroom.com)",
+      "topic": "AI 제품 사진 편집 시장이 2024년 21억 달러에서 2034년 89억 달러로 성장 전망. 기존 촬영비(세션당 200~5,000달러+) 대비 AI 도구가 60~70% 비용 절감. 브랜드 68%가 촬영 예산 초과 경험.",
+      "angle": "발색 보정(연재 3편 예정) 소재의 배경 근거로 예약 — 오늘 소재로는 미사용, 다음 편 소재 수집 시 참고.",
+      "hook_idea": "미채택(다음 편 예약)"
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "오늘 HN 상위는 'Kill The Cookie Banner'(876pt), GrapheneOS 공항 압수수색 이슈, Vercel TS-네이티브 컴파일러 등 — 셀러 실무 연결 각도 없음, 전부 탈락",
-      "source": "Hacker News 2026-07-27",
-      "angle": "즉시 탈락 — 자사몰/이커머스 실무 연결 불가, 개발자·보안·정책 이슈 중심",
+      "story": "오늘 HN 상위는 'Decker(Hypercard 계승 플랫폼)', 'Amazon 캐노피 브릿지 로드킬 제로', '쉘 콜론(:)의 용도', 'Open-weight AI의 쿠버네티스 모먼트' 등 — 셀러 실무 연결 각도 없음, 전부 탈락",
+      "source": "Hacker News 2026-07-27/28",
+      "angle": "즉시 탈락 — 개발자 도구·인프라·환경 이슈 중심, 자사몰/이커머스 실무 무관",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "target_callout·smartstore — '~하는 셀러한테만 하는 얘기' 공식 유지. 도착보장 풀필먼트 미설정으로 재고 연동이 조용히 끊기는 신규 메커니즘(기존 소진 소재인 재고방치·등록한도 재산정과는 다른 지점 — '재고가 없어서'가 아니라 '설정 하나로 알림 자체가 안 뜨는' 구조)",
-    "hook": "재고 알림 자동화 켜놨다고 몇 달째 재고 확인 안 하던 셀러한테만 하는 얘기. 그 알림, 어느 순간부터 안 뜨고 있었을 수도 있음",
-    "source": "스마트스토어 도착보장 풀필먼트 설정 이슈 (onch3.co.kr 등 셀러 커뮤니티 보고 사례)",
+    "angle": "target_callout·smartstore — '~하는 셀러한테만 하는 얘기' 공식 유지. 신규 메커니즘: AI 자동 이미지크롭/썸네일 편집 기능을 믿고 결과물을 확인하지 않다가 상품 사진의 로고·사이즈표·가격 강조 부분이 잘려나간 걸 늦게 발견 — 기존 소진 소재(재고방치, 등록한도, 도착보장 풀필먼트)와 달리 '이미지 자체가 자동화로 훼손'되는 지점.",
+    "hook": "썸네일 자동 편집 기능 켜놓고 결과물 확인 안 하던 셀러한테만 하는 얘기. AI가 알아서 잘라준다고 믿었는데 정작 중요한 부분이 잘려나가고 있었음",
+    "source": "카페24 에디봇 AI 이미지 크롭 기능 (news.cafe24.com, thevaluenews.co.kr)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "5부작 연재 1편 — 재고 알림 자동화. Claude/AI 자동화로 직접 재고 알림 로직을 만들어본 경험담 + 카페24 PRO 자동화 발표(재고관리 포함) 근거 결합. 클리프행어로 다음 편(상세페이지 자동화) 예고 필요.",
-    "hook": "스마트스토어 재고 알림, 플랫폼 기본 기능만 믿고 있다가 Claude로 직접 알림 로직을 짜본 적 있음. 그러고 나서 알게 된 게 있음",
-    "source": "카페24 부스트 2026 컨퍼런스(재고관리 자동화) + Shopify AI Toolkit·Claude Code 이커머스 자동화 사례",
+    "angle": "5부작 연재 2/5 — 상세페이지 자동화. AI 상세페이지 자동생성 에디터(에디봇/컨버타/드랩아트) 확산 트렌드 + Claude Code/Opus 5로 직접 상세페이지 초안을 자동 생성해본 경험담 결합. 클리프행어로 다음 편(발색 보정) 예고 필요.",
+    "hook": "상세페이지 AI가 자동으로 만들어준다는 말 믿고 그대로 올렸다가 알게 된 것 하나 있음",
+    "source": "AI 상세페이지 자동 생성 에디터 확산(카페24 에디봇, 컨버타, 드랩아트) + Claude Opus 5/Claude Code 이커머스 자동화 사례",
     "topic_tag": "AI_THREADS",
-    "series_note": "5부작 연재 1/5 — 재고 알림 자동화. 마지막 줄에 '내일은 상세페이지 자동화 얘기' 클리프행어 + 팔로우 유도 필수 (strategic_review.next_2weeks_focus 지침)"
+    "series_note": "5부작 연재 2/5 — 상세페이지 자동화. 마지막 줄에 '내일은 발색 보정 얘기' 클리프행어 + 팔로우 유도 필수 (strategic_review.next_2weeks_focus 지침)"
   },
   "metadata": {
-    "collected_at": "2026-07-27",
+    "collected_at": "2026-07-28",
     "agent": "trend-scout",
     "status": "normal",
     "directives_applied": [
       "team_signal status=normal, directives.trend_scout='평소대로' 확인",
-      "strategic_review.next_2weeks_focus(2026-07-27 시작, 14일)의 저녁 5부작 연재 지침을 상위 전략 결정으로 반영 — posts.json 07-24까지 연재 미시작 확인 → 오늘을 1편(재고 알림 자동화) 시작일로 판단하고 저녁 소재를 이에 맞춰 수집",
-      "오전은 기존 검증 포맷(target_callout·smartstore, +100 n=9~10) 유지, 신규 메커니즘(도착보장 풀필먼트 미설정→재고연동 끊김)으로 기존 소진 소재와 중복 회피 확인",
-      "GitHub Trending 확인 — 오늘도 개발자 도구 위주라 셀러 경험담 각도 미채택",
-      "HackerNews 확인 — 쿠키배너/보안/컴파일러 이슈 위주, 셀러 실무 연결 불가로 전부 탈락",
-      "dead arm(contrarian·ai_general, other·ai_general, other·other) 오늘도 배제"
+      "strategic_review.next_2weeks_focus의 저녁 5부작 연재 지침을 상위 전략으로 반영 — posts.json에서 07-27=1편(재고 알림) 발행 확인 → 오늘을 2편(상세페이지 자동화) 시작일로 판단",
+      "오전은 기존 검증 포맷(target_callout·smartstore) 유지, 저녁 시리즈가 예약한 상세페이지/발색보정 소재와 중복되지 않는 신규 메커니즘(AI 자동 이미지크롭 훼손)으로 수집",
+      "GitHub Trending 확인 — 오늘도 개발자 도구/에이전트 프레임워크 위주라 셀러 경험담 각도 미채택",
+      "HackerNews 확인 — Hypercard 계승 플랫폼/로드킬/쉘 문법/오픈웨이트 AI 이슈 위주, 셀러 실무 연결 불가로 전부 탈락",
+      "dead arm(contrarian·ai_general, other·ai_general, other·other) 오늘도 배제",
+      "AI 제품사진 시장 성장 데이터는 발색보정(연재 3편) 소재로 예약, 오늘 소재로는 미사용"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://news.ycombinator.com",
-      "스마트스토어/카페24 재고 관리 자동화 관련 검색(카페24 부스트 2026, SOLAPI, BoxHero)",
-      "Claude Code/Cursor 이커머스 자동화 사례(getcarro.com, rewarx.com, adventuremedia.ai)",
-      "2026 이커머스 마케팅 트렌드(아이보스, 유스연합 등)"
+      "카페24 에디봇 AI 이미지 크롭 기능(news.cafe24.com, thevaluenews.co.kr)",
+      "AI 상세페이지 자동 생성 에디터(converta.co.kr, aieditor.gabia.com, 드랩아트/카페24 스토어)",
+      "AI 제품 사진 편집 시장 성장 데이터(jenova.ai, photoroom.com)",
+      "Claude Opus 5/Claude Code 이커머스 자동화 사례(releasebot.io, adventuremedia.ai)"
     ]
   }
 }
