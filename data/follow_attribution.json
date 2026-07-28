@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-28",
+  "updated_at": "2026-07-29",
   "daily_deltas": [
-    {
-      "date": "2026-07-14",
-      "followers": 257,
-      "delta": -1
-    },
     {
       "date": "2026-07-15",
       "followers": 257,
@@ -68,6 +63,11 @@
     },
     {
       "date": "2026-07-28",
+      "followers": 264,
+      "delta": 0
+    },
+    {
+      "date": "2026-07-29",
       "followers": 264,
       "delta": 0
     }
@@ -308,6 +308,15 @@
       "attribution_confidence": "medium"
     },
     {
+      "post_date": "2026-07-28",
+      "text_preview": "스마트스토어 썸네일 AI 자동크롭 켜놓고 결과물 확인 안 하던 셀러한테만 하는 얘기. 한 달 넘게 AI가 알",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 4,
+      "views": 123,
+      "follower_delta_next_day": 0,
+      "attribution_confidence": "medium"
+    },
+    {
       "post_date": "2026-05-27",
       "text_preview": "AI한테 코드 던져놓고 왜 이해를 못 하냐고?  GitHub에서 하루 4000별 받은 Understand-A",
       "content_type": "ai_tech",
@@ -333,10 +342,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 3.6363636363636362,
+    "ecommerce_tip": 3.4782608695652173,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 3.0,
+  "avg_followers_per_post": 2.9,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
