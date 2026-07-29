@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전: explore로 target_callout·marketing·ko 메인 + 대조군 target_callout·smartstore 하나 더 붙여서 A/B (라벨 추정 상태라 검증 필요, 팔로워 끈 arm이랑 겹치는 각도라 유리). 훅 포맷은 '~하는 셀러/마케터한테만 하는 얘기' 유지하고 강도 올려. 저녁: explore로 other·amazon·en 메인 + 대조군 target_callout·amazon·en. 피해야 할 것: contrarian·ai_general, other·ai_general, other·other 조합(죽은 arm), 추상적 AI 미래론, 자사몰/카페24.",
+  "weekly_focus": "오전: target_callout·marketing·ko 앵글 1개 ('~마케팅 하는 셀러한테만' 훅, 퍼널 관점) + 대조군으로 검증된 target_callout·smartstore 앵글 1개, A/B로 비교. 저녁: other·amazon·en 앵글 탐색 (아마존 셀러 대상, 영어). contrarian·ai_general / other·ai_general / other·other 앵글은 죽은 arm이니 오늘은 스킵. 판단 기준은 좋아요·조회 아니고 다음날 팔로워 순증.",
   "recommended_topics": [
-    "스마트스토어",
-    "쿠팡",
-    "이커머스"
+    "AI tools automation",
+    "디지털마케팅",
+    "퍼스널브랜딩"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'~하는 셀러한테만 하는 얘기' 타겟콜아웃 + 구체적 플랫폼/문제(스마트스토어 발색, 쿠팡 로켓그로스, 반품 정책) 조합이 실제 팔로워로 전환됨 — 오전·ko·target_callout·smartstore arm이 +100으로 압도적.",
-  "worst_post_style": "contrarian·ai_general, other·ai_general/other 조합은 좋아요는 가끔 터져도 팔로워 실패율 50%+ 찍는 죽은 arm.",
+  "best_post_style": "'~하는 셀러한테만 하는 얘기' 콜아웃 훅 + 스마트스토어/쿠팡 등 구체적 플랫폼·상황 지목 (틴트 상세페이지, 로켓그로스, 반품정책 등 실무 디테일)",
+  "worst_post_style": "contrarian·ai_general, other·ai_general, other·other 앵글 - 표본 적어도 실패율 50%+ 죽은 arm",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "스마트스토어",
-    "쿠팡",
-    "이커머스"
+    "AI tools automation",
+    "디지털마케팅",
+    "퍼스널브랜딩"
   ],
-  "alert": "정체 2일째지만 나쁜 신호는 아님 — 7일 팔로워 순증은 +6으로 오히려 살아있음. 문제는 인게이지 지표랑 실제 팔로워 전환이 따로 논다는 거, 오늘도 타겟콜아웃 밀고 간다.",
-  "generated_at": "2026-07-29"
+  "alert": "오늘은 순증 확인된 날 - target_callout·smartstore 앵글이 팔로워 끄는 거 재확인됐고, 댓글 키워드는 아직 다 hit rate 0%라 표본 더 쌓아야 함",
+  "generated_at": "2026-07-30"
 }
