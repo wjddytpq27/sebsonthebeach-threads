@@ -1,82 +1,79 @@
 {
-  "date": "2026-07-28",
-  "signal_applied": "status=normal(258→264, 20일 일평균+0.3), directives.trend_scout='평소대로'이지만 team_signal.strategic_review.next_2weeks_focus의 저녁 5부작 연재 지침(재고 알림→상세페이지→발색 보정→CS 자동응답→매출 리포트)이 상위 전략으로 유효. posts.json 확인 결과 07-27에 1편(재고 알림 자동화, 도착보장 풀필먼트 미설정→재고연동 끊김)이 target_callout·smartstore 포맷으로 발행됨 → 오늘(07-28)을 2편 '상세페이지 자동화'로 판단하고 저녁 소재를 이에 맞춰 수집. 오전은 기존 검증 포맷(target_callout·smartstore) 유지하되, 저녁 시리즈가 예약한 상세페이지/발색보정 소재와 중복되지 않는 신규 메커니즘(AI 자동 이미지크롭으로 사진이 훼손되는 문제)으로 수집.",
+  "date": "2026-07-29",
+  "signal_applied": "status=normal(258→264, 20일 일평균+0.3), team_signal.directives.trend_scout='평소대로'. 단 strategic_review.json(2026-07-27 생성, 14일 유효=~08-10)의 next_2weeks_focus가 상위 전략: 저녁 슬롯을 5부작 연재(재고알림→상세페이지→발색보정→CS자동응답→매출리포트)로 묶고 매 편 마지막에 '다음편' 클리프행어+팔로우 유도 필수. posts.json 확인 결과 07-27=1편(재고알림), 07-28=이미지/썸네일 자동크롭(2편 상세페이지 계열과 근접하나 정확히 일치는 아님, 클리프행어 문구는 아직 미적용). team_signal의 '저녁: other·amazon·en 탐색' 지시는 next_2weeks_focus 대비 하위 우선순위로 판단해 오늘은 보류 — 14일 시리즈 강제가 아직 유효하므로 한국어 연재를 우선함. 어제 3편 소재로 예약해뒀던 'AI 제품사진 편집시장 성장 데이터(jenova.ai/photoroom.com)'는 07-21 포스트(색보정으로 노출 페널티 받은 경험담)와 소재가 겹쳐 오늘도 스킵하고, 반품/CS 리스크로 이어지는 신규 메커니즘(AI 조작 환불사진)으로 대체해 4편(CS자동응답)과 자연스럽게 연결되도록 구성. 오전은 기존 소진 소재(재고방치, 반품불가 문구, 도착보장 풀필먼트, 등록한도 3개월 실적, 자동크롭)와 안 겹치는 신규 메커니즘(단위가격 표시 의무화 미입력 시 상품수정 제한)으로 수집.",
   "github_hot": [
     {
-      "repo": "미채택 — 오늘 GitHub Trending 상위권은 permissionlesstech/bitchat, citrolabs/ego-lite, block/buzz, andrewyng/openworker, vercel-labs/scriptc 등 개발자 도구·에이전트 프레임워크 계열",
+      "repo": "미채택 — 오늘도 GitHub Trending 상위는 permissionlesstech/bitchat, citrolabs/ego-lite, block/buzz 등 개발자 도구·메시징 앱 위주",
       "stars_today": 0,
-      "why_hot": "개발자 대상 도구/컴파일러·메시징 앱 위주 — 셀러 경험담 각도로 전환 불가",
+      "why_hot": "개발자 대상 도구/에이전트 프레임워크 중심 — 셀러 경험담 각도로 전환 불가",
       "post_angle": "미채택"
     }
   ],
   "big_tech_news": [
     {
-      "source": "카페24 에디봇 'AI 이미지 크롭' 기능 (news.cafe24.com, thevaluenews.co.kr)",
-      "topic": "카페24 에디봇이 AI 이미지 크롭 기능을 추가해 상품 사진을 쇼핑몰 규격에 맞는 썸네일로 자동 편집. AI가 상품 색상·디자인·촬영방식을 분석해 사진을 자동 분류·배치(50장 기준 약 30초)하는 기능도 포함.",
-      "angle": "반전형 target_callout — '자동 크롭이 알아서 잘라주니 편하다'는 통념 vs '결과물을 하나하나 확인 안 하다가 로고·사이즈표·가격 강조 부분이 잘려나간 걸 늦게 발견'하는 실무 반전. 기존 소진 소재(재고방치, 반품불가 문구, 도착보장 풀필먼트)와 달리 '재고/정책'이 아니라 '이미지 자체가 자동화로 훼손'되는 새 메커니즘.",
-      "hook_idea": "썸네일 자동 편집 기능 켜놓고 결과물 확인 안 하던 셀러한테만 하는 얘기. AI가 알아서 잘라준다고 믿었는데 정작 중요한 부분이 잘려나가고 있었음"
+      "source": "스마트스토어 단위가격 표시제 의무화 공지 (2026-04-01 노출 시작 → 04-29 입력 필수화, 525개 카테고리)",
+      "topic": "생활건강·식품·화장품·출산육아·공구 등 525개 카테고리 상품에 단위가격(100g/10ml 등 기준 단위당 가격) 입력이 2026-04-29부터 필수화됨. 미입력 시 해당 상품의 '수정' 자체가 제한되는 것으로 확인.",
+      "angle": "반전형 target_callout — 지금까지 소진된 소재(재고방치, 반품불가 문구, 도착보장 풀필먼트, 등록한도, 자동크롭)와 겹치지 않는 신규 메커니즘. '나중에 하지 뭐' 하고 단위가격 입력을 미뤄두다가, 정작 가격/옵션을 수정하려는 순간 상품 수정 자체가 막혀 있는 걸 뒤늦게 발견하는 반전.",
+      "hook_idea": "화장품·식품 파는 스마트스토어 셀러한테만 하는 얘기. 단위가격 입력 귀찮아서 계속 미뤄두고 있었음. 근데 얼마 전 가격 수정하려고 들어갔더니 수정 버튼 자체가 안 먹었음"
     },
     {
-      "source": "AI 상세페이지 자동 생성 에디터 확산 — 컨버타(converta.co.kr), 드랩아트(카페24 스토어), aieditor.gabia.com",
-      "topic": "채팅으로 상품 정보만 입력하면 AI가 스마트스토어/쿠팡 상세페이지를 자동 제작하는 에디터들이 급증. 최신 버전은 리뷰 분석 후 소비자에게 가장 반응 좋은 카피·이미지를 자동 생성.",
-      "angle": "5부작 연재 2편(상세페이지 자동화) 핵심 근거 — 'AI 에디터가 상세페이지를 다 만들어준다'는 기대와 실제로 직접 써보고 손 본 경험 사이의 반전을 쓸 수 있는 소재.",
-      "hook_idea": "상세페이지 AI가 자동으로 만들어준다는 말 믿고 그대로 올렸다가 알게 된 것 하나 있음"
+      "source": "China consumers use AI to alter product photos, claim refunds for goods that appear damaged (South China Morning Post, 2025-11-29)",
+      "topic": "중국 소비자들이 정상 상품 사진을 AI로 조작해 파손된 것처럼 꾸며(과일에 곰팡이 합성, 새 칫솔을 녹슨 것처럼 변형, 의류에 실뜯김 추가 등) 전액 환불을 받아내는 사기 수법이 확산 중. 셀러들은 '상식에 안 맞는 손상 사진'으로 환불 요청을 받고 있으며 전문가들은 이를 사기로 규정.",
+      "angle": "AI×이커머스 논쟁형 저녁 소재 — '반품 사진 한 장 보고 그냥 환불 승인해주던' 관행 자체가 이제 위험해졌다는 반전. 국내 스마트스토어/쿠팡에도 동일 수법이 번질 수 있다는 논쟁 유발 가능. 5부작 연재의 다음 편(CS 자동응답)과 자연스럽게 이어지는 반품/CS 리스크 소재.",
+      "hook_idea": "반품 사진 보고 그냥 승인해주던 셀러한테만 하는 얘기. 중국에서는 멀쩡한 과일 사진을 AI로 곰팡이 핀 것처럼, 새 칫솔을 녹슨 것처럼 조작해서 전액 환불 받아내는 사례가 나옴. 반품 사진 하나로 판단하던 거 이제 못 믿게 됐음"
     },
     {
-      "source": "Claude Opus 5 출시 + Claude Code 이커머스 자동화 사례 (releasebot.io, adventuremedia.ai)",
-      "topic": "Claude Opus 5 출시 이후 Claude Code가 코딩/에이전트 랭킹 1위. Claude Code로 파일 읽기·스크립트 작성·API 호출까지 자동화하는 이커머스 활용 사례(자동화 아이디어 8가지)가 소개됨.",
-      "angle": "AI×이커머스 교차 경험담 — '플랫폼 기본 AI 에디터 대신 Claude로 직접 상세페이지 초안 생성 로직을 짜봤더니' 각도로 연재 2편에 결합 가능.",
-      "hook_idea": "스마트스토어 AI 에디터 말고 Claude로 상세페이지 초안을 직접 짜본 적 있음. 그러고 나서 알게 된 것"
-    },
-    {
-      "source": "AI 제품 사진 편집 시장 성장 데이터 (jenova.ai, photoroom.com)",
-      "topic": "AI 제품 사진 편집 시장이 2024년 21억 달러에서 2034년 89억 달러로 성장 전망. 기존 촬영비(세션당 200~5,000달러+) 대비 AI 도구가 60~70% 비용 절감. 브랜드 68%가 촬영 예산 초과 경험.",
-      "angle": "발색 보정(연재 3편 예정) 소재의 배경 근거로 예약 — 오늘 소재로는 미사용, 다음 편 소재 수집 시 참고.",
-      "hook_idea": "미채택(다음 편 예약)"
+      "source": "카페24 GEO(생성형 엔진 최적화) 도입 — ChatGPT/Gemini 유입 급증 발표 (2026-07-28)",
+      "topic": "카페24 2분기 생성형 AI 통한 쇼핑몰 방문이 전년比 72% 증가(ChatGPT 73%, Gemini 686%↑). PRO 이용자 대상 llms.txt·구조화 데이터(JSON-LD) 지원 시작.",
+      "angle": "미채택(오늘 소재로는 사용 안 함) — '해봤더니 반전' 구조를 만들기엔 아직 개인 경험담으로 연결할 실패/반전 지점이 부족. GEO 적용 후 실제 유입 변화를 직접 겪는 시점이 오면 소재로 재검토.",
+      "hook_idea": "미채택(예약)"
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "오늘 HN 상위는 'Decker(Hypercard 계승 플랫폼)', 'Amazon 캐노피 브릿지 로드킬 제로', '쉘 콜론(:)의 용도', 'Open-weight AI의 쿠버네티스 모먼트' 등 — 셀러 실무 연결 각도 없음, 전부 탈락",
-      "source": "Hacker News 2026-07-27/28",
-      "angle": "즉시 탈락 — 개발자 도구·인프라·환경 이슈 중심, 자사몰/이커머스 실무 무관",
+      "story": "오늘 HN 상위는 Anthropic 'Our position on open-weight models', JetBrains TeamCity 인증우회 취약점, AI 도움으로 발견된 리눅스 커널 root 익스플로잇(CVE-2026-53264), MS MDASH 사이버보안 AI 모델, OpenAI Codex Security, Hugging Face 자율 AI 에이전트 침해사고 등 — 전부 개발자/보안 인프라 중심",
+      "source": "Hacker News 2026-07-28/29 front page",
+      "angle": "즉시 탈락 — 보안 취약점·AI 모델 정책·개발자 도구 중심, 자사몰/이커머스 실무 연결 불가",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "target_callout·smartstore — '~하는 셀러한테만 하는 얘기' 공식 유지. 신규 메커니즘: AI 자동 이미지크롭/썸네일 편집 기능을 믿고 결과물을 확인하지 않다가 상품 사진의 로고·사이즈표·가격 강조 부분이 잘려나간 걸 늦게 발견 — 기존 소진 소재(재고방치, 등록한도, 도착보장 풀필먼트)와 달리 '이미지 자체가 자동화로 훼손'되는 지점.",
-    "hook": "썸네일 자동 편집 기능 켜놓고 결과물 확인 안 하던 셀러한테만 하는 얘기. AI가 알아서 잘라준다고 믿었는데 정작 중요한 부분이 잘려나가고 있었음",
-    "source": "카페24 에디봇 AI 이미지 크롭 기능 (news.cafe24.com, thevaluenews.co.kr)",
+    "angle": "target_callout·smartstore — '~하는 셀러한테만 하는 얘기' 공식 유지. 신규 메커니즘: 단위가격 표시(생활건강·식품·화장품·출산육아·공구 525개 카테고리) 입력을 미뤄두다가, 나중에 상품 정보를 수정하려는 순간 수정 자체가 막혀 있는 걸 뒤늦게 발견 — 기존 소진 소재(재고방치, 반품불가 문구, 도착보장 풀필먼트, 등록한도, 자동크롭)와 겹치지 않는 새 지점.",
+    "hook": "화장품·식품 파는 스마트스토어 셀러한테만 하는 얘기. 단위가격 입력 귀찮아서 계속 미뤄두고 있었음. 근데 얼마 전 가격 좀 고치려고 들어갔더니 수정 버튼 자체가 안 먹었음. 4월 29일부터 단위가격 안 넣어두면 상품 수정을 아예 막아버리는 거였음.",
+    "source": "스마트스토어 단위가격 표시제 의무화 공지 (2026-04-29 시행, 525개 카테고리)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "5부작 연재 2/5 — 상세페이지 자동화. AI 상세페이지 자동생성 에디터(에디봇/컨버타/드랩아트) 확산 트렌드 + Claude Code/Opus 5로 직접 상세페이지 초안을 자동 생성해본 경험담 결합. 클리프행어로 다음 편(발색 보정) 예고 필요.",
-    "hook": "상세페이지 AI가 자동으로 만들어준다는 말 믿고 그대로 올렸다가 알게 된 것 하나 있음",
-    "source": "AI 상세페이지 자동 생성 에디터 확산(카페24 에디봇, 컨버타, 드랩아트) + Claude Opus 5/Claude Code 이커머스 자동화 사례",
+    "angle": "5부작 연재 3편격 — 반품/CS 리스크. AI로 조작된 손상 사진을 이용한 환불 사기 확산(중국 사례) + '반품 사진 한 장 보고 그냥 승인해주던' 국내 셀러 관행에 대한 논쟁 유발. 다음 편(CS 자동응답, 4편)으로 자연스럽게 이어지는 클리프행어 필요.",
+    "hook": "반품 사진 보고 그냥 승인해주던 셀러한테만 하는 얘기. 최근에 알았는데 중국에서는 멀쩡한 과일 사진을 AI로 곰팡이 핀 것처럼, 새 칫솔을 녹슨 것처럼 조작해서 전액 환불 받아내는 사례가 나오고 있음. 반품 사진 하나로 판단하던 거, 이제 다시 봐야 할 때인 듯.",
+    "controversy": "반품 사진 검증을 강화해야 한다 vs 소비자 신뢰 기반 프로세스를 유지해야 한다 — 셀러들 사이 CS 정책 논쟁 유발 가능. '한국은 아직 아니다'라는 반박도 나올 수 있어 댓글 유도에 유리.",
+    "source": "South China Morning Post, 'China consumers use AI to alter product photos, claim refunds for goods that appear damaged' (2025-11-29)",
     "topic_tag": "AI_THREADS",
-    "series_note": "5부작 연재 2/5 — 상세페이지 자동화. 마지막 줄에 '내일은 발색 보정 얘기' 클리프행어 + 팔로우 유도 필수 (strategic_review.next_2weeks_focus 지침)"
+    "series_note": "5부작 연재 3편 소재로 사용 가능. 어제 예약했던 발색보정(AI 제품사진 시장성장 데이터) 소재는 07-21 포스트와 겹쳐 스킵하고 반품/CS 리스크로 대체함 — 다음 편(4편, CS 자동응답)과 자연스럽게 연결됨. 마지막 줄에 '내일은 CS 자동응답 얘기' 클리프행어 + 팔로우 유도 한 줄 필수 (strategic_review.next_2weeks_focus 지침)."
   },
   "metadata": {
-    "collected_at": "2026-07-28",
+    "collected_at": "2026-07-29",
     "agent": "trend-scout",
     "status": "normal",
     "directives_applied": [
       "team_signal status=normal, directives.trend_scout='평소대로' 확인",
-      "strategic_review.next_2weeks_focus의 저녁 5부작 연재 지침을 상위 전략으로 반영 — posts.json에서 07-27=1편(재고 알림) 발행 확인 → 오늘을 2편(상세페이지 자동화) 시작일로 판단",
-      "오전은 기존 검증 포맷(target_callout·smartstore) 유지, 저녁 시리즈가 예약한 상세페이지/발색보정 소재와 중복되지 않는 신규 메커니즘(AI 자동 이미지크롭 훼손)으로 수집",
-      "GitHub Trending 확인 — 오늘도 개발자 도구/에이전트 프레임워크 위주라 셀러 경험담 각도 미채택",
-      "HackerNews 확인 — Hypercard 계승 플랫폼/로드킬/쉘 문법/오픈웨이트 AI 이슈 위주, 셀러 실무 연결 불가로 전부 탈락",
+      "strategic_review.json(2026-07-27, 14일 유효)의 next_2weeks_focus를 상위 전략으로 유지 — 저녁 슬롯 5부작 연재(재고알림→상세페이지→발색보정→CS자동응답→매출리포트) 지속, team_signal의 '저녁 en/amazon 탐색' 지시보다 우선 적용",
+      "posts.json 확인 결과 07-27=1편, 07-28=2편 계열(이미지/썸네일 자동화) → 오늘을 3편 성격의 소재로 판단하되, 예약해둔 발색보정 소재는 07-21 포스트와 중복돼 반품/CS 리스크(AI 조작 환불사진) 소재로 대체",
+      "오전은 기존 검증 포맷(target_callout·smartstore) 유지, 소진된 메커니즘(재고방치·반품불가문구·도착보장풀필먼트·등록한도·자동크롭)과 겹치지 않는 신규 소재(단위가격 표시 의무화)로 수집",
+      "GitHub Trending 확인 — 오늘도 개발자 도구 위주라 셀러 경험담 각도 미채택",
+      "HackerNews 확인 — Anthropic 성명/보안취약점/AI에이전트 침해사고 등 개발자·보안 인프라 중심, 셀러 실무 연결 불가로 전부 탈락",
       "dead arm(contrarian·ai_general, other·ai_general, other·other) 오늘도 배제",
-      "AI 제품사진 시장 성장 데이터는 발색보정(연재 3편) 소재로 예약, 오늘 소재로는 미사용"
+      "카페24 GEO(생성형 엔진 최적화) 발표는 개인 경험담 반전 지점이 아직 부족해 오늘 소재로는 미채택, 추후 재검토"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://news.ycombinator.com",
-      "카페24 에디봇 AI 이미지 크롭 기능(news.cafe24.com, thevaluenews.co.kr)",
-      "AI 상세페이지 자동 생성 에디터(converta.co.kr, aieditor.gabia.com, 드랩아트/카페24 스토어)",
-      "AI 제품 사진 편집 시장 성장 데이터(jenova.ai, photoroom.com)",
-      "Claude Opus 5/Claude Code 이커머스 자동화 사례(releasebot.io, adventuremedia.ai)"
+      "스마트스토어 단위가격 표시제 공지(gongu.onch3.co.kr, silmupack.com)",
+      "쿠팡 로켓그로스 정산/입고중단 논란(bizhankook.com, heraldcorp.com, cbci.co.kr)",
+      "카페24 GEO/AI 유입 72%↑ 발표(edaily.co.kr, hansbiz.co.kr)",
+      "AI 고객응대 자동화 동향(windyflo.com, impactflow.kr, conferbot.com)",
+      "South China Morning Post, AI 조작 반품사진 환불사기 기사(scmp.com, 2025-11-29)"
     ]
   }
 }
