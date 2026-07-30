@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전: target_callout·marketing·ko 앵글 1개 ('~마케팅 하는 셀러한테만' 훅, 퍼널 관점) + 대조군으로 검증된 target_callout·smartstore 앵글 1개, A/B로 비교. 저녁: other·amazon·en 앵글 탐색 (아마존 셀러 대상, 영어). contrarian·ai_general / other·ai_general / other·other 앵글은 죽은 arm이니 오늘은 스킵. 판단 기준은 좋아요·조회 아니고 다음날 팔로워 순증.",
+  "weekly_focus": "오전: target_callout 훅('~하는 셀러한테만 하는 얘기') 유지하되 소재는 마케팅 각도로(탐색, 라벨 추정 상태라 단정 금지) — 다음 기회에 스마트스토어/마케팅/아마존 중 대조군 하나로 검증 이어갈 것. 저녁: 쿠팡/기타 대신 아마존 소재를 영어로(탐색). 공통 금지: contrarian·ai_general, other·ai_general/coupang/other 앵글(죽은 arm), 자사몰/카페24, 추상적 AI 미래론. 목표는 좋아요가 아니라 팔로워 순증임을 명심",
   "recommended_topics": [
-    "AI tools automation",
-    "디지털마케팅",
-    "퍼스널브랜딩"
+    "자동화/노코드",
+    "스타트업",
+    "이커머스"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'~하는 셀러한테만 하는 얘기' 콜아웃 훅 + 스마트스토어/쿠팡 등 구체적 플랫폼·상황 지목 (틴트 상세페이지, 로켓그로스, 반품정책 등 실무 디테일)",
-  "worst_post_style": "contrarian·ai_general, other·ai_general, other·other 앵글 - 표본 적어도 실패율 50%+ 죽은 arm",
+  "best_post_style": "'~하는 셀러한테만 하는 얘기' 타겟콜아웃 훅 + 스마트스토어/쿠팡 구체 실무 사례. 원장 기준 실제 팔로워 끈 arm(오전·ko·target_callout·smartstore, +104/n=13)과 일치, 반복 재현할 것",
+  "worst_post_style": "contrarian·ai_general, other·ai_general/coupang/other 계열 — 원장상 죽은 arm(실패율 50%+), 좋아요는 나올 수 있어도 팔로워 전환 안 됨(오전·ko·contrarian·ai_general이 인게이지 1위인데도 죽은 arm인 게 그 증거)",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "AI tools automation",
-    "디지털마케팅",
-    "퍼스널브랜딩"
+    "자동화/노코드",
+    "스타트업",
+    "이커머스"
   ],
-  "alert": "오늘은 순증 확인된 날 - target_callout·smartstore 앵글이 팔로워 끄는 거 재확인됐고, 댓글 키워드는 아직 다 hit rate 0%라 표본 더 쌓아야 함",
-  "generated_at": "2026-07-30"
+  "alert": "정상 성장 유지(258→266, 19일 +0.4/일) — 상위 포스트는 전부 target_callout·스마트스토어/쿠팡 계열인데, 테스트한 댓글 키워드 5개(디지털마케팅·온라인창업·AI tools automation·퍼스널브랜딩·부업)는 전부 팔로워 전환 0",
+  "generated_at": "2026-07-31"
 }
