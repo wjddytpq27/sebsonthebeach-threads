@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-07-31",
+  "updated_at": "2026-08-01",
   "daily_deltas": [
-    {
-      "date": "2026-07-16",
-      "followers": 258,
-      "delta": 1
-    },
     {
       "date": "2026-07-17",
       "followers": 258,
@@ -70,6 +65,11 @@
       "date": "2026-07-30",
       "followers": 266,
       "delta": 2
+    },
+    {
+      "date": "2026-08-01",
+      "followers": 269,
+      "delta": 3
     }
   ],
   "follow_drivers": [
@@ -107,6 +107,15 @@
       "engagement_score": 18,
       "views": 2619,
       "follower_delta_next_day": 4,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-07-31",
+      "text_preview": "스마트스토어에서 포토리뷰 적립금 이벤트 돌리던 셀러한테만 하는 얘기. 나도 이런 건 리뷰 조작이랑 다르다고 ",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 11,
+      "views": 990,
+      "follower_delta_next_day": 3,
       "attribution_confidence": "high"
     },
     {
@@ -351,7 +360,7 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 3.4166666666666665,
+    "ecommerce_tip": 3.4,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
