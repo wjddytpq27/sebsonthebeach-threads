@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전: target_callout·smartstore 각도 재현 우선(검증된 팔로워 arm, +107/n=14) — '~하는 셀러한테만 하는 얘기' 훅 유지. 대조군으로 target_callout·marketing 또는 other·marketing 1개 병행 테스트(라벨 아직 추정치라 검증 필요). 저녁: other·amazon·en 탐색(우세 추정이나 미검증) — 대조군 없이 단독 실행하지 말고 다음 사이클에 대조 arm과 비교. 절대 피할 것: contrarian·ai_general, other·ai_general, other·coupang, other·other (죽은 arm, 실패율 50%+). 상태 정상이라 훅 강도는 평소 수준 유지, 자사몰/카페레24·추상적 AI 미래론 금지.",
+  "weekly_focus": "오전 1개는 검증된 arm 재현: target_callout·smartstore/coupang 스타일('OO한테만 하는 얘기' + 구체적 셀러 실무 디테일) 그대로 유지. 오전 나머지 1개는 탐색용으로 target_callout·marketing(플랫폼 특정 없이 마케팅 실무자 타겟) 앵글 A/B 테스트, 대조군은 other·marketing 또는 target_callout·amazon 중 택1. 저녁은 other·amazon·en 앵글로 영어권 아마존 셀러 타겟 탐색. 절대 피할 것: contrarian·ai_general 같은 추상 AI 반박형, other·coupang/ai_general/other 같은 애매한 타겟 — 좋아요 잘 나와도 팔로워 전환 안 되는 죽은 arm이니 훅만 세게 가지 말고 반드시 '구체적 타겟 콜아웃' 유지해라.",
   "recommended_topics": [
-    "스마트스토어",
-    "쿠팡",
-    "이커머스"
+    "이커머스",
+    "재테크/투자",
+    "스타트업"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "오전·한국어·타겟콜아웃(~한테만 하는 얘기)+스마트스토어/쿠팡 소재 — 원장상 실제 팔로워 +107(n=14)로 확인된 유일한 arm. 상위 포스트 3개 전부 이 패턴.",
-  "worst_post_style": "오전·기타톤(contrarian/other)+AI_general·쿠팡·기타 조합은 실패율 50%+ 죽은 arm — 반복 금지.",
+  "best_post_style": "구체적 셀러 타겟 콜아웃('OO한테만 하는 얘기') + 스마트스토어/쿠팡 특정 실무 디테일(발색 보정, 로켓그로스 방치, 반품 문구 방치) — 팔로워 순증 검증된 arm(+107, n=14)과 일치",
+  "worst_post_style": "추상적 AI 일반론이나 애매한 타겟(contrarian·ai_general, other·coupang/ai_general/other) — 실패율 50%+ 죽은 arm",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "스마트스토어",
-    "쿠팡",
-    "이커머스"
+    "이커머스",
+    "재테크/투자",
+    "스타트업"
   ],
-  "alert": "팔로워 258→269(19일 +0.6/일), 오늘도 순증 확인 — 정상 궤도. 단 검증 중인 원장 기준으론 팔로워 끈 건 오전·타겟콜아웃·스마트스토어뿐, 나머지 키워드는 아직 팔로워 전환 증거 없음.",
+  "alert": "오늘 팔로워 순증 확인(258→269, +0.6/일)됐고 팔로워 끄는 진짜 arm은 오전·타겟콜아웃·스마트스토어/쿠팡 — 인게이지 높은 arm(contrarian·ai_general)이랑 다르니 좋아요 말고 팔로워 기준으로 판단해라.",
   "generated_at": "2026-08-01"
 }
