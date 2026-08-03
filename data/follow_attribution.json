@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-08-02",
+  "updated_at": "2026-08-04",
   "daily_deltas": [
-    {
-      "date": "2026-07-18",
-      "followers": 257,
-      "delta": -1
-    },
     {
       "date": "2026-07-19",
       "followers": 258,
@@ -70,6 +65,11 @@
       "date": "2026-08-02",
       "followers": 269,
       "delta": 0
+    },
+    {
+      "date": "2026-08-04",
+      "followers": 270,
+      "delta": 1
     }
   ],
   "follow_drivers": [
@@ -113,8 +113,8 @@
       "post_date": "2026-07-31",
       "text_preview": "스마트스토어에서 포토리뷰 적립금 이벤트 돌리던 셀러한테만 하는 얘기. 나도 이런 건 리뷰 조작이랑 다르다고 ",
       "content_type": "ecommerce_tip",
-      "engagement_score": 12,
-      "views": 1446,
+      "engagement_score": 13,
+      "views": 1479,
       "follower_delta_next_day": 3,
       "attribution_confidence": "high"
     },
@@ -160,6 +160,15 @@
       "content_type": "ecommerce_tip",
       "engagement_score": 14,
       "views": 431,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-08-03",
+      "text_preview": "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 반품비 3천원씩 빠지는 건 예전에 확인해서 알고 있었음. 근데 ",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 23,
+      "views": 1147,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
@@ -360,10 +369,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 3.4,
+    "ecommerce_tip": 3.3076923076923075,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 2.87,
+  "avg_followers_per_post": 2.81,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }
