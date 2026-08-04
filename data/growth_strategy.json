@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전: target_callout·marketing·ko 앵글 우선 재현 (스마트스토어/쿠팡 셀러 콜아웃 + 구체 수치 디테일, 실제 팔로워 끈 조합) — 라벨이 추정치라 대조군으로 target_callout·smartstore 또는 other·marketing 중 1개 병행 A/B. 저녁: other·amazon·en 탐색 (우세 추정이나 미검증, n 쌓기용으로 시도). 절대 피할 것: contrarian·ai_general, other·ai_general, other·coupang, other·other 조합 — 죽은 arm.",
+  "weekly_focus": "오전 2개 슬롯: ①target_callout·smartstore 재현(쿠팡/스마트스토어처럼 셀러군 콕 집어 부르고 몰랐던 실무 디테일 폭로 - 실증된 팔로워 arm) ②target_callout·marketing 탐색(라벨 추정이라 단정 금지, other·marketing 또는 target_callout·amazon 중 하나를 대조군으로 붙여 A/B). 저녁: other·amazon·en 탐색(라벨 추정, 검증 목적으로만 1개). contrarian·ai_general, 저녁·other·ai_general, 오전·other·coupang/ai_general/other 각도는 죽은 arm이니 사용 금지. 훅 강도는 평소 수준(정체 1일차, stall/emergency 아님).",
   "recommended_topics": [
-    "온라인창업/1인기업",
-    "퍼스널브랜딩",
-    "부업/N잡"
+    "쿠팡 로켓그로스",
+    "스마트스토어 셀러",
+    "이커머스 재고관리"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'~하는 셀러한테만 하는 얘기' 콜아웃 오프닝 + 스마트스토어/쿠팡 로켓그로스 구체 디테일(반품비, 상세페이지 발색 등) — 아침·한글·target_callout이 실제 팔로워 순증(+107, n=14) 낸 유일한 arm.",
-  "worst_post_style": "앵글 애매한 'other' 톤 + 추상적 ai_general/coupang 소재 (아침 other·coupang, other·ai_general, other·other, 저녁 other·ai_general, 아침 contrarian·ai_general — 전부 실패율 50%+ 죽은 arm).",
+  "best_post_style": "쿠팡 로켓그로스/스마트스토어처럼 특정 셀러군을 콕 집어 부르고 그들만 모르는 디테일(반품비, 팔레트 처리, 포토리뷰 리스크)을 폭로하는 target_callout형. 실제 팔로워 견인 arm(오전·ko·target_callout·smartstore, +107, n=14)과 일치.",
+  "worst_post_style": "특정 타겟 없는 other·ai_general/coupang/other 일반론 각도 - 죽은 arm(실패율 50%+)",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "온라인창업/1인기업",
-    "퍼스널브랜딩",
-    "부업/N잡"
+    "쿠팡 로켓그로스",
+    "스마트스토어 셀러",
+    "이커머스 재고관리"
   ],
-  "alert": "순증 이어감(+0.7/일 19일 평균, 오늘도 성장 확인) — 근데 인게이지 키워드는 전부 다음날 팔로워 전환 0, 팔로워 진짜 끈 건 아침·한글·target_callout(스마트스토어/쿠팡) 조합뿐이라 이거 재현이 우선.",
-  "generated_at": "2026-08-04"
+  "alert": "정상 상태, 팔로워 +12(19일, +0.7/일) 완만한 우상향. 상위 포스트는 target_callout형이 견인 중인데 댓글 키워드 5개는 전부 팔로워 전환 0 - 인게이지 각도 전환 필요.",
+  "generated_at": "2026-08-05"
 }

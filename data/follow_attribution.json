@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-08-05",
   "daily_deltas": [
-    {
-      "date": "2026-07-19",
-      "followers": 258,
-      "delta": 1
-    },
     {
       "date": "2026-07-20",
       "followers": 258,
@@ -70,6 +65,11 @@
       "date": "2026-08-04",
       "followers": 270,
       "delta": 1
+    },
+    {
+      "date": "2026-08-05",
+      "followers": 269,
+      "delta": -1
     }
   ],
   "follow_drivers": [
@@ -167,8 +167,8 @@
       "post_date": "2026-08-03",
       "text_preview": "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 반품비 3천원씩 빠지는 건 예전에 확인해서 알고 있었음. 근데 ",
       "content_type": "ecommerce_tip",
-      "engagement_score": 23,
-      "views": 1147,
+      "engagement_score": 26,
+      "views": 1630,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
