@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전 2개 슬롯: ①target_callout·smartstore 재현(쿠팡/스마트스토어처럼 셀러군 콕 집어 부르고 몰랐던 실무 디테일 폭로 - 실증된 팔로워 arm) ②target_callout·marketing 탐색(라벨 추정이라 단정 금지, other·marketing 또는 target_callout·amazon 중 하나를 대조군으로 붙여 A/B). 저녁: other·amazon·en 탐색(라벨 추정, 검증 목적으로만 1개). contrarian·ai_general, 저녁·other·ai_general, 오전·other·coupang/ai_general/other 각도는 죽은 arm이니 사용 금지. 훅 강도는 평소 수준(정체 1일차, stall/emergency 아님).",
+  "weekly_focus": "오전 슬롯: target_callout·marketing·ko 각도로 1개 + 대조군으로 target_callout·smartstore(실제 팔로워 견인 검증된 arm, +107/n=14) 각도로 1개 써서 A/B 비교 — 둘 다 '~하는 셀러한테만 하는 얘기' 훅 유지하고 구체적 수치 포함. 저녁 슬롯: other·amazon·en 각도로 탐색(라벨 추정 상태라 검증 필요). 절대 금지: contrarian·ai_general(인게이지먼트만 높고 팔로워 전환 0, 죽은 arm), 쿠팡/AI 일반론(other·coupang, other·ai_general, other·other, 자사몰/카페24, 추상적 AI 미래론)",
   "recommended_topics": [
-    "쿠팡 로켓그로스",
-    "스마트스토어 셀러",
-    "이커머스 재고관리"
+    "스마트스토어",
+    "쿠팡",
+    "이커머스 셀러 실무"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "쿠팡 로켓그로스/스마트스토어처럼 특정 셀러군을 콕 집어 부르고 그들만 모르는 디테일(반품비, 팔레트 처리, 포토리뷰 리스크)을 폭로하는 target_callout형. 실제 팔로워 견인 arm(오전·ko·target_callout·smartstore, +107, n=14)과 일치.",
-  "worst_post_style": "특정 타겟 없는 other·ai_general/coupang/other 일반론 각도 - 죽은 arm(실패율 50%+)",
+  "best_post_style": "쿠팡 로켓그로스/스마트스토어 등 특정 셀러군을 콕 집어 부르고('~하는 셀러한테만 하는 얘기') 그들만 아는 디테일(반품비 3천원, 포토리뷰 리스크 등 구체적 수치)을 폭로하는 target_callout형. 실제 팔로워 견인 arm과 일치(n=14, +107).",
+  "worst_post_style": "특정 타겟 없는 쿠팡/AI 일반론(other·ai_general/coupang/other)과 contrarian·ai_general — 인게이지먼트는 높아도 팔로워 실패율 50%+인 죽은 arm",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "쿠팡 로켓그로스",
-    "스마트스토어 셀러",
-    "이커머스 재고관리"
+    "스마트스토어",
+    "쿠팡",
+    "이커머스 셀러 실무"
   ],
-  "alert": "정상 상태, 팔로워 +12(19일, +0.7/일) 완만한 우상향. 상위 포스트는 target_callout형이 견인 중인데 댓글 키워드 5개는 전부 팔로워 전환 0 - 인게이지 각도 전환 필요.",
-  "generated_at": "2026-08-05"
+  "alert": "정상이지만 1일째 정체 조짐 — 팔로워를 실제로 끈 arm(오전·ko·target_callout·smartstore, +107)과 인게이지먼트만 높은 arm(오전·ko·contrarian·ai_general, reward 41.9인데 동시에 죽은 arm)이 정반대다. 좋아요 말고 팔로워 기준으로 판단해야 함.",
+  "generated_at": "2026-08-06"
 }

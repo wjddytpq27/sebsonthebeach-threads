@@ -1,20 +1,20 @@
 {
   "status": "normal",
   "days_since_growth": 1,
-  "follower_trend": "257→269 (19일, 일평균 +0.7)",
+  "follower_trend": "258→269 (18일, 일평균 +0.7)",
   "best_performing": {
-    "avg_score": 17.3,
+    "avg_score": 15.0,
     "examples": [
       "쿠팡 로켓그로스 쓰는 셀러한테만 하는 얘기. 반품비 3천원씩 빠지는 건 예전에 확인해서 알고 있었음. 근데 ",
-      "쿠팡 로켓그로스로 입고만 해두면 쿠팡이 알아서 다 처리해준다고 편하게 생각하던 셀러한테만 하는 얘기. 팔레트",
-      "스마트스토어에서 포토리뷰 적립금 이벤트 돌리던 셀러한테만 하는 얘기. 나도 이런 건 리뷰 조작이랑 다르다고 "
+      "스마트스토어에서 포토리뷰 적립금 이벤트 돌리던 셀러한테만 하는 얘기. 나도 이런 건 리뷰 조작이랑 다르다고 ",
+      "쿠팡에서 상품명에 '무신사 인기템이랑 똑같음', '테무보다 저렴함' 이런 식으로 경쟁사 언급하면서 팔던 셀러"
     ],
-    "style": "쿠팡 로켓그로스/스마트스토어처럼 특정 셀러군을 콕 집어 부르고 그들만 모르는 디테일(반품비, 팔레트 처리, 포토리뷰 리스크)을 폭로하는 target_callout형. 실제 팔로워 견인 arm(오전·ko·target_callout·smartstore, +107, n=14)과 일치."
+    "style": "쿠팡 로켓그로스/스마트스토어 등 특정 셀러군을 콕 집어 부르고('~하는 셀러한테만 하는 얘기') 그들만 아는 디테일(반품비 3천원, 포토리뷰 리스크 등 구체적 수치)을 폭로하는 target_callout형. 실제 팔로워 견인 arm과 일치(n=14, +107)."
   },
   "worst_performing": {
     "avg_score": 0,
     "count": 0,
-    "style": "특정 타겟 없는 other·ai_general/coupang/other 일반론 각도 - 죽은 arm(실패율 50%+)"
+    "style": "특정 타겟 없는 쿠팡/AI 일반론(other·ai_general/coupang/other)과 contrarian·ai_general — 인게이지먼트는 높아도 팔로워 실패율 50%+인 죽은 arm"
   },
   "keyword_performance": {
     "AI활용": {
@@ -244,17 +244,17 @@
     }
   },
   "top_search_keywords": [
-    "쿠팡 로켓그로스",
-    "스마트스토어 셀러",
-    "이커머스 재고관리"
+    "스마트스토어",
+    "쿠팡",
+    "이커머스 셀러 실무"
   ],
   "directives": {
     "trend_scout": "평소대로",
-    "viral_writer": "오전 2개 슬롯: ①target_callout·smartstore 재현(쿠팡/스마트스토어처럼 셀러군 콕 집어 부르고 몰랐던 실무 디테일 폭로 - 실증된 팔로워 arm) ②target_callout·marketing 탐색(라벨 추정이라 단정 금지, other·marketing 또는 target_callout·amazon 중 하나를 대조군으로 붙여 A/B). 저녁: other·amazon·en 탐색(라벨 추정, 검증 목적으로만 1개). contrarian·ai_general, 저녁·other·ai_general, 오전·other·coupang/ai_general/other 각도는 죽은 arm이니 사용 금지. 훅 강도는 평소 수준(정체 1일차, stall/emergency 아님).",
-    "hunter_engager": "목표 20개 내외(평소 기준). 기존 키워드 디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업은 전부 팔로워 전환 hit=0이니 비중 축소하고, 실제 팔로워 견인 콘텐츠와 맞는 쿠팡 로켓그로스/스마트스토어 셀러/이커머스 재고관리 키워드로 탐색 전환. 영어 비중 20% 내외, 저녁 other·amazon·en 탐색과 맞춰 영어권 계정 일부 포함."
+    "viral_writer": "오전 슬롯: target_callout·marketing·ko 각도로 1개 + 대조군으로 target_callout·smartstore(실제 팔로워 견인 검증된 arm, +107/n=14) 각도로 1개 써서 A/B 비교 — 둘 다 '~하는 셀러한테만 하는 얘기' 훅 유지하고 구체적 수치 포함. 저녁 슬롯: other·amazon·en 각도로 탐색(라벨 추정 상태라 검증 필요). 절대 금지: contrarian·ai_general(인게이지먼트만 높고 팔로워 전환 0, 죽은 arm), 쿠팡/AI 일반론(other·coupang, other·ai_general, other·other, 자사몰/카페24, 추상적 AI 미래론)",
+    "hunter_engager": "목표 20개 (정상 기준). 우선 키워드는 기존 디지털마케팅/온라인창업/AI tools automation/퍼스널브랜딩/부업 — 5개 전부 팔로워 전환 hit rate 0.0이라 신뢰도 낮음, 절반은 실제 팔로워 견인 arm과 일치하는 스마트스토어·쿠팡·이커머스 셀러 실무 키워드로 탐색 전환할 것. 영어 비중 20~30%."
   },
-  "team_memo": "정상 상태, 팔로워 +12(19일, +0.7/일) 완만한 우상향. 상위 포스트는 target_callout형이 견인 중인데 댓글 키워드 5개는 전부 팔로워 전환 0 - 인게이지 각도 전환 필요.",
-  "devil_advocate": "normal은 절대 아니지. 19일간 +13명, 일평균 0.7명이면 계정이 사실상 죽어있는 수준인데 이걸 \"정상\"이라고 부르는 거 자체가 기준이 너무 낮게 잡혀 있는 거 아냐?\n\n그리고 \"잘 된 포스트\"라고 뽑은 것도 n=14짜리 target_callout 한 개 arm에서 나온 거고, 다른 arm들(other/ai_general 등)은 전부 hit_rate 0%로 죽어있어 — 이건 재현 가능한 패턴이 아니라 그냥 살아있는 유일한 실험이 우연히 버틴 걸로 보이는데, 표본 하나로 \"패턴 확인\"이라고 부르긴 이르지 않아? keyword_performance 보면 거의 모든 키워드 hit_rate가 0.0인데 engagement가 팔로워 증가에 진짜 기여하고 있다는 증거가 하나도 없잖아.\n\n이 속도(+0.7/일)를 30일 유지하면 257→290 정도밖에 안 되는데, 그 사이 \"잘 되는 포맷\" 하나만 반복하면 피로도 때문에 오히려 꺾일 수도 있어. \"안 된 포스트 0개\"는 실패를 인정 안 한 게 아니라 실험을 충분히 다양하게 안 돌려서 실패할 기회 자체가 없었던 거 아닌지 의심해봐야 해.",
+  "team_memo": "정상이지만 1일째 정체 조짐 — 팔로워를 실제로 끈 arm(오전·ko·target_callout·smartstore, +107)과 인게이지먼트만 높은 arm(오전·ko·contrarian·ai_general, reward 41.9인데 동시에 죽은 arm)이 정반대다. 좋아요 말고 팔로워 기준으로 판단해야 함.",
+  "devil_advocate": "일평균 +0.7이 \"normal\"이면 기준이 너무 낮게 잡힌 거 아니야? 이 속도로 30일 더 가면 269+21=290명, 겨우 두 자릿수 후반 늘어나는 걸로 \"정상\"이라 부르는 건 정체를 정체라고 부르기 싫어서 이름만 바꾼 거지.\n\n그리고 잘 됐다는 포스트 세 개 다 \"특정 플랫폼 셀러 대상 실전 폭로성 팁\"이라는 같은 패턴인데, 이게 우연히 3번 겹친 건지 진짜 재현 가능한 각인지 검증한 거야? 안 됐다는 포스트가 0개라는 것도 의심스러워 — 진짜 다 반응 좋았던 게 아니라 \"안 됐다\"를 판단할 기준 자체가 없는 거 아니냐고.\n\n이대로 가면 30일 후엔 \"성장은 하고 있다\"는 착각 속에서 여전히 300명 근처일 거고, viral-writer랑 hunter-engager는 normal 신호 받아서 지금 수준 그대로 유지할 텐데 — 그게 진짜 목표야?",
   "ledger": {
     "north_star": {
       "gain": 5,
@@ -472,5 +472,5 @@
       }
     ]
   },
-  "updated_at": "2026-08-05"
+  "updated_at": "2026-08-06"
 }
