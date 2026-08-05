@@ -502,5 +502,13 @@
     "fact_checked": true,
     "fact_check_status": "block",
     "blocked": true
+  },
+  {
+    "date": "2026-08-05",
+    "content": "스마트스토어 문의 좀 늦게 답해도 되는 줄 알던 셀러한테만 하는 얘기. 나도 주말 지나고 월요일에 몰아서 답장하는 게 습관이었음. 근데 얼마 전부터 답변 계속 늦추면 경고 뜨고 심하면 판매까지 막힐 수 있다는 얘기가 셀러들 사이에 돌고 있었음. 나처럼 그냥 좀 느긋했던 사람도 걸릴 수 있는 기준이더라. CS를 천천히 해도 되는 일이 아니라 기한 있는 일로 다시 봐야 하는 거였음",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "정확한 기준은 계정마다 판매자센터 공지 문구로 직접 확인해보는 게 제일 정확함",
+    "fact_checked": true,
+    "fact_check_status": "pass"
   }
 ]
