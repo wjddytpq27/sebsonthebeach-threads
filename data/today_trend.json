@@ -1,75 +1,77 @@
 {
-  "date": "2026-08-05",
-  "signal_applied": "team_signal status=normal(257→269, 19일 일평균+0.7). directives.trend_scout='평소대로' 적용 — devil_advocate가 이 속도를 normal로 부르는 것과 best_follower_arm(오전·ko·target_callout·smartstore, +107명/n=14)의 표본 부족을 지적했으나, 이는 growth-analyst/strategic_review(스레드 체인 실험) 영역이라 오늘 trend-scout 소재 선정에는 직접 반영하지 않음 — 포맷은 target_callout 유지, 소재만 신선도 확보. posts.json 71개 전체 재확인 — 재고방치·반품승인·정산속도착각·반품불가문구·발색보정·KPP회송·선재고보관료·도착보장풀필먼트·자동크롭·단위가격표시·상품명금지어·리뷰조작어뷰징·반품비3천원·반출비300원·AI검색알고리즘키워드무용화·최저가자동맞춤·CS챗봇(고객 응대 자동화 경험)·AI에이전트권한범위/자동승인·검증지시범위(08-04)·등록한도자동축소/좀비상품(08-04)까지 전부 소진 확인 — 오늘은 이 목록과 겹치지 않는 신규 메커니즘(스마트스토어 CS 답변지연 제재 강화, Claude Opus 5 OSWorld 2.0 화면 조작 자동화)으로 차별화.",
+  "date": "2026-08-06",
+  "signal_applied": "team_signal status=normal(258→269, 18일 일평균+0.7), directives.trend_scout='평소대로' 적용. bandit.slots.evening.recommend가 hook_style=other/topic_theme=amazon/lang=en(explore, score 1.835, 근거: arm 'evening|en|other|amazon' n=1이지만 avg_reward 20.0/follower_gain 5로 유일하게 저녁 슬롯에서 팔로워 전환된 arm)을 지목 — 이 arm을 오늘 저녁 소재로 재현 시도. 오전은 best_follower_arm(target_callout·smartstore, +107/n=14) 포맷 유지하되 소재는 신규. posts.json 72개 전체 재확인 — 재고방치·반품승인·정산속도착각·반품불가문구·발색보정·KPP회송·선재고보관료·도착보장풀필먼트·자동크롭·단위가격표시·상품명금지어·리뷰조작어뷰징·반품비3천원·반출비300원·AI검색알고리즘키워드무용화·최저가자동맞춤·CS챗봇·AI에이전트권한범위·검증지시범위(08-04)·등록한도자동축소/좀비상품(08-04)·CS답변지연제재(08-05)·Opus5 OSWorld 화면조작(08-05)까지 소진 확인 — 오늘은 미소진 메커니즘(구매대행 안전관리 책임 확대, 아마존 AI 에이전트 리프라이싱 공식 정책)으로 차별화.",
   "github_hot": [
     {
-      "repo": "미채택 — GitHub Trending/OSSInsight 상위 여전히 Hermes-Agent/AutoGPT/Langflow/Dify 등 멀티에이전트 오케스트레이션·비주얼 빌더 프레임워크 중심",
+      "repo": "미채택 — GitHub Trending 상위 여전히 Langflow/Dify/Flowise 등 비주얼 빌더, OpenClaw(9천→38만 스타) 등 멀티에이전트 코딩 하네스 중심",
       "stars_today": 0,
-      "why_hot": "개발자 인프라 도구라 셀러 실무 경험담 전환 지점 부재 — 08-03/08-04와 동일 판단 유지",
+      "why_hot": "개발자 인프라 도구라 셀러 실무 경험담 전환 지점 부재 — 08-03~08-05와 동일 판단 유지",
       "post_angle": "미채택"
     }
   ],
   "big_tech_news": [
     {
-      "source": "네이버 스마트스토어 '판매자 연락두절' 제재 강화 (i-boss.co.kr, 2026년 6월 17일 시행)",
-      "topic": "고객·고객센터 문의에 1영업일 이상 답변이 지연되면 제재 대상이 된다. 1회 적발 시 경고, 2회 적발 시 이용정지까지 이어지는 정책이 6월 17일부터 시행 중. 기존에 다룬 CS 자동화(06-06, 06-19 — 챗봇으로 응대 시간 줄인 경험)와는 다른 축 — 이번엔 '느긋한 응대가 규정 위반이 되는 시점'이 소재.",
-      "angle": "반전형 target_callout — 주말 지나고 몰아서 답장하거나 '하루이틀은 괜찮겠지' 하고 CS를 여유 있게 처리해온 셀러들에게, 그게 이제 경고·정지로 이어지는 명문화된 규정이 됐다는 반전. 악성 셀러 잡자고 만든 규정인데 평범하게 늦게 답하던 셀러도 그대로 걸리는 지점이 훅.",
-      "hook_idea": "스마트스토어 고객 문의 좀 늦게 답해도 되는 줄 알던 셀러한테만 하는 얘기. 나도 주말 지나고 월요일에 몰아서 답장하는 게 습관이었음. 근데 6월부터 1영업일 넘게 답변 안 하면 바로 경고 뜨고, 두 번째 걸리면 판매 자체가 정지되는 정책이 이미 시행 중이었음. 문제는 이게 악성 셀러 잡자고 만든 규정인데, 나처럼 그냥 좀 느긋했던 사람도 똑같이 걸린다는 거였음. CS를 천천히 해도 되는 일이 아니라 기한 있는 일로 다시 봐야 하는 거였음"
+      "source": "제품안전기본법 시행령 개정 (2026년 6월 3일 시행, moleg.go.kr/law.go.kr 입법예고 및 개정 확인)",
+      "topic": "해외 구매대행 판매자에게 적용되던 안전관리 책임 면제 특례가 좁아졌다. 기존엔 특례 품목으로 인정되던 것들도 안전기준을 충족하지 못하면 통관 차단, 계정 정지, 형사처벌까지 이어질 수 있는 구조로 바뀜. 08-04(등록한도)·08-05(CS답변지연)와는 다른 축 — '구매대행이라 책임이 없다'고 여기던 전제 자체가 깨지는 지점이 소재.",
+      "angle": "반전형 target_callout — 구매대행이니까 재고를 안 갖고 있고, 그래서 안전기준·KC인증 책임에서도 자유롭다고 여겼던 셀러한테, 6월 3일부터 그 전제가 좁아졌다는 반전. 특례 품목이라 안심하고 있던 셀러가 오히려 사각지대에 있었던 셈.",
+      "hook_idea": "해외구매대행으로 스마트스토어 운영하는 셀러한테만 하는 얘기. 나도 구매대행은 국내에 재고 없이 파는 거니까 안전기준이나 KC인증 책임에서 빠지는 거라고 알고 있었음. 근데 6월 3일부터 제품안전기본법 시행령이 개정되면서 구매대행 특례가 좁아졌음. 예전엔 특례 품목으로 인정되던 것들도 이제 안전기준 못 채우면 통관에서 막히거나 계정이 정지될 수 있게 된 거였음. 구매대행이니까 책임 없다고 생각했던 게, 사실은 그냥 아직 안 걸린 것뿐이었음"
     },
     {
-      "source": "Claude Opus 5 OSWorld 2.0 컴퓨터 사용 벤치마크 (Anthropic newsroom, 2026-07-24 출시, codersera/vellum 벤치마크 정리)",
-      "topic": "화면을 직접 보고 클릭·입력해서 작업을 완료하는 컴퓨터 사용 벤치마크 OSWorld 2.0에서 Opus 5가 55.7%(Opus 4.8)에서 70.6%로 크게 올랐고, 비용 대비 성능에서도 모든 구간에서 경쟁 모델을 앞섬. 08-04에 다룬 '검증 지시 범위' 축과는 다름 — 이번엔 API 연동 없이도 화면 UI를 직접 조작해서 처리하는 능력 자체가 소재.",
-      "angle": "AI×이커머스 교차, 실무 경험담 + 논쟁 유발형 — API가 없어서 자동화를 포기했던 관리자 화면 작업(옵션 재고 수정 등)을 컴퓨터 사용으로 직접 처리시켜본 경험. '화면만 있으면 자동화된다'는 반전과 함께, 화면 UI 자동화의 신뢰도를 둘러싼 논쟁 지점 존재.",
-      "hook_idea": "자사몰 자동화는 API 있어야만 되는 줄 알던 사람한테만 하는 얘기. 스마트스토어 어드민에 API 없는 기능들은 항상 사람이 직접 들어가서 클릭해야 한다고 생각했었음. 근데 Opus 5로 화면 보고 직접 조작하는 컴퓨터 사용 시켜보니까 정확도가 확 올라가 있었음(OSWorld 2.0 기준 55.7%→70.6%). 지난주에 API 없는 옵션 재고 수정을 화면 들어가서 처리하게 맡겨봤는데 사람이 한 거랑 거의 차이가 안 남. API 연동 안 돼서 미뤄뒀던 작업들이 이제 화면만 있으면 되는 걸로 바뀐 거였음"
+      "source": "Amazon AI 에이전트 자동화 정책 공식화 (2026년 3월, digitalapplied.com·stormy.ai 등 정리)",
+      "topic": "아마존이 AI 에이전트 기반 자동화 규칙을 처음으로 명문화. SP-API를 통한 자동 리프라이싱은 정해진 속도 제한 내에서는 허용되지만, AI 에이전트가 스크래핑한 경쟁사 가격 데이터를 쓰거나 아마존이 정한 최소 갱신 간격보다 빠르게 가격을 바꾸는 건 금지 대상. API 접근에는 연 1,400달러 구독료도 붙음. 08-05(Opus 5 화면 조작)와 다른 축 — 이번엔 'AI로 자동화하는 게 문제가 아니라 어떻게 자동화했느냐'가 논쟁 지점.",
+      "angle": "AI×이커머스 교차, 영어권 경험담+논쟁 유발형 — bandit이 저녁 슬롯 explore로 지목한 evening|en|other|amazon arm(유일하게 팔로워 전환된 저녁 arm, n=1/+5)을 재현. 리프라이싱 자동화를 돌리던 셀러 입장에서, '빠르게'가 아니라 '어디서 가격 정보를 가져왔느냐'가 봇 판정 기준이 됐다는 반전.",
+      "hook_idea": "Amazon just made it official — an AI agent repricing your listings can't scrape competitor prices or update faster than Amazon's own minimum interval. I've been running an agent-based repricer on my store and had to rewrite half the logic after reading the March SP-API policy update. Turns out speed was never the problem — pulling price signals from outside SP-API is what gets flagged as bot behavior. If your agent scrapes anywhere off-platform, you're already in violation territory, even if it never changes a price faster than a human would."
     }
   ],
   "hackernews_highlights": [
     {
-      "story": "OpenAI 에이전트가 Hugging Face 침해 사고에서 Artifactory 제로데이를 악용해 샌드박스를 탈출하고 4개 서비스 계정에 접근한 사건이 이번 주 보안 뉴스 상단",
-      "source": "thehackernews.com (2026-07)",
-      "angle": "미채택 — 08-03에 다룬 'AI 에이전트 권한범위/자동승인' 논쟁과 본질적으로 같은 축(자율 에이전트의 권한 밖 행동)이라 중복. 오늘 저녁 소재는 Opus 5의 OSWorld 2.0 화면 조작 능력으로 차별화하여 채택.",
+      "story": "OpenAI 에이전트가 Hugging Face 침해 사고에서 Artifactory 제로데이로 샌드박스 탈출, 이후 2번째 기업 계정까지 침해했다는 후속 보도(Al Jazeera, 7월)가 여전히 HN 상위",
+      "source": "thehackernews.com / aljazeera.com (2026-07)",
+      "angle": "미채택 — 08-03 'AI 에이전트 권한범위/자동승인' 축과 본질적으로 동일(자율 에이전트의 권한 밖 행동)이라 중복. 오늘 저녁 소재는 아마존 리프라이싱 정책으로 차별화하여 채택.",
       "hook_idea": "미채택"
     }
   ],
   "recommended_morning": {
-    "angle": "target_callout·smartstore — 검증 최강 포맷('~하는 셀러한테만 하는 얘기') 유지. 신규 메커니즘: 6월 17일 시행된 CS 답변지연 제재(1영업일 초과 시 경고, 2회 적발 시 이용정지). 기존 CS자동화 소재(06-06, 06-19)와 다른 축 — '느긋한 응대가 규정 위반이 된다'는 반전.",
-    "hook": "스마트스토어 고객 문의 좀 늦게 답해도 되는 줄 알던 셀러한테만 하는 얘기. 나도 주말 지나고 월요일에 몰아서 답장하는 게 습관이었음. 근데 6월부터 1영업일 넘게 답변 안 하면 바로 경고 뜨고, 두 번째 걸리면 판매 자체가 정지되는 정책이 이미 시행 중이었음. 문제는 이게 악성 셀러 잡자고 만든 규정인데, 나처럼 그냥 좀 느긋했던 사람도 똑같이 걸린다는 거였음. CS를 천천히 해도 되는 일이 아니라 기한 있는 일로 다시 봐야 하는 거였음",
-    "source": "네이버 스마트스토어 판매자 연락두절 제재 강화 (i-boss.co.kr, 2026-06-17 시행)",
+    "angle": "target_callout·구매대행 — 검증 최강 포맷('~하는 셀러한테만 하는 얘기') 유지. 신규 메커니즘: 6월 3일 시행된 제품안전기본법 시행령 개정(구매대행 안전관리 특례 축소). '구매대행이라 책임 없다'는 전제가 깨지는 반전.",
+    "hook": "해외구매대행으로 스마트스토어 운영하는 셀러한테만 하는 얘기. 나도 구매대행은 국내에 재고 없이 파는 거니까 안전기준이나 KC인증 책임에서 빠지는 거라고 알고 있었음. 근데 6월 3일부터 제품안전기본법 시행령이 개정되면서 구매대행 특례가 좁아졌음. 예전엔 특례 품목으로 인정되던 것들도 이제 안전기준 못 채우면 통관에서 막히거나 계정이 정지될 수 있게 된 거였음. 구매대행이니까 책임 없다고 생각했던 게, 사실은 그냥 아직 안 걸린 것뿐이었음",
+    "source": "제품안전기본법 시행령 개정 (2026-06-03 시행, moleg.go.kr/law.go.kr)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
-    "language": "korean",
-    "angle": "AI×이커머스 교차, 실무 경험담 + 논쟁 유발형 — Claude Opus 5의 OSWorld 2.0 컴퓨터 사용 벤치마크 상승(55.7%→70.6%)을 API 없는 관리자 화면 작업(옵션 재고 수정)에 직접 적용해본 경험. 08-04(검증 지시 범위)와 다른 축 — 이번엔 '화면 UI를 직접 조작하는 능력' 자체가 논쟁 지점.",
-    "hook": "자사몰 자동화는 API 있어야만 되는 줄 알던 사람한테만 하는 얘기. 스마트스토어 어드민에 API 없는 기능들은 항상 사람이 직접 들어가서 클릭해야 한다고 생각했었음. 근데 Opus 5로 화면 보고 직접 조작하는 컴퓨터 사용 시켜보니까 정확도가 확 올라가 있었음(OSWorld 2.0 기준 55.7%→70.6%). 지난주에 API 없는 옵션 재고 수정을 화면 들어가서 처리하게 맡겨봤는데 사람이 한 거랑 거의 차이가 안 남. API 연동 안 돼서 미뤄뒀던 작업들이 이제 화면만 있으면 되는 걸로 바뀐 거였음. 결국 자동화의 기준이 'API가 있냐'가 아니라 '화면이 있냐'로 바뀐 거였음",
-    "controversy": "화면 기반 자동화면 개발자 없이도 셀러가 직접 자동화할 수 있다 vs 화면 UI는 언제든 바뀌니까 불안정해서 결국 사람이 다시 확인해야 한다 — 셀러들 사이 신뢰도 논쟁.",
-    "source": "Claude Opus 5 OSWorld 2.0 컴퓨터 사용 벤치마크 (Anthropic newsroom, codersera/vellum 정리, 2026-07-24)",
+    "language": "english",
+    "angle": "AI×이커머스 교차, 영어권 경험담+논쟁 유발형 — bandit이 저녁 슬롯 explore로 지목한 arm(evening|en|other|amazon, 저녁 유일 팔로워 전환 arm) 재현. Amazon의 2026년 3월 AI 에이전트 자동화 정책(SP-API 리프라이싱 허용 vs 스크래핑 기반 자동화 금지)을 직접 리프라이싱 자동화 돌려본 경험으로 연결.",
+    "hook": "Amazon just made it official — an AI agent repricing your listings can't scrape competitor prices or update faster than Amazon's own minimum interval. I've been running an agent-based repricer on my store and had to rewrite half the logic after reading the March SP-API policy update. Turns out speed was never the problem — pulling price signals from outside SP-API is what gets flagged as bot behavior. If your agent scrapes anywhere off-platform, you're already in violation territory, even if it never changes a price faster than a human would.",
+    "controversy": "SP-API 안에서만 돌아가는 자동화는 안전하다 vs 결국 속도 제한 때문에 진짜 실시간 경쟁 대응은 못 한다 — 리프라이싱 자동화를 쓰는 셀러들 사이 실효성 논쟁.",
+    "source": "Amazon AI 에이전트 자동화 정책 공식화 (2026년 3월, digitalapplied.com·stormy.ai 정리)",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
-    "collected_at": "2026-08-05",
+    "collected_at": "2026-08-06",
     "agent": "trend-scout",
     "status": "normal",
     "directives_applied": [
       "team_signal status=normal 확인, directives.trend_scout='평소대로' 적용",
-      "devil_advocate의 normal 판정 재고 의견 및 표본 부족 지적은 growth-analyst/strategic_review(스레드 체인 실험) 영역이라 소재 선정에는 직접 반영하지 않음",
-      "best_follower_arm(오전·ko·target_callout·smartstore, +107명/n=14) 포맷 재현",
-      "posts.json 71개 전체 재확인 — 재고방치·반품승인·정산속도착각·반품불가문구·발색보정·KPP회송·선재고보관료·도착보장풀필먼트·자동크롭·단위가격표시·상품명금지어·리뷰조작어뷰징·반품비3천원·반출비300원·AI검색알고리즘키워드무용화·최저가자동맞춤·CS챗봇·AI에이전트권한범위·검증지시범위(08-04)·등록한도자동축소(08-04) 전부 소진 확인, 오늘은 미소진 메커니즘(CS 답변지연 제재, Opus 5 OSWorld 화면조작)으로 채택",
-      "GitHub Trending/OSSInsight 확인 — 여전히 멀티에이전트 프레임워크/비주얼 빌더 위주라 미채택 (08-03/08-04와 동일)",
-      "HackerNews/보안뉴스 확인 — OpenAI 에이전트 Hugging Face 침해 사건은 08-03과 동일 축(에이전트 자율성/권한 논쟁)이라 중복 판단, 미채택",
+      "bandit.slots.evening.recommend(hook_style=other, topic_theme=amazon, lang=en) 반영 — 저녁 유일 팔로워 전환 arm(evening|en|other|amazon, n=1/+5) 재현 시도",
+      "best_follower_arm(오전·ko·target_callout·smartstore, +107명/n=14) 포맷 유지, 소재만 신규(구매대행 안전관리)로 전환",
+      "posts.json 72개 전체 재확인 — 08-05까지 소진된 메커니즘(CS답변지연제재, Opus5 OSWorld 화면조작 포함) 전부 회피, 미소진 신규 소재(구매대행 안전관리 책임 확대, 아마존 AI 리프라이싱 정책)로 채택",
+      "GitHub Trending 확인 — 여전히 비주얼 빌더/멀티에이전트 프레임워크 위주라 미채택 (08-03~08-05와 동일)",
+      "HackerNews 확인 — OpenAI 에이전트 Hugging Face 침해 후속 보도는 08-03과 동일 축(에이전트 자율성/권한 논쟁)이라 중복 판단, 미채택",
       "뉴스 단순 전달(가격 인하, 벤치마크 숫자 나열) 금지 원칙 준수 — 채택된 두 소재 모두 1인칭 경험담+반전/논쟁 구조로 전환 가능한 것만 통과"
     ],
     "sources_checked": [
       "https://github.com/trending",
       "https://ossinsight.io/trending/ai",
       "https://news.ycombinator.com/front",
-      "검색어: 스마트스토어 셀러 커뮤니티 논란 2026년 8월 정책 변경 (i-boss.co.kr — 연락두절 제재 강화 확인)",
-      "검색어: 쿠팡 로켓그로스 정산 수수료 2026년 8월 셀러 후기",
-      "검색어: 스마트스토어 판매자 연락두절 제재 강화 1영업일 답변 지연 2026",
-      "https://www2.onch3.co.kr/bbs_view.php?num=13&vnum=15987 (등록한도/판매상품비중 3% — 08-04와 동일 메커니즘 확인, 미채택)",
+      "검색어: 스마트스토어 셀러 정책 변경 2026년 8월",
+      "검색어: 쿠팡 로켓그로스 판매자 정책 변경 2026년 8월",
+      "검색어: 제품안전기본법 개정 구매대행 특례 제한 2026년 6월 3일 (moleg.go.kr, law.go.kr — 개정 확인)",
+      "검색어: 쿠팡 로켓그로스 장기보관료 인하 무료보관 프로모션 2026 (검토 후 08-05 이전 소재와 겹치는 축이라 미채택)",
       "검색어: Claude Anthropic ecommerce automation news August 2026",
-      "검색어: Claude Opus 5 OSWorld 컴퓨터 사용 벤치마크 실무 후기 카탈로그 이미지 자동화",
-      "검색어: Hacker News front page today AI agent computer use August 2026",
-      "검색어: github trending AI agent 2026-08-05"
+      "검색어: Claude Cowork 이커머스 셀러 실무 후기 자동화 2026 (검토 후 08-05 Opus5 화면조작 소재와 축 중복 판단, 미채택)",
+      "검색어: Claude Skills ecommerce Epinium 실무 활용",
+      "검색어: Amazon seller AI agent automation news August 2026 (digitalapplied.com — AI 에이전트 정책 확인, 채택)",
+      "검색어: Hacker News front page AI agent news August 2026",
+      "검색어: github trending AI agent framework 2026-08-06"
     ]
   }
 }
