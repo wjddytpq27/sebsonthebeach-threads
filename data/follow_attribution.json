@@ -1,11 +1,6 @@
 {
-  "updated_at": "2026-08-07",
+  "updated_at": "2026-08-08",
   "daily_deltas": [
-    {
-      "date": "2026-07-21",
-      "followers": 258,
-      "delta": 0
-    },
     {
       "date": "2026-07-22",
       "followers": 262,
@@ -69,6 +64,11 @@
     {
       "date": "2026-08-07",
       "followers": 270,
+      "delta": 1
+    },
+    {
+      "date": "2026-08-08",
+      "followers": 271,
       "delta": 1
     }
   ],
@@ -178,6 +178,15 @@
       "content_type": "ecommerce_tip",
       "engagement_score": 10,
       "views": 209,
+      "follower_delta_next_day": 1,
+      "attribution_confidence": "high"
+    },
+    {
+      "post_date": "2026-08-07",
+      "text_preview": "쿠팡에서 정가를 19,800원 살짝 넘겨놓고 할인율 크게 걸어서 팔던 셀러한테만 하는 얘기. 소비자가 실제 ",
+      "content_type": "ecommerce_tip",
+      "engagement_score": 4,
+      "views": 157,
       "follower_delta_next_day": 1,
       "attribution_confidence": "high"
     },
@@ -311,8 +320,8 @@
       "post_date": "2026-07-20",
       "text_preview": "스마트스토어 상세페이지에 '단순변심 반품 불가' 큼지막하게 박아두고 반년 넘게 안심하고 있던 셀러한테만 하는",
       "content_type": "ecommerce_tip",
-      "engagement_score": 11,
-      "views": 1429,
+      "engagement_score": 12,
+      "views": 2899,
       "follower_delta_next_day": 0,
       "attribution_confidence": "medium"
     },
@@ -378,10 +387,10 @@
     "follower_delta": 69
   },
   "content_type_avg_delta": {
-    "ecommerce_tip": 3.2222222222222223,
+    "ecommerce_tip": 3.142857142857143,
     "ai_tech": 0.6666666666666666
   },
   "best_content_type": "ecommerce_tip",
-  "avg_followers_per_post": 2.76,
+  "avg_followers_per_post": 2.71,
   "insight": "팔로워 증가 유발 콘텐츠: ecommerce_tip, ai_tech | 최고 사례: \"스마트스토어 셀러들한테만 함.  상품명에 키워드 다 박고 태그 10개 꽉...\""
 }

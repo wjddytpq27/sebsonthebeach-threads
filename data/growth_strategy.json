@@ -1,25 +1,25 @@
 {
-  "weekly_focus": "오전: target_callout·marketing·ko 앵글로 1개 — '마케팅 실무자한테만 하는 얘기' 톤의 인사이더 훅 (라벨 추정 단계, 다음 로테이션에서 target_callout·smartstore / other·marketing / target_callout·amazon 대조군으로 검증 예정). 저녁: other·amazon·en 앵글로 1개, 영어 아마존 셀러 타겟 (역시 추정 단계라 단정 금지, 탐색 목적). 두 슬롯 모두 실제 팔로워를 끈 target_callout·smartstore 스타일(구체적 실무 디테일 폭로)의 톤을 기본값으로 유지하고, contrarian·ai_general/other·ai_general/other·coupang/other·other 같은 죽은 arm은 피해라. 자사몰/카페24 언급 금지, 추상적 AI 미래론 금지.",
+  "weekly_focus": "셀러한테만 포맷 유지, 플랫폼 각도 순환",
   "recommended_topics": [
-    "이커머스",
-    "디지털마케팅",
-    "온라인창업"
+    "AI활용",
+    "ChatGPT활용",
+    "AI부업"
   ],
   "avoid_topics": [
     "자사몰/카페24 직접 언급",
     "추상적 AI 미래론"
   ],
-  "best_post_style": "'~하는 사람한테만 하는 얘기' 타겟 한정 훅으로 스마트스토어/쿠팡 셀러 실무 디테일(반품비, CS 타이밍, 리뷰정책)을 폭로하는 방식. 오전·한국어·target_callout·smartstore 조합이 실제 팔로워 순증을 만든 유일하게 검증된 arm(+107, n=16).",
-  "worst_post_style": "contrarian·ai_general, other·ai_general/coupang/other — 타겟 없는 반전 어그로나 일반 AI/쿠팡 얘기는 실패율 50%+ 죽은 arm.",
+  "best_post_style": "셀러한테만 훅 + 구체 수치 + 반전",
+  "worst_post_style": "범용 동기부여, 추상적 AI 전망",
   "posting_times": {
     "morning": "10:21",
     "evening": "20:00"
   },
   "engagement_keywords": [
-    "이커머스",
-    "디지털마케팅",
-    "온라인창업"
+    "AI활용",
+    "ChatGPT활용",
+    "AI부업"
   ],
-  "alert": "오늘 정상 성장(258→270, 일평균+0.7), 상위 포스트 전부 target_callout 인사이더 폭로형 — 이 패턴 반복하고 죽은 arm(contrarian/일반AI/일반쿠팡)은 피해라.",
-  "generated_at": "2026-08-07"
+  "alert": "257→271 — 오늘 성장 확인. (AI 분석 불가 — CLI 인증 확인 필요)",
+  "generated_at": "2026-08-08"
 }
