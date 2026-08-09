@@ -472,5 +472,11 @@
       }
     ]
   },
-  "updated_at": "2026-08-09"
+  "updated_at": "2026-08-09",
+  "strategic_review": {
+    "pivot": "현재유지",
+    "next_2weeks_focus": "[claude 오류: ]",
+    "week_of": "2026-08-10"
+  },
+  "stop_doing": []
 }
