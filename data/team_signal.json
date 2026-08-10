@@ -1,6 +1,6 @@
 {
   "status": "normal",
-  "days_since_growth": 1,
+  "days_since_growth": 2,
   "follower_trend": "258→271 (18일, 일평균 +0.8)",
   "best_performing": {
     "avg_score": 23.0,
@@ -253,13 +253,13 @@
     "viral_writer": "셀러한테만 포맷 유지, 플랫폼 각도 순환",
     "hunter_engager": "목표 25개. 좋아요 50~500 범위 우선. 영어 비중 30%"
   },
-  "team_memo": "258→271 — 1일째 정체 중. (AI 분석 불가 — CLI 인증 확인 필요)",
+  "team_memo": "258→271 — 2일째 정체 중. (AI 분석 불가 — CLI 인증 확인 필요)",
   "devil_advocate": "(Claude CLI 인증 만료 — 비판 분석 불가. `! claude /login` 실행 필요)",
   "ledger": {
     "north_star": {
-      "gain": 5,
-      "per_day": 0.71,
-      "first": 266,
+      "gain": 2,
+      "per_day": 0.29,
+      "first": 269,
       "last": 271,
       "days": 7
     },
@@ -393,10 +393,10 @@
         "hook_style": "target_callout",
         "topic_theme": "smartstore",
         "n": 16,
-        "avg_reward": 19.547,
+        "avg_reward": 19.496,
         "follower_gain": 109,
         "failure_rate": 0.0,
-        "ucb": 1.713,
+        "ucb": 1.712,
         "viable": true,
         "dead": false
       },
@@ -472,11 +472,5 @@
       }
     ]
   },
-  "updated_at": "2026-08-09",
-  "strategic_review": {
-    "pivot": "현재유지",
-    "next_2weeks_focus": "[claude 오류: ]",
-    "week_of": "2026-08-10"
-  },
-  "stop_doing": []
+  "updated_at": "2026-08-10"
 }
