@@ -244,14 +244,14 @@
     }
   },
   "top_search_keywords": [
-    "AI활용",
-    "ChatGPT활용",
-    "AI부업"
+    "AI 자동화",
+    "ChatGPT 활용",
+    "AI 에이전트"
   ],
   "directives": {
     "trend_scout": "평소대로",
-    "viral_writer": "셀러한테만 포맷 유지, 플랫폼 각도 순환",
-    "hunter_engager": "목표 25개. 좋아요 50~500 범위 우선. 영어 비중 30%"
+    "viral_writer": "오전 트렌드 스카우트 / 저녁 핫테이크, 빌더 노트 간간히",
+    "hunter_engager": "목표 25개. AI/자동화/개발 주제 포스트 타겟. 좋아요 5~300 우선. 영어 비중 20%"
   },
   "team_memo": "258→271 — 2일째 정체 중. (AI 분석 불가 — CLI 인증 확인 필요)",
   "devil_advocate": "(Claude CLI 인증 만료 — 비판 분석 불가. `! claude /login` 실행 필요)",

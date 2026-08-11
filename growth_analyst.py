@@ -268,8 +268,10 @@ def generate_team_signal(
     stall_note = f'{days_since_growth}일째 정체 중' if days_since_growth > 0 else '오늘 성장 확인'
 
     prompt = f"""너는 @sebsonthebeach Threads 팀의 성장 분석가야.
-계정 포지션: AI·자동화 실무자 + 마케팅 퍼널 사고. 반말 구어체.
-금지 주제: 자사몰/카페24, 추상적 AI 미래론.
+계정 포지션: 해외 AI 트렌드를 한국에 먼저 전하는 실무자/빌더. 순수 팔로워 성장이 목표. 반말 구어체.
+콘텐츠 3축: 트렌드 스카우트(오전) + 핫테이크(저녁) + 빌더 노트(간간히).
+금지 주제: 자사몰/카페24/셀러 실무, 추상적 AI 미래론.
+hunter_engager 우선 키워드는 AI/자동화/개발 주제로(예: AI 자동화, ChatGPT 활용, AI 에이전트, 바이브코딩). 셀러/이커머스 키워드 금지 — 프로필과 안 맞아 팔로우 전환 안 됨.
 
 오늘 분석 결과:
 - 상태: {status_ko} ({stall_note})
@@ -319,12 +321,12 @@ def generate_team_signal(
         trend_line = follower_trend.split('(')[0].strip()
         return {
             'team_memo': f'{trend_line} — {stall_note}. (AI 분석 불가 — CLI 인증 확인 필요)',
-            'best_post_style': '셀러한테만 훅 + 구체 수치 + 반전',
+            'best_post_style': 'AI 트렌드 먼저 짚기 + 실무 관점 해석 + 각진 의견',
             'worst_post_style': '범용 동기부여, 추상적 AI 전망',
-            'top_search_keywords': top_kws[:3] if top_kws else ['퍼스널브랜딩', '이커머스', 'N잡'],
+            'top_search_keywords': top_kws[:3] if top_kws else ['AI 자동화', 'ChatGPT 활용', 'AI 에이전트'],
             'directives': {
                 'trend_scout': '트렌딩 10개 이상, 논쟁형 우선' if stall_directive else '평소대로',
-                'viral_writer': '훅 강화 + 반직관적 수치 필수, 시리즈 연속성 유지' if stall_directive else '셀러한테만 포맷 유지, 플랫폼 각도 순환',
+                'viral_writer': '트렌드+핫테이크 강화, 논쟁형 우선' if stall_directive else '오전 트렌드 스카우트 / 저녁 핫테이크, 빌더 노트 간간히',
                 'hunter_engager': f'목표 {"35" if stall_directive else "25"}개. 좋아요 50~500 범위 우선. 영어 비중 {"40" if stall_directive else "30"}%',
             },
             '_cli_failed': True,
@@ -356,8 +358,8 @@ def sync_agent_prompts(signal: dict, ledger_digest: dict | None = None,
 
         new_section = (
             f"## 타겟 키워드 우선순위 ({today} 자동 업데이트 — growth_analyst 기반)\n"
-            f"1순위: {', '.join(tier1_final) if tier1_final else '퍼스널브랜딩, 이커머스, 온라인창업'}\n"
-            f"2순위: 퍼스널브랜딩, 이커머스, 온라인창업, 셀러, 콘텐츠마케팅 (중 1순위 제외)\n"
+            f"1순위: {', '.join(tier1_final) if tier1_final else 'AI 자동화, ChatGPT 활용, AI 에이전트'}\n"
+            f"2순위: AI 툴, 바이브코딩, 클로드, 프롬프트, 노코드 (중 1순위 제외)\n"
             f"금지 키워드: {ban_line} — 10일+ 데이터 기준 hit rate 0.0\n"
             f"\n▶ 오늘 지시 (growth_analyst {today}): {directives_he}"
         )

@@ -58,9 +58,9 @@ top_keywords = signal.get('top_search_keywords', [])
 # normal: 퍼스널브랜딩 → 디지털마케팅 → 온라인창업
 # (directives 텍스트 파싱보다 top_search_keywords 활용)
 DEFAULT_KO_KEYWORDS = [
-    "퍼스널브랜딩", "디지털마케팅", "온라인창업",
-    "부업", "N잡", "이커머스", "자동화", "노코드",
-    "스타트업", "1인기업", "프리랜서", "콘텐츠마케팅",
+    "AI 자동화", "ChatGPT 활용", "클로드",
+    "AI 에이전트", "바이브코딩", "AI 툴", "커서",
+    "프롬프트", "노코드", "생산성 AI", "AI 부업",
 ]
 
 # top_keywords 먼저, 나머지로 보완
@@ -69,13 +69,13 @@ ko_keywords = list(dict.fromkeys(top_keywords + DEFAULT_KO_KEYWORDS))
 # emergency: 팔로워 1만+ 계정만 → 영어 대형 계정 타겟
 if status == 'emergency':
     en_keywords = [
-        "AI tools automation", "SaaS growth", "marketing automation",
-        "startup growth", "solopreneur AI", "content marketing AI",
+        "AI agents", "vibe coding", "Claude Code",
+        "AI automation", "LLM tools", "AI coding",
     ]
 else:
     en_keywords = [
-        "AI tools automation", "marketing automation",
-        "solopreneur growth", "SaaS founder", "content creator tips",
+        "AI agents", "vibe coding", "Claude Code",
+        "AI automation", "prompt engineering",
     ]
 
 print(f"[{today}] 상태: {status} | 목표: {DAILY_LIMIT}개 (한국어 {KOREAN_LIMIT} / 영어 {ENGLISH_LIMIT})")
@@ -138,6 +138,8 @@ class Tee:
 sys.stdout = Tee(sys.__stdout__, debug_f)
 
 # ── engage_log 로드 (중복 방지, 60일 이상 정리) ──────────
+# 작성기(입력창) 미발견 누적 카운터 — soft 로그아웃(세션만료) 조기 감지용
+NO_COMPOSER_COUNT = 0
 engaged_ids = set()
 if LOG_FILE.exists():
     cutoff = (datetime.now(KST) - timedelta(days=60)).strftime('%Y-%m-%d')
@@ -175,11 +177,14 @@ Post:
 
 Rules:
 1. Directly reference a specific sentence, claim, or number from the post
-2. Choose exactly one of: pushback, add practical info, share concrete experience, ask a specific question
+2. React to what the post is actually about. Default to adding practical info or sharing concrete experience. Avoid pushback (only if clearly wrong, and gently — never combative). Avoid questions unless genuinely curious, and even then rarely.
 3. Length: 1-3 lines
 4. No generic replies that could fit any post
 5. No "great post", "I agree", "so true"
 6. Zero or one emoji max
+7. Don't over-explain AI like a tutorial — talk like someone who already knows, one specific point
+8. No hype words (game-changer, revolutionary, the future). Be dry or specific
+9. If it reads polished/balanced/AI-written, it failed. Sound like a person typing fast on their phone
 
 Output the comment text only. No quotes or explanation."""
     else:
@@ -193,16 +198,19 @@ AI·자동화를 실제로 써본 실무자 포지션. 말투는 완전 반말 �
 
 규칙:
 1. 포스트 안의 특정 내용(문장, 주장, 숫자)을 직접 지칭하거나 인용할 것
-2. 아래 중 하나만 선택:
-   - 반박: 틀리거나 빠진 것 지적
-   - 보완: 포스트에 없는 실용적 정보 1줄 추가
-   - 경험: 포스트와 연결된 구체적 내 경험
-   - 질문: 포스트의 특정 포인트에 대한 구체적 질문
+2. 포스트가 실제로 말하는 맥락·주제에 자연스럽게 반응해라. 기본은 "경험" 또는 "보완":
+   - 경험(우선): 포스트 주제랑 연결된 구체적 내 경험/관점 한 조각
+   - 보완(우선): 포스트에 없는 실용적 정보 1줄
+   - 반박: 어지간하면 하지 마라. 명백히 틀렸을 때만, 그것도 부드럽게 (시비조·공격 절대 금지)
+   - 질문: 웬만하면 금지. 진짜 궁금한 것만, 그것도 드물게
 3. 길이: 1~3줄
 4. 어느 포스트에나 붙일 수 있는 범용 댓글 절대 금지
 5. "좋은 글", "공감합니다", "맞아요", 내용 단순 반복 금지
 6. 이모지 없거나 최대 1개
 7. "우리" 금지, "나/내가" 사용. 팀/에이전트/봇 단어 절대 금지
+8. AI 얘기라고 아는 척 설명·정의·나열하지 마라. 이미 아는 사람처럼 특정 포인트 하나만 툭 던져
+9. "게임체인저/혁신/미래/판 바뀐다" 같은 과장·감탄 금지. 시큰둥하거나 구체적으로
+10. 봇·AI가 쓴 티(과하게 정중, 균형 잡힌 요약, 매끈한 완결문 3줄) 나면 실패. 사람이 폰으로 툭 친 느낌으로
 
 댓글 텍스트만 출력. 따옴표나 설명 없이."""
 
@@ -293,51 +301,61 @@ def engage_post(page, href: str, keyword: str, seen_authors: set, lang: str = 'k
             print(f"  필터: 좋아요 {likes_count}개 → 스킵")
             return None
 
-        # 댓글 버튼 클릭
-        reply_btn = None
-        for aria in ['댓글', 'Reply', '답글', 'Comment']:
-            loc = page.locator(f'[aria-label="{aria}"]').first
-            try:
-                loc.wait_for(timeout=2000)
-                reply_btn = loc
-                print(f"    댓글 버튼 발견: {aria}")
-                break
-            except Exception:
-                continue
-
-        if not reply_btn:
-            print("    댓글 버튼 없음 — 스킵")
-            return None
-
-        try:
-            reply_btn.click(force=True, timeout=5000)
-        except Exception:
-            page.evaluate("""
-                () => {
-                    const el = document.querySelector('[aria-label="댓글"]');
-                    if (el) el.dispatchEvent(new MouseEvent('click', {bubbles:true, cancelable:true}));
-                }
-            """)
-        page.wait_for_timeout(2000)
-
-        # 입력창
-        reply_box = None
-        for sel in [
+        # 답글(작성기 트리거) 버튼 클릭 → 입력창 등장 확인까지 한 묶음.
+        # 주의: Threads 포스트 페이지에는 aria-label="댓글"인 '댓글 수' 요소가 있는데
+        # 이건 작성기를 열지 않는다. 실제 작성기를 여는 건 '답글'/'Reply' 버튼이므로
+        # 우선순위를 '답글' > 'Reply' > '댓글' > 'Comment' 로 두고,
+        # 클릭 후 입력창이 안 뜨면 다음 후보로 넘어간다.
+        composer_selectors = [
             'div[contenteditable="true"]',
             'div[role="textbox"]',
             '[data-lexical-editor="true"]',
             'textarea',
-        ]:
-            loc = page.locator(sel).first
+        ]
+
+        def find_composer():
+            for sel in composer_selectors:
+                loc = page.locator(sel).first
+                try:
+                    loc.wait_for(timeout=4000)
+                    print(f"    입력창 발견: {sel}")
+                    return loc
+                except Exception:
+                    continue
+            return None
+
+        reply_box = None
+        tried_any = False
+        for aria in ['답글', 'Reply', '댓글', 'Comment']:
+            loc = page.locator(f'[aria-label="{aria}"]').first
             try:
-                loc.wait_for(timeout=4000)
-                reply_box = loc
-                print(f"    입력창 발견: {sel}")
-                break
+                loc.wait_for(timeout=2000)
             except Exception:
                 continue
+            tried_any = True
+            print(f"    답글 버튼 시도: {aria}")
+            try:
+                loc.click(force=True, timeout=5000)
+            except Exception:
+                page.evaluate(
+                    """(label) => {
+                        const el = document.querySelector(`[aria-label="${label}"]`);
+                        if (el) el.dispatchEvent(new MouseEvent('click', {bubbles:true, cancelable:true}));
+                    }""",
+                    aria,
+                )
+            page.wait_for_timeout(2000)
+            reply_box = find_composer()
+            if reply_box:
+                break
+
+        if not tried_any:
+            print("    답글 버튼 없음 — 스킵")
+            return None
 
         if not reply_box:
+            global NO_COMPOSER_COUNT
+            NO_COMPOSER_COUNT += 1
             print(f"  ❌ 댓글 입력창 없음 — 스킵: {post_id}")
             return None
 
@@ -376,6 +394,7 @@ def engage_post(page, href: str, keyword: str, seen_authors: set, lang: str = 'k
         print(f"  ✅ [{keyword}] 댓글 완료: {post_id} (lang={lang})")
         engaged_ids.add(post_id)
         seen_authors.add(author)
+        NO_COMPOSER_COUNT = 0  # 성공하면 연속 실패 카운터 리셋
         return {
             'post_id': post_id,
             'keyword': keyword,
@@ -481,8 +500,12 @@ else:
 
                 # ── 1. 한국어 키워드 공략 ──────────────────
                 print(f"\n📌 한국어 공략 시작 (목표 {KOREAN_LIMIT}개)")
+                # soft 로그아웃(세션 만료) 조기 감지: 성공 0인데 입력창 미발견이
+                # SESSION_FAIL_THRESHOLD회 누적되면 세션 만료로 보고 즉시 중단.
+                SESSION_FAIL_THRESHOLD = 12
+                session_expired = False
                 for keyword in ko_keywords:
-                    if ko_done >= KOREAN_LIMIT:
+                    if ko_done >= KOREAN_LIMIT or session_expired:
                         break
                     print(f"\n🔍 검색: '{keyword}'")
                     seen_authors: Set[str] = set()
@@ -496,11 +519,16 @@ else:
                             engaged_today.append(result)
                             ko_done += 1
                             time.sleep(random.uniform(90, 130))  # 최소 90초 간격
+                        elif (not engaged_today) and NO_COMPOSER_COUNT >= SESSION_FAIL_THRESHOLD:
+                            errors.append("세션만료_쿠키재발급필요(작성기_미노출)")
+                            print(f"  ⚠️ 입력창 {NO_COMPOSER_COUNT}회 연속 미발견 + 성공 0 → 세션 만료로 판단, 중단")
+                            session_expired = True
+                            break
 
                 # ── 2. 영어 키워드 공략 ───────────────────
                 print(f"\n🌐 영어 공략 시작 (목표 {ENGLISH_LIMIT}개)")
                 for keyword in en_keywords:
-                    if en_done >= ENGLISH_LIMIT:
+                    if en_done >= ENGLISH_LIMIT or session_expired:
                         break
                     print(f"\n🔍 검색 (EN): '{keyword}'")
                     seen_authors_en: Set[str] = set()
