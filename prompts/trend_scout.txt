@@ -35,26 +35,22 @@
 - 한국에 이미 크게 퍼진 소식
 - 가격 인하 뉴스 그 자체 (단 "그래서 뭐가 달라지냐" 관점 있으면 예외)
 
-## 저장 형식 (data/today_trend.json) — 린하게
+## 저장 형식 (data/today_trend.json) — 파이프라인 스키마 준수
+GitHub Actions content.yml이 `signal_applied / recommended_morning / recommended_evening`를 읽으므로 아래 키를 그대로 지켜라.
 ```json
 {
   "date": "오늘날짜",
-  "picks": [
-    {
-      "what": "뭔지 한 줄 (고유명사 포함: 레포명/툴명/모델명)",
-      "why_hot": "지금 왜 뜨는지 + 얼마나 이른지(한국 인지도)",
-      "take": "실무자/빌더 관점 해석 한 줄 — 쓸모 or 과대평가 or 반전",
-      "controversy": "논쟁 포인트 (핫테이크용, 있으면)",
-      "source": "URL (viral-writer가 첫 댓글에 넣음)"
-    }
-  ],
-  "morning_pick_idx": 0,
-  "evening_pick_idx": 1
+  "signal_applied": "team_signal 반영 한 줄",
+  "github_hot": ["오늘 GitHub trending에서 뜬 것 2~3개 (레포명+한줄)"],
+  "big_tech_news": ["주요 AI 릴리스/발표 1~2개"],
+  "hackernews_highlights": ["HN 화제 AI/개발글 1~2개"],
+  "recommended_morning": "오전(트렌드 스카우트/활용법) 소재 — [뭔지 고유명사로] + [왜 핫한지/얼마나 이른지] + [실무자 관점 해석 한 줄]. viral-writer가 이걸로 오전 글 씀. 링크는 source로.",
+  "recommended_evening": "저녁(핫테이크) 소재 — 위 트렌드 중 논쟁 각도 있는 걸로 [다들 이렇게 보는데 나는 다르게 봄] 골격.",
+  "metadata": {"source_urls": ["viral-writer가 첫 댓글에 넣을 출처 URL들"]}
 }
 ```
-- picks는 3~5개면 충분. 억지로 채우지 마라. 진짜 물건만.
-- morning_pick_idx = 오전(트렌드 소개)에 제일 좋은 pick.
-- evening_pick_idx = 저녁(핫테이크/논쟁)에 제일 좋은 pick (controversy 있는 걸로).
+- recommended_morning/evening은 **관점 있는 텍스트**로. 그냥 뉴스 받아쓰기 금지(번역봇=차별화 0).
+- 진짜 물건 없으면 억지로 채우지 말고 recommended에 "오늘은 큰 트렌드 없음, evergreen 활용법으로" 라고 적어라.
 
 ## 금지
 - Slack 발송 금지. 결과는 cron.log에 print만.

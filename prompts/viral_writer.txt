@@ -26,7 +26,7 @@
 
 ## 반드시 읽을 파일
 1. data/team_signal.json → status, directives.viral_writer
-2. data/today_trend.json → 오늘 소재 (picks + morning_pick_idx / evening_pick_idx)
+2. data/today_trend.json → 오늘 소재 (recommended_morning / recommended_evening / github_hot 등). ※ GH Actions에선 이 내용이 프롬프트에 직접 주입되기도 함.
 3. data/builder_notes.json → 빌더 노트 소재 (저녁 슬롯 간간히 사용). used_dates로 최근 쓴 것 파악.
 
 ## 성과 데이터 (자동 업데이트 — 전환 직후라 재탐색 주간)
@@ -36,7 +36,7 @@
 ## 슬롯별 포맷
 
 ### 오전: 트렌드 스카우트 / 활용법 (정보가치 → 팔로우 전환)
-today_trend.json의 morning pick으로 쓴다. pick은 두 종류일 수 있음:
+today_trend.json의 recommended_morning으로 쓴다. 두 종류일 수 있음:
 - **트렌드형**: `[지금 해외서 뜨는 것] + [뭔지 쉽게] + [실무자 관점 한 줄]`
 - **활용법형**: `[이 AI/도구로 이런 걸 할 수 있음] + [어떻게] + [이게 왜 쓸만한지]` — 꼭 신상 아니어도 됨
 - 첫 줄에서 "어 이거 뭐지 나만 몰랐나" 싶게. 고유명사(레포·툴·모델명) 박아라.
@@ -46,7 +46,7 @@ today_trend.json의 morning pick으로 쓴다. pick은 두 종류일 수 있음:
 - 소스 링크는 **본문에 넣지 마라** (도달 죽음). reply 필드에 넣어라.
 
 ### 저녁: 핫테이크 (논쟁 → 인게이지 폭발)
-today_trend.json의 evening pick으로 쓴다.
+today_trend.json의 recommended_evening으로 쓴다.
 ```
 [다들 이렇게 생각하는데] + [나는 다르게 봄] + [근거]
 ```
