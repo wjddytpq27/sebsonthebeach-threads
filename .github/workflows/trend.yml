@@ -1,12 +1,10 @@
 name: 트렌드 — trend-scout
 
 on:
-  # ⚠️ 발행 체인 시작점(trend→content→post). 이거 꺼져 있으면 발행 전면 중단됨(8/5 이후 중단 원인).
-  # 껐던 진짜 이유 = org 월간 '지출 한도 초과'(8/10 로그 확인) — 단순 절약 아님.
-  # 재활성화하면 발행 살아나지만 org 지출↑ → 한도 재초과 시 개인 Claude 작업까지 막힘. 예산 판단 후 결정.
-  # 켜려면 아래 schedule 두 줄 주석 해제:
-  # schedule:
-  #   - cron: '2 1 * * 1-5'   # 평일 오전 10:02 KST (content→post 체인 트리거)
+  # 2026-08-12 재활성화 — 발행 체인 시작점(trend→content→post).
+  # 8/10 한도초과는 별도 게임작업 일회성이었고, 스레드 시스템 자체는 1~2달 무탈. 매일 발행 부담 없음 판단.
+  schedule:
+    - cron: '2 1 * * 1-5'   # 평일 오전 10:02 KST (content→post 체인 트리거)
   workflow_dispatch:
 
 permissions:
