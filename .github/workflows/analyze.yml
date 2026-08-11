@@ -1,8 +1,9 @@
 name: 분석 — follow_attributor + growth_analyst
 
 on:
-  schedule:
-    - cron: '45 13 * * *'    # 22:45 KST (track 22:00 데이터 커밋백 후)
+  # schedule 비활성화 (토큰 절약 — 수동 실행만 유지)
+  # schedule:
+  #   - cron: '45 13 * * *'    # 22:45 KST (track 22:00 데이터 커밋백 후)
   workflow_dispatch:
 
 permissions:

@@ -1,8 +1,9 @@
 name: 트렌드 — trend-scout
 
 on:
-  schedule:
-    - cron: '2 1 * * 1-5'   # 평일 오전 10:02 KST (viral-writer 10:12 직전)
+  # schedule 비활성화 (토큰 절약 — 수동 실행만 유지)
+  # schedule:
+  #   - cron: '2 1 * * 1-5'   # 평일 오전 10:02 KST (viral-writer 10:12 직전)
   workflow_dispatch:
 
 permissions:
