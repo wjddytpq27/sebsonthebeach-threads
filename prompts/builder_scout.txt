@@ -30,12 +30,15 @@
   - 확인되면 통과. **확인 안 되거나 불확실하면 → 버리거나 "~인 듯/~라는 얘기" 수위 조절.** 확신조로 쓰지 마라.
   - 그럴듯한데 틀린 거(당신의 직관 포함)를 특히 조심. 못 미더우면 빼는 게 이득.
 
-### 5) builder_notes.json에 추가
-- 기존 파일을 읽어서 **기존 notes 전부 그대로 유지**하고 새 것만 append. (기존 것 절대 삭제·변형 금지)
-- id 중복(같은 주제) 스킵. 새 note 형식:
-  `{"id","topic","material","take","controversy"(선택),"used_dates":[],"_source":"근거 파일/커밋","_verified":"검증 방법 또는 'method-no-claim'"}`
-- 유효한 JSON으로 저장. 최대 3개까지만 추가.
+### 5) 후보를 candidates 파일에 append (★ builder_notes.json 직접 수정 절대 금지)
+- **`data/builder_notes_candidates.jsonl`** 파일에 **한 줄에 JSON 하나씩 append**만 한다.
+- **`data/builder_notes.json`은 읽어서 기존 id 중복 체크에만 쓰고, 절대 쓰지 마라.** (병합은 merge_builder_notes.py가 안전하게 함)
+- 한 줄 = 완결된 JSON 객체 (줄바꿈 없이 한 줄):
+  `{"id":"...","topic":"...","material":"...","take":"...","controversy":"(선택)","_source":"근거 파일/커밋","_verified":"검증 방법 또는 method-no-claim"}`
+- 최대 3개. 기존 builder_notes.json에 이미 있는 id(같은 주제)는 아예 쓰지 마라.
+- 파일이 없으면 새로 만들고, 있으면 뒤에 append (기존 줄 유지). 기존 줄 절대 건드리지 마라.
 
 ## 금지
-- Slack 발송 금지. 결과(추가한 노트 제목 + 근거)는 cron.log에 print만.
-- 근거 없는 후보, 대외비 엮인 후보, 검증 안 된 기술주장 → 절대 추가 금지.
+- **builder_notes.json 직접 쓰기 절대 금지.** candidates.jsonl에 append만.
+- Slack 발송 금지. 결과(추가한 후보 제목 + 근거)는 cron.log에 print만.
+- 근거 없는 후보, 대외비 엮인 후보, 검증 안 된 기술주장 → 애초에 쓰지 마라.
