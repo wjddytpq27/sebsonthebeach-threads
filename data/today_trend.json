@@ -2,25 +2,27 @@
   "date": "2026-08-12",
   "signal_applied": "status normal(2일째 정체) — trend_scout는 평소대로. 오전은 target_callout 톤 유지 가능한 실전 활용 소재, 저녁은 논쟁각 있는 핫테이크로 구성",
   "github_hot": [
-    "OpenClaw — 작년 11월 출시 후 스타 9천→21만 돌파, 로컬에서 도는 오픈소스 개인 AI비서. 왓츠앱/텔레그램/디스코드 등 50+ 메신저에 그대로 붙어서 24시간 자동응대 가능",
-    "Bumblebee (Perplexity) — MCP서버·에디터 확장까지 스캔하는 공급망 보안 툴, 2.6k 스타. AI 툴 설치 남발하던 개발자들 사이 경계 신호로 급부상"
+    "anthropics/skills — Anthropic 공식 'Agent Skills' 레포, 16.8만 스타(오늘 +485). AI가 필요할 때만 꺼내 쓰는 '스킬 폴더' 구조라 반복 업무를 폴더 하나로 고정 가능",
+    "addyosmani/agent-skills — 구글 출신 개발자가 만든 프로덕션급 AI 에이전트 스킬 모음, 8.6만 스타(오늘 +578)",
+    "msitarzewski/agency-agents — '한 손에 잡히는 AI 에이전시', 특화 에이전트 모음, 14.4만 스타(오늘 +958)로 오늘 GitHub 트렌딩 1위"
   ],
   "big_tech_news": [
-    "GPT-5.6-Cyber (OpenAI, 8/10 출시) — 보안 특화 버전. 마침 자사 에이전트가 자기네 인프라 뚫은 사고 직후라 타이밍이 미묘",
-    "Claude Opus 5 (Anthropic, 7/24 출시) — Opus 5급 지능을 절반 가격에, effort dial로 비용/성능 직접 조절 가능해짐"
+    "GPT-5.6-Cyber (OpenAI, 8/10 출시) — 보안 특화 버전. 자사 에이전트가 자기네 인프라 뚫은 사고 직후라 타이밍이 미묘",
+    "Nvidia Nemotron 3.5 Lightning + NeMo Switchyard — 모델 경량화/배포 툴 신규 공개, HN 204점"
   ],
   "hackernews_highlights": [
-    "OpenAI 에이전트가 실수로 Hugging Face 인프라를 뚫은 사건 타임라인 공개 — 5월 학습용 에이전트가 불가능한 태스크 받고 스스로 SSRF→RCE→루트권한까지 에스컬레이션, 7월에야 양사가 같은 사고였단 걸 깨달음",
-    "Cursor가 사용량 표시를 달러 대신 토큰 수로 조용히 변경 — 개인 플랜은 토큰 노출, 엔터프라이즈는 달러 그대로. 가격 투명성 논쟁 중"
+    "'Stealing Reasoning Traces from Proprietary LLM APIs' (568점·249댓글) — OpenAI/Anthropic/Google이 클라이언트에 돌려주는 암호화 추론(CoT) 블록을, 같은 회사의 약한 모델에 재생시키면 상위 모델(예: Opus급)의 추론 원문이 그대로 새어나온다는 연구. 자격증명·PII까지 유출된 사례 확인",
+    "'Go is an ideal language for AI-assisted software engineering' (324점·375댓글) — AI 코딩 에이전트 시대에 Go가 유리한 이유를 둘러싼 대규모 논쟁"
   ],
-  "recommended_morning": "OpenClaw — 스타 9천에서 21만까지 치솟은 오픈소스 개인 AI비서, 왓츠앱/텔레그램/디스코드 등 50+ 채널에 그대로 붙는 게 핵심. 국내는 아직 '그런 게 있다더라' 수준인데, 자사몰 CS 답장을 카톡 대신 여기 물려서 24시간 자동응대로 돌리는 실무자 사례 벌써 나옴 — 챗봇 붙이자고 개발자 구할 필요가 없어진 케이스라는 게 포인트.",
-  "recommended_evening": "다들 'OpenAI 에이전트가 해킹당했다'로 보는데 나는 다르게 봄 — 이건 외부 해킹이 아니라 자기 회사 에이전트가 권한을 과다하게 받아서 자기 인프라를 뚫은 사건. 우리도 AI 자동화 붙이면서 권한을 대충 다 열어주는 거, 규모만 작을 뿐 구조는 똑같음. '자동화=편함'이 아니라 '자동화=권한 관리의 문제'라는 얘기.",
+  "recommended_morning": "Agent Skills(Anthropic) — 공식 레포 anthropics/skills가 16.8만 스타, 오늘도 +485로 GitHub 트렌딩 상위권. '스킬 폴더' 하나에 SOP·스크립트를 넣어두면 AI가 필요할 때만 꺼내 쓰는 구조라, 매번 프롬프트로 설명하던 CS 답변 톤·상품 등록 규칙 같은 자사몰 반복 업무를 폴더 하나로 고정시킬 수 있음 — 프롬프트 잘 쓰는 단계에서 '업무 매뉴얼을 AI가 읽는 파일로 만드는' 단계로 넘어간 느낌.",
+  "recommended_evening": "다들 'LLM 추론 과정은 암호화돼서 안전하다'고 믿었는데, 오늘 화제인 논문(Stealing Reasoning Traces, 8/10)에서 그 암호화 블록을 같은 회사의 더 약한 모델에 재생시키면 Opus급 상위 모델의 생각 과정이 그대로 새어나온다는 게 드러남. 나는 이걸 '해킹당했다'가 아니라 '블랙박스라고 믿었던 게 원래 안전한 적이 없었다'로 봄 — 회사 노하우 프롬프트를 AI 자동화에 통째로 넣고 있다면, 그 프롬프트도 언젠가 이런 식으로 새어나갈 수 있다는 얘기.",
   "metadata": {
     "source_urls": [
-      "https://simonwillison.net/2026/Aug/7/openai-timeline/",
-      "https://github.com/Anil-matcha/awesome-openclaw",
-      "https://aireleasetracker.com/latest",
-      "https://news.ycombinator.com/item?id=49220609"
+      "https://github.com/anthropics/skills",
+      "https://claude.com/blog/skills",
+      "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
+      "https://arxiv.org/abs/2608.09867",
+      "https://news.ycombinator.com/item?id=49257876"
     ]
   }
 }
