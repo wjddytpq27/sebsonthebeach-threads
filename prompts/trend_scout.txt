@@ -35,6 +35,13 @@
 - 한국에 이미 크게 퍼진 소식
 - 가격 인하 뉴스 그 자체 (단 "그래서 뭐가 달라지냐" 관점 있으면 예외)
 
+## 사실 정확성 (CRITICAL — viral-writer가 이걸로 글 쓰고 fact_checker가 웹검색 검증함)
+너가 넘긴 게 틀리면 그걸로 쓴 글이 통째로 블록돼서 그날 발행이 0이 된다.
+- **실제 웹검색으로 확인한 것만 넘겨라.** 툴/레포/모델 이름을 추측하거나 지어내지 마라. 애매하면 그 항목 빼라.
+- 수치(스타 수·다운로드 등)는 **실제 페이지에서 본 값만**. 못 봤으면 숫자 넣지 말고 "빠르게 뜨는 중"으로.
+- 존재 불확실한 프로젝트는 절대 넣지 마라. (예: 검색해도 안 나오는 이름 = 환각, 넣으면 그날 발행 죽음)
+- 각 recommended에 **source URL 필수** — viral-writer가 첫 댓글에 넣고, fact_checker가 이걸로 대조.
+
 ## 저장 형식 (data/today_trend.json) — 파이프라인 스키마 준수
 GitHub Actions content.yml이 `signal_applied / recommended_morning / recommended_evening`를 읽으므로 아래 키를 그대로 지켜라.
 ```json
