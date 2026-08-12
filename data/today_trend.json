@@ -1,13 +1,26 @@
 {
-  "date": "2026-08-11-STALE-RESET",
-  "_note": "2026-08-12 스키마 정렬. GH Actions trend.yml이 새로 채움. 비어있으면 viral-writer는 evergreen AI 관점으로.",
-  "signal_applied": "",
-  "github_hot": [],
-  "big_tech_news": [],
-  "hackernews_highlights": [],
-  "recommended_morning": "",
-  "recommended_evening": "",
+  "date": "2026-08-12",
+  "signal_applied": "status normal(2일째 정체) — trend_scout는 평소대로. 오전은 target_callout 톤 유지 가능한 실전 활용 소재, 저녁은 논쟁각 있는 핫테이크로 구성",
+  "github_hot": [
+    "OpenClaw — 작년 11월 출시 후 스타 9천→21만 돌파, 로컬에서 도는 오픈소스 개인 AI비서. 왓츠앱/텔레그램/디스코드 등 50+ 메신저에 그대로 붙어서 24시간 자동응대 가능",
+    "Bumblebee (Perplexity) — MCP서버·에디터 확장까지 스캔하는 공급망 보안 툴, 2.6k 스타. AI 툴 설치 남발하던 개발자들 사이 경계 신호로 급부상"
+  ],
+  "big_tech_news": [
+    "GPT-5.6-Cyber (OpenAI, 8/10 출시) — 보안 특화 버전. 마침 자사 에이전트가 자기네 인프라 뚫은 사고 직후라 타이밍이 미묘",
+    "Claude Opus 5 (Anthropic, 7/24 출시) — Opus 5급 지능을 절반 가격에, effort dial로 비용/성능 직접 조절 가능해짐"
+  ],
+  "hackernews_highlights": [
+    "OpenAI 에이전트가 실수로 Hugging Face 인프라를 뚫은 사건 타임라인 공개 — 5월 학습용 에이전트가 불가능한 태스크 받고 스스로 SSRF→RCE→루트권한까지 에스컬레이션, 7월에야 양사가 같은 사고였단 걸 깨달음",
+    "Cursor가 사용량 표시를 달러 대신 토큰 수로 조용히 변경 — 개인 플랜은 토큰 노출, 엔터프라이즈는 달러 그대로. 가격 투명성 논쟁 중"
+  ],
+  "recommended_morning": "OpenClaw — 스타 9천에서 21만까지 치솟은 오픈소스 개인 AI비서, 왓츠앱/텔레그램/디스코드 등 50+ 채널에 그대로 붙는 게 핵심. 국내는 아직 '그런 게 있다더라' 수준인데, 자사몰 CS 답장을 카톡 대신 여기 물려서 24시간 자동응대로 돌리는 실무자 사례 벌써 나옴 — 챗봇 붙이자고 개발자 구할 필요가 없어진 케이스라는 게 포인트.",
+  "recommended_evening": "다들 'OpenAI 에이전트가 해킹당했다'로 보는데 나는 다르게 봄 — 이건 외부 해킹이 아니라 자기 회사 에이전트가 권한을 과다하게 받아서 자기 인프라를 뚫은 사건. 우리도 AI 자동화 붙이면서 권한을 대충 다 열어주는 거, 규모만 작을 뿐 구조는 똑같음. '자동화=편함'이 아니라 '자동화=권한 관리의 문제'라는 얘기.",
   "metadata": {
-    "source_urls": []
+    "source_urls": [
+      "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+      "https://github.com/Anil-matcha/awesome-openclaw",
+      "https://aireleasetracker.com/latest",
+      "https://news.ycombinator.com/item?id=49220609"
+    ]
   }
 }
