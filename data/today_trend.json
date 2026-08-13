@@ -3,25 +3,25 @@
   "signal_applied": "status normal — 평소대로 수집. 어제(8/12) Agent Skills·추론유출 논문과 중복 없이 새 소재로 구성",
   "github_hot": [
     "cathrynlavery/diagram-design — Claude Code용 '에디토리얼 다이어그램' 스킬. 오늘 GitHub 트렌딩에서 +2,855(가장 급한 상승폭), 11.1k 스타. 아키텍처/플로우차트 등 29종 다이어그램을 Mermaid 느낌 없이 브랜드 컬러·폰트 입혀 SVG로 뽑아줌. BestSelf.co 창업자 Cathryn Lavery가 만듦",
-    "paperclipai/paperclip — 'AI 에이전트를 직원처럼 관리하는' 오픈소스 앱, 77k 스타. 조직도·예산·보고라인을 에이전트에 부여해서 Claude Code/Codex/Cursor를 실무자로 꽂아 쓰는 구조. 3월 출시 후 꾸준히 트렌딩 상위",
-    "abacria/orca — 여러 코딩 에이전트를 동시에 돌리는 'ADE(에이전트 개발 환경)', 44k 스타(오늘 +1,235)"
+    "paperclipai/paperclip — 'AI 에이전트를 직원처럼 관리하는' 오픈소스 앱, 77.8k 스타. 조직도·예산·보고라인을 에이전트에 부여해서 Claude Code/Codex/Cursor를 실무자로 꽂아 쓰는 구조",
+    "stablyai/orca — 여러 코딩 에이전트(Claude Code, Codex, OpenCode 등)를 각자 별도 worktree에서 동시에 돌리는 'ADE(에이전트 개발 환경)', 44.2k 스타. MIT 오픈소스, 데스크톱·모바일·VPS 지원"
   ],
   "big_tech_news": [
-    "DeepSeek V4 Pro 0813 (8/12 OpenRouter GA) — 프리뷰 대비 에이전트 작업 벤치마크가 큰 폭 상승(DeepSWE 62.7 +49.9, CyberGym 83.3 +30.6). 1M 컨텍스트, 저가",
-    "xAI Grok 4.6 — Artificial Analysis Intelligence Index 61점으로 GPT-5.6 Sol Max와 동률, Grok 4.5 대비 한 달 만에 5점 상승. 인풋 $2/output $6로 '동급 대비 반값' 포지셔닝"
+    "DeepSeek V4 Pro 0813 (8/12 OpenRouter 공개) — 공식 발표 페이지 없이 커뮤니티(Reddit/HN/WeChat)로만 벤치마크가 퍼지는 중. 1M 컨텍스트, 저가. 이전 프리뷰 대비 에이전트형 작업 벤치마크 반응 뜨거움",
+    "xAI Grok 4.6 — Artificial Analysis Intelligence Index 61점으로 GPT-5.6 Sol Max와 동률, Grok 4.5 대비 한 달 만에 점수 상승. '동급 대비 반값' 가격 포지셔닝"
   ],
   "hackernews_highlights": [
-    "'AI is removing the middle class of software engineering' (754점·693댓글) — AI로 코드 작성 자체는 누구나 쉬워졌지만, 그래서 오히려 '괜찮은데 특출나지 않은' 중간층 엔지니어가 도태되고 있다는 주장. 실행은 싸졌고 판단력만 돈이 된다는 논리. 댓글에서는 '나쁜 엔지니어링이 AI로 10배 증폭된다'는 반박이 다수",
-    "DeepSeek V4 Pro 0813 출시 스레드 (785점·301댓글) — 에이전트형 벤치마크 급상승에 커뮤니티 반응 뜨거움"
+    "'AI is removing the middle class of software engineering' (florianherrengt, HN #49271994) — AI로 코드 작성 자체는 누구나 쉬워졌지만, 그래서 오히려 '괜찮은데 특출나지 않은' 중간층 엔지니어가 도태되고 있다는 주장. 실행은 싸졌고 판단력만 돈이 된다는 논리. 댓글에서는 '나쁜 엔지니어링이 AI로 10배 증폭된다'는 반박이 다수",
+    "DeepSeek V4 Pro 0813 관련 HN 스레드 — 공식 발표 없이 조용히 나온 모델인데도 에이전트형 벤치마크 급상승에 커뮤니티 반응 뜨거움"
   ],
-  "recommended_morning": "diagram-design(Claude Code 스킬) — 오늘 GitHub 트렌딩에서 스타 증가폭 1위(+2,855), 아직 한국에는 거의 안 알려짐. 아키텍처 다이어그램·플로우차트를 Mermaid 특유의 못생긴 느낌 없이 브랜드 컬러 입혀 SVG로 바로 뽑아주는 구조라, 기획서에 넣을 프로세스 다이어그램을 디자이너한테 부탁 안 하고 AI한테 시키는 단계로 넘어간 느낌 — 자사몰 운영 프로세스나 CS 플로우 문서화할 때 바로 써먹을 수 있는 실용 소재.",
-  "recommended_evening": "다들 'AI 덕분에 누구나 개발자처럼 코드 짤 수 있다'고 좋아하는데, 오늘 HN에서 754점 받은 글은 정반대 얘기를 함 — 실행이 쉬워질수록 '적당히 잘하는' 중간층만 사라지고, 판단력 있는 상위층과 시키는 대로만 하는 하위층 격차가 더 벌어진다는 것. 나는 이걸 마케팅/그로스에도 그대로 대입해봄 — AI가 카피 쓰고 광고 세팅 대신 해줄수록, '적당히 감 있는' 마케터는 없어지고 전략 판단하는 사람만 남는 거 아닌가.",
+  "recommended_morning": "diagram-design(Claude Code 스킬) — 오늘 GitHub 트렌딩에서 스타 증가폭 1위(+2,855), 아직 한국에는 거의 안 알려짐. 아키텍처 다이어그램·플로우차트를 Mermaid 특유의 못생긴 느낌 없이 브랜드 컬러 입혀 SVG로 바로 뽑아주는 구조라, 기획서에 넣을 프로세스 다이어그램을 디자이너한테 부탁 안 하고 AI한테 시키는 단계로 넘어간 느낌 — 자사몰 운영 프로세스나 CS 플로우 문서화할 때 바로 써먹을 수 있는 실용 소재. (source: https://github.com/cathrynlavery/diagram-design)",
+  "recommended_evening": "다들 'AI 덕분에 누구나 개발자처럼 코드 짤 수 있다'고 좋아하는데, HN에서 화제가 된 글은 정반대 얘기를 함 — 실행이 쉬워질수록 '적당히 잘하는' 중간층만 사라지고, 판단력 있는 상위층과 시키는 대로만 하는 하위층 격차가 더 벌어진다는 것. 나는 이걸 마케팅/그로스에도 그대로 대입해봄 — AI가 카피 쓰고 광고 세팅 대신 해줄수록, '적당히 감 있는' 마케터는 없어지고 전략 판단하는 사람만 남는 거 아닌가. (source: https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html)",
   "metadata": {
     "source_urls": [
       "https://github.com/cathrynlavery/diagram-design",
       "https://github.com/paperclipai/paperclip",
-      "https://github.com/trending?since=daily",
-      "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+      "https://github.com/stablyai/orca",
+      "https://github.com/infiniflow/ragflow",
       "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
       "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
       "https://news.ycombinator.com/item?id=49271994",
