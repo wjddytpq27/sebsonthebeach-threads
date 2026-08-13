@@ -245,6 +245,7 @@ if __name__ == '__main__':
                 if idx is not None:
                     posts[idx]['fact_checked'] = True
                     posts[idx]['fact_check_status'] = result['status']
+                    posts[idx]['fact_check_reason'] = result.get('reason', '')  # 재생성 피드백용
                     if result['status'] == 'modified':
                         posts[idx]['content'] = result['content']
                         print(f"    ✏️  수정됨: {result['reason']}")

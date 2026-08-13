@@ -59,11 +59,19 @@ jobs:
           fi
           python3 add_post.py --slot "$SLOT" --infile /tmp/gen_post.txt
 
-      - name: fact_checker 검증 (틀린 정보·과장 있으면 blocked → 발행 스킵)
+      - name: fact_checker 검증 + 블록시 근거있게 재생성(최대 2회) → 재검증
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        run: python3 fact_checker.py || echo "fact_checker 스킵/실패 — 글은 유지하고 진행"
+        run: |
+          # 블록되면 그냥 포기(그날 글 0개)가 아니라: 사유 받아 근거있게 다시 쓰고 재검증한다.
+          for round in 1 2 3; do
+            python3 fact_checker.py || echo "fact_checker 스킵/실패"
+            BLOCKED=$(python3 -c "import json,datetime; d=json.load(open('data/posts.json')); t=datetime.date.today().isoformat(); print('yes' if any(p.get('date')==t and p.get('blocked') for p in d) else 'no')" 2>/dev/null || echo no)
+            if [ "$BLOCKED" != "yes" ]; then echo "✅ 블록 없음 (round $round) — 발행 진행"; break; fi
+            echo "🚫 블록 감지 (round $round) → 재생성 시도"
+            python3 regen_if_blocked.py || { echo "재생성 불가 — 블록 유지"; break; }
+          done
 
       - name: posts.json 커밋백
         run: |
