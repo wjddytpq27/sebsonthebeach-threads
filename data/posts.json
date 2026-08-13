@@ -534,5 +534,14 @@
     "fact_checked": true,
     "fact_check_status": "block",
     "blocked": true
+  },
+  {
+    "date": "2026-08-13",
+    "content": "요즘 Claude Code 스킬 중에 diagram-design이라는 게 깃허브에서 스타 수가 빠르게 늘고 있다는데, 아직 한국에서는 잘 안 보이는 듯. 머메이드처럼 뻣뻣하고 못생긴 다이어그램 대신 브랜드 컬러 입힌 SVG로 아키텍처·플로우차트를 바로 뽑아줌. 기획서 프로세스 다이어그램 디자이너한테 부탁하는 대신 AI한테 시키는 단계로 넘어간 셈. 자사몰 CS 플로우나 운영 프로세스 문서화할 때 써볼 만함. 다들 이런 다이어그램 디자이너한테 맡기나요, 아니면 벌써 AI로 넘어갔나요?",
+    "topic": "AI_THREADS",
+    "reply": "https://github.com/cathrynlavery/diagram-design",
+    "fact_checked": true,
+    "fact_check_status": "modified",
+    "fact_check_reason": "'오늘 깃허브 트렌딩 스타 증가폭 1위(+2,855)'라는 구체적 수치·순위 주장은 검색으로 확인되지 않음. 시점(오늘)과 정확한 숫자가 틀리면 신뢰도 타격이 큰 유형의 주장이라 그대로 단정하기 위험함; '아직 한국엔 거의 안 알려짐'도 검증 불가한 주관적 단정 — 확인 안 된 사실처럼 단정하기보다 완화 필요"
   }
 ]
