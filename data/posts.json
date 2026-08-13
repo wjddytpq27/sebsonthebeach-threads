@@ -534,5 +534,14 @@
     "fact_checked": true,
     "fact_check_status": "block",
     "blocked": true
+  },
+  {
+    "date": "2026-08-13",
+    "content": "cathrynlavery/diagram-design 이라는 레포, 오늘 깃허브 트렌딩에서 스타 증가폭 1위 찍음 — 하루 만에 +2,855개, 누적 11.1k. 아키텍처 다이어그램·플로우차트 29종을 머메이드 특유의 못생긴 느낌 없이 브랜드 컬러 입혀서 SVG로 바로 뽑아주는 클로드 코드 스킬임. 기획서에 넣을 프로세스 다이어그램, 이제 디자이너 안 붙이고 AI한테 바로 시키는 단계로 넘어간 느낌. 이거 써본 사람 있음? 머메이드보다 진짜 낫음?",
+    "topic": "AI_THREADS",
+    "reply": "https://github.com/cathrynlavery/diagram-design",
+    "fact_checked": true,
+    "fact_check_status": "block",
+    "blocked": true
   }
 ]
