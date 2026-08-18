@@ -565,5 +565,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-08-18",
+    "content": "요즘 해외에서 Claude Code 같은 AI 코딩 CLI를 개발 용도로만 안 쓰고 반복적인 텍스트 작업 자동화에 돌려쓰는 얘기가 종종 보임. 코드 짜는 도구를 이력서 다듬기나 문서 정리 같은 사무 잡무에 쓰는 식. 한국은 아직 \"AI 코딩 툴=개발자 전용\"이라는 인식이 강해서 이런 활용법 자체가 낯설 수 있음. 개발자 아니어도 이런 CLI 하나 만져보면 의외로 쓸 데 많을 듯.",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
