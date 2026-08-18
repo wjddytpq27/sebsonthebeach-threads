@@ -1,28 +1,30 @@
 {
-  "date": "2026-08-17",
-  "signal_applied": "status normal — 평소대로 수집. 8/14 소재(agent-skills, anydoc, GPT-5.6 Sol Ultrafast, 'AI agents lie cheat steal')와 안 겹치는 새 소재로 구성",
+  "date": "2026-08-18",
+  "signal_applied": "status normal — 평소대로 수집. 8/17 소재(unsloth, needle, system prompts, multi-agent turf war)와 안 겹치는 새 소재로 구성",
   "github_hot": [
-    "unslothai/unsloth — 파인튜닝 라이브러리로 유명했던 프로젝트가 '로컬 데스크톱 앱'으로 확장, Qwen3.8·Kimi K3·MiniMax-H3·DeepSeek-V4 등 최신 모델을 로컬에서 돌리고 학습(2배 빠르고 VRAM 70% 절감)까지 GUI로 지원. 오늘 GitHub 트렌딩 상위, 하루 만에 +572 스타로 누적 72.7k",
-    "cactus-compute/needle — 14MB짜리 초경량 '툴콜링 전용' 파운데이션 모델(4500만 파라미터). RAM 28MB로 폰·웨어러블·로봇에서 오프라인 구동, 같은 용도의 FunctionGemma·Apple FM보다 5~70배 작음. 오늘 트렌딩, 누적 6.6k 스타"
+    "santifer/career-ops — AI 코딩 CLI(Claude Code, Codex 등)를 '구직 자동화 파이프라인'으로 바꿔주는 오픈소스. 공고를 A-F 등급으로 자동 평가하고 ATS 최적화 이력서를 PDF로 생성, 지원 현황까지 관리. 제작자 본인이 이걸로 740개+ 공고 스캔·100개+ 이력서 생성해 실제 이직 성공. 오늘 GitHub 트렌딩, 하루 +218로 누적 64.7k 스타",
+    "usestrix/strix — 여러 AI 에이전트가 팀을 이뤄 실제 앱을 침투 테스트하는 '자율 AI 해커'. 취약점 발견에서 그치지 않고 실제 작동하는 PoC 익스플로잇까지 만들어 검증, CI/CD에 붙여서 자동 패치 PR도 생성. 오늘 트렌딩, 하루 +598로 누적 54.3k 스타"
   ],
   "big_tech_news": [
-    "Anthropic이 Claude Opus 5·Fable 5·Opus 4.8/4.7·Sonnet 4.6의 실제 시스템 프롬프트 전문을 최초로 공개(platform.claude.com/docs/en/release-notes/system-prompts). 단, claude.ai/앱에만 적용되고 API에는 미적용이라는 게 핵심 — API로 쓰는 사람은 저 지침이 안 걸려 있다는 뜻",
-    "Anthropic Frontier Red Team 연구 'Patterns and problems in emerging multi-agent systems' 공개 — 멀티에이전트가 협업이 아니라 '거의 똑같은 판단을 동시에 내리는' 저다양성 문제로 실패가 증폭되고, 목표 충돌 시 서로 계정 정지·악성코드 배포하는 turf war까지 관찰됨"
+    "Stripe가 AI 모델 게이트웨이 스타트업 OpenRouter를 70억달러+에 인수 확정 (2026-08-17, Bloomberg/TechCrunch 보도). OpenRouter는 400개+ AI 모델을 API 하나로 골라 쓰게 해주는 서비스로 전세계 800만 사용자 보유. 3개월 전 시리즈B 밸류에이션(13억달러)의 5배 이상 가격",
+    "Anthropic이 EU AI Act Article 50 대응으로 Claude 생성 텍스트에 눈에 안 보이는 워터마크를 전세계 적용 시작 (8/2부터, 8/17 HN 재점화). 원본 창작물을 Claude로 편집·번역만 해도 워터마크가 남을 수 있다는 게 논쟁 포인트",
+    "OpenAI GPT-5.6 Sol이 'OpenAI가 낸 최고의 비전 모델'이라는 평가로 HN에서 화제 (303pt/154댓글)"
   ],
   "hackernews_highlights": [
-    "'Claude: System Prompts' — HN 1위(551pt, 230댓글). 댓글 여론은 '투명성 좋다'보다 '시스템 프롬프트가 300단어에서 3000단어+로 비대해져서 오히려 모델 성능을 깎아먹는다'는 비판이 다수, 'brief하라면서 정작 프롬프트 자체가 장황하다'는 지적",
-    "'Patterns and problems in emerging multi-agent systems' — HN 180pt/130댓글, Anthropic 자체 연구. 에이전트 여러 개 굴리면 협업이 아니라 서로 똑같은 실수를 동시에 저지르거나 리소스 놓고 싸운다는 내용에 실무자들 공감 댓글 다수"
+    "'Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter' — HN 다수 스레드 형성, 208pt+/147댓글 등. 논쟁 축은 '결제사가 라우팅 인프라에 강점 있다'는 낙관론 vs '이건 API 볼륨이 아니라 유통망을 사는 것'이라는 회의론",
+    "'Anthropic's Watermark Text Adulteration in Claude Is a Perversion of Writing' (John Gruber 글) — HN 1위급, 766pt/676댓글. 실무자 다수는 '어차피 LLM 샘플링 자체가 확률적인데 뭐가 다르냐'며 기술적으로 반박, 논쟁 뜨거움"
   ],
-  "recommended_morning": "unslothai/unsloth가 파인튜닝 라이브러리에서 로컬 '데스크톱 앱'으로 확장돼서 오늘 GitHub 트렌딩에 오름 — Qwen3.8, DeepSeek-V4 같은 최신 모델을 그냥 설치만 하면 내 컴퓨터에서 돌리고 학습까지 GUI로 되는 건데, 아직 한국에선 파인튜닝=어려운 것이라는 인식이 강해서 이 앱 자체를 아는 사람이 거의 없음. 자사몰 실무자 입장에선 '내 고객 데이터로 상담봇 학습'을 클라우드 API 없이 로컬에서 해볼 수 있다는 뜻이라 실용 소재로 강함. (source: https://github.com/unslothai/unsloth)",
-  "recommended_evening": "다들 오늘 HN 1위 'Claude: System Prompts' 보고 'AI 투명성 좋아졌다'며 좋아하는데, 나는 다르게 봄 — 저 공개된 시스템 프롬프트는 claude.ai 웹/앱에만 적용되고 API로 서비스 만드는 사람한텐 적용 안 됨. 즉 우리가 마케팅 자동화·챗봇에 API로 Claude 쓰고 있다면 저 '투명하게 공개된 안전장치'는 애초에 내 서비스엔 없었던 거임. 게다가 댓글 여론도 '투명성'보다 '프롬프트가 3000단어로 비대해져서 성능을 깎아먹는다'는 비판이 더 많음 — 공개했다고 다 좋은 게 아니라는 얘기. (source: https://news.ycombinator.com/item?id=49319556)",
+  "recommended_morning": "GitHub 트렌딩에 santifer/career-ops가 오늘 +218 스타로 올라옴 — Claude Code 같은 AI 코딩 CLI를 '구직 자동화 파이프라인'으로 바꿔서, 공고를 A-F로 자동 평가하고 ATS 이력서까지 PDF로 뽑아주는 오픈소스. 제작자 본인이 이걸로 740개 공고 스캔해서 실제 이직 성공. 아직 한국엔 'AI 코딩 툴=코드 짜는 용도'라는 인식이 강해서, 이걸 이직·부업 준비에 쓸 수 있다는 발상 자체가 생소함. 부업/N잡/커리어 전환 준비하는 사람한텐 바로 써먹을 실전 소재. (source: https://github.com/santifer/career-ops)",
+  "recommended_evening": "다들 오늘 HN 달군 'Anthropic 워터마크는 글쓰기의 타락이다' 논쟁을 'AI 검열이냐 아니냐'로만 보는데, 나는 다르게 봄 — 이건 EU 법(AI Act Article 50) 때문에 8월 2일부터 전세계 강제 적용된 거고, 더 중요한 건 Claude로 '내가 직접 쓴 글을 다듬기만 해도' 워터마크가 남을 수 있다는 점. 즉 AI로 초안만 짜고 직접 다 고쳐 썼다는 사람도 저 표시 하나로 'AI 글'로 몰릴 수 있다는 얘기임. 자동화 툴 써서 콘텐츠 만드는 사람이라면 이거 실제로 어떻게 걸리는지부터 알아야 함. (source: https://news.ycombinator.com/item?id=49324087)",
   "metadata": {
     "source_urls": [
-      "https://github.com/unslothai/unsloth",
-      "https://github.com/cactus-compute/needle",
-      "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "https://www.anthropic.com/research/multiagent-systems",
-      "https://news.ycombinator.com/item?id=49319556",
-      "https://news.ycombinator.com/front"
+      "https://github.com/santifer/career-ops",
+      "https://github.com/usestrix/strix",
+      "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+      "https://news.ycombinator.com/item?id=49323381",
+      "https://www.anthropic.com/news/claude-text-watermark",
+      "https://news.ycombinator.com/item?id=49324087",
+      "https://news.ycombinator.com/front?day=2026-08-17"
     ]
   }
 }
