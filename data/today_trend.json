@@ -1,30 +1,23 @@
 {
-  "date": "2026-08-18",
-  "signal_applied": "status normal — 평소대로 수집. 8/17 소재(unsloth, needle, system prompts, multi-agent turf war)와 안 겹치는 새 소재로 구성",
+  "date": "2026-08-19",
+  "signal_applied": "trend_scout 지침 v2(대중화 개편) 반영 — 개발자 전용 소재(GitHub 레포·CLI 등) 배제, 일반인이 바로 체감/활용 가능한 소재만 선정. team_signal stop_doing 없음, 8/17~18 소재(unsloth, 워터마크, career-ops)와 안 겹치는 새 소재로 구성",
   "github_hot": [
-    "santifer/career-ops — AI 코딩 CLI(Claude Code, Codex 등)를 '구직 자동화 파이프라인'으로 바꿔주는 오픈소스. 공고를 A-F 등급으로 자동 평가하고 ATS 최적화 이력서를 PDF로 생성, 지원 현황까지 관리. 제작자 본인이 이걸로 740개+ 공고 스캔·100개+ 이력서 생성해 실제 이직 성공. 오늘 GitHub 트렌딩, 하루 +218로 누적 64.7k 스타",
-    "usestrix/strix — 여러 AI 에이전트가 팀을 이뤄 실제 앱을 침투 테스트하는 '자율 AI 해커'. 취약점 발견에서 그치지 않고 실제 작동하는 PoC 익스플로잇까지 만들어 검증, CI/CD에 붙여서 자동 패치 PR도 생성. 오늘 트렌딩, 하루 +598로 누적 54.3k 스타"
+    "오늘은 대중성 게이트 통과하는 개발자 레포 없음 — 트렌드 스카우트 v2 방침대로 GitHub 소재 생략, 소비자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "Stripe가 AI 모델 게이트웨이 스타트업 OpenRouter를 70억달러+에 인수 확정 (2026-08-17, Bloomberg/TechCrunch 보도). OpenRouter는 400개+ AI 모델을 API 하나로 골라 쓰게 해주는 서비스로 전세계 800만 사용자 보유. 3개월 전 시리즈B 밸류에이션(13억달러)의 5배 이상 가격",
-    "Anthropic이 EU AI Act Article 50 대응으로 Claude 생성 텍스트에 눈에 안 보이는 워터마크를 전세계 적용 시작 (8/2부터, 8/17 HN 재점화). 원본 창작물을 Claude로 편집·번역만 해도 워터마크가 남을 수 있다는 게 논쟁 포인트",
-    "OpenAI GPT-5.6 Sol이 'OpenAI가 낸 최고의 비전 모델'이라는 평가로 HN에서 화제 (303pt/154댓글)"
+    "Gemini 앱이 8/11 월간활성사용자 10억 명 돌파. 이어 8/12 Google이 OpenTable·Ticketmaster·GetYourGuide·Zocdoc·Otter.ai 등을 Gemini에 '연결 앱'으로 붙인다고 발표 — 말로 시키면 식당 예약, 콘서트 티켓팅, 병원 예약까지 대신 처리",
+    "OpenAI, ChatGPT에 Google Drive 연동 추가(Docs·Sheets·Slides를 채팅창에서 바로 참조). 8/30에는 DALL·E GPT 공식 종료 예정이라 기존 이미지 백업 필요"
   ],
   "hackernews_highlights": [
-    "'Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter' — HN 다수 스레드 형성, 208pt+/147댓글 등. 논쟁 축은 '결제사가 라우팅 인프라에 강점 있다'는 낙관론 vs '이건 API 볼륨이 아니라 유통망을 사는 것'이라는 회의론",
-    "'Anthropic's Watermark Text Adulteration in Claude Is a Perversion of Writing' (John Gruber 글) — HN 1위급, 766pt/676댓글. 실무자 다수는 '어차피 LLM 샘플링 자체가 확률적인데 뭐가 다르냐'며 기술적으로 반박, 논쟁 뜨거움"
+    "오하이오 주 박람회 미술 포스터 공모전에서 AI로 만든 작품이 1등(상금 1,000달러) 수상해 논란 — 관람객·예술가들은 '창작 대회에 AI가 침투했다'며 반발, 운영진은 '규칙 위반 아님'이라 확인했지만 향후 AI 사용 금지 검토 중"
   ],
-  "recommended_morning": "GitHub 트렌딩에 santifer/career-ops가 오늘 +218 스타로 올라옴 — Claude Code 같은 AI 코딩 CLI를 '구직 자동화 파이프라인'으로 바꿔서, 공고를 A-F로 자동 평가하고 ATS 이력서까지 PDF로 뽑아주는 오픈소스. 제작자 본인이 이걸로 740개 공고 스캔해서 실제 이직 성공. 아직 한국엔 'AI 코딩 툴=코드 짜는 용도'라는 인식이 강해서, 이걸 이직·부업 준비에 쓸 수 있다는 발상 자체가 생소함. 부업/N잡/커리어 전환 준비하는 사람한텐 바로 써먹을 실전 소재. (source: https://github.com/santifer/career-ops)",
-  "recommended_evening": "다들 오늘 HN 달군 'Anthropic 워터마크는 글쓰기의 타락이다' 논쟁을 'AI 검열이냐 아니냐'로만 보는데, 나는 다르게 봄 — 이건 EU 법(AI Act Article 50) 때문에 8월 2일부터 전세계 강제 적용된 거고, 더 중요한 건 Claude로 '내가 직접 쓴 글을 다듬기만 해도' 워터마크가 남을 수 있다는 점. 즉 AI로 초안만 짜고 직접 다 고쳐 썼다는 사람도 저 표시 하나로 'AI 글'로 몰릴 수 있다는 얘기임. 자동화 툴 써서 콘텐츠 만드는 사람이라면 이거 실제로 어떻게 걸리는지부터 알아야 함. (source: https://news.ycombinator.com/item?id=49324087)",
+  "recommended_morning": "Gemini가 8/11에 월간 사용자 10억을 넘기면서 바로 다음날(8/12) 오픈테이블·티켓마스터·getyourguide·zocdoc 같은 예약 서비스를 통째로 연결해버렸다 — 이제 '제미니야 이번 주말 저녁 예약 좀' 한마디로 식당·병원·공연 예약까지 끝난다는 뜻. 일반 대중은 아직 'AI 챗봇=질문 답변용'으로만 알고 있어서 '예약 비서로 써먹는다'는 발상 자체가 생소함. 매일 예약·일정 잡느라 시간 쓰는 직장인·자영업자한테 바로 써먹을 활용법 소재. (source: https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026/)",
+  "recommended_evening": "오하이오 주 박람회 미술 대회에서 AI로 만든 포스터가 1등 상금까지 탔다는 얘기, 다들 'AI가 인간 창작을 뺏었다'는 분노 각도로만 보는데 나는 다르게 봄 — 정작 운영진이 확인한 건 '규칙 위반이 없었다'는 거임. 즉 문제는 AI 자체가 아니라 대회 규정이 AI 등장을 아예 상정 안 하고 만들어졌다는 거고, 이런 구멍은 미술대회뿐 아니라 지금 어디서든(사내 공모전, SNS 콘텐츠 심사 등) 똑같이 뚫려 있음. 규정부터 정비 안 하면 다음 논란은 당신 회사에서 터짐. (source: https://abc6onyourside.com/news/local/ai-contest-poster-at-ohio-state-fair-causes-controversy-after-winning-1st-place)",
   "metadata": {
     "source_urls": [
-      "https://github.com/santifer/career-ops",
-      "https://github.com/usestrix/strix",
-      "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
-      "https://news.ycombinator.com/item?id=49323381",
-      "https://www.anthropic.com/news/claude-text-watermark",
-      "https://news.ycombinator.com/item?id=49324087",
-      "https://news.ycombinator.com/front?day=2026-08-17"
+      "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026/",
+      "https://abc6onyourside.com/news/local/ai-contest-poster-at-ohio-state-fair-causes-controversy-after-winning-1st-place",
+      "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     ]
   }
 }
