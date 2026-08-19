@@ -576,5 +576,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-08-19",
+    "content": "요즘 챗봇들이 질문 답변 넘어서 예약 대행 쪽으로 손 뻗고 있다는 얘기가 계속 나옴. 식당이나 공연표 예약할 때 여기저기 앱 왔다갔다 안 하고 채팅창 한 줄로 끝내는 방향으로 가는 중이라는 거임. 어디까지 실제로 됐는지는 서비스마다 다르고 아직 확실친 않은데, 방향 자체는 뻔해 보임 — 예약 때문에 시간 자주 뺏기는 사람이면 이 흐름 미리 봐두면 나중에 덜 헤맴. 너는 예약할 때 제일 귀찮은 게 뭐임?",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 2
   }
 ]
