@@ -587,5 +587,14 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 2
+  },
+  {
+    "date": "2026-08-20",
+    "content": "요즘 ChatGPT 무료 계정 메시지 제한이 예전보다 훨씬 느슨해진 느낌임(체감상 거의 안 막힘). 예전엔 하루 몇 번 쓰면 막혀서 아껴 쓰던 사람 많았잖아. 근데 자사몰 하는 사람 기준으로 보면 얘기 다름 - 상세페이지 카피 여러 버전 뽑고, CS 자주 오는 질문 답변 템플릿 쭉 만들고, 리뷰 답변 초안까지 끊김 없이 몰아서 물어봐도 됨. 유료 결제 고민하다 만 사람들 지금도 이거 모르고 계속 아껴 씀. 너는 하루에 몇 번이나 물어봄?",
+    "topic": "AI_THREADS",
+    "reply": "https://www.unite.ai/openai-gives-free-chatgpt-users-unlimited-text-chats-on-gpt-5-6-luna/",
+    "fact_checked": true,
+    "fact_check_status": "modified",
+    "fact_check_reason": "'ChatGPT 무료 계정 텍스트 채팅 완전 무제한' 전환은 검색으로도, 일반 지식으로도 확인되지 않는 구체적 사실 주장 — OpenAI 무료 티어는 보통 메시지 한도가 존재하며 '완전 무제한'은 근거 없이 단정하기 위험함; '8/10부터 조용히 바뀜'이라는 특정 날짜도 확인 불가 — 틀릴 경우 신뢰도 타격이 큰 디테일"
   }
 ]
