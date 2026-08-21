@@ -1,24 +1,23 @@
 {
-  "date": "2026-08-20",
-  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로', stop_doing 없음 — 8/19 소재(Gemini 연결 앱, 오하이오 미술대회, DALL·E 종료)와 겹치지 않는 새 소재로 구성. 대중성 게이트 적용해 개발자 전용 소식(코딩 에이전트, 반도체, 사이버보안 등)은 전부 배제",
+  "date": "2026-08-21",
+  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로', stop_doing 없음 — 8/19~20 소재(Gemini 연결 앱, DALL·E 종료, ChatGPT 무제한 채팅, Granta/Claude 판별 논란, Oyo 호텔 사기)와 겹치지 않는 새 소재로 구성. 대중성 게이트 적용해 개발자 전용 소식은 배제하고 '내 폰/내 챗GPT가 바로 바뀌는' 체감형 소식 위주로 선정",
   "github_hot": [
-    "대중성 게이트 통과하는 개발자 레포 없음 (오늘 확인된 화제 소식은 Asana-OpenAI 코딩 에이전트 사례, Z.ai GLM-5.3 API 등 전부 개발자/기업향) — v2 방침대로 생략, 소비자용 AI 소식으로 대체"
+    "대중성 게이트 통과하는 개발자 레포 없음 — 오늘도 소비자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "OpenAI가 8/6 발표, 8/10 주에 순차 적용 — 무료(Free/Go) 사용자도 GPT-5.6 Luna 모델로 텍스트 채팅 무제한 사용 가능 (기존엔 하루 메시지 제한 있었음). '더 생각하기(Think)' 버튼도 무료 사용자에게 제공, 어려운 질문엔 더 오래 생각하게 시킬 수 있음. 파일 업로드·이미지는 여전히 제한. (source: https://www.unite.ai/openai-gives-free-chatgpt-users-unlimited-text-chats-on-gpt-5-6-luna/)",
-    "영국 문예지 Granta·Commonwealth 재단이 주관한 Commonwealth Short Story Prize 수상작 'Serpent in the Grove'가 AI로 작성됐다는 의혹 제기 — 발행인이 '진짜 사람이 썼는지' Claude에게 직접 물어봤고 Claude가 '사람이 혼자 쓴 게 거의 확실하다'고 답변, 이를 근거로 결백 주장. 그런데 AI 탐지 전문업체 Pangram이 같은 글을 분석한 결과 100% AI 생성으로 판정, 다른 수상작 2편도 AI 의심 표시. (source: https://www.france24.com/en/culture/20260526-could-controversial-award-winning-short-story-signal-new-era-ai-literary-slop-commonwealth-prize)"
+    "OpenAI가 8/11 공지로 ChatGPT 광고 테스트를 영국·멕시코·브라질·일본·한국 5개국으로 확대, 8월 중순부터 실제 노출 시작 — Free·Go 등급 사용자에게만 답변 하단에 광고가 붙고, Plus 이상 유료 등급은 광고 없음. 미국에서 2026년 2월 시작한 테스트가 한국까지 온 것. (source: https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/)",
+    "구글이 9월 4일부터 안드로이드폰·태블릿·Wear OS·Android Auto(휴대폰 연동)에서 구글 어시스턴트를 단계적으로 종료하고 제미나이로 전면 대체 — 전환된 기기는 어시스턴트로 다시 못 돌아감. 이미 'Google Assistant is going away' 이메일 발송 시작. Google Built-in 탑재 차량만 예외. (source: https://www.businesstoday.in/amp/technology/news/story/google-assistant-to-be-replaced-by-gemini-starting-september-on-android-and-wearos-547570-2026-08-06)"
   ],
   "hackernews_highlights": [
-    "라스베가스 오요(Oyo) 호텔이 부킹닷컴·익스피디아 등 예약 사이트에 가짜 호텔명과 AI로 합성한 시설 사진(실제 오요 호텔 외관을 전혀 다른 신규 호텔처럼 조작)을 올려 고객을 유인해온 사실이 드러나 논란 — 논란 확산 후 관련 목록 삭제. 여행 예약할 때 사진만 믿으면 안 된다는 경고 사례. (source: https://www.radioseoul1650.com/archives/152177)"
+    "OpenAI 발표에 따르면 ChatGPT 주간 활성 사용자가 약 10억 명 돌파 — 무료 사용자 대상 광고 확대 시점과 겹쳐 '사용자 늘자마자 광고 붙인다'는 해석이 나옴. (source: https://www.aiapps.com/blog/ai-news-august-breakthroughs-launches-trends-cant-miss/)"
   ],
-  "recommended_morning": "8/10 주부터 ChatGPT 무료 사용자도 텍스트 채팅이 완전 무제한으로 풀렸다 — 예전엔 '하루 몇 번 쓰면 막힘' 때문에 유료 결제 고민하던 사람들이 많았는데, 이제 그 벽이 사라졌다. 대부분의 무료 사용자는 아직 이 변화를 모르고 여전히 아껴 쓰는 습관대로 씀. 매일 업무 이메일 초안, 보고서 요약, 아이디어 정리에 ChatGPT를 짧게만 쓰던 직장인/자영업자한테 '이제 눈치 안 보고 계속 물어봐도 된다'는 걸 알려주는 게 먼저 안 각도. (source: https://www.unite.ai/openai-gives-free-chatgpt-users-unlimited-text-chats-on-gpt-5-6-luna/)",
-  "recommended_evening": "영국 유명 문예지 Granta가 자기네 문학상 수상작이 AI로 쓴 거 아니냐는 의혹이 터지자 진짜로 한 일 - Claude한테 '이거 AI가 썼어?' 라고 물어본 거다. Claude는 범용 챗봇이지 AI 탐지기가 아닌데. 반면 전문 탐지업체는 같은 글을 100% AI 생성으로 판정했다. 다들 '문학상까지 AI가 침투했다'는 분노 각도로만 보는데 진짜 무서운 포인트는 따로 있음 - 권위 있는 기관도 'AI한테 AI인지 물어보면 답 나온다'고 믿을 만큼 AI 리터러시가 없다는 거다. 당신 회사도 지금 'AI가 만든 건지 AI한테 물어보고' 있진 않은지 점검할 때. (source: https://www.france24.com/en/culture/20260526-could-controversial-award-winning-short-story-signal-new-era-ai-literary-slop-commonwealth-prize)",
+  "recommended_morning": "한국 챗GPT 무료 사용자들, 이제 답변 밑에 광고 뜬다 — 8/11 OpenAI가 한국·일본·영국 등 5개국으로 광고 테스트를 확대했고 이미 노출 시작됐다. Plus 이상 유료 사용자는 광고 없음. 다들 '공짜니까 계속 무료로 쓰면 되지'라고 생각하는데, 매일 업무에 챗GPT answers를 그대로 복붙해 쓰던 자영업자/직장인이라면 이제 답변 사이에 광고 문구가 낄 수 있다는 걸 모르고 있음. '언제부터 광고 떴는지, 내 계정도 대상인지' 확인해보라는 각도. (source: https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/)",
+  "recommended_evening": "9월 4일부터 안드로이드폰 구글 어시스턴트가 순서대로 사라지고 제미나이로 강제 전환된다 — 되돌릴 수도 없다. 다들 'AI 비서 업그레이드'라고 축하하는 분위기인데, 진짜 포인트는 따로 있음: 10년 넘게 '헤이 구글'로 알람 맞추고 문자 보내던 습관이 하루아침에 안 통하게 되는 거다. 새 비서는 계정·비밀번호까지 접근해서 예약·양식작성을 대신하는데, 그 권한을 얼마나 넘겨줄지는 아무도 안 물어봤다. 편해지는 것과 내 정보 접근권을 넘기는 게 세트로 온다는 걸 짚는 각도.",
   "metadata": {
     "source_urls": [
-      "https://www.unite.ai/openai-gives-free-chatgpt-users-unlimited-text-chats-on-gpt-5-6-luna/",
-      "https://www.france24.com/en/culture/20260526-could-controversial-award-winning-short-story-signal-new-era-ai-literary-slop-commonwealth-prize",
-      "https://www.radioseoul1650.com/archives/152177",
-      "https://techstartups.com/2026/08/19/top-tech-news-today-august-19-2026-landspace-microsoft-nvidia-openai-samsung-unitree-z-ai-more/"
+      "https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/",
+      "https://www.businesstoday.in/amp/technology/news/story/google-assistant-to-be-replaced-by-gemini-starting-september-on-android-and-wearos-547570-2026-08-06",
+      "https://www.aiapps.com/blog/ai-news-august-breakthroughs-launches-trends-cant-miss/"
     ]
   }
 }
