@@ -1,23 +1,23 @@
 {
-  "date": "2026-08-21",
-  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로', stop_doing 없음 — 8/19~20 소재(Gemini 연결 앱, DALL·E 종료, ChatGPT 무제한 채팅, Granta/Claude 판별 논란, Oyo 호텔 사기)와 겹치지 않는 새 소재로 구성. 대중성 게이트 적용해 개발자 전용 소식은 배제하고 '내 폰/내 챗GPT가 바로 바뀌는' 체감형 소식 위주로 선정",
+  "date": "2026-08-24",
+  "signal_applied": "team_signal status: normal (2일째 정체), directives.trend_scout: '평소대로'. bandit 최고 성과 arm = morning|ko|target_callout|smartstore(팔로워 +109) — best_performing 스타일('셀러한테만 훅 + 구체 수치 + 반전')에 맞춰 오전 소재를 쇼핑/브랜드 사장님 타겟 콜아웃으로 구성. 8/18~21 소재(Claude Code CLI 자동화, 챗봇 예약대행, ChatGPT 무료 제한 완화, ChatGPT 광고)와 안 겹치는 새 소재만 선정. 대중성 게이트 적용해 개발자 전용 소식은 배제.",
   "github_hot": [
     "대중성 게이트 통과하는 개발자 레포 없음 — 오늘도 소비자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "OpenAI가 8/11 공지로 ChatGPT 광고 테스트를 영국·멕시코·브라질·일본·한국 5개국으로 확대, 8월 중순부터 실제 노출 시작 — Free·Go 등급 사용자에게만 답변 하단에 광고가 붙고, Plus 이상 유료 등급은 광고 없음. 미국에서 2026년 2월 시작한 테스트가 한국까지 온 것. (source: https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/)",
-    "구글이 9월 4일부터 안드로이드폰·태블릿·Wear OS·Android Auto(휴대폰 연동)에서 구글 어시스턴트를 단계적으로 종료하고 제미나이로 전면 대체 — 전환된 기기는 어시스턴트로 다시 못 돌아감. 이미 'Google Assistant is going away' 이메일 발송 시작. Google Built-in 탑재 차량만 예외. (source: https://www.businesstoday.in/amp/technology/news/story/google-assistant-to-be-replaced-by-gemini-starting-september-on-android-and-wearos-547570-2026-08-06)"
+    "영국 소비자보호 업체 Ask Silver가 ChatGPT에 'Russell & Bromley 가방' 추천을 물었더니 진짜 정보와 함께 가짜 사이트 2곳(therussellbromleyofficial, russellandbromleylondon 등)을 섞어 추천한 사실이 확인됨 — 해당 브랜드가 2026년 1월 파산 후 Next에 흡수돼 공식 홈페이지가 사라진 틈을 노려 사기 사이트들이 AI 학습 데이터를 '오염'시킨 것. OpenAI는 신고받은 사이트를 삭제했다고 확인. (source: https://cybernews.com/ai-news/chatgpt-shopping-results-scam-websites/)",
+    "OpenAI가 8/20 macOS용 ChatGPT에 '애플 메시지(iMessage/SMS/RCS)' 플러그인을 출시 — Mac(Apple Silicon)에서 ChatGPT가 문자함을 검색·요약하고 답장 초안까지 작성, 승인만 누르면 대신 전송. 무료 등급 포함 전 구독 등급에서 사용 가능하나 전체 문자 인덱싱은 안 하고 로컬 처리라고 설명. Bloomberg는 이를 두고 애플 프라이버시 우려를 제기함. (source: https://www.bloomberg.com/news/articles/2026-08-20/chatgpt-can-now-control-imessage-potentially-raising-apple-privacy-concerns)"
   ],
   "hackernews_highlights": [
-    "OpenAI 발표에 따르면 ChatGPT 주간 활성 사용자가 약 10억 명 돌파 — 무료 사용자 대상 광고 확대 시점과 겹쳐 '사용자 늘자마자 광고 붙인다'는 해석이 나옴. (source: https://www.aiapps.com/blog/ai-news-august-breakthroughs-launches-trends-cant-miss/)"
+    "대중성 게이트 통과하는 HN 개발자 화제 없음 — 오늘은 소비자용 AI 이슈 2건으로 대체"
   ],
-  "recommended_morning": "한국 챗GPT 무료 사용자들, 이제 답변 밑에 광고 뜬다 — 8/11 OpenAI가 한국·일본·영국 등 5개국으로 광고 테스트를 확대했고 이미 노출 시작됐다. Plus 이상 유료 사용자는 광고 없음. 다들 '공짜니까 계속 무료로 쓰면 되지'라고 생각하는데, 매일 업무에 챗GPT answers를 그대로 복붙해 쓰던 자영업자/직장인이라면 이제 답변 사이에 광고 문구가 낄 수 있다는 걸 모르고 있음. '언제부터 광고 떴는지, 내 계정도 대상인지' 확인해보라는 각도. (source: https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/)",
-  "recommended_evening": "9월 4일부터 안드로이드폰 구글 어시스턴트가 순서대로 사라지고 제미나이로 강제 전환된다 — 되돌릴 수도 없다. 다들 'AI 비서 업그레이드'라고 축하하는 분위기인데, 진짜 포인트는 따로 있음: 10년 넘게 '헤이 구글'로 알람 맞추고 문자 보내던 습관이 하루아침에 안 통하게 되는 거다. 새 비서는 계정·비밀번호까지 접근해서 예약·양식작성을 대신하는데, 그 권한을 얼마나 넘겨줄지는 아무도 안 물어봤다. 편해지는 것과 내 정보 접근권을 넘기는 게 세트로 온다는 걸 짚는 각도.",
+  "recommended_morning": "쇼핑할 때 챗GPT 추천 그대로 믿고 결제하는 사람한테 하는 얘기. 영국 소비자보호업체가 실제로 챗GPT한테 특정 브랜드 가방을 물어봤더니, 진짜 정보 사이에 가짜 사이트 주소가 자연스럽게 섞여 나왔다 — 그 브랜드가 올초 망해서 공식 홈페이지가 사라진 틈을 사기꾼들이 파고든 거다. 자사몰/브랜드 운영하는 사장님 입장에서 진짜 무서운 포인트는 따로 있음: 브랜드 접거나 도메인 방치하면 그 자리에 가짜가 들어와서 AI 추천에까지 올라탄다는 것. '검색 노출'만 관리하던 시대는 끝나고 이제 'AI가 뭐라고 추천하는지'까지 관리해야 하는 시대라는 각도. (source: https://cybernews.com/ai-news/chatgpt-shopping-results-scam-websites/)",
+  "recommended_evening": "다들 '이제 문자 답장까지 AI가 대신 해준다'고 편해졌다는데 나는 다르게 봄. OpenAI가 어제(8/20) 낸 애플 메시지 연동 기능, Mac에서 챗GPT가 내 문자함을 읽고 검색하고 답장 초안까지 써주는 건데 — 편의 뒤에 숨은 건 '내 문자함 전체 접근권을 AI한테 넘긴다'는 사실이다. 전송 전엔 승인받는다고 하지만, 읽는 건 이미 다 읽는다는 얘기. 블룸버그도 이걸 프라이버시 이슈로 짚었음. 편해지는 것과 내 대화 내용 넘기는 게 항상 세트로 온다는 걸 짚는 각도.",
   "metadata": {
     "source_urls": [
-      "https://www.ghacks.net/2026/08/13/openai-expands-chatgpt-ads-test-to-uk-mexico-brazil-japan-and-south-korea/",
-      "https://www.businesstoday.in/amp/technology/news/story/google-assistant-to-be-replaced-by-gemini-starting-september-on-android-and-wearos-547570-2026-08-06",
-      "https://www.aiapps.com/blog/ai-news-august-breakthroughs-launches-trends-cant-miss/"
+      "https://cybernews.com/ai-news/chatgpt-shopping-results-scam-websites/",
+      "https://www.bloomberg.com/news/articles/2026-08-20/chatgpt-can-now-control-imessage-potentially-raising-apple-privacy-concerns",
+      "https://9to5mac.com/2026/08/20/chatgpt-update-adds-apple-messages-integration-on-mac/"
     ]
   }
 }
