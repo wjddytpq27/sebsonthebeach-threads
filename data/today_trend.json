@@ -1,25 +1,25 @@
 {
-  "date": "2026-08-26",
-  "signal_applied": "team_signal status: normal (2일째 정체), directives.trend_scout: '평소대로'. bandit 최고 성과 arm = morning|ko|target_callout|smartstore(팔로워 +109) 기준으로, 오전은 '자사몰/이커머스 사장님한테만 하는 얘기' 콜아웃 + 구체 수치(15억 벌금, 62% vs 23%) + 반전 구조 유지. 어제(8/25, 링크드인 AI slop·퓨리서치 불안감) 소재와 겹치지 않게 선정. 대중성 게이트 적용 — 개발자 전용 소식(Meta Muse Glimmer 오픈모델 등) 배제.",
+  "date": "2026-08-27",
+  "signal_applied": "team_signal status: normal (2일째 정체), directives.trend_scout: '평소대로'. best_performing 스타일(셀러한테만 콜아웃 + 구체 수치 + 반전) 참고해서 네이버 AI 생성물 정책 건을 오전 메인으로 선정 — 스마트스토어 셀러 실무에 직결되는 실제 시행 규정. 어제(8/26, EU AI Act 챗봇 투명성·AI 쇼핑 에이전트 리포트) 소재와 겹치지 않게 선정. 대중성 게이트 적용 — Nvidia-Hugging Face 인수는 개발자 플랫폼 인수 건이라 저녁 영어권(비즈니스/그로스 앵글)으로만 가볍게 배치.",
   "github_hot": [
     "대중성 게이트 통과하는 개발자 레포 없음 — 오늘도 소비자/셀러용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "EU AI Act Article 50 투명성 규정이 8/2부터 실제 시행 들어갔다. 이제 유럽에서는 챗봇이 '저는 AI입니다'를 명확하게 밝히지 않으면 최대 1500만 유로(약 230억원) 또는 전세계 매출 3% 중 큰 쪽으로 벌금이 나온다. AI가 만든 이미지·영상도 기계가 읽을 수 있는 표식을 넣어야 함. (source: https://www.traverssmith.com/knowledge/knowledge-container/is-it-a-bot-eu-ai-act-transparency-rules-take-effect-2-august-2026/, https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august)",
-    "OpenAI가 7/31 ChatGPT 주간 활성 이용자 10억 명을 넘겼다고 공식 확인. 2025년 2월 4억 명에서 1년 반 만에 2.5배 늘었고, 연환산 매출도 8월 기준 400억 달러로 뛰었다(2~5월 250억 달러에서 정체 후 급등). (source: https://tech.yahoo.com/ai/chatgpt/articles/chatgpt-tops-1b-weekly-users-191537749.html)"
+    "네이버가 2026년 7월 10일부터 스마트스토어 AI 생성물(이미지·영상) 정책을 실제 시행 중. AI 사용 자체는 막지 않지만 '소비자가 오인할 수 있는' 활용을 금지 — AI 생성물 미표시, 의사·약사 등 전문가로 오인되는 가상 인물 사용, 실제 상품과 다른 색상·크기 표현, 효능 과장 등이 대상. 의료기기·건기식·유아식품·신선식품 등은 AI 생성물 사용 시 표시가 의무이고, 위반하면 상품 미노출·클린프로그램 적용까지 간다. (source: https://utong0909.onch3.co.kr/bbs_view.php?num=13&vnum=16026)",
+    "OpenAI가 ChatGPT Atlas(AI 내장 브라우저)를 2026년 8월 9일부로 종료. 2025년 10월 공개 후 채 1년도 못 채우고 접었다. 공식 사유는 '브라우저 보안 유지 부담'과 '저조한 사용자 채택률' — 에이전트 기능은 ChatGPT 본체와 코딩 도구 Codex로 흡수됐다. (source: https://ledge.ai/articles/openai_chatgpt_atlas_shutdown_desktop_browser, https://www.techbuzz.ai/articles/openai-kills-chatgpt-atlas-browser-after-9-months)"
   ],
   "hackernews_highlights": [
-    "대중성 게이트 통과하는 HN 개발자 화제 없음 — 대신 8/17 발표된 'AI Shopping Agents and Agentic Commerce 2026' 리포트로 대체. AI가 상품 비교엔 62% 쓰이는데 실제 결제 단계엔 23%만 쓰인다는 격차, 미국 소매 사이트로 유입되는 생성형 AI 추천 트래픽이 1년 만에 최대 4700% 늘었다는 수치가 핵심. (source: https://finance.yahoo.com/technology/ai/articles/ai-shopping-agents-agentic-commerce-104700451.html, https://www.globenewswire.com/news-release/2026/08/17/3345937/28124/en/ai-shopping-agents-and-agentic-commerce-2026-adoption-trends-and-execution-limits.html)"
+    "Nvidia가 오픈소스 AI 모델 허브 Hugging Face를 129억 달러(약 17조원)에 인수하기로 합의했다고 8/26~27 일제히 보도됨 ('GitHub of AI'로 불리는 플랫폼). 작년에 Nvidia가 제시한 7억 달러 밸류 투자 제안을 Hugging Face가 거절했었는데, 1년 만에 몸값이 2배 가까이 뛰어서 팔렸다. (source: https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html, https://techstartups.com/2026/08/26/nvidia-agrees-to-buy-hugging-face-for-12-9-billion-in-major-ai-deal-taking-control-of-the-github-of-ai/)"
   ],
-  "recommended_morning": "쇼핑몰·스마트스토어에 AI 챗봇 CS 붙여놓은 사장님한테만 하는 얘기. 유럽은 8월 2일부터 'AI가 사람인 척 응대하면' 벌금이 매출 3%까지 나오게 법이 바뀌었다 — 최대 1500만 유로(약 230억원). 지금까지는 챗봇이 사람처럼 자연스럽게 답하는 게 미덕이었는데, 이제 그게 오히려 리스크가 되는 시대가 왔다는 신호. 국내에 당장 똑같은 법은 없지만, 해외 셀러몰 운영하거나 글로벌 플랫폼 쓰는 사장님이면 이 흐름 눈여겨봐야 함 — 'AI인 걸 숨기는 게 경쟁력'이던 시절이 끝나가고 있음.",
-  "recommended_evening": "다들 'AI 에이전트가 알아서 다 쇼핑해준다'고 떠드는데 나는 좀 다르게 봄. 8월 17일 나온 리포트 보니까, AI가 상품 비교해주는 데는 62%나 쓰이는데 정작 결제까지 AI한테 맡기는 비율은 23%뿐이더라 — 이 격차가 진짜 신뢰의 크기다. 미국에서 AI 추천으로 쇼핑몰 들어오는 트래픽은 1년 새 최대 4700% 늘었다는데, 그건 'AI가 추천은 잘하지만 지갑은 아직 안 맡긴다'는 뜻. 이커머스 사장님 입장에서 진짜 준비해야 할 건 '내 상품을 AI가 잘 추천하게' 만드는 것 — 결제 자동화보다 먼저 온다.",
+  "recommended_morning": "스마트스토어에 AI로 상세페이지 이미지 만들어 올리는 셀러한테만 하는 얘기. 7월 10일부터 네이버가 AI 생성물 정책을 실제로 돌리기 시작했음 — AI 쓰는 거 자체는 안 막는데, '이거 AI로 만든 이미지예요' 표시 안 하고 실제 상품이랑 다르게 색깔·크기 예쁘게 뽑아서 올리면 그때부터 걸림. 건기식·유아식품·신선식품 같은 카테고리는 표시 안 하면 바로 상품 미노출까지 감. 다들 'AI로 상세페이지 빨리 뽑는 법'만 찾아보는데, 정작 지금 챙겨야 할 건 '어디까지 AI로 만들었다고 표시해야 안 걸리는지'임 — 속도보다 규정이 먼저.",
+  "recommended_evening": "everyone's obsessing over which AI browser wins the 'agent wars' — meanwhile OpenAI just quietly killed its own AI browser, ChatGPT Atlas, on Aug 9, less than a year after launch. official reason: security upkeep was too costly and adoption stayed low even riding ChatGPT's massive user base. the lesson for builders isn't 'browsers are dead' — it's that bolting an agent onto a brand-new surface (a whole browser) loses to putting it inside the surface people already live in. same week, Nvidia agreed to pay $12.9B for Hugging Face — 12 months ago HF turned down a $7B offer from the same buyer. distribution and habit beat novelty, every time.",
   "metadata": {
     "source_urls": [
-      "https://www.traverssmith.com/knowledge/knowledge-container/is-it-a-bot-eu-ai-act-transparency-rules-take-effect-2-august-2026/",
-      "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
-      "https://tech.yahoo.com/ai/chatgpt/articles/chatgpt-tops-1b-weekly-users-191537749.html",
-      "https://finance.yahoo.com/technology/ai/articles/ai-shopping-agents-agentic-commerce-104700451.html",
-      "https://www.globenewswire.com/news-release/2026/08/17/3345937/28124/en/ai-shopping-agents-and-agentic-commerce-2026-adoption-trends-and-execution-limits.html"
+      "https://utong0909.onch3.co.kr/bbs_view.php?num=13&vnum=16026",
+      "https://ledge.ai/articles/openai_chatgpt_atlas_shutdown_desktop_browser",
+      "https://www.techbuzz.ai/articles/openai-kills-chatgpt-atlas-browser-after-9-months",
+      "https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html",
+      "https://techstartups.com/2026/08/26/nvidia-agrees-to-buy-hugging-face-for-12-9-billion-in-major-ai-deal-taking-control-of-the-github-of-ai/"
     ]
   }
 }
