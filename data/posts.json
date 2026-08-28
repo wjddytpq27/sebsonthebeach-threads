@@ -647,5 +647,16 @@
     "fact_check_reason": "검증할 사실 주장 없음",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-08-28",
+    "content": "자사몰이든 스마트스토어든 아직도 네이버 검색 순위에만 목매는 셀러한테 하는 얘기. 요즘 사람들 뭐 살지 고민될 때 검색창 대신 ChatGPT 같은 AI한테 먼저 물어보는 경우가 늘고 있음. 그럼 그 AI가 내 상품을 추천 안 해주면 순위가 아무리 좋아도 그 손님은 애초에 내 스토어 근처도 안 옴. 검색 최적화(SEO) 다음 판은 AI한테 나를 추천하게 만드는 최적화가 될 수도 있겠다 싶음.",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
