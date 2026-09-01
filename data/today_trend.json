@@ -1,23 +1,23 @@
 {
-  "date": "2026-08-28",
-  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로'. best_performing 스타일(셀러한테만 콜아웃 + 구체 수치 + 반전)을 반영해 'ChatGPT 주간 10억 사용자 + 소비자 60%가 쇼핑을 AI로 시작' 통계를 셀러 관점 반전으로 오전 메인 배치. 어제(8/27, 네이버 AI생성물 정책/ChatGPT Atlas 종료/Nvidia-HuggingFace 인수)와 겹치지 않는 새 소재로 선정. 대중성 게이트 적용 — Gemini 3.7 Flash는 모델 스펙·API 위주라 개발자 전용으로 판단해 제외.",
+  "date": "2026-09-01",
+  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로'. best_performing 스타일(셀러한테만 콜아웃 + 구체 수치 + 반전)을 오전 메인에 반영. 최근 소재(ChatGPT 10억 유저, 카카오 이미지 재창작, 유로폴 에이전틱 사기)와 겹치지 않는 신선한 소재로 쿠팡 AI 기능 도입(8/7)과 아마존 리퍼스→알렉사 포 쇼핑 통합(5/13)을 선정. 대중성 게이트 적용 — AI 영상·이미지 생성 'UI 트렌드' 검색 결과는 특정 이벤트 없는 뭉뚱그린 마케팅 서술이라 제외.",
   "github_hot": [
     "대중성 게이트 통과하는 개발자 레포 없음 — 오늘도 소비자/셀러용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "ChatGPT가 주간 활성 사용자 10억 명에 근접했다고 OpenAI가 발표(2026-07-29 보도). 애초 목표보다 7개월 늦었지만, 월간 활성 사용자 10억 명은 이미 2026년 5월에 인터넷 역사상 가장 빠른 속도로 달성했다(Google Maps·TikTok·Instagram·YouTube는 5~8년 걸린 걸 3년도 안 돼 넘음). 더 중요한 건 소비자의 60% 이상이 일상적 계획·학습·쇼핑을 AI 플랫폼에서 '먼저' 시작한다는 통계. (source: https://www.pymnts.com/news/artificial-intelligence/2026/chatgpt-approaches-1-billion-weekly-active-user-milestone/)",
-    "카카오톡이 6차 정기 업데이트(2026-07-15)로 대화방에 공유된 사진을 'AI로 만들기' 버튼 하나로 애니 스타일·색연필 드로잉 등으로 바로 바꿔주는 이미지 재창작 기능(ChatGPT 이미지 2.0 기반)과, '대화 요약' 버튼으로 쌓인 메시지 핵심만 정리해주는 기능을 PC까지 확대했다. (source: https://www.kakaocorp.com/page/detail/12082)"
+    "쿠팡이 2026-08-07 AI 상품비교·상품 한눈에 보기·상품 하이라이트·AI 인포그래픽 기능을 정식 도입했다고 발표. 고객의 탐색 기록과 상품 정보를 바탕으로 AI가 '멀티태스킹에 적합', '가성비 높음' 같은 비교 포인트를 자동으로 뽑아 보여주는 방식. (source: https://byline.network/2026/08/07_2928173/)",
+    "아마존이 2026-05-13 'Rufus' 브랜드를 없애고 챗봇을 알렉사(Alexa+)와 통합한 '알렉사 포 쇼핑(Alexa for Shopping)'을 출시. 아마존 메인 검색창에 바로 붙어 프라임 회원가입이나 에코 기기 없이도 미국 전 사용자에게 무료로 열렸고, 목표가 자동구매·정기구매 예약(Scheduled Actions)·타사 대신구매(Buy for Me)까지 지원. (source: https://www.geekwire.com/2026/amazon-unifies-alexa-and-rufus-as-ai-rivals-move-into-online-shopping/)"
   ],
   "hackernews_highlights": [
-    "유로폴(Europol)이 2026 인터넷조직범죄위협평가(IOCTA)에서, 기존 생성형 AI가 사기범에게 대본·가짜 프로필·딥페이크 영상 같은 '재료'만 주던 것과 달리 이제는 목표만 주면 여러 단계를 알아서 이어 수행하는 '에이전틱 AI'가 사회공학 공격을 개인화·대량화하고 있다고 경고했다. (source: https://www.newsspace.kr/news/article.html?no=15358)"
+    "Adobe 데이터 기준 2026년 프라임데이에서 ChatGPT·Perplexity 같은 LLM발 트래픽이 전년 대비 89% 증가했고, 유료검색·이메일 같은 전통 채널보다 전환율이 40% 더 높게 나왔다. 불과 1년 전(2025년)만 해도 같은 AI 트래픽의 전환율이 전통 채널보다 낮았던 것과 정반대로 뒤집힌 결과. (source: https://www.rithum.com/blog/ai-shopping-assistants-holiday-prep-2026/)"
   ],
-  "recommended_morning": "자사몰이든 스마트스토어든 '검색 상위 노출'에만 신경 쓰던 셀러한테만 하는 얘기. ChatGPT가 이번에 주간 사용자 10억 명 찍었다는 것보다 진짜 중요한 숫자는 따로 있음 — 소비자 60% 이상이 쇼핑 계획을 이제 네이버 검색이 아니라 AI 플랫폼한테 먼저 물어보고 시작한다는 통계. 아직 국내 셀러 커뮤니티엔 잘 안 퍼진 해외 수치인데, 이게 진짜면 SEO 잘해서 상위 노출돼도 ChatGPT가 내 상품을 추천 안 해주면 그 고객은 애초에 내 스토어 근처도 안 옴. 검색 최적화 다음 판이 'AI 추천 최적화'로 넘어가는 중이라는 신호.",
-  "recommended_evening": "everyone's framing agentic AI as this year's productivity unlock — meanwhile Europol's 2026 IOCTA report just flagged that scammers got there first. old-school generative AI just handed fraudsters scripts, fake profiles, deepfake videos — raw material they still had to run themselves. agentic AI does something worse: give it a goal and it chains the steps itself, personalizing and scaling social-engineering attacks with zero extra headcount. the uncomfortable pattern builders keep missing — every 'AI does the work end-to-end' capability gets adopted by fraud rings at the same speed as legit businesses, usually faster, because they don't need compliance review to ship it.",
+  "recommended_morning": "쿠팡에서만 팔든 자사몰만 하든, '상세페이지 카피만 잘 쓰면 된다'고 안심하던 셀러한테만 하는 얘기. 쿠팡이 8월 7일에 AI 상품비교·AI 인포그래픽·상품 하이라이트 기능을 정식으로 붙였음. 이제 고객이 상품을 보면 AI가 알아서 옆 상품이랑 비교해서 '이게 더 가성비 좋음', '이건 멀티태스킹에 적합' 식으로 비교 포인트를 뽑아서 보여줌. 문제는 이 비교 포인트, 내 상세페이지 안에 AI가 읽어서 뽑아 쓸 만큼 명시적으로 박혀있지 않으면 그냥 조용히 묻힌다는 거. 카피 잘 쓰는 시대에서 'AI가 비교하기 좋게 스펙을 못박아두는' 시대로 넘어가는 중.",
+  "recommended_evening": "다들 아마존 '알렉사 포 쇼핑'을 편의 기능이라고만 보는데 — 5월 13일에 리퍼스 이름 지우고 알렉사랑 합치면서, 프라임 가입 없이 아마존 검색창에서 바로 목표가 자동구매·정기구매 예약까지 되게 만들었음. 이게 진짜 무서운 이유는 따로 있음: 이번 프라임데이 때 ChatGPT·Perplexity발 트래픽 전환율이 이미 전통 광고채널보다 40% 높게 나왔다는 통계(1년 전엔 정반대였음)랑 겹쳐보면, 이제 내 상품을 살지 말지 최종 결정하는 존재가 '사람'에서 '내 상품 페이지를 훑은 AI 에이전트'로 넘어가고 있다는 신호임. 사람 설득하던 카피 감각을, AI 에이전트 설득하는 감각으로 못 바꾸면 다음 판에서 그냥 밀림.",
   "metadata": {
     "source_urls": [
-      "https://www.pymnts.com/news/artificial-intelligence/2026/chatgpt-approaches-1-billion-weekly-active-user-milestone/",
-      "https://www.kakaocorp.com/page/detail/12082",
-      "https://www.newsspace.kr/news/article.html?no=15358"
+      "https://byline.network/2026/08/07_2928173/",
+      "https://www.geekwire.com/2026/amazon-unifies-alexa-and-rufus-as-ai-rivals-move-into-online-shopping/",
+      "https://www.rithum.com/blog/ai-shopping-assistants-holiday-prep-2026/"
     ]
   }
 }
