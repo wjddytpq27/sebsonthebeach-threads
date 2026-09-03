@@ -677,5 +677,14 @@
     "fact_check_reason": "검증할 사실 주장 없음",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-03",
+    "content": "매일 챗GPT·제미나이·클로드 쓰는 사람한테만 하는 얘기. 퓨처오브라이프연구소라는 곳이 주요 AI 회사들 안전성을 주기적으로 채점하는데, 지금까지 나온 리포트에서 최고 등수 받은 회사도 C+가 최고임. 나머지는 대부분 C 아니면 그 밑. A나 B는 아예 없음. 이 회사들 전엔 \"위험선 넘으면 개발 멈춘다\"고 약속했다가 최근엔 그 약속 슬쩍 물러섰다는 지적까지 나옴. AI 도구 회사에 들이려고 알아보는 중이면, 성능표보다 이 성적표부터 한 번 볼 만함.",
+    "topic": "AI_THREADS",
+    "reply": "출처: Future of Life Institute AI Safety Index 리포트 (최신판 등수 기준)",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과"
   }
 ]
