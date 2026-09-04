@@ -1,23 +1,26 @@
 {
-  "date": "2026-09-03",
-  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로'. best_performing 스타일(타겟한테만 콜아웃 + 구체 수치 + 반전)을 오전·저녁 모두에 반영. 어제 소재(중국 AI 숏폼 98.7% 적자, OpenAI 스티커팩/tap-to-hear)와 겹치지 않게, 오전은 FLI AI 안전지수(챗봇 성적표), 저녁은 맥킨지 AI ROI 격차(투자해도 실적 안 오르는 94%)로 완전히 새로운 소재 선정. 둘 다 일반 대중(챗봇 쓰는 사람·AI 도입 고민하는 사장님)이 직접 체감할 반전 데이터라 대중성 게이트 통과.",
+  "date": "2026-09-04",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing 없음. best_performing 스타일(타겟 콜아웃 + 구체 수치 + 반전)을 오전에 반영. strategic_review.next_2weeks_focus(저녁 슬롯 '툴 해부' 포맷 채우기)에 맞춰 저녁 소재를 ChatGPT 광고 실측 데이터로 '해부'하는 골격으로 구성. 어제(9/3) 소재(FLI AI 안전지수, 맥킨지 AI ROI 격차)와 완전히 겹치지 않는 새 소재로 선정: 오전은 어제 막 터진 GPT-6 Astra 발표(골든타임, '발표했다는데 사실 아직 아무도 못 씀' 반전), 저녁은 ChatGPT 광고 10억달러 돌파 + 클릭이 애널리틱스에 안 잡히는 실무 문제.",
   "github_hot": [
     "대중성 게이트 통과하는 개발자 레포 없음 — 오늘도 소비자/실무자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "Future of Life Institute(FLI)가 2026년 여름 AI 안전지수를 발표. 주요 AI 기업 9곳을 37개 지표·6개 영역으로 평가한 결과 1위인 앤트로픽(클로드)도 C+(2.66점)가 최고점이고, 오픈AI(2.28)·구글 딥마인드(2.01)는 C, 메타는 D+, xAI·딥시크·미스트랄은 F를 받음. 리포트는 이 기업들이 '위험 임계치 넘으면 개발 중단'하겠다던 예전 약속과 군사용 활용 금지 약속을 최근 다 후퇴시켰다고 지적('골포스트 옮기기'). (source: https://futureoflife.org/ai-safety-index-summer-2026/)",
-    "맥킨지가 리더·전문가 1,719명을 설문한 'State of AI 2026' 조사 결과, AI에 투자한 기업 중 영업이익(EBIT)에 5% 이상 영향을 줬다고 답한 '고성과 기업'은 전체의 6%뿐이고 나머지 94%는 AI 투자 대비 실적 개선을 체감 못 함. 워크플로우를 아예 재설계한 기업만 이 격차를 좁혔다고 분석. (source: https://www.techtimes.com/articles/325590/20260826/record-ai-spending-cant-move-earnings-needle-94-enterprises-mckinsey-finds.htm , https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)"
+    "OpenAI가 2026-09-03(어제) GPT-6 Astra를 공식 발표. FrontierMath Tier4 98%, ARC-AGI-3 99.9%, ExploitBench 100% 등 역대 최고 벤치마크를 내세우며 '컴퓨터를 사람처럼 조작'(스프레드시트 작성, 문서/PPT 템플릿대로 생성, 웹·앱 멀티스텝 작업)하는 능력을 강조. 그런데 발표 자체가 혼란스러웠음 — OpenAI 공식 블로그 페이지가 로이터·CNBC 등 매체 기사보다 늦게, 그마저 한 번 내려갔다가 다시 올라오는 '가짜 출시' 소동이 있었고, 정작 지금은 '선택된 일부 조직'에만 먼저 열렸고 일반 ChatGPT Plus/Pro/Business 사용자는 '앞으로 며칠 내' 순차 확대 예정이라 아직 못 씀. (source: https://openai.com/index/gpt-6-astra/ , https://www.forbes.com/sites/ronschmelzer/2026/09/03/openai-announces-gpt-6-astra-or-does-it/ , https://9to5google.com/2026/09/03/openai-gpt-6-astra-launch/)",
+    "OpenAI가 2026-08-31 ChatGPT 광고 사업이 연환산(annualized run rate) 매출 10억 달러를 돌파했다고 발표 — 출시 200일도 안 돼 달성. 자체 셀프서브 광고를 유럽·인도·중동·북아프리카까지 40개국 이상으로 확대. 그런데 실제 광고주들 사이에선 '클릭은 찍히는데 구글 애널리틱스엔 안 잡힌다'는 불만이 나옴 — ChatGPT에서 넘어온 트래픽의 50~70%가 리퍼러 정보 없이 들어와 'Direct'로 오분류되고, 실제 유입은 추적된 수치를 0.3~0.5로 나눠야 실체에 가깝다는 분석까지 나옴. (source: https://www.techtimes.com/articles/326128/20260901/chatgpt-ads-reach-1-billion-advertisers-report-clicks-that-analytics-cannot-find.htm , https://digiday.com/media-buying/openais-chatgpt-ads-business-hits-1-billion-run-rate-as-europe-gets-self-serve-access/)"
   ],
   "hackernews_highlights": [
-    "애플이 오픈AI를 상대로 이직자(약 400명 규모로 보도)를 통한 영업비밀 유출 관련 법적 문제를 제기했다는 보도가 화제 — AI 인재 전쟁이 소송전으로 번지는 모양새 (구체 원문 출처 미확인이라 recommended에는 미반영, 참고용으로만 기록)"
+    "Anthropic이 2026-08-25 Claude 메모리를 채팅과 Cowork 전체에 통합 적용 — 대화 중 실시간으로 'Topics'에 항목이 쌓이고 Settings > Memory에서 사용자가 직접 보고 수정·삭제 가능. 건강·신념 등 민감 주제는 기본 저장 제외(토글로 켤 수 있음), 주민번호·범죄기록급 정보는 토글을 켜도 절대 저장 안 함. Free/Pro/Max 전 사용자 기본 활성화라 일반인이 바로 체감 가능한 기능이라 개발자 전용 이슈는 아니지만, 오늘 recommended엔 GPT-6 발표가 더 시급해 예비 소재로만 기록. (source: https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it)"
   ],
-  "recommended_morning": "매일 ChatGPT·제미나이·클로드 쓰는 사람한테만 하는 얘기. 이번 여름 FLI(퓨처오브라이프연구소)가 주요 AI 기업 9곳 안전성을 37개 지표로 평가했는데 — 1위인 앤트로픽(클로드 만드는 회사)조차 최고점이 C+고, 오픈AI·구글 딥마인드는 C, 메타는 D+, xAI·딥시크·미스트랄은 그냥 F임. 더 웃긴 건 이 회사들 전부 예전엔 '위험 수준 넘으면 개발 멈추겠다'고 약속했었는데, 리포트 표현으로 최근 그 약속들을 '골포스트 옮기기'식으로 슬쩍 물렸다는 거. 니가 매일 쓰는 챗봇, 성적표로 치면 낙제 직전임.",
-  "recommended_evening": "다들 AI 도입하면 돈 번다고 하는데, 맥킨지가 리더 1,719명한테 물어보니 정반대임. AI에 투자한 기업 중 영업이익에 5% 이상 효과 봤다고 답한 '고성과 기업'은 딱 6%, 나머지 94%는 돈 쓴 만큼 실적 개선을 체감 못 함. 자사몰도 똑같음 — AI 도구를 이것저것 갖다 붙인다고 매출이 오르는 게 아니라, 기존 업무 흐름 자체를 다시 짠 곳만 효과를 봤다는 게 이 조사의 결론. 'AI 뭘 쓰냐'보다 '어디에 쓰냐'가 진짜 차이를 만든다는 거.",
+  "recommended_morning": "GPT-6 나왔다는 얘기 보고 놀란 사람한테만 하는 얘기. 어제 오픈AI가 'GPT-6 Astra' 발표했다고 난리 났었는데, 사실 발표 과정부터 웃김 — 로이터·CNBC가 오픈AI 공식 블로그보다 먼저 기사를 냈고, 정작 오픈AI 페이지는 한 번 내려갔다 다시 올라옴. 그리고 더 중요한 건 이거임: '발표'했다고 해서 너가 지금 쓸 수 있는 게 아님. 지금은 오픈AI가 고른 일부 기업만 먼저 쓰고, ChatGPT Plus·Pro 쓰는 일반 유저는 '앞으로 며칠 내' 순차로 풀린다고 함. 벤치마크 숫자(FrontierMath 98%, ARC-AGI-3 99.9%)만 보고 오늘 당장 뭐가 바뀐 줄 아는 사람 많던데, 사실 오늘 니 ChatGPT 화면엔 아무것도 안 바뀜.",
+  "recommended_evening": "다들 ChatGPT 광고가 대박 났다고만 보는데, 실무자 입장에서 진짜 중요한 건 따로 있음. 오픈AI가 그저께 ChatGPT 광고 연매출 10억 달러 돌파했다고 발표했음 — 출시 200일도 안 돼서. 근데 광고 태운 실제 셀러·마케터들 얘기 들어보면 딴 세상임. 클릭은 찍히는데 구글 애널리틱스엔 안 잡히는 경우가 태반이라 '어디서 얼마나 왔는지'를 놓치고 있음. ChatGPT에서 넘어온 트래픽 절반 이상이 출처 정보 없이 들어와서 그냥 '다이렉트 유입'으로 잡히는 거임. 그러니까 지금 ChatGPT 광고 켜놓은 사람은, 리포트에 찍힌 클릭수를 반의반으로 나눠 봐야 진짜 숫자에 가깝다는 얘기. 매출 10억 달러라는 헤드라인보다, '내가 태운 광고가 얼마나 왔는지 나도 모른다'는 게 지금 이 판의 진짜 뉴스임.",
   "metadata": {
     "source_urls": [
-      "https://futureoflife.org/ai-safety-index-summer-2026/",
-      "https://www.techtimes.com/articles/325590/20260826/record-ai-spending-cant-move-earnings-needle-94-enterprises-mckinsey-finds.htm",
-      "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+      "https://openai.com/index/gpt-6-astra/",
+      "https://www.forbes.com/sites/ronschmelzer/2026/09/03/openai-announces-gpt-6-astra-or-does-it/",
+      "https://9to5google.com/2026/09/03/openai-gpt-6-astra-launch/",
+      "https://www.techtimes.com/articles/326128/20260901/chatgpt-ads-reach-1-billion-advertisers-report-clicks-that-analytics-cannot-find.htm",
+      "https://digiday.com/media-buying/openais-chatgpt-ads-business-hits-1-billion-run-rate-as-europe-gets-self-serve-access/",
+      "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it"
     ]
   }
 }
