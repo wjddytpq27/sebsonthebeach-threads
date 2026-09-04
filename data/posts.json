@@ -686,5 +686,16 @@
     "fact_checked": true,
     "fact_check_status": "pass",
     "fact_check_reason": "검증 통과"
+  },
+  {
+    "date": "2026-09-04",
+    "content": "클로드(Claude) 쓰면서 대화할 때마다 맥락 처음부터 다시 설명하는 사람한테만 하는 얘기. 최근에 클로드가 채팅이랑 코워크 전체에서 메모리를 공유하게 바뀜. 대화하다 보면 알아서 'Topics'에 항목이 쌓이고, 설정 들어가면 뭘 기억하는지 직접 보고 지우거나 고칠 수 있음. 건강·신념 같은 민감한 내용은 기본적으로 저장 안 되고(원하면 켤 수 있음), 주민번호 같은 건 켜도 절대 저장 안 함. 무료 유저까지 다 기본 켜져 있어서 이미 모르고 쓰고 있었을 수도 있음. 맥락 반복 설명하는 게 귀찮았던 사람이면 설정 한번 들어가 봐라.",
+    "topic": "AI_THREADS",
+    "reply": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
