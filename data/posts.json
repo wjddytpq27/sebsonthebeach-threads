@@ -716,5 +716,16 @@
     "blocked": false,
     "reply": "",
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-09",
+    "content": "상세페이지 사진 아직도 포토샵으로 한 장씩 손보고 있는 사람한테만 하는 얘기. 요즘은 챗GPT 같은 AI 챗봇한테 상품 사진 보정을 통째로 맡기는 사람들이 늘고 있음. 정확히 어느 버전이 뭘 얼마나 잘하는지는 케바케라 단정은 못 하겠지만, 방향은 분명함 — 포토샵 단축키 외우는 시간에 프롬프트 몇 줄 써보는 게 더 남는 장사일 확률이 높음. 안 써본 사람만 아직 모르는 얘기임.",
+    "topic": "AI_THREADS",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "reply": "",
+    "regenerated": 1
   }
 ]
