@@ -1,24 +1,24 @@
 {
-  "date": "2026-09-08",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(쿠팡 상세페이지 이미지 얘기)는 오늘 소재와 무관해 해당 없음. best_performing 스타일(타겟 콜아웃 + 구체 수치 + 반전)을 오전/저녁 모두에 반영. 어제(9/7) 다룬 '구글 어시스턴트→제미나이 강제교체'·'마운트 샤스타 조난' 소재와 겹치지 않는 새 소재로 선정: 오전은 제미나이 Daily Brief라는, 나온 지 몇 달 됐지만 유료 전용이라 대중 인지도가 낮은 기능(써본 사람만 아는 격차) 앵글, 저녁은 9/7 OpenAI 최고과학자의 'AI 속도 늦춰야 한다' 경고를 실무자가 AI 몰빵할 때의 리스크로 연결.",
+  "date": "2026-09-09",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(쿠팡 상세페이지 이미지 얘기)는 오늘 소재와 무관. best_performing 스타일(타겟 콜아웃 + 구체 수치 + 반전)을 오전에 반영, bandit 추천(morning: target_callout/marketing/ko)과도 일치. 어제(9/8) 다룬 '제미나이 Daily Brief'·'OpenAI 최고과학자 속도 경고'와 겹치지 않는 새 소재: 오전은 어제(9/8) 출시된 ChatGPT Images 2.5(상품사진 보정에 바로 쓸 수 있는 실무 앵글), 저녁은 GPT-6 Astra(9/3 출시)가 '스스로 판단해서 질문 줄이고 알아서 진행'하는 방향으로 간 것에 대한 자동화 실무자 리스크 앵글.",
   "github_hot": [
     "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 소비자/실무자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "구글 제미나이 앱의 'Daily Brief' 기능(2026-05-19 I/O에서 공개, Google AI Plus/Pro/Ultra 유료 구독자 대상, 미국부터 순차 확대)이 Gmail 받은편지함·캘린더 일정·이전 대화 맥락을 긁어모아 매일 아침 우선순위별로 정리해주고 다음 행동까지 제안. 실사용 리뷰에서는 '아침 루틴을 완전히 바꿨다'는 호평이 나오지만, 여전히 유료 전용이라 정작 무료로 제미나이 쓰는 절대다수는 존재 자체를 모르는 상태. (source: https://www.androidpolice.com/gemini-daily-brief-replaced-morning-routine-shocked-well-works/ , https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/)",
-    "OpenAI 최고과학자 야쿱 파호츠키(Jakub Pachocki)가 2026-09-07(일) 공개 에세이에서 AI가 너무 빠르게 발전해 인간이 통제하기 어려워지고 있다며 '지금은 극도의 주의가 필요한 시간'이라 경고, 안전 기준이 마련될 때까지 업계가 자발적으로 개발 속도를 늦춰야 한다고 주장. 샘 알트먼은 X에서 이 글을 '중요한 포스트'라고 인용하며 지지 의사를 밝힘. (source: https://www.spokesman.com/stories/2026/sep/07/openai-top-scientist-urges-extreme-caution-with-pa/ , https://www.bloomberg.com/news/articles/2026-09-07/openai-chief-scientist-urges-extreme-caution-with-pace-of-ai)"
+    "OpenAI가 2026-09-08 'ChatGPT Images 2.5'를 출시. 기존(Images 2.0) 대비 이미지 생성 레이턴시를 최대 50% 줄였고, 참조 사진 속 인물·상품을 더 잘 유지하면서 여러 턴에 걸친 편집 지시도 더 정확히 따름. 손그림을 그대로 그려서 이미지 생성의 참고 자료로 쓸 수 있는 'Sketch' 기능도 신규 추가. 매주 ChatGPT Images와 API용 GPT-Image 모델을 합쳐 30억 장 이상의 이미지가 생성되고 있다고 OpenAI가 밝힘. 데스크톱·모바일·웹 전반에 순차 롤아웃 중. (source: https://openai.com/index/introducing-chatgpt-images-2-5/ , https://windowsreport.com/chatgpt-images-2-5-is-here-with-50-faster-image-generation-and-new-sketch-tool/)",
+    "OpenAI가 2026-09-03 신규 플래그십 모델 'GPT-6 Astra'를 공개, ChatGPT Plus·Pro·Business·Enterprise 및 API에 순차 롤아웃 중. 컴퓨터 사용(화면 조작) 속도가 이전 모델 대비 약 2배 빨라졌고, 특히 '언제 사용자에게 질문할지 vs 알아서 합리적으로 판단하고 넘어갈지'를 스스로 결정하도록 설계되어, 결과를 바꿀 만큼 중요한 부분만 물어보고 나머지 사소한 빈틈은 스스로 채워서 진행함. (source: https://openai.com/index/gpt-6-astra/ , https://9to5mac.com/2026/09/04/openai-releasing-major-upgrade-to-chatgpt-and-codex-with-gpt-6-astra-details-here/)"
   ],
   "hackernews_highlights": [
-    "오늘은 대중성 게이트를 통과하는 개발자 커뮤니티발 화제 없음 — HN 상위 화제는 대부분 Codex/에이전트 보안(예: ChatGPT Plus Codex·Work 5시간 사용량 제한 재도입, 8/25부터) 등 개발자 전용 이슈라 제외."
+    "오늘은 대중성 게이트를 통과하는 개발자 커뮤니티발 화제 없음 — 상위 화제는 대부분 모델 벤치마크·API 세부사항 등 개발자 전용 이슈라 제외."
   ],
-  "recommended_morning": "구글 제미나이 유료로 쓰는 사람한테만 하는 얘기. 'Daily Brief'라는 기능 있는 거 아는 사람 손. 내 지메일 받은편지함, 캘린더 일정, 예전에 나눈 대화까지 다 긁어서 매일 아침 뭐부터 처리해야 하는지 순서까지 정리해주고, 심지어 다음에 뭘 해야 하는지까지 제안해줌. 실사용 후기 보면 '아침 루틴 자체가 바뀌었다'는 얘기가 나올 정도. 근데 반전은 이게 나온 지 벌써 넉 달째(5월 I/O)인데 유료 구독자 전용이라서, 무료로 제미나이 쓰는 절대다수는 이런 기능이 있는지조차 모름. 매일 아침 이메일·일정 손으로 정리하고 있으면, 넌 지금 이미 있는 비서를 안 쓰고 있는 거임.",
-  "recommended_evening": "다들 AI는 무조건 빨리 도입하고 빨리 갈아탈수록 이긴다고 보는데, 지난주말(9/7) 정작 그거 만드는 회사 최고과학자 입에서 반대 얘기가 나왔음. OpenAI 최고과학자가 'AI가 너무 빨리 발전해서 사람이 통제하기 어려운 지점에 가까워지고 있다, 지금은 업계가 스스로 속도를 늦춰야 하는 시기'라고 공개 경고했고, 알트먼도 이걸 '중요한 글'이라며 지지함. 만드는 사람이 브레이크 걸어야 한다는데, 그거 검증 한 번 안 하고 상세페이지·광고 카피·재고 예측까지 AI한테 몰빵한 사장님들은 지금 뭘 믿고 있는 건지 생각해볼 타이밍임.",
+  "recommended_morning": "상품사진 보정할 때 ChatGPT로 하는 사람한테만 하는 얘기. 어제(9/8)부터 'ChatGPT Images 2.5'로 조용히 바뀜. 예전엔 사진 편집 지시 두세 번 넘어가면 상품 각도나 색감이 슬쩍 달라졌는데, 이제는 여러 번 고쳐도 원본 상품 특징을 더 잘 유지하고, 생성 속도도 이전 대비 최대 절반으로 빨라짐. 심지어 손으로 대충 그린 그림을 그대로 넣어서 '이런 느낌으로' 참고시킬 수 있는 스케치 기능까지 생김. OpenAI가 밝히길 매주 이 기능으로만 30억 장 넘게 이미지가 만들어지고 있다는데, 정작 상세페이지 사진 아직도 포토샵으로 한 장씩 손보고 있으면 이미 다들 쓰는 지름길 혼자 놓치고 있는 거임.",
+  "recommended_evening": "다들 GPT-6 Astra 나왔다고 벤치마크 점수(코딩·과학 다 1등)에만 열광하는데, 진짜 바뀐 건 따로 있음. 이번 모델은 '뭘 물어보고 뭘 알아서 판단할지'를 AI가 스스로 정하도록 설계돼서, 사소한 빈틈은 사용자한테 안 물어보고 자기 판단으로 채워서 그냥 진행해버림. 자동화 좋아하는 사장님들 입장에선 손 덜 가서 편해진 것 같지만, 뒤집어 보면 내 상품 설명·고객 응대·재고 판단 중 어디까지가 '사소해서 AI가 알아서 넘어간 부분'인지 나도 모르고 넘어가는 구간이 늘어난다는 뜻임. 편해진 만큼 어디서 AI가 조용히 지 맘대로 결정했는지는 한 번씩 확인해봐야 함.",
   "metadata": {
     "source_urls": [
-      "https://www.androidpolice.com/gemini-daily-brief-replaced-morning-routine-shocked-well-works/",
-      "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
-      "https://www.spokesman.com/stories/2026/sep/07/openai-top-scientist-urges-extreme-caution-with-pa/",
-      "https://www.bloomberg.com/news/articles/2026-09-07/openai-chief-scientist-urges-extreme-caution-with-pace-of-ai"
+      "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "https://windowsreport.com/chatgpt-images-2-5-is-here-with-50-faster-image-generation-and-new-sketch-tool/",
+      "https://openai.com/index/gpt-6-astra/",
+      "https://9to5mac.com/2026/09/04/openai-releasing-major-upgrade-to-chatgpt-and-codex-with-gpt-6-astra-details-here/"
     ]
   }
 }
