@@ -727,5 +727,16 @@
     "blocked": false,
     "reply": "",
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-10",
+    "content": "상세페이지 문구나 고객 리뷰 답글, 폰으로 한 글자씩 타이핑하고 있는 사람한테만 하는 얘기. 챗GPT 앱 켜서 음성모드로 말로 쭉 설명만 해봐. 알아서 문장으로 정리해서 내놓음. 타이핑보다 말이 훨씬 빠른데 아직도 손가락으로 다 치고 있으면 그만큼 시간 버리는 거임. 한 번 말로 뽑아서 다듬어보면 다시 타이핑으로 못 돌아감. 안 써본 사람 왜 아직도 안 써봄?",
+    "topic": "AI_THREADS",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "reply": "",
+    "regenerated": 1
   }
 ]
