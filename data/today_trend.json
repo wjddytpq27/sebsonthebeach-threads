@@ -1,24 +1,24 @@
 {
-  "date": "2026-09-09",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(쿠팡 상세페이지 이미지 얘기)는 오늘 소재와 무관. best_performing 스타일(타겟 콜아웃 + 구체 수치 + 반전)을 오전에 반영, bandit 추천(morning: target_callout/marketing/ko)과도 일치. 어제(9/8) 다룬 '제미나이 Daily Brief'·'OpenAI 최고과학자 속도 경고'와 겹치지 않는 새 소재: 오전은 어제(9/8) 출시된 ChatGPT Images 2.5(상품사진 보정에 바로 쓸 수 있는 실무 앵글), 저녁은 GPT-6 Astra(9/3 출시)가 '스스로 판단해서 질문 줄이고 알아서 진행'하는 방향으로 간 것에 대한 자동화 실무자 리스크 앵글.",
+  "date": "2026-09-10",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(쿠팡 상세페이지 이미지 얘기)는 오늘 소재와 무관. best_performing 스타일(타겟 콜아웃 + 구체 수치 + 반전)을 오전에 반영. 어제(9/9) 다룬 'ChatGPT Images 2.5'·'GPT-6 Astra'와 겹치지 않는 새 소재: 오전은 8/26부터 순차 롤아웃 중인 'Gemini 3.5 Transcribe' 음성 받아쓰기(Gboard·Gmail·Docs 적용, 자영업자 실무 앵글), 저녁은 이번 주(9/7~9/9) 화제인 '에이전틱 AI 사기 자동화' 이슈에 자동화 예찬 실무자 관점 반전을 얹음.",
   "github_hot": [
     "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 소비자/실무자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "OpenAI가 2026-09-08 'ChatGPT Images 2.5'를 출시. 기존(Images 2.0) 대비 이미지 생성 레이턴시를 최대 50% 줄였고, 참조 사진 속 인물·상품을 더 잘 유지하면서 여러 턴에 걸친 편집 지시도 더 정확히 따름. 손그림을 그대로 그려서 이미지 생성의 참고 자료로 쓸 수 있는 'Sketch' 기능도 신규 추가. 매주 ChatGPT Images와 API용 GPT-Image 모델을 합쳐 30억 장 이상의 이미지가 생성되고 있다고 OpenAI가 밝힘. 데스크톱·모바일·웹 전반에 순차 롤아웃 중. (source: https://openai.com/index/introducing-chatgpt-images-2-5/ , https://windowsreport.com/chatgpt-images-2-5-is-here-with-50-faster-image-generation-and-new-sketch-tool/)",
-    "OpenAI가 2026-09-03 신규 플래그십 모델 'GPT-6 Astra'를 공개, ChatGPT Plus·Pro·Business·Enterprise 및 API에 순차 롤아웃 중. 컴퓨터 사용(화면 조작) 속도가 이전 모델 대비 약 2배 빨라졌고, 특히 '언제 사용자에게 질문할지 vs 알아서 합리적으로 판단하고 넘어갈지'를 스스로 결정하도록 설계되어, 결과를 바꿀 만큼 중요한 부분만 물어보고 나머지 사소한 빈틈은 스스로 채워서 진행함. (source: https://openai.com/index/gpt-6-astra/ , https://9to5mac.com/2026/09/04/openai-releasing-major-upgrade-to-chatgpt-and-codex-with-gpt-6-astra-details-here/)"
+    "구글이 2026-08-26 공개한 음성 인식 모델 'Gemini 3.5 Transcribe'가 Gmail·Docs·Keep·Gemini 앱·Gboard 전반에 순차 롤아웃 중. 85개 이상 언어에서 평균 단어 오류율 2.6%(비스트리밍 기준)를 기록했다고 구글이 밝혔고, '음', '어' 같은 필러 워드를 자동으로 빼고 문장 포맷까지 알아서 정리해줌. 안드로이드 Gboard에는 'Rambler' 기능으로 일부 지역부터 순차 적용 시작. (source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/ , https://www.androidauthority.com/google-introduces-gemini-audio-3703443/)",
+    "국내외에서 '에이전틱 AI 사기' 경고가 이번 주 잇따름. AI 에이전트 하나가 상담원 10명 몫의 사기 상담을 대신하고, 피해자 반응을 분석해 설득 논리를 실시간으로 바꾸거나 의심받으면 다른 인물로 역할을 전환하는 방식이 우려된다는 분석이 나옴. 중국은 이에 맞서 2026-09-07 상하이시 공안국이 개발한 '국가 반사기 AI' 앱을 공식 출시해 의심 상황을 말하면 사기 여부를 즉석 판별해주는 서비스를 시작. (source: https://www.newsspace.kr/news/article.html?no=15358 , https://www.fnnews.com/news/202609071616421457)"
   ],
   "hackernews_highlights": [
     "오늘은 대중성 게이트를 통과하는 개발자 커뮤니티발 화제 없음 — 상위 화제는 대부분 모델 벤치마크·API 세부사항 등 개발자 전용 이슈라 제외."
   ],
-  "recommended_morning": "상품사진 보정할 때 ChatGPT로 하는 사람한테만 하는 얘기. 어제(9/8)부터 'ChatGPT Images 2.5'로 조용히 바뀜. 예전엔 사진 편집 지시 두세 번 넘어가면 상품 각도나 색감이 슬쩍 달라졌는데, 이제는 여러 번 고쳐도 원본 상품 특징을 더 잘 유지하고, 생성 속도도 이전 대비 최대 절반으로 빨라짐. 심지어 손으로 대충 그린 그림을 그대로 넣어서 '이런 느낌으로' 참고시킬 수 있는 스케치 기능까지 생김. OpenAI가 밝히길 매주 이 기능으로만 30억 장 넘게 이미지가 만들어지고 있다는데, 정작 상세페이지 사진 아직도 포토샵으로 한 장씩 손보고 있으면 이미 다들 쓰는 지름길 혼자 놓치고 있는 거임.",
-  "recommended_evening": "다들 GPT-6 Astra 나왔다고 벤치마크 점수(코딩·과학 다 1등)에만 열광하는데, 진짜 바뀐 건 따로 있음. 이번 모델은 '뭘 물어보고 뭘 알아서 판단할지'를 AI가 스스로 정하도록 설계돼서, 사소한 빈틈은 사용자한테 안 물어보고 자기 판단으로 채워서 그냥 진행해버림. 자동화 좋아하는 사장님들 입장에선 손 덜 가서 편해진 것 같지만, 뒤집어 보면 내 상품 설명·고객 응대·재고 판단 중 어디까지가 '사소해서 AI가 알아서 넘어간 부분'인지 나도 모르고 넘어가는 구간이 늘어난다는 뜻임. 편해진 만큼 어디서 AI가 조용히 지 맘대로 결정했는지는 한 번씩 확인해봐야 함.",
+  "recommended_morning": "상세페이지 문구나 고객 답장을 폰으로 한 글자씩 타이핑하고 있는 사람한테만 하는 얘기. 구글이 지난달 말부터 Gmail·Docs·Gboard에 조용히 풀기 시작한 'Gemini 3.5 Transcribe'가 진짜 다름. 예전 음성인식은 '어', '음' 다 받아써서 결국 손으로 다시 정리해야 했는데, 이제는 필러 워드를 알아서 빼고 문장 포맷까지 맞춰서 내놓음. 85개 언어 기준 오류율 2.6%까지 낮췄다고 구글이 밝힘. 즉 말로 30초 쏟아내면 리뷰 답글이나 상품 설명 초안이 바로 정리돼서 나온다는 거고, 아직도 타이핑으로 고객 응대 문구 쓰고 있으면 남들 다 말로 3배 빠르게 처리하는 동안 혼자 손가락 아파가며 느리게 가고 있는 거임.",
+  "recommended_evening": "다들 AI 에이전트로 업무 자동화한다고 신났는데, 이번 주 나온 얘기 보면 사기꾼들이 제일 먼저 그 자동화를 써먹고 있음. AI 에이전트 하나가 상담원 10명 몫의 사기 통화를 돌리고, 피해자가 의심하면 실시간으로 목소리·인물 설정 바꿔서 다시 접근하는 방식까지 나왔다는 분석이 있음. 결국 중국은 지난주(9/7) 아예 '말로 물어보면 사기인지 즉석 판별해주는' 국가 반사기 AI 앱을 따로 출시할 정도로 상황이 급해짐. 내가 AI로 업무 시간 아끼는 동안, 반대편에서도 똑같은 기술로 사기 칠 시간을 아끼고 있다는 얘기고, 자동화 좋다고만 할 게 아니라 내 쪽 고객 응대·본인인증 프로세스도 그만큼 의심스러운 요청엔 한 번 더 확인하는 절차를 끼워야 함.",
   "metadata": {
     "source_urls": [
-      "https://openai.com/index/introducing-chatgpt-images-2-5/",
-      "https://windowsreport.com/chatgpt-images-2-5-is-here-with-50-faster-image-generation-and-new-sketch-tool/",
-      "https://openai.com/index/gpt-6-astra/",
-      "https://9to5mac.com/2026/09/04/openai-releasing-major-upgrade-to-chatgpt-and-codex-with-gpt-6-astra-details-here/"
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+      "https://www.androidauthority.com/google-introduces-gemini-audio-3703443/",
+      "https://www.newsspace.kr/news/article.html?no=15358",
+      "https://www.fnnews.com/news/202609071616421457"
     ]
   }
 }
