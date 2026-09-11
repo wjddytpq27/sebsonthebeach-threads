@@ -738,5 +738,13 @@
     "blocked": false,
     "reply": "",
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-11",
+    "content": "Threads로 고객 DM 받아본 사람만 알 텐데, 이 앱 안에 메타AI가 이미 들어와 있음. 받은 문의 DM 그대로 메타AI한테 공유하면 \"뭐라고 답장하면 좋을지\" 초안을 그 자리에서 뽑아줌. 페이스북·인스타·왓츠앱엔 있던 기능이 Threads까지 온 거라 앱 새로 깔 필요도, 챗봇 구독료 낼 필요도 없음. 이거 써본 사람? 답장 퀄리티 실제로 쓸만함?",
+    "topic": "AI_THREADS",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과"
   }
 ]
