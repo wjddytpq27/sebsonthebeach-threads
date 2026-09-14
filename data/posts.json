@@ -746,5 +746,16 @@
     "fact_checked": true,
     "fact_check_status": "pass",
     "fact_check_reason": "검증 통과"
+  },
+  {
+    "date": "2026-09-14",
+    "content": "챗GPT 유료 요금제 써본 사람만 하는 얘기. 새 모델 나올 때마다 다들 써보고 싶어서 몰리는데, 정작 제일 똑똑한 최신 모델은 돈 더 낸 사람한테도 사용량 제한을 걸어두는 경우가 많았음. 예전 최상위 요금제 나왔을 때도 그랬고, 이번 신모델도 크게 다르지 않을 가능성이 높음. \"제일 좋은 모델 나왔다\"는 말이랑 \"내가 실제로 마음껏 쓸 수 있다\"는 완전 다른 얘기임. 너네는 새 모델 뜨면 바로 갈아타는 편이냐, 아니면 제한 풀릴 때까지 기다리는 편이냐?",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
