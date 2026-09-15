@@ -757,5 +757,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-15",
+    "content": "윈도우로 문서 작업하는 사람들 의외로 잘 모르는 기능 하나. 챗GPT 데스크톱 앱 깔아두면 브라우저 새로 켤 필요 없이 Alt+Space만 눌러서 지금 보고 있는 엑셀이나 워드 위에 바로 챗지피티 창을 띄울 수 있음. 탭 새로 열고 복사·붙여넣기 하던 과정이 통째로 사라지는 거임. 근데 정작 이거 알고 쓰는 사람보다 매번 브라우저 탭 왔다갔다하면서 쓰는 사람이 훨씬 많음. 이런 단축키는 회사에서 왜 아무도 안 알려줄까.",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
