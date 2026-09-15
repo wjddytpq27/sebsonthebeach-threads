@@ -1,23 +1,24 @@
 {
-  "date": "2026-09-14",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(쿠팡 상세페이지 이미지, 안드로이드 자동화) 오늘 소재와 무관. strategic_review.next_2weeks_focus가 '특정 도구로 특정 작업하다 겪은 구체적 짜증 + 질문 엔딩' 포맷을 요구하므로, viral-writer가 그 포맷에 바로 태울 수 있게 '짜증 포인트'가 명확한 소재(GPT-6 Astra 사용량 제한) 위주로 선별. 최근 3일(9/9 AI 사진보정, 9/10 음성모드, 9/11 메타AI DM)과 겹치지 않는 새 소재로 구성.",
+  "date": "2026-09-15",
+  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로'. stop_doing(쿠팡 상세페이지 이미지, 안드로이드 자동화) 오늘 소재와 무관. strategic_review.next_2weeks_focus가 '매일 쓰는 AI 도구에서 겪은 구체적 사실/짜증 + 질문·논쟁 엔딩' 포맷을 요구하므로, 오전은 '바로 써먹는 사무직 활용법'으로, 저녁은 '몰랐던 사실 + 논쟁적 질문'으로 구성. 최근 5일(9/9 사진보정, 9/10 음성타이핑, 9/11 메타AI DM, 9/14 GPT-6 Astra 메시지 제한)과 겹치지 않는 새 소재로 선정.",
   "github_hot": [
     "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 소비자/실무자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
-    "OpenAI가 GPT-6 Astra를 2026-09-03 공개(GPT-5.6 Sol 후속, '세계에서 가장 지능적이고 정렬된 모델'로 소개)했는데, 일부 계정에만 순차 롤아웃 중이라 아직 안 보이는 사람이 많고, 요금제별 주간 메시지 제한이 공개돼 반응이 갈림 — 월 200달러(Pro) 요금제도 주당 200개, 월 100달러 요금제는 주당 50개 메시지로 제한됨(코딩·에이전트 작업처럼 대화 여러 번 주고받는 용도면 금방 소진). (source: https://www.threads.com/@lets.anthony.kim/post/Dc4ljhFHxcn/, https://www.promppy.com/item/1419102)",
-    "AWS 수석 솔루션 아키텍트 오순영이 2026-09-09 발언에서 AI 에이전트가 '상품 가격 결정·공급망 설계·데이터 구매를 수행하는 경제 주체'로 변모 중이라 진단. 알리안츠 보험사는 AI 에이전트 7개를 붙여 보험금 처리 기간을 100일→20일(80% 단축)로 줄인 구체 사례가 있지만, 같은 AWS 조사에서 기업 84%가 'AI 에이전트가 변화를 주도할 것'이라 기대하는 반면 실제로 효과적으로 쓰고 있다고 답한 비율은 26%에 그침. (source: https://www.fnnews.com/news/202609091830094628)"
+    "구글이 2026-09-10 윈도우 전용 제미나이 데스크톱 앱을 정식 출시. Alt+Space 단축키만 누르면 지금 켜져 있는 화면(문서·PPT·엑셀) 위에 제미나이 창이 바로 뜨는 방식으로, 별도 브라우저 탭 없이 바로 질문·요약·아이디어 생성이 가능함. gemini.google/desktop에서 무료 설치. (source: https://9to5google.com/2026/09/10/gemini-windows-app/, https://chromeunboxed.com/google-launches-a-dedicated-gemini-app-for-windows-with-alt-space-shortcut/)",
+    "앤트로픽이 2026-09-10 발표한 '2026년 9월 위협정보 보고서'에 따르면, 문샷AI(키미)가 5~7월 사이 이용자 요청 약 2300만 건, 딥시크가 7월 14일 동안 1210만 건 이상을 몰래 클로드로 전달해 답변을 받아온 뒤 자기 서비스인 것처럼 돌려준 정황이 드러남. 알리바바 큐원(1억5100만 건)·즈푸AI·샤오미 미모까지 총 7개 중국 AI 랩이 클로드에 요청을 우회 전달(가짜 계정·도용된 API 키·주거용 프록시망 이용)한 것으로 확인됨. (source: https://www.anthropic.com/threat-intelligence-report-september-2026, https://www.topstarnews.net/news/articleView.html?idxno=16190711)"
   ],
   "hackernews_highlights": [
-    "오늘은 대중성 게이트를 통과하는 개발자 커뮤니티발 화제 없음 — 상위 화제는 대부분 모델 벤치마크·API 세부사항 등 개발자 전용 이슈라 제외."
+    "오늘은 대중성 게이트를 통과하는 개발자 커뮤니티발 화제 없음 — 상위 화제는 대부분 모델 벤치마크·에이전트 프레임워크 등 개발자 전용 이슈라 제외."
   ],
-  "recommended_morning": "챗GPT 유료 구독자한테만 하는 얘기. 지난주(9/3) 나온 GPT-6 Astra, '역대급 똑똑한 모델'이라고 난리인데 정작 써보려니 이상함. 월 27만원짜리(200달러) 프로 요금제도 Astra는 주당 딱 200개 메시지까지만 됨. 10만원대(100달러) 요금제는 주당 50개 — 하루에 7개꼴임. 코딩이나 에이전트 작업처럼 대화 몇 번 주고받으면 금방 막힘. 게다가 계정마다 순차 롤아웃이라 같은 요금 내고도 아직 안 보이는 사람도 있음. 제일 똑똑한 모델 나왔다고 좋아하기 전에, 돈 낸 만큼 실제로 쓸 수 있는지부터 확인해봐야 함.",
-  "recommended_evening": "다들 AI 에이전트 붙이면 알아서 업무 다 돌아간다고 기대하는데, 이번 주(9/9) 나온 얘기 보면 그게 착각일 확률이 높음. AWS 임원이 AI 에이전트를 가격 결정·공급망까지 대신하는 '새로운 경제 주체'라고까지 표현했고, 실제로 알리안츠는 에이전트 7개 붙여서 보험금 처리 100일→20일로 줄인 사례도 있음. 근데 같은 AWS 조사에서 기업 84%는 'AI 에이전트가 변화 주도할 것'이라 기대하면서도, 실제로 효과적으로 쓰고 있다는 응답은 26%뿐임. 넷 중 셋은 기대만 하고 제대로 못 굴리고 있다는 얘기. 도구 붙이는 거랑 제대로 쓰는 거는 완전히 다른 문제인데, 이 차이를 누가 메꾸고 있을까.",
+  "recommended_morning": "윈도우로 사무 업무 보는 사람한테만 하는 얘기. 지난주(9/10)부터 구글이 윈도우용 제미나이 앱을 정식으로 풀었는데, Alt+Space만 누르면 지금 보고 있는 엑셀이나 PPT 위에 바로 제미나이 창이 뜸. 매번 브라우저 켜서 탭 새로 열고 복사·붙여넣기 하던 거 그냥 생략됨. gemini.google/desktop에서 설치만 하면 되는데, 정작 이거 아직 모르고 브라우저로 왔다갔다하는 사람이 훨씬 많음. 단축키 하나 등록하는 데 1분도 안 걸리는데, 이런 건 왜 회사에서 아무도 안 알려줄까.",
+  "recommended_evening": "딥시크나 키미(문샷AI) 써봤다는 사람 많은데, 이번 주(9/10) 앤트로픽이 낸 보고서 보면 좀 배신감 들 만한 얘기가 있음. 문샷AI는 5~7월 사이 이용자 질문 2300만 건을, 딥시크는 7월 한 달 새 1210만 건 넘게 몰래 클로드(경쟁사 AI)한테 대신 물어보고 그 답을 자기가 만든 것처럼 돌려준 정황이 드러남. 큐원·샤오미까지 합쳐서 중국 AI 랩 7곳이 이런 식으로 우회했다는 건데, 정작 이용자는 자기 질문이 어디로 새는지 전혀 몰랐음. '중국산 AI 써서 답 받았다'고 믿었던 게 사실은 클로드가 대신 풀어준 거였다면, 그동안 뭘 비교하고 있었던 걸까.",
   "metadata": {
     "source_urls": [
-      "https://www.threads.com/@lets.anthony.kim/post/Dc4ljhFHxcn/",
-      "https://www.promppy.com/item/1419102",
-      "https://www.fnnews.com/news/202609091830094628"
+      "https://9to5google.com/2026/09/10/gemini-windows-app/",
+      "https://chromeunboxed.com/google-launches-a-dedicated-gemini-app-for-windows-with-alt-space-shortcut/",
+      "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "https://www.topstarnews.net/news/articleView.html?idxno=16190711"
     ]
   }
 }
