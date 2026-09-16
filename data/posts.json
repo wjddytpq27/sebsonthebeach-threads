@@ -768,5 +768,14 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-16",
+    "content": "ChatGPT 매일 쓰는 사람만 보면 됨. 오늘 설정 들어갔다가 알았는데 '모두를 위해 모델 개선'이라는 옵션이 기본값으로 켜져 있었음. 이거 켜져 있으면 내가 쓴 대화가 AI 학습 데이터로 쓰일 수 있다는 뜻인데, 무료든 유료 Plus든 상관없이 기본 ON이었음. 끄고 나와도 이미 나눈 대화가 지워지는 것도 아니라고 안내됨. 업무 자료에 개인 고민까지 술술 다 털어놓던 나로선 좀 찝찝해짐. 너는 이 설정 확인해본 적 있음?",
+    "topic": "AI_THREADS",
+    "reply": "설정 위치: ChatGPT 프로필 아이콘 > 설정 > 데이터 제어 > '모두를 위해 모델 개선'",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과"
   }
 ]
