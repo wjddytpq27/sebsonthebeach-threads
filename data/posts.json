@@ -777,5 +777,16 @@
     "fact_checked": true,
     "fact_check_status": "pass",
     "fact_check_reason": "검증 통과"
+  },
+  {
+    "date": "2026-09-17",
+    "content": "이거 의외로 모르는 사람 많던데 — 정부가 국산 AI 모델 키우려고 국내 대기업들 묶어서 지원하는 사업을 진행 중이라는 얘기가 계속 나옴. 챗GPT·제미나이만 쓰다 보면 체감 안 되는데, 나라가 아예 AI를 통신망 같은 인프라로 보고 밀어주는 쪽으로 가는 분위기임. 근데 국산 모델이 진짜 일상에서 쓸 만해지려면 아직 시간 좀 걸릴 듯. 너는 국산 AI 나오면 지금 쓰는 거 버리고 갈아탈 것 같아, 아니면 그냥 계속 쓸 것 같아?",
+    "topic": "AI_THREADS",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "reply": "",
+    "regenerated": 1
   }
 ]
