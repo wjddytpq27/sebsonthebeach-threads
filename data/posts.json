@@ -788,5 +788,16 @@
     "blocked": false,
     "reply": "",
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-18",
+    "content": "챗GPT 새 질문 할 때마다 매번 배경 설명 다시 치는 사람 많던데, '프로젝트' 기능 쓰면 관련 대화랑 파일을 한 폴더처럼 묶어놓고 이어서 물어볼 수 있음. 이미 있던 기능인데 의외로 모르고 그냥 채팅창만 계속 늘려가면서 쓰는 사람 꽤 보임. 대화 몇 개만 묶어봐도 체감 꽤 다름. 너는 챗GPT 대화창 몇 개나 켜놓고 씀?",
+    "topic": "AI_THREADS",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "reply": "",
+    "regenerated": 1
   }
 ]
