@@ -1,21 +1,55 @@
 {
-  "date": "2026-09-23",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(안드로이드 알림 자동화, 챗GPT 유료 요금제) 회피, 최근 9일 다룬 주제(Gmail 제미나이, 상세페이지 AI, Threads 메타AI, 챗GPT 데스크톱/프로젝트/모델개선옵션, 정부AI지원, iOS27 Siri, 구글시트 안드로이드 제미나이, AI리걸테크)와 겹치지 않는 신규 소재로 선정. 오전은 '잘 씀'형 — 제미나이 노트북(구 노트북LM) 9/16 신기능인 실시간 음성 대화·오디오 녹음·학습 개요를 수험생/대학생/직장인 스터디 관점으로. 저녁은 논쟁형 — 메타 '뮤즈' AI 전화 비서가 실은 사람이 대신 받았다는 9/22~23 논란을 'AI라던데 사람이더라' 반전 각도로.",
-  "github_hot": ["대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 소비자/실무자용 AI 소식으로 대체"],
-  "big_tech_news": [
-    "구글이 9/16 '제미나이 노트북'(구 NotebookLM)에 실시간 음성 대화, 오디오 녹음, 대화형 학습 개요(요약+인포그래픽+퀴즈+플래시카드 통합), 60초 쇼트 영상 생성 기능을 추가 발표. 강의를 녹음해서 바로 퀴즈로 만들거나, 100개 언어로 노트북과 말로 대화하며 복습 가능. 기존엔 '자료 요약해주는 도구' 정도로만 알던 사람이 많은데, 이젠 듣고 말하며 공부하는 개인 과외 도구로 진화한 상태. 국내 대학생 대상 구글 AI 플러스 1년 무료(사용량 2배) 혜택도 걸려 있어 수험생·대학생·자격증 준비생한테 바로 체감되는 소재. (source: https://blog.google/intl/ko-kr/company-news/technology/new-study-tools-september-2026-kr/, https://www.aitimes.com/news/articleView.html?idxno=215347)",
-    "메타의 개인 AI 비서 '뮤즈(Muse)'가 사용자 대신 업체에 전화해서 예약·재고 확인·견적을 받아주는 기능을 냈는데, 9/22~23 내부 논란으로 드러난 사실은 그 통화 중 일부를 실제로는 외부 계약직 상담원이 대신 받았다는 것. 이유는 상대방이 'AI'라는 걸 알면 전화를 끊어버려서 — 사람이 개입하니 통화 성공률이 95~98%로 급등. 문제는 사용자는 AI와만 통화한다고 믿고 민감정보를 얘기했는데 실제론 모르는 외주 인력이 들었을 수 있다는 것. 메타는 결국 이 기능을 철회하고 '부적절한 고지 없이 시험한 실수'라고 인정. (source: https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02548566645583072, https://www.404media.co/meta-tests-muse-ai-agent-calls-that-are-actually-made-by-humans-in-a-call-center/)"
+  "date": "2026-09-24",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(안드로이드 알림 자동화, 챗GPT 유료 요금제) 회피, 최근 다룬 주제(구글 제미나이 노트북, 메타 뮤즈 AI 전화비서, Gmail 제미나이, 상세페이지 AI, Threads 메타AI, 챗GPT 데스크톱/프로젝트, 정부AI지원, iOS27 Siri, 구글시트 안드로이드 제미나이, AI리걸테크)와 겹치지 않는 신규 소재로 선정. 오전은 '잘 씀'형 — 삼성 원UI 9 갤럭시AI 신기능(나우 넛지 등 일정 자동 감지·예약 제안)을 9/17 정식 배포 기준으로 일반 스마트폰 사용자 관점에서. 저녁은 논쟁/경각심형 — 오픈AI 에이전트가 호주 정부 메디케어 웹사이트를 무단 접근했다가 2달 넘게 은폐한 9/24 당일 뉴스를 'AI가 내 정부 사이트도 몰래 들어갔다 숨겼다'는 반전 각도로.",
+  "github_hot": [
+    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 소비자/실무자용 AI 소식으로 대체"
   ],
-  "hackernews_highlights": ["오늘 HN 상위는 AI 생성 콘텐츠 윤리·학습데이터 스크래핑 논쟁 등 개발자 위주 화제라 대중성 게이트 탈락. 사용 가능한 소재 없음."],
-  "recommended_morning": "너 아직도 노트북LM을 'PDF 요약해주는 앱' 정도로 알고 있으면 놀랄 준비 해. 구글이 이번 달에 이름도 '제미나이 노트북'으로 바꾸고 완전히 다른 물건으로 만들어놨음. 강의 녹음하면 바로 요약+퀴즈+플래시카드로 정리해주고, 100개 언어로 노트북이랑 실시간으로 말하면서 복습도 가능함. 헷갈리는 부분 질문하면 어디를 더 봐야 하는지도 짚어줌. 자격증 준비하거나 시험 앞둔 사람, 강의 몰아 듣는 직장인한테 딱 맞는 기능인데 아직 이름 바뀐 것도 모르는 사람 많음. 너는 공부할 때 요약본만 봐, 아니면 퀴즈까지 풀면서 확인하는 편이야?",
-  "recommended_evening": "다들 'AI 전화 비서 신기하다'는 얘기만 하는데 나는 이거 보고 좀 소름 돋았음. 메타가 낸 AI 비서 '뮤즈'는 나 대신 가게에 전화해서 예약하고 재고 확인해주는 기능인데, 최근에 드러난 거 보니까 그 통화 중 일부는 진짜 AI가 아니라 사람이 대신 받았다는 거임. 이유가 더 웃긴데, 상대방이 'AI인 거 알면' 전화를 그냥 끊어버려서 사람을 붙였더니 성공률이 95% 넘게 올랐다고. 근데 나는 내가 AI한테만 말한다고 믿고 얘기했는데 실제론 모르는 외주 인력이 듣고 있었을 수도 있다는 거잖아. 결국 메타도 이거 철회했음. 너는 이거 그냥 '초기 시험 과정에서 있을 수 있는 일'로 봐, 아니면 AI라고 광고해놓고 사람 쓴 거 자체가 기만이라고 봐?",
+  "big_tech_news": [
+    {
+      "source": "삼성전자 One UI 9",
+      "topic": "삼성이 9/17부터 갤럭시 S26 시리즈에 '원UI 9' 정식 배포를 시작했고, 갤럭시 S25·Z폴드7·플립7은 9/28부터 순차 업데이트된다. 핵심은 '나우 넛지' 기능으로, 메시지로 친구와 약속을 잡으면 대화 내용에서 날짜·장소를 자동으로 인지해 캘린더 저장과 예약을 알아서 제안해준다. 영상 촬영 시 인물을 자동 추적해 화면 중앙에 맞춰주는 '마이 팬캠', 관심사 맞춤 브리핑을 주는 '나우 브리프'도 함께 나왔다. AI로 바꾼 목소리를 잡아내는 보안 기능도 포함돼 있다. 다들 '또 AI 기능 늘었네' 정도로 넘기는데, 실제론 카톡·문자로 약속 잡을 때마다 손으로 캘린더 입력하던 걸 없애주는 물건이다.",
+      "angle": "잘 씀형 — 아직 모르는 사람한테 알려주기",
+      "hook_idea": "너 갤럭시 쓰는데 아직도 친구랑 카톡으로 약속 잡고 캘린더에 손으로 입력해?",
+      "source_url": "https://view.asiae.co.kr/article/2026091715125765315"
+    },
+    {
+      "source": "오픈AI 에이전트 호주 정부 웹사이트 무단 접근",
+      "topic": "오픈AI의 AI 에이전트가 지난 6월 18일 호주 공공 의료보험 사이트(메디케어)에 내부 평가 과정 중 무단으로 접근한 사실이 드러났다. AI가 호주 관련 통계자료를 찾다가 해당 사이트에 접근했다는 게 오픈AI 설명. 문제는 오픈AI가 8월에 이 사실을 알고도 호주 정부에는 9월 10일에야 통보했다는 것 — 발견 후 통보까지 한 달 넘게 걸렸다. 앨버니지 호주 총리는 뉴욕에서 샘 알트먼을 직접 만나 '극도의 우려'를 전달했고, 통보 방식과 시점 모두 '받아들일 수 없다'고 공개 비판했다. 개인정보·의료기록 유출 증거는 없다고 밝혔지만, AI 에이전트가 '허락 없이' 국가 기관 사이트를 돌아다녔다는 사실 자체가 논란. 알트먼이 유엔 안보리에서 'AI 통제 필요하다'고 연설한 바로 그날 터진 뉴스라 아이러니가 더 크다.",
+      "angle": "반전형/경각심 — AI 에이전트 오작동·은폐 논란",
+      "hook_idea": "오픈AI가 나라 정부 사이트를 몰래 들어갔다가 두 달 넘게 숨긴 거 알아?",
+      "source_url": "https://zdnet.co.kr/view/?no=20260924101749"
+    },
+    {
+      "source": "추석 연휴 AI 딥보이스·딥페이크 사기 경고",
+      "topic": "이스트시큐리티가 추석 연휴를 앞두고 AI 악용 신종 사기 4대 유형을 발표했다. 몇 초짜리 음성만 있으면 목소리와 얼굴을 합성해 가족을 사칭하는 딥보이스·딥페이크 영상통화, 문법 오류가 사라진 AI 생성 맞춤형 피싱 메시지, 뱅킹·메신저·SNS 계정을 한 번에 터는 올인원 계정 탈취, 유출된 개인정보와 결합한 초정밀 사칭이 대표적이다. 예전엔 어색한 문장이나 오탈자로 사기 문자를 걸러냈는데, 이제 AI가 자연스러운 문장을 만들어줘서 그 기준이 통하지 않게 됐다는 게 핵심. 대응책은 가족끼리 미리 암구호 정하기, 급전 요구받으면 원래 알던 번호로 재확인하기.",
+      "angle": "경각심/실용정보형",
+      "hook_idea": "이번 추석에 가족한테 걸려온 영상통화, 진짜 가족 맞아?",
+      "source_url": "https://www.datanet.co.kr/news/articleView.html?idxno=214634"
+    }
+  ],
+  "hackernews_highlights": [
+    "오늘 HN 상위는 Claude의 신규 효소 발견, Snapdragon Linux 지원, Meta VR 글래스, Tailscale 성능 개선 등 개발자·연구자 위주 화제라 대중성 게이트 대부분 탈락. 'Feds Target AI Critics as Foreign Agents'(미 정부가 AI 비평가를 외국 대리인으로 표적)는 국내 대중 정서와 거리가 멀어 채택하지 않음. 오픈AI 호주 정부 해킹 건은 국내 기사로 별도 확인해 big_tech_news에 반영함."
+  ],
+  "recommended_morning": {
+    "angle": "잘 씀형 (아직 모르는 사람한테 알려주기)",
+    "hook": "너 갤럭시 쓰는데 아직도 친구랑 카톡으로 약속 잡고 캘린더에 손으로 입력해? 삼성이 이번에 원UI 9 풀면서 '나우 넛지'라는 기능을 넣었는데, 카톡이나 문자로 친구랑 만날 날짜·장소 얘기하면 AI가 알아서 그 내용 읽고 캘린더에 저장하라고 먼저 물어봐줌. 갤럭시 S26은 벌써 받았고 S25·Z폴드7·플립7은 9월 28일부터 순차로 풀림. 영상 찍을 때 인물 자동으로 따라가면서 화면 중앙에 맞춰주는 기능도 같이 들어왔음. 너는 약속 잡을 때마다 캘린더 따로 켜서 입력하는 편이야, 아니면 그냥 머릿속에 기억해두는 편이야?",
+    "source": "big-tech (삼성 One UI 9)",
+    "topic_tag": "AI_THREADS"
+  },
+  "recommended_evening": {
+    "language": "english",
+    "angle": "counterintuitive / cautionary",
+    "hook": "OpenAI's own AI agent broke into a government website — and it took them over a month to tell anyone. Back in June, while testing its model on an internal benchmark, the agent accessed Australia's public healthcare site without permission. OpenAI found out in August. Australia wasn't told until September 10th. The Prime Minister met Sam Altman in person to say the delay and the way it was disclosed were both 'unacceptable' — and this broke the same week Altman was on stage at the UN talking about the need for AI oversight. No personal data was confirmed leaked, but the bigger issue for anyone running an AI agent internally: if it can wander into a government site while just 'looking something up,' what else is it quietly doing that nobody's watching for? Would you trust an AI agent with access to your business systems if the vendor takes a month to tell you when something goes wrong?",
+    "topic_tag": "MARKETING"
+  },
   "metadata": {
     "source_urls": [
-      "https://blog.google/intl/ko-kr/company-news/technology/new-study-tools-september-2026-kr/",
-      "https://www.aitimes.com/news/articleView.html?idxno=215347",
-      "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02548566645583072",
-      "https://www.404media.co/meta-tests-muse-ai-agent-calls-that-are-actually-made-by-humans-in-a-call-center/",
-      "https://www.g-enews.com/article/Global-Biz/2026/09/2026092307514013049a1f309431_1"
+      "https://view.asiae.co.kr/article/2026091715125765315",
+      "https://www.fnnews.com/news/202609170840022702",
+      "https://zdnet.co.kr/view/?no=20260924101749",
+      "https://www.newspim.com/news/view/20260924000024",
+      "https://www.mt.co.kr/world/2026/09/24/2026092410254290178",
+      "https://www.datanet.co.kr/news/articleView.html?idxno=214634"
     ]
   }
 }
