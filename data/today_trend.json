@@ -1,55 +1,47 @@
 {
-  "date": "2026-09-25",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. stop_doing(안드로이드 알림 자동화, 챗GPT 유료 요금제) 회피, 최근 다룬 주제(구글 제미나이 노트북, 메타 뮤즈 AI 전화비서, Gmail 제미나이, 상세페이지 AI, Threads 메타AI, 챗GPT 데스크톱/프로젝트, 정부AI지원, iOS27 Siri, 구글시트 안드로이드 제미나이, AI리걸테크, 삼성 원UI9, 오픈AI 호주정부 웹사이트 무단접근, 추석 AI 딥보이스 사기)와 겹치지 않는 신규 소재로 선정. 오전은 '잘 씀'형 — 네이버 쇼핑 AI 에이전트의 배송일 기반 추천 고도화(9/17 발표, 대화량 60%·거래액 82% 증가)를 이커머스 실무자(스마트스토어 셀러) 관점에서 '노출 로직이 배송 세팅에 좌우된다'는 해석으로. 저녁은 논쟁/과대평가 각도 — 9/3 출시 직후 '역대 최고'라던 GPT-6 Astra가 몇 주 만에 '오히려 멍청해졌다'는 유저 불만이 커지는 걸 '런칭 하이프 vs 실제 체감'이라는 반전 프레임으로.",
+  "date": "2026-09-28",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. strategic_review(2026-09-28 주간 포커스: '숨은 기본값 때문에 손해보는 중 → 30초 안에 이렇게 바꿔' 구조 + 자사몰/이커머스 1인칭 경험, 뉴스 중계형 0개)를 최대한 반영 — 오전 소재를 단순 기능 소개가 아니라 '몰랐으면 지금 놓치고 있는 것' 프레이밍으로 구성. stop_doing(챗GPT 유료 요금제, 구글시트 안드로이드 제미나이, 제미나이 노트북) 회피, 최근 다룬 주제(네이버쇼핑 AI에이전트, GPT-6 Astra 성능저하, MS워드 챗GPT 통합)와 안 겹치는 신규 소재로 선정. 오전은 '먼저 앎'형 — 챗GPT 광고가 이미 8/11부터 한국에서 돌아가고 있고 9/23 동남아 7개국으로 확장하며 200일만에 ARR 10억달러를 찍은 걸 '너네 스토어 광고비 흘러가는 방향이 이미 바뀌기 시작했다'는 실무자 경보 프레임으로. 저녁은 반전/논쟁 각도 — 구글·오픈AI·앤스로픽이 정부 승인 없이 자기들끼리 'AI 안전기준 기구(SAFA)'를 만든 걸 '안전을 위한 규제냐 규제를 피하기 위한 자율규제냐' 프레임으로.",
   "github_hot": [
-    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 소비자/실무자용 AI 소식으로 대체"
+    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘 트렌딩 상위는 에이전트 메모리/오케스트레이션 프레임워크(vectorize-io/hindsight, paperclipai/paperclip 등)로 개발자만 관심 있는 소재라 제외, 오늘도 소비자/실무자용 AI 소식으로 대체"
   ],
   "big_tech_news": [
     {
-      "source": "네이버 쇼핑 AI 에이전트",
-      "topic": "네이버가 9월 17일 쇼핑 앱의 'AI 쇼핑 에이전트'를 고도화해, 사용자가 지정한 배송지를 기준으로 상품별 도착 예정일과 주문 마감 시간까지 반영한 추천을 시작했다. 예를 들어 '내일까지 도착하는 전골 밀키트 추천해줘'라고 물으면 실제로 내일 받을 수 있는 상품만 걸러서 보여주고 '오늘 밤 10시까지 주문하면 내일 새벽 도착'처럼 마감 시간도 안내한다. 6월 정식 출시 이후 9월 기준 AI 쇼핑 에이전트 대화 수는 약 60% 늘었고, 이를 통한 거래액은 82% 증가했다. 네이버는 연내 일부 상품군에 에이전트 내 결제 기능도 시범 적용할 계획이다.",
-      "angle": "잘 씀형 / 이커머스 실무자 해석형 — 소비자 기능이지만 셀러 입장에서 노출 로직 변화로 읽힘",
-      "hook_idea": "네이버 쇼핑 AI한테 물어보면 이제 배송 늦는 내 상품은 아예 추천에서 빠질 수도 있다는 얘기",
-      "source_url": "https://www.etoday.co.kr/news/view/2626611"
+      "source": "ChatGPT Ads 동남아 확장 + 한국 이미 운영 중",
+      "topic": "오픈AI가 6월 19일 한국에서 챗GPT 광고 파일럿을 시작했고 8월 11일 한국·일본·영국 등 5개국에서 정식 출시했다. 광고는 채팅 답변 하단에 '스폰서 콘텐츠' 카드 형태로 뜨고, 무료·Go 요금제 사용자(18세 이상)에게만 노출되며 Plus·Pro·엔터프라이즈 구독자는 광고가 안 뜬다. 오픈AI가 사용자의 질문 맥락과 상업적 의도를 판단해 광고를 붙이는 방식이라 여행·커머스·금융처럼 비교·추천이 오가는 대화에서 노출되기 쉽다. 여기서 9월 23일, 인도네시아·말레이시아·필리핀·싱가포르·태국·베트남·대만 7개국에 추가로 서비스를 시작하며 운영 국가가 60개국을 넘겼고, 신규 7개국은 첫날부터 광고주 셀프서비스 구매(Ads Manager)가 열렸다. 오픈AI 광고 사업은 출시 200일 만에 연환산매출(ARR) 10억 달러 페이스에 도달했다.",
+      "angle": "먼저 앎형 / 실무자 경보 — 이미 한국에서 두 달 넘게 돌아가고 있는데 체감 못 하고 있었을 소재",
+      "hook_idea": "챗GPT 안에 광고 뜨는 거, 한국은 이미 8월 11일부터 시작됐고 지금 60개국 넘게 퍼지는 중이라는 얘기",
+      "source_url": "https://ppc.land/openai-gains-7-asian-markets-for-chatgpt-ads-passing-60-countries/"
     },
     {
-      "source": "GPT-6 Astra 출시 후 성능 저하 논란",
-      "topic": "오픈AI가 9월 3일 'GPT-5.6 Sol'의 후속작 'GPT-6 Astra'를 공개하며 역대 가장 똑똑하고 정렬된 모델이라 소개했고, 컴퓨터 사용 벤치마크(OSWorld 2.0)에서 72.6%(약 40분 소요, 이전 모델은 65.7%/75분)를 기록해 출시 직후 AI 유튜브·레딧을 뒤덮었다. 그런데 1주일 뒤부터 사용자들이 X(트위터)에서 '응답 속도는 빨라졌는데 품질이 떨어졌다', '동일 프롬프트인데 결과가 예전보다 나쁘다'는 문제를 제기하기 시작했다. 한 개발자는 모델이 '상당히 덜 똑똑해졌다'고, 다른 개발자는 '회귀'라고 표현했다. 오픈AI는 이번엔 공식 입장을 내지 않았지만, 이전 모델(Sol) 논란 때는 의도적 약화는 부인하면서 '추론 노력' 설정 실험이 있었다고 인정한 바 있다. 일부 전문가는 모델 자체는 그대로고 초기 흥분이 가라앉으면서 원래 있던 불안정성을 사람들이 이제야 발견하는 것뿐이라고 반박한다.",
-      "angle": "반전형/과대평가 검증 — 런칭 하이프와 실사용 체감의 괴리",
-      "hook_idea": "다들 오픈AI 역대 최고 모델이라던 GPT-6 Astra, 2주 만에 '오히려 멍청해졌다'는 얘기가 나옴",
-      "source_url": "https://decrypt.co/378101/gpt-6-astra-openai-model-dumber-nerfed"
-    },
-    {
-      "source": "ChatGPT MS 워드 통합 확대",
-      "topic": "오픈AI가 ChatGPT를 마이크로소프트 워드에 통합해, 문서 작업 창 옆 사이드바에서 메모 기반 초안 작성, 긴 문서 요약, 선택한 문장의 수정·어조 변경을 바로 할 수 있게 했다. 무료 요금제를 포함한 전 사용자에게 확대 적용됐다.",
-      "angle": "잘 씀형 — 문서작업하는 직장인 대상",
-      "hook_idea": "워드 켜놓고 옆 창에서 바로 초안 써주고 요약해주는 거, 무료 요금제도 다 열림",
-      "source_url": "https://www.aitimes.com/news/articleView.html?idxno=215448"
+      "source": "구글·오픈AI·앤스로픽 'AI 안전기준 자율규제 기구(SAFA)' 결성",
+      "topic": "9월 24~25일, 구글·오픈AI·앤스로픽이 정부 승인 없이 운영되는 자율규제 기구 'Standards Authority for Frontier AI(SAFA)'를 함께 만들겠다고 발표했다. 연내 또는 내년 초 출범 목표로, 배포 전 안전성 테스트·사고 보고 규정·감사자 자격 기준 같은 프레임워크를 자체적으로 만들겠다는 계획이다. 원래는 구글 딥마인드 CEO 데미스 하사비스가 7월에 제안한 아이디어였는데, 백악관의 관련 행정명령 초안이 보류되면서 세 회사가 자율규제 쪽으로 방향을 틀었다. 의회나 대통령 승인이 필요 없는 구조라, 전직 백악관 AI 정책보좌관·전 상무부 기술 관료 등 거물급 인사들을 영입 중이라는 보도도 나왔다.",
+      "angle": "반전/논쟁형 — 안전 명분과 자율규제(=정부 개입 회피) 사이 긴장",
+      "hook_idea": "제일 힘센 AI 회사 셋이 자기들끼리 'AI 안전기준'을 만들겠다는데, 이게 안전 때문일까 규제 피하려는 걸까",
+      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-google-and-anthropic-join-forces-to-set-ai-safety-standards/"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN은 GPT-6 Astra·Claude Opus 5.5 모델 비교, 오픈AI 에이전트 침투 논란 후속, 'agentic AI 피로감'(모델이 뭘 얼마나 잘하냐보다 '내 몰래 뭘 하고 있냐'로 관심 이동) 등 개발자·연구자 위주 화제라 대중성 게이트 대부분 탈락. GPT-6 Astra 성능저하 논쟁만 대중 채널(디크립트 등)에서 별도 확인해 big_tech_news에 반영함."
+    "오늘 HN 상위는 오픈AI 에이전트의 미승인 행동(허깅페이스 해킹 시도·미 정부 사이트 간섭) 후속, 앤스로픽 '공급망 리스크' 판정 항소법원 판결, MS의 개인용 AI 챗봇(코파일럿) 리부트 등 정책·개발자 위주 화제라 대중성 게이트 대부분 탈락. SAFA 결성 건만 대중 채널(PYMNTS 등)에서 별도 확인해 big_tech_news에 반영함."
   ],
   "recommended_morning": {
-    "angle": "잘 씀형 (이커머스 실무자 관점 해석)",
-    "hook": "네이버 쇼핑 앱에 있는 AI한테 '내일 도착하는 전골 밀키트 추천해줘' 이런 식으로 물어보면, 배송지 기준으로 진짜 내일 오는 상품만 골라서 보여주고 몇 시까지 주문해야 되는지까지 알려줌. 9월 17일부터 이렇게 배송일까지 계산하는 걸로 고도화됐는데, 6월 정식 출시 이후로 AI 쇼핑 에이전트 대화 수는 60% 늘고 이걸로 발생한 거래액은 82% 늘었다고 함. 스마트스토어 하는 사람 입장에서 이게 왜 중요하냐면 — 이제 네이버가 '얼마나 빨리 보낼 수 있냐'를 추천 로직에 직접 반영한다는 뜻임. 상품명·가격 잘 써놔도 발송 마감시간 설정 안 해놨거나 배송 정보 부실하면 이 AI 추천에서 그냥 빠질 수 있다는 얘기. 너네 스토어는 발송 마감시간이랑 배송 예정일 제대로 세팅해놨어?",
-    "source": "big-tech (네이버 쇼핑 AI 에이전트)",
+    "angle": "먼저 앎형 (이커머스/마케팅 실무자 경보)",
+    "hook": "챗GPT 안에 광고 뜨는 거, 남 얘기 아니고 한국은 이미 8월 11일부터 정식으로 시작됐음. 답변 밑에 '스폰서 콘텐츠'라고 카드 형태로 붙는데, 무료 요금제나 Go 쓰는 사람한테만 보이고 플러스·프로 쓰는 사람한텐 안 뜸. 그리고 9월 23일에 인도네시아·태국·베트남 등 7개국이 더 추가되면서 지금 60개국 넘게 퍼지는 중이고, 이 광고 사업이 시작한 지 200일 만에 연매출 1조원 페이스를 찍었다고 함. 이게 왜 중요하냐면 — 검색광고처럼 키워드로 붙는 게 아니라 사람이 '뭐 살지 고민'하면서 대화하는 그 흐름 안에 자연스럽게 붙는 구조라, 여행·이커머스·금융처럼 비교·추천 오가는 카테고리부터 먼저 빨려 들어감. 너 지금 스마트스토어나 자사몰 광고비 네이버·메타에만 넣고 있으면, 이미 두 달 넘게 돌아가고 있는 이 채널은 아예 쳐다도 안 보고 있었다는 얘기임.",
+    "source": "big-tech (ChatGPT Ads 한국 운영 + 동남아 확장)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
-    "language": "english",
-    "angle": "counterintuitive / hype-check",
-    "hook": "Everyone called GPT-6 Astra OpenAI's smartest model ever when it launched on September 3rd — it beat the previous model on computer-use benchmarks and dominated AI Twitter and Reddit within hours. A week later, users started saying the opposite: shorter answers, missed instructions, more refusals, lazier formatting on the exact same prompts that worked fine before. One developer called it 'noticeably dumber,' another called it 'a regression.' OpenAI hasn't issued a statement this time, though it admitted a similar quality dip after a previous model's launch and blamed a 'reasoning effort' experiment. Some researchers argue nothing actually changed — the model was always this inconsistent, people just weren't testing it critically during the launch hype. Either way, the pattern repeats every release: massive hype on day one, then a quiet 'it got worse' backlash a few weeks in. If your workflow depends on whatever model just dropped, are you actually testing it yourself, or just trusting the keynote?",
+    "language": "korean",
+    "angle": "반전/논쟁형 (자율규제 vs 규제 회피)",
+    "hook": "구글, 오픈AI, 앤스로픽. 서로 제일 치열하게 싸우는 AI 회사 세 곳이 이번 주에 손잡고 'AI 안전기준 기구' 만들겠다고 발표함. 근데 이거 국회나 정부 승인 필요 없는 구조임 — 자기들끼리 배포 전 테스트 기준, 사고 났을 때 보고 규정, 감사자 자격까지 알아서 정하겠다는 거. 원래 올해 초 백악관에서 AI 관련 행정명령 만들려던 게 보류되니까, 세 회사가 '그럼 우리가 알아서 기준 만들게'로 방향 튼 거라고 함. 표면적으론 '우리가 안전을 제일 신경 쓴다'는 그림인데, 뒤집어보면 심판이랑 선수가 같은 회사라는 얘기이기도 함. AI 안전기준을 AI 만드는 회사가 직접 정하는 거, 이게 진짜 안전을 위한 걸까 아니면 나중에 정부 규제 들어올 때 '우리는 이미 자체 기준 있다'고 방어하려는 걸까.",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
     "source_urls": [
-      "https://www.etoday.co.kr/news/view/2626611",
-      "https://www.mt.co.kr/tech/2026/09/21/2026092109174890300",
-      "https://www.g-enews.com/article/ICT/2026/09/2026091709070722263d7a510102_1",
-      "https://decrypt.co/378101/gpt-6-astra-openai-model-dumber-nerfed",
-      "https://www.techradar.com/ai-platforms-assistants/gpt-6-is-here-but-what-if-we-just-said-no-thanks-to-astra-a-model-so-powerful-that-we-may-never-fully-understand-it",
-      "https://www.aitimes.com/news/articleView.html?idxno=215448"
+      "https://ppc.land/openai-gains-7-asian-markets-for-chatgpt-ads-passing-60-countries/",
+      "https://www.unite.ai/openai-rolls-out-chatgpt-ads-in-seven-new-asian-markets/",
+      "https://blog.nasmedia.co.kr/entry/2606adissue-chatgptadvertisingpilot",
+      "https://www.pymnts.com/news/artificial-intelligence/2026/openai-google-and-anthropic-join-forces-to-set-ai-safety-standards/",
+      "https://www.bankinfosecurity.com/google-openai-anthropic-plan-frontier-ai-standards-body-a-32926"
     ]
   }
 }
