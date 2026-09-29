@@ -852,5 +852,14 @@
     "blocked": false,
     "reply": "",
     "regenerated": 1
+  },
+  {
+    "date": "2026-09-29",
+    "content": "파워포인트나 워드 켜서 슬라이드·기획서 손으로 만드는 사람 아직도 많던데, 앤스로픽이 9월 16일에 클로드 채팅창 안에서 바로 문서·슬라이드 만드는 기능(Claude Docs·Slides)을 냈음. \"이 내용으로 슬라이드 만들어줘\" 하면 초안 쓰고, 슬라이드 한 장씩 클릭해서 고치고, 편집 의견까지 달아줌. 다 되면 파워포인트·PDF로 바로 다운되고 구글독스·워드로도 뽑을 수 있음. 동료 초대해서 같이 고치는 것도 됨. 자사몰 하면서 상세페이지 기획안이나 발표자료 서식 맞추는 데 시간 제일 많이 깎아먹는데, 그 서식잡는 과정 자체를 클로드가 대신 해주는 구조라 초안 뽑는 시간은 확실히 줄어들 걸로 보임. 지금은 Pro·Max 유료부터고 무료·팀 플랜은 곧 열린다고 함.",
+    "topic": "AI_THREADS",
+    "reply": "https://www.engadget.com/2259938/anthropics-claude-can-now-create-editable-documents-for-you-cowork-chat-together/",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과"
   }
 ]
