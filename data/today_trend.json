@@ -1,47 +1,47 @@
 {
-  "date": "2026-09-28",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. strategic_review(2026-09-28 주간 포커스: '숨은 기본값 때문에 손해보는 중 → 30초 안에 이렇게 바꿔' 구조 + 자사몰/이커머스 1인칭 경험, 뉴스 중계형 0개)를 최대한 반영 — 오전 소재를 단순 기능 소개가 아니라 '몰랐으면 지금 놓치고 있는 것' 프레이밍으로 구성. stop_doing(챗GPT 유료 요금제, 구글시트 안드로이드 제미나이, 제미나이 노트북) 회피, 최근 다룬 주제(네이버쇼핑 AI에이전트, GPT-6 Astra 성능저하, MS워드 챗GPT 통합)와 안 겹치는 신규 소재로 선정. 오전은 '먼저 앎'형 — 챗GPT 광고가 이미 8/11부터 한국에서 돌아가고 있고 9/23 동남아 7개국으로 확장하며 200일만에 ARR 10억달러를 찍은 걸 '너네 스토어 광고비 흘러가는 방향이 이미 바뀌기 시작했다'는 실무자 경보 프레임으로. 저녁은 반전/논쟁 각도 — 구글·오픈AI·앤스로픽이 정부 승인 없이 자기들끼리 'AI 안전기준 기구(SAFA)'를 만든 걸 '안전을 위한 규제냐 규제를 피하기 위한 자율규제냐' 프레임으로.",
+  "date": "2026-09-29",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. strategic_review(주간 포커스: '몰랐으면 지금 손해보고 있는 기본값/기능 → 30초 안에 이렇게 바꿔' 구조 + 자사몰/이커머스 1인칭 경험, 뉴스 중계형 0개)를 반영해 오전은 '지금 당장 써먹는' 실무 도구 얘기로, 저녁은 '겉보기엔 좋은데 뒤집어보면' 반전 구조로 구성. stop_doing(챗GPT 유료 요금제, 구글시트 안드로이드 제미나이, 제미나이 노트북) 회피, 최근 다룬 주제(아이폰 Siri, 카톡 예약, 네이버쇼핑 AI, 챗GPT 광고, SAFA)와 안 겹치는 신규 소재로 선정 — 오전은 앤스로픽이 9/16 공개한 '클로드 안에서 바로 문서/슬라이드 만들기'(Claude Docs·Slides), 저녁은 메타가 9월에 내놓은 '조언만 하던 AI에서 직접 실행하는 AI'로 넘어간 개인비서 에이전트 Muse.",
   "github_hot": [
-    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘 트렌딩 상위는 에이전트 메모리/오케스트레이션 프레임워크(vectorize-io/hindsight, paperclipai/paperclip 등)로 개발자만 관심 있는 소재라 제외, 오늘도 소비자/실무자용 AI 소식으로 대체"
+    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘 트렌딩 상위도 에이전트 메모리/평가 프레임워크 위주라 일반 실무자 소재로 안 씀"
   ],
   "big_tech_news": [
     {
-      "source": "ChatGPT Ads 동남아 확장 + 한국 이미 운영 중",
-      "topic": "오픈AI가 6월 19일 한국에서 챗GPT 광고 파일럿을 시작했고 8월 11일 한국·일본·영국 등 5개국에서 정식 출시했다. 광고는 채팅 답변 하단에 '스폰서 콘텐츠' 카드 형태로 뜨고, 무료·Go 요금제 사용자(18세 이상)에게만 노출되며 Plus·Pro·엔터프라이즈 구독자는 광고가 안 뜬다. 오픈AI가 사용자의 질문 맥락과 상업적 의도를 판단해 광고를 붙이는 방식이라 여행·커머스·금융처럼 비교·추천이 오가는 대화에서 노출되기 쉽다. 여기서 9월 23일, 인도네시아·말레이시아·필리핀·싱가포르·태국·베트남·대만 7개국에 추가로 서비스를 시작하며 운영 국가가 60개국을 넘겼고, 신규 7개국은 첫날부터 광고주 셀프서비스 구매(Ads Manager)가 열렸다. 오픈AI 광고 사업은 출시 200일 만에 연환산매출(ARR) 10억 달러 페이스에 도달했다.",
-      "angle": "먼저 앎형 / 실무자 경보 — 이미 한국에서 두 달 넘게 돌아가고 있는데 체감 못 하고 있었을 소재",
-      "hook_idea": "챗GPT 안에 광고 뜨는 거, 한국은 이미 8월 11일부터 시작됐고 지금 60개국 넘게 퍼지는 중이라는 얘기",
-      "source_url": "https://ppc.land/openai-gains-7-asian-markets-for-chatgpt-ads-passing-60-countries/"
+      "source": "Anthropic, Claude Docs & Claude Slides 출시",
+      "topic": "앤스로픽이 9월 16일, 클로드 출시 이후 가장 큰 제품 개편을 발표했다. 챗 인터페이스, 협업 워크스페이스 'Cowork', 디자인 도구를 하나로 합치면서 신규 기능인 'Claude Docs'와 'Claude Slides'를 베타로 추가했다. 채팅창에서 '문서 만들어줘'라고 요청하면 클로드가 초안을 쓰고, 질문을 던지고, 편집 의견을 달고, 수정까지 하고, 동료와 같은 문서를 동시에 작업할 수도 있다. 문서는 처음엔 비공개로 시작하고, 특정 사람이나 조직 전체에 공유할 수 있으며, 구글 독스·MS 워드·파워포인트·PDF로 내보내기도 지원한다. 프레젠테이션도 슬라이드 단위로 편집하거나 클로드 안에서 바로 발표하거나 파워포인트로 다운받을 수 있다. 현재는 Pro·Max 유료 구독자부터 웹/데스크톱/모바일에 순차 적용 중이고, 무료·팀 플랜은 '곧' 제공 예정이라고만 밝혔다.",
+      "angle": "잘 씀형 — 문서/슬라이드 만드는 실무자라면 바로 워크플로 바뀌는 실용 소재",
+      "hook_idea": "파워포인트 켜서 슬라이드 만드는 사람, 클로드가 채팅에서 바로 만들어주고 파워포인트 파일로 다운까지 해준다는 거 알아?",
+      "source_url": "https://www.engadget.com/2259938/anthropics-claude-can-now-create-editable-documents-for-you-cowork-chat-together/"
     },
     {
-      "source": "구글·오픈AI·앤스로픽 'AI 안전기준 자율규제 기구(SAFA)' 결성",
-      "topic": "9월 24~25일, 구글·오픈AI·앤스로픽이 정부 승인 없이 운영되는 자율규제 기구 'Standards Authority for Frontier AI(SAFA)'를 함께 만들겠다고 발표했다. 연내 또는 내년 초 출범 목표로, 배포 전 안전성 테스트·사고 보고 규정·감사자 자격 기준 같은 프레임워크를 자체적으로 만들겠다는 계획이다. 원래는 구글 딥마인드 CEO 데미스 하사비스가 7월에 제안한 아이디어였는데, 백악관의 관련 행정명령 초안이 보류되면서 세 회사가 자율규제 쪽으로 방향을 틀었다. 의회나 대통령 승인이 필요 없는 구조라, 전직 백악관 AI 정책보좌관·전 상무부 기술 관료 등 거물급 인사들을 영입 중이라는 보도도 나왔다.",
-      "angle": "반전/논쟁형 — 안전 명분과 자율규제(=정부 개입 회피) 사이 긴장",
-      "hook_idea": "제일 힘센 AI 회사 셋이 자기들끼리 'AI 안전기준'을 만들겠다는데, 이게 안전 때문일까 규제 피하려는 걸까",
-      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-google-and-anthropic-join-forces-to-set-ai-safety-standards/"
+      "source": "Meta, 개인 AI 에이전트 'Muse' 확산",
+      "topic": "메타가 9월 초 출시한 개인 AI 에이전트 Muse(자체 멀티모달 모델 'Muse Spark' 기반)가 몇 주 만에 이용자 수백만 명 규모로 늘었다. 기존 AI 비서들이 '조언만' 하는 것과 달리, Muse는 이메일·캘린더 같은 앱에 직접 연결돼서 사용자 대신 작업을 '실행'하도록 설계됐다 — 테크크런치에 따르면 이용자가 작업을 위임하면 Muse가 데스크톱의 앱을 직접 조작할 수 있다. 베스트바이·월마트·세포라·쇼피파이 같은 리테일러와도 연동되고, 메타 스마트글래스·맥 컴퓨터로도 확장될 예정이다. 요금은 '대량의 토큰을 무료로 제공하고, 장기적으로는 거래에서 소액 수수료를 받아 수익을 낸다'는 방식이라고 밝혔다.",
+      "angle": "반전/논쟁형 — 편해 보이는 '실행형 AI 비서'가 리테일러 연동까지 되면서 생기는 긴장",
+      "hook_idea": "AI 비서가 이제 추천만 안 하고 장바구니 담고 결제까지 대신 해준다는데, 이거 진짜 좋은 걸까",
+      "source_url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN 상위는 오픈AI 에이전트의 미승인 행동(허깅페이스 해킹 시도·미 정부 사이트 간섭) 후속, 앤스로픽 '공급망 리스크' 판정 항소법원 판결, MS의 개인용 AI 챗봇(코파일럿) 리부트 등 정책·개발자 위주 화제라 대중성 게이트 대부분 탈락. SAFA 결성 건만 대중 채널(PYMNTS 등)에서 별도 확인해 big_tech_news에 반영함."
+    "오늘 HN 상위는 앤스로픽 공급망 리스크 항소법원 판결, 오픈AI 에이전트 미승인 행동 후속 등 정책·개발자 위주 화제라 대중성 게이트 대부분 탈락. 소비자 채택 얘기(Claude Docs/Slides, Meta Muse)만 big_tech_news에 반영함."
   ],
   "recommended_morning": {
-    "angle": "먼저 앎형 (이커머스/마케팅 실무자 경보)",
-    "hook": "챗GPT 안에 광고 뜨는 거, 남 얘기 아니고 한국은 이미 8월 11일부터 정식으로 시작됐음. 답변 밑에 '스폰서 콘텐츠'라고 카드 형태로 붙는데, 무료 요금제나 Go 쓰는 사람한테만 보이고 플러스·프로 쓰는 사람한텐 안 뜸. 그리고 9월 23일에 인도네시아·태국·베트남 등 7개국이 더 추가되면서 지금 60개국 넘게 퍼지는 중이고, 이 광고 사업이 시작한 지 200일 만에 연매출 1조원 페이스를 찍었다고 함. 이게 왜 중요하냐면 — 검색광고처럼 키워드로 붙는 게 아니라 사람이 '뭐 살지 고민'하면서 대화하는 그 흐름 안에 자연스럽게 붙는 구조라, 여행·이커머스·금융처럼 비교·추천 오가는 카테고리부터 먼저 빨려 들어감. 너 지금 스마트스토어나 자사몰 광고비 네이버·메타에만 넣고 있으면, 이미 두 달 넘게 돌아가고 있는 이 채널은 아예 쳐다도 안 보고 있었다는 얘기임.",
-    "source": "big-tech (ChatGPT Ads 한국 운영 + 동남아 확장)",
-    "topic_tag": "BUSINESS_ENTREPENEURSHIP"
+    "angle": "잘 씀형 (실무 도구 활용법)",
+    "hook": "너 아직도 파워포인트나 워드 켜서 문서·슬라이드 손으로 만들고 있으면 이거 알아둬야 함. 앤스로픽(클로드 만든 회사)이 9월 16일에 클로드 채팅창 안에서 바로 문서랑 슬라이드를 만드는 기능을 냈음. 그냥 '이 내용으로 슬라이드 만들어줘'라고 하면 클로드가 초안 쓰고, 편집 의견까지 달고, 슬라이드별로 수정도 하고, 다 되면 파워포인트나 PDF로 그대로 다운받을 수 있음. 문서 버전은 구글 독스나 MS 워드로 내보내기도 되고, 동료 초대해서 같이 편집도 가능. 지금은 유료(Pro·Max) 플랜부터 순차 적용 중이고 무료·팀 플랜은 곧 열린다고 함. 자사몰 운영하면서 제안서·상세페이지 기획서·발표자료 손으로 만드는 시간 많으면, 이거 하나로 그 시간 반토막 날 수 있음.",
+    "source": "big-tech (Claude Docs & Claude Slides 출시)",
+    "topic_tag": "AI_THREADS"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "반전/논쟁형 (자율규제 vs 규제 회피)",
-    "hook": "구글, 오픈AI, 앤스로픽. 서로 제일 치열하게 싸우는 AI 회사 세 곳이 이번 주에 손잡고 'AI 안전기준 기구' 만들겠다고 발표함. 근데 이거 국회나 정부 승인 필요 없는 구조임 — 자기들끼리 배포 전 테스트 기준, 사고 났을 때 보고 규정, 감사자 자격까지 알아서 정하겠다는 거. 원래 올해 초 백악관에서 AI 관련 행정명령 만들려던 게 보류되니까, 세 회사가 '그럼 우리가 알아서 기준 만들게'로 방향 튼 거라고 함. 표면적으론 '우리가 안전을 제일 신경 쓴다'는 그림인데, 뒤집어보면 심판이랑 선수가 같은 회사라는 얘기이기도 함. AI 안전기준을 AI 만드는 회사가 직접 정하는 거, 이게 진짜 안전을 위한 걸까 아니면 나중에 정부 규제 들어올 때 '우리는 이미 자체 기준 있다'고 방어하려는 걸까.",
+    "angle": "반전/논쟁형 (실행형 AI 비서 vs 통제권)",
+    "hook": "메타가 9월에 낸 개인 AI 비서 'Muse', 몇 주 만에 이용자 수백만 명 됐다고 함. 근데 이게 기존 AI 비서들이랑 결정적으로 다른 게, 조언만 하는 게 아니라 이메일이나 캘린더 같은 앱에 직접 붙어서 대신 '실행'을 한다는 거임 — 일 시키면 알아서 앱을 조작해서 처리해버림. 베스트바이·월마트·세포라·쇼피파이 같은 데도 연동돼 있어서, 나중엔 장바구니 담는 것도 결제하는 것도 대신 해줄 수 있는 구조. 겉으론 편해 보이는데, 뒤집어보면 내 이메일 읽고 내 카드로 결제까지 하는 걸 AI한테 맡긴다는 얘기임. 자사몰 하는 입장에서도 남 일 아닌 게, 내 고객이 이런 에이전트한테 구매를 위임하기 시작하면 상세페이지 잘 꾸미는 것보다 AI 눈에 잘 띄는 게 더 중요해지는 시대가 올 수도 있음. 편한 걸까, 통제권을 넘기는 걸까.",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
     "source_urls": [
-      "https://ppc.land/openai-gains-7-asian-markets-for-chatgpt-ads-passing-60-countries/",
-      "https://www.unite.ai/openai-rolls-out-chatgpt-ads-in-seven-new-asian-markets/",
-      "https://blog.nasmedia.co.kr/entry/2606adissue-chatgptadvertisingpilot",
-      "https://www.pymnts.com/news/artificial-intelligence/2026/openai-google-and-anthropic-join-forces-to-set-ai-safety-standards/",
-      "https://www.bankinfosecurity.com/google-openai-anthropic-plan-frontier-ai-standards-body-a-32926"
+      "https://www.engadget.com/2259938/anthropics-claude-can-now-create-editable-documents-for-you-cowork-chat-together/",
+      "https://www.axios.com/2026/09/16/anthropic-claude-docs-microsoft",
+      "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+      "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
+      "https://www.axios.com/2026/09/18/meta-muse-personal-agent-make-money"
     ]
   }
 }
