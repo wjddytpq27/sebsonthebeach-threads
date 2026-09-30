@@ -861,5 +861,16 @@
     "fact_checked": true,
     "fact_check_status": "pass",
     "fact_check_reason": "검증 통과"
+  },
+  {
+    "date": "2026-09-30",
+    "content": "요즘 오픈AI 포함 빅테크들 움직임 보면 방향성 하나는 뚜렷함. 물어봐야 답 주는 챗봇 말고, 안 시켜도 이메일·일정 같은 거 알아서 챙겨주는 '상시 대기형 AI비서' 쪽으로 다들 가려는 분위기임. 근데 이런 기능은 보통 제일 비싼 요금제부터 먼저 풀어주는 경우가 많음. 자사몰 하면서 문의응대나 재고체크 자동화 노리는 입장이면, 지금 당장 뛰어들기보단 저렴한 버전 풀릴 때까지 좀 지켜보는 게 나을 듯. 너네 회사는 이런 거 벌써 써봄?",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
