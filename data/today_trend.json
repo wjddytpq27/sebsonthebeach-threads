@@ -1,41 +1,48 @@
 {
-  "date": "2026-09-30",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. strategic_review(주간 포커스: '몰랐으면 지금 손해보고 있는 기본값/기능 → 30초 안에 이렇게 바꿔' 구조 + 자사몰/이커머스 1인칭 경험, 뉴스 중계형 0개)를 반영해 오전은 어제(9/29) 열린 오픈AI 데브데이 발표 중 '상시 켜진 개인 AI비서(Dots)'를 자사몰 실무자 관점에서 해석, 저녁은 '비싼 기업용 AI비서가 화제인 그날, 정작 SNS 화제는 무료 놀이형 AI'라는 대비/반전 구조로 구성. stop_doing(챗GPT 유료 요금제, 구글시트 안드로이드 제미나이, 제미나이 노트북) 회피, 최근 다룬 주제(아이폰 Siri, 카톡 예약, 네이버쇼핑 AI, 챗GPT 광고, Claude Docs/Slides, Meta Muse)와 안 겹치는 신규 소재로 선정.",
+  "date": "2026-10-01",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. strategic_review(주간 포커스: '몰랐으면 지금 손해보고 있는 기본값/기능 → 30초 안에 이렇게 바꿔' 구조 + 자사몰/이커머스 1인칭 경험, 뉴스 중계형 0개)를 정면으로 반영. 오전은 쿠팡이 7월에 예고하고 9월부터 본격 시행 중인 'AI 쇼핑 에이전트용 상품정보 표준화 정책'(상품명에 경쟁사명 금지, 대표이미지 순백색+텍스트/로고 금지, 설명 구조화)을 '안 지키면 AI 추천에서 밀려난다'는 손해 프레임으로 셀러 1인칭 해석. 저녁은 어제(9/29) 트럼프가 서명한 'AI→Super Intelligence' 행정명령 + 6개 빅테크가 서명한 'White House Accord'를 '이름만 거창하게 바꾸고 처벌 조항은 0개'라는 반전/논쟁 구조로 구성. stop_doing 회피, 최근 다룬 주제(정부 국산AI, 챗GPT 프로젝트, 아이폰 Siri, 안드로이드 제미나이, 제미나이 노트북, 카톡 예약, 네이버쇼핑 AI, 챗GPT 광고, 클로드 Docs/Slides, 오픈AI Dots)와 안 겹치는 신규 소재로 선정.",
   "github_hot": [
-    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘 트렌딩도 에이전트 프레임워크/평가 툴 위주라 일반 실무자 소재로 안 씀"
+    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 에이전트 프레임워크/평가 툴 위주라 일반 실무자 소재로 안 씀"
   ],
   "big_tech_news": [
     {
-      "source": "OpenAI DevDay 2026 — 'Dots' 상시 개인 AI비서 공개",
-      "topic": "오픈AI가 9월 29일 데브데이에서 'Dots'라는 상시 켜진 개인 AI 에이전트를 공개했다. 기존 챗GPT처럼 물어봐야 답하는 게 아니라, 일정·이메일 변화를 스스로 감지해서 시키지 않아도 먼저 처리하도록 설계됐다. 챗GPT 앱·웹뿐 아니라 슬랙·MS팀즈에서도 대화 맥락이 이어지고, 음성통화로도 연결되며, 4천 개 넘는 앱과 플러그인으로 연동된다. 사용자 허락하에 자체 클라우드 컴퓨터뿐 아니라 내 노트북까지 직접 조작할 수 있다는 게 핵심 차이다. 다만 지금은 월 200달러대 'Pro 200'·'Business Premium' 요금제부터만 순차 오픈 중이고, 더 저렴한 Pro 요금제나 무료 사용자에겐 아직 안 열렸다. 같은 자리에서 기존 최상위 모델(GPT-6 Astra) 성능에 근접하면서 가격은 5분의 1 수준인 'GPT-6.1 Sol' 모델도 함께 공개돼 Plus 이상 사용자부터 순차 적용 중이다.",
-      "angle": "먼저 앎형 — 일반 대중은 아직 잘 모르는 '상시 AI비서' 개념 소개 + 지금은 비싼 요금제 전용이라는 현실 체크",
-      "hook_idea": "챗GPT가 이제 물어봐야 대답하는 게 아니라, 시키지도 않았는데 알아서 이메일·일정 처리해주는 상시 비서가 생겼다는데, 한 달에 26만원 넘는 요금제부터만 열어준다고 함",
-      "source_url": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/"
+      "source": "쿠팡 뉴스룸/전자신문/한경 — AI 쇼핑 에이전트용 상품정보 표준화 정책",
+      "topic": "쿠팡이 지난 7월 '수억 개 상품정보를 AI가 정확히 인식하는 형태로 싹 바꾼다'고 예고한 정책이 9월부터 본격 시행에 들어갔다. 핵심은 세 가지다. 첫째, 상품명에 '네이버·무신사·테무·알리' 같은 경쟁 플랫폼 명칭을 쓰는 걸 전면 금지했다. 둘째, 대표 이미지는 원칙적으로 순백색 배경에 상품만 중앙에 나와야 하고 텍스트·로고·워터마크 같은 비상품 홍보 요소를 넣으면 안 된다. 셋째, 상세설명도 규격·재질·용도 같은 정보를 정해진 구조화된 형식으로 입력해야 한다. 이렇게 모은 표준 데이터는 쿠팡이 준비 중인 AI 쇼핑 에이전트(상품 비교·추천·구매까지 대신하는)의 판단 기준이 된다. 업계 관계자에 따르면 오출고·수량 오류가 반복되는 셀러의 데이터는 AI가 신뢰도를 낮게 평가해서 노출·배송 우선순위에 불이익을 줄 수 있다고도 전해진다.",
+      "angle": "기본값 손해형 — 몰랐으면 지금 AI 추천에서 밀리고 있을 수 있는 정책 변경",
+      "hook_idea": "쿠팡에 상품 올릴 때 아직도 상품명에 '무신사보다 싸다' 이런 식으로 경쟁사 이름 넣고 있으면, 이제 그거 자체가 제재 대상이고 AI 추천에서도 밀릴 수 있다는 얘기",
+      "source_url": "https://www.hankyung.com/article/202607156887g"
+    },
+    {
+      "source": "Al Jazeera/Breitbart — White House Accord on Super Intelligence",
+      "topic": "9월 29일 트럼프 대통령이 'AI를 Super Intelligence로 명칭을 바꾼다'는 행정명령에 서명한 날, 구글·메타·엔비디아·오픈AI·앤스로픽·머스크 계열사 등 6개 회사 CEO가 백악관에서 'White House Accord on Super Intelligence'라는 한 장짜리 자율 서약에 서명했다. 내부통제·내부점검팀·외부감사·이사회 감독이라는 4단계 안전장치를 각 회사가 자체적으로 두겠다는 내용이다. 다만 법이 아니라 자발적 서약이라 어길 경우 정부가 부과하는 처벌이나 강제 조항은 전혀 없다.",
+      "angle": "반전/논쟁형 — 거창한 이름과 서명식 대비 실제 구속력은 0",
+      "hook_idea": "구글·메타·오픈AI·앤스로픽 CEO들이 백악관에 모여서 AI 안전 서약에 다같이 서명했다는데, 안 지켜도 처벌 조항이 하나도 없다는 거 보고 허탈했음",
+      "source_url": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN 상위는 오픈AI 데브데이 개발자용 API/가격 변경, 에이전트 보안사고 후속 등 개발자·정책 위주 화제라 대중성 게이트 대부분 탈락. 소비자 체감 얘기(Dots 상시비서)만 big_tech_news에 반영함."
+    "오늘 HN 상위는 오픈AI 데브데이 후속(Codex 오픈소스화), Gemini 4 Argon 접근권 등 개발자·정책 위주 화제라 대중성 게이트 대부분 탈락. 대중 체감 얘기(쿠팡 정책, White House Accord)만 big_tech_news에 반영함."
   ],
   "recommended_morning": {
-    "angle": "먼저 앎형 (신규 AI 서비스 소개 + 실무자 해석)",
-    "hook": "어제(9/29) 오픈AI가 데브데이에서 'Dots'라는 걸 냈는데, 이게 기존 챗GPT랑 결정적으로 다른 게 시키지 않아도 알아서 움직인다는 거임. 이메일이나 일정에 변화 생기면 스스로 감지해서 먼저 처리해주고, 슬랙이나 팀즈로 넘어가서 얘기해도 이전 대화 맥락을 그대로 기억함. 4천 개 넘는 앱이랑 연동되고, 허락만 하면 내 노트북까지 직접 조작해서 일을 처리할 수 있다고 함. 문제는 이거, 아직 한 달에 26만원 넘는 최상위 요금제(Pro 200·Business Premium)부터만 열어준다는 거. 자사몰 운영하면서 문의 답변이나 재고 체크처럼 반복되는 걸 AI한테 통째로 맡기는 시대가 온다는 신호인데, 지금 당장은 '이런 게 나왔다' 정도만 알아두고 저렴한 버전 풀리는 거 지켜봐야 할 듯.",
-    "source": "big-tech (OpenAI DevDay 2026 — Dots)",
-    "topic_tag": "AI_THREADS"
+    "angle": "기본값 손해형 (자사몰/이커머스 셀러 1인칭 해석)",
+    "hook": "쿠팡에 상품 올려본 사람만 하는 얘기. 7월에 쿠팡이 '상품정보 체계를 AI가 알아보는 형태로 다 바꾼다'고 예고했었는데, 그게 9월부터 실제로 시행 들어갔음. 제일 크게 바뀐 거 세 개 — 상품명에 네이버나 무신사, 테무 같은 경쟁사 이름 넣는 거 전면 금지, 대표 이미지는 무조건 순백색 배경에 상품만 딱 나오고 텍스트나 로고 들어가면 안 됨, 상세설명도 규격·재질·용도 정해진 양식대로 구조화해서 넣어야 함. 왜 이렇게 바꾸냐면, 이 데이터가 쿠팡이 준비 중인 AI 쇼핑 에이전트(알아서 상품 비교하고 추천하고 구매까지 해주는 거)의 판단 근거가 되기 때문. 업계 얘기로는 오출고나 수량 오류 잦은 셀러는 AI가 데이터 신뢰도 낮게 보고 노출 우선순위에서도 밀릴 수 있다고 함. 예전 방식으로 상품명에 비교 문구 넣고 이미지에 '최저가' 같은 텍스트 박아놨던 거 아직 그대로면, 모르는 새 노출 손해보고 있을 수 있음.",
+    "source": "쿠팡 상품정보 표준화 정책 (2026-07 예고 → 2026-09 시행)",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "반전/논쟁형 (비싼 기업용 AI vs 무료 놀이형 AI 대비)",
-    "hook": "어제 오픈AI가 한 달에 26만원 넘는 '상시 AI비서' 내놓고 난리인 그 시각, 정작 SNS에서 진짜 화제인 건 완전 딴판임. 야구장 직캠 AI라고, 본인 사진 한 장이랑 무료 AI 툴로 'KBO 중계 카메라에 우연히 잡힌 것처럼' 보이는 영상 만드는 게 5월부터 지금까지 계속 유행 중인데, 그중 하나는 조회수 1500만 넘게 찍음. 결국 사람들이 진짜 몰리는 건 비싼 기업용 에이전트가 아니라 누구나 무료로 5분 안에 따라할 수 있는 재미있는 놀이라는 거. 자사몰 콘텐츠 짤 때도 마찬가지임 — 거창한 AI 기능보다 '나도 당장 따라할 수 있음'이 훨씬 확산이 잘 됨.",
+    "angle": "반전/논쟁형 (거창한 서명식 vs 실제 구속력 0)",
+    "hook": "어제(9/29) 하루에 벌어진 일 두 개 붙여보면 좀 웃김. 트럼프가 'AI'라는 명칭을 'Super Intelligence'로 바꾸는 행정명령에 서명했고, 같은 날 구글·메타·엔비디아·오픈AI·앤스로픽·머스크 계열사 CEO들까지 백악관에 모여서 'AI 안전 서약(White House Accord)'에 다같이 서명했음. 내부통제·내부점검·외부감사·이사회 감독까지 4단계 안전장치 두겠다는 내용인데, 찾아보니까 이거 법이 아니라 그냥 자발적 서약이라 안 지켜도 정부가 주는 처벌이 하나도 없음. 이름은 거창하게 바꾸고 서명식까지 했는데 지킬 의무가 없다는 거, 결국 '우리 안전하게 할게요'라는 보도자료 한 장이랑 다를 게 없다는 생각이 듦.",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
     "source_urls": [
-      "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/",
-      "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html",
-      "https://www.digit.in/news/general/openai-devday-2026-dots-to-pro-500-plan-check-key-announcements-from-chatgpt-makers-developer-conference.html/amp/",
-      "https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/",
-      "https://kr.cyberlink.com/blog/photo-editing-tips/5523/baseball-ai-trend",
-      "https://www.hitpaw.kr/top-trending-tips/baseball-goddess-ai-kbo-stadium-prompt.html"
+      "https://www.hankyung.com/article/202607156887g",
+      "https://www.etnews.com/20260630000325",
+      "https://news.coupang.com/archives/65494/",
+      "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work",
+      "https://www.latestly.com/us/what-is-white-house-accord-on-superintelligence-that-elon-musk-mark-zuckerberg-and-others-signed-7626242.html",
+      "https://theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-september-30-2026"
     ]
   }
 }
