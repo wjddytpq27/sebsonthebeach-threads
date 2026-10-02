@@ -1,48 +1,48 @@
 {
-  "date": "2026-10-01",
-  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. strategic_review(주간 포커스: '몰랐으면 지금 손해보고 있는 기본값/기능 → 30초 안에 이렇게 바꿔' 구조 + 자사몰/이커머스 1인칭 경험, 뉴스 중계형 0개)를 정면으로 반영. 오전은 쿠팡이 7월에 예고하고 9월부터 본격 시행 중인 'AI 쇼핑 에이전트용 상품정보 표준화 정책'(상품명에 경쟁사명 금지, 대표이미지 순백색+텍스트/로고 금지, 설명 구조화)을 '안 지키면 AI 추천에서 밀려난다'는 손해 프레임으로 셀러 1인칭 해석. 저녁은 어제(9/29) 트럼프가 서명한 'AI→Super Intelligence' 행정명령 + 6개 빅테크가 서명한 'White House Accord'를 '이름만 거창하게 바꾸고 처벌 조항은 0개'라는 반전/논쟁 구조로 구성. stop_doing 회피, 최근 다룬 주제(정부 국산AI, 챗GPT 프로젝트, 아이폰 Siri, 안드로이드 제미나이, 제미나이 노트북, 카톡 예약, 네이버쇼핑 AI, 챗GPT 광고, 클로드 Docs/Slides, 오픈AI Dots)와 안 겹치는 신규 소재로 선정.",
+  "date": "2026-10-02",
+  "signal_applied": "team_signal status: normal, days_since_growth: 2, directives.trend_scout: '평소대로'. strategic_review(주간 포커스: '몰랐으면 지금 손해보고 있는 기본값/기능 → 30초 안에 이렇게 바꿔' 구조 + 자사몰/이커머스 1인칭 경험, 뉴스 중계형 0개)를 반영. 오전은 어제(10/1) 글로벌 출시된 챗GPT '가상 착용(Try on)' 쇼핑 기능을 '내 상품 사진 퀄리티가 이제 매출에 직결된다'는 셀러 손해 프레임으로 1인칭 해석 — 어제 다룬 쿠팡 AI 상품정보 표준화와 같은 메가트렌드(AI가 사진 보고 추천/구매 대신 해줌)지만 다른 회사·다른 메커니즘이라 안 겹침. 저녁은 앤스로픽 11월 IPO 추진 뉴스를 '2조달러 잭팟'이라는 헤드라인과 '순손실 420억달러(전년 대비 5배)'라는 실제 숫자를 붙여 반전/논쟁 구조로 구성. stop_doing 회피, 최근 다룬 주제(정부 국산AI, 챗GPT 프로젝트, 아이폰 Siri, 안드로이드 제미나이, 제미나이 노트북, 카톡 예약, 네이버쇼핑 AI, 챗GPT 광고, 클로드 Docs/Slides, 오픈AI Dots, 쿠팡 AI 상품정보, White House Accord)와 안 겹치는 신규 소재.",
   "github_hot": [
-    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘도 에이전트 프레임워크/평가 툴 위주라 일반 실무자 소재로 안 씀"
+    "대중성 게이트 통과하는 개발자 전용 레포 없음 — 오늘 HN/GitHub trending도 agentic coding·에이전트 프레임워크 위주라 일반 실무자 소재로 안 씀"
   ],
   "big_tech_news": [
     {
-      "source": "쿠팡 뉴스룸/전자신문/한경 — AI 쇼핑 에이전트용 상품정보 표준화 정책",
-      "topic": "쿠팡이 지난 7월 '수억 개 상품정보를 AI가 정확히 인식하는 형태로 싹 바꾼다'고 예고한 정책이 9월부터 본격 시행에 들어갔다. 핵심은 세 가지다. 첫째, 상품명에 '네이버·무신사·테무·알리' 같은 경쟁 플랫폼 명칭을 쓰는 걸 전면 금지했다. 둘째, 대표 이미지는 원칙적으로 순백색 배경에 상품만 중앙에 나와야 하고 텍스트·로고·워터마크 같은 비상품 홍보 요소를 넣으면 안 된다. 셋째, 상세설명도 규격·재질·용도 같은 정보를 정해진 구조화된 형식으로 입력해야 한다. 이렇게 모은 표준 데이터는 쿠팡이 준비 중인 AI 쇼핑 에이전트(상품 비교·추천·구매까지 대신하는)의 판단 기준이 된다. 업계 관계자에 따르면 오출고·수량 오류가 반복되는 셀러의 데이터는 AI가 신뢰도를 낮게 평가해서 노출·배송 우선순위에 불이익을 줄 수 있다고도 전해진다.",
-      "angle": "기본값 손해형 — 몰랐으면 지금 AI 추천에서 밀리고 있을 수 있는 정책 변경",
-      "hook_idea": "쿠팡에 상품 올릴 때 아직도 상품명에 '무신사보다 싸다' 이런 식으로 경쟁사 이름 넣고 있으면, 이제 그거 자체가 제재 대상이고 AI 추천에서도 밀릴 수 있다는 얘기",
-      "source_url": "https://www.hankyung.com/article/202607156887g"
+      "source": "Engadget/Android Authority/OpenAI — ChatGPT 가상 착용(Virtual Try-On) 쇼핑 기능",
+      "topic": "OpenAI가 어제(2026-10-01) 챗GPT 쇼핑 기능에 '가상 착용(Try on)'과 '즐겨찾기(Favorites)'를 글로벌 출시했다. 채팅 중 옷이나 액세서리 상품이 뜨면 'Try on' 버튼을 눌러 셀카+전신 사진을 올리면, 새로 나온 ChatGPT Images 2.5 모델이 그 옷을 입은 내 모습을 합성해준다. 챗GPT가 추천한 상품뿐 아니라 사용자가 직접 올린 상품 스크린샷으로도 적용된다고 OpenAI가 밝혔다. 다만 techmymoney.com 등은 이 기능이 업로드한 셀카·전신사진을 기본값으로 서버에 저장한다고 지적했다 — 끄려면 설정에서 따로 꺼야 함.",
+      "angle": "기본값 손해형 — 셀러 입장에서 상품 사진 퀄리티가 'AI가 대신 입혀보고 사게 만드는' 시대의 매출 변수가 됐다는 해석",
+      "hook_idea": "온라인으로 옷·액세서리 파는 사람만 들어봐. 어제부터 챗GPT에 '가상 착용' 버튼 생겼는데, 내 상품 사진이 전신 풀샷으로 깔끔하게 나와있어야 고객이 그 사진 보고 착용샷 만들어볼 수 있음. 모델 없이 대충 찍은 사진, 텍스트/워터마크 박힌 썸네일이면 손님이 그냥 못 써보고 넘어감",
+      "source_url": "https://www.engadget.com/2275295/chatgpt-can-now-help-you-virtually-try-on-clothes/"
     },
     {
-      "source": "Al Jazeera/Breitbart — White House Accord on Super Intelligence",
-      "topic": "9월 29일 트럼프 대통령이 'AI를 Super Intelligence로 명칭을 바꾼다'는 행정명령에 서명한 날, 구글·메타·엔비디아·오픈AI·앤스로픽·머스크 계열사 등 6개 회사 CEO가 백악관에서 'White House Accord on Super Intelligence'라는 한 장짜리 자율 서약에 서명했다. 내부통제·내부점검팀·외부감사·이사회 감독이라는 4단계 안전장치를 각 회사가 자체적으로 두겠다는 내용이다. 다만 법이 아니라 자발적 서약이라 어길 경우 정부가 부과하는 처벌이나 강제 조항은 전혀 없다.",
-      "angle": "반전/논쟁형 — 거창한 이름과 서명식 대비 실제 구속력은 0",
-      "hook_idea": "구글·메타·오픈AI·앤스로픽 CEO들이 백악관에 모여서 AI 안전 서약에 다같이 서명했다는데, 안 지켜도 처벌 조항이 하나도 없다는 거 보고 허탈했음",
-      "source_url": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work"
+      "source": "글로벌이코노믹/이데일리/AI타임스 — 앤스로픽 11월 IPO 추진",
+      "topic": "앤스로픽이 이르면 11월 중순, 미국 추수감사절 전 상장을 목표로 IPO를 추진 중이라고 블룸버그發 보도가 나왔다. 투자자들이 보는 기업가치는 1조8000억~2조달러 수준으로, 성사되면 스페이스X를 넘는 역대급 IPO가 될 거란 전망이다. 하지만 재무제표를 보면 지난해 매출은 약 46억달러로 전년(3억8600만달러) 대비 12배 늘었지만, 영업손실은 80억달러를 넘었고 순손실은 약 420억달러로 전년(약 83억달러)의 약 5배로 불어났다. 다만 순손실 중 340억달러 이상은 부채의 공정가치 변동분이라는 설명도 있다.",
+      "angle": "반전/논쟁형 — '2조달러 역대급 잭팟' 헤드라인과 '적자 5배' 숫자를 나란히 놓는 구조",
+      "hook_idea": "앤스로픽이 11월에 스페이스X 뛰어넘는 역대급 IPO 한다는 기사 봤는데, 같은 기사 밑줄 좀 더 내려보니까 작년 순손실이 420억달러, 재작년보다 5배 늘었다고 쓰여 있음. 매출도 12배 늘고 적자도 5배 늘고, 이 정도면 흑자/적자 논쟁이 의미가 있나 싶음",
+      "source_url": "https://www.g-enews.com/article/Global-Biz/2026/10/2026100210394019109a1f309431_1"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN 상위는 오픈AI 데브데이 후속(Codex 오픈소스화), Gemini 4 Argon 접근권 등 개발자·정책 위주 화제라 대중성 게이트 대부분 탈락. 대중 체감 얘기(쿠팡 정책, White House Accord)만 big_tech_news에 반영함."
+    "오늘 HN/업계 화제는 slopsquatting(AI가 지어낸 패키지명 선점 공격), AI 가드레일 차단율 1% 이슈, 에이전트 사기 행위 등 개발자·보안 위주라 대중성 게이트 대부분 탈락. 대중 체감 얘기(챗GPT 가상 착용, 앤스로픽 IPO)만 big_tech_news에 반영함."
   ],
   "recommended_morning": {
     "angle": "기본값 손해형 (자사몰/이커머스 셀러 1인칭 해석)",
-    "hook": "쿠팡에 상품 올려본 사람만 하는 얘기. 7월에 쿠팡이 '상품정보 체계를 AI가 알아보는 형태로 다 바꾼다'고 예고했었는데, 그게 9월부터 실제로 시행 들어갔음. 제일 크게 바뀐 거 세 개 — 상품명에 네이버나 무신사, 테무 같은 경쟁사 이름 넣는 거 전면 금지, 대표 이미지는 무조건 순백색 배경에 상품만 딱 나오고 텍스트나 로고 들어가면 안 됨, 상세설명도 규격·재질·용도 정해진 양식대로 구조화해서 넣어야 함. 왜 이렇게 바꾸냐면, 이 데이터가 쿠팡이 준비 중인 AI 쇼핑 에이전트(알아서 상품 비교하고 추천하고 구매까지 해주는 거)의 판단 근거가 되기 때문. 업계 얘기로는 오출고나 수량 오류 잦은 셀러는 AI가 데이터 신뢰도 낮게 보고 노출 우선순위에서도 밀릴 수 있다고 함. 예전 방식으로 상품명에 비교 문구 넣고 이미지에 '최저가' 같은 텍스트 박아놨던 거 아직 그대로면, 모르는 새 노출 손해보고 있을 수 있음.",
-    "source": "쿠팡 상품정보 표준화 정책 (2026-07 예고 → 2026-09 시행)",
+    "hook": "온라인으로 옷이나 액세서리 파는 사람만 하는 얘기. 어제(10/1)부터 챗GPT 쇼핑에 '가상 착용' 기능 생겼음. 채팅창에 뜬 상품이든 내가 직접 캡처해서 올린 상품이든, 손님이 자기 셀카랑 전신사진 올리면 그 옷 입은 모습을 AI가 합성해서 보여줌. 문제는 이게 아무 상품 사진에나 똑같이 잘 되는 게 아니라는 거. 모델 없이 옷만 대충 평평하게 찍었거나, 썸네일에 '최저가' 같은 텍스트·워터마크 박아놓은 사진이면 AI가 착용 이미지를 제대로 못 만들어내고, 그럼 손님은 그냥 시도도 안 하고 다음 상품으로 넘어감. 쿠팡이 지난달부터 상품 이미지 규격(순백색 배경, 텍스트 금지)을 강제한 것도 결국 같은 흐름 — 이제 상품 사진은 사람이 보는 게 아니라 AI가 먼저 보고 판단하는 입력값이 됐다는 거임. 전신 풀샷으로 깔끔하게 찍어둔 사진이 몇 개나 있는지 지금 한번 확인해보는 거 추천",
+    "source": "ChatGPT Virtual Try-On 글로벌 출시 (2026-10-01)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP"
   },
   "recommended_evening": {
     "language": "korean",
-    "angle": "반전/논쟁형 (거창한 서명식 vs 실제 구속력 0)",
-    "hook": "어제(9/29) 하루에 벌어진 일 두 개 붙여보면 좀 웃김. 트럼프가 'AI'라는 명칭을 'Super Intelligence'로 바꾸는 행정명령에 서명했고, 같은 날 구글·메타·엔비디아·오픈AI·앤스로픽·머스크 계열사 CEO들까지 백악관에 모여서 'AI 안전 서약(White House Accord)'에 다같이 서명했음. 내부통제·내부점검·외부감사·이사회 감독까지 4단계 안전장치 두겠다는 내용인데, 찾아보니까 이거 법이 아니라 그냥 자발적 서약이라 안 지켜도 정부가 주는 처벌이 하나도 없음. 이름은 거창하게 바꾸고 서명식까지 했는데 지킬 의무가 없다는 거, 결국 '우리 안전하게 할게요'라는 보도자료 한 장이랑 다를 게 없다는 생각이 듦.",
+    "angle": "반전/논쟁형 (헤드라인 숫자 vs 재무제표 숫자)",
+    "hook": "앤스로픽이 11월에 스페이스X 뛰어넘는 역대급 IPO 추진한다는 기사 다들 봤을 텐데, 기업가치 2조달러라는 숫자만 보고 넘어가지 말고 같은 기사 좀 더 내려서 봐야 함. 작년 매출 46억달러로 전년 대비 12배 늘었다는 거 맞는데, 바로 밑에 순손실이 420억달러로 전년보다 5배 늘었다고 쓰여 있음. 매출 12배 늘 때 적자도 5배 늘면 이게 진짜 역대급 성장인지, 아니면 그냥 돈을 그만큼 더 태우고 있다는 건지 헷갈림. 부채 평가손실 포함된 숫자라는 해명은 있는데, 그래도 영업손실만 80억달러 넘는 건 그대로임",
     "topic_tag": "AI_THREADS"
   },
   "metadata": {
     "source_urls": [
-      "https://www.hankyung.com/article/202607156887g",
-      "https://www.etnews.com/20260630000325",
-      "https://news.coupang.com/archives/65494/",
-      "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work",
-      "https://www.latestly.com/us/what-is-white-house-accord-on-superintelligence-that-elon-musk-mark-zuckerberg-and-others-signed-7626242.html",
-      "https://theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-september-30-2026"
+      "https://www.engadget.com/2275295/chatgpt-can-now-help-you-virtually-try-on-clothes/",
+      "https://www.androidauthority.com/chatgpt-virtual-try-on-shopping-feature-3718219/",
+      "https://techmymoney.com/2026/10/02/chatgpt-virtual-try-on-saves-your-selfie-what-to-know-before-you-upload/",
+      "https://www.g-enews.com/article/Global-Biz/2026/10/2026100210394019109a1f309431_1",
+      "https://www.aitimes.com/news/articleView.html?idxno=215878",
+      "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01505526645608984"
     ]
   }
 }
