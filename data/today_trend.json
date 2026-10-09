@@ -1,51 +1,48 @@
 {
-  "date": "2026-10-08",
-  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로'. stop_doing(구글시트 제미나이 버튼, 제미나이 노트북 PDF 요약, 카톡 예약 캘린더)은 전부 제외. 어제(10/7) 소재였던 ChatGPT 가상 피팅, Nano Banana 2.1, TikTok AI Shopping Assistant는 전부 피하고, 오늘 새로 터진 가장 큰 소비자용 소식인 GPT-6 'Intelligent UI'(10/7 발표, 10/8 무료유저까지 전면 롤아웃 — 바로 오늘 골든타임)를 메인으로 채택. bandit이 morning 슬롯에서 target_callout·smartstore 조합(최고 성과 arm, follower_gain 109)을 우세로 추천하지만, 오늘 가장 핫한 소재가 '전 사용자 대상 UI 변화'라 범용성이 더 커서 타겟콜아웃보다는 '먼저 써본 사람' 포지션 + 1인칭 수치 인증 전환 방향(strategic_review)을 반영한 훅으로 짰다.",
+  "date": "2026-10-09",
+  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로'. stop_doing(구글시트 제미나이 버튼, 제미나이 노트북 PDF 요약, 카톡 예약 캘린더)과 어제(10/8) 소재였던 GPT-6 Intelligent UI, ChatGPT 오디오 업로드는 전부 제외. 오늘은 아이폰 유저 전체가 체감할 '시리 AI 한국어 지원'(먼저 앎, 대중성 최대)을 오전 소재로, 'AI가 일자리 뺏는다'는 통념과 반대로 'AI가 싸놓은 거 치우는 프리랜서 수요'가 더 빨리 늘고 있다는 반전 데이터를 저녁 핫테이크로 잡았다. strategic_review의 '1인칭 수치 인증' 방향에 맞게 두 소재 다 viral-writer가 '나도 써봤더니/의뢰했더니' 식 1인칭 경험담으로 바꿔 쓸 수 있도록 구체 수치와 실무 적용점을 넣어뒀다.",
   "github_hot": [
     "대중성 게이트 통과하는 레포 없음 — 오늘 GitHub trending도 코딩 에이전트/추론 인프라/모델 벤치마크 위주라 일반 셀러·직장인 소재로 부적합. 전원 탈락."
   ],
   "big_tech_news": [
     {
-      "source": "OpenAI — GPT-6 and Intelligent UI (2026-10-07 발표, 10-08 무료/Go 티어까지 전면 롤아웃)",
-      "topic": "OpenAI가 GPT-6를 공개하면서 ChatGPT 답변 방식을 글자에서 '화면'으로 바꿨다. 질문에 따라 텍스트뿐 아니라 그래픽, 누를 수 있는 버튼, 입력 폼, 차트, 슬라이더 같은 인터랙티브 요소를 조합해서 답한다. 예시로 '일요일 저녁 메뉴 짜줘'라고 하면 인원수 +/- 버튼을 눌러 장보기 수량이 자동으로 재계산되는 미니 앱이 그 자리에서 만들어진다. 정산기(더치페이), 저축 계산기, 미니 게임도 대화 중에 즉석으로 생성 가능. 유료 티어부터 먼저 풀렸고 무료·Go 티어는 10월 8일(오늘) 적용됐다. OpenAI는 주간 사용자 12억 명을 위한 변화라고 밝힘.",
-      "angle": "먼저 써본 사람 포지션 — 오늘 막 전체 공개된 걸 가장 먼저 짚어주는 각도 + '이게 왜 그냥 예쁜 UI가 아니라 일하는 방식을 바꾸는지' 해석",
-      "hook_idea": "오늘부터 ChatGPT 쓰는 사람 전부가 답변 받는 방식이 바뀜. 어제까진 질문하면 글자로 답 왔는데, 이제는 질문 종류에 따라 버튼 누르고 슬라이더 움직이는 미니 앱이 그 자리에서 만들어짐. 예를 들어 '정산 좀 도와줘' 하면 그냥 설명이 아니라 실제로 누르면 계산되는 정산기가 뜨는 식. 엑셀 켤 필요도 없고 앱 설치할 필요도 없음. 사람들 아직 이게 무슨 의미인지 잘 모르는 것 같은데, 내가 써보고 느낀 건 이거 그냥 '예쁜 UI' 업데이트가 아니라 ChatGPT가 이제 \"설명하는 애\"에서 \"대신 만들어주는 애\"로 넘어가는 신호라는 거",
-      "source_url": "https://openai.com/index/gpt-6-for-everyone/"
+      "source": "Apple — Siri AI 한국어 등 5개 언어 확장 (iOS 27.2, 2026-10월 일반 공개 확인)",
+      "topic": "애플이 올해 9월 iOS 27과 함께 내놓은 새 '시리 AI'(애플 인텔리전스 기반, 복잡한 맥락 이해·멀티턴 대화 가능)는 영어로만 됐었는데, iOS 27.2부터 한국어·프랑스어·일본어·포르투갈어·스페인어가 추가된다. 9월 중순 베타로 먼저 풀렸고, 애플이 10월 중 일반 사용자 공개를 공식 확인했다. 단, iPhone 17 이상 기기에서만 되고 EU 지역 아이폰은 규제 문제로 제외된다는 제약이 있다.",
+      "angle": "먼저 앎 포지션 — 아이폰 유저 다수가 아직 '시리 AI'라는 게 따로 나온 것도, 한국어가 이번 달부터 된다는 것도 모름. 범용성 최대(아이폰 쓰는 사람 전부가 잠재 독자).",
+      "hook_idea": "아이폰 17 쓰는 사람이면 이번 달 업데이트 체크해봐야 함. 원래 시리랑 다르게 작년 9월에 새로 나온 '시리 AI'(복잡한 말 알아듣고 맥락 기억하는 버전)가 영어만 됐었는데, 이번 iOS 27.2부터 한국어 들어감. 애플이 10월 중 일반 공개한다고 직접 확인한 내용. 구형 아이폰이나 EU는 빠진다는 게 포인트. 거래처 연락이나 일정 관리할 때 한국어로 복잡한 거 시킬 수 있다는 얘기라 나는 업데이트 뜨자마자 써볼 생각",
+      "source_url": "https://newslantern.com/news/16828/2026-10-03/apple-s-siri-ai-to-expand-to-french-japanese-korean-and-more"
     },
     {
-      "source": "OpenAI — ChatGPT 오디오 파일 업로드 기능 (2026-10-06 출시)",
-      "topic": "ChatGPT에 회의 녹음, 통화 녹음 등 오디오 파일(MP3, MP4, M4A, WAV, WebM)을 업로드하면 자동으로 녹취록(트랜스크립트), 요약, 논의 포인트, 실행 항목(액션 아이템)을 만들어준다. 그 결과를 바로 이메일, 프로젝트 계획, 회의록 형태로 변환 요청할 수 있음. 5분짜리 파일이면 처리에 1분도 안 걸림. 유료 플랜 전체에서 추가 비용 없이 사용 가능. 업로드한 오디오 원본은 트랜스크립트 생성 후 자동 삭제되고 텍스트만 대화 기록에 남는다고 OpenAI는 밝힘.",
-      "angle": "실무자 바로 써먹는 활용형 — 거래처 전화, 고객 미팅, 직원 회의 녹음하는 자영업자/직장인한테 바로 꽂히는 변화",
-      "hook_idea": "거래처랑 통화하거나 회의할 때 녹음만 해두고 나중에 다시 듣기 귀찮아서 그냥 묵혀둔 파일 있으면 이거 체크. ChatGPT에 녹음 파일 던지면 이제 녹취록에 요약, 할 일 목록까지 자동으로 뽑아줌. 5분 통화면 1분도 안 걸려서 정리 끝남. 나는 이거로 거래처 통화 녹음 바로 할 일 목록으로 바꿔서 쓰는 중",
-      "source_url": "https://www.techjuice.pk/chatgpt-audio-uploads-meeting-notes-follow-up/"
+      "source": "프리랜서닷컴·업워크·파이버 — 'AI 오류 수정' 구인 급증 (한국경제 2026-09-05 보도)",
+      "topic": "AI로 만든 글·이미지·영상의 오류를 고치는 프리랜서 구인이 급증 중이다. 프리랜서닷컴 기준 'AI 결과물 수정' 공고가 2025년 8월~2026년 6월 사이 87% 늘어 1만760건에 달했고, 업워크는 관련 업무가 1년 새 70% 증가, 파이버는 'AI 클린업' 검색량이 2023년 대비 20배 넘게 뛰었다. 가장 많은 의뢰는 그래픽 디자인, 다음이 영상 편집·콘텐츠 작성 순. 의뢰인은 '살짝만 손보면 된다'고 생각하지만 실제로는 처음부터 다시 만드는 수준의 시간이 든다는 게 함정. 반면 챗GPT 출시 이후 일반 프리랜서 구인 자체는 21% 줄었다.",
+      "angle": "반전/핫테이크 — 'AI가 일자리 뺏는다'는 통념과 반대로, AI가 만든 걸 고치는 새 직종이 더 빨리 크고 있다는 역설. 콘텐츠 외주 쓰는 셀러·마케터한테 바로 꽂히는 경고이자 기회.",
+      "hook_idea": "다들 AI가 일 뺏는다고 겁내는데, 실제로 제일 빨리 늘고 있는 일은 'AI가 싸놓은 거 치우는 일'임. 프리랜서닷컴 기준 AI 결과물 수정 의뢰가 87% 늘었고(1만760건), 업워크는 70%, 파이버는 'AI 클린업' 검색이 20배 넘게 뜀. 제일 많은 게 디자인, 그다음 영상·카피. 근데 의뢰인은 '살짝만 고치면 되겠지' 하는데 실제론 새로 만드는 거보다 더 오래 걸린다는 게 함정. 콘텐츠 외주 AI로 싸게 돌리고 있으면 이거 체크해봐야 함",
+      "source_url": "https://www.hankyung.com/article/2026090559567"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN 상위권도 모델 벤치마크·에이전트 인프라 위주라 대중성 게이트 탈락. 일반 체감 소재는 big_tech_news의 GPT-6 Intelligent UI / ChatGPT 오디오 업로드로 전부 커버."
+    "오늘 HN 상위권도 모델 벤치마크·에이전트 인프라 위주라 대중성 게이트 탈락. 일반 체감 소재는 big_tech_news의 시리 AI 한국어 지원 / AI 오류 수정 프리랜서 급증으로 전부 커버."
   ],
   "recommended_morning": {
-    "angle": "먼저 써본 사람 포지션 + 반전 — '예쁜 UI 업데이트'로 보이지만 실은 일하는 방식이 바뀌는 신호라는 해석",
-    "hook": "오늘부터 ChatGPT 쓰는 사람 전부가 답변 받는 방식이 바뀜. 어제까진 질문하면 글자로 답 왔는데, 이제는 질문 종류에 따라 버튼 누르고 슬라이더 움직이는 미니 앱이 그 자리에서 만들어짐. '정산 좀 도와줘' 하면 설명이 아니라 실제로 누르면 계산되는 정산기가 바로 뜨는 식. 엑셀 켤 필요도 없고 앱 설치할 필요도 없음. 사람들 아직 이게 무슨 의미인지 잘 모르는 것 같은데, 써보고 느낀 건 이거 그냥 UI 업데이트가 아니라 ChatGPT가 \"설명하는 애\"에서 \"대신 만들어주는 애\"로 넘어가는 신호라는 거",
-    "source": "OpenAI GPT-6 Intelligent UI 전면 롤아웃 (2026-10-07 발표, 10-08 무료티어 적용)",
+    "angle": "먼저 앎 — 아이폰 유저 전체가 체감할 시리 AI 한국어 지원, 이번 달 공개라 골든타임",
+    "hook": "아이폰 17 쓰는 사람이면 이번 달 업데이트 체크해봐야 함. 작년 9월에 새로 나온 '시리 AI'(복잡한 말 알아듣고 맥락 기억하는 버전)가 영어만 됐었는데, 이번 iOS 27.2부터 한국어 들어감. 애플이 10월 중 일반 공개한다고 직접 확인한 내용. 구형 아이폰이나 EU는 빠진다는 게 포인트. 거래처 연락이나 일정 관리할 때 한국어로 복잡한 거 시킬 수 있다는 얘기라 나는 업데이트 뜨자마자 써볼 생각",
+    "source": "Apple Siri AI 한국어 확장 (iOS 27.2, 2026-10월 일반 공개)",
     "topic_tag": "AI_THREADS",
-    "source_url": "https://openai.com/index/gpt-6-for-everyone/"
+    "source_url": "https://newslantern.com/news/16828/2026-10-03/apple-s-siri-ai-to-expand-to-french-japanese-korean-and-more"
   },
   "recommended_evening": {
     "language": "english",
-    "angle": "counterintuitive — a visual chatbot update is actually OpenAI quietly killing the 'app' as a category",
-    "hook": "OpenAI just shipped something bigger than it looks. ChatGPT no longer just answers in text — ask it to split a bill or build a savings calculator and it renders an actual working tool inline, sliders and buttons included, built in seconds, gone when the chat ends. Everyone's calling it a UI refresh. What it really is: a generative app that exists for exactly one use case and then disappears. If you run a business that sells single-purpose tools or calculators as an app or a lead magnet, the thing you built might just get out-built by a prompt tomorrow.",
+    "angle": "counterintuitive — the job AI is actually creating is cleaning up after AI, not replacing people outright",
+    "hook": "Everyone's afraid AI is coming for freelance work. Look at what's actually growing: gigs to fix what AI already made. Postings to clean up AI-generated content are up 87% on Freelancer.com (Aug 2025-Jun 2026, 10,760 jobs), 70% on Upwork, and 'AI cleanup' searches are up 20x+ on Fiverr since 2023 — mostly graphic design, then video editing and copywriting. Meanwhile plain freelance postings dropped 21% since ChatGPT launched. Clients think it's a quick touch-up; freelancers say it's often slower than starting from scratch. If you outsource content and run everything through AI first to save budget, the person you hire next might be billing you for the cleanup, not the creation.",
     "topic_tag": "AI_THREADS",
-    "source_url": "https://www.unite.ai/openai-brings-gpt-6-with-intelligent-ui-to-all-chatgpt-tiers/"
+    "source_url": "https://www.hankyung.com/article/2026090559567"
   },
   "metadata": {
     "source_urls": [
-      "https://openai.com/index/gpt-6-for-everyone/",
-      "https://www.unite.ai/openai-brings-gpt-6-with-intelligent-ui-to-all-chatgpt-tiers/",
-      "https://www.testingcatalog.com/openai-rolls-out-gpt-6-with-intelligent-ui-in-chatgpt/",
-      "https://www.androidauthority.com/chatgpt-gpt-6-intelligent-ui-3720464/",
-      "https://www.aipostkorea.com/news/articleView.html?idxno=12902",
-      "https://www.techjuice.pk/chatgpt-audio-uploads-meeting-notes-follow-up/",
-      "https://www.cravingtech.com/chatgpt-can-now-import-and-transcribe-audio-files.html"
+      "https://newslantern.com/news/16828/2026-10-03/apple-s-siri-ai-to-expand-to-french-japanese-korean-and-more",
+      "https://9to5mac.com/2026/09/16/ios-27-2-expands-siri-ai-to-these-new-languages/",
+      "https://www.hankyung.com/article/2026090559567",
+      "https://g-enews.com/article/Global-Biz/2026/10/2026100723153847329a1f309431_1"
     ]
   }
 }
