@@ -921,5 +921,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-10-09",
+    "content": "시리가 '진짜 똑똑해진다'는 얘기, 2024년부터 나왔는데 아직도 그 버전 구경 못 한 사람 많을 거임. 자체 모델만으론 역부족이라 구글 제미나이 엔진까지 빌려 쓴다는 얘기까지 나올 정도로 공들이는 중이라, 계속 미뤄지는 거 보면 뭔가 크게 바뀌긴 바뀔 모양. 개인적으론 풀리면 제일 먼저 체감될 게 한국어일 거라 봄 — 지금 시리 한국어가 복잡한 말 한 번에 못 알아듣는 게 제일 답답한 부분이라. 정식 일정은 아직 안 나와서 기대만 하고 있음.",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
