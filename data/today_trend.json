@@ -1,48 +1,46 @@
 {
-  "date": "2026-10-09",
-  "signal_applied": "team_signal status: normal, directives.trend_scout: '평소대로'. stop_doing(구글시트 제미나이 버튼, 제미나이 노트북 PDF 요약, 카톡 예약 캘린더)과 어제(10/8) 소재였던 GPT-6 Intelligent UI, ChatGPT 오디오 업로드는 전부 제외. 오늘은 아이폰 유저 전체가 체감할 '시리 AI 한국어 지원'(먼저 앎, 대중성 최대)을 오전 소재로, 'AI가 일자리 뺏는다'는 통념과 반대로 'AI가 싸놓은 거 치우는 프리랜서 수요'가 더 빨리 늘고 있다는 반전 데이터를 저녁 핫테이크로 잡았다. strategic_review의 '1인칭 수치 인증' 방향에 맞게 두 소재 다 viral-writer가 '나도 써봤더니/의뢰했더니' 식 1인칭 경험담으로 바꿔 쓸 수 있도록 구체 수치와 실무 적용점을 넣어뒀다.",
+  "date": "2026-10-12",
+  "signal_applied": "team_signal status: normal, strategic_review 2주 포커스는 '발행 안정화'라 소재 자체보다 안정적 생산이 우선이지만, trend_scout 역할은 평소대로 유지하라는 directive에 따라 정상 수집. best_performing 스타일(셀러한테만 훅 + 구체 수치 + 반전)에 맞춰 오늘은 '자사몰/스마트스토어 셀러가 지금 당장 알아야 할 AI 쇼핑 에이전트 확산'을 오전 소재로, 그 연장선에서 '상세페이지를 누가 읽는가'를 뒤집는 반전 핫테이크를 저녁 소재로 잡았다. 10/9자 today_trend(시리 한국어, AI 클린업 프리랜서)와 겹치지 않는 새 소재.",
   "github_hot": [
-    "대중성 게이트 통과하는 레포 없음 — 오늘 GitHub trending도 코딩 에이전트/추론 인프라/모델 벤치마크 위주라 일반 셀러·직장인 소재로 부적합. 전원 탈락."
+    "대중성 게이트 통과 레포 없음 — 오늘 GitHub trending도 에이전트 프레임워크/추론 최적화 위주라 일반 셀러·직장인 소재로 부적합. 전원 탈락."
   ],
   "big_tech_news": [
     {
-      "source": "Apple — Siri AI 한국어 등 5개 언어 확장 (iOS 27.2, 2026-10월 일반 공개 확인)",
-      "topic": "애플이 올해 9월 iOS 27과 함께 내놓은 새 '시리 AI'(애플 인텔리전스 기반, 복잡한 맥락 이해·멀티턴 대화 가능)는 영어로만 됐었는데, iOS 27.2부터 한국어·프랑스어·일본어·포르투갈어·스페인어가 추가된다. 9월 중순 베타로 먼저 풀렸고, 애플이 10월 중 일반 사용자 공개를 공식 확인했다. 단, iPhone 17 이상 기기에서만 되고 EU 지역 아이폰은 규제 문제로 제외된다는 제약이 있다.",
-      "angle": "먼저 앎 포지션 — 아이폰 유저 다수가 아직 '시리 AI'라는 게 따로 나온 것도, 한국어가 이번 달부터 된다는 것도 모름. 범용성 최대(아이폰 쓰는 사람 전부가 잠재 독자).",
-      "hook_idea": "아이폰 17 쓰는 사람이면 이번 달 업데이트 체크해봐야 함. 원래 시리랑 다르게 작년 9월에 새로 나온 '시리 AI'(복잡한 말 알아듣고 맥락 기억하는 버전)가 영어만 됐었는데, 이번 iOS 27.2부터 한국어 들어감. 애플이 10월 중 일반 공개한다고 직접 확인한 내용. 구형 아이폰이나 EU는 빠진다는 게 포인트. 거래처 연락이나 일정 관리할 때 한국어로 복잡한 거 시킬 수 있다는 얘기라 나는 업데이트 뜨자마자 써볼 생각",
-      "source_url": "https://newslantern.com/news/16828/2026-10-03/apple-s-siri-ai-to-expand-to-french-japanese-korean-and-more"
+      "source": "네이버·쿠팡 AI 쇼핑 경쟁 (브릿지경제 2026-10-08 보도)",
+      "topic": "네이버가 올해 2월 네이버플러스 스토어에 AI 쇼핑 에이전트 베타를 열고 6월부터 본격 확대했는데, 9월 기준 대화 수가 6월 대비 약 60% 늘고 같은 기간 거래액은 82% 늘었다. 초기엔 상품 요약·리뷰 분석 수준이었는데 지금은 '내일까지 도착하는 전골 밀키트 추천해줘'라고 물으면 배송지·도착예정일·주문마감시간까지 계산해서 상품을 골라주는 실행형 에이전트로 진화했다. 반면 쿠팡은 8월 7일 '상품 하이라이트·AI 인포그래픽·리뷰 요약·AI 상품 비교' 같은 분석 기능은 냈지만, 로켓배송이라는 핵심 경쟁력이 AI 에이전트로 희석될 걸 우려해서 네이버식 에이전트 도입은 망설이는 중.",
+      "angle": "먼저 앎 + 실무 직결 — 고객이 이제 '검색어'가 아니라 '상황'을 AI한테 말하고 AI가 상품을 골라주는 쪽으로 넘어가는 중인데, 자사몰·스마트스토어 셀러 중 이걸 체감하는 사람은 아직 적다. 거래액 82% 증가라는 숫자가 '남 얘기'가 아니게 되는 시점.",
+      "hook_idea": "네이버 쇼핑에서 AI한테 말 걸어서 사는 사람 수, 9월에만 6월 대비 대화량 60% 늘고 거래액은 82% 늘었음. 이제 '밀키트 추천해줘' 치면 끝이 아니라 '내일까지 오는 전골 밀키트'라고 말하면 배송지랑 마감시간까지 계산해서 AI가 골라줌. 근데 쿠팡은 반대로 이거 신중함 — 로켓배송이 강점인데 AI가 대신 골라버리면 그 강점이 묻히니까. 스마트스토어 셀러면 고객이 더 이상 '검색'이 아니라 AI한테 '상황'을 말하고 산다는 거, 체감해야 함",
+      "source_url": "https://www.viva100.com/article/20261008500813"
     },
     {
-      "source": "프리랜서닷컴·업워크·파이버 — 'AI 오류 수정' 구인 급증 (한국경제 2026-09-05 보도)",
-      "topic": "AI로 만든 글·이미지·영상의 오류를 고치는 프리랜서 구인이 급증 중이다. 프리랜서닷컴 기준 'AI 결과물 수정' 공고가 2025년 8월~2026년 6월 사이 87% 늘어 1만760건에 달했고, 업워크는 관련 업무가 1년 새 70% 증가, 파이버는 'AI 클린업' 검색량이 2023년 대비 20배 넘게 뛰었다. 가장 많은 의뢰는 그래픽 디자인, 다음이 영상 편집·콘텐츠 작성 순. 의뢰인은 '살짝만 손보면 된다'고 생각하지만 실제로는 처음부터 다시 만드는 수준의 시간이 든다는 게 함정. 반면 챗GPT 출시 이후 일반 프리랜서 구인 자체는 21% 줄었다.",
-      "angle": "반전/핫테이크 — 'AI가 일자리 뺏는다'는 통념과 반대로, AI가 만든 걸 고치는 새 직종이 더 빨리 크고 있다는 역설. 콘텐츠 외주 쓰는 셀러·마케터한테 바로 꽂히는 경고이자 기회.",
-      "hook_idea": "다들 AI가 일 뺏는다고 겁내는데, 실제로 제일 빨리 늘고 있는 일은 'AI가 싸놓은 거 치우는 일'임. 프리랜서닷컴 기준 AI 결과물 수정 의뢰가 87% 늘었고(1만760건), 업워크는 70%, 파이버는 'AI 클린업' 검색이 20배 넘게 뜀. 제일 많은 게 디자인, 그다음 영상·카피. 근데 의뢰인은 '살짝만 고치면 되겠지' 하는데 실제론 새로 만드는 거보다 더 오래 걸린다는 게 함정. 콘텐츠 외주 AI로 싸게 돌리고 있으면 이거 체크해봐야 함",
-      "source_url": "https://www.hankyung.com/article/2026090559567"
+      "source": "쿠팡 AI 쇼핑 기능 공개 (뉴스핌 2026-08-07 보도)",
+      "topic": "쿠팡이 8월 7일 상품명 바로 아래 특장점을 요약해 보여주는 '상품 하이라이트', 가전 등 비교 지점 많은 상품의 스펙을 시각화하는 'AI 인포그래픽'(주요 가전 카테고리 로켓배송 상품에 적용 완료), 리뷰에서 자주 나온 긍정·부정 포인트를 정리하는 '리뷰 요약', 탐색 기록 기반 'AI 상품 비교'(올해 초 가전·디지털 카테고리 적용)를 공개했다.",
+      "angle": "실무 체크포인트 — AI가 상품 정보를 '읽고 요약'해서 고객한테 먼저 보여주는 구조가 되면서, 상세페이지에 올려둔 정보가 사람이 아니라 AI 요약 로직에 먼저 걸리는 방식으로 바뀌는 중.",
+      "hook_idea": "쿠팡이 8월에 '상품 하이라이트'라고 상품명 바로 밑에 특장점 요약 뿌려주는 기능 냈음. 가전 쪽은 AI 인포그래픽으로 스펙도 그림으로 바꿔주고, 리뷰도 긍정·부정 포인트만 뽑아서 정리해줌. 결국 사람이 상세페이지 스크롤 내리기 전에 AI가 먼저 요약해서 보여주는 거라, 상세페이지 맨 위에 뭘 써놨는지가 전보다 더 중요해짐",
+      "source_url": "https://www.newspim.com/news/view/20260807000115"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN 상위권도 모델 벤치마크·에이전트 인프라 위주라 대중성 게이트 탈락. 일반 체감 소재는 big_tech_news의 시리 AI 한국어 지원 / AI 오류 수정 프리랜서 급증으로 전부 커버."
+    "오늘 HN 상위권도 모델 추론/에이전트 벤치마크 위주라 대중성 게이트 탈락. 일반 체감 소재는 big_tech_news의 네이버·쿠팡 AI 쇼핑 경쟁으로 커버."
   ],
   "recommended_morning": {
-    "angle": "먼저 앎 — 아이폰 유저 전체가 체감할 시리 AI 한국어 지원, 이번 달 공개라 골든타임",
-    "hook": "아이폰 17 쓰는 사람이면 이번 달 업데이트 체크해봐야 함. 작년 9월에 새로 나온 '시리 AI'(복잡한 말 알아듣고 맥락 기억하는 버전)가 영어만 됐었는데, 이번 iOS 27.2부터 한국어 들어감. 애플이 10월 중 일반 공개한다고 직접 확인한 내용. 구형 아이폰이나 EU는 빠진다는 게 포인트. 거래처 연락이나 일정 관리할 때 한국어로 복잡한 거 시킬 수 있다는 얘기라 나는 업데이트 뜨자마자 써볼 생각",
-    "source": "Apple Siri AI 한국어 확장 (iOS 27.2, 2026-10월 일반 공개)",
-    "topic_tag": "AI_THREADS",
-    "source_url": "https://newslantern.com/news/16828/2026-10-03/apple-s-siri-ai-to-expand-to-french-japanese-korean-and-more"
+    "angle": "먼저 앎 + 셀러 직결 — 네이버 AI 쇼핑 에이전트 거래액 82% 증가, 자사몰·스마트스토어 셀러가 체감 못 한 변화",
+    "hook": "네이버 쇼핑에서 AI한테 말 걸어서 사는 사람 수, 9월에만 6월 대비 대화량 60% 늘고 거래액은 82% 늘었음. '밀키트 추천해줘' 치는 게 끝이 아니라 '내일까지 오는 전골 밀키트'라고 말하면 배송지랑 주문 마감시간까지 계산해서 AI가 골라주는 수준까지 옴. 쿠팡은 반대로 이거 신중한데, 로켓배송이란 강점이 AI가 대신 골라버리면 묻히니까. 스마트스토어 셀러면 이제 고객이 '검색어'가 아니라 '상황'을 AI한테 말하고 산다는 거 체감해야 함",
+    "source": "네이버·쿠팡 AI 쇼핑 경쟁 (브릿지경제 2026-10-08)",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP",
+    "source_url": "https://www.viva100.com/article/20261008500813"
   },
   "recommended_evening": {
-    "language": "english",
-    "angle": "counterintuitive — the job AI is actually creating is cleaning up after AI, not replacing people outright",
-    "hook": "Everyone's afraid AI is coming for freelance work. Look at what's actually growing: gigs to fix what AI already made. Postings to clean up AI-generated content are up 87% on Freelancer.com (Aug 2025-Jun 2026, 10,760 jobs), 70% on Upwork, and 'AI cleanup' searches are up 20x+ on Fiverr since 2023 — mostly graphic design, then video editing and copywriting. Meanwhile plain freelance postings dropped 21% since ChatGPT launched. Clients think it's a quick touch-up; freelancers say it's often slower than starting from scratch. If you outsource content and run everything through AI first to save budget, the person you hire next might be billing you for the cleanup, not the creation.",
-    "topic_tag": "AI_THREADS",
-    "source_url": "https://www.hankyung.com/article/2026090559567"
+    "angle": "반전 핫테이크 — 다들 상세페이지를 '사람이 보기 좋게' 꾸미는 데만 신경 쓰는데, 이제 AI가 먼저 읽고 요약해서 보여주는 구조로 넘어가는 중",
+    "hook": "쿠팡이 8월에 낸 '상품 하이라이트' 기능, 상품명 바로 밑에 특장점을 AI가 요약해서 띄워줌. 가전은 스펙을 AI 인포그래픽으로, 리뷰는 긍정·부정 포인트만 뽑아서 정리해줌. 다들 상세페이지 예쁘게 꾸미는 데 공들이는데, 정작 고객이 스크롤 내리기도 전에 AI 요약이 먼저 보여지는 구조가 됨. 상세페이지 맨 위 몇 줄에 뭘 적어놨는지가 이제 디자인보다 더 중요해진 거 아닌가 싶음",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP",
+    "source_url": "https://www.newspim.com/news/view/20260807000115"
   },
   "metadata": {
     "source_urls": [
-      "https://newslantern.com/news/16828/2026-10-03/apple-s-siri-ai-to-expand-to-french-japanese-korean-and-more",
-      "https://9to5mac.com/2026/09/16/ios-27-2-expands-siri-ai-to-these-new-languages/",
-      "https://www.hankyung.com/article/2026090559567",
-      "https://g-enews.com/article/Global-Biz/2026/10/2026100723153847329a1f309431_1"
+      "https://www.viva100.com/article/20261008500813",
+      "https://www.newspim.com/news/view/20260807000115",
+      "https://www.mstoday.co.kr/news/articleView.html?idxno=102265"
     ]
   }
 }
