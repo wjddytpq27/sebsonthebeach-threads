@@ -954,5 +954,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-10-14",
+    "content": "챗GPT에 'Apps in ChatGPT'라는 기능 생긴 거 아는 사람? 쉽게 말해 다른 서비스를 앱처럼 채팅창 안에서 바로 불러다 쓰는 기능임. 원래는 뭐 하나 하려면 앱 깔고 로그인하고 왔다갔다 했는데, 이제 채팅창 하나로 끝나는 구조로 가는 중임. 나는 이거 보면서 챗GPT가 검색창이 아니라 그냥 '만능 창구'가 되려는 거 같다는 생각이 들었음. 자잘한 앱 하나로 먹고살던 사람들은 이 흐름 눈여겨봐야 할 듯",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
