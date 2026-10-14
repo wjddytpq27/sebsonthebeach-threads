@@ -117,6 +117,15 @@
       "_source": "AX스터디 4주차 slide8 (흔한 함정)",
       "_verified": "method/설계 — 무한루프·파일충돌은 멀티에이전트 실무의 실제 문제(작업공간 격리 등 표준 대응). 반증불가.",
       "used_dates": []
+    },
+    {
+      "id": "synthetic-personas-found-what-agents-missed",
+      "topic": "AI 에이전트 5명이 하루 만에 만든 사이트보다, 공개 페르소나 데이터셋에서 뽑은 가짜 유저 12명이 더 쓸모 있었다",
+      "material": "셀러 인생 시뮬레이션(seller-life.vercel.app)을 기획자 1명 + 에이전트 5명(데이터 리서처·서사 디자이너·디자인 디렉터·프론트 빌더·QA)으로 하루 만에 베타까지 만듦. 다음 날 기획자·마케터 역할 에이전트 점검에 더해, 엔비디아가 공개한 한국 페르소나 데이터셋(Nemotron-Personas-Korea, 100만 명)에서 타겟 세그먼트(현직 셀러·창업 꿈꾸는 직장인·주부·취준생·50대 자영업 등) 12명을 뽑아 각자 한 인생을 돌려보게 하고 자기 말투로 피드백을 받음. 12명 전원이 같은 화면(1년차 질문)에서 막혔고, 꼼꼼한 사람일수록 숫자 모순에서 먼저 신뢰를 잃는데 그 사람이 가장 공유를 잘하는 사람이라는 게 드러남. 그 질문은 삭제, 숫자 정합성은 엔진에서 고침.",
+      "take": "에이전트로 '만드는' 건 이제 싸다. 비싼 건 '누가 어디서 막히는지' 아는 것인데, 그것도 공개 페르소나 데이터로 하루 만에 흉내 낼 수 있었다. 진짜 유저 테스트를 대체하진 못해도, 런치 전에 전원이 막히는 지점 하나는 확실히 잡아준다.",
+      "_source": "/Users/uneedcomms/Desktop/seller-life/research/ROUND2_SUMMARY.md, research/personas/FEEDBACK_A/B/C.md, 데이터셋 https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea",
+      "_verified": "실화 — 2026-10-13~14 조셉 세션에서 직접 수행",
+      "used_dates": []
     }
   ]
 }

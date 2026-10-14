@@ -965,5 +965,15 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-10-14",
+    "content": "엔비디아가 공개한 Nemotron-Personas-Korea(100만 명)에서 가짜 유저 12명 뽑아 내 사이트 돌려봤더니 12명 전원이 같은 화면에서 막힘.\n\n에이전트 5명이 하루 만에 만든 사이트보다 이게 더 쓸모 있었음. 다들 AI로 만드는 속도만 자랑하는데, 이제 만드는 건 싸고 어디서 막히는지 아는 게 비쌈.\n\n진짜 유저 테스트 대체는 못 함. 근데 런치 전에 전원 막히는 지점 하나는 확실히 잡아줌.",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "합성 페르소나 = 실제 인구통계 분포를 따라 AI가 만든 가상 인물 데이터. Nemotron-Personas-Korea는 엔비디아가 공개한 한국판 100만 명 데이터셋임. 여기서 현직 셀러, 창업 꿈꾸는 직장인, 50대 자영업 등 12명 뽑아서 각자 한 인생을 돌려보게 했음.\n그렇게 만든 게 셀러 인생 시뮬레이션: https://seller-life.vercel.app (국세청·중기부 통계 기반, 가입 없음, 3~5분)",
+    "evening": true,
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증할 사실 주장 없음"
   }
 ]
