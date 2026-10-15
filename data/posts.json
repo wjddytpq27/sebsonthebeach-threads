@@ -975,5 +975,16 @@
     "fact_checked": true,
     "fact_check_status": "pass",
     "fact_check_reason": "검증할 사실 주장 없음"
+  },
+  {
+    "date": "2026-10-15",
+    "content": "카톡 쓰는 사람만 보셈. 카카오가 이번 if(kakao)26에서 카톡 안에 AI 비서를 붙인다고 예고함. 핵심은 말로 시키면 주문이나 예약 같은 걸 대신 처리해주는 방향이라는 거임. 언제부터 전면적으로 풀릴지는 아직 불확실한데, 메신저 안에서 검색 없이 말로 끝내는 쇼핑이 기본값 되는 흐름 자체는 분명해 보임. 자사몰·스마트스토어 하는 사람 입장에선 고객 접점이 카톡 안에도 하나 더 생긴다는 뜻이라 미리 알아두는 게 나을 듯",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "https://www.hankyung.com/article/2026101394811",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
