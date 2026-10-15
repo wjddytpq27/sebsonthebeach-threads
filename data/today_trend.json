@@ -1,37 +1,41 @@
 {
-  "date": "2026-10-14",
-  "signal_applied": "team_signal status: normal, strategic_review의 최우선 과제는 '발행 안정화'지만 trend_scout directive는 평소대로. 10/13자(챗GPT 가상 피팅 + 전환율 수치)와 10/12자(네이버·쿠팡 AI 쇼핑 에이전트)는 이미 다뤘으므로, 오늘은 겹치지 않는 새 소재로 10/7~8일 롤아웃된 'GPT-6 + Intelligent UI'(답변 안에서 바로 실행되는 계산기·정산앱 등 도구) 소재를 오전/저녁 모두의 베이스로 잡았다. best_performing 스타일(~한테만 하는 얘기 훅 + 구체 수치 + 반전)을 그대로 적용.",
+  "date": "2026-10-15",
+  "signal_applied": "status: normal, days_since_growth: 2, directives.trend_scout: 평소대로 — best_performing 스타일('~한테만 하는 얘기' 훅 + 구체 수치 + 반전)을 그대로 적용. stop_doing(챗GPT 광고 카드, 시리) 회피, 10/14(GPT-6 Intelligent UI), 10/13(챗GPT 가상 피팅), 10/12(네이버·쿠팡 AI 쇼핑 에이전트) 소재와 겹치지 않는 새 소재로 선정.",
   "github_hot": [
-    "대중성 게이트 통과 레포 없음 — 오늘도 agent-skills(10만+ star), RAG 엔진, 코드리뷰 툴 등 개발자 전용 레포 위주라 일반 셀러·직장인 소재로 부적합. 전원 탈락."
+    "대중성 게이트 통과 레포 없음 — 오늘도 에이전트 프레임워크/RAG 관련 레포 위주라 개발자 전용. 전원 탈락."
   ],
   "big_tech_news": [
     {
-      "source": "OpenAI GPT-6 + Intelligent UI 출시 (전자신문 2026-10-08 보도)",
-      "topic": "OpenAI가 10월 7일(현지시간) GPT-6를 출시하면서 'Intelligent UI'를 도입했다. 챗GPT가 질문 내용에 따라 답변 형식을 자동으로 바꿔, 텍스트뿐 아니라 지도·차트·입력폼·탭 가능한 버튼 같은 상호작용 요소를 즉석에서 만들어 보여준다. 전자신문이 소개한 구체 예시로는 저축 계산기, 식사비 정산 앱, 여행 경로 지도, 학습용 비교 도구 등이 있으며 10월 8일부터 무료·Go 요금제까지 확대됐다. 웹 검색이 필요한 질문의 응답 시간도 이전 버전 대비 평균 44% 단축됐다.",
-      "angle": "바로 써먹기 — 일반인·자영업자가 엑셀이나 별도 앱 없이 챗GPT 채팅창에 '정산 계산기 만들어줘' 한 줄만 치면 그 자리에서 작동하는 도구가 생긴다는 게 핵심. 자사몰·스마트스토어 셀러 입장에선 재고 계산, 마진 계산, 반품비 정산 같은 걸 스프레드시트 없이 바로 처리할 수 있다는 의미.",
-      "hook_idea": "챗GPT에 GPT-6 올라오면서 'Intelligent UI'라는 기능 생김. 이제 질문하면 글로만 답 안 하고 그 자리에서 작동하는 계산기, 정산 앱, 지도 같은 걸 바로 만들어서 보여줌. 전자신문 보도 기준으로 예시가 저축 계산기, 식사비 정산 앱임. 나 같은 자영업자는 엑셀 켜서 마진 계산하고 반품비 정산하던 거 그냥 챗GPT한테 '계산기 만들어줘' 치면 끝나는 거",
-      "source_url": "https://www.etnews.com/20261008000001"
+      "source": "카카오 '모두의 AI' / '카나나 스페이스' 발표 (카카오 if(kakao)26 행사, 2026-10-14 보도: 한경·한국일보·중앙이코노미뉴스·데일리안)",
+      "topic": "카카오가 10월 14일 'if(kakao)26' 행사에서 카카오톡 안에 들어가는 AI 비서 '카나나 스페이스'와 전사 전략 '모두의 AI'를 공개했다. 카카오톡 화면을 두 손가락으로 쓸어내리면 캐릭터 '라이언'이 나타나고, 음성이나 텍스트로 '생수 주문해줘' 같은 명령을 내리면 이전 구매 이력 기반 상품 추천과 쿠폰 자동 적용까지 처리한다. 현재는 메시지 전송·일정 관리·웹 검색·카톡 설정 변경을 지원하고, 내년 상반기부터 쇼핑·선물·예약·송금으로 기능을 확대할 계획이다. 12월 사전 신청자 중 일부를 대상으로 비공개 베타를 시작하며, 유료화 계획은 없다고 밝혔다. LG전자·LG AI연구원·카카오뱅크 등 34개 기업이 참여하고 월간 이용자(MAU) 500만명을 목표로 잡았다.",
+      "angle": "먼저 앎 + 바로 체감 — 카카오톡은 거의 전 국민이 쓰는 앱이라 '내 카톡에 AI 비서 생긴다'는 변화 체감도가 크다. 자사몰/스마트스토어 셀러 입장에선 '고객이 카톡으로 말만 하면 주문·예약까지 되는 시대'가 온다는 의미라서 마케팅 채널 관점의 각도가 나온다.",
+      "hook_idea": "카카오톡 쓰는 사람만 보셈. 어제 카카오가 'if(kakao)26' 행사에서 카톡 안에 AI 비서 들어온다고 발표함. 화면 두 손가락으로 쓸면 라이언 캐릭터 나와서 '생수 주문해줘' 하면 저번에 샀던 거 추천하고 쿠폰까지 알아서 적용해줌. 지금은 베타고 12월부터 일부한테 테스트 시작하는데, 내년부터는 쇼핑·예약·송금까지 다 된다고 함. 참여 기업만 34개, 목표 이용자가 500만명이라고 하니까 이거 생각보다 크게 가는 중",
+      "source_url": "https://www.hankyung.com/article/2026101394811"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN 상위권도 에이전트 프레임워크·RAG·클라우드 보안 위주라 대중성 게이트 탈락. 일반 체감 소재는 big_tech_news의 GPT-6 Intelligent UI로 커버."
+    "오늘 HN 상위권도 에이전트 프레임워크/인프라 위주라 대중성 게이트 탈락. 대신 Fractl의 2026 AI Search Consumer Trust Study(미국 소비자 1,008명+마케터 150명 대상, 2026 Q2 조사)에서 'AI가 전통 검색보다 도움된다'는 응답이 2025년 82%에서 2026년 54%로 28%p 하락했고, 'AI를 많이 쓰면 브랜드 신뢰가 떨어진다'는 응답은 20%에서 40%로 두 배가 됐다는 수치가 나와 저녁 영어권 소재로 활용."
   ],
   "recommended_morning": {
-    "angle": "바로 써먹기 + 셀러 직결 — GPT-6 Intelligent UI로 엑셀·별도 앱 없이 챗GPT 안에서 바로 계산기·정산 도구를 만들어 쓰는 법",
-    "hook": "자사몰이나 스마트스토어 돌리는 셀러한테만 하는 얘기. 이번 주에 챗GPT가 GPT-6로 바뀌면서 'Intelligent UI'라는 게 생김. 질문하면 글로만 답하는 게 아니라 그 자리에서 작동하는 계산기나 정산 앱을 바로 만들어서 보여줌. 전자신문 보도 보면 저축 계산기, 식사비 정산 앱이 예시로 나와 있음. 나는 이거 보고 마진 계산이나 반품비 정산할 때마다 엑셀 켜던 거 생각났음. 그냥 챗GPT한테 '내 마진 계산기 만들어줘' 하면 바로 작동하는 걸 만들어줌",
-    "source": "OpenAI GPT-6 + Intelligent UI (전자신문 2026-10-08)",
+    "angle": "먼저 앎 + 셀러 직결 — 카카오톡 안에 AI 비서(카나나 스페이스)가 들어오면서 '말로 주문·예약'이 되는 시대가 온다는 걸 자사몰/스마트스토어 셀러 입장에서 미리 알려주는 각도",
+    "hook": "카카오톡 쓰는 사람만 보셈. 어제 카카오가 'if(kakao)26' 행사에서 카톡 안에 AI 비서 들어온다고 발표함. 화면 두 손가락으로 쓸면 캐릭터 라이언이 나와서 '생수 주문해줘' 하면 저번에 샀던 상품 추천해주고 쿠폰까지 알아서 적용해줌. 지금은 베타 단계고 12월부터 일부한테 테스트 시작하는데, 내년 상반기부터는 쇼핑·예약·송금까지 다 된다고 함. 참여 기업이 LG전자·카카오뱅크 포함 34개, 목표 이용자가 월 500만명이라니까 이거 생각보다 크게 밀어붙이는 중. 자사몰 하는 사람들은 고객이 카톡으로 말만 해도 주문되는 날 온다는 뜻이라 미리 알아두는 게 좋음",
+    "source": "카카오 if(kakao)26 발표 (2026-10-14, 한경 등 보도)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP",
-    "source_url": "https://www.etnews.com/20261008000001"
+    "source_url": "https://www.hankyung.com/article/2026101394811"
   },
   "recommended_evening": {
-    "angle": "반전 핫테이크 — 다들 GPT-6를 'AI가 더 똑똑해졌다'는 관점으로만 보는데, 진짜 영향은 모델 성능이 아니라 '별도 앱을 깔 이유가 사라진다'는 쪽",
-    "hook": "다들 GPT-6 나왔다고 AI가 더 똑똑해진 걸로만 얘기하는데, 나는 좀 다르게 봄. 저축 계산기, 정산 앱 같은 거 이제 앱스토어에서 다운 안 받아도 챗GPT 채팅창에서 바로 만들어서 씀. 결국 이런 단순 유틸 앱들 존재 이유가 흔들리는 거 아닌가. 복잡한 서비스 말고 '계산기', '정산기', '변환기' 수준 앱 만드는 사람들은 지금부터 진지하게 고민해야 할 거 같음",
+    "language": "english",
+    "angle": "counterintuitive — everyone assumes AI adoption = more trust, but 2026 data shows the opposite: the more people use AI, the less they trust the brands behind it",
+    "hook": "Here's a stat that should worry every marketer leaning hard into AI: in 2025, only 20% of US consumers said heavy AI use would make them trust a brand less. In 2026, that number doubled to 40%. And the share who said AI search is more helpful than traditional search dropped from 82% to 54% in a single year. We spent two years pushing AI into every customer touchpoint assuming it would build trust by default. The data says we got it backwards",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP",
-    "source_url": "https://www.etnews.com/20261008000001"
+    "source_url": "https://www.frac.tl/ai-statistics/"
   },
   "metadata": {
     "source_urls": [
-      "https://www.etnews.com/20261008000001"
+      "https://www.hankyung.com/article/2026101394811",
+      "https://www.sentv.co.kr/article/view/sentv202610130125",
+      "https://m.news.nate.com/view/20261014n24067",
+      "https://www.frac.tl/ai-statistics/"
     ]
   }
 }
