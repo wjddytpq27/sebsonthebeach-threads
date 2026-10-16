@@ -986,5 +986,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-10-16",
+    "content": "챗GPT 쓰는 사람인데 음성모드 안 써봤으면 반은 손해임. 앱에서 헤드폰 아이콘 누르면 실시간으로 음성 대화 되는데, 텍스트 치는 것보다 훨씬 빠름. 말하는 중간에 끼어들어도 알아듣고 전화 통화하듯 자연스럽게 흘러감. 무료 유저도 쓸 수 있는 기능임. 이동 중이거나 손 못 쓰는 상황에서 상품 설명 초안이나 고객 응대 멘트 불러주고 다듬는 용도로 쓰면 꽤 쓸만할 듯. 자사몰 돌리면서 이동 많은 사람이면 한 번은 써볼 만함",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
