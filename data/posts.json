@@ -997,5 +997,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-10-19",
+    "content": "스마트스토어나 자사몰 운영하는 사람만 보셈. 요즘 챗GPT 같은 AI한테 \"이거 사줘\" 하고 바로 물어보는 사람들 늘고 있다는 얘기 많이 나옴. 실제로 챗GPT는 채팅창 안에서 바로 결제까지 끝내는 쇼핑 기능을 붙였고, 반대로 아마존 같은 큰 리테일러는 외부 AI 에이전트가 자기 사이트 뒤지는 걸 막기 시작했다는 보도도 있음. 결론은 — 사람이 검색창에 치는 키워드 말고, AI가 내 상품 설명을 읽고 추천할지 말지 판단하는 비중이 점점 커지고 있다는 거임. 상품명에 키워드만 욱여넣던 예전 방식 말고, AI가 질문-답변 읽듯 이해할 수 있게 상세페이지 정리해두는 게 이제는 필요해 보임.",
+    "topic": "BUSINESS_ENTREPENEURSHIP",
+    "reply": "https://www.pymnts.com/news/retail/2026/ai-agents-knock-retailers-decide-how-wide-to-open-the-door/",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
