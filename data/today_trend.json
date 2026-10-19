@@ -1,41 +1,41 @@
 {
-  "date": "2026-10-16",
-  "signal_applied": "status: normal, days_since_growth: 3, directives.trend_scout: 평소대로 — best_performing 훅 스타일('~한테만 하는 얘기/~쓰는 사람만 보셈' + 구체 수치 + 셀러 직결 해석) 적용. stop_doing(챗GPT 광고 카드, 시리) 회피, 10/12~10/15(네이버·쿠팡 AI 쇼핑, 챗GPT 가상 피팅, GPT-6 Intelligent UI, 카카오 카나나 스페이스, AI 신뢰도 하락 통계) 소재와 겹치지 않는 새 소재로 선정.",
+  "date": "2026-10-19",
+  "signal_applied": "team_signal.strategic_review(week_of 2026-10-19): 앞으로 2주간 모든 글 첫 문장을 '자사몰/이커머스 운영자' 등 특정 대상을 직접 호명하는 target_callout 훅으로 고정, '챗GPT에 ~기능 생겼대' 식 일반 뉴스전달형 글 금지 지시 반영 — 오늘 오전/저녁 모두 플랫폼의 AI 쇼핑 에이전트 동향을 '셀러가 지금 뭘 해야 하는지'로 바로 연결되는 소재로만 선정. stop_doing(Apps in ChatGPT, 챗GPT 음성모드) 및 10/12~10/16 기사용 소재(네이버 대화형 추천 테스트, 챗GPT 인스턴트 체크아웃, Nemotron-Personas-Korea, 카카오 AI비서 예고, 아마존 뮤즈 차단)와 겹치지 않는 새 수치·새 소재로 교체.",
   "github_hot": [
-    "대중성 게이트 통과 레포 없음 — 오늘도 Open WebUI, ESP32로 아이폰 제어, 에이전트 리버스엔지니어링 등 개발자 전용 레포만 상위권. 전원 탈락."
+    "대중성 게이트 통과 레포 없음 — 오늘 상위권은 ai-job-search(Claude Code 기반 구직 자동화 프레임워크), claude-plugins-official, CLI-Anything 등 개발자 전용 레포 위주. VoiceStudio(로컬 음성 클로닝/더빙 툴)도 설치·실행에 기술 지식 필요해 탈락."
   ],
   "big_tech_news": [
     {
-      "source": "오픈AI 챗GPT 음성 업데이트 (2026-10-16 보도: 뉴스핌, 세계일보)",
-      "topic": "오픈AI가 10월 16일 챗GPT 음성 기능을 업데이트했다. 새 음성 모델 'GPT-Live-1.1'을 적용해 한국어 대화의 자연스러움을 개선했고, 한국어 전용 목소리 두 종류(남성 '한울', 여성 '햇살')를 추가했다. 정보 검색 중에도 '확인 중' 같은 반복 표현 대신 상황에 맞는 다양한 표현을 쓰도록 바뀌었고, 풀 듀플렉스 구조라 사용자가 말하는 중에도 AI가 듣고 반응할 수 있다. 앱에서 음성 아이콘을 눌러 목소리를 고르면 바로 쓸 수 있고, 무료 사용자도 이용 가능하며 전 세계에 순차 적용 중이다. 같은 날 구글도 제미나이 3.8 라이브(익스텐디드 씽킹 포함, 97개 언어 지원)를 강화해 음성 AI 경쟁이 붙었다.",
-      "angle": "바로 써먹기 — 코드 한 줄 안 만져도 되고, 챗GPT 앱 켜서 음성 아이콘만 누르면 되는 기능이라 대중성 최상. 자사몰/셀러 입장에선 '고객 응대 멘트 녹음해서 톤 참고', '운전 중 음성으로 상품 설명 초안 짜기' 같은 실무 활용 각도가 바로 나옴.",
-      "hook_idea": "챗GPT 쓰는 사람만 보셈. 오늘 오픈AI가 음성 기능 업데이트하면서 한국어 목소리 2개 새로 넣었음. 남자 목소리 '한울', 여자 목소리 '햇살'. 새 음성 모델 'GPT-Live-1.1' 써서 억양이랑 말투가 훨씬 자연스러워졌고, 정보 찾을 때도 '확인 중' 이런 말 반복 안 하고 상황 맞게 다르게 말함. 심지어 내가 말하는 중에도 AI가 듣고 바로 반응하는 구조라 끼어들기도 됨. 앱에서 음성 아이콘 눌러서 목소리 고르면 바로 체험 가능하고 무료 유저도 다 씀. 순차 적용 중이라 안 보이면 며칠 기다리면 됨",
-      "source_url": "https://www.newspim.com/news/view/20261016000230"
+      "source": "네이버 AI탭·AI 쇼핑 에이전트 성과 (2026-09-24 보도, CEOSCOREDAILY)",
+      "topic": "네이버 AI탭은 올해 6월 정식 출시 후 7월 기준 월간 이용자 1,000만 명을 돌파했고 상품·장소 카드 클릭률(CTR)이 20%를 넘었다. AI 쇼핑 에이전트는 9월 기준 대화 수가 6월 대비 약 60%, 거래액은 약 82% 늘었다. 같은 2분기 Npay 결제액은 25조 2,000억원으로 전년 동기 대비 21% 증가했다. 카카오도 외부 MCP 서버 400개 이상을 확보한 'PlayMCP'로 쿠팡이츠 연동 주문·결제를 붙였고, 10월 1일 쇼핑·금융·콘텐츠를 묶은 '카카오멤버십'을 소프트런칭할 예정이다.",
+      "angle": "자사몰·스마트스토어 셀러 직결 — 내 상품 상세페이지를 사람보다 AI가 먼저 읽고 추천 여부를 판단하는 비중이 이미 거래액 기준 두 자릿수 성장 중이라는 뜻. 키워드 욱여넣기식 SEO 감각으로 쓴 상세페이지는 AI 추천 후보에서 빠질 수 있다는 경고로 연결 가능.",
+      "hook_idea": "스마트스토어나 네이버쇼핑 하는 셀러만 보셈. 네이버 AI 쇼핑 에이전트 쓰는 사람이 6월보다 대화 수는 60%, 거래액은 82% 늘었음(9월 기준). AI탭도 7월에 월간 이용자 1000만 넘었고 상품 카드 클릭률이 20% 넘는다고 함. 이게 뭔 말이냐면 — 내 상세페이지를 사람이 아니라 AI가 먼저 읽고 추천할지 말지 판단하는 비중이 벌써 이만큼 커졌다는 거임. 키워드만 욱여넣던 예전 SEO 감각으로 상세페이지 쓰고 있으면 AI가 내 상품을 후보에서 아예 뺄 수도 있음",
+      "source_url": "https://m.ceoscoredaily.com/page/view/2026092216123613875"
     }
   ],
   "hackernews_highlights": [
-    "오늘 HN 상위권도 수학 증명(AI로 Sendov 추측 증명)·칩 공급망·에이전트 프레임워크 위주라 대중성 게이트 탈락. 대신 리테일 업계에서 'AI 쇼핑 에이전트' 갈등이 터짐 — 아마존이 메타의 AI 쇼핑 에이전트 '뮤즈(Muse)'를 9월 20일 자사 플랫폼에서 차단했다고 10월 들어 후속 보도가 이어지는 중 (PYMNTS, GeekWire 등). 저녁 핫테이크 소재로 활용."
+    "HN 상위권은 여전히 에이전트 프레임워크·수학 증명 등 개발자 전용 위주라 대부분 탈락. 다만 Yelp·Delta·JPMorgan이 AI 에이전트 접근을 거부하거나 제한하고 나섰고(Yelp는 데이터 이용료 내는 에이전트만 허용, Delta는 항공권 예약 차단), AI 기반 가격 책정에 대한 소비자 반발로 30개 이상 주에서 규제 법안이 발의됐다는 보도가 있음 — 저녁 소재(리테일러별 AI 에이전트 대응 분화)와 같은 맥락이라 evening에 흡수."
   ],
   "recommended_morning": {
-    "angle": "바로 써먹기 + 먼저 앎 — 챗GPT 음성 기능에 한국어 목소리(한울/햇살)와 풀 듀플렉스 대화가 추가됐다는 걸 오늘 당장 체험 가능한 기능으로 알려주는 각도",
-    "hook": "챗GPT 쓰는 사람만 보셈. 오늘 오픈AI가 음성 기능 업데이트하면서 한국어 목소리 2개 새로 넣었음. 남자 목소리 '한울', 여자 목소리 '햇살'. 새 음성 모델 'GPT-Live-1.1' 써서 억양이랑 말투가 훨씬 자연스러워졌고, 정보 찾을 때도 '확인 중' 이런 말 반복 안 하고 상황 맞게 다르게 말함. 심지어 내가 말하는 중에도 AI가 듣고 바로 반응하는 구조라 끼어들기도 됨. 앱에서 음성 아이콘 눌러서 목소리 고르면 바로 체험 가능하고 무료 유저도 다 씀. 순차 적용 중이라 안 보이면 며칠 기다리면 됨",
-    "source": "오픈AI 챗GPT 음성 업데이트 (2026-10-16, 뉴스핌)",
-    "topic_tag": "AI_THREADS",
-    "source_url": "https://www.newspim.com/news/view/20261016000230"
+    "angle": "target_callout — 스마트스토어/네이버쇼핑 셀러를 직접 호명해, AI 쇼핑 에이전트 거래액·대화량 증가라는 숫자를 '내 상세페이지 전략을 지금 바꿔야 하는 이유'로 바로 연결",
+    "hook": "스마트스토어나 네이버쇼핑 하는 셀러만 보셈. 네이버 AI 쇼핑 에이전트 쓰는 사람이 6월보다 대화 수는 60%, 거래액은 82% 늘었음(9월 기준, 씨이오스코어데일리 보도). AI탭도 7월에 월간 이용자 1000만 넘었고 상품 카드 클릭률이 20% 넘는다고 함. 이게 뭔 말이냐면 — 내 상세페이지를 사람이 아니라 AI가 먼저 읽고 추천할지 말지 판단하는 비중이 벌써 이만큼 커졌다는 거임. 상품명에 키워드만 욱여넣던 예전 SEO 감각으로 상세페이지 쓰고 있으면 AI가 내 상품을 아예 후보에서 뺄 수도 있음. 지금부터 상품 설명을 AI가 질문-답변 읽듯 정리해두는 게 순위 싸움보다 더 급함",
+    "source": "네이버 AI탭·쇼핑 에이전트 성과 (2026-09-24, CEOSCOREDAILY)",
+    "topic_tag": "BUSINESS_ENTREPENEURSHIP",
+    "source_url": "https://m.ceoscoredaily.com/page/view/2026092216123613875"
   },
   "recommended_evening": {
-    "angle": "contrarian — 다들 'AI가 알아서 쇼핑해주면 편하다'고만 보는데, 셀러/광고주 입장에선 지금 돈 버는 구조(광고 노출)가 통째로 흔들리는 사건이라는 반전",
-    "hook": "다들 AI가 알아서 쇼핑해주면 편하다고만 생각하는데, 셀러 입장에서 보면 이거 재앙임. 아마존이 얼마 전에 메타가 만든 AI 쇼핑 에이전트 '뮤즈'를 자기 플랫폼에서 차단함. 메타가 사전 통보도 안 하고 유저 계정 정보에 접근하고 자동으로 결제까지 시도해서라는 게 아마존 쪽 설명. 근데 진짜 문제는 따로 있음. AI 에이전트가 대신 쇼핑하면 광고 배너도 안 보고, 둘러보지도 않고, 딴 데 정신 팔리지도 않음. 아마존 광고 매출만 연 56조원 넘는데, 이게 다 사람이 둘러보다가 눈에 띄는 광고 눌러서 나오는 돈임. AI가 사람 대신 쇼핑해주는 시대 오면 지금 스마트스토어·쿠팡에서 광고로 노출 늘리던 셀러들 전략 자체가 안 먹히게 됨. 지금부터 광고 의존도 낮추고 찾아오는 팬덤 만드는 거 준비해야 되는 이유가 이거임",
-    "source": "Amazon blocks Meta's Muse AI shopping agent (2026-10, GeekWire/PYMNTS)",
+    "angle": "contrarian + target_callout — 자사몰 운영자를 호명해, '리테일러마다 AI 에이전트 대응이 정반대'라는 사실을 통해 홀리데이 시즌을 'AI가 내 상품을 잘 찾는지'의 첫 시험대로 재프레이밍",
+    "hook": "자사몰 운영하는 사람만 보셈. 다들 AI가 알아서 다 사줄 거라고 기대하는데, 정작 큰 리테일러들 반응은 완전 제각각임. 아마존은 메타의 쇼핑 에이전트 '뮤즈' 같은 외부 에이전트 수십 개를 아예 차단했고 이베이도 막았음. 근데 월마트는 반대로 구글 제미나이가 자기네 상품을 보여주게 허용하고, 쇼핑객이 월마트 상품 고르면 자체 비서 '스파키'가 장바구니를 넘겨받음. QVC는 에이전트가 결제까지 끝내게 열어놨고, 쇼피파이는 'Agentic Storefronts'라는 기능으로 입점 셀러 카탈로그를 챗GPT·MS 코파일럿·퍼플렉시티에 통째로 보내기 시작함. 보안업체 Cheq 조사로는 이런 에이전트 트래픽이 45일 만에 100배 뛰었다고 함. 결론은 — 이번 홀리데이 시즌이 '내 상품이 AI 눈에 잘 띄게 정리돼 있냐'를 테스트하는 첫 시험대라는 거임. 자사몰 쓰면 상품 데이터 AI가 읽기 좋게 정리해두는 거, 더는 미룰 일 아님",
+    "source": "AI Agents Knock: Retailers Decide How Wide to Open the Door (2026-10, PYMNTS); Ecommerce confronts AI shopping agents ahead of holiday season (2026-10-16, Semafor)",
     "topic_tag": "BUSINESS_ENTREPENEURSHIP",
-    "source_url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/"
+    "source_url": "https://www.pymnts.com/news/retail/2026/ai-agents-knock-retailers-decide-how-wide-to-open-the-door/"
   },
   "metadata": {
     "source_urls": [
-      "https://www.newspim.com/news/view/20261016000230",
-      "https://www.segye.com/newsView/20261016511526",
-      "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/",
-      "https://www.pymnts.com/news/retail/2026/ai-agents-knock-retailers-decide-how-wide-to-open-the-door/"
+      "https://m.ceoscoredaily.com/page/view/2026092216123613875",
+      "https://www.pymnts.com/news/retail/2026/ai-agents-knock-retailers-decide-how-wide-to-open-the-door/",
+      "https://www.semafor.com/article/10/16/2026/ecommerce-confronts-ai-shopping-agents-ahead-of-holiday-season",
+      "https://www.pymnts.com/news/retail/2026/ai-shopping-agents-force-retailers-to-rethink-customer-access-and-payment-controls/"
     ]
   }
 }
