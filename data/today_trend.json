@@ -1,34 +1,34 @@
 {
-  "date": "2026-10-21",
-  "signal_applied": "team_signal.strategic_review(week_of 2026-10-19): 2주간 모든 글 첫 문장을 '자사몰/이커머스 운영자' 등 특정 대상을 직접 호명하는 target_callout 훅으로 고정, 뉴스 받아쓰기형 글 금지 지시 계속 적용. 어제(10/20)는 네이버·국내 플랫폼(쿠팡/G마켓 등) 중심 소재였으므로 오늘은 겹치지 않게 글로벌 AI 에이전트 쇼핑/결제 소재(Shopify Shop MCP, 챗GPT 'Shop at' 버튼)로 교체해 자사몰 운영자를 직접 호명.",
+  "date": "2026-10-22",
+  "signal_applied": "team_signal.strategic_review(week_of 2026-10-19): target_callout 훅(특정 대상 직접 호명)으로 첫 문장 고정, 뉴스 받아쓰기 금지 지시 계속 적용. stop_doing의 'Apps in ChatGPT', '음성모드' 소재와 어제(10/21)의 Shopify Shop MCP / 챗GPT Shop at 버튼 소재와 겹치지 않도록, 오늘은 ①ChatGPT Locked Chats(프라이버시, 10/20) ②Cloudflare×BigCommerce WebMCP 10만 스토어 디폴트 온(10/21)으로 소재 교체.",
   "github_hot": [
-    "대중성 게이트 통과 레포 없음 — 오늘 상위권(morluto/rea 33만+스타, Graphify-Labs/graphify, vllm-project/vllm, sickn33/agentic-awesome-skills, ds4 등)은 전부 설치·실행에 개발 지식이 필요한 개발자 전용 도구. 코드 안 만지는 사람은 체감 못 해 제외."
+    "대중성 게이트 통과 레포 없음 — 오늘 상위권(anomalyco/opencode 21만+스타 코딩 에이전트, msitarzewski/agency-agents, obra/superpowers, debpalash/VoiceStudio 등)은 전부 설치·실행에 개발 지식이 필요한 개발자 전용 툴. 코드 안 만지는 사람은 체감 못 해 제외."
   ],
   "big_tech_news": [
     {
-      "source": "Shopify 'Shop MCP' — AI 에이전트 전용 쇼핑·결제 연동 (Shopify 공식 changelog, 2026-10-13)",
-      "topic": "Shopify가 2026-10-13 'Shop MCP'를 공개, 챗GPT·Claude 같은 AI 에이전트가 API 키 없이 Shopify 카탈로그 10억+개 상품을 검색하고, 로그인된 Shop 계정의 저장 주소·결제수단으로 장바구니 구성부터 결제(complete_checkout)까지 외부 사이트 이동 없이 채팅 안에서 끝낼 수 있게 됐다. 구매자가 최종 금액·결제수단을 확인하면 에이전트가 직접 결제를 실행하는 구조.",
-      "angle": "자사몰 운영자 직결 — 지금까지 '고객이 내 쇼핑몰에 직접 들어와서 결제'가 전제였는데, 이제 고객이 챗GPT나 클로드한테 말만 걸면 내 가게 들어오지도 않고 결제까지 끝낼 수 있는 시대가 열렸다는 뜻. 아직 한국(카페24 등)엔 안 왔지만 구조 자체가 '내 쇼핑몰 UX·체크아웃 최적화'보다 '내 상품이 AI 카탈로그에 얼마나 잘 읽히게 등록돼 있는지'가 더 중요해지는 방향으로 가고 있다는 신호.",
-      "hook_idea": "자사몰 운영자만 보셈. 쇼피파이가 챗GPT랑 클로드한테 '너네가 직접 결제까지 끝내도 됨' 하고 문 열어줬음(Shop MCP, 10/13). 고객이 AI한테 말만 걸면 내 쇼핑몰 들어오지도 않고, 저장된 카드로 장바구니 담고 결제까지 AI가 대신 눌러줌. 아직 한국엔 안 왔는데 방향은 뻔함 — 앞으로는 내 쇼핑몰 디자인 예쁘게 꾸미는 거보다, 내 상품 정보가 AI가 읽고 추천하기 좋게 등록돼 있는지가 더 중요해질 거임. 지금부터 상품명·옵션·설명 AI 친화적으로 정리 안 해두면 나중에 따라가기 힘듦",
-      "source_url": "https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp"
+      "source": "OpenAI 'Locked Chats' 공식 출시 (TechCrunch, 2026-10-20)",
+      "topic": "OpenAI가 2026-10-20 ChatGPT에 'Locked Chats'(잠금 대화) 기능을 출시. 특정 대화를 4자리 PIN이나 Face ID/Touch ID로 잠가두면 일반 대화 목록·검색·고정된 채팅에서 안 보이게 숨길 수 있다. Free·Go·Plus·Pro·Business·Enterprise·Edu 전 플랜에 순차 적용(웹·iOS·안드로이드·신규 데스크톱 앱). 단, 종단간 암호화는 아니고 학습/보관 정책도 안 바뀌며, PIN 재설정하면 잠긴 대화 자체가 삭제됨.",
+      "angle": "자사몰/개인사업자 직결 — 매출 고민, 거래처와의 민감한 협상 메모, 고객 컴플레인 초안, 직원 문제 상담 같은 걸 챗GPT한테 털어놓으면서도 '이거 기록에 남으면 어쩌지' 찜찜했던 사람한테 바로 써먹을 수 있는 기능. 단, 완전 암호화가 아니라는 한계까지 알려주면 '먼저 앎 + 바로 씀' 두 마리 다 잡는 소재.",
+      "hook_idea": "챗GPT로 매출 고민이나 거래처 얘기 상담해본 사장님만 보셈. 10/20부터 '잠금 대화' 기능 생겼음 — 대화 하나 눌러서 잠그면 4자리 핀이나 페이스아이디로만 열림. 일반 대화 목록, 검색, 고정된 채팅 어디에도 안 뜨고 완전히 숨겨짐. 근데 이거 완전 암호화는 아니고, 핀 재설정하면 그 대화 자체가 삭제돼버림. 그니까 '숨기기용'이지 '보안용'은 아니라는 거 알고 써야 함. 그래도 거래처 협상 메모나 매출 민감한 얘기 chatGPT한테 상담할 때 가족이나 직원이 내 폰 볼까봐 찜찜했으면 지금 바로 써볼만함",
+      "source_url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/"
     },
     {
-      "source": "챗GPT 'Shop at' 버튼, 56%가 대형몰로 쏠림 (wislr.com 분석, 2026-10-10 기능 출시)",
-      "topic": "챗GPT가 2026-10-10부터 쇼핑 답변에 'Shop at/View at/Buy at' 버튼을 붙이기 시작했는데, 분석 결과 이 버튼의 56%가 베스트바이·월마트·타겟·아마존 같은 대형몰로 연결되고 브랜드 자사몰로 연결된 비율은 5%뿐이었다. 챗GPT가 브랜드 페이지를 출처로 포함한 경우엔 자사몰 연결 비율이 약 33%까지 올라가지만, 출처로 안 잡히면 6%까지 떨어진다.",
-      "angle": "자사몰 운영자 직결 — 고객이 챗GPT한테 쇼핑 추천을 받으면 내 상품이 언급은 돼도 '사러가기' 버튼은 쿠팡/아마존급 대형몰로 꽂힐 확률이 훨씬 높다는 뜻. 내 쇼핑몰이 챗GPT의 '출처'로 잡히느냐 안 잡히느냐에 따라 자사몰 연결률이 6%→33%로 5배 넘게 갈림 — 즉 내 상품페이지가 AI한테 출처로 인용되게 만드는 게 이제 광고보다 중요해질 수 있다는 경고.",
-      "hook_idea": "자사몰 하는 사람만 보셈. 챗GPT가 요즘 쇼핑 추천 답변에 '사러가기' 버튼을 붙여주는데(10/10부터), 그 버튼 중 56%가 베스트바이·월마트·아마존 같은 대형몰로 감. 내 브랜드 자사몰로 연결되는 건 5%밖에 안 됨. 근데 챗GPT가 내 상품페이지를 '출처'로 물어온 경우엔 자사몰 연결 비율이 33%까지 뛰어오름. 이게 뭔 말이냐면 — 내 상품이 챗GPT 답변에 출처로 잡히느냐 아니냐에 따라 내 가게로 올 손님이 5배 넘게 갈린다는 거임. 광고비 쓰기 전에 내 상품페이지가 AI한테 읽히고 인용될 구조인지부터 점검해야 함",
-      "source_url": "https://www.wislr.com/articles/chatgpt-shop-at-buttons-big-box/"
+      "source": "Cloudflare, BigCommerce 10만 스토어에 WebMCP 디폴트 온 (BigCommerce 공식 투자자 발표, 2026-10-21)",
+      "topic": "Commerce.com과 Cloudflare가 2026-10-21 파트너십을 발표, WebMCP라는 표준을 통해 고객 브라우저의 AI 에이전트가 BigCommerce 가맹점 스토어에서 실제 상품·가격을 직접 검색·비교하고 장바구니까지 담을 수 있게 됐다. 거의 10만 개 BigCommerce 스토어에 걸쳐 별도 코드 작업 없이 자동으로 켜졌으며(디폴트 온), 체크아웃과 고객 관계는 가맹점 사이트에 그대로 남는 구조.",
+      "angle": "자사몰 운영자 직결 — 내가 신청하지도 않았는데 내 쇼핑몰이 이미 'AI 에이전트가 맘대로 뒤지고 비교하는 매장'이 돼버렸다는 얘기. 체크아웃은 내 사이트에 남는다지만, 고객이 '가장 싼 거 찾아줘' 하면 AI가 자동으로 내 상품과 경쟁사 상품 가격을 나란히 비교해버리는 구조라 가격 경쟁이 더 노골적으로 심해질 수 있다는 경고.",
+      "hook_idea": "자사몰 하는 사람만 보셈. 클라우드플레어가 10/21에 빅커머스 스토어 10만 개에다가 'WebMCP'라는 걸 디폴트로 켜버렸음. 뭐냐면 — 고객이 브라우저에서 AI한테 '15만원 이하 가벼운 자켓 찾아줘' 시키면, 그 AI가 내 쇼핑몰 상품·가격을 직접 뒤져서 장바구니까지 담아줌. 나는 신청도 안 했는데 자동으로 켜진 거임. 체크아웃은 내 사이트에서 하니까 당장 큰일은 아닌데, 문제는 AI가 가격 비교를 훨씬 쉽고 당연하게 해버린다는 거. 디자인 예쁘게 꾸미는 거보다 내 가격·상품정보가 AI한테 어떻게 읽히는지가 더 중요해지는 중",
+      "source_url": "https://investors.bigcommerce.com/news-releases/news-release-details/commerce-and-cloudflare-bring-ai-shopping-assistants-bigcommerce"
     }
   ],
   "hackernews_highlights": [
-    "국내에서 'AI 워크슬롭'(AI로 대충 끝낸 업무 결과물 뒷수습을 동료가 떠안는 현상) 논란이 커지는 중(서울신문, 2026-10-20)이지만 자사몰/이커머스 운영자 타겟과 거리가 있어 오늘 추천에서는 제외."
+    "HN 10월 상위권은 'AI가 피싱 메일의 어색한 티를 지워버려 탐지가 어려워졌다'(Proofpoint 보고, The Hacker News 10월)는 보안 이슈가 화제지만, 보안 연구자/IT 관리자 중심 소재라 자사몰 운영자·일반 대중 타겟과 거리가 있어 오늘 추천에서는 제외."
   ],
-  "recommended_morning": "자사몰 운영자를 직접 호명해, 쇼피파이가 2026-10-13 공개한 'Shop MCP'(챗GPT·클로드 같은 AI 에이전트가 카탈로그 검색부터 Shop Pay 결제까지 채팅 안에서 끝내는 기능)를 '아직 한국엔 안 왔지만 방향은 정해졌다 — 지금부터 상품정보를 AI 친화적으로 정리해둬야 한다'는 선제 경고로 연결. big_tech_news[0].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
-  "recommended_evening": "자사몰 운영자를 직접 호명해, 챗GPT 'Shop at' 버튼의 56%가 대형몰로 쏠리고 자사몰은 5%뿐이라는 수치(출처로 잡히면 33%까지 상승)를 '내 상품페이지가 AI한테 출처로 인용되는지가 손님 유입을 5배 가른다'는 반전 경고로 재프레이밍. big_tech_news[1].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
+  "recommended_morning": "자사몰/개인사업자 사장님을 직접 호명해, 10/20 출시된 ChatGPT 'Locked Chats'(PIN·Face ID로 특정 대화 숨기는 기능)를 '매출·거래처 민감한 얘기 챗GPT한테 상담하면서 찜찜했던 사람'에게 바로 써먹는 꿀팁으로 소개하되, 완전 암호화는 아니라는 한계까지 짚어 신뢰도 확보. big_tech_news[0].hook_idea 그대로 사용, topic_tag=AI_THREADS.",
+  "recommended_evening": "자사몰 운영자를 직접 호명해, 10/21 Cloudflare가 BigCommerce 스토어 10만 개에 WebMCP를 디폴트 온으로 켜버린 사실(내가 신청 안 했는데 이미 AI 에이전트가 내 쇼핑몰 가격을 비교 중)을 '디자인보다 가격·상품정보 구조가 더 중요해진다'는 경고성 핫테이크로 재프레이밍. big_tech_news[1].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
   "metadata": {
     "source_urls": [
-      "https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp",
-      "https://www.wislr.com/articles/chatgpt-shop-at-buttons-big-box/"
+      "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+      "https://investors.bigcommerce.com/news-releases/news-release-details/commerce-and-cloudflare-bring-ai-shopping-assistants-bigcommerce"
     ]
   }
 }
