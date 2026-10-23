@@ -1,34 +1,35 @@
 {
-  "date": "2026-10-22",
-  "signal_applied": "team_signal.strategic_review(week_of 2026-10-19): target_callout 훅(특정 대상 직접 호명)으로 첫 문장 고정, 뉴스 받아쓰기 금지 지시 계속 적용. stop_doing의 'Apps in ChatGPT', '음성모드' 소재와 어제(10/21)의 Shopify Shop MCP / 챗GPT Shop at 버튼 소재와 겹치지 않도록, 오늘은 ①ChatGPT Locked Chats(프라이버시, 10/20) ②Cloudflare×BigCommerce WebMCP 10만 스토어 디폴트 온(10/21)으로 소재 교체.",
+  "date": "2026-10-23",
+  "signal_applied": "team_signal.strategic_review(week_of 2026-10-19): target_callout 훅(특정 대상 직접 호명) 고정, 뉴스 받아쓰기 금지 계속 적용. 어제(10/22) 소재였던 ChatGPT Locked Chats / Cloudflare×BigCommerce WebMCP와 겹치지 않도록, 오늘은 ①GPT-6 Intelligent UI(10/7~8 전 플랜 롤아웃, 엑셀 대신 챗GPT로 비교표·계산기 뽑는 활용법) ②월마트 'Agent Profiles'(10/21 발표, AI 에이전트가 고객 대신 쇼핑하는 걸 공식 인프라로 — 아마존의 '외부 에이전트 차단'과 정반대 전략)로 소재 교체.",
   "github_hot": [
-    "대중성 게이트 통과 레포 없음 — 오늘 상위권(anomalyco/opencode 21만+스타 코딩 에이전트, msitarzewski/agency-agents, obra/superpowers, debpalash/VoiceStudio 등)은 전부 설치·실행에 개발 지식이 필요한 개발자 전용 툴. 코드 안 만지는 사람은 체감 못 해 제외."
+    "대중성 게이트 통과 레포 없음 — 오늘도 GitHub trending은 코딩 에이전트/CLI 툴 중심(개발자 전용)이라 일반 대중 타겟 기준 전부 제외."
   ],
   "big_tech_news": [
     {
-      "source": "OpenAI 'Locked Chats' 공식 출시 (TechCrunch, 2026-10-20)",
-      "topic": "OpenAI가 2026-10-20 ChatGPT에 'Locked Chats'(잠금 대화) 기능을 출시. 특정 대화를 4자리 PIN이나 Face ID/Touch ID로 잠가두면 일반 대화 목록·검색·고정된 채팅에서 안 보이게 숨길 수 있다. Free·Go·Plus·Pro·Business·Enterprise·Edu 전 플랜에 순차 적용(웹·iOS·안드로이드·신규 데스크톱 앱). 단, 종단간 암호화는 아니고 학습/보관 정책도 안 바뀌며, PIN 재설정하면 잠긴 대화 자체가 삭제됨.",
-      "angle": "자사몰/개인사업자 직결 — 매출 고민, 거래처와의 민감한 협상 메모, 고객 컴플레인 초안, 직원 문제 상담 같은 걸 챗GPT한테 털어놓으면서도 '이거 기록에 남으면 어쩌지' 찜찜했던 사람한테 바로 써먹을 수 있는 기능. 단, 완전 암호화가 아니라는 한계까지 알려주면 '먼저 앎 + 바로 씀' 두 마리 다 잡는 소재.",
-      "hook_idea": "챗GPT로 매출 고민이나 거래처 얘기 상담해본 사장님만 보셈. 10/20부터 '잠금 대화' 기능 생겼음 — 대화 하나 눌러서 잠그면 4자리 핀이나 페이스아이디로만 열림. 일반 대화 목록, 검색, 고정된 채팅 어디에도 안 뜨고 완전히 숨겨짐. 근데 이거 완전 암호화는 아니고, 핀 재설정하면 그 대화 자체가 삭제돼버림. 그니까 '숨기기용'이지 '보안용'은 아니라는 거 알고 써야 함. 그래도 거래처 협상 메모나 매출 민감한 얘기 chatGPT한테 상담할 때 가족이나 직원이 내 폰 볼까봐 찜찜했으면 지금 바로 써볼만함",
-      "source_url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/"
+      "source": "OpenAI, GPT-6 'Intelligent UI' 전 플랜 롤아웃 (TechRepublic 외, 2026-10-07~08)",
+      "topic": "OpenAI가 2026-10-07 Plus/Pro/Business/Enterprise부터, 10-08에는 Free/Go까지 ChatGPT에 GPT-6 'Intelligent UI'를 전면 롤아웃. 질문을 던지면 텍스트 답변 대신 비교표, 계산기, 청구서 분할기, 다이어그램, 작은 인터랙티브 도구를 대화 안에서 바로 만들어준다. 모델이 생각 중일 때부터 화면이 뜨기 시작해서, 멈추지 않고 추가 결과가 이어서 채워지는 방식.",
+      "angle": "자사몰/직장인 직결 — 엑셀 켜서 비교표나 정산표 만드는 대신 '이 조건들 표로 비교해줘', '이 숫자들로 정산 계산기 만들어줘'라고 말로만 시키면 그 자리에서 완성된 도구가 뜬다. 무료 플랜도 다 적용돼서 진입장벽 없음. 2주 지난 소식이지만 '쓸 줄 모르고 그냥 텍스트로만 쓰는' 사람이 아직 다수라 '바로 써먹기' 소재로 강함.",
+      "hook_idea": "챗GPT로 엑셀 작업 대신하는 사람만 보셈. 지난주부터 챗GPT에 '인텔리전트 UI'라는 게 생겨서, 이제 텍스트로 답 안 주고 그 자리에서 비교표·계산기·정산 양식을 직접 만들어줌. 예를 들어 '거래처 A B C 단가·마진 비교표 만들어줘' 하면 진짜 표가 떠버림. 공짜 플랜도 10/8부터 다 적용됨. 근데 아직도 챗GPT한테 그냥 '설명해줘'만 시키는 사람 많던데, 이거 알면 엑셀 켤 일이 반으로 줆",
+      "source_url": "https://www.techrepublic.com/article/news-gpt-6-intelligent-ui-charts-forms/"
     },
     {
-      "source": "Cloudflare, BigCommerce 10만 스토어에 WebMCP 디폴트 온 (BigCommerce 공식 투자자 발표, 2026-10-21)",
-      "topic": "Commerce.com과 Cloudflare가 2026-10-21 파트너십을 발표, WebMCP라는 표준을 통해 고객 브라우저의 AI 에이전트가 BigCommerce 가맹점 스토어에서 실제 상품·가격을 직접 검색·비교하고 장바구니까지 담을 수 있게 됐다. 거의 10만 개 BigCommerce 스토어에 걸쳐 별도 코드 작업 없이 자동으로 켜졌으며(디폴트 온), 체크아웃과 고객 관계는 가맹점 사이트에 그대로 남는 구조.",
-      "angle": "자사몰 운영자 직결 — 내가 신청하지도 않았는데 내 쇼핑몰이 이미 'AI 에이전트가 맘대로 뒤지고 비교하는 매장'이 돼버렸다는 얘기. 체크아웃은 내 사이트에 남는다지만, 고객이 '가장 싼 거 찾아줘' 하면 AI가 자동으로 내 상품과 경쟁사 상품 가격을 나란히 비교해버리는 구조라 가격 경쟁이 더 노골적으로 심해질 수 있다는 경고.",
-      "hook_idea": "자사몰 하는 사람만 보셈. 클라우드플레어가 10/21에 빅커머스 스토어 10만 개에다가 'WebMCP'라는 걸 디폴트로 켜버렸음. 뭐냐면 — 고객이 브라우저에서 AI한테 '15만원 이하 가벼운 자켓 찾아줘' 시키면, 그 AI가 내 쇼핑몰 상품·가격을 직접 뒤져서 장바구니까지 담아줌. 나는 신청도 안 했는데 자동으로 켜진 거임. 체크아웃은 내 사이트에서 하니까 당장 큰일은 아닌데, 문제는 AI가 가격 비교를 훨씬 쉽고 당연하게 해버린다는 거. 디자인 예쁘게 꾸미는 거보다 내 가격·상품정보가 AI한테 어떻게 읽히는지가 더 중요해지는 중",
-      "source_url": "https://investors.bigcommerce.com/news-releases/news-release-details/commerce-and-cloudflare-bring-ai-shopping-assistants-bigcommerce"
+      "source": "월마트, AI 에이전트 전용 쇼핑 인프라 'Agent Profiles' 발표 (ChainStoreAge·Cryptopolitan, 2026-10-21)",
+      "topic": "월마트가 2026-10-21 AI 에이전트가 고객 대신 쇼핑하게 해주는 인프라 3종(Agent Profiles, Walmart Agent Gateway, 에이전트 준수 약관)을 공개. 고객은 계정 안에 AI 에이전트별 전용 프로필을 만들어 에이전트가 산 내역을 본인 구매와 분리해서 볼 수 있고, '매번 승인' 또는 '50달러·100달러·200달러 한도 내 자동구매' 중 선택 가능. 월마트+ 멤버십 없이도 누구나 쓸 수 있고 한 달 내 출시 예정. 반대로 아마존은 외부 AI 에이전트 접근을 막고 자체 에이전트만 구축 중.",
+      "angle": "자사몰/이커머스 셀러 직결 — 미국에서는 이미 '내 AI 비서한테 한도 주고 쇼핑 맡기기'가 대형 유통사 공식 기능이 됐다는 것. 아마존은 막고 월마트는 여는 정반대 전략이라 '뭐가 맞나' 논쟁거리. 한국엔 아직 안 왔지만 이 방향으로 간다면, 자사몰 상품명·가격·옵션 정보가 '사람이 보기 좋게'가 아니라 'AI 에이전트가 읽고 비교하기 좋게' 짜여 있어야 선택받는 시대가 온다는 경고성 소재.",
+      "hook_idea": "자사몰/이커머스 하는 사람만 보셈. 월마트가 10/21에 'AI 에이전트 전용 프로필' 만들어버림 — 고객이 내 AI 비서한테 '100달러까지는 알아서 사도 돼' 한도 주면 에이전트가 진짜 장바구니 담고 결제까지 함. 월마트+ 가입 안 해도 됨. 근데 아마존은 반대로 외부 AI 에이전트는 다 막고 자기네 것만 씀. 둘 중 뭐가 맞는지는 모르겠는데, 확실한 건 조만간 '내 상품을 사람이 보냐 AI가 보냐'가 갈릴 거고, 그럼 상세페이지 예쁘게 꾸미는 것보다 가격·옵션 정보를 AI가 헷갈리지 않게 정리해두는 게 먼저 숙제가 될 거라는 거",
+      "source_url": "https://chainstoreage.com/walmart-lets-ai-agents-shop-customers-sets-guardrails"
     }
   ],
   "hackernews_highlights": [
-    "HN 10월 상위권은 'AI가 피싱 메일의 어색한 티를 지워버려 탐지가 어려워졌다'(Proofpoint 보고, The Hacker News 10월)는 보안 이슈가 화제지만, 보안 연구자/IT 관리자 중심 소재라 자사몰 운영자·일반 대중 타겟과 거리가 있어 오늘 추천에서는 제외."
+    "HN/개발자 커뮤니티 쪽 화제(OpenAI·Google 레거시 언어 지원 개선, PHP 제로데이 공동 발견 등)는 전부 개발자·보안 담당자 타겟이라 일반 대중 기준 오늘 추천에서 제외."
   ],
-  "recommended_morning": "자사몰/개인사업자 사장님을 직접 호명해, 10/20 출시된 ChatGPT 'Locked Chats'(PIN·Face ID로 특정 대화 숨기는 기능)를 '매출·거래처 민감한 얘기 챗GPT한테 상담하면서 찜찜했던 사람'에게 바로 써먹는 꿀팁으로 소개하되, 완전 암호화는 아니라는 한계까지 짚어 신뢰도 확보. big_tech_news[0].hook_idea 그대로 사용, topic_tag=AI_THREADS.",
-  "recommended_evening": "자사몰 운영자를 직접 호명해, 10/21 Cloudflare가 BigCommerce 스토어 10만 개에 WebMCP를 디폴트 온으로 켜버린 사실(내가 신청 안 했는데 이미 AI 에이전트가 내 쇼핑몰 가격을 비교 중)을 '디자인보다 가격·상품정보 구조가 더 중요해진다'는 경고성 핫테이크로 재프레이밍. big_tech_news[1].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
+  "recommended_morning": "엑셀로 비교표·정산표 만드는 직장인/자사몰 운영자를 직접 호명해, 10/7~8 전 플랜(무료 포함) 롤아웃된 ChatGPT 'GPT-6 Intelligent UI'(말로 시키면 비교표·계산기를 대화 안에서 바로 만들어주는 기능)를 '엑셀 켤 일 줄이는' 바로 써먹는 꿀팁으로 소개. big_tech_news[0].hook_idea 그대로 사용, topic_tag=AI_THREADS.",
+  "recommended_evening": "자사몰/이커머스 셀러를 직접 호명해, 10/21 월마트가 발표한 'AI 에이전트 전용 쇼핑 인프라(Agent Profiles, 자동구매 한도)'를 아마존의 '외부 에이전트 차단' 전략과 대비시켜 '사람이 아니라 AI가 내 상품을 고르는 시대가 온다'는 경고성 핫테이크로 재프레이밍. big_tech_news[1].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
   "metadata": {
     "source_urls": [
-      "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-      "https://investors.bigcommerce.com/news-releases/news-release-details/commerce-and-cloudflare-bring-ai-shopping-assistants-bigcommerce"
+      "https://www.techrepublic.com/article/news-gpt-6-intelligent-ui-charts-forms/",
+      "https://chainstoreage.com/walmart-lets-ai-agents-shop-customers-sets-guardrails",
+      "https://www.cryptopolitan.com/ai-agents-walmart-profiles-spending-caps/"
     ]
   }
 }
