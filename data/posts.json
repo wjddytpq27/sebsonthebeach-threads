@@ -1037,5 +1037,16 @@
     "fact_checked": true,
     "fact_check_status": "pass",
     "fact_check_reason": "검증 통과"
+  },
+  {
+    "date": "2026-10-23",
+    "content": "엑셀 켜서 비교표나 정산표 만드는 자사몰 운영자한테 하는 얘기. 챗GPT한테 말로 항목만 나열하면서 비교해달라고 하면 대화창 안에서 바로 표로 정리해줌. 서식 만지는 시간이 줄어드는 거라 간단한 비교나 계산은 굳이 엑셀 켤 필요 없음. 복잡한 수식까지는 못 미더워도 빠른 비교용으론 이게 더 빠름.",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
