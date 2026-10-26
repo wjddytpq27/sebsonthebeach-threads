@@ -1,35 +1,35 @@
 {
-  "date": "2026-10-23",
-  "signal_applied": "team_signal.strategic_review(week_of 2026-10-19): target_callout 훅(특정 대상 직접 호명) 고정, 뉴스 받아쓰기 금지 계속 적용. 어제(10/22) 소재였던 ChatGPT Locked Chats / Cloudflare×BigCommerce WebMCP와 겹치지 않도록, 오늘은 ①GPT-6 Intelligent UI(10/7~8 전 플랜 롤아웃, 엑셀 대신 챗GPT로 비교표·계산기 뽑는 활용법) ②월마트 'Agent Profiles'(10/21 발표, AI 에이전트가 고객 대신 쇼핑하는 걸 공식 인프라로 — 아마존의 '외부 에이전트 차단'과 정반대 전략)로 소재 교체.",
+  "date": "2026-10-26",
+  "signal_applied": "team_signal.strategic_review(week_of 2026-10-26): 앞으로 2주 '모든 글 첫 줄 target_callout 고정 + 하루 2개 빠짐없이 발행'이 최우선 — 소재 참신함보다 이 템플릿 유지가 핵심 레버. stop_doing(Apps in ChatGPT, 엑셀 비교표/정산표) 및 직전 이틀 소재(10/22 Locked Chats·Cloudflare WebMCP, 10/23 GPT-6 Intelligent UI·Walmart Agent Profiles)와 겹치지 않게, 오늘은 ①ChatGPT Slides(10/16 출시, PPT 대신 대화로 슬라이드 제작·협업) ②UCP 범용 커머스 결제표준(나이키·세포라·타겟 등에서 이미 가동 중인 AI 에이전트 결제 인프라)로 교체. 둘 다 target_callout(직장인 / 자사몰·스마트스토어 운영자 직접 호명) 구조로 설계.",
   "github_hot": [
-    "대중성 게이트 통과 레포 없음 — 오늘도 GitHub trending은 코딩 에이전트/CLI 툴 중심(개발자 전용)이라 일반 대중 타겟 기준 전부 제외."
+    "대중성 게이트 통과 레포 없음 — 오늘 GitHub trending은 Cloudflare 보안감사 스킬, NVIDIA 에이전트 런타임, AWS MCP 툴킷, Gemini CLI 등 전부 개발자 전용이라 전부 제외."
   ],
   "big_tech_news": [
     {
-      "source": "OpenAI, GPT-6 'Intelligent UI' 전 플랜 롤아웃 (TechRepublic 외, 2026-10-07~08)",
-      "topic": "OpenAI가 2026-10-07 Plus/Pro/Business/Enterprise부터, 10-08에는 Free/Go까지 ChatGPT에 GPT-6 'Intelligent UI'를 전면 롤아웃. 질문을 던지면 텍스트 답변 대신 비교표, 계산기, 청구서 분할기, 다이어그램, 작은 인터랙티브 도구를 대화 안에서 바로 만들어준다. 모델이 생각 중일 때부터 화면이 뜨기 시작해서, 멈추지 않고 추가 결과가 이어서 채워지는 방식.",
-      "angle": "자사몰/직장인 직결 — 엑셀 켜서 비교표나 정산표 만드는 대신 '이 조건들 표로 비교해줘', '이 숫자들로 정산 계산기 만들어줘'라고 말로만 시키면 그 자리에서 완성된 도구가 뜬다. 무료 플랜도 다 적용돼서 진입장벽 없음. 2주 지난 소식이지만 '쓸 줄 모르고 그냥 텍스트로만 쓰는' 사람이 아직 다수라 '바로 써먹기' 소재로 강함.",
-      "hook_idea": "챗GPT로 엑셀 작업 대신하는 사람만 보셈. 지난주부터 챗GPT에 '인텔리전트 UI'라는 게 생겨서, 이제 텍스트로 답 안 주고 그 자리에서 비교표·계산기·정산 양식을 직접 만들어줌. 예를 들어 '거래처 A B C 단가·마진 비교표 만들어줘' 하면 진짜 표가 떠버림. 공짜 플랜도 10/8부터 다 적용됨. 근데 아직도 챗GPT한테 그냥 '설명해줘'만 시키는 사람 많던데, 이거 알면 엑셀 켤 일이 반으로 줆",
-      "source_url": "https://www.techrepublic.com/article/news-gpt-6-intelligent-ui-charts-forms/"
+      "source": "OpenAI, ChatGPT Slides 출시 (androidheadlines.com 외, 2026-10-16)",
+      "topic": "ChatGPT에 'Slides' 기능이 생겨서, 대화·업로드한 문서·텍스트 개요를 그대로 슬라이드 덱으로 만들어준다. 텍스트·이미지·도형·차트를 직접 수정하거나 ChatGPT에게 말로 수정 요청 가능. 팀원을 초대해 실시간으로 같은 덱을 같이 편집하고 댓글도 남길 수 있음. 완성본은 ChatGPT 안에서 바로 발표하거나 PowerPoint·Google Slides·PDF로 내보내기 가능. 단, Plus($20) 요금제는 제외되고 Pro·Business·Enterprise(Space 기능 보유) 사용자만 쓸 수 있음.",
+      "angle": "직장인 직결 — 보고서·제안서 PPT 만들 때 파워포인트 켜는 대신 '이 내용으로 슬라이드 만들어줘'라고만 하면 초안이 바로 나오고, 팀원이랑 실시간 공동편집도 됨. 회사에서 ChatGPT Business/Enterprise 쓰는 사람은 지금 당장 써볼 수 있는데 아직 모르는 사람 많음. 반전 포인트: 개인 돈 내고 쓰는 Plus 요금제는 오히려 제외라서, '회사 계정인지 개인 계정인지'에 따라 쓸 수 있는 사람이 갈림 — 이 디테일 자체가 화제성.",
+      "hook_idea": "회사에서 보고서/제안서 PPT 만드는 사람만 보셈. 지난주부터 챗GPT에 'Slides'라는 기능 생겨서, 대화 내용이나 문서 던져주면 그 자리에서 슬라이드 덱을 만들어줌 — 사진·차트까지 알아서 넣고, 팀원 초대해서 같이 실시간으로 고칠 수도 있고, 완성되면 파워포인트 파일로 그대로 내보내기도 됨. 근데 웃긴 게, 개인이 돈 내는 Plus 요금제는 안 되고 회사가 쓰는 Business/Enterprise 계정만 됨. 혹시 회사 계정 챗GPT 쓰는 사람이면 지금 바로 써볼 수 있는데 아직도 몰라서 PPT 한 장 한 장 손으로 치는 사람 많더라",
+      "source_url": "https://www.androidheadlines.com/2026/10/openai-chatgpt-slides-collaboration-rollout.html"
     },
     {
-      "source": "월마트, AI 에이전트 전용 쇼핑 인프라 'Agent Profiles' 발표 (ChainStoreAge·Cryptopolitan, 2026-10-21)",
-      "topic": "월마트가 2026-10-21 AI 에이전트가 고객 대신 쇼핑하게 해주는 인프라 3종(Agent Profiles, Walmart Agent Gateway, 에이전트 준수 약관)을 공개. 고객은 계정 안에 AI 에이전트별 전용 프로필을 만들어 에이전트가 산 내역을 본인 구매와 분리해서 볼 수 있고, '매번 승인' 또는 '50달러·100달러·200달러 한도 내 자동구매' 중 선택 가능. 월마트+ 멤버십 없이도 누구나 쓸 수 있고 한 달 내 출시 예정. 반대로 아마존은 외부 AI 에이전트 접근을 막고 자체 에이전트만 구축 중.",
-      "angle": "자사몰/이커머스 셀러 직결 — 미국에서는 이미 '내 AI 비서한테 한도 주고 쇼핑 맡기기'가 대형 유통사 공식 기능이 됐다는 것. 아마존은 막고 월마트는 여는 정반대 전략이라 '뭐가 맞나' 논쟁거리. 한국엔 아직 안 왔지만 이 방향으로 간다면, 자사몰 상품명·가격·옵션 정보가 '사람이 보기 좋게'가 아니라 'AI 에이전트가 읽고 비교하기 좋게' 짜여 있어야 선택받는 시대가 온다는 경고성 소재.",
-      "hook_idea": "자사몰/이커머스 하는 사람만 보셈. 월마트가 10/21에 'AI 에이전트 전용 프로필' 만들어버림 — 고객이 내 AI 비서한테 '100달러까지는 알아서 사도 돼' 한도 주면 에이전트가 진짜 장바구니 담고 결제까지 함. 월마트+ 가입 안 해도 됨. 근데 아마존은 반대로 외부 AI 에이전트는 다 막고 자기네 것만 씀. 둘 중 뭐가 맞는지는 모르겠는데, 확실한 건 조만간 '내 상품을 사람이 보냐 AI가 보냐'가 갈릴 거고, 그럼 상세페이지 예쁘게 꾸미는 것보다 가격·옵션 정보를 AI가 헷갈리지 않게 정리해두는 게 먼저 숙제가 될 거라는 거",
-      "source_url": "https://chainstoreage.com/walmart-lets-ai-agents-shop-customers-sets-guardrails"
+      "source": "Google·Shopify 주도 UCP(Universal Commerce Protocol), 나이키·세포라·타겟 등 美 대형 유통 결제에 실가동 (productrise.app·shopify.engineering 외, 2026-01 발표 후 점진 확산 중)",
+      "topic": "AI 에이전트가 상품을 찾고, 장바구니에 담고, 결제까지 끝낼 수 있게 해주는 개방형 표준 'UCP'가 이미 미국 나이키·세포라·타겟·울타뷰티·월마트·웨이페어, Shopify 입점 브랜드(Fenty, Steve Madden 등)에서 실제로 돌아가고 있음. 처음엔 반대했던 아마존도 2026년 4월 UCP 운영위원회(Tech Council)에 합류하며 입장을 바꿈. 캐나다·호주가 다음 확장 지역이고 영국이 그 뒤를 잇는 중.",
+      "angle": "자사몰/스마트스토어 셀러 직결 — '고객 대신 AI가 장바구니 담고 결제까지' 하는 게 더 이상 가설이 아니라 美 대형 리테일에서 이미 실가동 중인 표준이라는 것. 처음엔 반대하던 아마존까지 합류했다는 반전이 '시간문제'라는 신호. 한국엔 아직 안 왔지만, 이 흐름이 오면 상품 상세페이지를 사람이 보기 좋게가 아니라 AI 에이전트가 가격·옵션·배송조건을 헷갈리지 않게 읽을 수 있도록 정리해두는 게 먼저 숙제가 될 거라는 경고.",
+      "hook_idea": "자사몰이나 스마트스토어 운영하는 사람만 보셈. 미국에서는 지금 나이키, 세포라, 타겟, 월마트에서 고객 AI 비서가 직접 장바구니 담고 결제까지 끝내는 게 실제로 돌아가는 중임 (UCP라는 공통 표준 깔아서). 처음에 이거 반대하던 아마존도 올해 4월에 결국 합류함. 한국엔 아직 안 왔는데, 이 방향으로 간다는 건 확실하고 그럼 내 상품 상세페이지는 사람이 예쁘게 보라고 꾸미는 것보다 AI가 가격·옵션·배송조건 헷갈리지 않게 읽을 수 있게 정리해두는 게 먼저 숙제가 될 거임",
+      "source_url": "https://productrise.app/blog/ucp-rollout-update"
     }
   ],
   "hackernews_highlights": [
-    "HN/개발자 커뮤니티 쪽 화제(OpenAI·Google 레거시 언어 지원 개선, PHP 제로데이 공동 발견 등)는 전부 개발자·보안 담당자 타겟이라 일반 대중 기준 오늘 추천에서 제외."
+    "HN 쪽은 Claude Duet 공개 논쟁(565점), 'AI 탓에 미디어·영화·예술 분야 일자리 20만개 감소' 논쟁(505점) 등이 화제였으나, 전자는 미국 Pro/Max 대기자 명단 한정 기능이라 접근성 낮고 후자는 특정 출처 수치 재검증 안 돼서 오늘 추천에서 제외."
   ],
-  "recommended_morning": "엑셀로 비교표·정산표 만드는 직장인/자사몰 운영자를 직접 호명해, 10/7~8 전 플랜(무료 포함) 롤아웃된 ChatGPT 'GPT-6 Intelligent UI'(말로 시키면 비교표·계산기를 대화 안에서 바로 만들어주는 기능)를 '엑셀 켤 일 줄이는' 바로 써먹는 꿀팁으로 소개. big_tech_news[0].hook_idea 그대로 사용, topic_tag=AI_THREADS.",
-  "recommended_evening": "자사몰/이커머스 셀러를 직접 호명해, 10/21 월마트가 발표한 'AI 에이전트 전용 쇼핑 인프라(Agent Profiles, 자동구매 한도)'를 아마존의 '외부 에이전트 차단' 전략과 대비시켜 '사람이 아니라 AI가 내 상품을 고르는 시대가 온다'는 경고성 핫테이크로 재프레이밍. big_tech_news[1].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
+  "recommended_morning": "회사 계정으로 ChatGPT Business/Enterprise를 쓰는 직장인을 직접 호명해, 10/16 출시된 'ChatGPT Slides'(대화·문서를 슬라이드 덱으로 바로 만들고 팀원과 실시간 공동편집, PowerPoint/Google Slides/PDF 내보내기) 기능을 PPT 작업 시간을 줄이는 바로 써먹는 꿀팁으로 소개. 개인 Plus 요금제는 제외되고 회사 계정만 된다는 반전 디테일을 훅에 넣을 것. big_tech_news[0].hook_idea 그대로 사용, topic_tag=AI_THREADS.",
+  "recommended_evening": "자사몰/스마트스토어 운영자를 직접 호명해, 美 나이키·세포라·타겟 등에서 이미 실가동 중인 AI 에이전트 결제 표준 'UCP'(처음 반대하던 아마존도 올해 4월 합류)를 소개하고, '내 상품 상세페이지를 사람이 아니라 AI가 읽는 시대가 온다'는 경고성 핫테이크로 재프레이밍. big_tech_news[1].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
   "metadata": {
     "source_urls": [
-      "https://www.techrepublic.com/article/news-gpt-6-intelligent-ui-charts-forms/",
-      "https://chainstoreage.com/walmart-lets-ai-agents-shop-customers-sets-guardrails",
-      "https://www.cryptopolitan.com/ai-agents-walmart-profiles-spending-caps/"
+      "https://www.androidheadlines.com/2026/10/openai-chatgpt-slides-collaboration-rollout.html",
+      "https://productrise.app/blog/ucp-rollout-update",
+      "https://shopify.engineering/UCP"
     ]
   }
 }
