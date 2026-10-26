@@ -1048,5 +1048,16 @@
     "fact_check_reason": "검증 통과",
     "blocked": false,
     "regenerated": 1
+  },
+  {
+    "date": "2026-10-26",
+    "content": "회의록이나 보고서 쌓아놓고 안 읽은 거 많은 직장인만 보셈. 구글 노트북LM에 그 문서 던지면 AI 둘이 팟캐스트처럼 대화하면서 요약해주는 '오디오 개요' 기능 있음. 던진 문서 내용만 갖고 말해서 엉뚱한 소리도 잘 안 함. 눈으로 스크롤할 필요 없이 출퇴근길에 듣기만 하면 됨. 나는 이거 쓰고부터 긴 자료는 거의 안 읽음. 이런 거 두고 왜 아직도 PDF 눈으로 다 넘기고 있냐?",
+    "topic": "AI_THREADS",
+    "reply": "",
+    "fact_checked": true,
+    "fact_check_status": "pass",
+    "fact_check_reason": "검증 통과",
+    "blocked": false,
+    "regenerated": 1
   }
 ]
