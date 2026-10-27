@@ -1,35 +1,56 @@
 {
-  "date": "2026-10-26",
-  "signal_applied": "team_signal.strategic_review(week_of 2026-10-26): 앞으로 2주 '모든 글 첫 줄 target_callout 고정 + 하루 2개 빠짐없이 발행'이 최우선 — 소재 참신함보다 이 템플릿 유지가 핵심 레버. stop_doing(Apps in ChatGPT, 엑셀 비교표/정산표) 및 직전 이틀 소재(10/22 Locked Chats·Cloudflare WebMCP, 10/23 GPT-6 Intelligent UI·Walmart Agent Profiles)와 겹치지 않게, 오늘은 ①ChatGPT Slides(10/16 출시, PPT 대신 대화로 슬라이드 제작·협업) ②UCP 범용 커머스 결제표준(나이키·세포라·타겟 등에서 이미 가동 중인 AI 에이전트 결제 인프라)로 교체. 둘 다 target_callout(직장인 / 자사몰·스마트스토어 운영자 직접 호명) 구조로 설계.",
+  "date": "2026-10-27",
+  "signal_applied": "team_signal status: normal, trend_scout directive: '평소대로'. 단, strategic_review(week_of 2026-10-26).next_2weeks_focus가 최우선 지시 — 모든 글 첫 줄을 '[특정 대상] + 명령/경고형 호출'(target_callout) 템플릿으로 고정해야 함. stop_doing(Apps in ChatGPT, 엑셀 비교표/정산표) 및 최근 소재(10/22 Locked Chats·Cloudflare WebMCP, 10/23 GPT-6 Intelligent UI·Walmart Agent Profiles, 10/26 ChatGPT Slides·UCP)와 전부 겹치지 않는 새 소재로 교체: ①Microsoft 6만명(전체 인력 약 25%) 자발적 퇴사 프로그램(AI 투자비 충당 목적, 10/26 발표) ②Anthropic S-1 IPO 제출(상반기 매출 163억달러·전년比 1300%↑, 순손실 807억달러, 10/26 공개). 둘 다 target_callout 구조로 설계.",
   "github_hot": [
-    "대중성 게이트 통과 레포 없음 — 오늘 GitHub trending은 Cloudflare 보안감사 스킬, NVIDIA 에이전트 런타임, AWS MCP 툴킷, Gemini CLI 등 전부 개발자 전용이라 전부 제외."
+    {
+      "repo": "gitroomhq/postiz-app",
+      "stars_today": 188,
+      "why_hot": "오픈소스 셀프호스팅 소셜미디어 스케줄링 툴(37.8k stars 누적)에 '에이전틱' 기능 추가 — Claude, ChatGPT, Cursor 등 AI 에이전트가 MCP로 직접 연결해 포스트 초안 작성·이미지/영상 생성·30개 이상 채널 예약 발행까지 수행. 개발자 전용 레포가 대부분인 오늘 GitHub trending(Nutlope/hallmark, TauricResearch/TradingAgents, NVIDIA/SkillSpector 등) 중 유일하게 마케터·크리에이터도 바로 이해·활용 가능한 소재.",
+      "post_angle": "SNS 여러 개 운영하는 사람만 보셈 — 이제 AI한테 '이 내용으로 이번주 포스팅 계획 짜줘'라고만 하면 챗GPT/클로드가 직접 예약 발행까지 끝내주는 오픈소스 툴 나옴"
+    }
   ],
   "big_tech_news": [
     {
-      "source": "OpenAI, ChatGPT Slides 출시 (androidheadlines.com 외, 2026-10-16)",
-      "topic": "ChatGPT에 'Slides' 기능이 생겨서, 대화·업로드한 문서·텍스트 개요를 그대로 슬라이드 덱으로 만들어준다. 텍스트·이미지·도형·차트를 직접 수정하거나 ChatGPT에게 말로 수정 요청 가능. 팀원을 초대해 실시간으로 같은 덱을 같이 편집하고 댓글도 남길 수 있음. 완성본은 ChatGPT 안에서 바로 발표하거나 PowerPoint·Google Slides·PDF로 내보내기 가능. 단, Plus($20) 요금제는 제외되고 Pro·Business·Enterprise(Space 기능 보유) 사용자만 쓸 수 있음.",
-      "angle": "직장인 직결 — 보고서·제안서 PPT 만들 때 파워포인트 켜는 대신 '이 내용으로 슬라이드 만들어줘'라고만 하면 초안이 바로 나오고, 팀원이랑 실시간 공동편집도 됨. 회사에서 ChatGPT Business/Enterprise 쓰는 사람은 지금 당장 써볼 수 있는데 아직 모르는 사람 많음. 반전 포인트: 개인 돈 내고 쓰는 Plus 요금제는 오히려 제외라서, '회사 계정인지 개인 계정인지'에 따라 쓸 수 있는 사람이 갈림 — 이 디테일 자체가 화제성.",
-      "hook_idea": "회사에서 보고서/제안서 PPT 만드는 사람만 보셈. 지난주부터 챗GPT에 'Slides'라는 기능 생겨서, 대화 내용이나 문서 던져주면 그 자리에서 슬라이드 덱을 만들어줌 — 사진·차트까지 알아서 넣고, 팀원 초대해서 같이 실시간으로 고칠 수도 있고, 완성되면 파워포인트 파일로 그대로 내보내기도 됨. 근데 웃긴 게, 개인이 돈 내는 Plus 요금제는 안 되고 회사가 쓰는 Business/Enterprise 계정만 됨. 혹시 회사 계정 챗GPT 쓰는 사람이면 지금 바로 써볼 수 있는데 아직도 몰라서 PPT 한 장 한 장 손으로 치는 사람 많더라",
-      "source_url": "https://www.androidheadlines.com/2026/10/openai-chatgpt-slides-collaboration-rollout.html"
+      "source": "Microsoft, 전체 인력의 약 25%(약 6만명) 대상 자발적 퇴사 프로그램 발표 (Bloomberg·NBC News·Axios 외, 2026-10-26)",
+      "topic": "마이크로소프트가 미국·영국·캐나다·인도의 레벨70 이하(부사장급 이하 전원 해당) 직원 약 6만명에게 자발적 퇴사(voluntary buyout) 신청을 받기 시작함. 12월 초까지 신청받고 수락 시 12월 31일 퇴사, 보상은 표준 퇴직 패키지(근속 기간별 기본급 지급+주식+의료+커리어 전환 지원) 수준. 회사는 AI·데이터센터 투자 비용을 방어하기 위한 조치라고 밝혔고, 인사책임자 Amy Coleman은 '오늘 없어지는 역할이 AI로 대체되는 건 아니다'라고 선을 그음. 몇 달 전엔 레벨67 이하 대상 조기 퇴직 프로그램도 진행했고 대상자의 약 30%가 수락했었음.",
+      "angle": "경고형/직장인 직결 — 'AI가 대체한 게 아니다'라는 회사 공식 해명과 별개로, AI·데이터센터 투자비를 메우려 인력의 4분의 1에게 퇴사를 권하는 흐름 자체가 체감상 반전 포인트. 빅테크 정규직이라고 안전하지 않다는 경고 메시지로 직장인을 직접 호명하기 좋은 소재.",
+      "hook_idea": "마이크로소프트 다니는 사람만 보셈. 어제 회사가 전체 직원의 4분의 1, 그러니까 6만명한테 '자발적으로 나가라'는 퇴사 프로그램을 돌렸음. 이유는 AI랑 데이터센터에 돈을 너무 많이 써서 비용을 줄여야 한다는 거. 회사는 'AI가 사람 자리를 뺏은 건 아니다'라고 선 긋는데, 결국 AI 투자금 메우려고 사람 4명 중 1명한테 나가라는 거면 그 차이가 의미가 있나 싶음. 12월까지 신청받고 받아들이면 그 달 말에 바로 퇴사"
     },
     {
-      "source": "Google·Shopify 주도 UCP(Universal Commerce Protocol), 나이키·세포라·타겟 등 美 대형 유통 결제에 실가동 (productrise.app·shopify.engineering 외, 2026-01 발표 후 점진 확산 중)",
-      "topic": "AI 에이전트가 상품을 찾고, 장바구니에 담고, 결제까지 끝낼 수 있게 해주는 개방형 표준 'UCP'가 이미 미국 나이키·세포라·타겟·울타뷰티·월마트·웨이페어, Shopify 입점 브랜드(Fenty, Steve Madden 등)에서 실제로 돌아가고 있음. 처음엔 반대했던 아마존도 2026년 4월 UCP 운영위원회(Tech Council)에 합류하며 입장을 바꿈. 캐나다·호주가 다음 확장 지역이고 영국이 그 뒤를 잇는 중.",
-      "angle": "자사몰/스마트스토어 셀러 직결 — '고객 대신 AI가 장바구니 담고 결제까지' 하는 게 더 이상 가설이 아니라 美 대형 리테일에서 이미 실가동 중인 표준이라는 것. 처음엔 반대하던 아마존까지 합류했다는 반전이 '시간문제'라는 신호. 한국엔 아직 안 왔지만, 이 흐름이 오면 상품 상세페이지를 사람이 보기 좋게가 아니라 AI 에이전트가 가격·옵션·배송조건을 헷갈리지 않게 읽을 수 있도록 정리해두는 게 먼저 숙제가 될 거라는 경고.",
-      "hook_idea": "자사몰이나 스마트스토어 운영하는 사람만 보셈. 미국에서는 지금 나이키, 세포라, 타겟, 월마트에서 고객 AI 비서가 직접 장바구니 담고 결제까지 끝내는 게 실제로 돌아가는 중임 (UCP라는 공통 표준 깔아서). 처음에 이거 반대하던 아마존도 올해 4월에 결국 합류함. 한국엔 아직 안 왔는데, 이 방향으로 간다는 건 확실하고 그럼 내 상품 상세페이지는 사람이 예쁘게 보라고 꾸미는 것보다 AI가 가격·옵션·배송조건 헷갈리지 않게 읽을 수 있게 정리해두는 게 먼저 숙제가 될 거임",
-      "source_url": "https://productrise.app/blog/ucp-rollout-update"
+      "source": "Anthropic, 나스닥 상장 위한 S-1 제출 (Fortune·NPR·techfundingnews 외, 2026-10-26)",
+      "topic": "Anthropic이 SEC에 S-1(증권신고서)을 제출하고 나스닥에 'ANT' 티커로 상장을 신청함. 2026년 상반기(1~6월) 매출이 163억달러로 전년 동기(11.6억달러) 대비 1300% 증가했고, 매출 구성은 토큰 사용료(소비형) 121억달러 증가+구독형 30억달러 증가. 반면 같은 기간 순손실은 807억달러인데, 이 손실 대부분은 실제 현금 지출이 아니라 전환사채(convertible bond)의 공정가치 변동 회계처리에서 발생. 2분기 기준 컴퓨팅 비용 56억달러를 쓰고 매출 116억달러를 거둬 '컴퓨팅 1달러당 매출 2.08달러' 비율을 공개. 창업자 7인이 의결권 50.1%를 유지하는 구조도 명시.",
+      "angle": "숫자 반전형 — '매출 1300% 증가'와 '순손실 807억달러'가 한 회사, 같은 반년 치 숫자라는 게 비직관적. 적자 규모가 역대급인데도 상장을 추진하는 배경(손실 대부분이 회계상 숫자일 뿐 실제 현금 소각이 아니라는 디테일)을 뜯어보면 마케팅/비즈니스 종사자에게 'AI 회사의 진짜 경제학'을 보여주는 소재.",
+      "hook_idea": "Anthropic 숫자 아무도 제대로 안 읽어본 사람만 보셈. 어제 나스닥 상장 서류(S-1) 냈는데, 올해 상반기 매출이 작년 같은 기간보다 1300% 늘어서 163억 달러임. 근데 같은 기간 순손실이 807억 달러임. 매출보다 손실이 5배 큼. 근데 이게 다 돈을 태운 건 아니고, 대부분 전환사채 회계처리 때문에 찍힌 숫자라는 게 더 중요한 디테일. 컴퓨팅에 1달러 쓰면 매출 2.08달러 나온다는 것도 같이 공개함"
     }
   ],
   "hackernews_highlights": [
-    "HN 쪽은 Claude Duet 공개 논쟁(565점), 'AI 탓에 미디어·영화·예술 분야 일자리 20만개 감소' 논쟁(505점) 등이 화제였으나, 전자는 미국 Pro/Max 대기자 명단 한정 기능이라 접근성 낮고 후자는 특정 출처 수치 재검증 안 돼서 오늘 추천에서 제외."
+    "Anthropic S-1 스레드가 1500점대로 HN 1위 — 재무제표 뜯어보기 논쟁 활발, 오늘 저녁 소재로 채택.",
+    "Microsoft 버이아웃 스레드도 상위권 — '이게 AI 때문이냐 아니냐' 댓글 논쟁 중, 오늘 오전 소재로 채택.",
+    "GPT-6.1 Terra(10/26 출시, 기존 대비 3배 빠르고 토큰당 가격 절반) 관련 글도 상위권이었으나, 10/23에 'GPT-6' 계열 모델을 이미 다뤄 모델명 중복 우려로 오늘은 제외.",
+    "'10살짜리 CNN 모델이 피부암 진단에서 최신 LLM을 이긴다'는 글도 화제였으나 출처 수치 재검증이 더 필요해 보류."
   ],
-  "recommended_morning": "회사 계정으로 ChatGPT Business/Enterprise를 쓰는 직장인을 직접 호명해, 10/16 출시된 'ChatGPT Slides'(대화·문서를 슬라이드 덱으로 바로 만들고 팀원과 실시간 공동편집, PowerPoint/Google Slides/PDF 내보내기) 기능을 PPT 작업 시간을 줄이는 바로 써먹는 꿀팁으로 소개. 개인 Plus 요금제는 제외되고 회사 계정만 된다는 반전 디테일을 훅에 넣을 것. big_tech_news[0].hook_idea 그대로 사용, topic_tag=AI_THREADS.",
-  "recommended_evening": "자사몰/스마트스토어 운영자를 직접 호명해, 美 나이키·세포라·타겟 등에서 이미 실가동 중인 AI 에이전트 결제 표준 'UCP'(처음 반대하던 아마존도 올해 4월 합류)를 소개하고, '내 상품 상세페이지를 사람이 아니라 AI가 읽는 시대가 온다'는 경고성 핫테이크로 재프레이밍. big_tech_news[1].hook_idea 그대로 사용, topic_tag=BUSINESS_ENTREPENEURSHIP.",
+  "recommended_morning": {
+    "angle": "target_callout 경고형 — '마이크로소프트 다니는 사람만 보셈'으로 직장인을 직접 호명, 전체 인력 25%(6만명) 대상 자발적 퇴사 프로그램을 'AI 투자비 메우려 사람 자르는 흐름'이라는 경고 메시지로 재구성.",
+    "hook": "마이크로소프트 다니는 사람만 보셈. 어제 회사가 전체 직원의 4분의 1, 그러니까 6만명한테 '자발적으로 나가라'는 퇴사 프로그램을 돌렸음.",
+    "source": "big-tech-news / Microsoft voluntary buyout (Bloomberg, NBC News, 2026-10-26)",
+    "topic_tag": "CAREERS_JOBS"
+  },
+  "recommended_evening": {
+    "language": "english",
+    "angle": "counterintuitive stat — a company with 1,300% revenue growth also posting an $80.7B loss in the same half-year, and why most of that loss isn't actual cash burn.",
+    "hook": "Anyone who actually reads IPO filings needs to see this. Anthropic just filed its S-1 — revenue up 1,300% to $16.3B in H1 2026, but net loss was $80.7B in the same period. Loss is 5x revenue.",
+    "topic_tag": "MARKETING"
+  },
   "metadata": {
     "source_urls": [
-      "https://www.androidheadlines.com/2026/10/openai-chatgpt-slides-collaboration-rollout.html",
-      "https://productrise.app/blog/ucp-rollout-update",
-      "https://shopify.engineering/UCP"
+      "https://fortune.com/2026/10/26/anthropics-s-1/",
+      "https://www.thevccorner.com/p/anthropic-s1-ipo-filing",
+      "https://techfundingnews.com/anthropic-s-1-ipo-ant-nasdaq-founders-50-1-percent-vote/",
+      "https://www.bloomberg.com/news/articles/2026-10-26/microsoft-to-offer-buyouts-to-60-000-workers-in-latest-cost-cut",
+      "https://www.kuow.org/technology/2026-10-26/microsoft-offers-voluntary-buyouts-to-a-quarter-of-its-workforce",
+      "https://www.nbcnews.com/business/corporations/microsoft-offers-buyouts-60000-employees-rcna605765",
+      "https://github.com/gitroomhq/postiz-app",
+      "https://postiz.com/"
     ]
   }
 }
