@@ -18,10 +18,25 @@ _META_PATTERNS = [
     "댓글을 생성", "댓글을 작성하겠", "댓글을 작성해", "규칙에 맞게", "규칙에 맞춰",
     "본문 내용이", "불명확", "구체적으로 뭘", "구체적인 포스트",
     "줘야 그에 맞춰", "알려주면", "알려주세요",
+    # 2026-09-29 사고 재발 방지: "포스트의 완전한 텍스트가 필요해..." 류가
+    # 기존 패턴을 다 피해가며 두 건이나 실게시됨(Dd2z_AXks1C). 새 표현 추가.
+    "완전한 텍스트가 필요", "항목 제목만", "전체 메시지가 뭔지",
+    "포스트 원문", "원문이나 링크", "포스트가 어떤 맥락", "댓글을 달 수 없어",
+    "포스트 텍스트나 링크", "전체 포스트 텍스트", "내용이 끝까지 전달되지",
     # 영어 등가
     "i can't see", "i cannot see", "please provide", "share the post",
     "the actual text", "no content", "let me know the", "i'll write",
     "i don't have access", "as an ai", "i need the", "could you share",
+]
+
+# 위 리터럴 목록을 다 피해가는 변종 방지용 조합 휴리스틱:
+# 우리 댓글 프롬프트는 "포스트/글" 자체를 메타 지칭하지 말고 내용에 바로 반응하라고
+# 강제하므로, 정상 댓글이 "포스트"란 단어 자체를 쓸 일이 거의 없다.
+# "포스트"/"글" + 이해 불가/요청 신호가 같이 나오면 되묻기로 간주해 차단한다.
+_META_COMBO_A = ["포스트", "이 글", "본문"]
+_META_COMBO_B = [
+    "모르겠", "필요해", "알려줘", "알려줄", "줄 수 있", "줄래",
+    "제공해", "없어서 댓글", "전달되지 않",
 ]
 
 # CLI 인증 실패 / 에러 텍스트
@@ -47,6 +62,8 @@ def is_valid_comment(comment: str) -> tuple[bool, str]:
     for p in _META_PATTERNS:
         if p in c or p in low:
             return False, f"메타/되묻기 텍스트 감지: '{p}'"
+    if any(a in c for a in _META_COMBO_A) and any(b in c for b in _META_COMBO_B):
+        return False, "메타/되묻기 조합 패턴 감지(포스트·글·본문 + 이해불가/요청 신호)"
     for p in _CLI_ERROR_PATTERNS:
         if p in low:
             return False, f"에러/인증 텍스트 감지: '{p}'"

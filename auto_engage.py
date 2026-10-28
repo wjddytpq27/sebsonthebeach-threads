@@ -48,8 +48,16 @@ if _m_goal:
 _m_eng = re.search(r'영어[^0-9]*(\d+)\s*%', _directive)
 if _m_eng:
     english_ratio = int(_m_eng.group(1)) / 100.0
-ENGLISH_LIMIT = max(1, round(DAILY_LIMIT * english_ratio))
-KOREAN_LIMIT  = DAILY_LIMIT - ENGLISH_LIMIT
+# directive가 '한국어 N / 영어 N' 절대 개수로 명시한 경우(비율보다 우선) —
+# 09-25 사고(표본 재수집기엔 % 대신 정수 스플릿 지시) 재발 대응
+_m_split = re.search(r'한국어\s*(\d+)\s*/\s*영어\s*(\d+)', _directive)
+if _m_split:
+    KOREAN_LIMIT  = int(_m_split.group(1))
+    ENGLISH_LIMIT = int(_m_split.group(2))
+    DAILY_LIMIT   = KOREAN_LIMIT + ENGLISH_LIMIT
+else:
+    ENGLISH_LIMIT = max(1, round(DAILY_LIMIT * english_ratio))
+    KOREAN_LIMIT  = DAILY_LIMIT - ENGLISH_LIMIT
 
 # ── 키워드 결정 (top_search_keywords 우선, 기본 키워드 보완) ──
 top_keywords = signal.get('top_search_keywords', [])
@@ -81,6 +89,31 @@ else:
 print(f"[{today}] 상태: {status} | 목표: {DAILY_LIMIT}개 (한국어 {KOREAN_LIMIT} / 영어 {ENGLISH_LIMIT})")
 print(f"한국어 키워드: {ko_keywords[:5]}")
 print(f"영어 키워드: {en_keywords}")
+
+# ── 재실행 가드: 당일 목표 이미 달성 시 즉시 종료 ─────────
+# (8/12·8/24·8/28·9/02·9/04 재발 방지: auto_engage는 remaining을
+#  0부터 재시작하는 구조라, 목표 달성 후 재실행하면 과다 engagement
+#  스팸 리스크. engage_log의 당일 완료 수가 목표 이상이면 skip.)
+def _done_today() -> int:
+    if not LOG_FILE.exists():
+        return 0
+    try:
+        import csv as _csv
+        with open(LOG_FILE, encoding="utf-8") as _f:
+            return sum(1 for _r in _csv.DictReader(_f) if _r.get("date") == today)
+    except Exception:
+        return 0
+
+_already = _done_today()
+if _already >= DAILY_LIMIT:
+    print(f"[{today}] 재실행 스킵 — 오늘 이미 {_already}/{DAILY_LIMIT}개 완료 (engage_log 기준). 과다 engagement 스팸 방지.")
+    sys.exit(0)
+elif _already > 0:
+    _remaining = DAILY_LIMIT - _already
+    KOREAN_LIMIT = max(0, min(KOREAN_LIMIT, _remaining))
+    ENGLISH_LIMIT = max(0, _remaining - KOREAN_LIMIT)
+    print(f"[{today}] 부분 완료 감지 — 오늘 {_already}개 기록됨 → 남은 {_remaining}개만 진행 (한국어 {KOREAN_LIMIT} / 영어 {ENGLISH_LIMIT}).")
+
 
 # ── Pre-flight: Claude CLI 인증 확인 ─────────────────────
 def _send_slack_alert(msg: str):
@@ -259,11 +292,43 @@ def engage_post(page, href: str, keyword: str, seen_authors: set, lang: str = 'k
         return None
 
     try:
-        page.goto(f'https://www.threads.com{href}', timeout=15000)
+        # SPA 인앱 클릭 네비게이션으로 이동.
+        # 2026-09-17 회귀 확인: page.goto(개별 포스트 URL)로 직접 이동하면
+        # Threads가 클라이언트 라우팅상 홈 피드(/? injected_media_ids=...)로
+        # 되돌려버려서 실제로는 포스트 페이지에 도달하지 못한다.
+        # (그 상태에서도 홈 피드의 아무 포스트 텍스트가 읽혀서 겉으론 정상처럼
+        # 보이지만, 답글 버튼이 전혀 없어 100% 스킵되는 사고가 있었다.)
+        # 검색 결과 페이지에서 해당 링크를 "클릭"해야 포스트 URL이 유지된다.
+        # 검색 결과 SPA 렌더링이 간헐적으로 느려서(networkidle 기준으로도
+        # 로딩 실패 관측됨) 최대 2회까지 재검색 후 링크를 찾는다.
+        search_url = f'https://www.threads.com/search?q={keyword}&serp_type=default'
+        clicked = False
+        last_err: Optional[Exception] = None
+        for attempt in range(2):
+            page.goto(search_url, wait_until='load', timeout=20000)
+            page.wait_for_timeout(2500 + attempt * 1500)
+            link_loc = page.locator(f'a[href="{href}"]').first
+            try:
+                link_loc.wait_for(timeout=6000)
+                link_loc.click(timeout=6000)
+                clicked = True
+                break
+            except Exception as e:
+                last_err = e
+                continue
+        if not clicked:
+            print(f"  ❌ 링크 클릭 실패 → 스킵: {post_id} ({last_err})")
+            return None
         page.wait_for_timeout(2500)
 
         # 내 계정 포스트 스킵
         if 'sebsonthebeach' in page.url:
+            return None
+
+        # 포스트 이동 실패(홈 등 엉뚱한 곳으로 리다이렉트) 감지 —
+        # 잘못된 포스트에 댓글이 달리는 사고 방지.
+        if href.split('?')[0] not in page.url:
+            print(f"    ⚠️ 포스트 이동 실패 — 리다이렉트됨({page.url}) → 스킵")
             return None
 
         post_text = page.evaluate("""
@@ -324,16 +389,24 @@ def engage_post(page, href: str, keyword: str, seen_authors: set, lang: str = 'k
                     continue
             return None
 
+        # 2026-09-17 UI 변경 확인: 답글 버튼의 접근성 이름이 더 이상
+        # aria-label에 없고, 내부 svg의 <title> 텍스트로 옮겨갔다
+        # (aria-label 자체는 빈 문자열 "" 또는 없음). 그래서 기존
+        # [aria-label="답글"] 셀렉터가 전부 못 찾고 "답글 버튼 없음"으로
+        # 스킵되는 회귀가 있었다. aria-label과 svg title 둘 다 시도한다.
         reply_box = None
         tried_any = False
-        for aria in ['답글', 'Reply', '댓글', 'Comment']:
+        candidate_labels = ['답글', 'Reply', '댓글', 'Comment']
+
+        # 1순위: aria-label 매칭 (구버전 UI 호환)
+        for aria in candidate_labels:
             loc = page.locator(f'[aria-label="{aria}"]').first
             try:
-                loc.wait_for(timeout=2000)
+                loc.wait_for(timeout=1500)
             except Exception:
                 continue
             tried_any = True
-            print(f"    답글 버튼 시도: {aria}")
+            print(f"    답글 버튼 시도(aria-label): {aria}")
             try:
                 loc.click(force=True, timeout=5000)
             except Exception:
@@ -349,12 +422,38 @@ def engage_post(page, href: str, keyword: str, seen_authors: set, lang: str = 'k
             if reply_box:
                 break
 
+        # 2순위: svg 내부 <title> 텍스트로 답글 버튼 찾기 (신규 UI)
+        if not reply_box:
+            found_via_svg = page.evaluate(
+                """(labels) => {
+                    const titles = [...document.querySelectorAll('svg > title')];
+                    for (const t of titles) {
+                        if (labels.includes((t.textContent || '').trim())) {
+                            const btn = t.closest('[role="button"], button');
+                            if (btn) {
+                                btn.scrollIntoView({block: 'center'});
+                                btn.dispatchEvent(new MouseEvent('click', {bubbles:true, cancelable:true}));
+                                return true;
+                            }
+                        }
+                    }
+                    return false;
+                }""",
+                candidate_labels,
+            )
+            if found_via_svg:
+                tried_any = True
+                print("    답글 버튼 시도(svg title)")
+                page.wait_for_timeout(2000)
+                reply_box = find_composer()
+
         if not tried_any:
+            global NO_COMPOSER_COUNT
+            NO_COMPOSER_COUNT += 1
             print("    답글 버튼 없음 — 스킵")
             return None
 
         if not reply_box:
-            global NO_COMPOSER_COUNT
             NO_COMPOSER_COUNT += 1
             print(f"  ❌ 댓글 입력창 없음 — 스킵: {post_id}")
             return None

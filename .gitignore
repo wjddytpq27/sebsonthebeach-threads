@@ -1,8 +1,7 @@
-# ───────── 민감정보: 절대 커밋 금지 ─────────
-# API 토큰 / 시크릿 (GitHub Secrets로 주입, 레포엔 안 올림)
-data/threads_config.json
-data/slack_config.json
-data/.agent_env
+# ───────── data/ 전체 제외 (포트폴리오 공개용) ─────────
+data/
+!data/.gitkeep
+
 .env
 *.env
 

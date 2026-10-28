@@ -1,0 +1,19 @@
+@sebsonthebeach Threads 팀 성과 분석 실행.
+
+작업 디렉토리: /Users/uneedcomms/thread
+
+다음 순서로 실행해:
+
+1. data/follower_log.csv 읽기 (최근 21일)
+2. data/insights.csv 읽기 (최근 14일, post_id별 최신 collected_date만)
+3. data/engage_log.csv 읽기 (최근 30일)
+4. 팔로워 추이 분석 → status/days_since_growth 계산
+5. 포스트 성과 분석 → 상위/하위 패턴
+6. 키워드 × 팔로워 성장 상관관계 (hit_rate, n>=3만 신뢰)
+7. 악마의 변호인으로 자기 분석 반박
+8. data/team_signal.json 저장
+9. prompts/hunter_engager.txt의 "## 타겟 키워드 우선순위" 섹션 업데이트
+10. prompts/viral_writer.txt의 "## 성과 데이터" 섹션 업데이트
+11. data/slack_config.json webhook_url로 Slack 브리핑 발송
+
+에이전트 정의(~/.claude/agents/growth-analyst.md)의 전체 지침을 따를 것.
